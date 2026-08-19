@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3229.620000" height="1053.620000" viewBox="-105.310000 -198.310000 3229.620000 1053.620000">
+  <defs>
+    <g id="logo"><g fill="currentColor" transform="translate(0.000000 657.000000) scale(1.000000000 -1.000000000)">
+<path d="M93 0V657H510C641 657 707 561 707 455C707 413 691 371 660 339C708 306 731 256 731 203C731 96 665 0 533 0ZM245 399H510C539 399 555 420 555 449V467C555 497 539 517 510 517H245ZM245 140H533C562 140 580 161 580 190V209C580 239 562 259 533 259H245Z" transform="translate(0.000000 0)" />
+<path d="M93 657H719V517H245V399H597V259H245V140H719V0H93Z" transform="translate(735.000000 0)" />
+<path d="M93 657H412C618 657 743 503 743 329C743 155 617 0 412 0H93ZM412 140C523 140 586 231 586 329C586 426 523 517 412 517H245V140Z" transform="translate(1465.000000 0)" />
+<path d="M93 657H719V517H245V399H597V259H245V140H719V0H93Z" transform="translate(2207.000000 0)" />
+<path d="M2477 705 L2613 841 L2749 705 L2691 705 L2613 783 L2535 705 Z" /></g></g>
+  </defs>
+  
+  <g color="#000000" fill="#000000" stroke="none"><use xlink:href="#logo" /></g>
+</svg>

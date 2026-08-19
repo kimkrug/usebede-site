@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>BEDÊ Stiletto — Boutique de Calçados Femininos | Viamão RS</title>
+    <meta name="description" content="Calçados e bolsas femininas com curadoria, design e conforto. Boutique em Viamão/RS.">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon_bede.png?v=2026_transparent_bold_v10">
+  <link rel="shortcut icon" href="favicon.ico?v=2026_transparent_bold_v10">
+  <link rel="apple-touch-icon" href="assets/brand/favicon_bede.png?v=2026_transparent_bold_v10">
+  <link rel="stylesheet" href="style.css?v=2026_v10">
+
+  <!-- Open Graph (Instagram, Facebook, WhatsApp) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BEDÊ Stiletto">
+  <meta property="og:title" content="BEDÊ Stiletto — Boutique de Calçados Femininos | Viamão RS">
+  <meta property="og:description" content="Calçados e bolsas femininas com curadoria, design e conforto. Boutique em Viamão/RS.">
+  <meta property="og:image" content="https://usebede.com.br/og-image.jpg">
+  <meta property="og:url" content="https://usebede.com.br">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- --vh fix: roda ANTES do CSS pintar (iOS Safari 100vh bug) -->
+  <script>
+    (function() {
+      function setVH() {
+        var vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', (vh * 100) + 'px');
+      }
+      setVH();
+      window.addEventListener('resize', setVH);
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ── HEADER byNV (2 MODOS: GHOST NO HERO / SOLID-LIGHT NOS DEMAIS) ── -->
+  <header class="site-header ghost" id="siteHeader">
+    <div class="header-inner">
+
+      <!-- GRUPO ESQUERDA: MENU NAV -->
+      <div class="header-left">
+        <button class="btn-menu-mobile" id="mobileMenuBtn" onclick="toggleMobileMenu()" aria-label="Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+
+        <!-- MENU NAV NA ESQUERDA COM SUBMENU EM CALÇADOS -->
+        <nav class="main-nav" id="mainNav">
+          <a class="nav-item nav-priority" href="#" onclick="openCollection('NOVIDADES');return false;">Novidades</a>
+          
+          <!-- DROPDOWN CALÇADOS -->
+          <div class="nav-dropdown-wrap" id="navDropdownWrap">
+            <a class="nav-item has-dropdown" href="#" onclick="openCollection('CALÇADOS');return false;" aria-haspopup="true" aria-expanded="false">
+              Calçados
+              <svg class="dropdown-chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="nav-submenu" id="navSubmenu">
+              <div class="submenu-grid">
+                <div class="submenu-col">
+                  <span class="sub-col-title">Por Modelo</span>
+                  <a href="#" onclick="openCollection('SCARPIN');return false;" class="sub-link">Scarpins & Saltos</a>
+                  <a href="#" onclick="openCollection('SANDÁLIA');return false;" class="sub-link">Sandálias de Festa & Casuais</a>
+                  <a href="#" onclick="openCollection('MOCASSIM');return false;" class="sub-link">Mocassins & Loafers</a>
+                  <a href="#" onclick="openCollection('MULE');return false;" class="sub-link">Mules & Tamancos</a>
+                  <a href="#" onclick="openCollection('TÊNIS');return false;" class="sub-link">Tênis Contemporâneos</a>
+                </div>
+                <div class="submenu-col">
+                  <span class="sub-col-title">Botas & Essenciais</span>
+                  <a href="#" onclick="openCollection('BOTA CANO CURTO');return false;" class="sub-link">Botas Cano Curto</a>
+                  <a href="#" onclick="openCollection('BOTA CANO MÉDIO');return false;" class="sub-link">Botas Cano Médio</a>
+                  <a href="#" onclick="openCollection('BOTA CANO LONGO');return false;" class="sub-link">Botas Cano Longo / Over</a>
+                  <a href="#" onclick="openCollection('COTURNO');return false;" class="sub-link">Coturnos & Tratoradas</a>
+                  <a href="#" onclick="openCollection('PAPETE');return false;" class="sub-link">Papetes & Rasteirinhas</a>
+                </div>
+                <div class="submenu-col submenu-highlight">
+                  <span class="sub-col-title">Curadoria</span>
+                  <a href="#" onclick="openCollection('CALÇADOS');return false;" class="sub-link view-all-link">Ver Todos os Calçados &rarr;</a>
+                  <p class="sub-callout">Palmilhas anatômicas de alto conforto com couros nobres e acabamentos artesanais.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="nav-item" href="#" onclick="openCollection('BOLSA');return false;">Bolsas</a>
+          <a class="nav-item nav-priority sale-tag" href="#" onclick="goToSlide(2);return false;">Liquidação</a>
+        </nav>
+      </div>
+
+      <!-- GRUPO CENTRO: LOGO BEDÊ CENTRALIZADO -->
+      <div class="header-center">
+        <a class="logo-link" href="#" onclick="goToSlide(0);return false;" id="logoLink" aria-label="BEDÊ Stiletto — Início">
+          <img src="assets/brand/logo_header_branco.svg"
+               alt="BEDÊ Stiletto"
+               id="logoImg"
+               onerror="this.style.display='none';document.getElementById('logoFallback').style.display='block';">
+          <span id="logoFallback" style="display:none;" class="logo-text-fallback">
+            BEDÊ
+            <span class="logo-sub-fallback">Stiletto</span>
+          </span>
+        </a>
+      </div>
+
+      <!-- GRUPO DIREITA: ÍCONES & BUSCA EXPANSÍVEL -->
+      <div class="header-right">
+        <!-- BUSCA PROEMINENTE EXPANSÍVEL -->
+        <div class="header-search-wrap" id="headerSearchWrap">
+          <button class="icon-btn search-trigger-btn" onclick="toggleHeaderSearch()" title="Buscar na loja" aria-label="Abrir busca" id="searchTriggerBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <span class="search-btn-label">Buscar</span>
+          </button>
+          <div class="header-search-expand" id="headerSearchExpand">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-expand-icon">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input type="text" id="headerSearchInput" placeholder="Buscar scarpin, sandália, bota, bolsa..." autocomplete="off" oninput="handleHeaderSearch(this.value)" onkeydown="if(event.key==='Enter') executeHeaderSearch()">
+            <button class="search-clear-btn" onclick="clearHeaderSearch()" title="Limpar">&times;</button>
+          </div>
+        </div>
+
+        <!-- WISHLIST / FAVORITOS DIRETO NO TOPO -->
+        <button class="icon-btn" onclick="openWishlist();return false;" title="Favoritos / Lista de Desejos" aria-label="Favoritos" id="wishlistBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+          <span class="wishlist-pill" id="wishlistPill" style="display:none;">0</span>
+        </button>
+
+        <!-- MENU MINHA CONTA / CADASTRO (REGISTRO EDITORIAL) -->
+        <div class="account-menu-wrapper" id="accountMenuWrapper">
+          <button class="icon-btn" onclick="toggleAccountMenu(event)" title="Minha Conta" aria-label="Minha Conta" id="accountBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </button>
+          <div class="account-popover" id="accountPopover">
+            <div class="acc-head">
+              <h4>Minha Conta</h4>
+              <p>Acesse para gerenciar seus pedidos e preferências.</p>
+              <button class="acc-btn-login" onclick="openInstitutionalModal('sobre')">Acessar Conta</button>
+            </div>
+            <div class="acc-links">
+              <a href="#" onclick="openInstitutionalModal('sobre');return false;" class="acc-link-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span>Meus dados cadastrais</span>
+              </a>
+              <a href="#" onclick="openInstitutionalModal('termos');return false;" class="acc-link-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                <span>Acompanhar pedidos</span>
+              </a>
+              <a href="#" onclick="openWishlist();return false;" class="acc-link-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                <span>Lista de Desejos</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <button class="icon-btn" onclick="openCart()" title="Sacola" aria-label="Sacola" id="cartBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span class="cart-pill" id="cartPill">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ── MENU DRAWER MOBILE (SLIDE-IN LATERAL ESQUERDO) ── -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay" onclick="closeMobileMenu()"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Menu principal">
+    <div class="mob-drawer-header">
+      <div class="mob-drawer-logo">
+        <img src="assets/brand/logo_header_preto.svg" alt="BEDÊ Stiletto">
+      </div>
+      <button class="mob-drawer-close" onclick="closeMobileMenu()" aria-label="Fechar menu">&times;</button>
+    </div>
+    <div class="mob-drawer-nav">
+      <a href="#" onclick="openCollection('NOVIDADES');closeMobileMenu();return false;" class="mob-nav-link highlight">
+        <span>Novidades da Coleção</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+
+      <!-- ACCORDION CALÇADOS MOBILE -->
+      <div class="mob-accordion">
+        <div class="mob-nav-link" onclick="toggleMobAccordion(this)">
+          <span>Calçados & Saltos</span>
+          <svg class="mob-acc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="mob-sub-menu">
+          <a href="#" onclick="openCollection('CALÇADOS');closeMobileMenu();return false;" class="mob-sub-link highlight">Ver Todos os Calçados</a>
+          <a href="#" onclick="openCollection('SCARPIN');closeMobileMenu();return false;" class="mob-sub-link">Scarpins & Saltos Finos</a>
+          <a href="#" onclick="openCollection('SANDÁLIA');closeMobileMenu();return false;" class="mob-sub-link">Sandálias & Festa</a>
+          <a href="#" onclick="openCollection('BOTA');closeMobileMenu();return false;" class="mob-sub-link">Botas & Coturnos</a>
+          <a href="#" onclick="openCollection('MOCASSIM');closeMobileMenu();return false;" class="mob-sub-link">Mocassins & Loafers</a>
+          <a href="#" onclick="openCollection('MULE');closeMobileMenu();return false;" class="mob-sub-link">Mules & Tamancos</a>
+          <a href="#" onclick="openCollection('PAPETE');closeMobileMenu();return false;" class="mob-sub-link">Papetes & Rasteirinhas</a>
+          <a href="#" onclick="openCollection('TÊNIS');closeMobileMenu();return false;" class="mob-sub-link">Tênis Contemporâneos</a>
+        </div>
+      </div>
+
+      <a href="#" onclick="openCollection('BOLSA');closeMobileMenu();return false;" class="mob-nav-link">
+        <span>Bolsas & Acessórios</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+      <a href="#" onclick="goToSlide(2);closeMobileMenu();return false;" class="mob-nav-link highlight">
+        <span>Special Sale (Até 50% OFF)</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+      <a href="#" onclick="openWishlist();closeMobileMenu();return false;" class="mob-nav-link">
+        <span>Minha Wishlist (Favoritos)</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+      <a href="#" onclick="goToSlide(3);closeMobileMenu();return false;" class="mob-nav-link">
+        <span>Atendimento Boutique & Concierge</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+    </div>
+    <div class="mob-drawer-footer">
+      <a href="#" target="_blank" class="mob-drawer-wa" id="mobDrawerWa">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        <span>Falar com Consultora no WhatsApp</span>
+      </a>
+      <p class="mob-drawer-info" id="mobDrawerClaims"></p>
+    </div>
+  </aside>
+
+  <!-- ── DOTS DE NAVEGAÇÃO LATERAL (BRANCOS) ─────────────────── -->
+  <nav class="slide-dots" id="slideDots" aria-label="Navegação de slides">
+    <button class="s-dot active" onclick="goToSlide(0)" aria-label="Slide 1"></button>
+    <button class="s-dot" onclick="goToSlide(1)" aria-label="Slide 2"></button>
+    <button class="s-dot" onclick="goToSlide(2)" aria-label="Slide 3"></button>
+    <button class="s-dot" onclick="goToSlide(3)" aria-label="Slide 4"></button>
+  </nav>
+
+  <!-- ── BOTÃO FLUTUANTE WHATSAPP (VERDE COM BORDA BRANCA FINA, SEM SOMBRA) ────── -->
+  <a href="https://wa.me/5551980150391?text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20personalizado%20na%20BED%C3%8A%20Stiletto."
+     target="_blank"
+     rel="noopener"
+     class="whatsapp-float-btn"
+     aria-label="Falar com a BEDÊ no WhatsApp"
+     title="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+  <!-- ============================================================
+       MOTOR DE TELAS CHEIAS — 4 SLIDES 100VH
+  ============================================================ -->
+  <div class="viewport-stage" id="viewportStage">
+    <div class="slides-track" id="slidesTrack">
+
+      <!-- ── SLIDE 0: HERO EDITORIAL ─────────────────────── -->
+      <section class="v-slide" id="slide0" aria-label="Hero editorial">
+        <div class="hero-bg" id="heroBg"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <span class="hero-eyebrow">Nova Coleção · Inverno 2026</span>
+          <h1 class="hero-headline">Design que define.<br>Conforto que liberta.</h1>
+          <a href="#" class="btn-nv" onclick="openCollection('ALL');return false;">
+            Descobrir a coleção &rarr;
+          </a>
+        </div>
+        <!-- Informações de benefícios: Sem caixa, fundo da foto e linha suave superior alinhada -->
+        <div class="home-bottom-bar">
+          <div class="home-bar-inner">
+            <span id="homeBarClaims"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SLIDE 1: DUPLO 50/50 byNV (CATEGORIAS / PRODUTOS) ───── -->
+      <section class="v-slide" id="slide1" aria-label="Categorias de Produtos">
+        <div class="split-dual-slide">
+
+          <div class="dual-half" onclick="openCollection('CALÇADOS')" role="button" tabindex="0" aria-label="Ver Sapataria e Saltos">
+            <img class="dual-img" src="assets/split_shoes.jpg?v=crop_v3" alt="Sapataria & Saltos — Stiletto BEDÊ" loading="lazy">
+            <div class="dual-shade"></div>
+            <div class="dual-caption">
+              <span class="dual-eyebrow">Ateliê</span>
+              <h3 class="dual-title">Sapataria<br>& Saltos</h3>
+              <span class="dual-cta">Explorar &rarr;</span>
+            </div>
+          </div>
+
+          <div class="dual-half" onclick="openCollection('BOLSA')" role="button" tabindex="0" aria-label="Ver Bolsas e Casuais">
+            <img class="dual-img" src="assets/split_bags.jpg?v=crop_v3" alt="Bolsas & Casuais — Stiletto BEDÊ" loading="lazy">
+            <div class="dual-shade"></div>
+            <div class="dual-caption">
+              <span class="dual-eyebrow">Essenciais</span>
+              <h3 class="dual-title">Bolsas<br>& Casuais</h3>
+              <span class="dual-cta">Explorar &rarr;</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── SLIDE 2: SPLIT 64/31 byNV (SPECIAL SALE / LIQUIDAÇÃO) ───── -->
+      <section class="v-slide" id="slide2" aria-label="Liquidação Especial">
+        <div class="split-text-slide">
+          <div class="split-photo">
+            <img src="assets/split_editorial.jpg?v=showroom_v1" alt="BEDÊ Stiletto — Showroom & Coleção" loading="lazy">
+          </div>
+          <div class="split-text-content">
+            <h2 class="split-headline single-line">ATÉ 40% OFF</h2>
+            <a href="#" class="btn-nv dark" onclick="openCollection('LIQUIDAÇÃO');return false;">
+              Ver Liquidação &rarr;
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SLIDE 3: FINALE BOUTIQUE & RODAPÉ REAL ────────── -->
+      <section class="v-slide" id="slide3" aria-label="Atendimento Boutique e Rodapé">
+        <div class="footer-slide">
+
+          <!-- CONCIERGE VIP / WHATSAPP BOUTIQUE -->
+          <div class="concierge-vip">
+            <img class="concierge-monogram" src="assets/brand/monograma_preto.svg?v=2026_monogram_v5_bold" alt="BEDÊ Monograma">
+            <h2 class="concierge-title">Atendimento Boutique<br><span class="concierge-subtitle">Personal Shopper</span></h2>
+            <p class="concierge-desc">Consultoria exclusiva sobre numeração, acabamentos e entrega expressa. Converse diretamente com nossa equipe no WhatsApp.</p>
+            <a href="https://wa.me/5551980150391?text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20personalizado%20na%20BEDE%20Stiletto."
+               target="_blank"
+               rel="noopener"
+               class="btn-whatsapp-vip">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.848.815 2.796.815 3.182 0 5.769-2.587 5.77-5.766.001-3.182-2.585-5.802-5.77-5.802zm0 10.428c-.854 0-1.656-.244-2.361-.689l-.169-.107-1.758.461.469-1.713-.117-.187c-.495-.788-.756-1.579-.755-2.427.001-2.493 2.029-4.52 4.522-4.52 2.492 0 4.521 2.027 4.522 4.521-.001 2.494-2.03 4.661-4.523 4.661zm3.178-3.468c-.174-.087-1.03-.509-1.189-.567-.159-.058-.275-.087-.391.087-.116.174-.45 0.567-.552.683-.102.116-.203.13-.377.043-.174-.087-.736-.271-1.402-.865-.518-.462-.868-1.033-.97-1.207-.101-.174-.011-.268.077-.354.079-.078.174-.203.261-.304.087-.101.116-.174.174-.29.058-.116.029-.217-.015-.304-.043-.087-.391-.942-.536-1.291-.141-.339-.284-.293-.391-.299-.101-.006-.217-.007-.333-.007s-.304.043-.464.217c-.159.174-.609.594-.609 1.45 0 .855.623 1.682.71 1.798.087.116 1.226 1.872 2.97 2.624.415.179.739.286.992.367.417.133.796.114 1.096.069.334-.05 1.03-.421 1.175-.827.145-.406.145-.754.101-.827-.044-.073-.16-.116-.334-.203z"/>
+              </svg>
+              Falar com Consultora no WhatsApp
+            </a>
+            <div class="concierge-trust">
+              <span>✓ Atendimento Humanizado</span>
+              <span>✓ Consultoria de Numeração</span>
+              <span>✓ Primeira Troca Grátis</span>
+            </div>
+          </div>
+
+          <!-- RODAPÉ REAL NO LIMITE INFERIOR -->
+          <div class="clean-footer-bottom">
+            <footer class="clean-footer">
+
+              <!-- COLUNA 1: MARCA & INSTAGRAM -->
+              <div class="cf-col">
+                <div class="cf-logo">
+                  <img src="assets/brand/logo_bede_preto.svg"
+                       alt="BEDÊ"
+                       onerror="this.style.display='none'">
+                </div>
+                <p class="cf-desc">Calçados e bolsas femininas com curadoria, design autoral e alto conforto.</p>
+                <div class="cf-social-links">
+                  <a href="https://www.instagram.com/stilettobmaisd/" target="_blank" rel="noopener" class="cf-social-btn" aria-label="Instagram BEDÊ">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    <span>@stilettobmaisd</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- COLUNA 2: INSTITUCIONAL & POLÍTICAS -->
+              <div class="cf-col">
+                <h4>Institucional</h4>
+                <a href="#" onclick="openInstitutionalModal('sobre');return false;">Sobre a BEDÊ Stiletto</a>
+                <a href="#" onclick="openInstitutionalModal('privacidade');return false;">Política de Privacidade</a>
+                <a href="#" onclick="openInstitutionalModal('termos');return false;">Termos de Compra e Uso</a>
+                <a href="#" onclick="openSizeGuide();return false;">Guia de Numeração e Medidas</a>
+                <a href="https://wa.me/5551980150391?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Trocas%20e%20Devolu%C3%A7%C3%B5es." target="_blank" rel="noopener">Trocas & Devoluções</a>
+              </div>
+
+              <!-- COLUNA 3: ATENDIMENTO & LOCALIZAÇÃO -->
+              <div class="cf-col">
+                <h4>Atendimento</h4>
+                <a href="#" id="footerWa" target="_blank" rel="noopener" style="font-weight:600;color:var(--color-text);"></a>
+                <p id="footerAddress"></p>
+                <p>Centro · Viamão / RS</p>
+                <p id="footerHorario"></p>
+              </div>
+
+            </footer>
+
+            <!-- BANDEIRAS DE PAGAMENTO & SELO GOOGLE SAFE BROWSING REAL -->
+            <div class="footer-trust-row">
+              <div class="payment-methods">
+                <span class="pay-label">Formas de Pagamento:</span>
+                <div class="pay-icons">
+                  <span class="pay-tag" id="footerPixTag"></span>
+                  <span class="pay-tag">Mastercard</span>
+                  <span class="pay-tag">Visa</span>
+                  <span class="pay-tag">Elo</span>
+                  <span class="pay-tag">Amex</span>
+                  <span class="pay-tag">Hipercard</span>
+                </div>
+              </div>
+              <div class="security-seals">
+                <a href="https://transparencyreport.google.com/safe-browsing/search?url=https://www.stilettobmaisd.com.br"
+                   target="_blank"
+                   rel="noopener"
+                   class="google-safe-link"
+                   title="Verificar status de segurança no Google Safe Browsing">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <polyline points="9 12 11 14 15 10"/>
+                  </svg>
+                  <span><strong>Google Safe Browsing</strong> · Site Seguro Verificado</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-legal-bar">
+              <p class="footer-legal" id="footerLegal"></p>
+              <p class="footer-copy">© 2026 BEDÊ. Todos os direitos reservados.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div><!-- /slides-track -->
+  </div><!-- /viewport-stage -->
+
+
+  <!-- ============================================================
+       TELA DE COLEÇÃO / CATÁLOGO (APP VIEW — SINGLE SCROLL CONTEXT)
+  ============================================================ -->
+  <div class="collection-view" id="collectionView" role="dialog" aria-label="Catálogo de produtos">
+    
+    <!-- 1. BARRA DE NAVEGAÇÃO SUPERIOR (FLUXO NORMAL) -->
+    <div class="coll-nav-bar">
+      <button class="app-back-btn" onclick="closeCollection()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Voltar à Home
+      </button>
+      <span class="coll-product-count" id="collProductCount">Carregando peças...</span>
+    </div>
+
+    <!-- 2. BANNER EDITORIAL CONTEXTUAL (FLUXO NORMAL — SAI DA TELA AO ROLAR) -->
+    <div class="collection-hero-banner" id="collHeroBanner">
+      <div class="coll-banner-img-wrap">
+        <img id="collBannerImg" src="assets/split_shoes.jpg?v=crop_v3" alt="Editorial BEDÊ Stiletto" loading="lazy">
+        <div class="coll-banner-shade"></div>
+      </div>
+      <div class="coll-banner-content">
+        <span class="coll-banner-eyebrow" id="collBannerEyebrow">Curadoria BEDÊ · Uso Real & Sofisticação</span>
+        <h2 class="collection-title" id="collectionTitle">Coleção Completa</h2>
+        <p class="coll-banner-desc" id="collBannerDesc">Palmilhas anatômicas de amortecimento contínuo com acabamentos em couros nobres e design atemporal.</p>
+      </div>
+    </div>
+
+    <!-- 3. BARRA STICKY CONDENSADA (ÚNICO ELEMENTO STICKY — AUTO-HIDE DIRECIONAL) -->
+    <div class="collection-sticky-bar" id="collStickyBar">
+      <div class="sticky-bar-top-row">
+        <!-- CHIPS DE CATEGORIA EM ROLAGEM HORIZONTAL -->
+        <div class="filter-chips" id="filterChips">
+          <button class="f-chip active" onclick="filterCat('ALL',this)">Todos</button>
+          <button class="f-chip" onclick="filterCat('SCARPIN',this)">Scarpins</button>
+          <button class="f-chip" onclick="filterCat('BOTA',this)">Botas & Coturnos</button>
+          <button class="f-chip" onclick="filterCat('BOLSA',this)">Bolsas</button>
+          <button class="f-chip" onclick="filterCat('TÊNIS',this)">Tênis</button>
+          <button class="f-chip" onclick="filterCat('MOCASSIM',this)">Mocassins</button>
+          <button class="f-chip" onclick="filterCat('MULE',this)">Mules</button>
+          <button class="f-chip" onclick="filterCat('SLINGBACK',this)">Slingbacks</button>
+          <button class="f-chip" onclick="filterCat('SAPATILHA',this)">Sapatilhas</button>
+          <button class="f-chip" onclick="filterCat('LIQUIDAÇÃO',this)">Sale / Off</button>
+        </div>
+
+        <!-- BOTÃO COMPACTO DE FILTROS (VISÍVEL NO ESTADO CONDENSADO) -->
+        <button class="btn-condensed-filters" id="btnCondensedFilters" onclick="openFiltersDrawer()" aria-label="Abrir filtros">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="4" y1="21" x2="4" y2="14"></line>
+            <line x1="4" y1="10" x2="4" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12" y2="3"></line>
+            <line x1="20" y1="21" x2="20" y2="16"></line>
+            <line x1="20" y1="12" x2="20" y2="3"></line>
+            <line x1="1" y1="14" x2="7" y2="14"></line>
+            <line x1="9" y1="8" x2="15" y2="8"></line>
+            <line x1="17" y1="16" x2="23" y2="16"></line>
+          </svg>
+          <span>Filtros</span>
+          <span class="active-filters-badge" id="activeFiltersBadge" style="display:none;">0</span>
+        </button>
+      </div>
+
+      <!-- BARRA DE FILTROS EXPANDIDA (ESTADO NORMAL <= 120px DE SCROLL) -->
+      <div class="collection-filters-bar" id="collFiltersBar">
+        <div class="filter-group">
+          <span class="filter-group-label">Numeração:</span>
+          <div class="filter-pills" id="filterSizes">
+            <button class="sz-filter-pill active" onclick="setFilterSize('ALL', this)">Todas</button>
+            <button class="sz-filter-pill" onclick="setFilterSize('34', this)">34</button>
+            <button class="sz-filter-pill" onclick="setFilterSize('35', this)">35</button>
+            <button class="sz-filter-pill" onclick="setFilterSize('36', this)">36</button>
+            <button class="sz-filter-pill" onclick="setFilterSize('37', this)">37</button>
+            <button class="sz-filter-pill" onclick="setFilterSize('38', this)">38</button>
+            <button class="sz-filter-pill" onclick="setFilterSize('39', this)">39</button>
+            <button class="sz-filter-pill" onclick="setFilterSize('40', this)">40</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-group-label">Tonalidade:</span>
+          <div class="filter-pills" id="filterColors">
+            <button class="col-filter-pill active" onclick="setFilterColor('ALL', this)">Todas</button>
+            <button class="col-filter-pill" onclick="setFilterColor('PRETO', this)">Preto</button>
+            <button class="col-filter-pill" onclick="setFilterColor('NUDE', this)">Nude</button>
+            <button class="col-filter-pill" onclick="setFilterColor('OFF', this)">Off-White</button>
+            <button class="col-filter-pill" onclick="setFilterColor('CARAMELO', this)">Caramelo</button>
+            <button class="col-filter-pill" onclick="setFilterColor('METALIZADO', this)">Metalizado</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-group-label">Faixa de Preço:</span>
+          <div class="filter-pills" id="filterPrices">
+            <button class="prc-filter-pill active" onclick="setFilterPrice('ALL', this)">Todos</button>
+            <button class="prc-filter-pill" onclick="setFilterPrice('ATE200', this)">Até R$&nbsp;200</button>
+            <button class="prc-filter-pill" onclick="setFilterPrice('200A350', this)">R$&nbsp;200 a 350</button>
+            <button class="prc-filter-pill" onclick="setFilterPrice('ACIMA350', this)">Acima de R$&nbsp;350</button>
+          </div>
+        </div>
+
+        <button class="btn-clear-filters" id="btnClearFilters" onclick="resetAllFilters()" style="display:none;">
+          <span>Limpar filtros</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- 4. GRADE DE PRODUTOS (SEM OVERFLOW ANINHADO — SCROLL NATURAL) -->
+    <div class="collection-grid-wrap">
+      <div class="collection-grid" id="collectionGrid"></div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       DRAWER DE FILTROS (MODAL ACESSÍVEL PARA ESTADO CONDENSADO & MOBILE)
+  ============================================================ -->
+  <div class="filters-drawer-overlay" id="filtersDrawerOverlay" onclick="closeFiltersDrawer()" aria-hidden="true"></div>
+  <aside class="filters-drawer" id="filtersDrawer" role="dialog" aria-modal="true" aria-label="Filtros da coleção">
+    <div class="filters-drawer-head">
+      <div class="filters-drawer-title">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="4" y1="21" x2="4" y2="14"></line>
+          <line x1="4" y1="10" x2="4" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12" y2="3"></line>
+          <line x1="20" y1="21" x2="20" y2="16"></line>
+          <line x1="20" y1="12" x2="20" y2="3"></line>
+          <line x1="1" y1="14" x2="7" y2="14"></line>
+          <line x1="9" y1="8" x2="15" y2="8"></line>
+          <line x1="17" y1="16" x2="23" y2="16"></line>
+        </svg>
+        <h3>Filtros de Coleção</h3>
+      </div>
+      <button class="pm-close" onclick="closeFiltersDrawer()" aria-label="Fechar filtros">&times;</button>
+    </div>
+
+    <div class="filters-drawer-body">
+      <!-- Grupo Numeração -->
+      <div class="drawer-filter-section">
+        <h4>Numeração</h4>
+        <div class="drawer-filter-pills" id="drawerSizes">
+          <button class="sz-filter-pill active" onclick="setFilterSize('ALL', this)">Todas</button>
+          <button class="sz-filter-pill" onclick="setFilterSize('34', this)">34</button>
+          <button class="sz-filter-pill" onclick="setFilterSize('35', this)">35</button>
+          <button class="sz-filter-pill" onclick="setFilterSize('36', this)">36</button>
+          <button class="sz-filter-pill" onclick="setFilterSize('37', this)">37</button>
+          <button class="sz-filter-pill" onclick="setFilterSize('38', this)">38</button>
+          <button class="sz-filter-pill" onclick="setFilterSize('39', this)">39</button>
+          <button class="sz-filter-pill" onclick="setFilterSize('40', this)">40</button>
+        </div>
+      </div>
+
+      <!-- Grupo Tonalidade -->
+      <div class="drawer-filter-section">
+        <h4>Tonalidade</h4>
+        <div class="drawer-filter-pills" id="drawerColors">
+          <button class="col-filter-pill active" onclick="setFilterColor('ALL', this)">Todas</button>
+          <button class="col-filter-pill" onclick="setFilterColor('PRETO', this)">Preto</button>
+          <button class="col-filter-pill" onclick="setFilterColor('NUDE', this)">Nude</button>
+          <button class="col-filter-pill" onclick="setFilterColor('OFF', this)">Off-White</button>
+          <button class="col-filter-pill" onclick="setFilterColor('CARAMELO', this)">Caramelo</button>
+          <button class="col-filter-pill" onclick="setFilterColor('METALIZADO', this)">Metalizado</button>
+        </div>
+      </div>
+
+      <!-- Grupo Preço -->
+      <div class="drawer-filter-section">
+        <h4>Faixa de Preço</h4>
+        <div class="drawer-filter-pills" id="drawerPrices">
+          <button class="prc-filter-pill active" onclick="setFilterPrice('ALL', this)">Todos</button>
+          <button class="prc-filter-pill" onclick="setFilterPrice('ATE200', this)">Até R$&nbsp;200</button>
+          <button class="prc-filter-pill" onclick="setFilterPrice('200A350', this)">R$&nbsp;200 a 350</button>
+          <button class="prc-filter-pill" onclick="setFilterPrice('ACIMA350', this)">Acima de R$&nbsp;350</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="filters-drawer-foot">
+      <button class="btn-clear-drawer" onclick="resetAllFilters()">Limpar Tudo</button>
+      <button class="btn-apply-drawer" onclick="closeFiltersDrawer()">Ver Resultados</button>
+    </div>
+  </aside>
+
+
+  <!-- ============================================================
+       MODAL DE PRODUTO (APP NATIVO)
+  ============================================================ -->
+  <div class="product-modal" id="productModal" role="dialog" aria-label="Detalhes do produto">
+    <div class="pm-top">
+      <button class="app-back-btn" onclick="closeProduct()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Voltar
+      </button>
+      <button class="pm-close" onclick="closeProduct()" aria-label="Fechar">&times;</button>
+    </div>
+    <div class="pm-grid">
+      <div class="pm-photo-wrap">
+        <div class="pm-photo">
+          <img src="" id="pmImg" alt="">
+        </div>
+        <div class="pm-thumbnails" id="pmThumbnails"></div>
+      </div>
+      <div class="pm-info">
+        <div class="pm-header-meta">
+          <span class="pm-cat" id="pmCat"></span>
+          <div class="pm-rating-badge" id="pmRatingBadge" style="display:none;"></div>
+        </div>
+        
+        <h2 class="pm-name" id="pmName"></h2>
+        
+        <div class="pm-price-block">
+          <div class="pm-price-row">
+            <span class="pm-price" id="pmPrice"></span>
+            <span class="pm-old" id="pmOld"></span>
+          </div>
+          <span class="pm-pix" id="pmPix"></span>
+          <span class="pm-inst" id="pmInst"></span>
+        </div>
+
+        <div class="pm-sizes-label">
+          <span>Numeração Disponível</span>
+          <a class="pm-guide-link" href="#" onclick="openSizeGuide();return false;">Guia de medidas</a>
+        </div>
+        <div class="pm-sizes" id="pmSizes"></div>
+
+        <div class="pm-cta-group">
+          <button class="btn-solid" id="pmAddBtn">Adicionar à sacola</button>
+          <button class="btn-whatsapp-editorial" id="pmWaBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.848.815 2.796.815 3.182 0 5.769-2.587 5.77-5.766.001-3.182-2.585-5.802-5.77-5.802zm0 10.428c-.854 0-1.656-.244-2.361-.689l-.169-.107-1.758.461.469-1.713-.117-.187c-.495-.788-.756-1.579-.755-2.427.001-2.493 2.029-4.52 4.522-4.52 2.492 0 4.521 2.027 4.522 4.521-.001 2.494-2.03 4.661-4.523 4.661zm3.178-3.468c-.174-.087-1.03-.509-1.189-.567-.159-.058-.275-.087-.391.087-.116.174-.45 0.567-.552.683-.102.116-.203.13-.377.043-.174-.087-.736-.271-1.402-.865-.518-.462-.868-1.033-.97-1.207-.101-.174-.011-.268.077-.354.079-.078.174-.203.261-.304.087-.101.116-.174.174-.29.058-.116.029-.217-.015-.304-.043-.087-.391-.942-.536-1.291-.141-.339-.284-.293-.391-.299-.101-.006-.217-.007-.333-.007s-.304.043-.464.217c-.159.174-.609.594-.609 1.45 0 .855.623 1.682.71 1.798.087.116 1.226 1.872 2.97 2.624.415.179.739.286.992.367.417.133.796.114 1.096.069.334-.05 1.03-.421 1.175-.827.145-.406.145-.754.101-.827-.044-.073-.16-.116-.334-.203z"/></svg>
+            Comprar com Consultora no WhatsApp
+          </button>
+        </div>
+
+        <div class="pm-editorial-perks">
+          <div class="pm-perk-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Palmilha Anatômica Acolchoada de Alta Densidade</span>
+          </div>
+          <div class="pm-perk-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Couro Legítimo & Forração Sedosa que Não Aperta</span>
+          </div>
+          <div class="pm-perk-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span id="pmPerkTroca"></span>
+          </div>
+        </div>
+
+        <p class="pm-desc" id="pmDesc"></p>
+
+        <!-- SEÇÃO DE AVALIAÇÕES DE CLIENTES (DINÂMICA VIA AVALIACOES.JS) -->
+        <div class="pm-reviews-section" id="pmReviewsSection" style="display:none;">
+          <div class="pm-reviews-head">
+            <div class="pm-rev-title-wrap">
+              <h3 class="pm-rev-title">Avaliações & Experiência de Uso</h3>
+              <span class="pm-rev-sub">Comentários de clientes da boutique</span>
+            </div>
+            <div class="pm-rev-stat-badge" id="pmRevStatBadge"></div>
+          </div>
+          <div class="pm-reviews-list" id="pmReviewsList"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       NOVA SACOLA FLUTUANTE (MODERNA & ARREDONDADA)
+  ============================================================ -->
+  <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+  <div class="cart-drawer" id="cartDrawer" role="dialog" aria-label="Sua sacola">
+    <div class="cart-head">
+      <div class="cart-head-title">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+        <h3>Na sacola (<span id="cartCountHead">0</span>)</h3>
+      </div>
+      <button class="pm-close" onclick="closeCart()" aria-label="Fechar sacola">&times;</button>
+    </div>
+    
+    <div class="cart-main-content">
+      <div class="cart-body" id="cartBody"></div>
+
+      <div class="cart-foot">
+        <div class="cart-summary-box">
+          <div class="cart-row">
+            <span>Resumo</span>
+            <span id="cartSummaryCount">0 produtos</span>
+          </div>
+          <div class="cart-row">
+            <span>Subtotal</span>
+            <span id="cartSubtotal">R$ 0,00</span>
+          </div>
+          <div class="cart-row pix">
+            <span id="cartPixLabel">⚡ No PIX</span>
+            <span id="cartPix">R$ 0,00</span>
+          </div>
+          <div class="cart-row inst">
+            <span>Parcelamento</span>
+            <span id="cartInstLabel"></span>
+          </div>
+        </div>
+        
+        <div class="cart-actions">
+          <button class="btn-solid-pill" id="cartCheckout">Fechar pedido &rarr;</button>
+          <button class="btn-outline-pill" onclick="closeCart()">Continuar comprando</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       GUIA DE MEDIDAS
+  ============================================================ -->
+  <div class="guide-overlay" id="guideOverlay" onclick="closeSizeGuide()">
+    <div class="guide-box" onclick="event.stopPropagation()">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+        <h4>Guia de Medidas</h4>
+        <button class="pm-close" onclick="closeSizeGuide()">&times;</button>
+      </div>
+      <table class="guide-table">
+        <tr><th>Tamanho BR</th><th>Comprimento</th></tr>
+        <tr><td>34</td><td>22,5 cm</td></tr>
+        <tr><td>35</td><td>23,2 cm</td></tr>
+        <tr><td>36</td><td>23,8 cm</td></tr>
+        <tr><td>37</td><td>24,5 cm</td></tr>
+        <tr><td>38</td><td>25,2 cm</td></tr>
+        <tr><td>39</td><td>25,8 cm</td></tr>
+        <tr><td>40</td><td>26,5 cm</td></tr>
+        <tr><td>41</td><td>27,2 cm</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       MODAL INSTITUCIONAL (POLÍTICAS, TERMOS, SOBRE)
+  ============================================================ -->
+  <div class="guide-overlay" id="instOverlay" onclick="closeInstitutionalModal()">
+    <div class="guide-box" onclick="event.stopPropagation()" style="max-width:560px;max-height:80vh;overflow-y:auto;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;border-bottom:1px solid var(--color-border);padding-bottom:12px;">
+        <h4 id="instTitle" style="margin:0;">Institucional</h4>
+        <button class="pm-close" onclick="closeInstitutionalModal()">&times;</button>
+      </div>
+      <div id="instBody" style="font-size:13px;line-height:22px;color:var(--color-muted);font-weight:300;"></div>
+    </div>
+  </div>
+
+    <script src="config_loja.js?v=2026_v8"></script>
+  <script src="avaliacoes.js?v=2026_v8"></script>
+  <script src="products.js?v=2026_v8"></script>
+  <script src="app.js?v=2026_v8"></script>
+</body>
+</html>

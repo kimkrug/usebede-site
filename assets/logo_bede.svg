@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" fill="currentColor">
+  <!-- Monograma B-J-D -->
+  <g transform="translate(10, 10)">
+    <!-- Haste central do J com gancho inferior -->
+    <path d="M 28 8 L 28 46 Q 28 56 16 56 Q 8 56 6 52" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+    <!-- B virado para a esquerda -->
+    <path d="M 28 14 C 12 14 10 26 28 28 C 8 30 10 44 28 44" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+    <!-- D virado para a direita -->
+    <path d="M 28 14 C 46 14 46 44 28 44" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Tipografia BEDE com traço limpo e espaçamento moderno -->
+  <text x="82" y="47" font-family="'Montserrat', 'Inter', -apple-system, sans-serif" font-size="38" font-weight="400" letter-spacing="0.14em" fill="currentColor">BEDE</text>
+</svg>

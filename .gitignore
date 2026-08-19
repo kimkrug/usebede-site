@@ -1,0 +1,13 @@
+# Arquivos e pastas pesadas ignoradas
+fotos/
+data/
+scratch/
+__pycache__/
+*.pt
+*.onnx
+*.zip
+*.csv
+*.xlsx
+*.xls
+*.py
+*.log
