@@ -976,8 +976,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   align-items: center;
 }
 .concierge-monogram {
-  width: 46px;
-  height: 46px;
+  width: auto;
+  height: 36px;
+  max-width: 80px;
   object-fit: contain;
   margin-bottom: 16px;
 }
@@ -1567,15 +1568,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #edeae4;
+  background: #edeae4 url('assets/brand/monograma-bd.svg') no-repeat center / 52px auto;
 }
 .p-card.img-fallback .p-card-img::before {
-  content: 'BEDÊ';
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  color: #a39e95;
+  content: '';
+  display: none;
 }
 .p-card-img img {
   width: 100%;
@@ -2645,7 +2642,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     gap: 32px;
   }
   .concierge-vip { margin: 0 auto; text-align: center; }
-  .concierge-monogram { height: 32px; margin-bottom: 10px; }
+  .concierge-monogram { width: auto; height: 26px; max-width: 60px; margin-bottom: 10px; }
   .concierge-title { font-size: 22px; line-height: 1.25; margin-bottom: 8px; }
   .concierge-desc { font-size: 13px; line-height: 20px; margin-bottom: 16px; }
   .btn-whatsapp-vip { padding: 14px 24px; font-size: 11px; width: 100%; }
