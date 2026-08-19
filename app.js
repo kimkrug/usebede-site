@@ -393,18 +393,18 @@
     if (!S.collOpen) document.body.style.overflow = '';
   };
 
-  // Reafirmação contínua de scroll com parada por estabilidade (10 frames consecutivos) e teto de 1500ms
+  // ── FIXAÇÃO DE SCROLL DINÂMICO POR ESTABILIDADE (TETO 1500ms) ─────────────
   function fixarScroll(view, alvo, msMax = 1500) {
     const fim = performance.now() + msMax;
     let estavel = 0;
     const tick = () => {
-      if (Math.abs(view.scrollTop - alvo) > 4) {
-        view.scrollTop = alvo;
+      const target = typeof alvo === 'function' ? alvo() : alvo;
+      if (Math.abs(view.scrollTop - target) > 4) {
+        view.scrollTop = target;
         estavel = 0;
       } else {
         estavel++;
       }
-      // Para quando o alvo se manteve estável por 10 frames seguidos (~160ms) ou atingiu o tempo máximo
       if (estavel < 10 && performance.now() < fim) {
         requestAnimationFrame(tick);
       }
@@ -412,28 +412,22 @@
     requestAnimationFrame(tick);
   }
 
-  // Helper global para resetar o scroll para o topo da grade com a barra visível (à prova de corrida)
+  // Helper global para resetar o scroll para o topo da grade com a barra visível
   window.resetCollectionScroll = function () {
     const view = (typeof D !== 'undefined' && D.collView) || document.getElementById('collectionView');
     if (!view) return;
 
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        const grid = document.querySelector('.collection-grid');
-        const bar = document.querySelector('.collection-sticky-bar');
-        if (!grid) {
-          view.scrollTop = 0;
-          return;
-        }
+    const getAlvo = () => {
+      const grid = document.querySelector('.collection-grid');
+      const bar = document.querySelector('.collection-sticky-bar');
+      if (!grid) return 0;
+      const barHeight = bar ? bar.offsetHeight : 0;
+      return Math.max(0, grid.offsetTop - barHeight - 8);
+    };
 
-        const barHeight = bar ? bar.offsetHeight : 0;
-        const alvo = Math.max(0, grid.offsetTop - barHeight - 8);
-
-        // Atribui instantâneo e reafirma continuamente até estabilizar
-        view.scrollTop = alvo;
-        fixarScroll(view, alvo, 1500);
-      });
-    });
+    const targetAlvo = getAlvo();
+    view.scrollTop = targetAlvo;
+    fixarScroll(view, getAlvo, 1500);
   };
 
   function updateActiveFiltersBadge() {
@@ -1061,18 +1055,94 @@
   window.openSizeGuide = function () { D.guideOvl.classList.add('open'); };
   window.closeSizeGuide = function () { D.guideOvl.classList.remove('open'); };
 
-  const instData = {
+    const instData = {
     sobre: {
-      title: 'Sobre a BEDE',
-      body: '<p style="margin-bottom:12px;">Fundada com o propósito de unir sofisticação atemporal e conforto absoluto, a <strong>BEDE</strong> nasceu da paixão familiar de Bruna, Jussara e Daniele em criar uma experiência única de moda feminina.</p><p style="margin-bottom:12px;">Nossa curadoria é minuciosa: selecionamos matérias-primas nobres, formas anatômicas e designs contemporâneos que acompanham a mulher moderna em todas as ocasiões.</p><p>Localizada em Viamão/RS, nossa boutique oferece atendimento personalizado, consultoria de estilo e envio para todo o Brasil.</p>'
+      title: 'Sobre a BEDÊ Stiletto',
+      body: `
+        <div style="text-align:center;margin-bottom:18px;">
+          <img src="assets/hero_fachada_loja_bede.jpg" alt="Boutique BEDÊ em Viamão" style="width:100%;max-height:220px;object-fit:cover;border-radius:8px;margin-bottom:12px;" onerror="this.style.display='none'">
+        </div>
+        <p style="margin-bottom:14px;line-height:1.6;">Fundada com o propósito de unir elegância atemporal, curadoria refinada e conforto absoluto, a <strong>BEDÊ Stiletto</strong> nasceu da dedicação familiar em criar uma experiência única de calçados e acessórios femininos.</p>
+        <p style="margin-bottom:14px;line-height:1.6;">Nossa boutique física está localizada no coração de Viamão/RS. Cada modelo é selecionado cuidadosamente para valorizar o estilo da mulher contemporânea em todas as ocasiões, desde o dia a dia até momentos especiais.</p>
+        <div style="background:var(--color-surface,#f8f8f8);padding:14px 16px;border-radius:8px;border-left:3px solid var(--color-text,#111);margin-top:16px;">
+          <p style="margin:0;font-size:13px;color:var(--color-muted,#666);"><strong>Boutique Física:</strong> Rua Cirurgião Vaz Ferreira, 457 · Centro · Viamão/RS<br><strong>Atendimento:</strong> Segunda a Sábado · 9h às 19h</p>
+        </div>
+      `
+    },
+    como_comprar: {
+      title: 'Como Comprar',
+      body: `
+        <p style="margin-bottom:14px;line-height:1.6;">Comprar na <strong>BEDÊ</strong> é simples, seguro e com atendimento personalizado direto pelo WhatsApp:</p>
+        <ol style="margin-left:20px;margin-bottom:18px;line-height:1.7;">
+          <li style="margin-bottom:10px;"><strong>Navegue pelo Catálogo:</strong> Escolha seus sapatos ou bolsas favoritos e selecione sua numeração.</li>
+          <li style="margin-bottom:10px;"><strong>Monte sua Sacola:</strong> Adicione os produtos desejados à sacola de compras.</li>
+          <li style="margin-bottom:10px;"><strong>Atendimento no WhatsApp:</strong> Clique em <em>"Fechar Pedido"</em>. Você será direcionada para falar diretamente com nossa consultora.</li>
+          <li style="margin-bottom:10px;"><strong>Confirmação e Pagamento:</strong> Confirmamos o estoque, tiramos dúvidas sobre o calce e enviamos o link de pagamento seguro (PIX ou Cartão de Crédito).</li>
+          <li><strong>Envio ou Retirada:</strong> Seu pedido é embalado com carinho e enviado para seu endereço ou disponibilizado para retirada na boutique.</li>
+        </ol>
+        <div style="background:var(--color-surface,#f8f8f8);padding:12px 16px;border-radius:8px;text-align:center;">
+          <span style="font-size:13px;font-weight:600;">⚡ Precisa de ajuda com numeração? Fale com a consultora pelo WhatsApp!</span>
+        </div>
+      `
+    },
+    trocas: {
+      title: 'Trocas & Devoluções',
+      body: `
+        <p style="margin-bottom:14px;line-height:1.6;">Nosso compromisso é com a sua total satisfação. Se você precisar trocar ou devolver seu calçado, o processo é ágil e humanizado:</p>
+        <ul style="margin-left:20px;margin-bottom:16px;line-height:1.7;">
+          <li style="margin-bottom:8px;"><strong>Direito de Devolução / Arrependimento:</strong> Até 7 dias corridos após o recebimento, conforme o Código de Defesa do Consumidor.</li>
+          <li style="margin-bottom:8px;"><strong>Primeira Troca Facilitada:</strong> Solicitação direto pelo canal de atendimento do WhatsApp [A CONFIRMAR: prazo de dias de troca].</li>
+          <li style="margin-bottom:8px;"><strong>Condições do Produto:</strong> O calçado deve estar sem sinais de uso, em perfeito estado, com etiqueta e na embalagem original da BEDÊ.</li>
+        </ul>
+        <p style="margin-bottom:14px;line-height:1.6;">Para solicitar sua troca, basta enviar uma mensagem no nosso WhatsApp informando o número do pedido ou seu nome completo.</p>
+        <div style="background:#fff8e6;border:1px solid #f0dc9e;padding:10px 14px;border-radius:6px;font-size:12px;color:#856404;margin-top:12px;">
+          📌 <em>Nota de Transparência: Políticas de frete reverso e prazos estendidos em fase de confirmação pela gestão.</em>
+        </div>
+      `
+    },
+    faq: {
+      title: 'Perguntas Frequentes (FAQ)',
+      body: `
+        <div style="display:flex;flex-direction:column;gap:16px;line-height:1.6;">
+          <div>
+            <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">1. Como escolher a minha numeração?</h5>
+            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">Nossos calçados seguem a fôrma padrão brasileira. Você pode consultar nosso Guia de Medidas no site ou chamar nossa consultora no WhatsApp para orientações sobre o calce específico de cada modelo.</p>
+          </div>
+          <div>
+            <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">2. Quais são as formas de pagamento?</h5>
+            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">Aceitamos PIX (com desconto especial) e Cartão de Crédito em até ${CFG.parcelamentoMax}x sem juros [A CONFIRMAR].</p>
+          </div>
+          <div>
+            <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">3. Qual é o prazo de entrega?</h5>
+            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">O prazo varia de acordo com a sua região e a modalidade de frete selecionada [A CONFIRMAR: prazos por região]. Enviamos para todo o Brasil com código de rastreamento.</p>
+          </div>
+          <div>
+            <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">4. Posso retirar meu pedido na loja física?</h5>
+            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">Sim! Você pode fazer o pedido pelo site/WhatsApp e retirar diretamente na nossa boutique em Viamão/RS sem nenhum custo de frete.</p>
+          </div>
+        </div>
+      `
     },
     privacidade: {
       title: 'Política de Privacidade',
-      body: '<p style="margin-bottom:12px;">A <strong>BEDE</strong> valoriza e respeita a privacidade de suas clientes. Seus dados pessoais (como nome, endereço, e-mail e telefone) são coletados exclusivamente para o processamento de pedidos, entrega segura e atendimento personalizado.</p><p style="margin-bottom:12px;">Não comercializamos nem compartilhamos suas informações com terceiros, exceto com parceiros logísticos essenciais para a entrega de suas compras.</p><p>Em conformidade com a LGPD (Lei nº 13.709/2018), você pode solicitar a consulta ou exclusão de seus dados a qualquer momento pelo nosso canal de atendimento.</p>'
+      body: `
+        <p style="margin-bottom:14px;line-height:1.6;">A <strong>BEDÊ Comércio de Calçados e Acessórios LTDA</strong> valoriza e respeita a privacidade de suas clientes. Seus dados pessoais (nome, telefone, endereço e e-mail) são tratados com total sigilo e proteção, em conformidade com a LGPD (Lei Geral de Proteção de Dados - Lei nº 13.709/2018).</p>
+        <p style="margin-bottom:14px;line-height:1.6;"><strong>Uso das Informações:</strong> Seus dados são utilizados estritamente para o processamento de pedidos, entrega segura e atendimento de suporte via WhatsApp.</p>
+        <p style="margin-bottom:14px;line-height:1.6;"><strong>Compartilhamento:</strong> Não comercializamos nem repassamos seus dados a terceiros, exceto com parceiros logísticos indispensáveis para a entrega de suas compras.</p>
+        <p style="margin-bottom:14px;line-height:1.6;">Você tem o direito de solicitar a confirmação, correção ou exclusão definitiva de seus dados cadastrais a qualquer momento através do nosso canal oficial de atendimento.</p>
+        <div style="font-size:12px;color:var(--color-muted,#777);margin-top:16px;border-top:1px solid var(--color-border,#eee);padding-top:10px;">
+          BEDÊ COMÉRCIO DE CALÇADOS E ACESSÓRIOS LTDA · CNPJ ${CFG.cnpj} [A CONFIRMAR] · Viamão / RS
+        </div>
+      `
     },
     termos: {
-      title: 'Termos de Uso',
-      body: `<p style="margin-bottom:12px;">Ao navegar e comprar na boutique online da <strong>BEDE</strong>, você concorda com nossos termos e condições de compra, envio e garantia.</p><p style="margin-bottom:12px;"><strong>Pagamentos:</strong> Aceitamos PIX com ${CFG.descontoPix}% de desconto e parcelamento em até ${CFG.parcelamentoMax}x sem juros no cartão de crédito.</p><p style="margin-bottom:12px;"><strong>Trocas e Devoluções:</strong> Garantimos o direito de troca ou devolução em até 7 dias corridos após o recebimento do produto, em perfeito estado na embalagem original.</p><p>Todos os conteúdos, fotografias, logotipos e marcas presentes neste site são de propriedade exclusiva da BEDE.</p>`
+      title: 'Termos de Compra e Uso',
+      body: `
+        <p style="margin-bottom:12px;line-height:1.6;">Ao navegar e realizar compras na boutique da <strong>BEDÊ</strong>, você concorda com nossos termos e condições gerais de atendimento e comercialização.</p>
+        <p style="margin-bottom:12px;line-height:1.6;"><strong>Pagamentos:</strong> Aceitamos PIX com ${CFG.descontoPix}% de desconto e parcelamento no cartão de crédito em até ${CFG.parcelamentoMax}x sem juros [A CONFIRMAR].</p>
+        <p style="margin-bottom:12px;line-height:1.6;"><strong>Disponibilidade:</strong> Nossos produtos possuem estoque limitado por numeração. Em caso de indisponibilidade simultânea, nossa equipe entrará em contato imediato para substituição ou estorno integral.</p>
+        <p style="margin-bottom:12px;line-height:1.6;"><strong>Propriedade Intelectual:</strong> Todos os logotipos, fotografias, textos e marcas presentes neste site são de propriedade exclusiva da BEDÊ.</p>
+      `
     }
   };
 

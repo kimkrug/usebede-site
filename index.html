@@ -376,11 +376,13 @@
               <!-- COLUNA 2: INSTITUCIONAL & POLÍTICAS -->
               <div class="cf-col">
                 <h4>Institucional</h4>
-                <a href="#" onclick="openInstitutionalModal('sobre');return false;">Sobre a BEDÊ Stiletto</a>
+                <a href="#" onclick="openInstitutionalModal('sobre');return false;">Sobre a BEDÊ</a>
+                <a href="#" onclick="openInstitutionalModal('como_comprar');return false;">Como Comprar</a>
+                <a href="#" onclick="openInstitutionalModal('trocas');return false;">Trocas & Devoluções</a>
+                <a href="#" onclick="openInstitutionalModal('faq');return false;">Perguntas Frequentes (FAQ)</a>
                 <a href="#" onclick="openInstitutionalModal('privacidade');return false;">Política de Privacidade</a>
                 <a href="#" onclick="openInstitutionalModal('termos');return false;">Termos de Compra e Uso</a>
                 <a href="#" onclick="openSizeGuide();return false;">Guia de Numeração e Medidas</a>
-                <a href="https://wa.me/5551980150391?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Trocas%20e%20Devolu%C3%A7%C3%B5es." target="_blank" rel="noopener">Trocas & Devoluções</a>
               </div>
 
               <!-- COLUNA 3: ATENDIMENTO & LOCALIZAÇÃO -->
@@ -783,18 +785,21 @@
        MODAL INSTITUCIONAL (POLÍTICAS, TERMOS, SOBRE)
   ============================================================ -->
   <div class="guide-overlay" id="instOverlay" onclick="closeInstitutionalModal()">
-    <div class="guide-box" onclick="event.stopPropagation()" style="max-width:560px;max-height:80vh;overflow-y:auto;">
+    <div class="guide-box" onclick="event.stopPropagation()" style="max-width:580px;max-height:85vh;overflow-y:auto;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;border-bottom:1px solid var(--color-border);padding-bottom:12px;">
         <h4 id="instTitle" style="margin:0;">Institucional</h4>
         <button class="pm-close" onclick="closeInstitutionalModal()">&times;</button>
       </div>
       <div id="instBody" style="font-size:13px;line-height:22px;color:var(--color-muted);font-weight:300;"></div>
+      <div style="margin-top:24px;border-top:1px solid var(--color-border);padding-top:16px;display:flex;justify-content:flex-end;">
+        <button class="btn-solid-pill" onclick="closeInstitutionalModal()" style="padding:10px 22px;font-size:13px;">&larr; Voltar ao Catálogo</button>
+      </div>
     </div>
   </div>
 
-    <script src="config_loja.js?v=2026_v8"></script>
-  <script src="avaliacoes.js?v=2026_v8"></script>
-  <script src="products.js?v=2026_v8"></script>
-  <script src="app.js?v=2026_v8"></script>
+  <script src="config_loja.js?v=2026_v9"></script>
+  <script src="avaliacoes.js?v=2026_v9"></script>
+  <script src="products.js?v=2026_v9"></script>
+  <script src="app.js?v=2026_v9"></script>
 </body>
 </html>
