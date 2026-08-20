@@ -152,6 +152,8 @@
     if (footHor) footHor.textContent = CFG.horario;
     const footPix = $('footerPixTag');
     if (footPix) footPix.textContent = `PIX ${CFG.descontoPix}% OFF`;
+    const footCartao = $('footerCartaoTag');
+    if (footCartao) footCartao.textContent = CFG.parcelamentoMax ? `Cartão em até ${CFG.parcelamentoMax}x` : 'Cartão de Crédito';
     const footLeg = $('footerLegal');
     if (footLeg) footLeg.textContent = `${CFG.razaoSocial} · CNPJ ${CFG.cnpj} · ${CFG.endereco}`;
 
@@ -839,7 +841,7 @@
       p.cores.forEach(c => {
         const isActive = (S.selectedColor === c);
         colHtml += `<span class="col-pill ${isActive ? 'active' : ''}" 
-          onclick="S.selectedColor='${c}'; S.size=null; updateVariationUI();">
+          onclick="selectColor('${c}', this)">
           ${c}
         </span>`;
       });
@@ -868,7 +870,7 @@
         const isDisabled = !isAvailable;
         
         szHtml += `<span class="sz-pill ${isDisabled ? 'disabled' : ''} ${isActive ? 'active' : ''}" 
-          onclick="if(!this.classList.contains('disabled')){ S.size='${sz}'; updateVariationUI(); }">
+          onclick="selectSize('${sz}', this)">
           ${sz}
         </span>`;
       });
@@ -946,7 +948,6 @@
     D.pmDesc.textContent = p.descricao || 'Acabamento artesanal nobre com palmilha anatômica e design contemporâneo.';
 
     updateVariationUI();
-    openProductModal();
 
     // Gerenciamento de Avaliações Reais (AVALIACOES.js)
     const revSection = $('pmReviewsSection');
@@ -1016,11 +1017,6 @@
       }
     }
 
-    const sizes = p.tamanhos || ['34','35','36','37','38','39','40'];
-    D.pmSizes.innerHTML = sizes.map(s =>
-      `<button class="sz-btn ${s === S.size ? 'active' : ''}" onclick="selectSize('${s}',this)">${s}</button>`
-    ).join('');
-
     if (D.prodModal) D.prodModal.classList.add('open');
   };
 
@@ -1036,21 +1032,29 @@
     if (!S.collOpen && D.header) D.header.classList.add('ghost');
   };
 
-  window.selectSize = function (s, btn) {
-    S.size = s;
-    document.querySelectorAll('.sz-btn').forEach(b => b.classList.remove('active'));
-    if (btn) btn.classList.add('active');
+  window.selectColor = function (c, btn) {
+    S.selectedColor = c;
+    S.size = null;
+    updateVariationUI();
   };
 
-  // Botões do produto
-  if (D.pmAddBtn) {
-    D.pmAddBtn.addEventListener('click', () => {
-      if (!S.product) return;
-      addToCart(S.product, S.size);
-      closeProduct();
-      openCart();
-    });
-  }
+  window.selectSize = function (s, btn) {
+    if (btn && btn.classList.contains('disabled')) return;
+    S.size = s;
+    updateVariationUI();
+  };
+
+  window.addCurrentToSelection = function () {
+    const p = S.product;
+    if (!p) return;
+    if (!S.size) {
+      alert('Selecione cor e tamanho');
+      return;
+    }
+    addToCart(p, S.size);
+    closeProduct();
+    openCart();
+  };
 
   if (D.pmWaBtn) {
     D.pmWaBtn.addEventListener('click', () => {
