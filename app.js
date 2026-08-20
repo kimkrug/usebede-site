@@ -111,8 +111,8 @@
     const homeBar = $('homeBarClaims');
     if (homeBar) {
       homeBar.textContent = CFG.parcelamentoMax
-        ? `Frete grátis acima de R$ ${CFG.freteGratisAcimaDe} para Sul e Sudeste · até ${CFG.parcelamentoMax}x`
-        : `Frete grátis acima de R$ ${CFG.freteGratisAcimaDe} para Sul e Sudeste · ⚡ ${CFG.descontoPix}% no PIX`;
+        ? `Frete grátis acima de R$ ${CFG.freteGratisAcimaDe} · até ${CFG.parcelamentoMax}x`
+        : `Frete grátis acima de R$ ${CFG.freteGratisAcimaDe} · ⚡ ${CFG.descontoPix}% no PIX`;
     }
 
     // 2. Gaveta Mobile
@@ -178,7 +178,7 @@
     updateWishlistBadge();
     updateActiveFiltersBadge();
     updateSaleUI();
-    renderMobileMenu();
+    renderMenus();
     goToSlide(0, true);
   }
 
@@ -1242,7 +1242,7 @@
           </div>
           <div>
             <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">3. Qual é o prazo de entrega?</h5>
-            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">O prazo de entrega é informado no fechamento do pedido, conforme o CEP de entrega. Compras acima de R$ 449 têm frete grátis para as regiões Sul e Sudeste.</p>
+            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">O prazo de entrega é informado no fechamento do pedido, conforme o CEP de entrega. Compras acima de R$ 449 têm frete grátis.</p>
           </div>
           <div>
             <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">4. Posso retirar meu pedido na loja física?</h5>
@@ -1267,7 +1267,7 @@
       title: 'Termos de Compra e Uso',
       body: `
         <p style="margin-bottom:12px;line-height:1.6;">Ao navegar e realizar compras na boutique da <strong>BEDÊ</strong>, você concorda com nossos termos e condições gerais de atendimento e comercialização.</p>
-        <p style="margin-bottom:12px;line-height:1.6;"><strong>Pagamentos:</strong> Aceitamos PIX com ${CFG.descontoPix}% de desconto e parcelamento no cartão de crédito em até ${CFG.parcelamentoMax}x sem juros .</p>
+        <p style="margin-bottom:12px;line-height:1.6;"><strong>Pagamentos:</strong> Aceitamos PIX com ${CFG.descontoPix}% de desconto${CFG.parcelamentoMax ? ` e parcelamento no cartão em até ${CFG.parcelamentoMax}x sem juros` : ''}.</p>
         <p style="margin-bottom:12px;line-height:1.6;"><strong>Disponibilidade:</strong> Nossos produtos possuem estoque limitado por numeração. Em caso de indisponibilidade simultânea, nossa equipe entrará em contato imediato para substituição ou estorno integral.</p>
         <p style="margin-bottom:12px;line-height:1.6;"><strong>Propriedade Intelectual:</strong> Todos os logotipos, fotografias, textos e marcas presentes neste site são de propriedade exclusiva da BEDÊ.</p>
       `
@@ -1317,6 +1317,81 @@
     if (ovl) ovl.classList.remove('open');
   };
 
+
+  // ============================================================
+  // MENUS DINÂMICOS — chips, dropdown desktop e gaveta mobile
+  // Gerados a partir das categorias presentes em PRODUCTS.
+  // NUNCA editar as listas no HTML diretamente.
+  // ============================================================
+  const MENU_NAV = [
+    { key: 'SCARPIN',            label: 'Scarpins & Saltos',    group: 'calcados' },
+    { key: 'BOTA',               label: 'Botas & Coturnos',     group: 'calcados' },
+    { key: 'SANDÁLIA',           label: 'Sandálias & Festa',    group: 'calcados' },
+    { key: 'PAPETE',             label: 'Papetes & Rasteiras',  group: 'calcados' },
+    { key: 'MOCASSIM',           label: 'Mocassins & Loafers',  group: 'calcados' },
+    { key: 'MULE',               label: 'Mules & Tamancos',     group: 'calcados' },
+    { key: 'TÊNIS',              label: 'Tênis Contemporâneos', group: 'calcados' },
+    { key: 'SLINGBACK',          label: 'Slingbacks',           group: 'calcados' },
+    { key: 'SAPATILHA',          label: 'Sapatilhas',           group: 'calcados' },
+    { key: 'CHINELO',            label: 'Chinelos',             group: 'calcados' },
+    { key: 'RASTEIRINHA',        label: 'Rasteirinhas',         group: 'calcados' },
+    { key: 'TAMANCO',            label: 'Tamancos',             group: 'calcados' },
+    { key: 'BOLSA',              label: 'Bolsas & Acessórios',  group: 'bolsas'   }
+  ];
+
+  function hasProductsForKey(key) {
+    return PRODUCTS.some(p => {
+      const cat = (p.categoria || '').toUpperCase();
+      if (key === 'BOTA') return cat.includes('BOTA') || cat.includes('COTURNO');
+      if (key === 'TÊNIS') return cat.includes('TÊNIS') || cat.includes('TENIS');
+      return cat.includes(key.toUpperCase());
+    });
+  }
+
+  function renderMenus() {
+    const activeNav = MENU_NAV.filter(item => hasProductsForKey(item.key));
+
+    // — Chips de categoria (barra de filtros na vitrine) —
+    const chipsContainer = document.getElementById('filterChips');
+    if (chipsContainer) {
+      let html = '<button class="f-chip active" onclick="filterCat('ALL',this)">Todos</button>';
+      activeNav.forEach(item => {
+        html += `<button class="f-chip" onclick="filterCat('${item.key}',this)">${item.label}</button>`;
+      });
+      // Liquidação: só aparece se existir produto com preco_antigo real
+      const temLiquidacao = PRODUCTS.some(p => p.preco_antigo && Number(p.preco_antigo) > Number(p.preco));
+      if (temLiquidacao) {
+        html += `<button class="f-chip" id="chipLiquidacao" onclick="filterCat('LIQUIDAÇÃO',this)">Sale / Off</button>`;
+      }
+      chipsContainer.innerHTML = html;
+    }
+
+    // — Dropdown do desktop (submenu Calçados no header) —
+    const desktopSubMenu = document.getElementById('desktopSubMenu');
+    if (desktopSubMenu) {
+      const calcadoItems = activeNav.filter(i => i.group === 'calcados');
+      const bolsaItems   = activeNav.filter(i => i.group === 'bolsas');
+      let html = `<a href="#" onclick="openCollection('CALÇADOS');return false;" class="sub-link view-all-link">Ver Todos os Calçados</a>`;
+      calcadoItems.forEach(item => {
+        html += `<a href="#" onclick="openCollection('${item.key}');return false;" class="sub-link">${item.label}</a>`;
+      });
+      bolsaItems.forEach(item => {
+        html += `<a href="#" onclick="openCollection('${item.key}');return false;" class="sub-link">${item.label}</a>`;
+      });
+      desktopSubMenu.innerHTML = html;
+    }
+
+    // — Gaveta mobile (accordion de Calçados) —
+    const mobSub = document.getElementById('mobSubCategories');
+    if (mobSub) {
+      let html = `<a href="#" onclick="openCollection('CALÇADOS');closeMobileMenu();return false;" class="mob-sub-link highlight">Ver Todos os Calçados</a>`;
+      activeNav.forEach(item => {
+        html += `<a href="#" onclick="openCollection('${item.key}');closeMobileMenu();return false;" class="mob-sub-link">${item.label}</a>`;
+      });
+      mobSub.innerHTML = html;
+    }
+  }
+
   // ── START ──────────────────────────────────────────────────
   document.addEventListener('DOMContentLoaded', init);
 
@@ -1340,38 +1415,7 @@
   };
 
   
-  window.renderMobileMenu = function() {
-    const mobSub = document.getElementById('mobSubCategories');
-    if (!mobSub || !window.PRODUCTS) return;
-
-        const navCategories = [
-      { key: 'SCARPIN', label: 'Scarpins & Saltos' },
-      { key: 'BOTA', label: 'Botas & Coturnos' },
-      { key: 'SANDÁLIA', label: 'Sandálias & Festa' },
-      { key: 'PAPETE', label: 'Papetes & Rasteirinhas' },
-      { key: 'MOCASSIM', label: 'Mocassins & Loafers' },
-      { key: 'MULE', label: 'Mules & Tamancos' },
-      { key: 'TÊNIS', label: 'Tênis Contemporâneos' },
-      { key: 'SLINGBACK', label: 'Slingbacks' },
-      { key: 'SAPATILHA', label: 'Sapatilhas' },
-      { key: 'BOLSA', label: 'Bolsas & Acessórios' }
-    ];
-
-    let html = '<a href="#" onclick="openCollection(\'CALÇADOS\');closeMobileMenu();return false;" class="mob-sub-link highlight">Ver Todos os Calçados</a>';
-    
-    navCategories.forEach(item => {
-      const hasProds = PRODUCTS.some(p => {
-        const cat = (p.categoria || '').toUpperCase();
-        if (item.key === 'BOTA') return cat.includes('BOTA') || cat.includes('COTURNO');
-        return cat.includes(item.key);
-      });
-      if (hasProds) {
-        html += `<a href="#" onclick="openCollection('${item.key}');closeMobileMenu();return false;" class="mob-sub-link">${item.label}</a>`;
-      }
-    });
-    
-    mobSub.innerHTML = html;
-  };
+;
 
   window.updateSaleUI = function() {
     const saleMax = descontoMaximoReal(PRODUCTS);

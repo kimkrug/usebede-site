@@ -55,7 +55,7 @@
 
         <!-- MENU NAV NA ESQUERDA COM SUBMENU EM CALÇADOS -->
         <nav class="main-nav" id="mainNav">
-          <a class="nav-item nav-priority" href="#" onclick="openCollection('NOVIDADES');return false;">Novidades</a>
+          <!-- NOVIDADES removido: nenhum produto marcado com novidade=true no catálogo -->
           
           <!-- DROPDOWN CALÇADOS -->
           <div class="nav-dropdown-wrap" id="navDropdownWrap">
@@ -65,19 +65,8 @@
             </a>
             <div class="nav-submenu" id="navSubmenu">
               <div class="submenu-grid">
-                <div class="submenu-col">
-                  <span class="sub-col-title">Por Modelo</span>
-                  <a href="#" onclick="openCollection('SCARPIN');return false;" class="sub-link">Scarpins & Saltos</a>
-                  <a href="#" onclick="openCollection('MOCASSIM');return false;" class="sub-link">Mocassins & Loafers</a>
-                  <a href="#" onclick="openCollection('MULE');return false;" class="sub-link">Mules & Tamancos</a>
-                  <a href="#" onclick="openCollection('TÊNIS');return false;" class="sub-link">Tênis Contemporâneos</a>
-                </div>
-                <div class="submenu-col">
-                  <span class="sub-col-title">Botas & Essenciais</span>
-                  <a href="#" onclick="openCollection('BOTA CANO CURTO');return false;" class="sub-link">Botas Cano Curto</a>
-                  <a href="#" onclick="openCollection('BOTA CANO MÉDIO');return false;" class="sub-link">Botas Cano Médio</a>
-                  <a href="#" onclick="openCollection('BOTA CANO LONGO');return false;" class="sub-link">Botas Cano Longo / Over</a>
-                  <a href="#" onclick="openCollection('COTURNO');return false;" class="sub-link">Coturnos & Tratoradas</a>
+                <div class="submenu-col" id="desktopSubMenu">
+                  <!-- Preenchido por renderMenus() em runtime a partir de PRODUCTS -->
                 </div>
                 <div class="submenu-col submenu-highlight">
                   <span class="sub-col-title">Curadoria</span>
@@ -188,10 +177,7 @@
       <button class="mob-drawer-close" onclick="closeMobileMenu()" aria-label="Fechar menu">&times;</button>
     </div>
     <div class="mob-drawer-nav">
-      <a href="#" onclick="openCollection('NOVIDADES');closeMobileMenu();return false;" class="mob-nav-link highlight">
-        <span>Novidades da Coleção</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-      </a>
+      <!-- NOVIDADES removido do mobile: sem produtos marcados como novidade -->
 
       <!-- ACCORDION CALÇADOS MOBILE -->
       <div class="mob-accordion">
@@ -200,12 +186,7 @@
           <svg class="mob-acc-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
         <div class="mob-sub-menu" id="mobSubCategories">
-          <a href="#" onclick="openCollection('CALÇADOS');closeMobileMenu();return false;" class="mob-sub-link highlight">Ver Todos os Calçados</a>
-          <a href="#" onclick="openCollection('SCARPIN');closeMobileMenu();return false;" class="mob-sub-link">Scarpins & Saltos Finos</a>
-          <a href="#" onclick="openCollection('BOTA');closeMobileMenu();return false;" class="mob-sub-link">Botas & Coturnos</a>
-          <a href="#" onclick="openCollection('MOCASSIM');closeMobileMenu();return false;" class="mob-sub-link">Mocassins & Loafers</a>
-          <a href="#" onclick="openCollection('MULE');closeMobileMenu();return false;" class="mob-sub-link">Mules & Tamancos</a>
-          <a href="#" onclick="openCollection('TÊNIS');closeMobileMenu();return false;" class="mob-sub-link">Tênis Contemporâneos</a>
+          <!-- Preenchido por renderMenus() em runtime a partir de PRODUCTS -->
         </div>
       </div>
 
@@ -469,18 +450,7 @@
       <div class="sticky-bar-top-row">
         <!-- CHIPS DE CATEGORIA EM ROLAGEM HORIZONTAL -->
         <div class="filter-chips" id="filterChips">
-          <button class="f-chip active" onclick="filterCat('ALL',this)">Todos</button>
-          <button class="f-chip" onclick="filterCat('SCARPIN',this)">Scarpins</button>
-        <button class="f-chip" onclick="filterCat('SANDÁLIA',this)">Sandálias</button>
-        <button class="f-chip" onclick="filterCat('PAPETE',this)">Papetes</button>
-          <button class="f-chip" onclick="filterCat('BOTA',this)">Botas & Coturnos</button>
-          <button class="f-chip" onclick="filterCat('BOLSA',this)">Bolsas</button>
-          <button class="f-chip" onclick="filterCat('TÊNIS',this)">Tênis</button>
-          <button class="f-chip" onclick="filterCat('MOCASSIM',this)">Mocassins</button>
-          <button class="f-chip" onclick="filterCat('MULE',this)">Mules</button>
-          <button class="f-chip" onclick="filterCat('SLINGBACK',this)">Slingbacks</button>
-          <button class="f-chip" onclick="filterCat('SAPATILHA',this)">Sapatilhas</button>
-          <button class="f-chip" onclick="filterCat('LIQUIDAÇÃO',this)">Sale / Off</button>
+          <!-- Preenchido por renderMenus() em runtime a partir de PRODUCTS -->
         </div>
 
         <!-- BOTÃO COMPACTO DE FILTROS (VISÍVEL NO ESTADO CONDENSADO) -->

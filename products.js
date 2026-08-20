@@ -3,7 +3,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325661",
         "nome": "BOTA CAPA SALTO BLOCO",
         "categoria": "BOTA CANO MÉDIO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-capa-salto-bloco/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-capa-salto-bloco/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0cedacdf/original-66cbd0cf94b87.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0cedacdf/original-66cbd0cf94b87.jpeg",
@@ -12,16 +12,16 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 339.9,
         "cores": [
-            "BLUSH",
             "TAUPE",
-            "Preto"
+            "Preto",
+            "BLUSH"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "BLUSH": {
@@ -108,7 +108,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325663",
         "nome": "BOTA CANO ALTO SALTO TAÇA",
         "categoria": "BOTA CANO LONGO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-cano-alto-salto-taca/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-cano-alto-salto-taca/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d2a30d6/whatsapp-image-2025-06-05-at-13-29-41-6841d2380f04c.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d2a30d6/whatsapp-image-2025-06-05-at-13-29-41-6841d2380f04c.jpeg",
@@ -120,15 +120,15 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 369.9,
         "cores": [
-            "MALBEC",
-            "Preto"
+            "Preto",
+            "MALBEC"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "MALBEC": {
@@ -194,7 +194,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325664",
         "nome": "SAPATO PATRÍCIA",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sapato-patricia/",
+        "url_absolute": "https://www.loja.usebede.com.br/sapato-patricia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d6241e4/original-66cbd0d6bff43.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d6241e4/original-66cbd0d6bff43.jpeg",
@@ -210,12 +210,12 @@ const STILETTO_PRODUCTS = [
             "CACAU"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "CACAU": {
@@ -316,7 +316,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325666",
         "nome": "SCARPIN LEONA",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-leona/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-leona/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dab96e3/original-66cbd0dae3d0f.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dab96e3/original-66cbd0dae3d0f.jpeg",
@@ -327,11 +327,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -369,7 +369,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325667",
         "nome": "BOTA OVER MALHA",
         "categoria": "BOTA CANO LONGO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/botas-tec-mlr-3685-preto/",
+        "url_absolute": "https://www.loja.usebede.com.br/botas-tec-mlr-3685-preto/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dc1ad5d/img_0892-66df156777c82.jpg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dc1ad5d/img_0892-66df156777c82.jpg",
@@ -380,10 +380,10 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
             "36",
-            "34",
-            "35"
+            "35",
+            "37",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -417,7 +417,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325668",
         "nome": "BOTA MALHA CANO MÉDIO SALTO FINO",
         "categoria": "BOTA CANO MÉDIO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-malha-cano-medio-salto-fino/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-malha-cano-medio-salto-fino/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dc9a3e7/original-66cbd0dcc4d2d.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dc9a3e7/original-66cbd0dcc4d2d.jpeg",
@@ -431,11 +431,11 @@ const STILETTO_PRODUCTS = [
             "Preto"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -499,7 +499,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325670",
         "nome": "BOLSA POCHETE JESSICA",
         "categoria": "BOLSA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bolsa-pochete-jessica/",
+        "url_absolute": "https://www.loja.usebede.com.br/bolsa-pochete-jessica/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e0ce476/img_0882-66df0647bb6c1.jpg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e0ce476/img_0882-66df0647bb6c1.jpg",
@@ -512,9 +512,9 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 347.9,
         "cores": [
-            "CROCO",
             "Preto",
-            "Mostarda"
+            "Mostarda",
+            "CROCO"
         ],
         "tamanhos": [
             "Único"
@@ -560,7 +560,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325671",
         "nome": "SCARPIN COURO",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-couro/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-couro/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e161bd7/original-66cbd0e275e5d.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e161bd7/original-66cbd0e275e5d.jpeg",
@@ -573,18 +573,18 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 220.9,
         "cores": [
-            "nude",
             "Preto",
+            "nude",
             "OFF WHITE",
             "caramelo"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -715,7 +715,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325673",
         "nome": "TENIS DALIA",
         "categoria": "TÊNIS",
-        "url_absolute": "https://www.stilettobmaisd.com.br/tenis-dalia/",
+        "url_absolute": "https://www.loja.usebede.com.br/tenis-dalia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e6de7dd/original-66cbd0e719454.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e6de7dd/original-66cbd0e719454.jpeg",
@@ -726,11 +726,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -768,7 +768,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325674",
         "nome": "BOTAS CROCO",
         "categoria": "BOTA CANO MÉDIO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/botas-croco/",
+        "url_absolute": "https://www.loja.usebede.com.br/botas-croco/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e8632a8/original-66cbd0e8902d1.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e8632a8/original-66cbd0e8902d1.jpeg",
@@ -780,8 +780,8 @@ const STILETTO_PRODUCTS = [
         ],
         "tamanhos": [
             "37",
-            "36",
-            "35"
+            "35",
+            "36"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -811,7 +811,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325675",
         "nome": "MOCASSIM COM CRAVINHOS",
         "categoria": "MOCASSIM",
-        "url_absolute": "https://www.stilettobmaisd.com.br/mocassim-com-cravinhos/",
+        "url_absolute": "https://www.loja.usebede.com.br/mocassim-com-cravinhos/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e9afb22/whatsapp-image-2024-07-31-at-17-32-00-66e19dfd809df.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e9afb22/whatsapp-image-2024-07-31-at-17-32-00-66e19dfd809df.jpeg",
@@ -821,18 +821,18 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 149.9,
         "cores": [
-            "caramelo",
             "Preto",
+            "MARSALA",
             "OFF WHITE",
-            "MARSALA"
+            "caramelo"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "MARSALA": {
@@ -960,7 +960,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325676",
         "nome": "MULE COURO FIVELA",
         "categoria": "MULE",
-        "url_absolute": "https://www.stilettobmaisd.com.br/mule-couro-fivela/",
+        "url_absolute": "https://www.loja.usebede.com.br/mule-couro-fivela/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ec220f7/whatsapp-image-2024-09-11-at-11-06-49-1-66e1a5ce3f0e0.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ec220f7/whatsapp-image-2024-09-11-at-11-06-49-1-66e1a5ce3f0e0.jpeg",
@@ -972,19 +972,19 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 199.9,
         "cores": [
-            "Rosa claro",
-            "caramelo",
             "Azul",
+            "Rosa claro",
             "Preto",
+            "caramelo",
             "OFF WHITE"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Azul": {
@@ -1142,7 +1142,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325677",
         "nome": "BOTA CANO MÉDIO SALTO TAÇA",
         "categoria": "BOTA CANO MÉDIO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-cano-medio-salto-taca/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-cano-medio-salto-taca/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ef2e3bf/original-66cbd0ef6ac12.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ef2e3bf/original-66cbd0ef6ac12.jpeg",
@@ -1153,16 +1153,16 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 279.9,
         "cores": [
-            "MALBEC",
             "Preto",
+            "MALBEC",
             "CACAU"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "CACAU": {
@@ -1251,7 +1251,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325680",
         "nome": "TENIS JANE",
         "categoria": "TÊNIS",
-        "url_absolute": "https://www.stilettobmaisd.com.br/tenis-jane/",
+        "url_absolute": "https://www.loja.usebede.com.br/tenis-jane/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f3c2c37/original-66cbd0f3f0583.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f3c2c37/original-66cbd0f3f0583.jpeg",
@@ -1262,11 +1262,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -1304,7 +1304,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325681",
         "nome": "BOTA MONTARIA CELINE COURO FLOATER",
         "categoria": "BOTA CANO BAIXO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-montaria-celine-couro-floater/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-montaria-celine-couro-floater/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f52e351/original-66cbd0f660b5a.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f52e351/original-66cbd0f660b5a.jpeg",
@@ -1319,10 +1319,10 @@ const STILETTO_PRODUCTS = [
             "Cinza"
         ],
         "tamanhos": [
-            "37",
             "36",
-            "34",
-            "35"
+            "35",
+            "37",
+            "34"
         ],
         "estoque_por_cor": {
             "Cinza": {
@@ -1402,7 +1402,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325685",
         "nome": "BOTA FERNANDA",
         "categoria": "BOTA CANO BAIXO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-malha-cano-curto-salto-fino/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-malha-cano-curto-salto-fino/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f93d264/original-66cbd0fa7012d.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f93d264/original-66cbd0fa7012d.jpeg",
@@ -1418,12 +1418,12 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -1524,7 +1524,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325687",
         "nome": "BOTAS COURO FLY TIRA ENFEITE",
         "categoria": "COTURNO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/botas-couro-fly-tira-enfeite/",
+        "url_absolute": "https://www.loja.usebede.com.br/botas-couro-fly-tira-enfeite/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10b6ee7f/original-66cbd10c3321f.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10b6ee7f/original-66cbd10c3321f.jpeg",
@@ -1535,11 +1535,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -1577,7 +1577,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325688",
         "nome": "SLINGBACK POÁ",
         "categoria": "SLINGBACK",
-        "url_absolute": "https://www.stilettobmaisd.com.br/slingback-poa/",
+        "url_absolute": "https://www.loja.usebede.com.br/slingback-poa/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10d32b62/original-66cbd10e2eb8f.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10d32b62/original-66cbd10e2eb8f.jpeg",
@@ -1588,19 +1588,19 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 179.9,
         "cores": [
-            "Azul meia-noite",
-            "Prata",
             "MARSALA",
-            "Preto",
-            "OFF WHITE"
+            "OFF WHITE",
+            "Prata",
+            "Azul meia-noite",
+            "Preto"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Azul meia-noite": {
@@ -1757,7 +1757,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325689",
         "nome": "TENIS COURO",
         "categoria": "TÊNIS",
-        "url_absolute": "https://www.stilettobmaisd.com.br/tenis-couro/",
+        "url_absolute": "https://www.loja.usebede.com.br/tenis-couro/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd111e9321/original-66cbd1122ae8e.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd111e9321/original-66cbd1122ae8e.jpeg",
@@ -1773,11 +1773,11 @@ const STILETTO_PRODUCTS = [
             "Cinza"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Branco": {
@@ -1866,7 +1866,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325690",
         "nome": "TENIS MARI",
         "categoria": "TÊNIS",
-        "url_absolute": "https://www.stilettobmaisd.com.br/tenis-mari/",
+        "url_absolute": "https://www.loja.usebede.com.br/tenis-mari/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd115d43f0/original-66cbd1165c1c7.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd115d43f0/original-66cbd1165c1c7.jpeg",
@@ -1881,11 +1881,11 @@ const STILETTO_PRODUCTS = [
             "Branco"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Branco": {
@@ -1977,7 +1977,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325691",
         "nome": "SCARPIN ARIANA VERNIZ",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-ariana-verniz/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-ariana-verniz/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd118dafd9/original-66cbd11915cc3.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd118dafd9/original-66cbd11915cc3.jpeg",
@@ -1989,9 +1989,9 @@ const STILETTO_PRODUCTS = [
         ],
         "tamanhos": [
             "36",
-            "34",
             "35",
-            "38"
+            "38",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -2025,7 +2025,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325692",
         "nome": "MOCHILA LIA",
         "categoria": "BOLSA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/mochila-lia/",
+        "url_absolute": "https://www.loja.usebede.com.br/mochila-lia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a41954/whatsapp-image-2024-09-11-at-10-52-42-66e1a302a0507.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a41954/whatsapp-image-2024-09-11-at-10-52-42-66e1a302a0507.jpeg",
@@ -2036,8 +2036,8 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 437.5,
         "cores": [
-            "pinhão",
-            "Preto"
+            "Preto",
+            "pinhão"
         ],
         "tamanhos": [
             "Único"
@@ -2075,87 +2075,10 @@ const STILETTO_PRODUCTS = [
         "novidade": false
     },
     {
-        "id": "3325693",
-        "nome": "BOLSA LARA PEQUENA",
-        "categoria": "BOLSA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bolsa-lara-pequena/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11b47b7f.jpeg",
-        "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11b47b7f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11abf3cb.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/whatsapp-image-2025-06-07-at-12-09-52-684456568ab75.jpeg"
-        ],
-        "preco": 349.9,
-        "cores": [
-            "azul marinho",
-            "Preto",
-            "Marrom",
-            "Dourado",
-            "OFF WHITE"
-        ],
-        "tamanhos": [
-            "Único"
-        ],
-        "estoque_por_cor": {
-            "Dourado": {
-                "Único": {
-                    "qtd": 1,
-                    "id_variacao": "14111532"
-                }
-            },
-            "Marrom": {
-                "Único": {
-                    "qtd": 0,
-                    "id_variacao": "9749766"
-                }
-            },
-            "OFF WHITE": {
-                "Único": {
-                    "qtd": 0,
-                    "id_variacao": "9749764"
-                }
-            },
-            "Preto": {
-                "Único": {
-                    "qtd": -2,
-                    "id_variacao": "9749765"
-                }
-            },
-            "azul marinho": {
-                "Único": {
-                    "qtd": 1,
-                    "id_variacao": "14111531"
-                }
-            }
-        },
-        "fotos_por_cor": {
-            "Dourado": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11b47b7f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11abf3cb.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/whatsapp-image-2025-06-07-at-12-09-52-684456568ab75.jpeg"
-            ],
-            "Marrom": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11b47b7f.jpeg"
-            ],
-            "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11abf3cb.jpeg"
-            ],
-            "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/whatsapp-image-2025-06-07-at-12-09-52-684456568ab75.jpeg"
-            ],
-            "azul marinho": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11b47b7f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11abf3cb.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/whatsapp-image-2025-06-07-at-12-09-52-684456568ab75.jpeg"
-            ]
-        },
-        "novidade": false
-    },
-    {
         "id": "3325695",
         "nome": "SCARPIN FIVELA",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-fivela/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-fivela/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11c22670/original-66cbd11c4d3ec.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11c22670/original-66cbd11c4d3ec.jpeg",
@@ -2168,11 +2091,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -2209,105 +2132,10 @@ const STILETTO_PRODUCTS = [
         "novidade": false
     },
     {
-        "id": "3325696",
-        "nome": "BOLSA CARLA",
-        "categoria": "BOLSA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bolsa-carla/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-2-66e87d6adf8ae.jpeg",
-        "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-2-66e87d6adf8ae.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6b53852.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6ba402f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-36-50-66e87d6a0909e.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6a547a9.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6a93804.jpeg"
-        ],
-        "preco": 449.9,
-        "cores": [
-            "PRETO CROCO",
-            "caramelo",
-            "Preto",
-            "Azul escuro",
-            "Vermelho escuro"
-        ],
-        "tamanhos": [
-            "Único"
-        ],
-        "estoque_por_cor": {
-            "Azul escuro": {
-                "Único": {
-                    "qtd": 0,
-                    "id_variacao": "9749774"
-                }
-            },
-            "PRETO CROCO": {
-                "Único": {
-                    "qtd": 1,
-                    "id_variacao": "13023688"
-                }
-            },
-            "Preto": {
-                "Único": {
-                    "qtd": -2,
-                    "id_variacao": "9749773"
-                }
-            },
-            "Vermelho escuro": {
-                "Único": {
-                    "qtd": 1,
-                    "id_variacao": "9749776"
-                }
-            },
-            "caramelo": {
-                "Único": {
-                    "qtd": 0,
-                    "id_variacao": "9749775"
-                }
-            }
-        },
-        "fotos_por_cor": {
-            "Azul escuro": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-2-66e87d6adf8ae.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6b53852.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6ba402f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-36-50-66e87d6a0909e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6a547a9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6a93804.jpeg"
-            ],
-            "PRETO CROCO": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-2-66e87d6adf8ae.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6b53852.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6ba402f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-36-50-66e87d6a0909e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6a547a9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6a93804.jpeg"
-            ],
-            "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-2-66e87d6adf8ae.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6b53852.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6ba402f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-36-50-66e87d6a0909e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6a547a9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6a93804.jpeg"
-            ],
-            "Vermelho escuro": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-36-50-66e87d6a0909e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6a547a9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6a93804.jpeg"
-            ],
-            "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-2-66e87d6adf8ae.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6b53852.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6ba402f.jpeg"
-            ]
-        },
-        "novidade": false
-    },
-    {
         "id": "3325697",
         "nome": "SCARPIN LUISA VAZADO",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-luisa-vazado/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-luisa-vazado/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11f1ef9f/original-66cbd12154228.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11f1ef9f/original-66cbd12154228.jpeg",
@@ -2319,16 +2147,16 @@ const STILETTO_PRODUCTS = [
         "preco": 290.9,
         "cores": [
             "CARVALHO",
+            "OFF WHITE",
             "Carmesim",
-            "Preto",
-            "OFF WHITE"
+            "Preto"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "CARVALHO": {
@@ -2441,7 +2269,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325698",
         "nome": "MOCASSIM COURO",
         "categoria": "MOCASSIM",
-        "url_absolute": "https://www.stilettobmaisd.com.br/mocassim-couro/",
+        "url_absolute": "https://www.loja.usebede.com.br/mocassim-couro/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd123ab412/original-66cbd123d4ecb.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd123ab412/original-66cbd123d4ecb.jpeg",
@@ -2452,12 +2280,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
-            "38",
             "33",
-            "35",
+            "38",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -2499,7 +2327,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325699",
         "nome": "BOTA PRADA",
         "categoria": "COTURNO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-prada/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-prada/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12555dac/original-66cbd125ee030.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12555dac/original-66cbd125ee030.jpeg",
@@ -2512,11 +2340,11 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Marrom": {
@@ -2579,7 +2407,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325700",
         "nome": "SLINGBACK SLIN",
         "categoria": "SLINGBACK",
-        "url_absolute": "https://www.stilettobmaisd.com.br/slingback-slin/",
+        "url_absolute": "https://www.loja.usebede.com.br/slingback-slin/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd12816c03.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd12816c03.jpeg",
@@ -2590,20 +2418,20 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 119.9,
         "cores": [
-            "Prata",
-            "PRATEADO",
-            "Preto",
-            "Dourado",
             "OFF WHITE",
-            "nude"
+            "Dourado",
+            "Prata",
+            "nude",
+            "PRATEADO",
+            "Preto"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Dourado": {
@@ -2798,7 +2626,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325701",
         "nome": "BOLSA SARA",
         "categoria": "BOLSA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bolsa-sara/",
+        "url_absolute": "https://www.loja.usebede.com.br/bolsa-sara/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12dd9df6/whatsapp-image-2024-09-16-at-16-51-44-66e88e293b136.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12dd9df6/whatsapp-image-2024-09-16-at-16-51-44-66e88e293b136.jpeg",
@@ -2840,7 +2668,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325702",
         "nome": "BOTA MONTARIA COURO",
         "categoria": "BOTA CANO LONGO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-montaria-couro/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-montaria-couro/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12e3ea74/original-66cbd12e6a175.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12e3ea74/original-66cbd12e6a175.jpeg"
@@ -2850,11 +2678,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -2891,7 +2719,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325704",
         "nome": "COTURNO LHOS DOURADO",
         "categoria": "COTURNO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/coturno-lhos-dourado/",
+        "url_absolute": "https://www.loja.usebede.com.br/coturno-lhos-dourado/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12fada25/original-66cbd12fd9ff1.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12fada25/original-66cbd12fd9ff1.jpeg",
@@ -2903,9 +2731,9 @@ const STILETTO_PRODUCTS = [
         ],
         "tamanhos": [
             "37",
-            "36",
             "35",
-            "38"
+            "38",
+            "36"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -2939,7 +2767,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325705",
         "nome": "BOTA LARI VENETO",
         "categoria": "BOTA CANO BAIXO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/botas-couro-veneto/",
+        "url_absolute": "https://www.loja.usebede.com.br/botas-couro-veneto/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13144704/whatsapp-image-2025-06-05-at-15-16-48-6841df1b5776c.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13144704/whatsapp-image-2025-06-05-at-15-16-48-6841df1b5776c.jpeg",
@@ -2952,9 +2780,9 @@ const STILETTO_PRODUCTS = [
         ],
         "tamanhos": [
             "37",
-            "36",
             "35",
-            "38"
+            "38",
+            "36"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -2989,7 +2817,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325706",
         "nome": "BOTA LYON NAPA",
         "categoria": "BOTA CANO BAIXO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-lyon-napa/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-lyon-napa/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd132bca00/original-66cbd132e98c0.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd132bca00/original-66cbd132e98c0.jpeg",
@@ -3000,11 +2828,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "37",
             "36",
-            "39"
+            "37",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -3042,7 +2870,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325707",
         "nome": "BOTA BRECIA COM FIVELA",
         "categoria": "BOTA CANO BAIXO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-brecia-com-fivela/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-brecia-com-fivela/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1345230e/original-66cbd1347e972.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1345230e/original-66cbd1347e972.jpeg",
@@ -3053,11 +2881,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -3095,7 +2923,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325708",
         "nome": "TENIS PLATAFORMA COM VERNIZ",
         "categoria": "TÊNIS",
-        "url_absolute": "https://www.stilettobmaisd.com.br/tenis-plataforma-com-verniz/",
+        "url_absolute": "https://www.loja.usebede.com.br/tenis-plataforma-com-verniz/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd135da598/whatsapp-image-2025-06-05-at-14-18-54-6841d19ded42e.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd135da598/whatsapp-image-2025-06-05-at-14-18-54-6841d19ded42e.jpeg",
@@ -3107,11 +2935,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -3150,7 +2978,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325709",
         "nome": "MOCHILA ANTIFURTO",
         "categoria": "BOLSA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/mochila-antifurto/",
+        "url_absolute": "https://www.loja.usebede.com.br/mochila-antifurto/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13768f51/whatsapp-image-2024-09-16-at-16-28-31-66e88ab0e4857.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13768f51/whatsapp-image-2024-09-16-at-16-28-31-66e88ab0e4857.jpeg",
@@ -3160,9 +2988,9 @@ const STILETTO_PRODUCTS = [
         "preco": 437.9,
         "cores": [
             "Preto",
-            "cafe",
             "OFF WHITE",
-            "Verde militar"
+            "Verde militar",
+            "cafe"
         ],
         "tamanhos": [
             "Único"
@@ -3218,7 +3046,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325710",
         "nome": "BOTA CAPA TRICOT SALTO FINO",
         "categoria": "BOTA CANO MÉDIO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-capa-tricot-salto-fino/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-capa-tricot-salto-fino/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd137e97bc/whatsapp-image-2025-05-28-at-15-16-12-7-683755d440c61.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd137e97bc/whatsapp-image-2025-05-28-at-15-16-12-7-683755d440c61.jpeg",
@@ -3230,11 +3058,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -3273,7 +3101,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325711",
         "nome": "COTURNO FIVELA PRATEADA",
         "categoria": "COTURNO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/coturno-fivela-prateada/",
+        "url_absolute": "https://www.loja.usebede.com.br/coturno-fivela-prateada/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13a06029/img_0933-66df290ea89b8.jpg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13a06029/img_0933-66df290ea89b8.jpg",
@@ -3284,11 +3112,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -3326,7 +3154,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325712",
         "nome": "SAPATO BONECA",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sapato-boneca-verniz-preto/",
+        "url_absolute": "https://www.loja.usebede.com.br/sapato-boneca-verniz-preto/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13c4947a/original-66cbd13de9762.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13c4947a/original-66cbd13de9762.jpeg",
@@ -3337,12 +3165,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -3384,7 +3212,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325713",
         "nome": "BOTA CAPA BRILHO SALTO FINO",
         "categoria": "BOTA CANO MÉDIO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-capa-brilho-salto-fino/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-capa-brilho-salto-fino/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd145a24cc/whatsapp-image-2025-06-04-at-15-18-30-2-6841d11587aa4.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd145a24cc/whatsapp-image-2025-06-04-at-15-18-30-2-6841d11587aa4.jpeg",
@@ -3396,11 +3224,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -3439,7 +3267,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325714",
         "nome": "SCARPIN MELINA NAPA",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-melina-napa/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-melina-napa/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14755d55/original-66cbd1478a17d.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14755d55/original-66cbd1478a17d.jpeg",
@@ -3450,18 +3278,18 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 159.9,
         "cores": [
-            "ROSADO",
-            "VERNIZ",
             "Preto",
-            "MARSALA"
+            "ROSADO",
+            "MARSALA",
+            "VERNIZ"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "MARSALA": {
@@ -3590,7 +3418,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325716",
         "nome": "BOTAS MESTICO PRETO",
         "categoria": "BOTA CANO MÉDIO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/botas-mestico-preto/",
+        "url_absolute": "https://www.loja.usebede.com.br/botas-mestico-preto/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14e15c3d/whatsapp-image-2025-06-04-at-15-09-32-7-6841d0e251298.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14e15c3d/whatsapp-image-2025-06-04-at-15-09-32-7-6841d0e251298.jpeg",
@@ -3602,9 +3430,9 @@ const STILETTO_PRODUCTS = [
         ],
         "tamanhos": [
             "37",
-            "36",
             "35",
-            "38"
+            "38",
+            "36"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -3638,7 +3466,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325718",
         "nome": "SCARPIN CROCO",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-croco/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-croco/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd150583fa/original-66cbd15085ed0.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd150583fa/original-66cbd15085ed0.jpeg",
@@ -3649,11 +3477,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -3691,7 +3519,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325719",
         "nome": "BOTA MONTARIA FRANCESCA",
         "categoria": "BOTA CANO BAIXO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-montaria-francesca/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-montaria-francesca/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd151ea100/original-66cbd152275ef.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd151ea100/original-66cbd152275ef.jpeg",
@@ -3705,10 +3533,10 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "37",
             "36",
-            "34",
-            "35"
+            "35",
+            "37",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -3761,101 +3589,10 @@ const STILETTO_PRODUCTS = [
         "novidade": false
     },
     {
-        "id": "3325720",
-        "nome": "MOCASSIM TRATORADO VERNIZ",
-        "categoria": "MOCASSIM",
-        "url_absolute": "https://www.stilettobmaisd.com.br/mocassim-tratorado-verniz/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd154f08c7.jpeg",
-        "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd154f08c7.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd15655a83.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd1557beb8.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd155e4ecf.jpeg"
-        ],
-        "preco": 135.9,
-        "cores": [
-            "Preto",
-            "nude"
-        ],
-        "tamanhos": [
-            "34",
-            "38",
-            "35",
-            "37",
-            "36",
-            "39"
-        ],
-        "estoque_por_cor": {
-            "Preto": {
-                "34": {
-                    "qtd": -1,
-                    "id_variacao": "9749959"
-                },
-                "35": {
-                    "qtd": -1,
-                    "id_variacao": "9749965"
-                },
-                "36": {
-                    "qtd": 0,
-                    "id_variacao": "9749969"
-                },
-                "37": {
-                    "qtd": -1,
-                    "id_variacao": "9749970"
-                },
-                "38": {
-                    "qtd": 0,
-                    "id_variacao": "9749962"
-                },
-                "39": {
-                    "qtd": 1,
-                    "id_variacao": "9749966"
-                }
-            },
-            "nude": {
-                "34": {
-                    "qtd": 0,
-                    "id_variacao": "9749960"
-                },
-                "35": {
-                    "qtd": 0,
-                    "id_variacao": "9749964"
-                },
-                "36": {
-                    "qtd": 0,
-                    "id_variacao": "9749968"
-                },
-                "37": {
-                    "qtd": -1,
-                    "id_variacao": "9749961"
-                },
-                "38": {
-                    "qtd": 0,
-                    "id_variacao": "9749963"
-                },
-                "39": {
-                    "qtd": 0,
-                    "id_variacao": "9749967"
-                }
-            }
-        },
-        "fotos_por_cor": {
-            "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd154f08c7.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd15655a83.jpeg"
-            ],
-            "nude": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd1557beb8.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd155e4ecf.jpeg"
-            ]
-        },
-        "novidade": false
-    },
-    {
         "id": "3325721",
         "nome": "TENIS BOTA PELE",
         "categoria": "TÊNIS",
-        "url_absolute": "https://www.stilettobmaisd.com.br/tenis-bota-pele/",
+        "url_absolute": "https://www.loja.usebede.com.br/tenis-bota-pele/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd157b1f3e/img_2143-6841d0236c3f4.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd157b1f3e/img_2143-6841d0236c3f4.jpeg",
@@ -3868,11 +3605,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -3912,7 +3649,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325722",
         "nome": "SCARPIN VERNIZ DETALHE FIVELA",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-verniz-detalhe-fivela/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-verniz-detalhe-fivela/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15932c33/whatsapp-image-2024-07-29-at-14-09-57-6-66e884faa0949.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15932c33/whatsapp-image-2024-07-29-at-14-09-57-6-66e884faa0949.jpeg",
@@ -3926,11 +3663,11 @@ const STILETTO_PRODUCTS = [
             "nude"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -3994,7 +3731,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325723",
         "nome": "COTURNO ENFEITE DOURADO",
         "categoria": "COTURNO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/coturno-enfeite-dourado/",
+        "url_absolute": "https://www.loja.usebede.com.br/coturno-enfeite-dourado/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15a521c4/img_2305-6841cff0ac431.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15a521c4/img_2305-6841cff0ac431.jpeg",
@@ -4010,11 +3747,11 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -4080,7 +3817,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325725",
         "nome": "BOTA PARIS",
         "categoria": "BOTA CANO BAIXO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-paris/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-paris/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15d87562/original-66cbd15db1ccc.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15d87562/original-66cbd15db1ccc.jpeg",
@@ -4092,11 +3829,11 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -4160,7 +3897,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325726",
         "nome": "MULE COURO",
         "categoria": "MULE",
-        "url_absolute": "https://www.stilettobmaisd.com.br/mule-couro/",
+        "url_absolute": "https://www.loja.usebede.com.br/mule-couro/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15f62b94/whatsapp-image-2025-06-05-at-15-14-50-6841dea194c14.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15f62b94/whatsapp-image-2025-06-05-at-15-14-50-6841dea194c14.jpeg",
@@ -4170,18 +3907,18 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 190.9,
         "cores": [
-            "Prata",
             "Preto",
             "OFF WHITE",
+            "Prata",
             "caramelo"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -4232,7 +3969,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "9750022"
                 },
                 "39": {
-                    "qtd": 1,
+                    "qtd": 0,
                     "id_variacao": "9750028"
                 }
             },
@@ -4313,7 +4050,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325727",
         "nome": "SAPATO MEIA PATA VERNIZ PRETO",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sapato-meia-pata-verniz-preto/",
+        "url_absolute": "https://www.loja.usebede.com.br/sapato-meia-pata-verniz-preto/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd161aafe0/original-66cbd161d79c5.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd161aafe0/original-66cbd161d79c5.jpeg",
@@ -4324,11 +4061,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -4366,7 +4103,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325728",
         "nome": "SCARPIN ALICE NUDE",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-alice-nude/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-alice-nude/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd163359ab/original-66cbd16371fa6.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd163359ab/original-66cbd16371fa6.jpeg"
@@ -4376,11 +4113,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -4417,22 +4154,22 @@ const STILETTO_PRODUCTS = [
         "id": "3325730",
         "nome": "BOTA LUARA",
         "categoria": "BOTA CANO BAIXO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-luara/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-luara/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd164e2306/original-66cbd1651ca1f.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd164e2306/original-66cbd1651ca1f.jpeg"
         ],
         "preco": 134.9,
         "cores": [
-            "Verde",
-            "nude"
+            "nude",
+            "Verde"
         ],
         "tamanhos": [
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35"
         ],
         "estoque_por_cor": {
             "Verde": {
@@ -4494,7 +4231,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325731",
         "nome": "BOTA COIMBRA COURO",
         "categoria": "BOTA CANO BAIXO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-coimbra-couro/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-coimbra-couro/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd166809e5/original-66cbd166ac676.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd166809e5/original-66cbd166ac676.jpeg",
@@ -4505,10 +4242,10 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
             "36",
-            "34",
-            "35"
+            "35",
+            "37",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -4542,7 +4279,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325732",
         "nome": "BOTA CAMURÇA STRECHT  OVER",
         "categoria": "BOTA CANO LONGO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-camurca-strecht-over/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-camurca-strecht-over/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd167c30cc/original-66cbd167f2011.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd167c30cc/original-66cbd167f2011.jpeg",
@@ -4553,12 +4290,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -4600,7 +4337,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325734",
         "nome": "MOCASSIM BICO ALONGADO",
         "categoria": "MOCASSIM",
-        "url_absolute": "https://www.stilettobmaisd.com.br/mocassim-bico-alongado/",
+        "url_absolute": "https://www.loja.usebede.com.br/mocassim-bico-alongado/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd169b0301/whatsapp-image-2025-06-05-at-15-01-55-6841de609bdd8.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd169b0301/whatsapp-image-2025-06-05-at-15-01-55-6841de609bdd8.jpeg",
@@ -4611,18 +4348,18 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 149.9,
         "cores": [
-            "nude",
             "Preto",
+            "nude",
             "OFF WHITE",
             "caramelo"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -4751,7 +4488,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325735",
         "nome": "BOTA NAPA STRECH",
         "categoria": "BOTA CANO BAIXO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-napa-strech/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-napa-strech/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16c0a30f/original-66cbd16d1e9e1.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16c0a30f/original-66cbd16d1e9e1.jpeg",
@@ -4761,15 +4498,15 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 209.9,
         "cores": [
-            "Vermelho",
-            "Bordô"
+            "Bordô",
+            "Vermelho"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Bordô": {
@@ -4833,7 +4570,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325736",
         "nome": "BOTA CAPA TRICOT SALTO BLOCO",
         "categoria": "BOTA CANO MÉDIO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-capa-tricot-salto-bloco/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-capa-tricot-salto-bloco/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16edc6c1/whatsapp-image-2025-05-28-at-15-16-12-4-68375608f250b.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16edc6c1/whatsapp-image-2025-05-28-at-15-16-12-4-68375608f250b.jpeg",
@@ -4848,11 +4585,11 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -4914,120 +4651,10 @@ const STILETTO_PRODUCTS = [
         "novidade": false
     },
     {
-        "id": "3325737",
-        "nome": "BOLSA JAQUELINE",
-        "categoria": "BOLSA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bolsa-jaqueline/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17189cbf.jpeg",
-        "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17189cbf.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/whatsapp-image-2025-06-05-at-13-22-53-6841de30d74a7.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17113898.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17212472.jpeg"
-        ],
-        "preco": 437.9,
-        "cores": [
-            "Azul meia-noite",
-            "Preto",
-            "OFF WHITE"
-        ],
-        "tamanhos": [
-            "Único"
-        ],
-        "estoque_por_cor": {
-            "Azul meia-noite": {
-                "Único": {
-                    "qtd": 1,
-                    "id_variacao": "9750110"
-                }
-            },
-            "OFF WHITE": {
-                "Único": {
-                    "qtd": -1,
-                    "id_variacao": "9750108"
-                }
-            },
-            "Preto": {
-                "Único": {
-                    "qtd": 0,
-                    "id_variacao": "9750109"
-                }
-            }
-        },
-        "fotos_por_cor": {
-            "Azul meia-noite": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17189cbf.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/whatsapp-image-2025-06-05-at-13-22-53-6841de30d74a7.jpeg"
-            ],
-            "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17113898.jpeg"
-            ],
-            "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17212472.jpeg"
-            ]
-        },
-        "novidade": false
-    },
-    {
-        "id": "3325739",
-        "nome": "TENIS RAFA",
-        "categoria": "TÊNIS",
-        "url_absolute": "https://www.stilettobmaisd.com.br/tenis-rafa/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/whatsapp-image-2025-05-28-at-15-51-18-68375b569955d.jpeg",
-        "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/whatsapp-image-2025-05-28-at-15-51-18-68375b569955d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/original-66cbd17341754.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/original-66cbd173a9e92.jpeg"
-        ],
-        "preco": 210.9,
-        "cores": [
-            "Branco"
-        ],
-        "tamanhos": [
-            "34",
-            "38",
-            "35",
-            "37",
-            "36"
-        ],
-        "estoque_por_cor": {
-            "Branco": {
-                "34": {
-                    "qtd": 0,
-                    "id_variacao": "9750115"
-                },
-                "35": {
-                    "qtd": 0,
-                    "id_variacao": "9750114"
-                },
-                "36": {
-                    "qtd": -1,
-                    "id_variacao": "9750113"
-                },
-                "37": {
-                    "qtd": 1,
-                    "id_variacao": "9750112"
-                },
-                "38": {
-                    "qtd": 0,
-                    "id_variacao": "9750116"
-                }
-            }
-        },
-        "fotos_por_cor": {
-            "Branco": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/whatsapp-image-2025-05-28-at-15-51-18-68375b569955d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/original-66cbd17341754.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/original-66cbd173a9e92.jpeg"
-            ]
-        },
-        "novidade": false
-    },
-    {
         "id": "3325743",
         "nome": "SAPATILHA BONECA",
         "categoria": "SAPATILHA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sapatilha-boneca/",
+        "url_absolute": "https://www.loja.usebede.com.br/sapatilha-boneca/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1823e308/whatsapp-image-2024-09-11-at-11-34-45-66e1aab711d70.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1823e308/whatsapp-image-2024-09-11-at-11-34-45-66e1aab711d70.jpeg",
@@ -5039,12 +4666,12 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -5114,7 +4741,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325745",
         "nome": "SAPATO MEIA PATA VERNIZ NUDE",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sapato-meia-pata-verniz-nude/",
+        "url_absolute": "https://www.loja.usebede.com.br/sapato-meia-pata-verniz-nude/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd185150be/original-66cbd1853f6fa.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd185150be/original-66cbd1853f6fa.jpeg",
@@ -5125,11 +4752,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -5167,7 +4794,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325746",
         "nome": "BOLSA VIVIANE",
         "categoria": "BOLSA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bolsa-viviane/",
+        "url_absolute": "https://www.loja.usebede.com.br/bolsa-viviane/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1869d31e/original-66cbd186cb9de.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1869d31e/original-66cbd186cb9de.jpeg",
@@ -5202,7 +4829,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325748",
         "nome": "TENIS PLATAFORMA",
         "categoria": "TÊNIS",
-        "url_absolute": "https://www.stilettobmaisd.com.br/tenis-plataforma/",
+        "url_absolute": "https://www.loja.usebede.com.br/tenis-plataforma/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd188a913b/whatsapp-image-2025-06-04-at-15-18-30-1-6841cf8f14dad.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd188a913b/whatsapp-image-2025-06-04-at-15-18-30-1-6841cf8f14dad.jpeg",
@@ -5214,13 +4841,13 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
-            "38",
             "33",
-            "35",
-            "37",
+            "39",
+            "38",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -5267,7 +4894,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325751",
         "nome": "SCARPIN ALICE VERMELHO",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-alice-vermelho/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-alice-vermelho/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18c5bdf5/original-66cbd18c866b6.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18c5bdf5/original-66cbd18c866b6.jpeg",
@@ -5278,11 +4905,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -5320,7 +4947,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325752",
         "nome": "BOLSA LARA",
         "categoria": "BOLSA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bolsa-lara/",
+        "url_absolute": "https://www.loja.usebede.com.br/bolsa-lara/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/original-66cbd18f88a63.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/original-66cbd18f88a63.jpeg",
@@ -5334,12 +4961,12 @@ const STILETTO_PRODUCTS = [
         "preco": 481.8,
         "cores": [
             "caramelo",
-            "Prata",
-            "DOURADA",
-            "Preto",
-            "Vermelho escuro",
             "OFF WHITE",
-            "nude"
+            "Prata",
+            "Vermelho escuro",
+            "nude",
+            "Preto",
+            "DOURADA"
         ],
         "tamanhos": [
             "Único"
@@ -5424,7 +5051,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325753",
         "nome": "SCARPIN LUISA",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-luisa/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-luisa/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1908870e/original-66cbd190b5fc3.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1908870e/original-66cbd190b5fc3.jpeg"
@@ -5434,11 +5061,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -5475,7 +5102,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325754",
         "nome": "SCARPIN SUEDE ABA FRONTAL",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-suede-aba-frontal/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-suede-aba-frontal/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19192efd/whatsapp-image-2024-09-16-at-17-45-26-66e899d81f1c7.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19192efd/whatsapp-image-2024-09-16-at-17-45-26-66e899d81f1c7.jpeg",
@@ -5486,11 +5113,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -5528,7 +5155,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325755",
         "nome": "SLINGBACK ALICE",
         "categoria": "SLINGBACK",
-        "url_absolute": "https://www.stilettobmaisd.com.br/slingback-alice/",
+        "url_absolute": "https://www.loja.usebede.com.br/slingback-alice/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19238162/original-66cbd1937fe80.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19238162/original-66cbd1937fe80.jpeg",
@@ -5539,19 +5166,19 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 139.9,
         "cores": [
-            "Azul meia-noite",
-            "Prata",
             "Vermelho",
             "Dourado",
+            "Prata",
+            "Azul meia-noite",
             "OFF WHITE"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Azul meia-noite": {
@@ -5708,7 +5335,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325756",
         "nome": "SAPATO SANTORINE DETALHE DOURADO",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sapato-santorine-detalhe-dourado/",
+        "url_absolute": "https://www.loja.usebede.com.br/sapato-santorine-detalhe-dourado/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd196f1e1c/whatsapp-image-2025-06-05-at-14-09-36-6841cf5b8de30.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd196f1e1c/whatsapp-image-2025-06-05-at-14-09-36-6841cf5b8de30.jpeg",
@@ -5724,11 +5351,11 @@ const STILETTO_PRODUCTS = [
             "CACAU"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "CACAU": {
@@ -5817,7 +5444,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325757",
         "nome": "SCARPIN CRUZADO",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-cruzado/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-cruzado/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19a13e5b/original-66cbd19a41300.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19a13e5b/original-66cbd19a41300.jpeg",
@@ -5828,11 +5455,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -5870,7 +5497,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325758",
         "nome": "BOTA COTURNO VERNIZ PRETO",
         "categoria": "COTURNO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-coturno-verniz-preto/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-coturno-verniz-preto/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19b96ac4/original-66cbd19bc2ba1.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19b96ac4/original-66cbd19bc2ba1.jpeg",
@@ -5881,12 +5508,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -5928,7 +5555,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325760",
         "nome": "BOTA BRECIA",
         "categoria": "BOTA CANO BAIXO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-brecia/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-brecia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19da4bec/whatsapp-image-2025-06-05-at-15-05-06-6841dc9d14cf8.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19da4bec/whatsapp-image-2025-06-05-at-15-05-06-6841dc9d14cf8.jpeg",
@@ -5941,11 +5568,11 @@ const STILETTO_PRODUCTS = [
             "cafe"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -6008,7 +5635,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325761",
         "nome": "MULE MARA DETALHE STRASS",
         "categoria": "MULE",
-        "url_absolute": "https://www.stilettobmaisd.com.br/mule-mara-detalhe-strass/",
+        "url_absolute": "https://www.loja.usebede.com.br/mule-mara-detalhe-strass/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a0275ff/original-66cbd1a1620cf.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a0275ff/original-66cbd1a1620cf.jpeg",
@@ -6021,11 +5648,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -6065,7 +5692,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325762",
         "nome": "SAPATO CHANEL",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sapato-chanel/",
+        "url_absolute": "https://www.loja.usebede.com.br/sapato-chanel/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a244202/original-66cbd1a2d2ddb.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a244202/original-66cbd1a2d2ddb.jpeg",
@@ -6075,16 +5702,16 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 224.9,
         "cores": [
-            "VERNIZ",
-            "Preto"
+            "Preto",
+            "VERNIZ"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -6156,7 +5783,7 @@ const STILETTO_PRODUCTS = [
         "id": "3397548",
         "nome": "SANDÁLIA LUA",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-lua/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-lua/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208dcec1e5/original-66e208dd6e14e.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208dcec1e5/original-66e208dd6e14e.jpeg",
@@ -6170,12 +5797,12 @@ const STILETTO_PRODUCTS = [
             "ANGELICAL"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "ANGELICAL": {
@@ -6251,7 +5878,7 @@ const STILETTO_PRODUCTS = [
         "id": "3397549",
         "nome": "SANDÁLIA OURO",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-ouro/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-ouro/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e0c8a63.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e0c8a63.jpeg",
@@ -6262,17 +5889,17 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 219.9,
         "cores": [
-            "Prata",
             "Preto",
-            "OFF WHITE"
+            "OFF WHITE",
+            "Prata"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -6383,7 +6010,7 @@ const STILETTO_PRODUCTS = [
         "id": "3397550",
         "nome": "SANDÁLIA MIA",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-mia/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-mia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e4814cd/original-66e208e4bb3c7.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e4814cd/original-66e208e4bb3c7.jpeg",
@@ -6397,12 +6024,12 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -6478,7 +6105,7 @@ const STILETTO_PRODUCTS = [
         "id": "3397551",
         "nome": "SANDÁLIA ESTRELA",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-estrela/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-estrela/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e79e5bd/original-66e208e7d5f73.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e79e5bd/original-66e208e7d5f73.jpeg",
@@ -6487,16 +6114,16 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 268.9,
         "cores": [
-            "preta",
-            "Terra"
+            "Terra",
+            "preta"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Terra": {
@@ -6570,7 +6197,7 @@ const STILETTO_PRODUCTS = [
         "id": "3412300",
         "nome": "BOLSA JUSSARA",
         "categoria": "BOLSA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bolsa-jussara/",
+        "url_absolute": "https://www.loja.usebede.com.br/bolsa-jussara/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8611c571f7/original-66e8611cba0b9.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8611c571f7/original-66e8611cba0b9.jpeg",
@@ -6579,10 +6206,10 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 340.9,
         "cores": [
-            "Vermelho escuro",
-            "CROCO",
             "Preto",
-            "OFF WHITE"
+            "OFF WHITE",
+            "CROCO",
+            "Vermelho escuro"
         ],
         "tamanhos": [
             "Único"
@@ -6641,7 +6268,7 @@ const STILETTO_PRODUCTS = [
         "id": "3413419",
         "nome": "MOCASSIM TRATORADO",
         "categoria": "MOCASSIM",
-        "url_absolute": "https://www.stilettobmaisd.com.br/mocassim-tratorado/",
+        "url_absolute": "https://www.loja.usebede.com.br/mocassim-tratorado/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8a09765b20/original-66e8a097a66a5.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8a09765b20/original-66e8a097a66a5.jpeg",
@@ -6656,12 +6283,12 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -6739,7 +6366,7 @@ const STILETTO_PRODUCTS = [
         "id": "3431626",
         "nome": "SCARPIN VENETO",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-veneto/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-veneto/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb351371cc7.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb351371cc7.jpeg",
@@ -6755,11 +6382,11 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -6858,7 +6485,7 @@ const STILETTO_PRODUCTS = [
         "id": "3447901",
         "nome": "SCARPIN NAPA FIVELA",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-napa-fivela/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-napa-fivela/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc47886f.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc47886f.jpeg",
@@ -6874,11 +6501,11 @@ const STILETTO_PRODUCTS = [
             "CACAU"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "CACAU": {
@@ -6999,87 +6626,10 @@ const STILETTO_PRODUCTS = [
         "novidade": false
     },
     {
-        "id": "3471777",
-        "nome": "SAPATILHA PARIS BAUNILHA",
-        "categoria": "SAPATILHA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sapatilha-paris-baunilha/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66fae4281f2af/whatsapp-image-2025-06-05-at-14-53-41-1-6841dd4c21e5a.jpeg",
-        "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66fae4281f2af/whatsapp-image-2025-06-05-at-14-53-41-1-6841dd4c21e5a.jpeg"
-        ],
-        "preco": 229.9,
-        "cores": [
-            "Preto",
-            "BAUNILHA"
-        ],
-        "tamanhos": [
-            "34",
-            "38",
-            "35",
-            "37",
-            "36"
-        ],
-        "estoque_por_cor": {
-            "BAUNILHA": {
-                "34": {
-                    "qtd": 2,
-                    "id_variacao": "10130805"
-                },
-                "35": {
-                    "qtd": 0,
-                    "id_variacao": "10130804"
-                },
-                "36": {
-                    "qtd": 0,
-                    "id_variacao": "10130801"
-                },
-                "37": {
-                    "qtd": 0,
-                    "id_variacao": "10130808"
-                },
-                "38": {
-                    "qtd": 0,
-                    "id_variacao": "10130800"
-                }
-            },
-            "Preto": {
-                "34": {
-                    "qtd": -2,
-                    "id_variacao": "10130806"
-                },
-                "35": {
-                    "qtd": 0,
-                    "id_variacao": "10130807"
-                },
-                "36": {
-                    "qtd": 0,
-                    "id_variacao": "10130802"
-                },
-                "37": {
-                    "qtd": -1,
-                    "id_variacao": "10130799"
-                },
-                "38": {
-                    "qtd": 0,
-                    "id_variacao": "10130803"
-                }
-            }
-        },
-        "fotos_por_cor": {
-            "BAUNILHA": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66fae4281f2af/whatsapp-image-2025-06-05-at-14-53-41-1-6841dd4c21e5a.jpeg"
-            ],
-            "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66fae4281f2af/whatsapp-image-2025-06-05-at-14-53-41-1-6841dd4c21e5a.jpeg"
-            ]
-        },
-        "novidade": false
-    },
-    {
         "id": "3471933",
         "nome": "SCARPIN LAURA",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-laura/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-laura/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faeb2d19704/whatsapp-image-2024-10-05-at-16-50-14-67019926e64b5.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faeb2d19704/whatsapp-image-2024-10-05-at-16-50-14-67019926e64b5.jpeg",
@@ -7096,11 +6646,11 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "BAUNILHA": {
@@ -7190,7 +6740,7 @@ const STILETTO_PRODUCTS = [
         "id": "3472410",
         "nome": "SLINGBACK VERNIZ MIA",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/slingback-verniz-mia/",
+        "url_absolute": "https://www.loja.usebede.com.br/slingback-verniz-mia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faf93ed2f43/whatsapp-image-2024-11-06-at-11-24-15-3-672b7cafaf3de.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faf93ed2f43/whatsapp-image-2024-11-06-at-11-24-15-3-672b7cafaf3de.jpeg",
@@ -7202,17 +6752,17 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 299.9,
         "cores": [
-            "PRETO VERNIZ",
+            "MARSALA",
             "BAUNILHA",
-            "MARSALA"
+            "PRETO VERNIZ"
         ],
         "tamanhos": [
-            "34",
-            "38",
             "33",
-            "35",
+            "38",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "BAUNILHA": {
@@ -7314,7 +6864,7 @@ const STILETTO_PRODUCTS = [
         "id": "3570964",
         "nome": "SANDÁLIA DÁLIA",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-dalia/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-dalia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/671a87adeacec/original-671a87aec4c4f.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/671a87adeacec/original-671a87aec4c4f.jpeg",
@@ -7326,16 +6876,16 @@ const STILETTO_PRODUCTS = [
         "preco": 159.9,
         "cores": [
             "ONIX",
-            "Prata",
-            "Preto"
+            "Preto",
+            "Prata"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "ONIX": {
@@ -7436,7 +6986,7 @@ const STILETTO_PRODUCTS = [
         "id": "3608228",
         "nome": "SANDÁLIA NATALIA",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-alice/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-alice/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729240f11d32/whatsapp-image-2025-12-16-at-19-57-53-6941e8ad75443.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729240f11d32/whatsapp-image-2025-12-16-at-19-57-53-6941e8ad75443.jpeg",
@@ -7451,12 +7001,12 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -7529,7 +7079,7 @@ const STILETTO_PRODUCTS = [
         "id": "3608400",
         "nome": "SANDÁLIA BARBARA",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-barbara/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-barbara/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b8f2b036.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b8f2b036.jpeg",
@@ -7540,18 +7090,18 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 279.9,
         "cores": [
-            "Ouro",
-            "Prata",
+            "Preto",
             "OFF WHITE",
-            "Preto"
+            "Ouro",
+            "Prata"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -7695,7 +7245,7 @@ const STILETTO_PRODUCTS = [
         "id": "3608404",
         "nome": "SANDÁLIA ALICE",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-alice-67292b94870f3/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-alice-67292b94870f3/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b94870fc/original-67292b95a5df4.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b94870fc/original-67292b95a5df4.jpeg",
@@ -7710,12 +7260,12 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -7788,7 +7338,7 @@ const STILETTO_PRODUCTS = [
         "id": "3608489",
         "nome": "RASTEIRINHA ALICE",
         "categoria": "RASTEIRINHA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/rasteirinha-alice/",
+        "url_absolute": "https://www.loja.usebede.com.br/rasteirinha-alice/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329916eba/original-67293299771e1.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329916eba/original-67293299771e1.jpeg",
@@ -7799,12 +7349,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -7846,7 +7396,7 @@ const STILETTO_PRODUCTS = [
         "id": "3608490",
         "nome": "TAMANCO BRISA",
         "categoria": "PAPETE",
-        "url_absolute": "https://www.stilettobmaisd.com.br/tamanco-brisa/",
+        "url_absolute": "https://www.loja.usebede.com.br/tamanco-brisa/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329b0cf20/original-6729329b4d1cd.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329b0cf20/original-6729329b4d1cd.jpeg",
@@ -7857,11 +7407,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -7896,70 +7446,10 @@ const STILETTO_PRODUCTS = [
         "novidade": false
     },
     {
-        "id": "3608491",
-        "nome": "PAPETE AISHA",
-        "categoria": "PAPETE",
-        "url_absolute": "https://www.stilettobmaisd.com.br/papete-aisha/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329e23d81.jpeg",
-        "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329e23d81.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329e7e62d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329ec4690.jpeg"
-        ],
-        "preco": 189.9,
-        "cores": [
-            "Única"
-        ],
-        "tamanhos": [
-            "34",
-            "38",
-            "35",
-            "37",
-            "36",
-            "39"
-        ],
-        "estoque_por_cor": {
-            "Única": {
-                "34": {
-                    "qtd": 0,
-                    "id_variacao": "10595578"
-                },
-                "35": {
-                    "qtd": 1,
-                    "id_variacao": "10595580"
-                },
-                "36": {
-                    "qtd": -1,
-                    "id_variacao": "10595582"
-                },
-                "37": {
-                    "qtd": 0,
-                    "id_variacao": "10595577"
-                },
-                "38": {
-                    "qtd": 0,
-                    "id_variacao": "10595581"
-                },
-                "39": {
-                    "qtd": 0,
-                    "id_variacao": "10595579"
-                }
-            }
-        },
-        "fotos_por_cor": {
-            "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329e23d81.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329e7e62d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329ec4690.jpeg"
-            ]
-        },
-        "novidade": false
-    },
-    {
         "id": "3608492",
         "nome": "BIRKEN MANU",
         "categoria": "PAPETE",
-        "url_absolute": "https://www.stilettobmaisd.com.br/birken-manu/",
+        "url_absolute": "https://www.loja.usebede.com.br/birken-manu/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329fb529f/original-6729329ff2a05.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329fb529f/original-6729329ff2a05.jpeg",
@@ -7974,11 +7464,11 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -8043,7 +7533,7 @@ const STILETTO_PRODUCTS = [
         "id": "3608493",
         "nome": "SANDALIA AURORA",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-aurora/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-aurora/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a30fcd1/original-672932a34d1b1.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a30fcd1/original-672932a34d1b1.jpeg",
@@ -8054,11 +7544,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -8096,7 +7586,7 @@ const STILETTO_PRODUCTS = [
         "id": "3608494",
         "nome": "CHINELO PATRICIA",
         "categoria": "CHINELO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/chinelo-patricia/",
+        "url_absolute": "https://www.loja.usebede.com.br/chinelo-patricia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a491027/original-672932a4d7438.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a491027/original-672932a4d7438.jpeg",
@@ -8108,12 +7598,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -8156,7 +7646,7 @@ const STILETTO_PRODUCTS = [
         "id": "3608495",
         "nome": "SANDÁLIA FLOR",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-flor/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-flor/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a6999a6/original-672932a6dd373.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a6999a6/original-672932a6dd373.jpeg",
@@ -8169,15 +7659,15 @@ const STILETTO_PRODUCTS = [
         "preco": 260.0,
         "cores": [
             "OFF WHITE",
-            "Azul céu",
-            "caramelo"
+            "caramelo",
+            "Azul céu"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Azul céu": {
@@ -8267,7 +7757,7 @@ const STILETTO_PRODUCTS = [
         "id": "3608497",
         "nome": "MOCASSIM HELENA",
         "categoria": "MOCASSIM",
-        "url_absolute": "https://www.stilettobmaisd.com.br/mocassim-helena/",
+        "url_absolute": "https://www.loja.usebede.com.br/mocassim-helena/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932aeec653/original-672932af2e64c.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932aeec653/original-672932af2e64c.jpeg",
@@ -8277,15 +7767,15 @@ const STILETTO_PRODUCTS = [
         "preco": 305.9,
         "cores": [
             "Preto",
-            "Azul céu",
-            "caramelo"
+            "caramelo",
+            "Azul céu"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Azul céu": {
@@ -8346,7 +7836,7 @@ const STILETTO_PRODUCTS = [
         "id": "3608498",
         "nome": "TAMANCO MARI",
         "categoria": "PAPETE",
-        "url_absolute": "https://www.stilettobmaisd.com.br/tamanco-mari/",
+        "url_absolute": "https://www.loja.usebede.com.br/tamanco-mari/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b24bb68/original-672932b281f8d.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b24bb68/original-672932b281f8d.jpeg",
@@ -8359,11 +7849,11 @@ const STILETTO_PRODUCTS = [
             "Cinza"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Cinza": {
@@ -8426,7 +7916,7 @@ const STILETTO_PRODUCTS = [
         "id": "3608499",
         "nome": "RASTEIRINHA IVI",
         "categoria": "RASTEIRINHA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/rasteirinha-ivi/",
+        "url_absolute": "https://www.loja.usebede.com.br/rasteirinha-ivi/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b4540ae/original-672932b48db04.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b4540ae/original-672932b48db04.jpeg",
@@ -8442,12 +7932,12 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -8521,7 +8011,7 @@ const STILETTO_PRODUCTS = [
         "id": "3608500",
         "nome": "TAMANCO BIA",
         "categoria": "PAPETE",
-        "url_absolute": "https://www.stilettobmaisd.com.br/tamanco-bia/",
+        "url_absolute": "https://www.loja.usebede.com.br/tamanco-bia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b6c208d/original-672932b70dcd7.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b6c208d/original-672932b70dcd7.jpeg",
@@ -8535,11 +8025,11 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -8603,7 +8093,7 @@ const STILETTO_PRODUCTS = [
         "id": "3608501",
         "nome": "CHINELO MARTA",
         "categoria": "CHINELO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/chinelo-marta/",
+        "url_absolute": "https://www.loja.usebede.com.br/chinelo-marta/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b981a69/original-672932b9b8587.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b981a69/original-672932b9b8587.jpeg",
@@ -8618,12 +8108,12 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -8696,7 +8186,7 @@ const STILETTO_PRODUCTS = [
         "id": "3608502",
         "nome": "SANDÁLIA BRUNA",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-bruna/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-bruna/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932bcc40c9/original-672932bd0a2b9.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932bcc40c9/original-672932bd0a2b9.jpeg",
@@ -8710,11 +8200,11 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -8778,7 +8268,7 @@ const STILETTO_PRODUCTS = [
         "id": "3608574",
         "nome": "PAPETE MARIA",
         "categoria": "PAPETE",
-        "url_absolute": "https://www.stilettobmaisd.com.br/papete-maria/",
+        "url_absolute": "https://www.loja.usebede.com.br/papete-maria/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672939620218e/whatsapp-image-2024-11-04-at-17-46-19-672b847a2cf7a.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672939620218e/whatsapp-image-2024-11-04-at-17-46-19-672b847a2cf7a.jpeg",
@@ -8794,12 +8284,12 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Azul escuro": {
@@ -8870,176 +8360,10 @@ const STILETTO_PRODUCTS = [
         "novidade": false
     },
     {
-        "id": "3614779",
-        "nome": "SANDALIA SIGTUNA",
-        "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-sigtuna/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1008ba2.jpeg",
-        "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1008ba2.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f106aa68.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f10cabf1.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1137765.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f118dc59.jpeg"
-        ],
-        "preco": 159.9,
-        "cores": [
-            "VERMELHO VERNIZ",
-            "PRETO VERNIZ",
-            "OFF WHITE VERNIZ",
-            "Preto"
-        ],
-        "tamanhos": [
-            "34",
-            "38",
-            "35",
-            "37",
-            "36",
-            "39"
-        ],
-        "estoque_por_cor": {
-            "OFF WHITE VERNIZ": {
-                "34": {
-                    "qtd": 0,
-                    "id_variacao": "10610972"
-                },
-                "35": {
-                    "qtd": 0,
-                    "id_variacao": "10610956"
-                },
-                "36": {
-                    "qtd": -1,
-                    "id_variacao": "10610949"
-                },
-                "37": {
-                    "qtd": -1,
-                    "id_variacao": "10610971"
-                },
-                "38": {
-                    "qtd": -1,
-                    "id_variacao": "10610965"
-                },
-                "39": {
-                    "qtd": 0,
-                    "id_variacao": "10610959"
-                }
-            },
-            "PRETO VERNIZ": {
-                "34": {
-                    "qtd": 1,
-                    "id_variacao": "10610961"
-                },
-                "35": {
-                    "qtd": -2,
-                    "id_variacao": "10610962"
-                },
-                "36": {
-                    "qtd": 0,
-                    "id_variacao": "10610963"
-                },
-                "37": {
-                    "qtd": 0,
-                    "id_variacao": "10610964"
-                },
-                "38": {
-                    "qtd": -1,
-                    "id_variacao": "10610960"
-                },
-                "39": {
-                    "qtd": -1,
-                    "id_variacao": "10610967"
-                }
-            },
-            "Preto": {
-                "34": {
-                    "qtd": -1,
-                    "id_variacao": "10610950"
-                },
-                "35": {
-                    "qtd": -1,
-                    "id_variacao": "10610966"
-                },
-                "36": {
-                    "qtd": 0,
-                    "id_variacao": "10610952"
-                },
-                "37": {
-                    "qtd": -5,
-                    "id_variacao": "10610951"
-                },
-                "38": {
-                    "qtd": -2,
-                    "id_variacao": "10610957"
-                },
-                "39": {
-                    "qtd": 0,
-                    "id_variacao": "10610968"
-                }
-            },
-            "VERMELHO VERNIZ": {
-                "34": {
-                    "qtd": 0,
-                    "id_variacao": "10610954"
-                },
-                "35": {
-                    "qtd": 0,
-                    "id_variacao": "10610958"
-                },
-                "36": {
-                    "qtd": 0,
-                    "id_variacao": "10610953"
-                },
-                "37": {
-                    "qtd": 0,
-                    "id_variacao": "10610969"
-                },
-                "38": {
-                    "qtd": -1,
-                    "id_variacao": "10610955"
-                },
-                "39": {
-                    "qtd": 0,
-                    "id_variacao": "10610970"
-                }
-            }
-        },
-        "fotos_por_cor": {
-            "OFF WHITE VERNIZ": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1008ba2.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f106aa68.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f10cabf1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1137765.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f118dc59.jpeg"
-            ],
-            "PRETO VERNIZ": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1008ba2.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f106aa68.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f10cabf1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1137765.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f118dc59.jpeg"
-            ],
-            "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1008ba2.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f106aa68.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f10cabf1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1137765.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f118dc59.jpeg"
-            ],
-            "VERMELHO VERNIZ": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1008ba2.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f106aa68.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f10cabf1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1137765.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f118dc59.jpeg"
-            ]
-        },
-        "novidade": false
-    },
-    {
         "id": "3615386",
         "nome": "SANDÁLIA JULIA",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-julia/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-julia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb233257ff/original-672bb233ad77f.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb233257ff/original-672bb233ad77f.jpeg",
@@ -9050,12 +8374,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -9097,7 +8421,7 @@ const STILETTO_PRODUCTS = [
         "id": "3615388",
         "nome": "SANDÁLIA CARMEN",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-carmen/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-carmen/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23560b0c/original-672bb235ae292.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23560b0c/original-672bb235ae292.jpeg",
@@ -9108,13 +8432,13 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
-            "38",
             "33",
-            "35",
-            "37",
+            "39",
+            "38",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -9160,7 +8484,7 @@ const STILETTO_PRODUCTS = [
         "id": "3615389",
         "nome": "SANDÁLIA CAMILA",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-camila/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-camila/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb237e8781/original-672bb23865a96.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb237e8781/original-672bb23865a96.jpeg",
@@ -9171,13 +8495,13 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
-            "38",
             "33",
-            "35",
-            "37",
+            "39",
+            "38",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -9223,7 +8547,7 @@ const STILETTO_PRODUCTS = [
         "id": "3615390",
         "nome": "SANDÁLIA ROSA",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-rosa/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-rosa/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23b1c9bc/original-672bb23b7fbb8.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23b1c9bc/original-672bb23b7fbb8.jpeg",
@@ -9234,12 +8558,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -9281,7 +8605,7 @@ const STILETTO_PRODUCTS = [
         "id": "3615391",
         "nome": "SANDÁLIA ELLA",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-ella/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-ella/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23d1413a/original-672bb23d4fbc7.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23d1413a/original-672bb23d4fbc7.jpeg",
@@ -9292,13 +8616,13 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
-            "38",
             "33",
-            "35",
-            "37",
+            "39",
+            "38",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -9344,7 +8668,7 @@ const STILETTO_PRODUCTS = [
         "id": "3718732",
         "nome": "SCARPIN OURO",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-ouro/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-ouro/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67523478c25fa/original-675234793ae22.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67523478c25fa/original-675234793ae22.jpeg",
@@ -9358,13 +8682,13 @@ const STILETTO_PRODUCTS = [
             "nude"
         ],
         "tamanhos": [
-            "34",
-            "38",
             "33",
-            "35",
-            "37",
+            "39",
+            "38",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -9448,7 +8772,7 @@ const STILETTO_PRODUCTS = [
         "id": "4097379",
         "nome": "BOTA MALHA CANO LONGO",
         "categoria": "BOTA CANO LONGO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-malha-cano-longo/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-malha-cano-longo/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/img_2139-6841c8f2a2a6b.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/img_2139-6841c8f2a2a6b.jpeg",
@@ -9471,11 +8795,11 @@ const STILETTO_PRODUCTS = [
             "cafe"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -9571,7 +8895,7 @@ const STILETTO_PRODUCTS = [
         "id": "4097464",
         "nome": "BOTA SARA CANO LONGO",
         "categoria": "BOTA CANO LONGO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-sara-cano-longo/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-sara-cano-longo/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6b581ebc67/original-67e6b5824154d.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6b581ebc67/original-67e6b5824154d.jpeg",
@@ -9582,12 +8906,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -9629,7 +8953,7 @@ const STILETTO_PRODUCTS = [
         "id": "4135409",
         "nome": "TÊNIS SOFI",
         "categoria": "TÊNIS",
-        "url_absolute": "https://www.stilettobmaisd.com.br/tenis-sofi/",
+        "url_absolute": "https://www.loja.usebede.com.br/tenis-sofi/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5969e9e/img_2140-6841da96e47a4.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5969e9e/img_2140-6841da96e47a4.jpeg",
@@ -9642,12 +8966,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -9691,7 +9015,7 @@ const STILETTO_PRODUCTS = [
         "id": "4135410",
         "nome": "SAPATILHA NANDA",
         "categoria": "SAPATILHA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sapatilha-nanda/",
+        "url_absolute": "https://www.loja.usebede.com.br/sapatilha-nanda/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5ef1139/original-67f57c5f2bd7f.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5ef1139/original-67f57c5f2bd7f.jpeg",
@@ -9699,17 +9023,17 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 199.9,
         "cores": [
-            "preta",
             "vaca",
-            "cafe"
+            "cafe",
+            "preta"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "cafe": {
@@ -9811,7 +9135,7 @@ const STILETTO_PRODUCTS = [
         "id": "4137286",
         "nome": "TÊNIS ANIMAL",
         "categoria": "TÊNIS",
-        "url_absolute": "https://www.stilettobmaisd.com.br/tenis-animal/",
+        "url_absolute": "https://www.loja.usebede.com.br/tenis-animal/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f687858e73f/original-67f68785e3846.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f687858e73f/original-67f68785e3846.jpeg",
@@ -9824,12 +9148,12 @@ const STILETTO_PRODUCTS = [
             "onça"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "onça": {
@@ -9903,7 +9227,7 @@ const STILETTO_PRODUCTS = [
         "id": "4137293",
         "nome": "MOCASSIM MARTA",
         "categoria": "MOCASSIM",
-        "url_absolute": "https://www.stilettobmaisd.com.br/mocassim-marta/",
+        "url_absolute": "https://www.loja.usebede.com.br/mocassim-marta/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f6879889fdd/whatsapp-image-2025-06-05-at-13-33-29-2-6841da429a896.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f6879889fdd/whatsapp-image-2025-06-05-at-13-33-29-2-6841da429a896.jpeg",
@@ -9914,18 +9238,18 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 239.9,
         "cores": [
-            "caramelo",
             "MARSALA",
+            "caramelo",
             "Cinza"
         ],
         "tamanhos": [
-            "34",
-            "38",
             "33",
-            "35",
-            "37",
+            "39",
+            "38",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Cinza": {
@@ -10043,7 +9367,7 @@ const STILETTO_PRODUCTS = [
         "id": "4137441",
         "nome": "BOTA AMANDA",
         "categoria": "BOTA CANO MÉDIO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-amanda/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-amanda/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f68e8c331b8/whatsapp-image-2025-05-28-at-15-42-05-68375a46dfdf6.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f68e8c331b8/whatsapp-image-2025-05-28-at-15-42-05-68375a46dfdf6.jpeg",
@@ -10054,17 +9378,17 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 339.9,
         "cores": [
+            "caramelo",
             "azul marinho",
-            "Marrom",
-            "caramelo"
+            "Marrom"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Marrom": {
@@ -10170,7 +9494,7 @@ const STILETTO_PRODUCTS = [
         "id": "4141367",
         "nome": "SCARPIN HELENA",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-helena/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-helena/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d1f79aec9/whatsapp-image-2025-05-28-at-15-41-16-3-683759ec4617a.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d1f79aec9/whatsapp-image-2025-05-28-at-15-41-16-3-683759ec4617a.jpeg",
@@ -10182,11 +9506,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -10225,7 +9549,7 @@ const STILETTO_PRODUCTS = [
         "id": "4141368",
         "nome": "SAPATILHA HELENA",
         "categoria": "SAPATILHA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sapatilha-helena/",
+        "url_absolute": "https://www.loja.usebede.com.br/sapatilha-helena/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d1fc4a700/whatsapp-image-2025-06-05-at-13-33-30-8-6841c72754397.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d1fc4a700/whatsapp-image-2025-06-05-at-13-33-30-8-6841c72754397.jpeg",
@@ -10237,12 +9561,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -10282,101 +9606,10 @@ const STILETTO_PRODUCTS = [
         "novidade": false
     },
     {
-        "id": "4141369",
-        "nome": "SLINGBACK JORDANA",
-        "categoria": "SLINGBACK",
-        "url_absolute": "https://www.stilettobmaisd.com.br/slingback-jordana/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-3-6841c7827203d.jpeg",
-        "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-3-6841c7827203d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/original-67f7d2008d046.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-17-6841c78f72102.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-4-6841c79a6136d.jpeg"
-        ],
-        "preco": 249.9,
-        "cores": [
-            "Preto",
-            "OFF WHITE"
-        ],
-        "tamanhos": [
-            "34",
-            "38",
-            "35",
-            "37",
-            "36",
-            "39"
-        ],
-        "estoque_por_cor": {
-            "OFF WHITE": {
-                "34": {
-                    "qtd": 1,
-                    "id_variacao": "12383285"
-                },
-                "35": {
-                    "qtd": 0,
-                    "id_variacao": "12383286"
-                },
-                "36": {
-                    "qtd": -1,
-                    "id_variacao": "12383287"
-                },
-                "37": {
-                    "qtd": 0,
-                    "id_variacao": "12383288"
-                },
-                "38": {
-                    "qtd": 1,
-                    "id_variacao": "12383289"
-                },
-                "39": {
-                    "qtd": 0,
-                    "id_variacao": "12383290"
-                }
-            },
-            "Preto": {
-                "34": {
-                    "qtd": 0,
-                    "id_variacao": "12383291"
-                },
-                "35": {
-                    "qtd": 0,
-                    "id_variacao": "12383292"
-                },
-                "36": {
-                    "qtd": 0,
-                    "id_variacao": "12981766"
-                },
-                "37": {
-                    "qtd": -2,
-                    "id_variacao": "12981767"
-                },
-                "38": {
-                    "qtd": 1,
-                    "id_variacao": "12981768"
-                },
-                "39": {
-                    "qtd": 0,
-                    "id_variacao": "12981769"
-                }
-            }
-        },
-        "fotos_por_cor": {
-            "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-3-6841c7827203d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/original-67f7d2008d046.jpeg"
-            ],
-            "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-17-6841c78f72102.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-4-6841c79a6136d.jpeg"
-            ]
-        },
-        "novidade": false
-    },
-    {
         "id": "4141370",
         "nome": "MULE VERA",
         "categoria": "MULE",
-        "url_absolute": "https://www.stilettobmaisd.com.br/mule-vera/",
+        "url_absolute": "https://www.loja.usebede.com.br/mule-vera/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d20419c8a/whatsapp-image-2025-06-05-at-13-33-30-13-6841c75dd9d35.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d20419c8a/whatsapp-image-2025-06-05-at-13-33-30-13-6841c75dd9d35.jpeg",
@@ -10388,12 +9621,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -10436,7 +9669,7 @@ const STILETTO_PRODUCTS = [
         "id": "4157584",
         "nome": "BOLSA BIA",
         "categoria": "BOLSA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bolsa-bia/",
+        "url_absolute": "https://www.loja.usebede.com.br/bolsa-bia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bb99f1d.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bb99f1d.jpeg",
@@ -10446,10 +9679,10 @@ const STILETTO_PRODUCTS = [
         "preco": 169.0,
         "cores": [
             "Cinza",
-            "azul marinho",
-            "Preto",
             "Marrom",
-            "OFF WHITE"
+            "OFF WHITE",
+            "azul marinho",
+            "Preto"
         ],
         "tamanhos": [
             "Único"
@@ -10519,7 +9752,7 @@ const STILETTO_PRODUCTS = [
         "id": "4157585",
         "nome": "BOLSA MARIA LUIZA",
         "categoria": "BOLSA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bolsa-maria-luiza/",
+        "url_absolute": "https://www.loja.usebede.com.br/bolsa-maria-luiza/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-68446aa9ec77b.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-68446aa9ec77b.jpeg",
@@ -10533,12 +9766,12 @@ const STILETTO_PRODUCTS = [
         "preco": 549.0,
         "cores": [
             "caramelo",
-            "Prata",
-            "DOURADA",
-            "Preto",
-            "Vermelho escuro",
             "OFF WHITE",
-            "nude"
+            "Prata",
+            "Vermelho escuro",
+            "nude",
+            "Preto",
+            "DOURADA"
         ],
         "tamanhos": [
             "Único"
@@ -10644,7 +9877,7 @@ const STILETTO_PRODUCTS = [
         "id": "4196979",
         "nome": "BOTA LORENA",
         "categoria": "BOTA CANO LONGO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-lorena/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-lorena/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdf7aa9cf/whatsapp-image-2025-06-05-at-13-29-41-2-6841c60f8a35f.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdf7aa9cf/whatsapp-image-2025-06-05-at-13-29-41-2-6841c60f8a35f.jpeg",
@@ -10658,12 +9891,12 @@ const STILETTO_PRODUCTS = [
             "cafe"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -10735,7 +9968,7 @@ const STILETTO_PRODUCTS = [
         "id": "4196980",
         "nome": "BOTA LEONA",
         "categoria": "BOTA CANO LONGO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-leona/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-leona/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdfce7b1a/whatsapp-image-2025-05-28-at-15-16-12-68375973a3eca.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdfce7b1a/whatsapp-image-2025-05-28-at-15-16-12-68375973a3eca.jpeg",
@@ -10748,12 +9981,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -10797,7 +10030,7 @@ const STILETTO_PRODUCTS = [
         "id": "4197096",
         "nome": "BOTA COTURNO PRISCILA",
         "categoria": "COTURNO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-coturno-priscila/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-coturno-priscila/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fc4c4d1b17/original-680fc4c532dff.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fc4c4d1b17/original-680fc4c532dff.jpeg",
@@ -10810,12 +10043,12 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Marrom": {
@@ -10889,7 +10122,7 @@ const STILETTO_PRODUCTS = [
         "id": "4220494",
         "nome": "SLINGBACK SARA",
         "categoria": "SLINGBACK",
-        "url_absolute": "https://www.stilettobmaisd.com.br/slingback-sara/",
+        "url_absolute": "https://www.loja.usebede.com.br/slingback-sara/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818f8757eebd/original-6818f87672ff3.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818f8757eebd/original-6818f87672ff3.jpeg"
@@ -10899,12 +10132,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -10945,7 +10178,7 @@ const STILETTO_PRODUCTS = [
         "id": "4220495",
         "nome": "SLINGBACK DUO AVELÃ",
         "categoria": "SLINGBACK",
-        "url_absolute": "https://www.stilettobmaisd.com.br/slingback-duo-avela/",
+        "url_absolute": "https://www.loja.usebede.com.br/slingback-duo-avela/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818f8794166a/original-6818f8797cb6f.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818f8794166a/original-6818f8797cb6f.jpeg"
@@ -10955,12 +10188,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -11001,7 +10234,7 @@ const STILETTO_PRODUCTS = [
         "id": "4220844",
         "nome": "BOTA CARMEN",
         "categoria": "BOTA CANO BAIXO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-carmen/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-carmen/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc0770b4/original-6818ffc0c1bcf.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc0770b4/original-6818ffc0c1bcf.jpeg",
@@ -11014,12 +10247,12 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -11093,7 +10326,7 @@ const STILETTO_PRODUCTS = [
         "id": "4220845",
         "nome": "BOTA JULIA",
         "categoria": "BOTA CANO BAIXO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-julia/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-julia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc332d43/img_2121-6841c301d09e9.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc332d43/img_2121-6841c301d09e9.jpeg",
@@ -11105,12 +10338,12 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Marrom": {
@@ -11182,7 +10415,7 @@ const STILETTO_PRODUCTS = [
         "id": "4220846",
         "nome": "MOCASSIM VIRGINIA",
         "categoria": "MOCASSIM",
-        "url_absolute": "https://www.stilettobmaisd.com.br/mocassim-virginia/",
+        "url_absolute": "https://www.loja.usebede.com.br/mocassim-virginia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc58a0d8/img_2120-6841c33a5dfca.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc58a0d8/img_2120-6841c33a5dfca.jpeg",
@@ -11192,16 +10425,16 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 350.0,
         "cores": [
-            "Oliva",
-            "Castanho avermelhado"
+            "Castanho avermelhado",
+            "Oliva"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Castanho avermelhado": {
@@ -11273,7 +10506,7 @@ const STILETTO_PRODUCTS = [
         "id": "4314975",
         "nome": "BOTA LETÍCIA",
         "categoria": "BOTA CANO LONGO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-leticia/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-leticia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683758d5bfe9d/original-683758d60c459.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683758d5bfe9d/original-683758d60c459.jpeg",
@@ -11285,11 +10518,11 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Marrom": {
@@ -11353,7 +10586,7 @@ const STILETTO_PRODUCTS = [
         "id": "4314976",
         "nome": "BOTA FÁTIMA",
         "categoria": "BOTA CANO LONGO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-fatima/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-fatima/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683758e1445b0/whatsapp-image-2025-05-28-at-15-16-12-9-6841c496e6af9.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683758e1445b0/whatsapp-image-2025-05-28-at-15-16-12-9-6841c496e6af9.jpeg",
@@ -11366,11 +10599,11 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35"
         ],
         "estoque_por_cor": {
             "Marrom": {
@@ -11433,7 +10666,7 @@ const STILETTO_PRODUCTS = [
         "id": "4315343",
         "nome": "BOTA GABI",
         "categoria": "BOTA CANO BAIXO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-gabi/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-gabi/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683766a51be96/whatsapp-image-2025-05-28-at-16-22-36-6841c3a8f2018.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683766a51be96/whatsapp-image-2025-05-28-at-16-22-36-6841c3a8f2018.jpeg",
@@ -11442,18 +10675,18 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 440.0,
         "cores": [
+            "Azul escuro",
             "Preto",
-            "Marrom",
-            "Azul escuro"
+            "Marrom"
         ],
         "tamanhos": [
-            "34",
-            "38",
             "33",
-            "35",
-            "37",
+            "39",
+            "38",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Azul escuro": {
@@ -11567,7 +10800,7 @@ const STILETTO_PRODUCTS = [
         "id": "4315497",
         "nome": "BOTA DANI",
         "categoria": "BOTA CANO BAIXO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-dani/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-dani/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68376de5075c5/original-68376de56409d.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68376de5075c5/original-68376de56409d.jpeg",
@@ -11576,18 +10809,18 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 430.0,
         "cores": [
+            "Azul escuro",
             "Preto",
-            "Marrom",
-            "Azul escuro"
+            "Marrom"
         ],
         "tamanhos": [
-            "34",
-            "38",
             "33",
-            "35",
-            "37",
+            "39",
+            "38",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Azul escuro": {
@@ -11701,7 +10934,7 @@ const STILETTO_PRODUCTS = [
         "id": "4349840",
         "nome": "BOTA PATRICIA",
         "categoria": "BOTA CANO LONGO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-patricia/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-patricia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c0bef7d9/original-68408c0c49db2.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c0bef7d9/original-68408c0c49db2.jpeg",
@@ -11714,8 +10947,8 @@ const STILETTO_PRODUCTS = [
         ],
         "tamanhos": [
             "36",
-            "34",
-            "35"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -11746,7 +10979,7 @@ const STILETTO_PRODUCTS = [
         "id": "4349841",
         "nome": "SCARPIN MARTA",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-marta/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-marta/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c102b31c/img_2136-1-6841c36d0c686.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c102b31c/img_2136-1-6841c36d0c686.jpeg",
@@ -11757,18 +10990,18 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 310.9,
         "cores": [
-            "azul marinho",
             "Preto",
-            "Marrom",
-            "caramelo"
+            "azul marinho",
+            "caramelo",
+            "Marrom"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Marrom": {
@@ -11885,7 +11118,7 @@ const STILETTO_PRODUCTS = [
         "id": "4350019",
         "nome": "TÊNIS FLÁVIA",
         "categoria": "TÊNIS",
-        "url_absolute": "https://www.stilettobmaisd.com.br/tenis-flavia/",
+        "url_absolute": "https://www.loja.usebede.com.br/tenis-flavia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409351485c2/original-68409351a7877.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409351485c2/original-68409351a7877.jpeg",
@@ -11899,12 +11132,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -11949,7 +11182,7 @@ const STILETTO_PRODUCTS = [
         "id": "4350020",
         "nome": "TÊNIS CHUNKY BRUNA",
         "categoria": "TÊNIS",
-        "url_absolute": "https://www.stilettobmaisd.com.br/tenis-chunky-bruna/",
+        "url_absolute": "https://www.loja.usebede.com.br/tenis-chunky-bruna/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684093576b60d/original-6840935798123.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684093576b60d/original-6840935798123.jpeg",
@@ -11960,12 +11193,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -12007,7 +11240,7 @@ const STILETTO_PRODUCTS = [
         "id": "4350021",
         "nome": "BOTA INGRID",
         "categoria": "BOTA CANO MÉDIO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-ingrid/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-ingrid/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409359b2739/original-68409359e2c44.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409359b2739/original-68409359e2c44.jpeg"
@@ -12017,11 +11250,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -12058,7 +11291,7 @@ const STILETTO_PRODUCTS = [
         "id": "4350022",
         "nome": "TÊNIS PRISCILA",
         "categoria": "TÊNIS",
-        "url_absolute": "https://www.stilettobmaisd.com.br/tenis-priscila/",
+        "url_absolute": "https://www.loja.usebede.com.br/tenis-priscila/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6840935b39c70/original-6840935b6894a.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6840935b39c70/original-6840935b6894a.jpeg",
@@ -12071,12 +11304,12 @@ const STILETTO_PRODUCTS = [
             "Cinza"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Bege": {
@@ -12147,7 +11380,7 @@ const STILETTO_PRODUCTS = [
         "id": "4350254",
         "nome": "MOCASSIM LEONA",
         "categoria": "MOCASSIM",
-        "url_absolute": "https://www.stilettobmaisd.com.br/mocassim-leona/",
+        "url_absolute": "https://www.loja.usebede.com.br/mocassim-leona/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409a54e6ac6/whatsapp-image-2025-06-04-at-15-55-08-6841afa99a9ce.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409a54e6ac6/whatsapp-image-2025-06-04-at-15-55-08-6841afa99a9ce.jpeg",
@@ -12161,13 +11394,13 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "34",
-            "38",
             "33",
-            "35",
-            "37",
+            "39",
+            "38",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -12284,7 +11517,7 @@ const STILETTO_PRODUCTS = [
         "id": "4354358",
         "nome": "SCARPIN VIRGINIA",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-virginia/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-virginia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4d7a8059/original-6841e4d7e5e74.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4d7a8059/original-6841e4d7e5e74.jpeg",
@@ -12292,17 +11525,17 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 319.9,
         "cores": [
-            "Vermelho",
             "Preto",
-            "Marrom"
+            "Marrom",
+            "Vermelho"
         ],
         "tamanhos": [
-            "34",
-            "38",
             "33",
-            "35",
+            "38",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Marrom": {
@@ -12404,7 +11637,7 @@ const STILETTO_PRODUCTS = [
         "id": "4354359",
         "nome": "COTURNO MADRI",
         "categoria": "COTURNO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/coturno-madri/",
+        "url_absolute": "https://www.loja.usebede.com.br/coturno-madri/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4db19db5/original-6841e4db51dd8.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4db19db5/original-6841e4db51dd8.jpeg",
@@ -12418,12 +11651,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -12468,7 +11701,7 @@ const STILETTO_PRODUCTS = [
         "id": "4354360",
         "nome": "BOTA LUIZA",
         "categoria": "BOTA CANO BAIXO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-luiza/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-luiza/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4df7dfa3/original-6841e4dfa9fe1.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4df7dfa3/original-6841e4dfa9fe1.jpeg"
@@ -12479,12 +11712,12 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
-            "34",
-            "38",
             "33",
-            "35",
+            "38",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Marrom": {
@@ -12554,7 +11787,7 @@ const STILETTO_PRODUCTS = [
         "id": "4354515",
         "nome": "SCARPIN CHANEL",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-chanel/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-chanel/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebd907d78/original-6841ebd96fcf4.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebd907d78/original-6841ebd96fcf4.jpeg",
@@ -12566,12 +11799,12 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
-            "34",
-            "38",
             "33",
-            "35",
+            "38",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Marrom": {
@@ -12643,7 +11876,7 @@ const STILETTO_PRODUCTS = [
         "id": "4354516",
         "nome": "MOCASSIM MULE GABI",
         "categoria": "MULE",
-        "url_absolute": "https://www.stilettobmaisd.com.br/mocassim-mule-gabi/",
+        "url_absolute": "https://www.loja.usebede.com.br/mocassim-mule-gabi/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebdd510c0/original-6841ebdd8a033.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebdd510c0/original-6841ebdd8a033.jpeg",
@@ -12656,13 +11889,13 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "34",
-            "38",
             "33",
-            "35",
-            "37",
+            "39",
+            "38",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -12744,7 +11977,7 @@ const STILETTO_PRODUCTS = [
         "id": "4354518",
         "nome": "BOTA MARIANA",
         "categoria": "BOTA CANO MÉDIO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-mariana/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-mariana/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebe1640b7/original-6841ebe19b836.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebe1640b7/original-6841ebe19b836.jpeg",
@@ -12757,12 +11990,12 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "34",
-            "38",
             "33",
-            "35",
+            "38",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -12836,7 +12069,7 @@ const STILETTO_PRODUCTS = [
         "id": "4361534",
         "nome": "BOLSA GABI",
         "categoria": "BOLSA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bolsa-gabi/",
+        "url_absolute": "https://www.loja.usebede.com.br/bolsa-gabi/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684464a50330a/original-684464a57b5c0.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684464a50330a/original-684464a57b5c0.jpeg",
@@ -12869,7 +12102,7 @@ const STILETTO_PRODUCTS = [
         "id": "4361535",
         "nome": "BOLSA ANTONELLA",
         "categoria": "BOLSA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bolsa-antonella/",
+        "url_absolute": "https://www.loja.usebede.com.br/bolsa-antonella/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684464a78de06/original-684464a7b398b.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684464a78de06/original-684464a7b398b.jpeg",
@@ -12916,7 +12149,7 @@ const STILETTO_PRODUCTS = [
         "id": "4396512",
         "nome": "BOTA GABRIELA",
         "categoria": "BOTA CANO BAIXO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-gabriela/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-gabriela/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6853165d40af4/original-6853165d90352.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6853165d40af4/original-6853165d90352.jpeg",
@@ -12926,17 +12159,17 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 389.0,
         "cores": [
-            "onça",
             "Preto",
-            "MARSALA"
+            "MARSALA",
+            "onça"
         ],
         "tamanhos": [
-            "34",
-            "38",
             "33",
-            "35",
+            "38",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "MARSALA": {
@@ -13044,7 +12277,7 @@ const STILETTO_PRODUCTS = [
         "id": "4767149",
         "nome": "BOLSA CLUTCH FABI",
         "categoria": "BOLSA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bolsa-clutch-fabi/",
+        "url_absolute": "https://www.loja.usebede.com.br/bolsa-clutch-fabi/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d8213c8e0c1/original-68d8213cf1dfd.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d8213c8e0c1/original-68d8213cf1dfd.jpeg",
@@ -13088,7 +12321,7 @@ const STILETTO_PRODUCTS = [
         "id": "4767150",
         "nome": "BOLSAS CLUTCH LAÇO",
         "categoria": "BOLSA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bolsas-clutch-laco/",
+        "url_absolute": "https://www.loja.usebede.com.br/bolsas-clutch-laco/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d8213ec2263/original-68d8213f087a9.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d8213ec2263/original-68d8213f087a9.jpeg",
@@ -13132,7 +12365,7 @@ const STILETTO_PRODUCTS = [
         "id": "4767151",
         "nome": "BOLSA PALHA FRANJA",
         "categoria": "BOLSA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bolsa-palha-franja/",
+        "url_absolute": "https://www.loja.usebede.com.br/bolsa-palha-franja/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82142948df/original-68d821432bc16.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82142948df/original-68d821432bc16.jpeg",
@@ -13141,8 +12374,8 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 175.0,
         "cores": [
-            "Bege",
-            "Caqui"
+            "Caqui",
+            "Bege"
         ],
         "tamanhos": [
             "Único"
@@ -13179,7 +12412,7 @@ const STILETTO_PRODUCTS = [
         "id": "4767176",
         "nome": "CLUTCH TACHAS",
         "categoria": "BOLSA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/clutch-tachas/",
+        "url_absolute": "https://www.loja.usebede.com.br/clutch-tachas/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82883a3bfb/original-68d82883eb928.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82883a3bfb/original-68d82883eb928.jpeg",
@@ -13187,8 +12420,8 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 129.9,
         "cores": [
-            "preta",
-            "OFF WHITE"
+            "OFF WHITE",
+            "preta"
         ],
         "tamanhos": [
             "Único"
@@ -13223,15 +12456,15 @@ const STILETTO_PRODUCTS = [
         "id": "4767177",
         "nome": "CLUTCH PALHA",
         "categoria": "BOLSA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/clutch-palha/",
+        "url_absolute": "https://www.loja.usebede.com.br/clutch-palha/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82885a7219/original-68d82885d83c7.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82885a7219/original-68d82885d83c7.jpeg"
         ],
         "preco": 145.9,
         "cores": [
-            "Bege",
-            "Caqui"
+            "Caqui",
+            "Bege"
         ],
         "tamanhos": [
             "Único"
@@ -13264,7 +12497,7 @@ const STILETTO_PRODUCTS = [
         "id": "4840409",
         "nome": "SCARPIN MARTINA",
         "categoria": "SCARPIN",
-        "url_absolute": "https://www.stilettobmaisd.com.br/scarpin-martina/",
+        "url_absolute": "https://www.loja.usebede.com.br/scarpin-martina/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68ee9f9ed3ffd/sem-ti-tulo-007-6941dd7198c3b.jpg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68ee9f9ed3ffd/sem-ti-tulo-007-6941dd7198c3b.jpg",
@@ -13278,18 +12511,18 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 319.9,
         "cores": [
-            "pinhão",
             "Preto",
             "OFF WHITE",
-            "nude"
+            "nude",
+            "pinhão"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -13421,7 +12654,7 @@ const STILETTO_PRODUCTS = [
         "id": "4840824",
         "nome": "RASTEIRINHA BIA",
         "categoria": "RASTEIRINHA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/rasteirinha-bia/",
+        "url_absolute": "https://www.loja.usebede.com.br/rasteirinha-bia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68eeaded09284/whatsapp-image-2025-12-16-at-19-56-17-2-6941e3e101b48.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68eeaded09284/whatsapp-image-2025-12-16-at-19-56-17-2-6941e3e101b48.jpeg",
@@ -13435,12 +12668,12 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -13512,7 +12745,7 @@ const STILETTO_PRODUCTS = [
         "id": "4881997",
         "nome": "SANDÁLIA SCARLET",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-scarlet/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-scarlet/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114db9650c/img_2589-6941db6c620a3.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114db9650c/img_2589-6941db6c620a3.jpeg",
@@ -13523,16 +12756,16 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 340.9,
         "cores": [
-            "Dourado",
-            "caramelo"
+            "caramelo",
+            "Dourado"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Dourado": {
@@ -13605,7 +12838,7 @@ const STILETTO_PRODUCTS = [
         "id": "4882001",
         "nome": "TAMANCO GINA",
         "categoria": "TAMANCO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/tamanco-gina/",
+        "url_absolute": "https://www.loja.usebede.com.br/tamanco-gina/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114e8d6370/whatsapp-image-2025-12-14-at-15-36-59-9-6941d9f9b0ae2.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114e8d6370/whatsapp-image-2025-12-14-at-15-36-59-9-6941d9f9b0ae2.jpeg",
@@ -13619,18 +12852,18 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 275.9,
         "cores": [
-            "Vermelho",
-            "Dourado",
             "Preto",
-            "OFF WHITE"
+            "OFF WHITE",
+            "Dourado",
+            "Vermelho"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Dourado": {
@@ -13762,7 +12995,7 @@ const STILETTO_PRODUCTS = [
         "id": "4905308",
         "nome": "SANDÁLIA AURORA",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-aurora-6909132b8877a/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-aurora-6909132b8877a/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6909132b88786/original-6909132c203f0.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6909132b88786/original-6909132c203f0.jpeg",
@@ -13776,12 +13009,12 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -13853,7 +13086,7 @@ const STILETTO_PRODUCTS = [
         "id": "4905399",
         "nome": "SANDÁLIA ANANDA",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-ananda/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-ananda/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/69091a3d1345f/original-69091a3d856ff.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/69091a3d1345f/original-69091a3d856ff.jpeg",
@@ -13865,12 +13098,12 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -13940,7 +13173,7 @@ const STILETTO_PRODUCTS = [
         "id": "4905400",
         "nome": "SANDÁLIA CHARLOTE",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-charlote/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-charlote/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/69091a4213967/original-69091a48a0fab.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/69091a4213967/original-69091a48a0fab.jpeg",
@@ -13954,12 +13187,12 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -14058,7 +13291,7 @@ const STILETTO_PRODUCTS = [
         "id": "5016060",
         "nome": "SANDÁLIA TATI COURO",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-tati-couro/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-tati-couro/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd33dbac/whatsapp-image-2025-12-16-at-19-59-44-6941e4c57b0c2.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd33dbac/whatsapp-image-2025-12-16-at-19-59-44-6941e4c57b0c2.jpeg",
@@ -14073,12 +13306,12 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -14178,7 +13411,7 @@ const STILETTO_PRODUCTS = [
         "id": "5016064",
         "nome": "SANDÁLIA TATI CAMURÇA",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-tati-camurca/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-tati-camurca/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd85edfe/whatsapp-image-2025-12-16-at-19-59-13-6941e4b4be9c4.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd85edfe/whatsapp-image-2025-12-16-at-19-59-13-6941e4b4be9c4.jpeg",
@@ -14187,16 +13420,16 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 255.9,
         "cores": [
-            "TAUPE",
-            "Terra"
+            "Terra",
+            "TAUPE"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "TAUPE": {
@@ -14267,7 +13500,7 @@ const STILETTO_PRODUCTS = [
         "id": "5016065",
         "nome": "TAMANCO PATRÍCIA",
         "categoria": "TAMANCO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/tamanco-patricia/",
+        "url_absolute": "https://www.loja.usebede.com.br/tamanco-patricia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fddb5df9c/original-6939fdde697ee.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fddb5df9c/original-6939fdde697ee.jpeg",
@@ -14280,12 +13513,12 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -14356,7 +13589,7 @@ const STILETTO_PRODUCTS = [
         "id": "5016066",
         "nome": "TAMANCO TESSI",
         "categoria": "TAMANCO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/tamanco-tessi/",
+        "url_absolute": "https://www.loja.usebede.com.br/tamanco-tessi/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fde50440b/original-6939fde7e4682.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fde50440b/original-6939fde7e4682.jpeg",
@@ -14364,16 +13597,16 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 210.9,
         "cores": [
-            "Preto",
-            "CAPUCCINO"
+            "CAPUCCINO",
+            "Preto"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "CAPUCCINO": {
@@ -14443,7 +13676,7 @@ const STILETTO_PRODUCTS = [
         "id": "5027515",
         "nome": "PAPETE VERÔNICA",
         "categoria": "PAPETE",
-        "url_absolute": "https://www.stilettobmaisd.com.br/papete-veronica/",
+        "url_absolute": "https://www.loja.usebede.com.br/papete-veronica/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f0b91858f8/original-693f0b9216149.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f0b91858f8/original-693f0b9216149.jpeg",
@@ -14454,17 +13687,17 @@ const STILETTO_PRODUCTS = [
         "preco": 179.9,
         "cores": [
             "Preto",
-            "Bronze",
+            "nude/preto",
             "OFF WHITE",
-            "nude/preto"
+            "Bronze"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Bronze": {
@@ -14596,7 +13829,7 @@ const STILETTO_PRODUCTS = [
         "id": "5027530",
         "nome": "PAPETE ONÇA",
         "categoria": "CHINELO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/papete-onca/",
+        "url_absolute": "https://www.loja.usebede.com.br/papete-onca/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f1297f32ee/whatsapp-image-2025-12-14-at-17-00-41-6941d81f5afdd.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f1297f32ee/whatsapp-image-2025-12-14-at-17-00-41-6941d81f5afdd.jpeg"
@@ -14606,12 +13839,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -14652,7 +13885,7 @@ const STILETTO_PRODUCTS = [
         "id": "5027552",
         "nome": "CHINELO CORRENTE TRATORADO",
         "categoria": "CHINELO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/chinelo-corrente-tratorado/",
+        "url_absolute": "https://www.loja.usebede.com.br/chinelo-corrente-tratorado/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f19a19b52f/original-693f19a1f41cd.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f19a19b52f/original-693f19a1f41cd.jpeg",
@@ -14661,16 +13894,16 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 169.9,
         "cores": [
-            "Prata",
-            "Preto"
+            "Preto",
+            "Prata"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Prata": {
@@ -14741,7 +13974,7 @@ const STILETTO_PRODUCTS = [
         "id": "5027573",
         "nome": "PAPETE SLIM",
         "categoria": "PAPETE",
-        "url_absolute": "https://www.stilettobmaisd.com.br/papete-slim/",
+        "url_absolute": "https://www.loja.usebede.com.br/papete-slim/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f206bdb085/original-693f206c9f3ae.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f206bdb085/original-693f206c9f3ae.jpeg",
@@ -14753,12 +13986,12 @@ const STILETTO_PRODUCTS = [
             "Bronze"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Bronze": {
@@ -14828,7 +14061,7 @@ const STILETTO_PRODUCTS = [
         "id": "5027574",
         "nome": "CHINELO ONÇA",
         "categoria": "CHINELO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/chinelo-onca/",
+        "url_absolute": "https://www.loja.usebede.com.br/chinelo-onca/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f206fbfd15/original-693f207006542.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f206fbfd15/original-693f207006542.jpeg",
@@ -14840,12 +14073,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -14888,7 +14121,7 @@ const STILETTO_PRODUCTS = [
         "id": "5027575",
         "nome": "CHINELO NEW",
         "categoria": "CHINELO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/chinelo-new/",
+        "url_absolute": "https://www.loja.usebede.com.br/chinelo-new/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f2072e5de8/original-693f20732e23a.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f2072e5de8/original-693f20732e23a.jpeg",
@@ -14899,12 +14132,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
             "33",
-            "35",
-            "37",
+            "39",
+            "38",
             "36",
-            "39"
+            "37",
+            "35"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -14946,7 +14179,7 @@ const STILETTO_PRODUCTS = [
         "id": "5027589",
         "nome": "CHINELO JANE",
         "categoria": "CHINELO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/chinelo-jane/",
+        "url_absolute": "https://www.loja.usebede.com.br/chinelo-jane/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f27b68b3d5/whatsapp-image-2025-12-16-at-19-59-56-6941e4a0c9d95.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f27b68b3d5/whatsapp-image-2025-12-16-at-19-59-56-6941e4a0c9d95.jpeg",
@@ -14960,12 +14193,12 @@ const STILETTO_PRODUCTS = [
             "Bronze"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Bronze": {
@@ -15037,7 +14270,7 @@ const STILETTO_PRODUCTS = [
         "id": "5032496",
         "nome": "RASTEIRINHA MARI",
         "categoria": "RASTEIRINHA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/rasteirinha-mari/",
+        "url_absolute": "https://www.loja.usebede.com.br/rasteirinha-mari/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6d5e21a0/original-6941e6d8a62da.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6d5e21a0/original-6941e6d8a62da.jpeg",
@@ -15053,12 +14286,12 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -15159,7 +14392,7 @@ const STILETTO_PRODUCTS = [
         "id": "5032497",
         "nome": "SANDÁLIA CRIS",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-cris/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-cris/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6dc4307f/original-6941e6ddecfb8.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6dc4307f/original-6941e6ddecfb8.jpeg",
@@ -15173,12 +14406,12 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -15250,7 +14483,7 @@ const STILETTO_PRODUCTS = [
         "id": "5032498",
         "nome": "SANDÁLIA PAOLA",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-paola/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-paola/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e09a138/original-6941e6e0ce137.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e09a138/original-6941e6e0ce137.jpeg",
@@ -15264,12 +14497,12 @@ const STILETTO_PRODUCTS = [
             "Prata"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Ouro": {
@@ -15341,7 +14574,7 @@ const STILETTO_PRODUCTS = [
         "id": "5032499",
         "nome": "SANDÁLIA PAULA",
         "categoria": "SANDÁLIA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/sandalia-paula/",
+        "url_absolute": "https://www.loja.usebede.com.br/sandalia-paula/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e509189/original-6941e6e53f0bd.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e509189/original-6941e6e53f0bd.jpeg",
@@ -15354,12 +14587,12 @@ const STILETTO_PRODUCTS = [
             "nude"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -15433,7 +14666,7 @@ const STILETTO_PRODUCTS = [
         "id": "5032543",
         "nome": "MULE TAMARA",
         "categoria": "MULE",
-        "url_absolute": "https://www.stilettobmaisd.com.br/mule-tamara/",
+        "url_absolute": "https://www.loja.usebede.com.br/mule-tamara/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941eddcbe044/original-6941eddd1d5d1.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941eddcbe044/original-6941eddd1d5d1.jpeg",
@@ -15445,12 +14678,12 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -15522,7 +14755,7 @@ const STILETTO_PRODUCTS = [
         "id": "5041626",
         "nome": "RASTEIRINHA SARA",
         "categoria": "RASTEIRINHA",
-        "url_absolute": "https://www.stilettobmaisd.com.br/rasteirinha-sara/",
+        "url_absolute": "https://www.loja.usebede.com.br/rasteirinha-sara/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/694710b254c66/original-694710b2cef05.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/694710b254c66/original-694710b2cef05.jpeg"
@@ -15533,12 +14766,12 @@ const STILETTO_PRODUCTS = [
             "Branco"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Branco": {
@@ -15608,7 +14841,7 @@ const STILETTO_PRODUCTS = [
         "id": "5439702",
         "nome": "BOTA BELLA",
         "categoria": "BOTA CANO BAIXO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-bella/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-bella/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14ba7a22151/original-6a14ba7a6ae01.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14ba7a22151/original-6a14ba7a6ae01.jpeg",
@@ -15616,15 +14849,15 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 350.9,
         "cores": [
-            "Conhaque",
-            "Preto"
+            "Preto",
+            "Conhaque"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Conhaque": {
@@ -15688,7 +14921,7 @@ const STILETTO_PRODUCTS = [
         "id": "5439739",
         "nome": "SLINGBACK MARTA",
         "categoria": "SLINGBACK",
-        "url_absolute": "https://www.stilettobmaisd.com.br/slingback-marta/",
+        "url_absolute": "https://www.loja.usebede.com.br/slingback-marta/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14c10d2c283/original-6a14c10d71360.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14c10d2c283/original-6a14c10d71360.jpeg",
@@ -15701,12 +14934,12 @@ const STILETTO_PRODUCTS = [
             "cafe"
         ],
         "tamanhos": [
-            "34",
-            "38",
             "33",
-            "35",
+            "38",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -15780,7 +15013,7 @@ const STILETTO_PRODUCTS = [
         "id": "5439795",
         "nome": "BOTA MONTARIA LIA",
         "categoria": "BOTA CANO LONGO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-montaria-lia/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-montaria-lia/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14cf8fa27c6/original-6a14cf9006fe1.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14cf8fa27c6/original-6a14cf9006fe1.jpeg",
@@ -15791,12 +15024,12 @@ const STILETTO_PRODUCTS = [
             "Preto"
         ],
         "tamanhos": [
-            "34",
+            "39",
             "38",
-            "35",
-            "37",
             "36",
-            "39"
+            "37",
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -15838,7 +15071,7 @@ const STILETTO_PRODUCTS = [
         "id": "5439796",
         "nome": "BOTA COTURNO BRENDA",
         "categoria": "COTURNO",
-        "url_absolute": "https://www.stilettobmaisd.com.br/bota-coturno-brenda/",
+        "url_absolute": "https://www.loja.usebede.com.br/bota-coturno-brenda/",
         "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14cf9452910/original-6a14cf948bc11.jpeg",
         "fotos": [
             "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14cf9452910/original-6a14cf948bc11.jpeg",
@@ -15850,11 +15083,11 @@ const STILETTO_PRODUCTS = [
             "Preto"
         ],
         "tamanhos": [
-            "34",
             "38",
-            "35",
+            "36",
             "37",
-            "36"
+            "35",
+            "34"
         ],
         "estoque_por_cor": {
             "Preto": {

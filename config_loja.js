@@ -3,7 +3,7 @@
  * Dados da Empresa Confirmados em 20/08/2026
  */
 const CFG_LOJA = {
-    dominioLoja: "https://www.stilettobmaisd.com.br",
+    dominioLoja: "https://loja.usebede.com.br",
     razaoSocial: 'Stiletto Bd Boutique Ltda',   // CONFIRMADO 20/08/2026
     cnpj: '55.068.034/0001-00',                 // CONFIRMADO 20/08/2026
     nomeFantasia: 'BEDÊ',                       // CONFIRMADO 20/08/2026
@@ -12,9 +12,9 @@ const CFG_LOJA = {
     descontoPix: 5,                             // CONFIRMADO 20/08/2026
     primeiraTrocaGratisDias: null,              // CONFIRMADO 20/08/2026: apenas 7 dias do CDC
     freteGratisAcimaDe: 449,                    // CONFIRMADO 20/08/2026
-    freteGratisRegioes: ['Sul', 'Sudeste'],
-    freteGratisEstados: ['RS','SC','PR','SP','RJ','MG','ES'],
-    parcelamentoMax: null                       // PENDENTE [A CONFIRMAR] — aguardando confirmação do que a WBuy permite
+    freteGratisRegioes: [],              // wBuy aplica frete grátis p/ Brasil inteiro — aguardando restrição no painel
+    freteGratisEstados: [],              // idem — sem restrição por estado confirmada
+    parcelamentoMax: 6                          // MEDIDO no checkout da wBuy em 20/08/2026
 };
 
 if (typeof module !== 'undefined') module.exports = { CFG_LOJA };
