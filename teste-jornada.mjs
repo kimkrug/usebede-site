@@ -122,29 +122,50 @@ checa(menus.mobile > 0, 'Gaveta mobile preenchida', `${menus.mobile} itens`);
 
 // ── 4. Nenhum menu leva a lista vazia ──────────────────────────────────────
 secao('4. Coleções');
-const colecoes = await pagina.evaluate(async () => {
-  const visivel = (el) => {
-    const s = getComputedStyle(el);
-    const r = el.getBoundingClientRect();
-    return s.display !== 'none' && s.visibility !== 'hidden' && (r.width > 0 || r.height > 0);
-  };
-  const destinos = [...new Set(
-    [...document.querySelectorAll('[onclick*=openCollection]')]
-      .filter(visivel)
-      .map((a) => (a.getAttribute('onclick').match(/openCollection\('([^']+)'/) || [])[1])
-      .filter(Boolean)
-  )];
+const varredura = await pagina.evaluate(async () => {
+  // Os destinos vêm dos TRÊS containers de menu, independente de o container
+  // estar visível no momento (o dropdown do desktop nasce fechado, a gaveta
+  // mobile nasce escondida — e mesmo assim seus itens precisam funcionar).
+  const containers = ['filterChips', 'desktopSubMenu', 'mobSubCategories'];
+  const destinos = new Set();
+
+  for (const id of containers) {
+    const box = document.getElementById(id);
+    if (!box) continue;
+    for (const el of box.querySelectorAll('[onclick*=openCollection]')) {
+      const m = el.getAttribute('onclick').match(/openCollection\('([^']+)'/);
+      if (m) destinos.add(m[1]);
+    }
+  }
+
+  // Os chips usam filterCat em vez de openCollection em algumas versões.
+  for (const el of document.querySelectorAll('#filterChips [onclick*=filterCat]')) {
+    const m = el.getAttribute('onclick').match(/filterCat\('([^']+)'/);
+    if (m) destinos.add(m[1]);
+  }
+
   const r = {};
   for (const c of destinos) {
     openCollection(c);
     await new Promise((res) => setTimeout(res, 400));
     const g = document.querySelector('.collection-grid');
     const vazio = g && g.innerText.includes('Nenhum produto encontrado');
-    r[c] = vazio ? 0 : (g ? g.children.length : -1);
+    r[c] = vazio ? 0 : g ? g.children.length : -1;
   }
   return r;
 });
-for (const [cat, n] of Object.entries(colecoes)) {
+
+const nDestinos = Object.keys(varredura).length;
+
+// Trava contra cobertura silenciosa: se a varredura encontrar quase nada,
+// é o teste que quebrou, não o site. Um teste que não testa precisa reprovar.
+checa(
+  nDestinos >= 10,
+  'A varredura encontrou os destinos de menu',
+  `${nDestinos} destinos`
+);
+
+for (const [cat, n] of Object.entries(varredura)) {
   checa(n > 0, `Coleção "${cat}" tem produtos`, `${n} cards`);
 }
 
