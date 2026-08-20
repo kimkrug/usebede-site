@@ -1,0 +1,351 @@
+{
+  "paginas_lidas": 3,
+  "total_recuperados_api": 223,
+  "total_processados_elegiveis": 186,
+  "total_anterior_publicado": 100,
+  "diff": {
+    "produtos_novos": [
+      "BIRKEN MANU",
+      "BOLSA ANTONELLA",
+      "BOLSA BIA",
+      "BOLSA CLUTCH FABI",
+      "BOLSA GABI",
+      "BOLSA JUSSARA",
+      "BOLSA MARIA LUIZA",
+      "BOLSA PALHA FRANJA",
+      "BOLSAS CLUTCH LAÇO",
+      "BOTA AMANDA",
+      "BOTA BELLA",
+      "BOTA CARMEN",
+      "BOTA COTURNO BRENDA",
+      "BOTA COTURNO PRISCILA",
+      "BOTA DANI",
+      "BOTA FÁTIMA",
+      "BOTA GABI",
+      "BOTA GABRIELA",
+      "BOTA INGRID",
+      "BOTA JULIA",
+      "BOTA LEONA",
+      "BOTA LETÍCIA",
+      "BOTA LORENA",
+      "BOTA LUIZA",
+      "BOTA MALHA CANO LONGO",
+      "BOTA MARIANA",
+      "BOTA MONTARIA LIA",
+      "BOTA PATRICIA",
+      "BOTA SARA CANO LONGO",
+      "CHINELO CORRENTE TRATORADO",
+      "CHINELO JANE",
+      "CHINELO MARTA",
+      "CHINELO NEW",
+      "CHINELO ONÇA",
+      "CHINELO PATRICIA",
+      "CLUTCH PALHA",
+      "CLUTCH TACHAS",
+      "COTURNO MADRI",
+      "MOCASSIM HELENA",
+      "MOCASSIM LEONA",
+      "MOCASSIM MARTA",
+      "MOCASSIM MULE GABI",
+      "MOCASSIM TRATORADO",
+      "MOCASSIM VIRGINIA",
+      "MULE TAMARA",
+      "MULE VERA",
+      "PAPETE AISHA",
+      "PAPETE MARIA",
+      "PAPETE ONÇA",
+      "PAPETE SLIM",
+      "PAPETE VERÔNICA",
+      "RASTEIRINHA ALICE",
+      "RASTEIRINHA BIA",
+      "RASTEIRINHA IVI",
+      "RASTEIRINHA MARI",
+      "RASTEIRINHA SARA",
+      "SANDALIA AURORA",
+      "SANDALIA SIGTUNA",
+      "SANDÁLIA ALICE",
+      "SANDÁLIA ANANDA",
+      "SANDÁLIA AURORA",
+      "SANDÁLIA BARBARA",
+      "SANDÁLIA BRUNA",
+      "SANDÁLIA CAMILA",
+      "SANDÁLIA CARMEN",
+      "SANDÁLIA CHARLOTE",
+      "SANDÁLIA CRIS",
+      "SANDÁLIA DÁLIA",
+      "SANDÁLIA ELLA",
+      "SANDÁLIA ESTRELA",
+      "SANDÁLIA FLOR",
+      "SANDÁLIA JULIA",
+      "SANDÁLIA LUA",
+      "SANDÁLIA MIA",
+      "SANDÁLIA NATALIA",
+      "SANDÁLIA OURO",
+      "SANDÁLIA PAOLA",
+      "SANDÁLIA PAULA",
+      "SANDÁLIA ROSA",
+      "SANDÁLIA SCARLET",
+      "SANDÁLIA TATI CAMURÇA",
+      "SANDÁLIA TATI COURO",
+      "SAPATILHA HELENA",
+      "SAPATILHA NANDA",
+      "SAPATILHA PARIS BAUNILHA",
+      "SCARPIN CHANEL",
+      "SCARPIN HELENA",
+      "SCARPIN LAURA",
+      "SCARPIN MARTA",
+      "SCARPIN MARTINA",
+      "SCARPIN NAPA FIVELA",
+      "SCARPIN OURO",
+      "SCARPIN VENETO",
+      "SCARPIN VIRGINIA",
+      "SLINGBACK DUO AVELÃ",
+      "SLINGBACK JORDANA",
+      "SLINGBACK MARTA",
+      "SLINGBACK SARA",
+      "SLINGBACK VERNIZ MIA",
+      "TAMANCO BIA",
+      "TAMANCO BRISA",
+      "TAMANCO GINA",
+      "TAMANCO MARI",
+      "TAMANCO PATRÍCIA",
+      "TAMANCO TESSI",
+      "TÊNIS ANIMAL",
+      "TÊNIS CHUNKY BRUNA",
+      "TÊNIS FLÁVIA",
+      "TÊNIS PRISCILA",
+      "TÊNIS SOFI"
+    ],
+    "produtos_removidos": [
+      "BOLSA BARBARA",
+      "BOLSA CANTIL",
+      "BOLSA DANI",
+      "BOLSA JANAINA",
+      "BOLSA JANIARA",
+      "BOLSA LAURA",
+      "BOLSA LULUZINHAS",
+      "BOLSA ROSE",
+      "BOLSA SILVIA",
+      "BOTA CANO ALTO CAMURÇA",
+      "BOTA KARLSTAD JEANS ESCURO",
+      "BOTAS JEANS AZUL",
+      "BOTAS ONCA CONHAQUE 1169",
+      "BOTAS TECIDO MLR 3721 KNIT-TULE",
+      "CALCADO   35",
+      "CARTEIRA",
+      "CLOGS CRYSTAL KR2002 Cor:CAMURCA PRETO;Tamanho:35",
+      "CLOGS CRYSTAL KR2002 Cor:CAMURCA PRETO;Tamanho:38",
+      "INATIVO",
+      "INATIVO 2",
+      "SAPATILHA ODRE PRETO FIVELA DOURADA",
+      "SCARPIN LUISA 21",
+      "SCARPIN MELINA RG1001 Cor:NAPA MARSALA;Tamanho:38",
+      "TENIS"
+    ]
+  },
+  "descartes_detalhados": {
+    "ativo_false_count": 7,
+    "oculto_true_count": 0,
+    "sem_estoque_count": 20,
+    "sem_foto_count": 5,
+    "sem_nome_count": 0,
+    "sem_categoria_count": 5,
+    "itens_descartados": {
+      "ativo_false": [
+        {
+          "id": "3325679",
+          "nome": "CALCADO   35",
+          "motivo": "ativo='0'"
+        },
+        {
+          "id": "3325682",
+          "nome": "CLOGS CRYSTAL KR2002 Cor:CAMURCA PRETO;Tamanho:38",
+          "motivo": "ativo='0'"
+        },
+        {
+          "id": "3325683",
+          "nome": "TENIS",
+          "motivo": "ativo='0'"
+        },
+        {
+          "id": "3325684",
+          "nome": "INATIVO",
+          "motivo": "ativo='0'"
+        },
+        {
+          "id": "3325724",
+          "nome": "SCARPIN MELINA RG1001 Cor:NAPA MARSALA;Tamanho:38",
+          "motivo": "ativo='0'"
+        },
+        {
+          "id": "3325733",
+          "nome": "INATIVO 2",
+          "motivo": "ativo='0'"
+        },
+        {
+          "id": "3325738",
+          "nome": "SCARPIN LUISA 21",
+          "motivo": "ativo='0'"
+        }
+      ],
+      "oculto_true": [],
+      "sem_estoque": [
+        {
+          "id": "3325665",
+          "nome": "SAPATILHA ODRE PRETO FIVELA DOURADA",
+          "motivo": "Saldo total de estoque = 0"
+        },
+        {
+          "id": "3325669",
+          "nome": "BOLSA BARBARA",
+          "motivo": "Saldo total de estoque = 0"
+        },
+        {
+          "id": "3325672",
+          "nome": "BOLSA CANTIL",
+          "motivo": "Saldo total de estoque = 0"
+        },
+        {
+          "id": "3325694",
+          "nome": "BOTA CANO ALTO CAMURÇA",
+          "motivo": "Saldo total de estoque = 0"
+        },
+        {
+          "id": "3325715",
+          "nome": "BOLSA LAURA",
+          "motivo": "Saldo total de estoque = 0"
+        },
+        {
+          "id": "3325742",
+          "nome": "BOLSA LULUZINHAS",
+          "motivo": "Saldo total de estoque = 0"
+        },
+        {
+          "id": "3325744",
+          "nome": "BOTAS ONCA CONHAQUE 1169",
+          "motivo": "Saldo total de estoque = 0"
+        },
+        {
+          "id": "3325747",
+          "nome": "BOLSA JANIARA",
+          "motivo": "Saldo total de estoque = 0"
+        },
+        {
+          "id": "3325759",
+          "nome": "BOLSA DANI",
+          "motivo": "Saldo total de estoque = 0"
+        },
+        {
+          "id": "3340399",
+          "nome": "BOLSA JANAINA",
+          "motivo": "Saldo total de estoque = 0"
+        },
+        {
+          "id": "3399509",
+          "nome": "SANDALIA MAIA",
+          "motivo": "Saldo total de estoque = 0"
+        },
+        {
+          "id": "3608496",
+          "nome": "TAMANCO FLÁVIA",
+          "motivo": "Saldo total de estoque = 0"
+        },
+        {
+          "id": "3614778",
+          "nome": "SANDALIA TARANTO",
+          "motivo": "Saldo total de estoque = 0"
+        },
+        {
+          "id": "3764169",
+          "nome": "BOLSA MIRIAM",
+          "motivo": "Saldo total de estoque = 0"
+        },
+        {
+          "id": "4767198",
+          "nome": "BOLSA CARTEIRA PALHA",
+          "motivo": "Saldo total de estoque = 0"
+        },
+        {
+          "id": "4767199",
+          "nome": "BOLSA PALHA BAÚ",
+          "motivo": "Saldo total de estoque = 0"
+        },
+        {
+          "id": "4767243",
+          "nome": "BOLSA ZARA",
+          "motivo": "Saldo total de estoque = 0"
+        },
+        {
+          "id": "4767244",
+          "nome": "BOLSA PALHA BERLOQUE",
+          "motivo": "Saldo total de estoque = 0"
+        },
+        {
+          "id": "5041627",
+          "nome": "RASTEIRINHA LUZ",
+          "motivo": "Saldo total de estoque = 0"
+        },
+        {
+          "id": "5041628",
+          "nome": "RASTEIRINHA BROW",
+          "motivo": "Saldo total de estoque = 0"
+        }
+      ],
+      "sem_foto": [
+        {
+          "id": "3325662",
+          "nome": "BOTA KARLSTAD JEANS ESCURO",
+          "motivo": "Sem fotos cadastradas"
+        },
+        {
+          "id": "3325678",
+          "nome": "BOTAS TECIDO MLR 3721 KNIT-TULE",
+          "motivo": "Sem fotos cadastradas"
+        },
+        {
+          "id": "3325703",
+          "nome": "BOLSA ROSE",
+          "motivo": "Sem fotos cadastradas"
+        },
+        {
+          "id": "3325729",
+          "nome": "BOLSA SILVIA",
+          "motivo": "Sem fotos cadastradas"
+        },
+        {
+          "id": "5365253",
+          "nome": "SAPATILHA DRICA",
+          "motivo": "Sem fotos cadastradas"
+        }
+      ],
+      "sem_nome": [],
+      "sem_categoria": [
+        {
+          "id": "3325741",
+          "nome": "CARTEIRA",
+          "motivo": "Sem categoria definida"
+        },
+        {
+          "id": "3325749",
+          "nome": "BOTAS JEANS AZUL",
+          "motivo": "Sem categoria definida"
+        },
+        {
+          "id": "3325750",
+          "nome": "CLOGS CRYSTAL KR2002 Cor:CAMURCA PRETO;Tamanho:35",
+          "motivo": "Sem categoria definida"
+        },
+        {
+          "id": "3471778",
+          "nome": "SAPATO BONECA FIVELA",
+          "motivo": "Sem categoria definida"
+        },
+        {
+          "id": "3471934",
+          "nome": "SLINGBACK CHANEL",
+          "motivo": "Sem categoria definida"
+        }
+      ]
+    }
+  }
+}
