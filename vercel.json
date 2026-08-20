@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "destination": "https://loja.usebede.com.br/$1",
-      "permanent": false
-    }
-  ]
-}
