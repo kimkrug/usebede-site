@@ -1354,7 +1354,7 @@
     // — Chips de categoria (barra de filtros na vitrine) —
     const chipsContainer = document.getElementById('filterChips');
     if (chipsContainer) {
-      let html = '<button class="f-chip active" onclick="filterCat('ALL',this)">Todos</button>';
+      let html = `<button class="f-chip active" onclick="filterCat('ALL',this)">Todos</button>`;
       activeNav.forEach(item => {
         html += `<button class="f-chip" onclick="filterCat('${item.key}',this)">${item.label}</button>`;
       });
