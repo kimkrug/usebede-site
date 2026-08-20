@@ -1508,8 +1508,20 @@
     const saleMax = descontoMaximoReal(PRODUCTS);
     const temPromo = (saleMax !== null);
 
+    // 1. Menu do topo (Desktop)
+    const navSale = document.getElementById('navSaleItem') || document.querySelector('.sale-tag');
+    if (navSale) navSale.style.display = temPromo ? '' : 'none';
+
+    // 2. Menu da gaveta (Mobile)
+    const mobNavSale = document.getElementById('mobNavSaleItem') || document.querySelector('.mob-nav-link.highlight');
+    if (mobNavSale) mobNavSale.style.display = temPromo ? '' : 'none';
+
+    // 3. Slide 2: Seção e botão "Ver Liquidação"
     const saleSection = document.getElementById('saleSection') || document.querySelector('.split-hero-sale');
     if (saleSection) saleSection.style.display = temPromo ? '' : 'none';
+
+    const slideSaleBtn = document.getElementById('slideSaleBtn');
+    if (slideSaleBtn) slideSaleBtn.style.display = temPromo ? '' : 'none';
 
     const saleHeadline = document.getElementById('saleHeadline');
     if (saleHeadline && temPromo) {
@@ -1521,7 +1533,8 @@
       mobSaleHeadline.textContent = temPromo ? `Special Sale (Até ${saleMax}% OFF)` : 'Special Sale';
     }
 
-    const chipSale = document.querySelector('[onclick*="LIQUIDA"]');
+    // 4. Chip de filtro
+    const chipSale = document.getElementById('chipLiquidacao') || document.querySelector('[onclick*="LIQUIDA"]');
     if (chipSale) chipSale.style.display = temPromo ? '' : 'none';
   };
 

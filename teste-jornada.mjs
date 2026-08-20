@@ -169,6 +169,41 @@ for (const [cat, n] of Object.entries(varredura)) {
   checa(n > 0, `Coleção "${cat}" tem produtos`, `${n} cards`);
 }
 
+// ── 4b. Nenhum item de menu visível leva a lugar nenhum ────────────────────
+secao('4b. Itens de menu que não abrem coleção');
+const orfaos = await pagina.evaluate(() => {
+  const vis = (e) => {
+    const c = getComputedStyle(e);
+    const r = e.getBoundingClientRect();
+    return c.display !== 'none' && c.visibility !== 'hidden' &&
+           c.opacity !== '0' && (r.width > 0 || r.height > 0);
+  };
+  // Itens visíveis de navegação que NÃO chamam openCollection nem filterCat.
+  // Um item assim precisa ter um destino provado — senão é enfeite que frustra.
+  const nav = [...document.querySelectorAll(
+    '.nav-item, .mob-nav-link, .sub-link, .mob-sub-link, [class*=nav] a'
+  )];
+  return nav
+    .filter(vis)
+    .filter((e) => {
+      const oc = e.getAttribute('onclick') || '';
+      return !/openCollection|filterCat/.test(oc);
+    })
+    .map((e) => ({
+      texto: (e.innerText || '').trim().slice(0, 30),
+      acao: (e.getAttribute('onclick') || e.getAttribute('href') || '').slice(0, 50),
+    }))
+    .filter((x) => x.texto);
+});
+
+if (orfaos.length === 0) {
+  ok('Todo item de menu visível abre uma coleção');
+} else {
+  for (const o of orfaos) {
+    falhou(`Item de menu "${o.texto}" não abre coleção`, o.acao);
+  }
+}
+
 // ── 5. Jornada de compra ───────────────────────────────────────────────────
 secao('5. Jornada de compra');
 const jornada = await pagina.evaluate(async () => {

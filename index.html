@@ -78,7 +78,7 @@
           </div>
 
           <a class="nav-item" href="#" onclick="openCollection('BOLSA');return false;">Bolsas</a>
-          <a class="nav-item nav-priority sale-tag" href="#" onclick="goToSlide(2);return false;">Liquidação</a>
+          <a class="nav-item nav-priority sale-tag" id="navSaleItem" href="#" onclick="goToSlide(2);return false;">Liquidação</a>
         </nav>
       </div>
 
@@ -194,7 +194,7 @@
         <span>Bolsas & Acessórios</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
-      <a href="#" onclick="goToSlide(2);closeMobileMenu();return false;" class="mob-nav-link highlight">
+      <a href="#" id="mobNavSaleItem" onclick="goToSlide(2);closeMobileMenu();return false;" class="mob-nav-link highlight">
         <span id="mobSaleHeadline">Special Sale</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
@@ -296,7 +296,7 @@
           </div>
           <div class="split-text-content">
             <h2 class="split-headline single-line">LIQUIDAÇÃO</h2>
-            <a href="#" class="btn-nv dark" onclick="openCollection('LIQUIDAÇÃO');return false;">
+            <a href="#" id="slideSaleBtn" class="btn-nv dark" onclick="openCollection('LIQUIDAÇÃO');return false;">
               Ver Liquidação &rarr;
             </a>
           </div>
