@@ -12,14 +12,14 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 339.9,
         "cores": [
-            "TAUPE",
             "Preto",
-            "BLUSH"
+            "BLUSH",
+            "TAUPE"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -124,9 +124,9 @@ const STILETTO_PRODUCTS = [
             "MALBEC"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -155,7 +155,7 @@ const STILETTO_PRODUCTS = [
             },
             "Preto": {
                 "34": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "9749496"
                 },
                 "35": {
@@ -206,16 +206,16 @@ const STILETTO_PRODUCTS = [
         "preco": 200.9,
         "cores": [
             "Preto",
-            "OFF WHITE",
-            "CACAU"
+            "CACAU",
+            "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "CACAU": {
@@ -224,7 +224,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "12981759"
                 },
                 "35": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "9942668"
                 },
                 "36": {
@@ -327,9 +327,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -381,8 +381,8 @@ const STILETTO_PRODUCTS = [
         ],
         "tamanhos": [
             "36",
-            "35",
             "37",
+            "35",
             "34"
         ],
         "estoque_por_cor": {
@@ -427,13 +427,13 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 359.9,
         "cores": [
-            "SESANO",
-            "Preto"
+            "Preto",
+            "SESANO"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -513,8 +513,8 @@ const STILETTO_PRODUCTS = [
         "preco": 347.9,
         "cores": [
             "Preto",
-            "Mostarda",
-            "CROCO"
+            "CROCO",
+            "Mostarda"
         ],
         "tamanhos": [
             "Único"
@@ -575,16 +575,16 @@ const STILETTO_PRODUCTS = [
         "cores": [
             "Preto",
             "nude",
-            "OFF WHITE",
-            "caramelo"
+            "caramelo",
+            "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -615,7 +615,7 @@ const STILETTO_PRODUCTS = [
             },
             "Preto": {
                 "34": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "9749546"
                 },
                 "35": {
@@ -645,7 +645,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "9749555"
                 },
                 "35": {
-                    "qtd": -2,
+                    "qtd": 0,
                     "id_variacao": "9749537"
                 },
                 "36": {
@@ -726,9 +726,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -822,17 +822,17 @@ const STILETTO_PRODUCTS = [
         "preco": 149.9,
         "cores": [
             "Preto",
-            "MARSALA",
             "OFF WHITE",
-            "caramelo"
+            "caramelo",
+            "MARSALA"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "MARSALA": {
@@ -841,7 +841,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "9749576"
                 },
                 "35": {
-                    "qtd": -2,
+                    "qtd": 0,
                     "id_variacao": "9749582"
                 },
                 "36": {
@@ -875,11 +875,11 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "9749587"
                 },
                 "37": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "9749585"
                 },
                 "38": {
-                    "qtd": -2,
+                    "qtd": 0,
                     "id_variacao": "9749579"
                 },
                 "39": {
@@ -905,7 +905,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "9749578"
                 },
                 "38": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "9749569"
                 },
                 "39": {
@@ -972,19 +972,19 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 199.9,
         "cores": [
-            "Azul",
             "Rosa claro",
+            "Azul",
             "Preto",
             "caramelo",
             "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Azul": {
@@ -1158,9 +1158,9 @@ const STILETTO_PRODUCTS = [
             "CACAU"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -1262,9 +1262,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -1320,8 +1320,8 @@ const STILETTO_PRODUCTS = [
         ],
         "tamanhos": [
             "36",
-            "35",
             "37",
+            "35",
             "34"
         ],
         "estoque_por_cor": {
@@ -1375,7 +1375,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "9749655"
                 },
                 "37": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "9749645"
                 }
             }
@@ -1418,12 +1418,12 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -1454,7 +1454,7 @@ const STILETTO_PRODUCTS = [
             },
             "cafe": {
                 "34": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "9749673"
                 },
                 "35": {
@@ -1535,9 +1535,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -1588,19 +1588,19 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 179.9,
         "cores": [
-            "MARSALA",
             "OFF WHITE",
-            "Prata",
             "Azul meia-noite",
-            "Preto"
+            "MARSALA",
+            "Preto",
+            "Prata"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Azul meia-noite": {
@@ -1651,7 +1651,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "9749724"
                 },
                 "39": {
-                    "qtd": -2,
+                    "qtd": 0,
                     "id_variacao": "9749699"
                 }
             },
@@ -1673,7 +1673,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "9749707"
                 },
                 "38": {
-                    "qtd": -3,
+                    "qtd": 0,
                     "id_variacao": "9749715"
                 },
                 "39": {
@@ -1725,11 +1725,11 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "9749714"
                 },
                 "38": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "9749725"
                 },
                 "39": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "9749721"
                 }
             }
@@ -1773,9 +1773,9 @@ const STILETTO_PRODUCTS = [
             "Cinza"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -1876,14 +1876,14 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 210.9,
         "cores": [
-            "CAPUCCINO",
             "Preto",
-            "Branco"
+            "Branco",
+            "CAPUCCINO"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -2075,6 +2075,83 @@ const STILETTO_PRODUCTS = [
         "novidade": false
     },
     {
+        "id": "3325693",
+        "nome": "BOLSA LARA PEQUENA",
+        "categoria": "BOLSA",
+        "url_absolute": "https://loja.usebede.com.br/bolsa-lara-pequena/",
+        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11b47b7f.jpeg",
+        "fotos": [
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11b47b7f.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11abf3cb.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/whatsapp-image-2025-06-07-at-12-09-52-684456568ab75.jpeg"
+        ],
+        "preco": 349.9,
+        "cores": [
+            "Dourado",
+            "azul marinho",
+            "Marrom",
+            "Preto",
+            "OFF WHITE"
+        ],
+        "tamanhos": [
+            "Único"
+        ],
+        "estoque_por_cor": {
+            "Dourado": {
+                "Único": {
+                    "qtd": 1,
+                    "id_variacao": "14111532"
+                }
+            },
+            "Marrom": {
+                "Único": {
+                    "qtd": 0,
+                    "id_variacao": "9749766"
+                }
+            },
+            "OFF WHITE": {
+                "Único": {
+                    "qtd": 0,
+                    "id_variacao": "9749764"
+                }
+            },
+            "Preto": {
+                "Único": {
+                    "qtd": 0,
+                    "id_variacao": "9749765"
+                }
+            },
+            "azul marinho": {
+                "Único": {
+                    "qtd": 1,
+                    "id_variacao": "14111531"
+                }
+            }
+        },
+        "fotos_por_cor": {
+            "Dourado": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11b47b7f.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11abf3cb.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/whatsapp-image-2025-06-07-at-12-09-52-684456568ab75.jpeg"
+            ],
+            "Marrom": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11b47b7f.jpeg"
+            ],
+            "OFF WHITE": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11abf3cb.jpeg"
+            ],
+            "Preto": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/whatsapp-image-2025-06-07-at-12-09-52-684456568ab75.jpeg"
+            ],
+            "azul marinho": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11b47b7f.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11abf3cb.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/whatsapp-image-2025-06-07-at-12-09-52-684456568ab75.jpeg"
+            ]
+        },
+        "novidade": false
+    },
+    {
         "id": "3325695",
         "nome": "SCARPIN FIVELA",
         "categoria": "SCARPIN",
@@ -2091,9 +2168,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -2132,6 +2209,101 @@ const STILETTO_PRODUCTS = [
         "novidade": false
     },
     {
+        "id": "3325696",
+        "nome": "BOLSA CARLA",
+        "categoria": "BOLSA",
+        "url_absolute": "https://loja.usebede.com.br/bolsa-carla/",
+        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-2-66e87d6adf8ae.jpeg",
+        "fotos": [
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-2-66e87d6adf8ae.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6b53852.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6ba402f.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-36-50-66e87d6a0909e.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6a547a9.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6a93804.jpeg"
+        ],
+        "preco": 449.9,
+        "cores": [
+            "PRETO CROCO",
+            "Azul escuro",
+            "Vermelho escuro",
+            "Preto",
+            "caramelo"
+        ],
+        "tamanhos": [
+            "Único"
+        ],
+        "estoque_por_cor": {
+            "Azul escuro": {
+                "Único": {
+                    "qtd": 0,
+                    "id_variacao": "9749774"
+                }
+            },
+            "PRETO CROCO": {
+                "Único": {
+                    "qtd": 1,
+                    "id_variacao": "13023688"
+                }
+            },
+            "Preto": {
+                "Único": {
+                    "qtd": 0,
+                    "id_variacao": "9749773"
+                }
+            },
+            "Vermelho escuro": {
+                "Único": {
+                    "qtd": 1,
+                    "id_variacao": "9749776"
+                }
+            },
+            "caramelo": {
+                "Único": {
+                    "qtd": 0,
+                    "id_variacao": "9749775"
+                }
+            }
+        },
+        "fotos_por_cor": {
+            "Azul escuro": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-2-66e87d6adf8ae.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6b53852.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6ba402f.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-36-50-66e87d6a0909e.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6a547a9.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6a93804.jpeg"
+            ],
+            "PRETO CROCO": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-2-66e87d6adf8ae.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6b53852.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6ba402f.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-36-50-66e87d6a0909e.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6a547a9.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6a93804.jpeg"
+            ],
+            "Preto": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-2-66e87d6adf8ae.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6b53852.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6ba402f.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-36-50-66e87d6a0909e.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6a547a9.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6a93804.jpeg"
+            ],
+            "Vermelho escuro": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-36-50-66e87d6a0909e.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6a547a9.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6a93804.jpeg"
+            ],
+            "caramelo": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-2-66e87d6adf8ae.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6b53852.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6ba402f.jpeg"
+            ]
+        },
+        "novidade": false
+    },
+    {
         "id": "3325697",
         "nome": "SCARPIN LUISA VAZADO",
         "categoria": "SCARPIN",
@@ -2146,15 +2318,15 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 290.9,
         "cores": [
-            "CARVALHO",
-            "OFF WHITE",
             "Carmesim",
-            "Preto"
+            "OFF WHITE",
+            "Preto",
+            "CARVALHO"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -2280,11 +2452,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "33",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
+            "33",
             "34"
         ],
         "estoque_por_cor": {
@@ -2340,9 +2512,9 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -2383,7 +2555,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "9749812"
                 },
                 "37": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "9749810"
                 },
                 "38": {
@@ -2418,20 +2590,20 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 119.9,
         "cores": [
-            "OFF WHITE",
             "Dourado",
-            "Prata",
-            "nude",
+            "OFF WHITE",
             "PRATEADO",
-            "Preto"
+            "Preto",
+            "nude",
+            "Prata"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Dourado": {
@@ -2462,11 +2634,11 @@ const STILETTO_PRODUCTS = [
             },
             "OFF WHITE": {
                 "34": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "9749840"
                 },
                 "35": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "9749818"
                 },
                 "36": {
@@ -2482,7 +2654,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "9749829"
                 },
                 "39": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "9749819"
                 }
             },
@@ -2678,9 +2850,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -2828,11 +3000,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
-            "34"
+            "36",
+            "38",
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -2881,9 +3053,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -2935,9 +3107,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -2988,9 +3160,9 @@ const STILETTO_PRODUCTS = [
         "preco": 437.9,
         "cores": [
             "Preto",
-            "OFF WHITE",
+            "cafe",
             "Verde militar",
-            "cafe"
+            "OFF WHITE"
         ],
         "tamanhos": [
             "Único"
@@ -3058,9 +3230,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -3112,9 +3284,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -3165,12 +3337,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -3224,9 +3396,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -3279,17 +3451,17 @@ const STILETTO_PRODUCTS = [
         "preco": 159.9,
         "cores": [
             "Preto",
+            "VERNIZ",
             "ROSADO",
-            "MARSALA",
-            "VERNIZ"
+            "MARSALA"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "MARSALA": {
@@ -3477,9 +3649,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -3534,8 +3706,8 @@ const STILETTO_PRODUCTS = [
         ],
         "tamanhos": [
             "36",
-            "35",
             "37",
+            "35",
             "34"
         ],
         "estoque_por_cor": {
@@ -3589,6 +3761,97 @@ const STILETTO_PRODUCTS = [
         "novidade": false
     },
     {
+        "id": "3325720",
+        "nome": "MOCASSIM TRATORADO VERNIZ",
+        "categoria": "MOCASSIM",
+        "url_absolute": "https://loja.usebede.com.br/mocassim-tratorado-verniz/",
+        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd154f08c7.jpeg",
+        "fotos": [
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd154f08c7.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd15655a83.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd1557beb8.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd155e4ecf.jpeg"
+        ],
+        "preco": 135.9,
+        "cores": [
+            "Preto",
+            "nude"
+        ],
+        "tamanhos": [
+            "37",
+            "36",
+            "38",
+            "35",
+            "34",
+            "39"
+        ],
+        "estoque_por_cor": {
+            "Preto": {
+                "34": {
+                    "qtd": 0,
+                    "id_variacao": "9749959"
+                },
+                "35": {
+                    "qtd": 0,
+                    "id_variacao": "9749965"
+                },
+                "36": {
+                    "qtd": 0,
+                    "id_variacao": "9749969"
+                },
+                "37": {
+                    "qtd": 0,
+                    "id_variacao": "9749970"
+                },
+                "38": {
+                    "qtd": 0,
+                    "id_variacao": "9749962"
+                },
+                "39": {
+                    "qtd": 1,
+                    "id_variacao": "9749966"
+                }
+            },
+            "nude": {
+                "34": {
+                    "qtd": 0,
+                    "id_variacao": "9749960"
+                },
+                "35": {
+                    "qtd": 0,
+                    "id_variacao": "9749964"
+                },
+                "36": {
+                    "qtd": 0,
+                    "id_variacao": "9749968"
+                },
+                "37": {
+                    "qtd": 0,
+                    "id_variacao": "9749961"
+                },
+                "38": {
+                    "qtd": 0,
+                    "id_variacao": "9749963"
+                },
+                "39": {
+                    "qtd": 0,
+                    "id_variacao": "9749967"
+                }
+            }
+        },
+        "fotos_por_cor": {
+            "Preto": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd154f08c7.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd15655a83.jpeg"
+            ],
+            "nude": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd1557beb8.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd155e4ecf.jpeg"
+            ]
+        },
+        "novidade": false
+    },
+    {
         "id": "3325721",
         "nome": "TENIS BOTA PELE",
         "categoria": "TÊNIS",
@@ -3605,9 +3868,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -3663,9 +3926,9 @@ const STILETTO_PRODUCTS = [
             "nude"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -3747,9 +4010,9 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -3829,9 +4092,9 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -3908,17 +4171,17 @@ const STILETTO_PRODUCTS = [
         "preco": 190.9,
         "cores": [
             "Preto",
-            "OFF WHITE",
             "Prata",
-            "caramelo"
+            "caramelo",
+            "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -4061,9 +4324,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -4113,9 +4376,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -4165,11 +4428,11 @@ const STILETTO_PRODUCTS = [
             "Verde"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
-            "35"
+            "36",
+            "38",
+            "35",
+            "39"
         ],
         "estoque_por_cor": {
             "Verde": {
@@ -4243,8 +4506,8 @@ const STILETTO_PRODUCTS = [
         ],
         "tamanhos": [
             "36",
-            "35",
             "37",
+            "35",
             "34"
         ],
         "estoque_por_cor": {
@@ -4290,12 +4553,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -4350,16 +4613,16 @@ const STILETTO_PRODUCTS = [
         "cores": [
             "Preto",
             "nude",
-            "OFF WHITE",
-            "caramelo"
+            "caramelo",
+            "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -4502,9 +4765,9 @@ const STILETTO_PRODUCTS = [
             "Vermelho"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -4585,9 +4848,9 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -4651,6 +4914,116 @@ const STILETTO_PRODUCTS = [
         "novidade": false
     },
     {
+        "id": "3325737",
+        "nome": "BOLSA JAQUELINE",
+        "categoria": "BOLSA",
+        "url_absolute": "https://loja.usebede.com.br/bolsa-jaqueline/",
+        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17189cbf.jpeg",
+        "fotos": [
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17189cbf.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/whatsapp-image-2025-06-05-at-13-22-53-6841de30d74a7.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17113898.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17212472.jpeg"
+        ],
+        "preco": 437.9,
+        "cores": [
+            "Preto",
+            "Azul meia-noite",
+            "OFF WHITE"
+        ],
+        "tamanhos": [
+            "Único"
+        ],
+        "estoque_por_cor": {
+            "Azul meia-noite": {
+                "Único": {
+                    "qtd": 1,
+                    "id_variacao": "9750110"
+                }
+            },
+            "OFF WHITE": {
+                "Único": {
+                    "qtd": 0,
+                    "id_variacao": "9750108"
+                }
+            },
+            "Preto": {
+                "Único": {
+                    "qtd": 0,
+                    "id_variacao": "9750109"
+                }
+            }
+        },
+        "fotos_por_cor": {
+            "Azul meia-noite": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17189cbf.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/whatsapp-image-2025-06-05-at-13-22-53-6841de30d74a7.jpeg"
+            ],
+            "OFF WHITE": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17113898.jpeg"
+            ],
+            "Preto": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17212472.jpeg"
+            ]
+        },
+        "novidade": false
+    },
+    {
+        "id": "3325739",
+        "nome": "TENIS RAFA",
+        "categoria": "TÊNIS",
+        "url_absolute": "https://loja.usebede.com.br/tenis-rafa/",
+        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/whatsapp-image-2025-05-28-at-15-51-18-68375b569955d.jpeg",
+        "fotos": [
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/whatsapp-image-2025-05-28-at-15-51-18-68375b569955d.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/original-66cbd17341754.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/original-66cbd173a9e92.jpeg"
+        ],
+        "preco": 210.9,
+        "cores": [
+            "Branco"
+        ],
+        "tamanhos": [
+            "37",
+            "36",
+            "38",
+            "35",
+            "34"
+        ],
+        "estoque_por_cor": {
+            "Branco": {
+                "34": {
+                    "qtd": 0,
+                    "id_variacao": "9750115"
+                },
+                "35": {
+                    "qtd": 0,
+                    "id_variacao": "9750114"
+                },
+                "36": {
+                    "qtd": 0,
+                    "id_variacao": "9750113"
+                },
+                "37": {
+                    "qtd": 1,
+                    "id_variacao": "9750112"
+                },
+                "38": {
+                    "qtd": 0,
+                    "id_variacao": "9750116"
+                }
+            }
+        },
+        "fotos_por_cor": {
+            "Branco": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/whatsapp-image-2025-05-28-at-15-51-18-68375b569955d.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/original-66cbd17341754.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/original-66cbd173a9e92.jpeg"
+            ]
+        },
+        "novidade": false
+    },
+    {
         "id": "3325743",
         "nome": "SAPATILHA BONECA",
         "categoria": "SAPATILHA",
@@ -4662,16 +5035,16 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 145.9,
         "cores": [
-            "OFF WHITE",
-            "caramelo"
+            "caramelo",
+            "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -4752,9 +5125,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -4841,13 +5214,13 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "33",
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "33",
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -4905,9 +5278,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -4960,13 +5333,13 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 481.8,
         "cores": [
-            "caramelo",
             "OFF WHITE",
-            "Prata",
             "Vermelho escuro",
-            "nude",
             "Preto",
-            "DOURADA"
+            "DOURADA",
+            "nude",
+            "caramelo",
+            "Prata"
         ],
         "tamanhos": [
             "Único"
@@ -5061,9 +5434,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -5113,9 +5486,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -5166,19 +5539,19 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 139.9,
         "cores": [
-            "Vermelho",
             "Dourado",
-            "Prata",
+            "OFF WHITE",
             "Azul meia-noite",
-            "OFF WHITE"
+            "Vermelho",
+            "Prata"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Azul meia-noite": {
@@ -5346,14 +5719,14 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 248.0,
         "cores": [
-            "ONIX",
             "Preto",
-            "CACAU"
+            "CACAU",
+            "ONIX"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -5408,7 +5781,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "9750221"
                 },
                 "35": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "9750225"
                 },
                 "36": {
@@ -5455,9 +5828,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -5508,12 +5881,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -5568,9 +5941,9 @@ const STILETTO_PRODUCTS = [
             "cafe"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -5648,9 +6021,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -5706,12 +6079,12 @@ const STILETTO_PRODUCTS = [
             "VERNIZ"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -5797,12 +6170,12 @@ const STILETTO_PRODUCTS = [
             "ANGELICAL"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "ANGELICAL": {
@@ -5811,7 +6184,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "9918832"
                 },
                 "35": {
-                    "qtd": -2,
+                    "qtd": 0,
                     "id_variacao": "9918827"
                 },
                 "36": {
@@ -5890,16 +6263,16 @@ const STILETTO_PRODUCTS = [
         "preco": 219.9,
         "cores": [
             "Preto",
-            "OFF WHITE",
-            "Prata"
+            "Prata",
+            "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -5924,7 +6297,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "12220191"
                 },
                 "39": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "9918836"
                 }
             },
@@ -6024,12 +6397,12 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -6114,16 +6487,16 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 268.9,
         "cores": [
-            "Terra",
-            "preta"
+            "preta",
+            "Terra"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Terra": {
@@ -6207,9 +6580,9 @@ const STILETTO_PRODUCTS = [
         "preco": 340.9,
         "cores": [
             "Preto",
-            "OFF WHITE",
             "CROCO",
-            "Vermelho escuro"
+            "Vermelho escuro",
+            "OFF WHITE"
         ],
         "tamanhos": [
             "Único"
@@ -6283,12 +6656,12 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -6378,13 +6751,13 @@ const STILETTO_PRODUCTS = [
         "preco": 280.8,
         "cores": [
             "Preto",
-            "OFF WHITE",
-            "caramelo"
+            "caramelo",
+            "OFF WHITE"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -6496,14 +6869,14 @@ const STILETTO_PRODUCTS = [
         "preco": 272.9,
         "cores": [
             "Preto",
-            "MARSALA",
             "Prata",
-            "CACAU"
+            "CACAU",
+            "MARSALA"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -6518,7 +6891,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "10054857"
                 },
                 "36": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "10054858"
                 },
                 "37": {
@@ -6626,6 +6999,83 @@ const STILETTO_PRODUCTS = [
         "novidade": false
     },
     {
+        "id": "3471777",
+        "nome": "SAPATILHA PARIS BAUNILHA",
+        "categoria": "SAPATILHA",
+        "url_absolute": "https://loja.usebede.com.br/sapatilha-paris-baunilha/",
+        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66fae4281f2af/whatsapp-image-2025-06-05-at-14-53-41-1-6841dd4c21e5a.jpeg",
+        "fotos": [
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66fae4281f2af/whatsapp-image-2025-06-05-at-14-53-41-1-6841dd4c21e5a.jpeg"
+        ],
+        "preco": 229.9,
+        "cores": [
+            "BAUNILHA",
+            "Preto"
+        ],
+        "tamanhos": [
+            "37",
+            "36",
+            "38",
+            "35",
+            "34"
+        ],
+        "estoque_por_cor": {
+            "BAUNILHA": {
+                "34": {
+                    "qtd": 2,
+                    "id_variacao": "10130805"
+                },
+                "35": {
+                    "qtd": 0,
+                    "id_variacao": "10130804"
+                },
+                "36": {
+                    "qtd": 0,
+                    "id_variacao": "10130801"
+                },
+                "37": {
+                    "qtd": 0,
+                    "id_variacao": "10130808"
+                },
+                "38": {
+                    "qtd": 0,
+                    "id_variacao": "10130800"
+                }
+            },
+            "Preto": {
+                "34": {
+                    "qtd": 0,
+                    "id_variacao": "10130806"
+                },
+                "35": {
+                    "qtd": 0,
+                    "id_variacao": "10130807"
+                },
+                "36": {
+                    "qtd": 0,
+                    "id_variacao": "10130802"
+                },
+                "37": {
+                    "qtd": 0,
+                    "id_variacao": "10130799"
+                },
+                "38": {
+                    "qtd": 0,
+                    "id_variacao": "10130803"
+                }
+            }
+        },
+        "fotos_por_cor": {
+            "BAUNILHA": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66fae4281f2af/whatsapp-image-2025-06-05-at-14-53-41-1-6841dd4c21e5a.jpeg"
+            ],
+            "Preto": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66fae4281f2af/whatsapp-image-2025-06-05-at-14-53-41-1-6841dd4c21e5a.jpeg"
+            ]
+        },
+        "novidade": false
+    },
+    {
         "id": "3471933",
         "nome": "SCARPIN LAURA",
         "categoria": "SCARPIN",
@@ -6641,14 +7091,14 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 296.0,
         "cores": [
-            "Preto",
             "BAUNILHA",
-            "caramelo"
+            "caramelo",
+            "Preto"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -6752,16 +7202,16 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 299.9,
         "cores": [
-            "MARSALA",
             "BAUNILHA",
-            "PRETO VERNIZ"
+            "PRETO VERNIZ",
+            "MARSALA"
         ],
         "tamanhos": [
-            "33",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
+            "33",
             "34"
         ],
         "estoque_por_cor": {
@@ -6875,17 +7325,17 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 159.9,
         "cores": [
-            "ONIX",
             "Preto",
+            "ONIX",
             "Prata"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "ONIX": {
@@ -6902,7 +7352,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "10442599"
                 },
                 "37": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "10442597"
                 },
                 "38": {
@@ -7001,12 +7451,12 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -7019,7 +7469,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "10594820"
                 },
                 "36": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "10594816"
                 },
                 "37": {
@@ -7091,17 +7541,17 @@ const STILETTO_PRODUCTS = [
         "preco": 279.9,
         "cores": [
             "Preto",
-            "OFF WHITE",
+            "Prata",
             "Ouro",
-            "Prata"
+            "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -7260,12 +7710,12 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -7349,12 +7799,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -7407,9 +7857,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -7446,6 +7896,66 @@ const STILETTO_PRODUCTS = [
         "novidade": false
     },
     {
+        "id": "3608491",
+        "nome": "PAPETE AISHA",
+        "categoria": "PAPETE",
+        "url_absolute": "https://loja.usebede.com.br/papete-aisha/",
+        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329e23d81.jpeg",
+        "fotos": [
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329e23d81.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329e7e62d.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329ec4690.jpeg"
+        ],
+        "preco": 189.9,
+        "cores": [
+            "Única"
+        ],
+        "tamanhos": [
+            "37",
+            "36",
+            "38",
+            "35",
+            "34",
+            "39"
+        ],
+        "estoque_por_cor": {
+            "Única": {
+                "34": {
+                    "qtd": 0,
+                    "id_variacao": "10595578"
+                },
+                "35": {
+                    "qtd": 1,
+                    "id_variacao": "10595580"
+                },
+                "36": {
+                    "qtd": 0,
+                    "id_variacao": "10595582"
+                },
+                "37": {
+                    "qtd": 0,
+                    "id_variacao": "10595577"
+                },
+                "38": {
+                    "qtd": 0,
+                    "id_variacao": "10595581"
+                },
+                "39": {
+                    "qtd": 0,
+                    "id_variacao": "10595579"
+                }
+            }
+        },
+        "fotos_por_cor": {
+            "Única": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329e23d81.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329e7e62d.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329ec4690.jpeg"
+            ]
+        },
+        "novidade": false
+    },
+    {
         "id": "3608492",
         "nome": "BIRKEN MANU",
         "categoria": "PAPETE",
@@ -7464,9 +7974,9 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -7544,9 +8054,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -7598,12 +8108,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -7658,14 +8168,14 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 260.0,
         "cores": [
-            "OFF WHITE",
+            "Azul céu",
             "caramelo",
-            "Azul céu"
+            "OFF WHITE"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -7766,14 +8276,14 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 305.9,
         "cores": [
-            "Preto",
+            "Azul céu",
             "caramelo",
-            "Azul céu"
+            "Preto"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -7849,9 +8359,9 @@ const STILETTO_PRODUCTS = [
             "Cinza"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -7932,12 +8442,12 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -8025,9 +8535,9 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -8108,12 +8618,12 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -8200,9 +8710,9 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -8284,12 +8794,12 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Azul escuro": {
@@ -8360,6 +8870,172 @@ const STILETTO_PRODUCTS = [
         "novidade": false
     },
     {
+        "id": "3614779",
+        "nome": "SANDALIA SIGTUNA",
+        "categoria": "SANDÁLIA",
+        "url_absolute": "https://loja.usebede.com.br/sandalia-sigtuna/",
+        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1008ba2.jpeg",
+        "fotos": [
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1008ba2.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f106aa68.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f10cabf1.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1137765.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f118dc59.jpeg"
+        ],
+        "preco": 159.9,
+        "cores": [
+            "Preto",
+            "VERMELHO VERNIZ",
+            "OFF WHITE VERNIZ",
+            "PRETO VERNIZ"
+        ],
+        "tamanhos": [
+            "37",
+            "36",
+            "38",
+            "35",
+            "34",
+            "39"
+        ],
+        "estoque_por_cor": {
+            "OFF WHITE VERNIZ": {
+                "34": {
+                    "qtd": 0,
+                    "id_variacao": "10610972"
+                },
+                "35": {
+                    "qtd": 0,
+                    "id_variacao": "10610956"
+                },
+                "36": {
+                    "qtd": 0,
+                    "id_variacao": "10610949"
+                },
+                "37": {
+                    "qtd": 0,
+                    "id_variacao": "10610971"
+                },
+                "38": {
+                    "qtd": 0,
+                    "id_variacao": "10610965"
+                },
+                "39": {
+                    "qtd": 0,
+                    "id_variacao": "10610959"
+                }
+            },
+            "PRETO VERNIZ": {
+                "34": {
+                    "qtd": 1,
+                    "id_variacao": "10610961"
+                },
+                "35": {
+                    "qtd": 0,
+                    "id_variacao": "10610962"
+                },
+                "36": {
+                    "qtd": 0,
+                    "id_variacao": "10610963"
+                },
+                "37": {
+                    "qtd": 0,
+                    "id_variacao": "10610964"
+                },
+                "38": {
+                    "qtd": 0,
+                    "id_variacao": "10610960"
+                },
+                "39": {
+                    "qtd": 0,
+                    "id_variacao": "10610967"
+                }
+            },
+            "Preto": {
+                "34": {
+                    "qtd": 0,
+                    "id_variacao": "10610950"
+                },
+                "35": {
+                    "qtd": 0,
+                    "id_variacao": "10610966"
+                },
+                "36": {
+                    "qtd": 0,
+                    "id_variacao": "10610952"
+                },
+                "37": {
+                    "qtd": 0,
+                    "id_variacao": "10610951"
+                },
+                "38": {
+                    "qtd": 0,
+                    "id_variacao": "10610957"
+                },
+                "39": {
+                    "qtd": 0,
+                    "id_variacao": "10610968"
+                }
+            },
+            "VERMELHO VERNIZ": {
+                "34": {
+                    "qtd": 0,
+                    "id_variacao": "10610954"
+                },
+                "35": {
+                    "qtd": 0,
+                    "id_variacao": "10610958"
+                },
+                "36": {
+                    "qtd": 0,
+                    "id_variacao": "10610953"
+                },
+                "37": {
+                    "qtd": 0,
+                    "id_variacao": "10610969"
+                },
+                "38": {
+                    "qtd": 0,
+                    "id_variacao": "10610955"
+                },
+                "39": {
+                    "qtd": 0,
+                    "id_variacao": "10610970"
+                }
+            }
+        },
+        "fotos_por_cor": {
+            "OFF WHITE VERNIZ": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1008ba2.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f106aa68.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f10cabf1.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1137765.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f118dc59.jpeg"
+            ],
+            "PRETO VERNIZ": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1008ba2.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f106aa68.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f10cabf1.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1137765.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f118dc59.jpeg"
+            ],
+            "Preto": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1008ba2.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f106aa68.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f10cabf1.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1137765.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f118dc59.jpeg"
+            ],
+            "VERMELHO VERNIZ": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1008ba2.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f106aa68.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f10cabf1.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1137765.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f118dc59.jpeg"
+            ]
+        },
+        "novidade": false
+    },
+    {
         "id": "3615386",
         "nome": "SANDÁLIA JULIA",
         "categoria": "SANDÁLIA",
@@ -8374,12 +9050,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -8432,13 +9108,13 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "33",
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "33",
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -8495,13 +9171,13 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "33",
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "33",
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -8558,12 +9234,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -8616,13 +9292,13 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "33",
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "33",
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -8682,13 +9358,13 @@ const STILETTO_PRODUCTS = [
             "nude"
         ],
         "tamanhos": [
-            "33",
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "33",
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -8790,14 +9466,14 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 419.9,
         "cores": [
-            "SALMON",
             "Preto",
+            "SALMON",
             "cafe"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -8906,12 +9582,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -8966,12 +9642,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -9023,17 +9699,17 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 199.9,
         "cores": [
-            "vaca",
             "cafe",
-            "preta"
+            "preta",
+            "vaca"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "cafe": {
@@ -9148,12 +9824,12 @@ const STILETTO_PRODUCTS = [
             "onça"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "onça": {
@@ -9238,18 +9914,18 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 239.9,
         "cores": [
-            "MARSALA",
             "caramelo",
-            "Cinza"
+            "Cinza",
+            "MARSALA"
         ],
         "tamanhos": [
-            "33",
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "33",
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Cinza": {
@@ -9379,16 +10055,16 @@ const STILETTO_PRODUCTS = [
         "preco": 339.9,
         "cores": [
             "caramelo",
-            "azul marinho",
-            "Marrom"
+            "Marrom",
+            "azul marinho"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Marrom": {
@@ -9506,9 +10182,9 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -9561,12 +10237,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -9606,6 +10282,97 @@ const STILETTO_PRODUCTS = [
         "novidade": false
     },
     {
+        "id": "4141369",
+        "nome": "SLINGBACK JORDANA",
+        "categoria": "SLINGBACK",
+        "url_absolute": "https://loja.usebede.com.br/slingback-jordana/",
+        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-3-6841c7827203d.jpeg",
+        "fotos": [
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-3-6841c7827203d.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/original-67f7d2008d046.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-17-6841c78f72102.jpeg",
+            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-4-6841c79a6136d.jpeg"
+        ],
+        "preco": 249.9,
+        "cores": [
+            "Preto",
+            "OFF WHITE"
+        ],
+        "tamanhos": [
+            "37",
+            "36",
+            "38",
+            "35",
+            "34",
+            "39"
+        ],
+        "estoque_por_cor": {
+            "OFF WHITE": {
+                "34": {
+                    "qtd": 1,
+                    "id_variacao": "12383285"
+                },
+                "35": {
+                    "qtd": 0,
+                    "id_variacao": "12383286"
+                },
+                "36": {
+                    "qtd": 0,
+                    "id_variacao": "12383287"
+                },
+                "37": {
+                    "qtd": 0,
+                    "id_variacao": "12383288"
+                },
+                "38": {
+                    "qtd": 1,
+                    "id_variacao": "12383289"
+                },
+                "39": {
+                    "qtd": 0,
+                    "id_variacao": "12383290"
+                }
+            },
+            "Preto": {
+                "34": {
+                    "qtd": 0,
+                    "id_variacao": "12383291"
+                },
+                "35": {
+                    "qtd": 0,
+                    "id_variacao": "12383292"
+                },
+                "36": {
+                    "qtd": 0,
+                    "id_variacao": "12981766"
+                },
+                "37": {
+                    "qtd": 0,
+                    "id_variacao": "12981767"
+                },
+                "38": {
+                    "qtd": 1,
+                    "id_variacao": "12981768"
+                },
+                "39": {
+                    "qtd": 0,
+                    "id_variacao": "12981769"
+                }
+            }
+        },
+        "fotos_por_cor": {
+            "OFF WHITE": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-3-6841c7827203d.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/original-67f7d2008d046.jpeg"
+            ],
+            "Preto": [
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-17-6841c78f72102.jpeg",
+                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-4-6841c79a6136d.jpeg"
+            ]
+        },
+        "novidade": false
+    },
+    {
         "id": "4141370",
         "nome": "MULE VERA",
         "categoria": "MULE",
@@ -9621,12 +10388,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -9678,11 +10445,11 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 169.0,
         "cores": [
-            "Cinza",
-            "Marrom",
-            "OFF WHITE",
             "azul marinho",
-            "Preto"
+            "Marrom",
+            "Cinza",
+            "Preto",
+            "OFF WHITE"
         ],
         "tamanhos": [
             "Único"
@@ -9765,13 +10532,13 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 549.0,
         "cores": [
-            "caramelo",
             "OFF WHITE",
-            "Prata",
             "Vermelho escuro",
-            "nude",
             "Preto",
-            "DOURADA"
+            "DOURADA",
+            "nude",
+            "caramelo",
+            "Prata"
         ],
         "tamanhos": [
             "Único"
@@ -9891,12 +10658,12 @@ const STILETTO_PRODUCTS = [
             "cafe"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -9981,12 +10748,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -10043,12 +10810,12 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Marrom": {
@@ -10132,12 +10899,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -10188,12 +10955,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -10202,7 +10969,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "12627086"
                 },
                 "35": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "12627087"
                 },
                 "36": {
@@ -10247,12 +11014,12 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -10338,12 +11105,12 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Marrom": {
@@ -10425,16 +11192,16 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 350.0,
         "cores": [
-            "Castanho avermelhado",
-            "Oliva"
+            "Oliva",
+            "Castanho avermelhado"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Castanho avermelhado": {
@@ -10518,9 +11285,9 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -10599,11 +11366,11 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
-            "35"
+            "36",
+            "38",
+            "35",
+            "39"
         ],
         "estoque_por_cor": {
             "Marrom": {
@@ -10675,18 +11442,18 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 440.0,
         "cores": [
-            "Azul escuro",
             "Preto",
+            "Azul escuro",
             "Marrom"
         ],
         "tamanhos": [
-            "33",
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "33",
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Azul escuro": {
@@ -10737,7 +11504,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "12879087"
                 },
                 "37": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "12879088"
                 },
                 "38": {
@@ -10809,18 +11576,18 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 430.0,
         "cores": [
-            "Azul escuro",
             "Preto",
+            "Azul escuro",
             "Marrom"
         ],
         "tamanhos": [
-            "33",
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "33",
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Azul escuro": {
@@ -10991,17 +11758,17 @@ const STILETTO_PRODUCTS = [
         "preco": 310.9,
         "cores": [
             "Preto",
-            "azul marinho",
             "caramelo",
-            "Marrom"
+            "Marrom",
+            "azul marinho"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Marrom": {
@@ -11132,12 +11899,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -11193,12 +11960,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -11250,11 +12017,11 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
-            "35"
+            "36",
+            "38",
+            "35",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -11304,12 +12071,12 @@ const STILETTO_PRODUCTS = [
             "Cinza"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Bege": {
@@ -11390,17 +12157,17 @@ const STILETTO_PRODUCTS = [
         "preco": 299.9,
         "cores": [
             "Preto",
-            "OFF WHITE",
-            "caramelo"
+            "caramelo",
+            "OFF WHITE"
         ],
         "tamanhos": [
-            "33",
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "33",
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -11526,15 +12293,15 @@ const STILETTO_PRODUCTS = [
         "preco": 319.9,
         "cores": [
             "Preto",
-            "Marrom",
-            "Vermelho"
+            "Vermelho",
+            "Marrom"
         ],
         "tamanhos": [
-            "33",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
+            "33",
             "34"
         ],
         "estoque_por_cor": {
@@ -11544,7 +12311,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "13002331"
                 },
                 "34": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "13002332"
                 },
                 "35": {
@@ -11651,12 +12418,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -11712,11 +12479,11 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
-            "33",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
+            "33",
             "34"
         ],
         "estoque_por_cor": {
@@ -11799,11 +12566,11 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
-            "33",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
+            "33",
             "34"
         ],
         "estoque_por_cor": {
@@ -11889,13 +12656,13 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "33",
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "33",
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -11990,11 +12757,11 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "33",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
+            "33",
             "34"
         ],
         "estoque_por_cor": {
@@ -12160,15 +12927,15 @@ const STILETTO_PRODUCTS = [
         "preco": 389.0,
         "cores": [
             "Preto",
-            "MARSALA",
-            "onça"
+            "onça",
+            "MARSALA"
         ],
         "tamanhos": [
-            "33",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
+            "33",
             "34"
         ],
         "estoque_por_cor": {
@@ -12420,8 +13187,8 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 129.9,
         "cores": [
-            "OFF WHITE",
-            "preta"
+            "preta",
+            "OFF WHITE"
         ],
         "tamanhos": [
             "Único"
@@ -12512,17 +13279,17 @@ const STILETTO_PRODUCTS = [
         "preco": 319.9,
         "cores": [
             "Preto",
-            "OFF WHITE",
             "nude",
-            "pinhão"
+            "pinhão",
+            "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -12668,12 +13435,12 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -12756,16 +13523,16 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 340.9,
         "cores": [
-            "caramelo",
-            "Dourado"
+            "Dourado",
+            "caramelo"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Dourado": {
@@ -12852,18 +13619,18 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 275.9,
         "cores": [
-            "Preto",
-            "OFF WHITE",
             "Dourado",
-            "Vermelho"
+            "Vermelho",
+            "Preto",
+            "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Dourado": {
@@ -13009,12 +13776,12 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -13098,12 +13865,12 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -13183,16 +13950,16 @@ const STILETTO_PRODUCTS = [
         "preco": 310.0,
         "cores": [
             "Preto",
-            "OFF WHITE",
-            "caramelo"
+            "caramelo",
+            "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -13302,16 +14069,16 @@ const STILETTO_PRODUCTS = [
         "preco": 259.9,
         "cores": [
             "Preto",
-            "OFF WHITE",
-            "caramelo"
+            "caramelo",
+            "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -13424,12 +14191,12 @@ const STILETTO_PRODUCTS = [
             "TAUPE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "TAUPE": {
@@ -13513,12 +14280,12 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -13597,16 +14364,16 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 210.9,
         "cores": [
-            "CAPUCCINO",
-            "Preto"
+            "Preto",
+            "CAPUCCINO"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "CAPUCCINO": {
@@ -13688,16 +14455,16 @@ const STILETTO_PRODUCTS = [
         "cores": [
             "Preto",
             "nude/preto",
-            "OFF WHITE",
-            "Bronze"
+            "Bronze",
+            "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Bronze": {
@@ -13839,12 +14606,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -13898,12 +14665,12 @@ const STILETTO_PRODUCTS = [
             "Prata"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Prata": {
@@ -13986,12 +14753,12 @@ const STILETTO_PRODUCTS = [
             "Bronze"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Bronze": {
@@ -14073,12 +14840,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -14132,12 +14899,12 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "33",
-            "39",
-            "38",
-            "36",
             "37",
-            "35"
+            "36",
+            "38",
+            "35",
+            "33",
+            "39"
         ],
         "estoque_por_cor": {
             "Única": {
@@ -14193,12 +14960,12 @@ const STILETTO_PRODUCTS = [
             "Bronze"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Bronze": {
@@ -14282,16 +15049,16 @@ const STILETTO_PRODUCTS = [
         "preco": 188.9,
         "cores": [
             "Preto",
-            "OFF WHITE",
-            "caramelo"
+            "caramelo",
+            "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -14352,7 +15119,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "15320473"
                 },
                 "35": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "15320474"
                 },
                 "36": {
@@ -14406,12 +15173,12 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -14497,12 +15264,12 @@ const STILETTO_PRODUCTS = [
             "Prata"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Ouro": {
@@ -14587,12 +15354,12 @@ const STILETTO_PRODUCTS = [
             "nude"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -14678,12 +15445,12 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
@@ -14700,7 +15467,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "15320593"
                 },
                 "37": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "15320594"
                 },
                 "38": {
@@ -14722,11 +15489,11 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "15320598"
                 },
                 "36": {
-                    "qtd": -2,
+                    "qtd": 0,
                     "id_variacao": "15320599"
                 },
                 "37": {
-                    "qtd": -2,
+                    "qtd": 0,
                     "id_variacao": "15320600"
                 },
                 "38": {
@@ -14766,12 +15533,12 @@ const STILETTO_PRODUCTS = [
             "Branco"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Branco": {
@@ -14853,9 +15620,9 @@ const STILETTO_PRODUCTS = [
             "Conhaque"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
@@ -14866,7 +15633,7 @@ const STILETTO_PRODUCTS = [
                     "id_variacao": "16717902"
                 },
                 "35": {
-                    "qtd": -1,
+                    "qtd": 0,
                     "id_variacao": "16717903"
                 },
                 "36": {
@@ -14934,11 +15701,11 @@ const STILETTO_PRODUCTS = [
             "cafe"
         ],
         "tamanhos": [
-            "33",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
+            "33",
             "34"
         ],
         "estoque_por_cor": {
@@ -15024,12 +15791,12 @@ const STILETTO_PRODUCTS = [
             "Preto"
         ],
         "tamanhos": [
-            "39",
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
-            "34"
+            "34",
+            "39"
         ],
         "estoque_por_cor": {
             "Preto": {
@@ -15083,9 +15850,9 @@ const STILETTO_PRODUCTS = [
             "Preto"
         ],
         "tamanhos": [
-            "38",
-            "36",
             "37",
+            "36",
+            "38",
             "35",
             "34"
         ],
