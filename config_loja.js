@@ -14,7 +14,9 @@ const CFG_LOJA = {
     freteGratisAcimaDe: 449,                    // CONFIRMADO 20/08/2026
     freteGratisRegioes: [],              // wBuy aplica frete grátis p/ Brasil inteiro — aguardando restrição no painel
     freteGratisEstados: [],              // idem — sem restrição por estado confirmada
-    parcelamentoMax: 6                          // MEDIDO no checkout da wBuy em 20/08/2026
+    parcelamentoMax: 6,                         // MEDIDO no checkout da wBuy em 20/08/2026
+    instagram: '@usebede.com.br',
+    instagramUrl: 'https://www.instagram.com/usebede.com.br/'
 };
 
 if (typeof module !== 'undefined') module.exports = { CFG_LOJA };

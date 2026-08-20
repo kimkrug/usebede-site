@@ -58,15 +58,21 @@
     return !isInactive && hasPhoto;
   });
     // ── CONFIGURAÇÕES DA LOJA (LIDAS DE CONFIG_LOJA.JS) ───────
-  const CFG = (typeof CONFIG_LOJA !== 'undefined' && CONFIG_LOJA) ? CONFIG_LOJA : {
-    freteGratisAcimaDe: 449,
-    parcelamentoMax: (typeof CFG_LOJA !== 'undefined' && CFG_LOJA.parcelamentoMax !== undefined) ? CFG_LOJA.parcelamentoMax : null,
-    descontoPix: 5,
-    primeiraTrocaGratisDias: null,
-        cnpj: '55.068.034/0001-00',
-    whatsapp: '5551980150391',
-    whatsappFormatado: '(51) 98015-0391',
-    endereco: 'Rua Cirurgião Vaz Ferreira, 457 · Centro · Viamão/RS',
+  const CFG_SRC = (typeof CFG_LOJA !== 'undefined' && CFG_LOJA) ? CFG_LOJA : (typeof CONFIG_LOJA !== 'undefined' ? CONFIG_LOJA : {});
+  const CFG = {
+    razaoSocial: CFG_SRC.razaoSocial || 'Stiletto Bd Boutique Ltda',
+    cnpj: CFG_SRC.cnpj || '55.068.034/0001-00',
+    nomeFantasia: CFG_SRC.nomeFantasia || 'BEDÊ',
+    endereco: CFG_SRC.endereco || 'Rua Cirurgião Vaz Ferreira, 457 · Centro · Viamão/RS',
+    whatsapp: CFG_SRC.whatsapp ? CFG_SRC.whatsapp.replace(/\D/g, '') : '5551980150391',
+    whatsappFormatado: CFG_SRC.whatsapp || '(51) 98015-0391',
+    descontoPix: CFG_SRC.descontoPix !== undefined ? CFG_SRC.descontoPix : 5,
+    primeiraTrocaGratisDias: CFG_SRC.primeiraTrocaGratisDias !== undefined ? CFG_SRC.primeiraTrocaGratisDias : null,
+    freteGratisAcimaDe: CFG_SRC.freteGratisAcimaDe !== undefined ? CFG_SRC.freteGratisAcimaDe : 449,
+    freteGratisRegioes: CFG_SRC.freteGratisRegioes || [],
+    freteGratisEstados: CFG_SRC.freteGratisEstados || [],
+    parcelamentoMax: CFG_SRC.parcelamentoMax !== undefined ? CFG_SRC.parcelamentoMax : 6,
+    dominioLoja: CFG_SRC.dominioLoja || 'https://loja.usebede.com.br',
     horario: 'Segunda a Sábado · 9h às 19h'
   };
   const WA = CFG.whatsapp;
@@ -1536,6 +1542,10 @@
     // 4. Chip de filtro
     const chipSale = document.getElementById('chipLiquidacao') || document.querySelector('[onclick*="LIQUIDA"]');
     if (chipSale) chipSale.style.display = temPromo ? '' : 'none';
+
+    // 5. Dot do carrossel para o Slide 2 (Liquidação)
+    const dots = document.querySelectorAll('.s-dot');
+    if (dots && dots[2]) dots[2].style.display = temPromo ? '' : 'none';
   };
 
 })();

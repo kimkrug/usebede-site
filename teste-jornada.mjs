@@ -171,38 +171,73 @@ for (const [cat, n] of Object.entries(varredura)) {
 
 // ── 4b. Nenhum item de menu visível leva a lugar nenhum ────────────────────
 secao('4b. Itens de menu que não abrem coleção');
-const orfaos = await pagina.evaluate(() => {
+
+// Exceções conscientes. Cada uma tem motivo escrito e foi conferida no
+// navegador. Item novo que não estiver aqui reprova — é assim que a rede pega
+// o próximo "LIQUIDAÇÃO apontando para o vazio".
+const EXCECOES_4B = [
+  { contem: 'CALÇADOS & SALTOS',    motivo: 'acordeão que abre as subcategorias' },
+  { contem: 'MINHA WISHLIST',       motivo: 'abre a gaveta de favoritos' },
+  { contem: 'ATENDIMENTO BOUTIQUE', motivo: 'slide 3, com botão de WhatsApp visível' },
+];
+
+const achados = await pagina.evaluate(() => {
   const vis = (e) => {
     const c = getComputedStyle(e);
     const r = e.getBoundingClientRect();
     return c.display !== 'none' && c.visibility !== 'hidden' &&
            c.opacity !== '0' && (r.width > 0 || r.height > 0);
   };
-  // Itens visíveis de navegação que NÃO chamam openCollection nem filterCat.
-  // Um item assim precisa ter um destino provado — senão é enfeite que frustra.
   const nav = [...document.querySelectorAll(
     '.nav-item, .mob-nav-link, .sub-link, .mob-sub-link, [class*=nav] a'
   )];
   return nav
     .filter(vis)
-    .filter((e) => {
-      const oc = e.getAttribute('onclick') || '';
-      return !/openCollection|filterCat/.test(oc);
-    })
+    .filter((e) => !/openCollection|filterCat/.test(e.getAttribute('onclick') || ''))
     .map((e) => ({
-      texto: (e.innerText || '').trim().slice(0, 30),
+      texto: (e.innerText || '').trim().slice(0, 40),
       acao: (e.getAttribute('onclick') || e.getAttribute('href') || '').slice(0, 50),
     }))
     .filter((x) => x.texto);
 });
 
-if (orfaos.length === 0) {
-  ok('Todo item de menu visível abre uma coleção');
-} else {
-  for (const o of orfaos) {
-    falhou(`Item de menu "${o.texto}" não abre coleção`, o.acao);
+let orfaos = 0;
+for (const item of achados) {
+  const perdao = EXCECOES_4B.find((x) => item.texto.toUpperCase().includes(x.contem));
+  if (perdao) {
+    console.log(`  --   Dispensado "${item.texto}"  → ${perdao.motivo}`);
+  } else {
+    falhou(`Item de menu "${item.texto}" não abre coleção`, item.acao);
+    orfaos++;
   }
 }
+if (orfaos === 0) ok('Nenhum item de menu visível sem destino');
+
+// Guarda específica: o slide de liquidação não pode ter porta de entrada
+// visível enquanto não existir produto em promoção.
+const portaSale = await pagina.evaluate(() => {
+  const vis = (e) => {
+    const c = getComputedStyle(e);
+    const r = e.getBoundingClientRect();
+    return c.display !== 'none' && c.visibility !== 'hidden' &&
+           c.opacity !== '0' && (r.width > 0 || r.height > 0);
+  };
+  const temPromo = STILETTO_PRODUCTS.some(
+    (p) => p.preco_antigo && Number(p.preco_antigo) > Number(p.preco)
+  );
+  const entradas = [...document.querySelectorAll('[onclick*="goToSlide(2)"]')]
+    .filter(vis)
+    .map((e) => (e.innerText || '').trim().slice(0, 30));
+  return { temPromo, entradas };
+});
+
+checa(
+  portaSale.temPromo || portaSale.entradas.length === 0,
+  'Sem porta de entrada visível para a liquidação inexistente',
+  portaSale.temPromo
+    ? 'há promoção, entradas liberadas'
+    : portaSale.entradas.join(', ') || 'nenhuma entrada visível'
+);
 
 // ── 5. Jornada de compra ───────────────────────────────────────────────────
 secao('5. Jornada de compra');
@@ -286,6 +321,23 @@ if (jornada.erro) {
 secao('6. Texto da página');
 const texto = await pagina.evaluate(() => document.body.innerText);
 checa(!/\bnull\b/i.test(texto), 'Sem "null" no texto');
+checa(!/\bundefined\b/i.test(texto), 'Sem "undefined" no texto',
+  (texto.match(/.{0,40}undefined.{0,40}/i) || [''])[0].replace(/\n+/g, ' '));
+checa(!/\bNaN\b/.test(texto), 'Sem "NaN" no texto');
+checa(!/\[object Object\]/.test(texto), 'Sem "[object Object]" no texto');
+
+// O rodapé precisa trazer nome empresarial e CNPJ — exigência do
+// Decreto 7.962/2013 para comércio eletrônico.
+const cnpj = /\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}/.test(texto);
+checa(cnpj, 'Rodapé traz o CNPJ');
+const razao = await pagina.evaluate(() =>
+  typeof CFG_LOJA !== 'undefined' ? CFG_LOJA.razaoSocial || '' : ''
+);
+checa(
+  razao !== '' && texto.toUpperCase().includes(razao.toUpperCase()),
+  'Rodapé traz a razão social',
+  razao || '(não definida no config)'
+);
 checa(!/A CONFIRMAR/i.test(texto), 'Sem marcador "A CONFIRMAR"');
 checa(!/Sul e Sudeste/i.test(texto), 'Sem promessa de frete regional');
 
