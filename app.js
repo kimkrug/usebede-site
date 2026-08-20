@@ -806,8 +806,9 @@
   window.quickAddToCart = function (id) {
     const p = PRODUCTS.find(x => String(x.id) === String(id));
     if (!p) return;
+    const defaultColor = (p.cores && p.cores[0]) || 'Única';
     const defaultSize = (p.tamanhos && p.tamanhos[0]) || '36';
-    addToCart(p, defaultSize);
+    addToCart(p, defaultSize, defaultColor);
     openCart();
   };
 
@@ -886,17 +887,21 @@
         btnBuy.onclick = null;
       } else {
         let idVar = null;
+        let urlVar = null;
         if (S.selectedColor && S.size && p.estoque_por_cor && p.estoque_por_cor[S.selectedColor]) {
           const v = p.estoque_por_cor[S.selectedColor][S.size];
-          if (v && Number(v.qtd || 0) > 0) idVar = v.id_variacao;
+          if (v && Number(v.qtd || 0) > 0) {
+            idVar = v.id_variacao;
+            urlVar = v.url_variacao || (v.sku ? (p.url_absolute + "?sku=" + v.sku) : p.url_absolute);
+          }
         }
         
-        if (p.url_absolute && S.selectedColor && S.size && idVar) {
-          let base = p.url_absolute;
+        if (p.url_absolute && S.selectedColor && S.size && (urlVar || idVar)) {
+          let targetUrl = urlVar || p.url_absolute;
           if (typeof CFG_LOJA !== 'undefined' && CFG_LOJA.dominioLoja) {
-            base = base.replace(/^https?:\/\/[^\/]+/, CFG_LOJA.dominioLoja);
+            targetUrl = targetUrl.replace(/^https?:\/\/[^\/]+/, CFG_LOJA.dominioLoja);
           }
-          btnBuy.href = base + "?v=" + idVar;
+          btnBuy.href = targetUrl;
           btnBuy.style.display = 'flex';
           btnBuy.style.opacity = '1';
           btnBuy.style.pointerEvents = 'auto';
@@ -1051,7 +1056,7 @@
       alert('Selecione cor e tamanho');
       return;
     }
-    addToCart(p, S.size);
+    addToCart(p, S.size, S.selectedColor);
     closeProduct();
     openCart();
   };
@@ -1059,8 +1064,10 @@
   if (D.pmWaBtn) {
     D.pmWaBtn.addEventListener('click', () => {
       if (!S.product) return;
+      const size = S.size || 'Não informada';
+      const cor = S.selectedColor || 'Única';
       const msg = encodeURIComponent(
-        `Olá! Gostaria de atendimento para comprar o modelo:\n\n*${S.product.nome}* — Tamanho: *${S.size}* — *${fmt(S.product.preco)}*\n\nComo finalizamos o pagamento?`
+        `Olá! Gostaria de atendimento para comprar o modelo:\n\n*${S.product.nome}*\nCor: *${cor}* — Tamanho: *${size}* — *${fmt(S.product.preco)}*\n\nComo finalizamos o pagamento?`
       );
       window.open(`https://wa.me/${WA}?text=${msg}`, '_blank');
     });
@@ -1093,8 +1100,15 @@
         if (!S.cart.length) return;
         let msg = `Olá! Gostaria de enviar a minha seleção da vitrine BEDÊ:\n\n`;
         S.cart.forEach((it, i) => {
-          msg += `*${i + 1}. ${it.name}*\nCor: ${it.cor || 'Única'} | Tam: ${it.size} | Qtd: ${it.qty}\n\n`;
+          msg += `*${i + 1}. ${it.name}*\n`;
+          msg += `Cor: ${it.cor} | Tam: ${it.size} | Qtd: ${it.qty} | Valor: ${fmt(it.price * it.qty)}`;
+          if (it.sku || it.idVar) {
+            msg += ` (Cód: ${it.sku || it.idVar})`;
+          }
+          msg += `\n\n`;
         });
+        const total = S.cart.reduce((acc, it) => acc + (it.price * it.qty), 0);
+        msg += `*Total estimado:* ${fmt(total)}\n\n`;
         msg += "Poderiam confirmar a disponibilidade e os valores por favor?";
         window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank');
       });
@@ -1112,12 +1126,33 @@
     if (D.cartDrawer) D.cartDrawer.classList.remove('open');
   };
 
-  function addToCart(p, size) {
-    const cor = S.selectedColor || 'Única';
-    const ex = S.cart.find(i => i.id === p.id && i.size === size && i.cor === cor);
-    if (ex) { ex.qty++; }
-    else {
-      S.cart.push({ id: p.id, name: p.nome, img: p.foto, size: size || '36', cor: cor, qty: 1 });
+  function addToCart(p, size, cor) {
+    const selectedColor = cor || S.selectedColor || 'Única';
+    const selectedSize = size || S.size || '36';
+    let idVar = null;
+    let sku = null;
+    if (p.estoque_por_cor && p.estoque_por_cor[selectedColor] && p.estoque_por_cor[selectedColor][selectedSize]) {
+      const vData = p.estoque_por_cor[selectedColor][selectedSize];
+      idVar = vData.id_variacao || null;
+      sku = vData.sku || null;
+    }
+    const priceNum = Number(p.preco || 0);
+
+    const ex = S.cart.find(i => i.id === p.id && i.size === selectedSize && i.cor === selectedColor);
+    if (ex) {
+      ex.qty++;
+    } else {
+      S.cart.push({
+        id: p.id,
+        name: p.nome,
+        img: p.foto,
+        size: selectedSize,
+        cor: selectedColor,
+        price: priceNum,
+        idVar: idVar,
+        sku: sku,
+        qty: 1
+      });
     }
     saveCart();
     updateCartBadge();
@@ -1152,7 +1187,7 @@
   }
 
   function renderCart() {
-    const sub = S.cart.reduce((t, i) => t + i.price * i.qty, 0);
+    const sub = S.cart.reduce((t, i) => t + (Number(i.price) || 0) * i.qty, 0);
     const totalQty = S.cart.reduce((t, i) => t + i.qty, 0);
     if (D.cartSub) D.cartSub.textContent = fmt(sub);
     if (D.cartPix) D.cartPix.textContent = fmt(sub * (1 - CFG.descontoPix / 100));
@@ -1172,7 +1207,7 @@
             <line x1="3" y1="6" x2="21" y2="6"/>
             <path d="M16 10a4 4 0 0 1-8 0"/>
           </svg>
-          <p style="font-size:14px;font-weight:500;color:#000404;margin-bottom:4px;">Sua sacola está vazia</p>
+          <p style="font-size:14px;font-weight:500;color:#000404;margin-bottom:4px;">Sua seleção está vazia</p>
           <p style="font-size:12px;font-weight:300;color:#888;">Explore nossa curadoria e adicione suas peças favoritas.</p>
         </div>`;
       return;
@@ -1183,11 +1218,11 @@
         <div class="cart-item-info">
           <p class="cart-item-name">${it.name}</p>
           <div class="cart-item-meta">
-            <span>Tam: <strong>${it.size}</strong></span>
+            <span>${it.cor} · Tam: <strong>${it.size}</strong></span>
             <span>·</span>
             <span>Qtd: <strong>${it.qty}</strong></span>
           </div>
-          <p class="cart-item-price">${fmt(it.price * it.qty)}</p>
+          <p class="cart-item-price">${fmt((Number(it.price) || 0) * it.qty)}</p>
         </div>
         <button class="cart-item-remove" onclick="removeItem(${i})" aria-label="Remover item" title="Remover">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

@@ -2,20 +2,10 @@
   "paginas_lidas": 3,
   "total_recuperados_api": 223,
   "total_processados_elegiveis": 186,
-  "total_anterior_publicado": 177,
+  "total_anterior_publicado": 186,
   "total_variacoes_negativas_zeradas": 81,
   "diff": {
-    "produtos_novos": [
-      "BOLSA CARLA",
-      "BOLSA JAQUELINE",
-      "BOLSA LARA PEQUENA",
-      "MOCASSIM TRATORADO VERNIZ",
-      "PAPETE AISHA",
-      "SANDALIA SIGTUNA",
-      "SAPATILHA PARIS BAUNILHA",
-      "SLINGBACK JORDANA",
-      "TENIS RAFA"
-    ],
+    "produtos_novos": [],
     "produtos_removidos": []
   },
   "descartes_detalhados": {

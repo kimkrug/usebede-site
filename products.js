@@ -17,77 +17,107 @@ const STILETTO_PRODUCTS = [
             "TAUPE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "BLUSH": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749474"
+                    "id_variacao": "9749474",
+                    "sku": "3325661.245891.404541.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-salto-bloco/?sku=3325661.245891.404541.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749480"
+                    "id_variacao": "9749480",
+                    "sku": "3325661.245891.404541.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-salto-bloco/?sku=3325661.245891.404541.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9749476"
+                    "id_variacao": "9749476",
+                    "sku": "3325661.245891.404541.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-salto-bloco/?sku=3325661.245891.404541.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749475"
+                    "id_variacao": "9749475",
+                    "sku": "3325661.245891.404541.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-salto-bloco/?sku=3325661.245891.404541.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749486"
+                    "id_variacao": "9749486",
+                    "sku": "3325661.245891.404541.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-salto-bloco/?sku=3325661.245891.404541.324742"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749481"
+                    "id_variacao": "9749481",
+                    "sku": "3325661.245891.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-salto-bloco/?sku=3325661.245891.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749485"
+                    "id_variacao": "9749485",
+                    "sku": "3325661.245891.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-salto-bloco/?sku=3325661.245891.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749479"
+                    "id_variacao": "9749479",
+                    "sku": "3325661.245891.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-salto-bloco/?sku=3325661.245891.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749483"
+                    "id_variacao": "9749483",
+                    "sku": "3325661.245891.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-salto-bloco/?sku=3325661.245891.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749477"
+                    "id_variacao": "9749477",
+                    "sku": "3325661.245891.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-salto-bloco/?sku=3325661.245891.404542.324742"
                 }
             },
             "TAUPE": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749482"
+                    "id_variacao": "9749482",
+                    "sku": "3325661.245891.404540.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-salto-bloco/?sku=3325661.245891.404540.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749478"
+                    "id_variacao": "9749478",
+                    "sku": "3325661.245891.404540.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-salto-bloco/?sku=3325661.245891.404540.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9749484"
+                    "id_variacao": "9749484",
+                    "sku": "3325661.245891.404540.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-salto-bloco/?sku=3325661.245891.404540.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749472"
+                    "id_variacao": "9749472",
+                    "sku": "3325661.245891.404540.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-salto-bloco/?sku=3325661.245891.404540.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749473"
+                    "id_variacao": "9749473",
+                    "sku": "3325661.245891.404540.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-salto-bloco/?sku=3325661.245891.404540.324742"
                 }
             }
         },
@@ -124,55 +154,75 @@ const STILETTO_PRODUCTS = [
             "MALBEC"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "MALBEC": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749498"
+                    "id_variacao": "9749498",
+                    "sku": "3325663.245892.404543.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-alto-salto-taca/?sku=3325663.245892.404543.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749494"
+                    "id_variacao": "9749494",
+                    "sku": "3325663.245892.404543.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-alto-salto-taca/?sku=3325663.245892.404543.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749493"
+                    "id_variacao": "9749493",
+                    "sku": "3325663.245892.404543.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-alto-salto-taca/?sku=3325663.245892.404543.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749497"
+                    "id_variacao": "9749497",
+                    "sku": "3325663.245892.404543.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-alto-salto-taca/?sku=3325663.245892.404543.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749495"
+                    "id_variacao": "9749495",
+                    "sku": "3325663.245892.404543.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-alto-salto-taca/?sku=3325663.245892.404543.324742"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749496"
+                    "id_variacao": "9749496",
+                    "sku": "3325663.245892.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-alto-salto-taca/?sku=3325663.245892.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749490"
+                    "id_variacao": "9749490",
+                    "sku": "3325663.245892.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-alto-salto-taca/?sku=3325663.245892.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749491"
+                    "id_variacao": "9749491",
+                    "sku": "3325663.245892.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-alto-salto-taca/?sku=3325663.245892.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749489"
+                    "id_variacao": "9749489",
+                    "sku": "3325663.245892.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-alto-salto-taca/?sku=3325663.245892.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749492"
+                    "id_variacao": "9749492",
+                    "sku": "3325663.245892.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-alto-salto-taca/?sku=3325663.245892.404542.324742"
                 }
             }
         },
@@ -210,90 +260,126 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "CACAU": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12981759"
+                    "id_variacao": "12981759",
+                    "sku": "3325664.249814.404544.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-patricia/?sku=3325664.249814.404544.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9942668"
+                    "id_variacao": "9942668",
+                    "sku": "3325664.249814.404544.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-patricia/?sku=3325664.249814.404544.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9942666"
+                    "id_variacao": "9942666",
+                    "sku": "3325664.249814.404544.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-patricia/?sku=3325664.249814.404544.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749501"
+                    "id_variacao": "9749501",
+                    "sku": "3325664.245897.404544.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-patricia/?sku=3325664.245897.404544.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749504"
+                    "id_variacao": "9749504",
+                    "sku": "3325664.245897.404544.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-patricia/?sku=3325664.245897.404544.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9749511"
+                    "id_variacao": "9749511",
+                    "sku": "3325664.245897.404544.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-patricia/?sku=3325664.245897.404544.324746"
                 }
             },
             "OFF WHITE": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749505"
+                    "id_variacao": "9749505",
+                    "sku": "3325664.245897.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-patricia/?sku=3325664.245897.404545.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9942665"
+                    "id_variacao": "9942665",
+                    "sku": "3325664.249814.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-patricia/?sku=3325664.249814.404545.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749510"
+                    "id_variacao": "9749510",
+                    "sku": "3325664.245897.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-patricia/?sku=3325664.245897.404545.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749502"
+                    "id_variacao": "9749502",
+                    "sku": "3325664.245897.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-patricia/?sku=3325664.245897.404545.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9942667"
+                    "id_variacao": "9942667",
+                    "sku": "3325664.249814.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-patricia/?sku=3325664.249814.404545.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9749509"
+                    "id_variacao": "9749509",
+                    "sku": "3325664.245897.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-patricia/?sku=3325664.245897.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749499"
+                    "id_variacao": "9749499",
+                    "sku": "3325664.245897.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-patricia/?sku=3325664.245897.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749500"
+                    "id_variacao": "9749500",
+                    "sku": "3325664.245897.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-patricia/?sku=3325664.245897.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749508"
+                    "id_variacao": "9749508",
+                    "sku": "3325664.245897.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-patricia/?sku=3325664.245897.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749507"
+                    "id_variacao": "9749507",
+                    "sku": "3325664.245897.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-patricia/?sku=3325664.245897.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9942669"
+                    "id_variacao": "9942669",
+                    "sku": "3325664.249814.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-patricia/?sku=3325664.249814.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749503"
+                    "id_variacao": "9749503",
+                    "sku": "3325664.245897.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-patricia/?sku=3325664.245897.404542.324746"
                 }
             }
         },
@@ -327,33 +413,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749518"
+                    "id_variacao": "9749518",
+                    "sku": "3325666.0000.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-leona/?sku=3325666.0000.0.324743"
                 },
                 "35": {
                     "qtd": 3,
-                    "id_variacao": "9749521"
+                    "id_variacao": "9749521",
+                    "sku": "3325666.0000.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-leona/?sku=3325666.0000.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749520"
+                    "id_variacao": "9749520",
+                    "sku": "3325666.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-leona/?sku=3325666.0000.0.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9749517"
+                    "id_variacao": "9749517",
+                    "sku": "3325666.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-leona/?sku=3325666.0000.0.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749519"
+                    "id_variacao": "9749519",
+                    "sku": "3325666.0000.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-leona/?sku=3325666.0000.0.324742"
                 }
             }
         },
@@ -380,28 +476,36 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "36",
-            "37",
+            "34",
             "35",
-            "34"
+            "37",
+            "36"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749525"
+                    "id_variacao": "9749525",
+                    "sku": "3325667.245892.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/botas-tec-mlr-3685-preto/?sku=3325667.245892.0.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749524"
+                    "id_variacao": "9749524",
+                    "sku": "3325667.245892.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/botas-tec-mlr-3685-preto/?sku=3325667.245892.0.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749522"
+                    "id_variacao": "9749522",
+                    "sku": "3325667.245892.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/botas-tec-mlr-3685-preto/?sku=3325667.245892.0.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749523"
+                    "id_variacao": "9749523",
+                    "sku": "3325667.245892.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/botas-tec-mlr-3685-preto/?sku=3325667.245892.0.324741"
                 }
             }
         },
@@ -431,55 +535,75 @@ const STILETTO_PRODUCTS = [
             "SESANO"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749528"
+                    "id_variacao": "9749528",
+                    "sku": "3325668.245891.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-medio-salto-fino/?sku=3325668.245891.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9893450"
+                    "id_variacao": "9893450",
+                    "sku": "3325668.245891.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-medio-salto-fino/?sku=3325668.245891.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9893449"
+                    "id_variacao": "9893449",
+                    "sku": "3325668.245891.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-medio-salto-fino/?sku=3325668.245891.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9893451"
+                    "id_variacao": "9893451",
+                    "sku": "3325668.245891.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-medio-salto-fino/?sku=3325668.245891.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749526"
+                    "id_variacao": "9749526",
+                    "sku": "3325668.245891.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-medio-salto-fino/?sku=3325668.245891.404542.324742"
                 }
             },
             "SESANO": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9893452"
+                    "id_variacao": "9893452",
+                    "sku": "3325668.245891.404546.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-medio-salto-fino/?sku=3325668.245891.404546.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749529"
+                    "id_variacao": "9749529",
+                    "sku": "3325668.245891.404546.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-medio-salto-fino/?sku=3325668.245891.404546.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749527"
+                    "id_variacao": "9749527",
+                    "sku": "3325668.245891.404546.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-medio-salto-fino/?sku=3325668.245891.404546.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749530"
+                    "id_variacao": "9749530",
+                    "sku": "3325668.245891.404546.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-medio-salto-fino/?sku=3325668.245891.404546.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9893453"
+                    "id_variacao": "9893453",
+                    "sku": "3325668.245891.404546.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-medio-salto-fino/?sku=3325668.245891.404546.324742"
                 }
             }
         },
@@ -513,8 +637,8 @@ const STILETTO_PRODUCTS = [
         "preco": 347.9,
         "cores": [
             "Preto",
-            "CROCO",
-            "Mostarda"
+            "Mostarda",
+            "CROCO"
         ],
         "tamanhos": [
             "Único"
@@ -523,19 +647,25 @@ const STILETTO_PRODUCTS = [
             "CROCO": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "9749535"
+                    "id_variacao": "9749535",
+                    "sku": "3325670.245894.404549",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-pochete-jessica/?sku=3325670.245894.404549"
                 }
             },
             "Mostarda": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "9749534"
+                    "id_variacao": "9749534",
+                    "sku": "3325670.245894.404548",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-pochete-jessica/?sku=3325670.245894.404548"
                 }
             },
             "Preto": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9749533"
+                    "id_variacao": "9749533",
+                    "sku": "3325670.245894.404542",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-pochete-jessica/?sku=3325670.245894.404542"
                 }
             }
         },
@@ -574,121 +704,169 @@ const STILETTO_PRODUCTS = [
         "preco": 220.9,
         "cores": [
             "Preto",
-            "nude",
             "caramelo",
+            "nude",
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749549"
+                    "id_variacao": "9749549",
+                    "sku": "3325671.245897.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404545.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749557"
+                    "id_variacao": "9749557",
+                    "sku": "3325671.245897.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404545.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749541"
+                    "id_variacao": "9749541",
+                    "sku": "3325671.245897.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404545.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749554"
+                    "id_variacao": "9749554",
+                    "sku": "3325671.245897.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404545.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749553"
+                    "id_variacao": "9749553",
+                    "sku": "3325671.245897.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404545.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9749551"
+                    "id_variacao": "9749551",
+                    "sku": "3325671.245897.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749546"
+                    "id_variacao": "9749546",
+                    "sku": "3325671.245897.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749543"
+                    "id_variacao": "9749543",
+                    "sku": "3325671.245897.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749539"
+                    "id_variacao": "9749539",
+                    "sku": "3325671.245897.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749540"
+                    "id_variacao": "9749540",
+                    "sku": "3325671.245897.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749544"
+                    "id_variacao": "9749544",
+                    "sku": "3325671.245897.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749556"
+                    "id_variacao": "9749556",
+                    "sku": "3325671.245897.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404542.324746"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749555"
+                    "id_variacao": "9749555",
+                    "sku": "3325671.245897.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404551.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749537"
+                    "id_variacao": "9749537",
+                    "sku": "3325671.245897.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404551.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749548"
+                    "id_variacao": "9749548",
+                    "sku": "3325671.245897.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404551.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749545"
+                    "id_variacao": "9749545",
+                    "sku": "3325671.245897.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404551.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749558"
+                    "id_variacao": "9749558",
+                    "sku": "3325671.245897.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404551.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749547"
+                    "id_variacao": "9749547",
+                    "sku": "3325671.245897.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404551.324746"
                 }
             },
             "nude": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749538"
+                    "id_variacao": "9749538",
+                    "sku": "3325671.245897.404550.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404550.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749550"
+                    "id_variacao": "9749550",
+                    "sku": "3325671.245897.404550.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404550.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749552"
+                    "id_variacao": "9749552",
+                    "sku": "3325671.245897.404550.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404550.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749559"
+                    "id_variacao": "9749559",
+                    "sku": "3325671.245897.404550.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404550.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749542"
+                    "id_variacao": "9749542",
+                    "sku": "3325671.245897.404550.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404550.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749536"
+                    "id_variacao": "9749536",
+                    "sku": "3325671.245897.404550.324746",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-couro/?sku=3325671.245897.404550.324746"
                 }
             }
         },
@@ -726,33 +904,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749565"
+                    "id_variacao": "9749565",
+                    "sku": "3325673.245895.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-dalia/?sku=3325673.245895.0.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749562"
+                    "id_variacao": "9749562",
+                    "sku": "3325673.245895.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-dalia/?sku=3325673.245895.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749564"
+                    "id_variacao": "9749564",
+                    "sku": "3325673.245895.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-dalia/?sku=3325673.245895.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749561"
+                    "id_variacao": "9749561",
+                    "sku": "3325673.245895.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-dalia/?sku=3325673.245895.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749563"
+                    "id_variacao": "9749563",
+                    "sku": "3325673.245895.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-dalia/?sku=3325673.245895.0.324742"
                 }
             }
         },
@@ -779,23 +967,29 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
+            "36",
             "35",
-            "36"
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "12981760"
+                    "id_variacao": "12981760",
+                    "sku": "3325674.245891.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/botas-croco/?sku=3325674.245891.0.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9893447"
+                    "id_variacao": "9893447",
+                    "sku": "3325674.245891.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/botas-croco/?sku=3325674.245891.0.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749566"
+                    "id_variacao": "9749566",
+                    "sku": "3325674.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/botas-croco/?sku=3325674.0000.0.324741"
                 }
             }
         },
@@ -822,121 +1016,169 @@ const STILETTO_PRODUCTS = [
         "preco": 149.9,
         "cores": [
             "Preto",
-            "OFF WHITE",
             "caramelo",
-            "MARSALA"
+            "MARSALA",
+            "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "MARSALA": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749576"
+                    "id_variacao": "9749576",
+                    "sku": "3325675.249014.404552.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404552.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749582"
+                    "id_variacao": "9749582",
+                    "sku": "3325675.249014.404552.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404552.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749581"
+                    "id_variacao": "9749581",
+                    "sku": "3325675.249014.404552.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404552.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9749590"
+                    "id_variacao": "9749590",
+                    "sku": "3325675.249014.404552.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404552.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749573"
+                    "id_variacao": "9749573",
+                    "sku": "3325675.249014.404552.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404552.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749572"
+                    "id_variacao": "9749572",
+                    "sku": "3325675.249014.404552.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404552.324746"
                 }
             },
             "OFF WHITE": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749591"
+                    "id_variacao": "9749591",
+                    "sku": "3325675.249014.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404545.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749580"
+                    "id_variacao": "9749580",
+                    "sku": "3325675.249014.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404545.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749587"
+                    "id_variacao": "9749587",
+                    "sku": "3325675.249014.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404545.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749585"
+                    "id_variacao": "9749585",
+                    "sku": "3325675.249014.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404545.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749579"
+                    "id_variacao": "9749579",
+                    "sku": "3325675.249014.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404545.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749583"
+                    "id_variacao": "9749583",
+                    "sku": "3325675.249014.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749568"
+                    "id_variacao": "9749568",
+                    "sku": "3325675.249014.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749584"
+                    "id_variacao": "9749584",
+                    "sku": "3325675.249014.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749570"
+                    "id_variacao": "9749570",
+                    "sku": "3325675.249014.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749578"
+                    "id_variacao": "9749578",
+                    "sku": "3325675.249014.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749569"
+                    "id_variacao": "9749569",
+                    "sku": "3325675.249014.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749574"
+                    "id_variacao": "9749574",
+                    "sku": "3325675.249014.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404542.324746"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749586"
+                    "id_variacao": "9749586",
+                    "sku": "3325675.249014.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404551.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749571"
+                    "id_variacao": "9749571",
+                    "sku": "3325675.249014.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404551.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749589"
+                    "id_variacao": "9749589",
+                    "sku": "3325675.249014.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404551.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749575"
+                    "id_variacao": "9749575",
+                    "sku": "3325675.249014.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404551.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749577"
+                    "id_variacao": "9749577",
+                    "sku": "3325675.249014.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404551.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749588"
+                    "id_variacao": "9749588",
+                    "sku": "3325675.249014.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-com-cravinhos/?sku=3325675.249014.404551.324746"
                 }
             }
         },
@@ -972,149 +1214,209 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 199.9,
         "cores": [
-            "Rosa claro",
             "Azul",
-            "Preto",
             "caramelo",
-            "OFF WHITE"
+            "Rosa claro",
+            "OFF WHITE",
+            "Preto"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Azul": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "9749598"
+                    "id_variacao": "9749598",
+                    "sku": "3325676.245896.404554.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404554.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749611"
+                    "id_variacao": "9749611",
+                    "sku": "3325676.245896.404554.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404554.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9749604"
+                    "id_variacao": "9749604",
+                    "sku": "3325676.245896.404554.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404554.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749615"
+                    "id_variacao": "9749615",
+                    "sku": "3325676.245896.404554.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404554.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749619"
+                    "id_variacao": "9749619",
+                    "sku": "3325676.245896.404554.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404554.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9749607"
+                    "id_variacao": "9749607",
+                    "sku": "3325676.245896.404554.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404554.324746"
                 }
             },
             "OFF WHITE": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "9749600"
+                    "id_variacao": "9749600",
+                    "sku": "3325676.245896.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404545.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749612"
+                    "id_variacao": "9749612",
+                    "sku": "3325676.245896.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404545.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9749601"
+                    "id_variacao": "9749601",
+                    "sku": "3325676.245896.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404545.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9749617"
+                    "id_variacao": "9749617",
+                    "sku": "3325676.245896.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404545.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749595"
+                    "id_variacao": "9749595",
+                    "sku": "3325676.245896.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404545.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749606"
+                    "id_variacao": "9749606",
+                    "sku": "3325676.245896.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "9749597"
+                    "id_variacao": "9749597",
+                    "sku": "3325676.245896.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749609"
+                    "id_variacao": "9749609",
+                    "sku": "3325676.245896.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404542.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9749621"
+                    "id_variacao": "9749621",
+                    "sku": "3325676.245896.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749616"
+                    "id_variacao": "9749616",
+                    "sku": "3325676.245896.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404542.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749596"
+                    "id_variacao": "9749596",
+                    "sku": "3325676.245896.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749614"
+                    "id_variacao": "9749614",
+                    "sku": "3325676.245896.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404542.324746"
                 }
             },
             "Rosa claro": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "9749618"
+                    "id_variacao": "9749618",
+                    "sku": "3325676.245896.404553.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404553.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749613"
+                    "id_variacao": "9749613",
+                    "sku": "3325676.245896.404553.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404553.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9749602"
+                    "id_variacao": "9749602",
+                    "sku": "3325676.245896.404553.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404553.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9749594"
+                    "id_variacao": "9749594",
+                    "sku": "3325676.245896.404553.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404553.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749593"
+                    "id_variacao": "9749593",
+                    "sku": "3325676.245896.404553.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404553.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9749605"
+                    "id_variacao": "9749605",
+                    "sku": "3325676.245896.404553.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404553.324746"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749599"
+                    "id_variacao": "9749599",
+                    "sku": "3325676.245896.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404551.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749610"
+                    "id_variacao": "9749610",
+                    "sku": "3325676.245896.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404551.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9749603"
+                    "id_variacao": "9749603",
+                    "sku": "3325676.245896.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404551.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749592"
+                    "id_variacao": "9749592",
+                    "sku": "3325676.245896.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404551.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749620"
+                    "id_variacao": "9749620",
+                    "sku": "3325676.245896.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404551.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749608"
+                    "id_variacao": "9749608",
+                    "sku": "3325676.245896.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro-fivela/?sku=3325676.245896.404551.324746"
                 }
             }
         },
@@ -1158,77 +1460,107 @@ const STILETTO_PRODUCTS = [
             "CACAU"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "CACAU": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749634"
+                    "id_variacao": "9749634",
+                    "sku": "3325677.245891.404544.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-medio-salto-taca/?sku=3325677.245891.404544.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749632"
+                    "id_variacao": "9749632",
+                    "sku": "3325677.245891.404544.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-medio-salto-taca/?sku=3325677.245891.404544.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749627"
+                    "id_variacao": "9749627",
+                    "sku": "3325677.245891.404544.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-medio-salto-taca/?sku=3325677.245891.404544.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749635"
+                    "id_variacao": "9749635",
+                    "sku": "3325677.245891.404544.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-medio-salto-taca/?sku=3325677.245891.404544.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749626"
+                    "id_variacao": "9749626",
+                    "sku": "3325677.245891.404544.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-medio-salto-taca/?sku=3325677.245891.404544.324742"
                 }
             },
             "MALBEC": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749623"
+                    "id_variacao": "9749623",
+                    "sku": "3325677.245891.404543.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-medio-salto-taca/?sku=3325677.245891.404543.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749631"
+                    "id_variacao": "9749631",
+                    "sku": "3325677.245891.404543.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-medio-salto-taca/?sku=3325677.245891.404543.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749630"
+                    "id_variacao": "9749630",
+                    "sku": "3325677.245891.404543.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-medio-salto-taca/?sku=3325677.245891.404543.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749636"
+                    "id_variacao": "9749636",
+                    "sku": "3325677.245891.404543.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-medio-salto-taca/?sku=3325677.245891.404543.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749633"
+                    "id_variacao": "9749633",
+                    "sku": "3325677.245891.404543.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-medio-salto-taca/?sku=3325677.245891.404543.324742"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749628"
+                    "id_variacao": "9749628",
+                    "sku": "3325677.245891.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-medio-salto-taca/?sku=3325677.245891.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749629"
+                    "id_variacao": "9749629",
+                    "sku": "3325677.245891.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-medio-salto-taca/?sku=3325677.245891.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749624"
+                    "id_variacao": "9749624",
+                    "sku": "3325677.245891.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-medio-salto-taca/?sku=3325677.245891.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749622"
+                    "id_variacao": "9749622",
+                    "sku": "3325677.245891.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-medio-salto-taca/?sku=3325677.245891.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749625"
+                    "id_variacao": "9749625",
+                    "sku": "3325677.245891.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-cano-medio-salto-taca/?sku=3325677.245891.404542.324742"
                 }
             }
         },
@@ -1262,33 +1594,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749643"
+                    "id_variacao": "9749643",
+                    "sku": "3325680.245895.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-jane/?sku=3325680.245895.0.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749644"
+                    "id_variacao": "9749644",
+                    "sku": "3325680.245895.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-jane/?sku=3325680.245895.0.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749641"
+                    "id_variacao": "9749641",
+                    "sku": "3325680.245895.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-jane/?sku=3325680.245895.0.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749640"
+                    "id_variacao": "9749640",
+                    "sku": "3325680.245895.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-jane/?sku=3325680.245895.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749642"
+                    "id_variacao": "9749642",
+                    "sku": "3325680.245895.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-jane/?sku=3325680.245895.0.324742"
                 }
             }
         },
@@ -1319,64 +1661,88 @@ const STILETTO_PRODUCTS = [
             "Cinza"
         ],
         "tamanhos": [
-            "36",
-            "37",
+            "34",
             "35",
-            "34"
+            "37",
+            "36"
         ],
         "estoque_por_cor": {
             "Cinza": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749653"
+                    "id_variacao": "9749653",
+                    "sku": "3325681.245898.404556.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-celine-couro-floater/?sku=3325681.245898.404556.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749647"
+                    "id_variacao": "9749647",
+                    "sku": "3325681.245898.404556.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-celine-couro-floater/?sku=3325681.245898.404556.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749656"
+                    "id_variacao": "9749656",
+                    "sku": "3325681.245898.404556.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-celine-couro-floater/?sku=3325681.245898.404556.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749651"
+                    "id_variacao": "9749651",
+                    "sku": "3325681.245898.404556.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-celine-couro-floater/?sku=3325681.245898.404556.324741"
                 }
             },
             "Marrom": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749649"
+                    "id_variacao": "9749649",
+                    "sku": "3325681.245898.404555.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-celine-couro-floater/?sku=3325681.245898.404555.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749650"
+                    "id_variacao": "9749650",
+                    "sku": "3325681.245898.404555.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-celine-couro-floater/?sku=3325681.245898.404555.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749654"
+                    "id_variacao": "9749654",
+                    "sku": "3325681.245898.404555.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-celine-couro-floater/?sku=3325681.245898.404555.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749646"
+                    "id_variacao": "9749646",
+                    "sku": "3325681.245898.404555.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-celine-couro-floater/?sku=3325681.245898.404555.324741"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749652"
+                    "id_variacao": "9749652",
+                    "sku": "3325681.245898.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-celine-couro-floater/?sku=3325681.245898.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749648"
+                    "id_variacao": "9749648",
+                    "sku": "3325681.245898.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-celine-couro-floater/?sku=3325681.245898.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749655"
+                    "id_variacao": "9749655",
+                    "sku": "3325681.245898.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-celine-couro-floater/?sku=3325681.245898.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749645"
+                    "id_variacao": "9749645",
+                    "sku": "3325681.245898.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-celine-couro-floater/?sku=3325681.245898.404542.324741"
                 }
             }
         },
@@ -1418,90 +1784,126 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "34": {
                     "qtd": 13,
-                    "id_variacao": "9749667"
+                    "id_variacao": "9749667",
+                    "sku": "3325685.245892.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-curto-salto-fino/?sku=3325685.245892.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749674"
+                    "id_variacao": "9749674",
+                    "sku": "3325685.245892.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-curto-salto-fino/?sku=3325685.245892.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749662"
+                    "id_variacao": "9749662",
+                    "sku": "3325685.245892.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-curto-salto-fino/?sku=3325685.245892.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749669"
+                    "id_variacao": "9749669",
+                    "sku": "3325685.245892.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-curto-salto-fino/?sku=3325685.245892.404542.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749665"
+                    "id_variacao": "9749665",
+                    "sku": "3325685.245892.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-curto-salto-fino/?sku=3325685.245892.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9749677"
+                    "id_variacao": "9749677",
+                    "sku": "3325685.245892.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-curto-salto-fino/?sku=3325685.245892.404542.324746"
                 }
             },
             "cafe": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749673"
+                    "id_variacao": "9749673",
+                    "sku": "3325685.245892.404557.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-curto-salto-fino/?sku=3325685.245892.404557.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749660"
+                    "id_variacao": "9749660",
+                    "sku": "3325685.245892.404557.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-curto-salto-fino/?sku=3325685.245892.404557.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9749663"
+                    "id_variacao": "9749663",
+                    "sku": "3325685.245892.404557.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-curto-salto-fino/?sku=3325685.245892.404557.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749670"
+                    "id_variacao": "9749670",
+                    "sku": "3325685.245892.404557.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-curto-salto-fino/?sku=3325685.245892.404557.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749672"
+                    "id_variacao": "9749672",
+                    "sku": "3325685.245892.404557.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-curto-salto-fino/?sku=3325685.245892.404557.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9749661"
+                    "id_variacao": "9749661",
+                    "sku": "3325685.245892.404557.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-curto-salto-fino/?sku=3325685.245892.404557.324746"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749666"
+                    "id_variacao": "9749666",
+                    "sku": "3325685.245892.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-curto-salto-fino/?sku=3325685.245892.404551.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749675"
+                    "id_variacao": "9749675",
+                    "sku": "3325685.245892.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-curto-salto-fino/?sku=3325685.245892.404551.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749664"
+                    "id_variacao": "9749664",
+                    "sku": "3325685.245892.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-curto-salto-fino/?sku=3325685.245892.404551.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749668"
+                    "id_variacao": "9749668",
+                    "sku": "3325685.245892.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-curto-salto-fino/?sku=3325685.245892.404551.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749671"
+                    "id_variacao": "9749671",
+                    "sku": "3325685.245892.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-curto-salto-fino/?sku=3325685.245892.404551.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9749676"
+                    "id_variacao": "9749676",
+                    "sku": "3325685.245892.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-curto-salto-fino/?sku=3325685.245892.404551.324746"
                 }
             }
         },
@@ -1535,33 +1937,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749694"
+                    "id_variacao": "9749694",
+                    "sku": "3325687.0000.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/botas-couro-fly-tira-enfeite/?sku=3325687.0000.0.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749697"
+                    "id_variacao": "9749697",
+                    "sku": "3325687.0000.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/botas-couro-fly-tira-enfeite/?sku=3325687.0000.0.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749693"
+                    "id_variacao": "9749693",
+                    "sku": "3325687.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/botas-couro-fly-tira-enfeite/?sku=3325687.0000.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749696"
+                    "id_variacao": "9749696",
+                    "sku": "3325687.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/botas-couro-fly-tira-enfeite/?sku=3325687.0000.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749695"
+                    "id_variacao": "9749695",
+                    "sku": "3325687.0000.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/botas-couro-fly-tira-enfeite/?sku=3325687.0000.0.324742"
                 }
             }
         },
@@ -1588,149 +2000,209 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 179.9,
         "cores": [
-            "OFF WHITE",
             "Azul meia-noite",
-            "MARSALA",
+            "OFF WHITE",
             "Preto",
+            "MARSALA",
             "Prata"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Azul meia-noite": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749716"
+                    "id_variacao": "9749716",
+                    "sku": "3325688.245897.404560.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404560.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749727"
+                    "id_variacao": "9749727",
+                    "sku": "3325688.245897.404560.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404560.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749708"
+                    "id_variacao": "9749708",
+                    "sku": "3325688.245897.404560.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404560.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749720"
+                    "id_variacao": "9749720",
+                    "sku": "3325688.245897.404560.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404560.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749712"
+                    "id_variacao": "9749712",
+                    "sku": "3325688.245897.404560.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404560.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749713"
+                    "id_variacao": "9749713",
+                    "sku": "3325688.245897.404560.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404560.324746"
                 }
             },
             "MARSALA": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749706"
+                    "id_variacao": "9749706",
+                    "sku": "3325688.245897.404552.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404552.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749710"
+                    "id_variacao": "9749710",
+                    "sku": "3325688.245897.404552.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404552.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749726"
+                    "id_variacao": "9749726",
+                    "sku": "3325688.245897.404552.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404552.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749709"
+                    "id_variacao": "9749709",
+                    "sku": "3325688.245897.404552.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404552.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749724"
+                    "id_variacao": "9749724",
+                    "sku": "3325688.245897.404552.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404552.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749699"
+                    "id_variacao": "9749699",
+                    "sku": "3325688.245897.404552.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404552.324746"
                 }
             },
             "OFF WHITE": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749722"
+                    "id_variacao": "9749722",
+                    "sku": "3325688.245897.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404545.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749702"
+                    "id_variacao": "9749702",
+                    "sku": "3325688.245897.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404545.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749705"
+                    "id_variacao": "9749705",
+                    "sku": "3325688.245897.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404545.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749707"
+                    "id_variacao": "9749707",
+                    "sku": "3325688.245897.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404545.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749715"
+                    "id_variacao": "9749715",
+                    "sku": "3325688.245897.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404545.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749719"
+                    "id_variacao": "9749719",
+                    "sku": "3325688.245897.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404545.324746"
                 }
             },
             "Prata": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749717"
+                    "id_variacao": "9749717",
+                    "sku": "3325688.245897.404559.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404559.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749711"
+                    "id_variacao": "9749711",
+                    "sku": "3325688.245897.404559.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404559.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749700"
+                    "id_variacao": "9749700",
+                    "sku": "3325688.245897.404559.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404559.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9749718"
+                    "id_variacao": "9749718",
+                    "sku": "3325688.245897.404559.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404559.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749703"
+                    "id_variacao": "9749703",
+                    "sku": "3325688.245897.404559.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404559.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749698"
+                    "id_variacao": "9749698",
+                    "sku": "3325688.245897.404559.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404559.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749701"
+                    "id_variacao": "9749701",
+                    "sku": "3325688.245897.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749704"
+                    "id_variacao": "9749704",
+                    "sku": "3325688.245897.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749723"
+                    "id_variacao": "9749723",
+                    "sku": "3325688.245897.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749714"
+                    "id_variacao": "9749714",
+                    "sku": "3325688.245897.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749725"
+                    "id_variacao": "9749725",
+                    "sku": "3325688.245897.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749721"
+                    "id_variacao": "9749721",
+                    "sku": "3325688.245897.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-poa/?sku=3325688.245897.404542.324746"
                 }
             }
         },
@@ -1773,77 +2245,107 @@ const STILETTO_PRODUCTS = [
             "Cinza"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Branco": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749742"
+                    "id_variacao": "9749742",
+                    "sku": "3325689.245895.404561.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-couro/?sku=3325689.245895.404561.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749731"
+                    "id_variacao": "9749731",
+                    "sku": "3325689.245895.404561.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-couro/?sku=3325689.245895.404561.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749739"
+                    "id_variacao": "9749739",
+                    "sku": "3325689.245895.404561.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-couro/?sku=3325689.245895.404561.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749734"
+                    "id_variacao": "9749734",
+                    "sku": "3325689.245895.404561.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-couro/?sku=3325689.245895.404561.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749728"
+                    "id_variacao": "9749728",
+                    "sku": "3325689.245895.404561.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-couro/?sku=3325689.245895.404561.324742"
                 }
             },
             "Cinza": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749740"
+                    "id_variacao": "9749740",
+                    "sku": "3325689.245895.404556.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-couro/?sku=3325689.245895.404556.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749730"
+                    "id_variacao": "9749730",
+                    "sku": "3325689.245895.404556.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-couro/?sku=3325689.245895.404556.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749738"
+                    "id_variacao": "9749738",
+                    "sku": "3325689.245895.404556.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-couro/?sku=3325689.245895.404556.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749732"
+                    "id_variacao": "9749732",
+                    "sku": "3325689.245895.404556.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-couro/?sku=3325689.245895.404556.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749736"
+                    "id_variacao": "9749736",
+                    "sku": "3325689.245895.404556.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-couro/?sku=3325689.245895.404556.324742"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749741"
+                    "id_variacao": "9749741",
+                    "sku": "3325689.245895.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-couro/?sku=3325689.245895.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749729"
+                    "id_variacao": "9749729",
+                    "sku": "3325689.245895.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-couro/?sku=3325689.245895.404542.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9749737"
+                    "id_variacao": "9749737",
+                    "sku": "3325689.245895.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-couro/?sku=3325689.245895.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749733"
+                    "id_variacao": "9749733",
+                    "sku": "3325689.245895.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-couro/?sku=3325689.245895.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749735"
+                    "id_variacao": "9749735",
+                    "sku": "3325689.245895.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-couro/?sku=3325689.245895.404542.324742"
                 }
             }
         },
@@ -1881,77 +2383,107 @@ const STILETTO_PRODUCTS = [
             "CAPUCCINO"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Branco": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749745"
+                    "id_variacao": "9749745",
+                    "sku": "3325690.245895.404561.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-mari/?sku=3325690.245895.404561.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749746"
+                    "id_variacao": "9749746",
+                    "sku": "3325690.245895.404561.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-mari/?sku=3325690.245895.404561.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749747"
+                    "id_variacao": "9749747",
+                    "sku": "3325690.245895.404561.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-mari/?sku=3325690.245895.404561.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749743"
+                    "id_variacao": "9749743",
+                    "sku": "3325690.245895.404561.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-mari/?sku=3325690.245895.404561.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749752"
+                    "id_variacao": "9749752",
+                    "sku": "3325690.245895.404561.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-mari/?sku=3325690.245895.404561.324742"
                 }
             },
             "CAPUCCINO": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749754"
+                    "id_variacao": "9749754",
+                    "sku": "3325690.245895.404562.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-mari/?sku=3325690.245895.404562.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749744"
+                    "id_variacao": "9749744",
+                    "sku": "3325690.245895.404562.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-mari/?sku=3325690.245895.404562.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749756"
+                    "id_variacao": "9749756",
+                    "sku": "3325690.245895.404562.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-mari/?sku=3325690.245895.404562.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749750"
+                    "id_variacao": "9749750",
+                    "sku": "3325690.245895.404562.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-mari/?sku=3325690.245895.404562.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749753"
+                    "id_variacao": "9749753",
+                    "sku": "3325690.245895.404562.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-mari/?sku=3325690.245895.404562.324742"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749749"
+                    "id_variacao": "9749749",
+                    "sku": "3325690.245895.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-mari/?sku=3325690.245895.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749757"
+                    "id_variacao": "9749757",
+                    "sku": "3325690.245895.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-mari/?sku=3325690.245895.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749748"
+                    "id_variacao": "9749748",
+                    "sku": "3325690.245895.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-mari/?sku=3325690.245895.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749751"
+                    "id_variacao": "9749751",
+                    "sku": "3325690.245895.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-mari/?sku=3325690.245895.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749755"
+                    "id_variacao": "9749755",
+                    "sku": "3325690.245895.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-mari/?sku=3325690.245895.404542.324742"
                 }
             }
         },
@@ -1988,28 +2520,36 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "36",
+            "34",
             "35",
             "38",
-            "34"
+            "36"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749760"
+                    "id_variacao": "9749760",
+                    "sku": "3325691.0000.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-ariana-verniz/?sku=3325691.0000.0.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749761"
+                    "id_variacao": "9749761",
+                    "sku": "3325691.0000.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-ariana-verniz/?sku=3325691.0000.0.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749758"
+                    "id_variacao": "9749758",
+                    "sku": "3325691.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-ariana-verniz/?sku=3325691.0000.0.324744"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749759"
+                    "id_variacao": "9749759",
+                    "sku": "3325691.0000.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-ariana-verniz/?sku=3325691.0000.0.324742"
                 }
             }
         },
@@ -2046,13 +2586,17 @@ const STILETTO_PRODUCTS = [
             "Preto": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9749762"
+                    "id_variacao": "9749762",
+                    "sku": "3325692.245894.404542",
+                    "url_variacao": "https://loja.usebede.com.br/mochila-lia/?sku=3325692.245894.404542"
                 }
             },
             "pinhão": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "9749763"
+                    "id_variacao": "9749763",
+                    "sku": "3325692.245894.404547",
+                    "url_variacao": "https://loja.usebede.com.br/mochila-lia/?sku=3325692.245894.404547"
                 }
             }
         },
@@ -2087,11 +2631,11 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 349.9,
         "cores": [
-            "Dourado",
-            "azul marinho",
-            "Marrom",
+            "OFF WHITE",
             "Preto",
-            "OFF WHITE"
+            "Marrom",
+            "Dourado",
+            "azul marinho"
         ],
         "tamanhos": [
             "Único"
@@ -2100,31 +2644,41 @@ const STILETTO_PRODUCTS = [
             "Dourado": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "14111532"
+                    "id_variacao": "14111532",
+                    "sku": "3325693.245894.404567",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-lara-pequena/?sku=3325693.245894.404567"
                 }
             },
             "Marrom": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9749766"
+                    "id_variacao": "9749766",
+                    "sku": "3325693.245894.404555",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-lara-pequena/?sku=3325693.245894.404555"
                 }
             },
             "OFF WHITE": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9749764"
+                    "id_variacao": "9749764",
+                    "sku": "3325693.245894.404545",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-lara-pequena/?sku=3325693.245894.404545"
                 }
             },
             "Preto": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9749765"
+                    "id_variacao": "9749765",
+                    "sku": "3325693.245894.404542",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-lara-pequena/?sku=3325693.245894.404542"
                 }
             },
             "azul marinho": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "14111531"
+                    "id_variacao": "14111531",
+                    "sku": "3325693.245894.490717",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-lara-pequena/?sku=3325693.245894.490717"
                 }
             }
         },
@@ -2168,33 +2722,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749772"
+                    "id_variacao": "9749772",
+                    "sku": "3325695.249814.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-fivela/?sku=3325695.249814.0.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749770"
+                    "id_variacao": "9749770",
+                    "sku": "3325695.249814.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-fivela/?sku=3325695.249814.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749768"
+                    "id_variacao": "9749768",
+                    "sku": "3325695.249814.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-fivela/?sku=3325695.249814.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749769"
+                    "id_variacao": "9749769",
+                    "sku": "3325695.249814.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-fivela/?sku=3325695.249814.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749771"
+                    "id_variacao": "9749771",
+                    "sku": "3325695.249814.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-fivela/?sku=3325695.249814.0.324742"
                 }
             }
         },
@@ -2225,10 +2789,10 @@ const STILETTO_PRODUCTS = [
         "preco": 449.9,
         "cores": [
             "PRETO CROCO",
-            "Azul escuro",
-            "Vermelho escuro",
+            "caramelo",
             "Preto",
-            "caramelo"
+            "Azul escuro",
+            "Vermelho escuro"
         ],
         "tamanhos": [
             "Único"
@@ -2237,31 +2801,41 @@ const STILETTO_PRODUCTS = [
             "Azul escuro": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9749774"
+                    "id_variacao": "9749774",
+                    "sku": "3325696.245894.404563",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-carla/?sku=3325696.245894.404563"
                 }
             },
             "PRETO CROCO": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "13023688"
+                    "id_variacao": "13023688",
+                    "sku": "3325696.245894.510475",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-carla/?sku=3325696.245894.510475"
                 }
             },
             "Preto": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9749773"
+                    "id_variacao": "9749773",
+                    "sku": "3325696.245894.404542",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-carla/?sku=3325696.245894.404542"
                 }
             },
             "Vermelho escuro": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "9749776"
+                    "id_variacao": "9749776",
+                    "sku": "3325696.245894.404564",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-carla/?sku=3325696.245894.404564"
                 }
             },
             "caramelo": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9749775"
+                    "id_variacao": "9749775",
+                    "sku": "3325696.245894.404551",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-carla/?sku=3325696.245894.404551"
                 }
             }
         },
@@ -2319,104 +2893,144 @@ const STILETTO_PRODUCTS = [
         "preco": 290.9,
         "cores": [
             "Carmesim",
-            "OFF WHITE",
+            "CARVALHO",
             "Preto",
-            "CARVALHO"
+            "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "CARVALHO": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749783"
+                    "id_variacao": "9749783",
+                    "sku": "3325697.245897.404566.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404566.324743"
                 },
                 "35": {
                     "qtd": 3,
-                    "id_variacao": "9749779"
+                    "id_variacao": "9749779",
+                    "sku": "3325697.245897.404566.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404566.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749784"
+                    "id_variacao": "9749784",
+                    "sku": "3325697.245897.404566.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404566.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749790"
+                    "id_variacao": "9749790",
+                    "sku": "3325697.245897.404566.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404566.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749796"
+                    "id_variacao": "9749796",
+                    "sku": "3325697.245897.404566.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404566.324742"
                 }
             },
             "Carmesim": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749786"
+                    "id_variacao": "9749786",
+                    "sku": "3325697.245897.404565.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404565.324743"
                 },
                 "35": {
                     "qtd": 3,
-                    "id_variacao": "9749778"
+                    "id_variacao": "9749778",
+                    "sku": "3325697.245897.404565.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404565.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749795"
+                    "id_variacao": "9749795",
+                    "sku": "3325697.245897.404565.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404565.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9749788"
+                    "id_variacao": "9749788",
+                    "sku": "3325697.245897.404565.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404565.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749792"
+                    "id_variacao": "9749792",
+                    "sku": "3325697.245897.404565.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404565.324742"
                 }
             },
             "OFF WHITE": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749785"
+                    "id_variacao": "9749785",
+                    "sku": "3325697.245897.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404545.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749793"
+                    "id_variacao": "9749793",
+                    "sku": "3325697.245897.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404545.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749782"
+                    "id_variacao": "9749782",
+                    "sku": "3325697.245897.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404545.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9749789"
+                    "id_variacao": "9749789",
+                    "sku": "3325697.245897.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404545.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749780"
+                    "id_variacao": "9749780",
+                    "sku": "3325697.245897.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404545.324742"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749787"
+                    "id_variacao": "9749787",
+                    "sku": "3325697.245897.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749777"
+                    "id_variacao": "9749777",
+                    "sku": "3325697.245897.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749794"
+                    "id_variacao": "9749794",
+                    "sku": "3325697.245897.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749791"
+                    "id_variacao": "9749791",
+                    "sku": "3325697.245897.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749781"
+                    "id_variacao": "9749781",
+                    "sku": "3325697.245897.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa-vazado/?sku=3325697.245897.404542.324742"
                 }
             }
         },
@@ -2452,38 +3066,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
-            "38",
-            "35",
             "33",
-            "34"
+            "38",
+            "34",
+            "35",
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "9749797"
+                    "id_variacao": "9749797",
+                    "sku": "3325698.0000.0.324747",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-couro/?sku=3325698.0000.0.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749799"
+                    "id_variacao": "9749799",
+                    "sku": "3325698.0000.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-couro/?sku=3325698.0000.0.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749798"
+                    "id_variacao": "9749798",
+                    "sku": "3325698.0000.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-couro/?sku=3325698.0000.0.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749800"
+                    "id_variacao": "9749800",
+                    "sku": "3325698.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-couro/?sku=3325698.0000.0.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749801"
+                    "id_variacao": "9749801",
+                    "sku": "3325698.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-couro/?sku=3325698.0000.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749802"
+                    "id_variacao": "9749802",
+                    "sku": "3325698.0000.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-couro/?sku=3325698.0000.0.324742"
                 }
             }
         },
@@ -2512,55 +3138,75 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Marrom": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749807"
+                    "id_variacao": "9749807",
+                    "sku": "3325699.245891.404555.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-prada/?sku=3325699.245891.404555.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749809"
+                    "id_variacao": "9749809",
+                    "sku": "3325699.245891.404555.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-prada/?sku=3325699.245891.404555.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749808"
+                    "id_variacao": "9749808",
+                    "sku": "3325699.245891.404555.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-prada/?sku=3325699.245891.404555.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749803"
+                    "id_variacao": "9749803",
+                    "sku": "3325699.245891.404555.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-prada/?sku=3325699.245891.404555.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749804"
+                    "id_variacao": "9749804",
+                    "sku": "3325699.245891.404555.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-prada/?sku=3325699.245891.404555.324742"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749806"
+                    "id_variacao": "9749806",
+                    "sku": "3325699.245891.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-prada/?sku=3325699.245891.404542.324743"
                 },
                 "35": {
                     "qtd": 3,
-                    "id_variacao": "9749811"
+                    "id_variacao": "9749811",
+                    "sku": "3325699.245891.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-prada/?sku=3325699.245891.404542.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9749812"
+                    "id_variacao": "9749812",
+                    "sku": "3325699.245891.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-prada/?sku=3325699.245891.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749810"
+                    "id_variacao": "9749810",
+                    "sku": "3325699.245891.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-prada/?sku=3325699.245891.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749805"
+                    "id_variacao": "9749805",
+                    "sku": "3325699.245891.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-prada/?sku=3325699.245891.404542.324742"
                 }
             }
         },
@@ -2590,176 +3236,248 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 119.9,
         "cores": [
-            "Dourado",
-            "OFF WHITE",
             "PRATEADO",
+            "OFF WHITE",
             "Preto",
             "nude",
+            "Dourado",
             "Prata"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Dourado": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749825"
+                    "id_variacao": "9749825",
+                    "sku": "3325700.245897.404567.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404567.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749813"
+                    "id_variacao": "9749813",
+                    "sku": "3325700.245897.404567.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404567.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9749838"
+                    "id_variacao": "9749838",
+                    "sku": "3325700.245897.404567.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404567.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749847"
+                    "id_variacao": "9749847",
+                    "sku": "3325700.245897.404567.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404567.324741"
                 },
                 "38": {
                     "qtd": 4,
-                    "id_variacao": "9749843"
+                    "id_variacao": "9749843",
+                    "sku": "3325700.245897.404567.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404567.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749820"
+                    "id_variacao": "9749820",
+                    "sku": "3325700.245897.404567.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404567.324746"
                 }
             },
             "OFF WHITE": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749840"
+                    "id_variacao": "9749840",
+                    "sku": "3325700.245897.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404545.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749818"
+                    "id_variacao": "9749818",
+                    "sku": "3325700.245897.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404545.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749823"
+                    "id_variacao": "9749823",
+                    "sku": "3325700.245897.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404545.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9749841"
+                    "id_variacao": "9749841",
+                    "sku": "3325700.245897.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404545.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749829"
+                    "id_variacao": "9749829",
+                    "sku": "3325700.245897.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404545.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749819"
+                    "id_variacao": "9749819",
+                    "sku": "3325700.245897.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404545.324746"
                 }
             },
             "PRATEADO": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749826"
+                    "id_variacao": "9749826",
+                    "sku": "3325700.245897.404568.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404568.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749814"
+                    "id_variacao": "9749814",
+                    "sku": "3325700.245897.404568.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404568.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749822"
+                    "id_variacao": "9749822",
+                    "sku": "3325700.245897.404568.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404568.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749846"
+                    "id_variacao": "9749846",
+                    "sku": "3325700.245897.404568.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404568.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749844"
+                    "id_variacao": "9749844",
+                    "sku": "3325700.245897.404568.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404568.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9749821"
+                    "id_variacao": "9749821",
+                    "sku": "3325700.245897.404568.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404568.324746"
                 }
             },
             "Prata": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749839"
+                    "id_variacao": "9749839",
+                    "sku": "3325700.245897.404559.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404559.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749815"
+                    "id_variacao": "9749815",
+                    "sku": "3325700.245897.404559.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404559.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749834"
+                    "id_variacao": "9749834",
+                    "sku": "3325700.245897.404559.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404559.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749842"
+                    "id_variacao": "9749842",
+                    "sku": "3325700.245897.404559.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404559.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749830"
+                    "id_variacao": "9749830",
+                    "sku": "3325700.245897.404559.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404559.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749817"
+                    "id_variacao": "9749817",
+                    "sku": "3325700.245897.404559.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404559.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749827"
+                    "id_variacao": "9749827",
+                    "sku": "3325700.245897.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749836"
+                    "id_variacao": "9749836",
+                    "sku": "3325700.245897.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404542.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9749833"
+                    "id_variacao": "9749833",
+                    "sku": "3325700.245897.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404542.324744"
                 },
                 "37": {
                     "qtd": 7,
-                    "id_variacao": "9749832"
+                    "id_variacao": "9749832",
+                    "sku": "3325700.245897.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404542.324741"
                 },
                 "38": {
                     "qtd": 3,
-                    "id_variacao": "9749828"
+                    "id_variacao": "9749828",
+                    "sku": "3325700.245897.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749848"
+                    "id_variacao": "9749848",
+                    "sku": "3325700.245897.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404542.324746"
                 }
             },
             "nude": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749824"
+                    "id_variacao": "9749824",
+                    "sku": "3325700.245897.404550.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404550.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749835"
+                    "id_variacao": "9749835",
+                    "sku": "3325700.245897.404550.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404550.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749837"
+                    "id_variacao": "9749837",
+                    "sku": "3325700.245897.404550.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404550.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749831"
+                    "id_variacao": "9749831",
+                    "sku": "3325700.245897.404550.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404550.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749845"
+                    "id_variacao": "9749845",
+                    "sku": "3325700.245897.404550.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404550.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749816"
+                    "id_variacao": "9749816",
+                    "sku": "3325700.245897.404550.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-slin/?sku=3325700.245897.404550.324746"
                 }
             }
         },
@@ -2816,13 +3534,17 @@ const STILETTO_PRODUCTS = [
             "Preto": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "9749850"
+                    "id_variacao": "9749850",
+                    "sku": "3325701.245894.404542",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-sara/?sku=3325701.245894.404542"
                 }
             },
             "caramelo": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9749849"
+                    "id_variacao": "9749849",
+                    "sku": "3325701.245894.404551",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-sara/?sku=3325701.245894.404551"
                 }
             }
         },
@@ -2850,33 +3572,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749852"
+                    "id_variacao": "9749852",
+                    "sku": "3325702.0000.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-couro/?sku=3325702.0000.0.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749855"
+                    "id_variacao": "9749855",
+                    "sku": "3325702.0000.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-couro/?sku=3325702.0000.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749851"
+                    "id_variacao": "9749851",
+                    "sku": "3325702.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-couro/?sku=3325702.0000.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749854"
+                    "id_variacao": "9749854",
+                    "sku": "3325702.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-couro/?sku=3325702.0000.0.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749853"
+                    "id_variacao": "9749853",
+                    "sku": "3325702.0000.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-couro/?sku=3325702.0000.0.324742"
                 }
             }
         },
@@ -2902,28 +3634,36 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
+            "36",
             "35",
-            "38",
-            "36"
+            "37",
+            "38"
         ],
         "estoque_por_cor": {
             "Única": {
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749859"
+                    "id_variacao": "9749859",
+                    "sku": "3325704.0000.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-lhos-dourado/?sku=3325704.0000.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749860"
+                    "id_variacao": "9749860",
+                    "sku": "3325704.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-lhos-dourado/?sku=3325704.0000.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749861"
+                    "id_variacao": "9749861",
+                    "sku": "3325704.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-lhos-dourado/?sku=3325704.0000.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749858"
+                    "id_variacao": "9749858",
+                    "sku": "3325704.0000.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-lhos-dourado/?sku=3325704.0000.0.324742"
                 }
             }
         },
@@ -2951,28 +3691,36 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
+            "36",
             "35",
-            "38",
-            "36"
+            "37",
+            "38"
         ],
         "estoque_por_cor": {
             "Única": {
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749864"
+                    "id_variacao": "9749864",
+                    "sku": "3325705.0000.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/botas-couro-veneto/?sku=3325705.0000.0.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749865"
+                    "id_variacao": "9749865",
+                    "sku": "3325705.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/botas-couro-veneto/?sku=3325705.0000.0.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749863"
+                    "id_variacao": "9749863",
+                    "sku": "3325705.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/botas-couro-veneto/?sku=3325705.0000.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749862"
+                    "id_variacao": "9749862",
+                    "sku": "3325705.0000.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/botas-couro-veneto/?sku=3325705.0000.0.324742"
                 }
             }
         },
@@ -3000,33 +3748,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
             "34",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749868"
+                    "id_variacao": "9749868",
+                    "sku": "3325706.0000.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-lyon-napa/?sku=3325706.0000.0.324743"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749866"
+                    "id_variacao": "9749866",
+                    "sku": "3325706.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-lyon-napa/?sku=3325706.0000.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749869"
+                    "id_variacao": "9749869",
+                    "sku": "3325706.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-lyon-napa/?sku=3325706.0000.0.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749870"
+                    "id_variacao": "9749870",
+                    "sku": "3325706.0000.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-lyon-napa/?sku=3325706.0000.0.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9749867"
+                    "id_variacao": "9749867",
+                    "sku": "3325706.0000.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-lyon-napa/?sku=3325706.0000.0.324746"
                 }
             }
         },
@@ -3053,33 +3811,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "9749875"
+                    "id_variacao": "9749875",
+                    "sku": "3325707.245898.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-brecia-com-fivela/?sku=3325707.245898.0.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749874"
+                    "id_variacao": "9749874",
+                    "sku": "3325707.245898.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-brecia-com-fivela/?sku=3325707.245898.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749873"
+                    "id_variacao": "9749873",
+                    "sku": "3325707.245898.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-brecia-com-fivela/?sku=3325707.245898.0.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9749872"
+                    "id_variacao": "9749872",
+                    "sku": "3325707.245898.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-brecia-com-fivela/?sku=3325707.245898.0.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749871"
+                    "id_variacao": "9749871",
+                    "sku": "3325707.245898.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-brecia-com-fivela/?sku=3325707.245898.0.324742"
                 }
             }
         },
@@ -3107,33 +3875,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749876"
+                    "id_variacao": "9749876",
+                    "sku": "3325708.245895.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-plataforma-com-verniz/?sku=3325708.245895.0.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749878"
+                    "id_variacao": "9749878",
+                    "sku": "3325708.245895.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-plataforma-com-verniz/?sku=3325708.245895.0.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9749880"
+                    "id_variacao": "9749880",
+                    "sku": "3325708.245895.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-plataforma-com-verniz/?sku=3325708.245895.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749879"
+                    "id_variacao": "9749879",
+                    "sku": "3325708.245895.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-plataforma-com-verniz/?sku=3325708.245895.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749877"
+                    "id_variacao": "9749877",
+                    "sku": "3325708.245895.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-plataforma-com-verniz/?sku=3325708.245895.0.324742"
                 }
             }
         },
@@ -3160,8 +3938,8 @@ const STILETTO_PRODUCTS = [
         "preco": 437.9,
         "cores": [
             "Preto",
-            "cafe",
             "Verde militar",
+            "cafe",
             "OFF WHITE"
         ],
         "tamanhos": [
@@ -3171,25 +3949,33 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "9749884"
+                    "id_variacao": "9749884",
+                    "sku": "3325709.245894.404545",
+                    "url_variacao": "https://loja.usebede.com.br/mochila-antifurto/?sku=3325709.245894.404545"
                 }
             },
             "Preto": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9749882"
+                    "id_variacao": "9749882",
+                    "sku": "3325709.245894.404542",
+                    "url_variacao": "https://loja.usebede.com.br/mochila-antifurto/?sku=3325709.245894.404542"
                 }
             },
             "Verde militar": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9749881"
+                    "id_variacao": "9749881",
+                    "sku": "3325709.245894.404569",
+                    "url_variacao": "https://loja.usebede.com.br/mochila-antifurto/?sku=3325709.245894.404569"
                 }
             },
             "cafe": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9749883"
+                    "id_variacao": "9749883",
+                    "sku": "3325709.245894.404557",
+                    "url_variacao": "https://loja.usebede.com.br/mochila-antifurto/?sku=3325709.245894.404557"
                 }
             }
         },
@@ -3230,33 +4016,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749887"
+                    "id_variacao": "9749887",
+                    "sku": "3325710.245891.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-tricot-salto-fino/?sku=3325710.245891.0.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749885"
+                    "id_variacao": "9749885",
+                    "sku": "3325710.245891.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-tricot-salto-fino/?sku=3325710.245891.0.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9749889"
+                    "id_variacao": "9749889",
+                    "sku": "3325710.245891.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-tricot-salto-fino/?sku=3325710.245891.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749888"
+                    "id_variacao": "9749888",
+                    "sku": "3325710.245891.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-tricot-salto-fino/?sku=3325710.245891.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749886"
+                    "id_variacao": "9749886",
+                    "sku": "3325710.245891.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-tricot-salto-fino/?sku=3325710.245891.0.324742"
                 }
             }
         },
@@ -3284,33 +4080,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749891"
+                    "id_variacao": "9749891",
+                    "sku": "3325711.248989.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-fivela-prateada/?sku=3325711.248989.0.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749894"
+                    "id_variacao": "9749894",
+                    "sku": "3325711.248989.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-fivela-prateada/?sku=3325711.248989.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749892"
+                    "id_variacao": "9749892",
+                    "sku": "3325711.248989.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-fivela-prateada/?sku=3325711.248989.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749890"
+                    "id_variacao": "9749890",
+                    "sku": "3325711.248989.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-fivela-prateada/?sku=3325711.248989.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749893"
+                    "id_variacao": "9749893",
+                    "sku": "3325711.248989.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-fivela-prateada/?sku=3325711.248989.0.324742"
                 }
             }
         },
@@ -3337,38 +4143,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12981764"
+                    "id_variacao": "12981764",
+                    "sku": "3325712.249814.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-boneca-verniz-preto/?sku=3325712.249814.0.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749899"
+                    "id_variacao": "9749899",
+                    "sku": "3325712.0000.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-boneca-verniz-preto/?sku=3325712.0000.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749896"
+                    "id_variacao": "9749896",
+                    "sku": "3325712.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-boneca-verniz-preto/?sku=3325712.0000.0.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749895"
+                    "id_variacao": "9749895",
+                    "sku": "3325712.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-boneca-verniz-preto/?sku=3325712.0000.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749898"
+                    "id_variacao": "9749898",
+                    "sku": "3325712.0000.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-boneca-verniz-preto/?sku=3325712.0000.0.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12384399"
+                    "id_variacao": "12384399",
+                    "sku": "3325712.249814.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-boneca-verniz-preto/?sku=3325712.249814.0.324746"
                 }
             }
         },
@@ -3396,33 +4214,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749901"
+                    "id_variacao": "9749901",
+                    "sku": "3325713.245891.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-brilho-salto-fino/?sku=3325713.245891.0.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749903"
+                    "id_variacao": "9749903",
+                    "sku": "3325713.245891.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-brilho-salto-fino/?sku=3325713.245891.0.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9749900"
+                    "id_variacao": "9749900",
+                    "sku": "3325713.245891.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-brilho-salto-fino/?sku=3325713.245891.0.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749904"
+                    "id_variacao": "9749904",
+                    "sku": "3325713.245891.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-brilho-salto-fino/?sku=3325713.245891.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749902"
+                    "id_variacao": "9749902",
+                    "sku": "3325713.245891.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-brilho-salto-fino/?sku=3325713.245891.0.324742"
                 }
             }
         },
@@ -3456,116 +4284,164 @@ const STILETTO_PRODUCTS = [
             "MARSALA"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "MARSALA": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749912"
+                    "id_variacao": "9749912",
+                    "sku": "3325714.245897.404552.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404552.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749923"
+                    "id_variacao": "9749923",
+                    "sku": "3325714.245897.404552.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404552.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9749922"
+                    "id_variacao": "9749922",
+                    "sku": "3325714.245897.404552.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404552.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9749907"
+                    "id_variacao": "9749907",
+                    "sku": "3325714.245897.404552.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404552.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749909"
+                    "id_variacao": "9749909",
+                    "sku": "3325714.245897.404552.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404552.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9749927"
+                    "id_variacao": "9749927",
+                    "sku": "3325714.245897.404552.324746",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404552.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749913"
+                    "id_variacao": "9749913",
+                    "sku": "3325714.245897.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749918"
+                    "id_variacao": "9749918",
+                    "sku": "3325714.245897.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749914"
+                    "id_variacao": "9749914",
+                    "sku": "3325714.245897.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749905"
+                    "id_variacao": "9749905",
+                    "sku": "3325714.245897.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404542.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749908"
+                    "id_variacao": "9749908",
+                    "sku": "3325714.245897.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749916"
+                    "id_variacao": "9749916",
+                    "sku": "3325714.245897.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404542.324746"
                 }
             },
             "ROSADO": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749911"
+                    "id_variacao": "9749911",
+                    "sku": "3325714.245897.404570.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404570.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749917"
+                    "id_variacao": "9749917",
+                    "sku": "3325714.245897.404570.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404570.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749926"
+                    "id_variacao": "9749926",
+                    "sku": "3325714.245897.404570.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404570.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749906"
+                    "id_variacao": "9749906",
+                    "sku": "3325714.245897.404570.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404570.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749920"
+                    "id_variacao": "9749920",
+                    "sku": "3325714.245897.404570.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404570.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9749915"
+                    "id_variacao": "9749915",
+                    "sku": "3325714.245897.404570.324746",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404570.324746"
                 }
             },
             "VERNIZ": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749925"
+                    "id_variacao": "9749925",
+                    "sku": "3325714.245897.404571.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404571.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749924"
+                    "id_variacao": "9749924",
+                    "sku": "3325714.245897.404571.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404571.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749921"
+                    "id_variacao": "9749921",
+                    "sku": "3325714.245897.404571.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404571.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9749919"
+                    "id_variacao": "9749919",
+                    "sku": "3325714.245897.404571.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404571.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749910"
+                    "id_variacao": "9749910",
+                    "sku": "3325714.245897.404571.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404571.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9749928"
+                    "id_variacao": "9749928",
+                    "sku": "3325714.245897.404571.324746",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-melina-napa/?sku=3325714.245897.404571.324746"
                 }
             }
         },
@@ -3601,28 +4477,36 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
+            "36",
             "35",
-            "38",
-            "36"
+            "37",
+            "38"
         ],
         "estoque_por_cor": {
             "Única": {
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749939"
+                    "id_variacao": "9749939",
+                    "sku": "3325716.245891.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/botas-mestico-preto/?sku=3325716.245891.0.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749940"
+                    "id_variacao": "9749940",
+                    "sku": "3325716.245891.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/botas-mestico-preto/?sku=3325716.245891.0.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749938"
+                    "id_variacao": "9749938",
+                    "sku": "3325716.245891.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/botas-mestico-preto/?sku=3325716.245891.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749937"
+                    "id_variacao": "9749937",
+                    "sku": "3325716.245891.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/botas-mestico-preto/?sku=3325716.245891.0.324742"
                 }
             }
         },
@@ -3649,33 +4533,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12981765"
+                    "id_variacao": "12981765",
+                    "sku": "3325718.249814.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-croco/?sku=3325718.249814.0.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749946"
+                    "id_variacao": "9749946",
+                    "sku": "3325718.0000.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-croco/?sku=3325718.0000.0.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9749950"
+                    "id_variacao": "9749950",
+                    "sku": "3325718.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-croco/?sku=3325718.0000.0.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9749947"
+                    "id_variacao": "9749947",
+                    "sku": "3325718.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-croco/?sku=3325718.0000.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749949"
+                    "id_variacao": "9749949",
+                    "sku": "3325718.0000.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-croco/?sku=3325718.0000.0.324742"
                 }
             }
         },
@@ -3705,46 +4599,62 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "36",
-            "37",
+            "34",
             "35",
-            "34"
+            "37",
+            "36"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749953"
+                    "id_variacao": "9749953",
+                    "sku": "3325719.245898.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-francesca/?sku=3325719.245898.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749957"
+                    "id_variacao": "9749957",
+                    "sku": "3325719.245898.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-francesca/?sku=3325719.245898.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749955"
+                    "id_variacao": "9749955",
+                    "sku": "3325719.245898.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-francesca/?sku=3325719.245898.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749956"
+                    "id_variacao": "9749956",
+                    "sku": "3325719.245898.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-francesca/?sku=3325719.245898.404542.324741"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749958"
+                    "id_variacao": "9749958",
+                    "sku": "3325719.245898.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-francesca/?sku=3325719.245898.404551.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749951"
+                    "id_variacao": "9749951",
+                    "sku": "3325719.245898.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-francesca/?sku=3325719.245898.404551.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749954"
+                    "id_variacao": "9749954",
+                    "sku": "3325719.245898.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-francesca/?sku=3325719.245898.404551.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749952"
+                    "id_variacao": "9749952",
+                    "sku": "3325719.245898.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-francesca/?sku=3325719.245898.404551.324741"
                 }
             }
         },
@@ -3778,64 +4688,88 @@ const STILETTO_PRODUCTS = [
             "nude"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749959"
+                    "id_variacao": "9749959",
+                    "sku": "3325720.245897.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado-verniz/?sku=3325720.245897.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749965"
+                    "id_variacao": "9749965",
+                    "sku": "3325720.245897.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado-verniz/?sku=3325720.245897.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749969"
+                    "id_variacao": "9749969",
+                    "sku": "3325720.245897.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado-verniz/?sku=3325720.245897.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749970"
+                    "id_variacao": "9749970",
+                    "sku": "3325720.245897.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado-verniz/?sku=3325720.245897.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749962"
+                    "id_variacao": "9749962",
+                    "sku": "3325720.245897.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado-verniz/?sku=3325720.245897.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9749966"
+                    "id_variacao": "9749966",
+                    "sku": "3325720.245897.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado-verniz/?sku=3325720.245897.404542.324746"
                 }
             },
             "nude": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749960"
+                    "id_variacao": "9749960",
+                    "sku": "3325720.245897.404550.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado-verniz/?sku=3325720.245897.404550.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9749964"
+                    "id_variacao": "9749964",
+                    "sku": "3325720.245897.404550.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado-verniz/?sku=3325720.245897.404550.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749968"
+                    "id_variacao": "9749968",
+                    "sku": "3325720.245897.404550.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado-verniz/?sku=3325720.245897.404550.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749961"
+                    "id_variacao": "9749961",
+                    "sku": "3325720.245897.404550.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado-verniz/?sku=3325720.245897.404550.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749963"
+                    "id_variacao": "9749963",
+                    "sku": "3325720.245897.404550.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado-verniz/?sku=3325720.245897.404550.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9749967"
+                    "id_variacao": "9749967",
+                    "sku": "3325720.245897.404550.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado-verniz/?sku=3325720.245897.404550.324746"
                 }
             }
         },
@@ -3868,33 +4802,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749973"
+                    "id_variacao": "9749973",
+                    "sku": "3325721.245895.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-bota-pele/?sku=3325721.245895.0.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749975"
+                    "id_variacao": "9749975",
+                    "sku": "3325721.245895.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-bota-pele/?sku=3325721.245895.0.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9749974"
+                    "id_variacao": "9749974",
+                    "sku": "3325721.245895.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-bota-pele/?sku=3325721.245895.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749971"
+                    "id_variacao": "9749971",
+                    "sku": "3325721.245895.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-bota-pele/?sku=3325721.245895.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749972"
+                    "id_variacao": "9749972",
+                    "sku": "3325721.245895.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-bota-pele/?sku=3325721.245895.0.324742"
                 }
             }
         },
@@ -3926,55 +4870,75 @@ const STILETTO_PRODUCTS = [
             "nude"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749983"
+                    "id_variacao": "9749983",
+                    "sku": "3325722.249814.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-verniz-detalhe-fivela/?sku=3325722.249814.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749985"
+                    "id_variacao": "9749985",
+                    "sku": "3325722.249814.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-verniz-detalhe-fivela/?sku=3325722.249814.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9749979"
+                    "id_variacao": "9749979",
+                    "sku": "3325722.249814.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-verniz-detalhe-fivela/?sku=3325722.249814.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749978"
+                    "id_variacao": "9749978",
+                    "sku": "3325722.249814.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-verniz-detalhe-fivela/?sku=3325722.249814.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749982"
+                    "id_variacao": "9749982",
+                    "sku": "3325722.249814.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-verniz-detalhe-fivela/?sku=3325722.249814.404542.324742"
                 }
             },
             "nude": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749984"
+                    "id_variacao": "9749984",
+                    "sku": "3325722.249814.404550.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-verniz-detalhe-fivela/?sku=3325722.249814.404550.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9749976"
+                    "id_variacao": "9749976",
+                    "sku": "3325722.249814.404550.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-verniz-detalhe-fivela/?sku=3325722.249814.404550.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9749980"
+                    "id_variacao": "9749980",
+                    "sku": "3325722.249814.404550.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-verniz-detalhe-fivela/?sku=3325722.249814.404550.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749977"
+                    "id_variacao": "9749977",
+                    "sku": "3325722.249814.404550.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-verniz-detalhe-fivela/?sku=3325722.249814.404550.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749981"
+                    "id_variacao": "9749981",
+                    "sku": "3325722.249814.404550.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-verniz-detalhe-fivela/?sku=3325722.249814.404550.324742"
                 }
             }
         },
@@ -4010,55 +4974,75 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9749990"
+                    "id_variacao": "9749990",
+                    "sku": "3325723.245898.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-enfeite-dourado/?sku=3325723.245898.404545.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749995"
+                    "id_variacao": "9749995",
+                    "sku": "3325723.245898.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-enfeite-dourado/?sku=3325723.245898.404545.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749993"
+                    "id_variacao": "9749993",
+                    "sku": "3325723.245898.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-enfeite-dourado/?sku=3325723.245898.404545.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9749987"
+                    "id_variacao": "9749987",
+                    "sku": "3325723.245898.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-enfeite-dourado/?sku=3325723.245898.404545.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9749988"
+                    "id_variacao": "9749988",
+                    "sku": "3325723.245898.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-enfeite-dourado/?sku=3325723.245898.404545.324742"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9749991"
+                    "id_variacao": "9749991",
+                    "sku": "3325723.245898.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-enfeite-dourado/?sku=3325723.245898.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9749994"
+                    "id_variacao": "9749994",
+                    "sku": "3325723.245898.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-enfeite-dourado/?sku=3325723.245898.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9749992"
+                    "id_variacao": "9749992",
+                    "sku": "3325723.245898.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-enfeite-dourado/?sku=3325723.245898.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749986"
+                    "id_variacao": "9749986",
+                    "sku": "3325723.245898.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-enfeite-dourado/?sku=3325723.245898.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9749989"
+                    "id_variacao": "9749989",
+                    "sku": "3325723.245898.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-enfeite-dourado/?sku=3325723.245898.404542.324742"
                 }
             }
         },
@@ -4092,55 +5076,75 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750006"
+                    "id_variacao": "9750006",
+                    "sku": "3325725.0000.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-paris/?sku=3325725.0000.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9750000"
+                    "id_variacao": "9750000",
+                    "sku": "3325725.0000.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-paris/?sku=3325725.0000.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9750002"
+                    "id_variacao": "9750002",
+                    "sku": "3325725.0000.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-paris/?sku=3325725.0000.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9749998"
+                    "id_variacao": "9749998",
+                    "sku": "3325725.0000.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-paris/?sku=3325725.0000.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9750005"
+                    "id_variacao": "9750005",
+                    "sku": "3325725.0000.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-paris/?sku=3325725.0000.404542.324742"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750004"
+                    "id_variacao": "9750004",
+                    "sku": "3325725.0000.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-paris/?sku=3325725.0000.404551.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9750001"
+                    "id_variacao": "9750001",
+                    "sku": "3325725.0000.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-paris/?sku=3325725.0000.404551.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9750003"
+                    "id_variacao": "9750003",
+                    "sku": "3325725.0000.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-paris/?sku=3325725.0000.404551.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9749997"
+                    "id_variacao": "9749997",
+                    "sku": "3325725.0000.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-paris/?sku=3325725.0000.404551.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9749999"
+                    "id_variacao": "9749999",
+                    "sku": "3325725.0000.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-paris/?sku=3325725.0000.404551.324742"
                 }
             }
         },
@@ -4176,116 +5180,164 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9750013"
+                    "id_variacao": "9750013",
+                    "sku": "3325726.245896.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404545.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9750020"
+                    "id_variacao": "9750020",
+                    "sku": "3325726.245896.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404545.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9750014"
+                    "id_variacao": "9750014",
+                    "sku": "3325726.245896.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404545.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9750026"
+                    "id_variacao": "9750026",
+                    "sku": "3325726.245896.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404545.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9750023"
+                    "id_variacao": "9750023",
+                    "sku": "3325726.245896.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404545.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9750029"
+                    "id_variacao": "9750029",
+                    "sku": "3325726.245896.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404545.324746"
                 }
             },
             "Prata": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "9750012"
+                    "id_variacao": "9750012",
+                    "sku": "3325726.245896.404559.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404559.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9750019"
+                    "id_variacao": "9750019",
+                    "sku": "3325726.245896.404559.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404559.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9750015"
+                    "id_variacao": "9750015",
+                    "sku": "3325726.245896.404559.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404559.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9750024"
+                    "id_variacao": "9750024",
+                    "sku": "3325726.245896.404559.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404559.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9750022"
+                    "id_variacao": "9750022",
+                    "sku": "3325726.245896.404559.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404559.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9750028"
+                    "id_variacao": "9750028",
+                    "sku": "3325726.245896.404559.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404559.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9750007"
+                    "id_variacao": "9750007",
+                    "sku": "3325726.245896.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9750018"
+                    "id_variacao": "9750018",
+                    "sku": "3325726.245896.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404542.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9750016"
+                    "id_variacao": "9750016",
+                    "sku": "3325726.245896.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404542.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9750021"
+                    "id_variacao": "9750021",
+                    "sku": "3325726.245896.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404542.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9750009"
+                    "id_variacao": "9750009",
+                    "sku": "3325726.245896.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9750030"
+                    "id_variacao": "9750030",
+                    "sku": "3325726.245896.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404542.324746"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750008"
+                    "id_variacao": "9750008",
+                    "sku": "3325726.245896.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404551.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9750017"
+                    "id_variacao": "9750017",
+                    "sku": "3325726.245896.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404551.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9750011"
+                    "id_variacao": "9750011",
+                    "sku": "3325726.245896.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404551.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9750025"
+                    "id_variacao": "9750025",
+                    "sku": "3325726.245896.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404551.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9750010"
+                    "id_variacao": "9750010",
+                    "sku": "3325726.245896.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404551.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9750027"
+                    "id_variacao": "9750027",
+                    "sku": "3325726.245896.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mule-couro/?sku=3325726.245896.404551.324746"
                 }
             }
         },
@@ -4324,33 +5376,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9750033"
+                    "id_variacao": "9750033",
+                    "sku": "3325727.0000.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-meia-pata-verniz-preto/?sku=3325727.0000.0.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9750031"
+                    "id_variacao": "9750031",
+                    "sku": "3325727.0000.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-meia-pata-verniz-preto/?sku=3325727.0000.0.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9750032"
+                    "id_variacao": "9750032",
+                    "sku": "3325727.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-meia-pata-verniz-preto/?sku=3325727.0000.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9750035"
+                    "id_variacao": "9750035",
+                    "sku": "3325727.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-meia-pata-verniz-preto/?sku=3325727.0000.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9750034"
+                    "id_variacao": "9750034",
+                    "sku": "3325727.0000.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-meia-pata-verniz-preto/?sku=3325727.0000.0.324742"
                 }
             }
         },
@@ -4376,33 +5438,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9750038"
+                    "id_variacao": "9750038",
+                    "sku": "3325728.0000.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-alice-nude/?sku=3325728.0000.0.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9750040"
+                    "id_variacao": "9750040",
+                    "sku": "3325728.0000.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-alice-nude/?sku=3325728.0000.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9750039"
+                    "id_variacao": "9750039",
+                    "sku": "3325728.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-alice-nude/?sku=3325728.0000.0.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9750037"
+                    "id_variacao": "9750037",
+                    "sku": "3325728.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-alice-nude/?sku=3325728.0000.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9750036"
+                    "id_variacao": "9750036",
+                    "sku": "3325728.0000.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-alice-nude/?sku=3325728.0000.0.324742"
                 }
             }
         },
@@ -4424,59 +5496,79 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 134.9,
         "cores": [
-            "nude",
-            "Verde"
+            "Verde",
+            "nude"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "36",
             "35",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Verde": {
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9750046"
+                    "id_variacao": "9750046",
+                    "sku": "3325730.0000.404573.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luara/?sku=3325730.0000.404573.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9750045"
+                    "id_variacao": "9750045",
+                    "sku": "3325730.0000.404573.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luara/?sku=3325730.0000.404573.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9750050"
+                    "id_variacao": "9750050",
+                    "sku": "3325730.0000.404573.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luara/?sku=3325730.0000.404573.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9750043"
+                    "id_variacao": "9750043",
+                    "sku": "3325730.0000.404573.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luara/?sku=3325730.0000.404573.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9750051"
+                    "id_variacao": "9750051",
+                    "sku": "3325730.0000.404573.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luara/?sku=3325730.0000.404573.324746"
                 }
             },
             "nude": {
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9750047"
+                    "id_variacao": "9750047",
+                    "sku": "3325730.0000.404550.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luara/?sku=3325730.0000.404550.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9750044"
+                    "id_variacao": "9750044",
+                    "sku": "3325730.0000.404550.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luara/?sku=3325730.0000.404550.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9750049"
+                    "id_variacao": "9750049",
+                    "sku": "3325730.0000.404550.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luara/?sku=3325730.0000.404550.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9750048"
+                    "id_variacao": "9750048",
+                    "sku": "3325730.0000.404550.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luara/?sku=3325730.0000.404550.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9750052"
+                    "id_variacao": "9750052",
+                    "sku": "3325730.0000.404550.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luara/?sku=3325730.0000.404550.324746"
                 }
             }
         },
@@ -4505,28 +5597,36 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "36",
-            "37",
+            "34",
             "35",
-            "34"
+            "37",
+            "36"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9750055"
+                    "id_variacao": "9750055",
+                    "sku": "3325731.0000.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coimbra-couro/?sku=3325731.0000.0.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9750056"
+                    "id_variacao": "9750056",
+                    "sku": "3325731.0000.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coimbra-couro/?sku=3325731.0000.0.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9750054"
+                    "id_variacao": "9750054",
+                    "sku": "3325731.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coimbra-couro/?sku=3325731.0000.0.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9750053"
+                    "id_variacao": "9750053",
+                    "sku": "3325731.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coimbra-couro/?sku=3325731.0000.0.324741"
                 }
             }
         },
@@ -4553,38 +5653,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750060"
+                    "id_variacao": "9750060",
+                    "sku": "3325732.245892.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-camurca-strecht-over/?sku=3325732.245892.0.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9750058"
+                    "id_variacao": "9750058",
+                    "sku": "3325732.245892.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-camurca-strecht-over/?sku=3325732.245892.0.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9750061"
+                    "id_variacao": "9750061",
+                    "sku": "3325732.245892.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-camurca-strecht-over/?sku=3325732.245892.0.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9750062"
+                    "id_variacao": "9750062",
+                    "sku": "3325732.245892.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-camurca-strecht-over/?sku=3325732.245892.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9750059"
+                    "id_variacao": "9750059",
+                    "sku": "3325732.245892.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-camurca-strecht-over/?sku=3325732.245892.0.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9750057"
+                    "id_variacao": "9750057",
+                    "sku": "3325732.245892.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-camurca-strecht-over/?sku=3325732.245892.0.324746"
                 }
             }
         },
@@ -4612,121 +5724,169 @@ const STILETTO_PRODUCTS = [
         "preco": 149.9,
         "cores": [
             "Preto",
-            "nude",
             "caramelo",
+            "nude",
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750072"
+                    "id_variacao": "9750072",
+                    "sku": "3325734.0000.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404545.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9750079"
+                    "id_variacao": "9750079",
+                    "sku": "3325734.0000.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404545.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9750083"
+                    "id_variacao": "9750083",
+                    "sku": "3325734.0000.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404545.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9750066"
+                    "id_variacao": "9750066",
+                    "sku": "3325734.0000.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404545.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9750070"
+                    "id_variacao": "9750070",
+                    "sku": "3325734.0000.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404545.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9750084"
+                    "id_variacao": "9750084",
+                    "sku": "3325734.0000.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750073"
+                    "id_variacao": "9750073",
+                    "sku": "3325734.0000.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9750078"
+                    "id_variacao": "9750078",
+                    "sku": "3325734.0000.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9750082"
+                    "id_variacao": "9750082",
+                    "sku": "3325734.0000.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9750067"
+                    "id_variacao": "9750067",
+                    "sku": "3325734.0000.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9750071"
+                    "id_variacao": "9750071",
+                    "sku": "3325734.0000.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9750085"
+                    "id_variacao": "9750085",
+                    "sku": "3325734.0000.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404542.324746"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750077"
+                    "id_variacao": "9750077",
+                    "sku": "3325734.0000.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404551.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9750081"
+                    "id_variacao": "9750081",
+                    "sku": "3325734.0000.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404551.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9750076"
+                    "id_variacao": "9750076",
+                    "sku": "3325734.0000.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404551.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9750069"
+                    "id_variacao": "9750069",
+                    "sku": "3325734.0000.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404551.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9750064"
+                    "id_variacao": "9750064",
+                    "sku": "3325734.0000.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404551.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9750087"
+                    "id_variacao": "9750087",
+                    "sku": "3325734.0000.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404551.324746"
                 }
             },
             "nude": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750074"
+                    "id_variacao": "9750074",
+                    "sku": "3325734.0000.404550.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404550.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9750080"
+                    "id_variacao": "9750080",
+                    "sku": "3325734.0000.404550.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404550.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9750075"
+                    "id_variacao": "9750075",
+                    "sku": "3325734.0000.404550.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404550.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9750068"
+                    "id_variacao": "9750068",
+                    "sku": "3325734.0000.404550.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404550.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9750065"
+                    "id_variacao": "9750065",
+                    "sku": "3325734.0000.404550.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404550.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9750086"
+                    "id_variacao": "9750086",
+                    "sku": "3325734.0000.404550.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-bico-alongado/?sku=3325734.0000.404550.324746"
                 }
             }
         },
@@ -4765,55 +5925,75 @@ const STILETTO_PRODUCTS = [
             "Vermelho"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Bordô": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9750092"
+                    "id_variacao": "9750092",
+                    "sku": "3325735.245891.404575.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-napa-strech/?sku=3325735.245891.404575.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9750089"
+                    "id_variacao": "9750089",
+                    "sku": "3325735.245891.404575.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-napa-strech/?sku=3325735.245891.404575.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9750091"
+                    "id_variacao": "9750091",
+                    "sku": "3325735.245891.404575.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-napa-strech/?sku=3325735.245891.404575.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9750094"
+                    "id_variacao": "9750094",
+                    "sku": "3325735.245891.404575.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-napa-strech/?sku=3325735.245891.404575.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9750097"
+                    "id_variacao": "9750097",
+                    "sku": "3325735.245891.404575.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-napa-strech/?sku=3325735.245891.404575.324742"
                 }
             },
             "Vermelho": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750093"
+                    "id_variacao": "9750093",
+                    "sku": "3325735.245891.404574.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-napa-strech/?sku=3325735.245891.404574.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9750090"
+                    "id_variacao": "9750090",
+                    "sku": "3325735.245891.404574.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-napa-strech/?sku=3325735.245891.404574.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9750088"
+                    "id_variacao": "9750088",
+                    "sku": "3325735.245891.404574.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-napa-strech/?sku=3325735.245891.404574.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9750095"
+                    "id_variacao": "9750095",
+                    "sku": "3325735.245891.404574.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-napa-strech/?sku=3325735.245891.404574.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9750096"
+                    "id_variacao": "9750096",
+                    "sku": "3325735.245891.404574.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-napa-strech/?sku=3325735.245891.404574.324742"
                 }
             }
         },
@@ -4848,55 +6028,75 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9750102"
+                    "id_variacao": "9750102",
+                    "sku": "3325736.245891.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-tricot-salto-bloco/?sku=3325736.245891.404545.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9750105"
+                    "id_variacao": "9750105",
+                    "sku": "3325736.245891.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-tricot-salto-bloco/?sku=3325736.245891.404545.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9750107"
+                    "id_variacao": "9750107",
+                    "sku": "3325736.245891.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-tricot-salto-bloco/?sku=3325736.245891.404545.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9750099"
+                    "id_variacao": "9750099",
+                    "sku": "3325736.245891.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-tricot-salto-bloco/?sku=3325736.245891.404545.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9750101"
+                    "id_variacao": "9750101",
+                    "sku": "3325736.245891.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-tricot-salto-bloco/?sku=3325736.245891.404545.324742"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750103"
+                    "id_variacao": "9750103",
+                    "sku": "3325736.245891.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-tricot-salto-bloco/?sku=3325736.245891.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9750104"
+                    "id_variacao": "9750104",
+                    "sku": "3325736.245891.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-tricot-salto-bloco/?sku=3325736.245891.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9750106"
+                    "id_variacao": "9750106",
+                    "sku": "3325736.245891.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-tricot-salto-bloco/?sku=3325736.245891.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9750100"
+                    "id_variacao": "9750100",
+                    "sku": "3325736.245891.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-tricot-salto-bloco/?sku=3325736.245891.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9750098"
+                    "id_variacao": "9750098",
+                    "sku": "3325736.245891.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-capa-tricot-salto-bloco/?sku=3325736.245891.404542.324742"
                 }
             }
         },
@@ -4938,19 +6138,25 @@ const STILETTO_PRODUCTS = [
             "Azul meia-noite": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "9750110"
+                    "id_variacao": "9750110",
+                    "sku": "3325737.245894.404560",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-jaqueline/?sku=3325737.245894.404560"
                 }
             },
             "OFF WHITE": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9750108"
+                    "id_variacao": "9750108",
+                    "sku": "3325737.245894.404545",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-jaqueline/?sku=3325737.245894.404545"
                 }
             },
             "Preto": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9750109"
+                    "id_variacao": "9750109",
+                    "sku": "3325737.245894.404542",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-jaqueline/?sku=3325737.245894.404542"
                 }
             }
         },
@@ -4984,33 +6190,43 @@ const STILETTO_PRODUCTS = [
             "Branco"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Branco": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750115"
+                    "id_variacao": "9750115",
+                    "sku": "3325739.245895.404561.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-rafa/?sku=3325739.245895.404561.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9750114"
+                    "id_variacao": "9750114",
+                    "sku": "3325739.245895.404561.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-rafa/?sku=3325739.245895.404561.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9750113"
+                    "id_variacao": "9750113",
+                    "sku": "3325739.245895.404561.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-rafa/?sku=3325739.245895.404561.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9750112"
+                    "id_variacao": "9750112",
+                    "sku": "3325739.245895.404561.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-rafa/?sku=3325739.245895.404561.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9750116"
+                    "id_variacao": "9750116",
+                    "sku": "3325739.245895.404561.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-rafa/?sku=3325739.245895.404561.324742"
                 }
             }
         },
@@ -5039,64 +6255,88 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750137"
+                    "id_variacao": "9750137",
+                    "sku": "3325743.245893.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-boneca/?sku=3325743.245893.404545.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9750139"
+                    "id_variacao": "9750139",
+                    "sku": "3325743.245893.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-boneca/?sku=3325743.245893.404545.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9750141"
+                    "id_variacao": "9750141",
+                    "sku": "3325743.245893.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-boneca/?sku=3325743.245893.404545.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9750135"
+                    "id_variacao": "9750135",
+                    "sku": "3325743.245893.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-boneca/?sku=3325743.245893.404545.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9750134"
+                    "id_variacao": "9750134",
+                    "sku": "3325743.245893.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-boneca/?sku=3325743.245893.404545.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9750143"
+                    "id_variacao": "9750143",
+                    "sku": "3325743.245893.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-boneca/?sku=3325743.245893.404545.324746"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750136"
+                    "id_variacao": "9750136",
+                    "sku": "3325743.245893.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-boneca/?sku=3325743.245893.404551.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9750140"
+                    "id_variacao": "9750140",
+                    "sku": "3325743.245893.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-boneca/?sku=3325743.245893.404551.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9750138"
+                    "id_variacao": "9750138",
+                    "sku": "3325743.245893.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-boneca/?sku=3325743.245893.404551.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9750132"
+                    "id_variacao": "9750132",
+                    "sku": "3325743.245893.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-boneca/?sku=3325743.245893.404551.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9750133"
+                    "id_variacao": "9750133",
+                    "sku": "3325743.245893.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-boneca/?sku=3325743.245893.404551.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9750142"
+                    "id_variacao": "9750142",
+                    "sku": "3325743.245893.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-boneca/?sku=3325743.245893.404551.324746"
                 }
             }
         },
@@ -5125,33 +6365,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9750150"
+                    "id_variacao": "9750150",
+                    "sku": "3325745.0000.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-meia-pata-verniz-nude/?sku=3325745.0000.0.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9750152"
+                    "id_variacao": "9750152",
+                    "sku": "3325745.0000.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-meia-pata-verniz-nude/?sku=3325745.0000.0.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9750148"
+                    "id_variacao": "9750148",
+                    "sku": "3325745.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-meia-pata-verniz-nude/?sku=3325745.0000.0.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9750149"
+                    "id_variacao": "9750149",
+                    "sku": "3325745.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-meia-pata-verniz-nude/?sku=3325745.0000.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9750151"
+                    "id_variacao": "9750151",
+                    "sku": "3325745.0000.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-meia-pata-verniz-nude/?sku=3325745.0000.0.324742"
                 }
             }
         },
@@ -5185,7 +6435,9 @@ const STILETTO_PRODUCTS = [
             "Preto": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "9750153"
+                    "id_variacao": "9750153",
+                    "sku": "3325746.245894.404542",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-viviane/?sku=3325746.245894.404542"
                 }
             }
         },
@@ -5214,43 +6466,57 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
-            "38",
-            "35",
             "33",
+            "38",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "9750157"
+                    "id_variacao": "9750157",
+                    "sku": "3325748.245895.0.324747",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-plataforma/?sku=3325748.245895.0.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9750162"
+                    "id_variacao": "9750162",
+                    "sku": "3325748.245895.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-plataforma/?sku=3325748.245895.0.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9750156"
+                    "id_variacao": "9750156",
+                    "sku": "3325748.245895.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-plataforma/?sku=3325748.245895.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9750161"
+                    "id_variacao": "9750161",
+                    "sku": "3325748.245895.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-plataforma/?sku=3325748.245895.0.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9750159"
+                    "id_variacao": "9750159",
+                    "sku": "3325748.245895.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-plataforma/?sku=3325748.245895.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9750160"
+                    "id_variacao": "9750160",
+                    "sku": "3325748.245895.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-plataforma/?sku=3325748.245895.0.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9750158"
+                    "id_variacao": "9750158",
+                    "sku": "3325748.245895.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-plataforma/?sku=3325748.245895.0.324746"
                 }
             }
         },
@@ -5278,33 +6544,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9750171"
+                    "id_variacao": "9750171",
+                    "sku": "3325751.0000.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-alice-vermelho/?sku=3325751.0000.0.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9750169"
+                    "id_variacao": "9750169",
+                    "sku": "3325751.0000.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-alice-vermelho/?sku=3325751.0000.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9750170"
+                    "id_variacao": "9750170",
+                    "sku": "3325751.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-alice-vermelho/?sku=3325751.0000.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9750173"
+                    "id_variacao": "9750173",
+                    "sku": "3325751.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-alice-vermelho/?sku=3325751.0000.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9750172"
+                    "id_variacao": "9750172",
+                    "sku": "3325751.0000.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-alice-vermelho/?sku=3325751.0000.0.324742"
                 }
             }
         },
@@ -5333,12 +6609,12 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 481.8,
         "cores": [
-            "OFF WHITE",
-            "Vermelho escuro",
-            "Preto",
-            "DOURADA",
-            "nude",
             "caramelo",
+            "DOURADA",
+            "OFF WHITE",
+            "Preto",
+            "nude",
+            "Vermelho escuro",
             "Prata"
         ],
         "tamanhos": [
@@ -5348,43 +6624,57 @@ const STILETTO_PRODUCTS = [
             "DOURADA": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9750178"
+                    "id_variacao": "9750178",
+                    "sku": "3325752.245894.404572",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-lara/?sku=3325752.245894.404572"
                 }
             },
             "OFF WHITE": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "9750179"
+                    "id_variacao": "9750179",
+                    "sku": "3325752.245894.404545",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-lara/?sku=3325752.245894.404545"
                 }
             },
             "Prata": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9750176"
+                    "id_variacao": "9750176",
+                    "sku": "3325752.245894.404559",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-lara/?sku=3325752.245894.404559"
                 }
             },
             "Preto": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "9750177"
+                    "id_variacao": "9750177",
+                    "sku": "3325752.245894.404542",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-lara/?sku=3325752.245894.404542"
                 }
             },
             "Vermelho escuro": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9750174"
+                    "id_variacao": "9750174",
+                    "sku": "3325752.245894.404564",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-lara/?sku=3325752.245894.404564"
                 }
             },
             "caramelo": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "11114633"
+                    "id_variacao": "11114633",
+                    "sku": "3325752.245894.404551",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-lara/?sku=3325752.245894.404551"
                 }
             },
             "nude": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "9750175"
+                    "id_variacao": "9750175",
+                    "sku": "3325752.245894.404550",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-lara/?sku=3325752.245894.404550"
                 }
             }
         },
@@ -5434,33 +6724,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9750181"
+                    "id_variacao": "9750181",
+                    "sku": "3325753.0000.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa/?sku=3325753.0000.0.324743"
                 },
                 "35": {
                     "qtd": 3,
-                    "id_variacao": "9750184"
+                    "id_variacao": "9750184",
+                    "sku": "3325753.0000.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa/?sku=3325753.0000.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9750183"
+                    "id_variacao": "9750183",
+                    "sku": "3325753.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa/?sku=3325753.0000.0.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9750180"
+                    "id_variacao": "9750180",
+                    "sku": "3325753.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa/?sku=3325753.0000.0.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9750182"
+                    "id_variacao": "9750182",
+                    "sku": "3325753.0000.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-luisa/?sku=3325753.0000.0.324742"
                 }
             }
         },
@@ -5486,33 +6786,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9750188"
+                    "id_variacao": "9750188",
+                    "sku": "3325754.249814.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-suede-aba-frontal/?sku=3325754.249814.0.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9750186"
+                    "id_variacao": "9750186",
+                    "sku": "3325754.249814.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-suede-aba-frontal/?sku=3325754.249814.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9750185"
+                    "id_variacao": "9750185",
+                    "sku": "3325754.249814.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-suede-aba-frontal/?sku=3325754.249814.0.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9750189"
+                    "id_variacao": "9750189",
+                    "sku": "3325754.249814.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-suede-aba-frontal/?sku=3325754.249814.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9750187"
+                    "id_variacao": "9750187",
+                    "sku": "3325754.249814.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-suede-aba-frontal/?sku=3325754.249814.0.324742"
                 }
             }
         },
@@ -5539,149 +6849,209 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 139.9,
         "cores": [
-            "Dourado",
-            "OFF WHITE",
-            "Azul meia-noite",
             "Vermelho",
+            "Azul meia-noite",
+            "OFF WHITE",
+            "Dourado",
             "Prata"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Azul meia-noite": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750213"
+                    "id_variacao": "9750213",
+                    "sku": "3325755.245897.404560.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404560.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9750203"
+                    "id_variacao": "9750203",
+                    "sku": "3325755.245897.404560.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404560.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9750208"
+                    "id_variacao": "9750208",
+                    "sku": "3325755.245897.404560.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404560.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9750193"
+                    "id_variacao": "9750193",
+                    "sku": "3325755.245897.404560.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404560.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9750197"
+                    "id_variacao": "9750197",
+                    "sku": "3325755.245897.404560.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404560.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9750218"
+                    "id_variacao": "9750218",
+                    "sku": "3325755.245897.404560.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404560.324746"
                 }
             },
             "Dourado": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750207"
+                    "id_variacao": "9750207",
+                    "sku": "3325755.245897.404567.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404567.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9750202"
+                    "id_variacao": "9750202",
+                    "sku": "3325755.245897.404567.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404567.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9750210"
+                    "id_variacao": "9750210",
+                    "sku": "3325755.245897.404567.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404567.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9750192"
+                    "id_variacao": "9750192",
+                    "sku": "3325755.245897.404567.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404567.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9750198"
+                    "id_variacao": "9750198",
+                    "sku": "3325755.245897.404567.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404567.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9750217"
+                    "id_variacao": "9750217",
+                    "sku": "3325755.245897.404567.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404567.324746"
                 }
             },
             "OFF WHITE": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750211"
+                    "id_variacao": "9750211",
+                    "sku": "3325755.245897.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404545.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9750206"
+                    "id_variacao": "9750206",
+                    "sku": "3325755.245897.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404545.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9750201"
+                    "id_variacao": "9750201",
+                    "sku": "3325755.245897.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404545.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9750199"
+                    "id_variacao": "9750199",
+                    "sku": "3325755.245897.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404545.324741"
                 },
                 "38": {
                     "qtd": 3,
-                    "id_variacao": "9750194"
+                    "id_variacao": "9750194",
+                    "sku": "3325755.245897.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404545.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9750215"
+                    "id_variacao": "9750215",
+                    "sku": "3325755.245897.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404545.324746"
                 }
             },
             "Prata": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750212"
+                    "id_variacao": "9750212",
+                    "sku": "3325755.245897.404559.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404559.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9750204"
+                    "id_variacao": "9750204",
+                    "sku": "3325755.245897.404559.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404559.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9750200"
+                    "id_variacao": "9750200",
+                    "sku": "3325755.245897.404559.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404559.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9750190"
+                    "id_variacao": "9750190",
+                    "sku": "3325755.245897.404559.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404559.324741"
                 },
                 "38": {
                     "qtd": 3,
-                    "id_variacao": "9750195"
+                    "id_variacao": "9750195",
+                    "sku": "3325755.245897.404559.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404559.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9750216"
+                    "id_variacao": "9750216",
+                    "sku": "3325755.245897.404559.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404559.324746"
                 }
             },
             "Vermelho": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750214"
+                    "id_variacao": "9750214",
+                    "sku": "3325755.245897.404574.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404574.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9750205"
+                    "id_variacao": "9750205",
+                    "sku": "3325755.245897.404574.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404574.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9750209"
+                    "id_variacao": "9750209",
+                    "sku": "3325755.245897.404574.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404574.324744"
                 },
                 "37": {
                     "qtd": 4,
-                    "id_variacao": "9750191"
+                    "id_variacao": "9750191",
+                    "sku": "3325755.245897.404574.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404574.324741"
                 },
                 "38": {
                     "qtd": 3,
-                    "id_variacao": "9750196"
+                    "id_variacao": "9750196",
+                    "sku": "3325755.245897.404574.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404574.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9750219"
+                    "id_variacao": "9750219",
+                    "sku": "3325755.245897.404574.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-alice/?sku=3325755.245897.404574.324746"
                 }
             }
         },
@@ -5720,81 +7090,111 @@ const STILETTO_PRODUCTS = [
         "preco": 248.0,
         "cores": [
             "Preto",
-            "CACAU",
-            "ONIX"
+            "ONIX",
+            "CACAU"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "CACAU": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9750222"
+                    "id_variacao": "9750222",
+                    "sku": "3325756.245897.404544.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-santorine-detalhe-dourado/?sku=3325756.245897.404544.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9750223"
+                    "id_variacao": "9750223",
+                    "sku": "3325756.245897.404544.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-santorine-detalhe-dourado/?sku=3325756.245897.404544.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9750224"
+                    "id_variacao": "9750224",
+                    "sku": "3325756.245897.404544.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-santorine-detalhe-dourado/?sku=3325756.245897.404544.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9750229"
+                    "id_variacao": "9750229",
+                    "sku": "3325756.245897.404544.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-santorine-detalhe-dourado/?sku=3325756.245897.404544.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9750220"
+                    "id_variacao": "9750220",
+                    "sku": "3325756.245897.404544.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-santorine-detalhe-dourado/?sku=3325756.245897.404544.324742"
                 }
             },
             "ONIX": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12383280"
+                    "id_variacao": "12383280",
+                    "sku": "3325756.249814.425655.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-santorine-detalhe-dourado/?sku=3325756.249814.425655.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "12383281"
+                    "id_variacao": "12383281",
+                    "sku": "3325756.249814.425655.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-santorine-detalhe-dourado/?sku=3325756.249814.425655.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "12383282"
+                    "id_variacao": "12383282",
+                    "sku": "3325756.249814.425655.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-santorine-detalhe-dourado/?sku=3325756.249814.425655.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12383283"
+                    "id_variacao": "12383283",
+                    "sku": "3325756.249814.425655.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-santorine-detalhe-dourado/?sku=3325756.249814.425655.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12383284"
+                    "id_variacao": "12383284",
+                    "sku": "3325756.249814.425655.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-santorine-detalhe-dourado/?sku=3325756.249814.425655.324742"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9750221"
+                    "id_variacao": "9750221",
+                    "sku": "3325756.245897.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-santorine-detalhe-dourado/?sku=3325756.245897.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9750225"
+                    "id_variacao": "9750225",
+                    "sku": "3325756.245897.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-santorine-detalhe-dourado/?sku=3325756.245897.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9750226"
+                    "id_variacao": "9750226",
+                    "sku": "3325756.245897.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-santorine-detalhe-dourado/?sku=3325756.245897.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9750227"
+                    "id_variacao": "9750227",
+                    "sku": "3325756.245897.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-santorine-detalhe-dourado/?sku=3325756.245897.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9750228"
+                    "id_variacao": "9750228",
+                    "sku": "3325756.245897.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-santorine-detalhe-dourado/?sku=3325756.245897.404542.324742"
                 }
             }
         },
@@ -5828,33 +7228,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12981770"
+                    "id_variacao": "12981770",
+                    "sku": "3325757.249814.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-cruzado/?sku=3325757.249814.0.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9750233"
+                    "id_variacao": "9750233",
+                    "sku": "3325757.0000.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-cruzado/?sku=3325757.0000.0.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9750234"
+                    "id_variacao": "9750234",
+                    "sku": "3325757.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-cruzado/?sku=3325757.0000.0.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9750230"
+                    "id_variacao": "9750230",
+                    "sku": "3325757.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-cruzado/?sku=3325757.0000.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9750231"
+                    "id_variacao": "9750231",
+                    "sku": "3325757.0000.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-cruzado/?sku=3325757.0000.0.324742"
                 }
             }
         },
@@ -5881,38 +7291,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750236"
+                    "id_variacao": "9750236",
+                    "sku": "3325758.0000.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-verniz-preto/?sku=3325758.0000.0.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9750239"
+                    "id_variacao": "9750239",
+                    "sku": "3325758.0000.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-verniz-preto/?sku=3325758.0000.0.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9750240"
+                    "id_variacao": "9750240",
+                    "sku": "3325758.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-verniz-preto/?sku=3325758.0000.0.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9750235"
+                    "id_variacao": "9750235",
+                    "sku": "3325758.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-verniz-preto/?sku=3325758.0000.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9750237"
+                    "id_variacao": "9750237",
+                    "sku": "3325758.0000.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-verniz-preto/?sku=3325758.0000.0.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9750238"
+                    "id_variacao": "9750238",
+                    "sku": "3325758.0000.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-verniz-preto/?sku=3325758.0000.0.324746"
                 }
             }
         },
@@ -5941,55 +7363,75 @@ const STILETTO_PRODUCTS = [
             "cafe"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750245"
+                    "id_variacao": "9750245",
+                    "sku": "3325760.245898.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-brecia/?sku=3325760.245898.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9750249"
+                    "id_variacao": "9750249",
+                    "sku": "3325760.245898.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-brecia/?sku=3325760.245898.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9750252"
+                    "id_variacao": "9750252",
+                    "sku": "3325760.245898.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-brecia/?sku=3325760.245898.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9750244"
+                    "id_variacao": "9750244",
+                    "sku": "3325760.245898.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-brecia/?sku=3325760.245898.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9750246"
+                    "id_variacao": "9750246",
+                    "sku": "3325760.245898.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-brecia/?sku=3325760.245898.404542.324742"
                 }
             },
             "cafe": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750248"
+                    "id_variacao": "9750248",
+                    "sku": "3325760.245898.404557.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-brecia/?sku=3325760.245898.404557.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9750251"
+                    "id_variacao": "9750251",
+                    "sku": "3325760.245898.404557.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-brecia/?sku=3325760.245898.404557.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9750250"
+                    "id_variacao": "9750250",
+                    "sku": "3325760.245898.404557.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-brecia/?sku=3325760.245898.404557.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9750243"
+                    "id_variacao": "9750243",
+                    "sku": "3325760.245898.404557.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-brecia/?sku=3325760.245898.404557.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9750247"
+                    "id_variacao": "9750247",
+                    "sku": "3325760.245898.404557.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-brecia/?sku=3325760.245898.404557.324742"
                 }
             }
         },
@@ -6021,33 +7463,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9750257"
+                    "id_variacao": "9750257",
+                    "sku": "3325761.0000.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mule-mara-detalhe-strass/?sku=3325761.0000.0.324743"
                 },
                 "35": {
                     "qtd": 3,
-                    "id_variacao": "9750253"
+                    "id_variacao": "9750253",
+                    "sku": "3325761.0000.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mule-mara-detalhe-strass/?sku=3325761.0000.0.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9750254"
+                    "id_variacao": "9750254",
+                    "sku": "3325761.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mule-mara-detalhe-strass/?sku=3325761.0000.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9750255"
+                    "id_variacao": "9750255",
+                    "sku": "3325761.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mule-mara-detalhe-strass/?sku=3325761.0000.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9750256"
+                    "id_variacao": "9750256",
+                    "sku": "3325761.0000.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mule-mara-detalhe-strass/?sku=3325761.0000.0.324742"
                 }
             }
         },
@@ -6079,64 +7531,88 @@ const STILETTO_PRODUCTS = [
             "VERNIZ"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "9750266"
+                    "id_variacao": "9750266",
+                    "sku": "3325762.0000.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-chanel/?sku=3325762.0000.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9750263"
+                    "id_variacao": "9750263",
+                    "sku": "3325762.0000.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-chanel/?sku=3325762.0000.404542.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "9750262"
+                    "id_variacao": "9750262",
+                    "sku": "3325762.0000.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-chanel/?sku=3325762.0000.404542.324744"
                 },
                 "37": {
                     "qtd": 4,
-                    "id_variacao": "9750260"
+                    "id_variacao": "9750260",
+                    "sku": "3325762.0000.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-chanel/?sku=3325762.0000.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9750258"
+                    "id_variacao": "9750258",
+                    "sku": "3325762.0000.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-chanel/?sku=3325762.0000.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9750269"
+                    "id_variacao": "9750269",
+                    "sku": "3325762.0000.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-chanel/?sku=3325762.0000.404542.324746"
                 }
             },
             "VERNIZ": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9750265"
+                    "id_variacao": "9750265",
+                    "sku": "3325762.0000.404571.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-chanel/?sku=3325762.0000.404571.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9750264"
+                    "id_variacao": "9750264",
+                    "sku": "3325762.0000.404571.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-chanel/?sku=3325762.0000.404571.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9750261"
+                    "id_variacao": "9750261",
+                    "sku": "3325762.0000.404571.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-chanel/?sku=3325762.0000.404571.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9750259"
+                    "id_variacao": "9750259",
+                    "sku": "3325762.0000.404571.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-chanel/?sku=3325762.0000.404571.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9750267"
+                    "id_variacao": "9750267",
+                    "sku": "3325762.0000.404571.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-chanel/?sku=3325762.0000.404571.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9750268"
+                    "id_variacao": "9750268",
+                    "sku": "3325762.0000.404571.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sapato-chanel/?sku=3325762.0000.404571.324746"
                 }
             }
         },
@@ -6170,64 +7646,88 @@ const STILETTO_PRODUCTS = [
             "ANGELICAL"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "ANGELICAL": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9918832"
+                    "id_variacao": "9918832",
+                    "sku": "3397548.249444.410924.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-lua/?sku=3397548.249444.410924.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9918827"
+                    "id_variacao": "9918827",
+                    "sku": "3397548.249444.410924.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-lua/?sku=3397548.249444.410924.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9918828"
+                    "id_variacao": "9918828",
+                    "sku": "3397548.249444.410924.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-lua/?sku=3397548.249444.410924.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9918829"
+                    "id_variacao": "9918829",
+                    "sku": "3397548.249444.410924.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-lua/?sku=3397548.249444.410924.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9918830"
+                    "id_variacao": "9918830",
+                    "sku": "3397548.249444.410924.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-lua/?sku=3397548.249444.410924.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9918833"
+                    "id_variacao": "9918833",
+                    "sku": "3397548.249444.410924.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-lua/?sku=3397548.249444.410924.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9918823"
+                    "id_variacao": "9918823",
+                    "sku": "3397548.249444.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-lua/?sku=3397548.249444.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9918826"
+                    "id_variacao": "9918826",
+                    "sku": "3397548.249444.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-lua/?sku=3397548.249444.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9918824"
+                    "id_variacao": "9918824",
+                    "sku": "3397548.249444.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-lua/?sku=3397548.249444.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9918831"
+                    "id_variacao": "9918831",
+                    "sku": "3397548.249444.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-lua/?sku=3397548.249444.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9918822"
+                    "id_variacao": "9918822",
+                    "sku": "3397548.249444.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-lua/?sku=3397548.249444.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9918825"
+                    "id_variacao": "9918825",
+                    "sku": "3397548.249444.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-lua/?sku=3397548.249444.404542.324746"
                 }
             }
         },
@@ -6267,90 +7767,126 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "12220189"
+                    "id_variacao": "12220189",
+                    "sku": "3397549.249444.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ouro/?sku=3397549.249444.404545.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9918837"
+                    "id_variacao": "9918837",
+                    "sku": "3397549.249444.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ouro/?sku=3397549.249444.404545.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9918834"
+                    "id_variacao": "9918834",
+                    "sku": "3397549.249444.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ouro/?sku=3397549.249444.404545.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "12220190"
+                    "id_variacao": "12220190",
+                    "sku": "3397549.249444.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ouro/?sku=3397549.249444.404545.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12220191"
+                    "id_variacao": "12220191",
+                    "sku": "3397549.249444.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ouro/?sku=3397549.249444.404545.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "9918836"
+                    "id_variacao": "9918836",
+                    "sku": "3397549.249444.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ouro/?sku=3397549.249444.404545.324746"
                 }
             },
             "Prata": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12220192"
+                    "id_variacao": "12220192",
+                    "sku": "3397549.249444.404559.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ouro/?sku=3397549.249444.404559.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12220193"
+                    "id_variacao": "12220193",
+                    "sku": "3397549.249444.404559.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ouro/?sku=3397549.249444.404559.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9918840"
+                    "id_variacao": "9918840",
+                    "sku": "3397549.249444.404559.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ouro/?sku=3397549.249444.404559.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "12220194"
+                    "id_variacao": "12220194",
+                    "sku": "3397549.249444.404559.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ouro/?sku=3397549.249444.404559.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9918839"
+                    "id_variacao": "9918839",
+                    "sku": "3397549.249444.404559.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ouro/?sku=3397549.249444.404559.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9918838"
+                    "id_variacao": "9918838",
+                    "sku": "3397549.249444.404559.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ouro/?sku=3397549.249444.404559.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "12220195"
+                    "id_variacao": "12220195",
+                    "sku": "3397549.249444.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ouro/?sku=3397549.249444.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "9918835"
+                    "id_variacao": "9918835",
+                    "sku": "3397549.249444.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ouro/?sku=3397549.249444.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "12220196"
+                    "id_variacao": "12220196",
+                    "sku": "3397549.249444.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ouro/?sku=3397549.249444.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12220197"
+                    "id_variacao": "12220197",
+                    "sku": "3397549.249444.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ouro/?sku=3397549.249444.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12220198"
+                    "id_variacao": "12220198",
+                    "sku": "3397549.249444.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ouro/?sku=3397549.249444.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12220199"
+                    "id_variacao": "12220199",
+                    "sku": "3397549.249444.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ouro/?sku=3397549.249444.404542.324746"
                 }
             }
         },
@@ -6397,64 +7933,88 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "9918845"
+                    "id_variacao": "9918845",
+                    "sku": "3397550.249444.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-mia/?sku=3397550.249444.404545.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9918843"
+                    "id_variacao": "9918843",
+                    "sku": "3397550.249444.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-mia/?sku=3397550.249444.404545.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9918841"
+                    "id_variacao": "9918841",
+                    "sku": "3397550.249444.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-mia/?sku=3397550.249444.404545.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9918850"
+                    "id_variacao": "9918850",
+                    "sku": "3397550.249444.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-mia/?sku=3397550.249444.404545.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9918848"
+                    "id_variacao": "9918848",
+                    "sku": "3397550.249444.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-mia/?sku=3397550.249444.404545.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9918851"
+                    "id_variacao": "9918851",
+                    "sku": "3397550.249444.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-mia/?sku=3397550.249444.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "9918852"
+                    "id_variacao": "9918852",
+                    "sku": "3397550.249444.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-mia/?sku=3397550.249444.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9918842"
+                    "id_variacao": "9918842",
+                    "sku": "3397550.249444.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-mia/?sku=3397550.249444.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9918846"
+                    "id_variacao": "9918846",
+                    "sku": "3397550.249444.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-mia/?sku=3397550.249444.404542.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9918847"
+                    "id_variacao": "9918847",
+                    "sku": "3397550.249444.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-mia/?sku=3397550.249444.404542.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9918849"
+                    "id_variacao": "9918849",
+                    "sku": "3397550.249444.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-mia/?sku=3397550.249444.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9918844"
+                    "id_variacao": "9918844",
+                    "sku": "3397550.249444.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-mia/?sku=3397550.249444.404542.324746"
                 }
             }
         },
@@ -6491,64 +8051,88 @@ const STILETTO_PRODUCTS = [
             "Terra"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Terra": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9918859"
+                    "id_variacao": "9918859",
+                    "sku": "3397551.249444.410926.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-estrela/?sku=3397551.249444.410926.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9918864"
+                    "id_variacao": "9918864",
+                    "sku": "3397551.249444.410926.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-estrela/?sku=3397551.249444.410926.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9918856"
+                    "id_variacao": "9918856",
+                    "sku": "3397551.249444.410926.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-estrela/?sku=3397551.249444.410926.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9918861"
+                    "id_variacao": "9918861",
+                    "sku": "3397551.249444.410926.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-estrela/?sku=3397551.249444.410926.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9918860"
+                    "id_variacao": "9918860",
+                    "sku": "3397551.249444.410926.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-estrela/?sku=3397551.249444.410926.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9918855"
+                    "id_variacao": "9918855",
+                    "sku": "3397551.249444.410926.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-estrela/?sku=3397551.249444.410926.324746"
                 }
             },
             "preta": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9918854"
+                    "id_variacao": "9918854",
+                    "sku": "3397551.249444.410925.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-estrela/?sku=3397551.249444.410925.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9918863"
+                    "id_variacao": "9918863",
+                    "sku": "3397551.249444.410925.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-estrela/?sku=3397551.249444.410925.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9918853"
+                    "id_variacao": "9918853",
+                    "sku": "3397551.249444.410925.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-estrela/?sku=3397551.249444.410925.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9918858"
+                    "id_variacao": "9918858",
+                    "sku": "3397551.249444.410925.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-estrela/?sku=3397551.249444.410925.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9918857"
+                    "id_variacao": "9918857",
+                    "sku": "3397551.249444.410925.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-estrela/?sku=3397551.249444.410925.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9918862"
+                    "id_variacao": "9918862",
+                    "sku": "3397551.249444.410925.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-estrela/?sku=3397551.249444.410925.324746"
                 }
             }
         },
@@ -6580,8 +8164,8 @@ const STILETTO_PRODUCTS = [
         "preco": 340.9,
         "cores": [
             "Preto",
-            "CROCO",
             "Vermelho escuro",
+            "CROCO",
             "OFF WHITE"
         ],
         "tamanhos": [
@@ -6591,25 +8175,33 @@ const STILETTO_PRODUCTS = [
             "CROCO": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "9960804"
+                    "id_variacao": "9960804",
+                    "sku": "3412300.245894.404549",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-jussara/?sku=3412300.245894.404549"
                 }
             },
             "OFF WHITE": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9960807"
+                    "id_variacao": "9960807",
+                    "sku": "3412300.245894.404545",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-jussara/?sku=3412300.245894.404545"
                 }
             },
             "Preto": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9960806"
+                    "id_variacao": "9960806",
+                    "sku": "3412300.245894.404542",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-jussara/?sku=3412300.245894.404542"
                 }
             },
             "Vermelho escuro": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "9960805"
+                    "id_variacao": "9960805",
+                    "sku": "3412300.245894.404564",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-jussara/?sku=3412300.245894.404564"
                 }
             }
         },
@@ -6656,64 +8248,88 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9965949"
+                    "id_variacao": "9965949",
+                    "sku": "3413419.249014.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado/?sku=3413419.249014.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9965947"
+                    "id_variacao": "9965947",
+                    "sku": "3413419.249014.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado/?sku=3413419.249014.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "9965938"
+                    "id_variacao": "9965938",
+                    "sku": "3413419.249014.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado/?sku=3413419.249014.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9965948"
+                    "id_variacao": "9965948",
+                    "sku": "3413419.249014.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado/?sku=3413419.249014.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9965942"
+                    "id_variacao": "9965942",
+                    "sku": "3413419.249014.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado/?sku=3413419.249014.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9965943"
+                    "id_variacao": "9965943",
+                    "sku": "3413419.249014.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado/?sku=3413419.249014.404542.324746"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9965946"
+                    "id_variacao": "9965946",
+                    "sku": "3413419.249014.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado/?sku=3413419.249014.404551.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9965945"
+                    "id_variacao": "9965945",
+                    "sku": "3413419.249014.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado/?sku=3413419.249014.404551.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "9965940"
+                    "id_variacao": "9965940",
+                    "sku": "3413419.249014.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado/?sku=3413419.249014.404551.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "9965939"
+                    "id_variacao": "9965939",
+                    "sku": "3413419.249014.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado/?sku=3413419.249014.404551.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "9965944"
+                    "id_variacao": "9965944",
+                    "sku": "3413419.249014.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado/?sku=3413419.249014.404551.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "9965941"
+                    "id_variacao": "9965941",
+                    "sku": "3413419.249014.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-tratorado/?sku=3413419.249014.404551.324746"
                 }
             }
         },
@@ -6755,77 +8371,107 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9993099"
+                    "id_variacao": "9993099",
+                    "sku": "3431626.0000.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-veneto/?sku=3431626.0000.404545.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "9993109"
+                    "id_variacao": "9993109",
+                    "sku": "3431626.0000.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-veneto/?sku=3431626.0000.404545.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9993098"
+                    "id_variacao": "9993098",
+                    "sku": "3431626.0000.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-veneto/?sku=3431626.0000.404545.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "9993105"
+                    "id_variacao": "9993105",
+                    "sku": "3431626.0000.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-veneto/?sku=3431626.0000.404545.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9993096"
+                    "id_variacao": "9993096",
+                    "sku": "3431626.0000.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-veneto/?sku=3431626.0000.404545.324742"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "9993097"
+                    "id_variacao": "9993097",
+                    "sku": "3431626.0000.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-veneto/?sku=3431626.0000.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9993111"
+                    "id_variacao": "9993111",
+                    "sku": "3431626.0000.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-veneto/?sku=3431626.0000.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9993104"
+                    "id_variacao": "9993104",
+                    "sku": "3431626.0000.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-veneto/?sku=3431626.0000.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "9993106"
+                    "id_variacao": "9993106",
+                    "sku": "3431626.0000.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-veneto/?sku=3431626.0000.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "9993107"
+                    "id_variacao": "9993107",
+                    "sku": "3431626.0000.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-veneto/?sku=3431626.0000.404542.324742"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "9993101"
+                    "id_variacao": "9993101",
+                    "sku": "3431626.0000.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-veneto/?sku=3431626.0000.404551.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "9993110"
+                    "id_variacao": "9993110",
+                    "sku": "3431626.0000.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-veneto/?sku=3431626.0000.404551.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "9993112"
+                    "id_variacao": "9993112",
+                    "sku": "3431626.0000.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-veneto/?sku=3431626.0000.404551.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "9993094"
+                    "id_variacao": "9993094",
+                    "sku": "3431626.0000.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-veneto/?sku=3431626.0000.404551.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "9993108"
+                    "id_variacao": "9993108",
+                    "sku": "3431626.0000.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-veneto/?sku=3431626.0000.404551.324742"
                 }
             }
         },
@@ -6874,99 +8520,139 @@ const STILETTO_PRODUCTS = [
             "MARSALA"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "CACAU": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10054863"
+                    "id_variacao": "10054863",
+                    "sku": "3447901.249814.404544.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404544.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "10054857"
+                    "id_variacao": "10054857",
+                    "sku": "3447901.249814.404544.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404544.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "10054858"
+                    "id_variacao": "10054858",
+                    "sku": "3447901.249814.404544.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404544.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "10054851"
+                    "id_variacao": "10054851",
+                    "sku": "3447901.249814.404544.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404544.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10054846"
+                    "id_variacao": "10054846",
+                    "sku": "3447901.249814.404544.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404544.324742"
                 }
             },
             "MARSALA": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "10054852"
+                    "id_variacao": "10054852",
+                    "sku": "3447901.249814.404552.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404552.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "10054859"
+                    "id_variacao": "10054859",
+                    "sku": "3447901.249814.404552.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404552.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "10054865"
+                    "id_variacao": "10054865",
+                    "sku": "3447901.249814.404552.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404552.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "10054854"
+                    "id_variacao": "10054854",
+                    "sku": "3447901.249814.404552.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404552.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10054860"
+                    "id_variacao": "10054860",
+                    "sku": "3447901.249814.404552.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404552.324742"
                 }
             },
             "Prata": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10054847"
+                    "id_variacao": "10054847",
+                    "sku": "3447901.249814.404559.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404559.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10054856"
+                    "id_variacao": "10054856",
+                    "sku": "3447901.249814.404559.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404559.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "10054862"
+                    "id_variacao": "10054862",
+                    "sku": "3447901.249814.404559.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404559.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "10054849"
+                    "id_variacao": "10054849",
+                    "sku": "3447901.249814.404559.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404559.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10054864"
+                    "id_variacao": "10054864",
+                    "sku": "3447901.249814.404559.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404559.324742"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10054850"
+                    "id_variacao": "10054850",
+                    "sku": "3447901.249814.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "10054855"
+                    "id_variacao": "10054855",
+                    "sku": "3447901.249814.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "10054848"
+                    "id_variacao": "10054848",
+                    "sku": "3447901.249814.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "10054861"
+                    "id_variacao": "10054861",
+                    "sku": "3447901.249814.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10054853"
+                    "id_variacao": "10054853",
+                    "sku": "3447901.249814.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-napa-fivela/?sku=3447901.249814.404542.324742"
                 }
             }
         },
@@ -7009,59 +8695,79 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 229.9,
         "cores": [
-            "BAUNILHA",
-            "Preto"
+            "Preto",
+            "BAUNILHA"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "BAUNILHA": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "10130805"
+                    "id_variacao": "10130805",
+                    "sku": "3471777.245893.416893.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-paris-baunilha/?sku=3471777.245893.416893.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10130804"
+                    "id_variacao": "10130804",
+                    "sku": "3471777.245893.416893.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-paris-baunilha/?sku=3471777.245893.416893.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "10130801"
+                    "id_variacao": "10130801",
+                    "sku": "3471777.245893.416893.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-paris-baunilha/?sku=3471777.245893.416893.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10130808"
+                    "id_variacao": "10130808",
+                    "sku": "3471777.245893.416893.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-paris-baunilha/?sku=3471777.245893.416893.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10130800"
+                    "id_variacao": "10130800",
+                    "sku": "3471777.245893.416893.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-paris-baunilha/?sku=3471777.245893.416893.324742"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "10130806"
+                    "id_variacao": "10130806",
+                    "sku": "3471777.245893.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-paris-baunilha/?sku=3471777.245893.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10130807"
+                    "id_variacao": "10130807",
+                    "sku": "3471777.245893.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-paris-baunilha/?sku=3471777.245893.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "10130802"
+                    "id_variacao": "10130802",
+                    "sku": "3471777.245893.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-paris-baunilha/?sku=3471777.245893.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10130799"
+                    "id_variacao": "10130799",
+                    "sku": "3471777.245893.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-paris-baunilha/?sku=3471777.245893.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10130803"
+                    "id_variacao": "10130803",
+                    "sku": "3471777.245893.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-paris-baunilha/?sku=3471777.245893.404542.324742"
                 }
             }
         },
@@ -7091,82 +8797,112 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 296.0,
         "cores": [
+            "Preto",
             "BAUNILHA",
-            "caramelo",
-            "Preto"
+            "caramelo"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "BAUNILHA": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "10131717"
+                    "id_variacao": "10131717",
+                    "sku": "3471933.0000.416893.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-laura/?sku=3471933.0000.416893.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10131724"
+                    "id_variacao": "10131724",
+                    "sku": "3471933.0000.416893.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-laura/?sku=3471933.0000.416893.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "10131720"
+                    "id_variacao": "10131720",
+                    "sku": "3471933.0000.416893.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-laura/?sku=3471933.0000.416893.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "10131722"
+                    "id_variacao": "10131722",
+                    "sku": "3471933.0000.416893.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-laura/?sku=3471933.0000.416893.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10131715"
+                    "id_variacao": "10131715",
+                    "sku": "3471933.0000.416893.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-laura/?sku=3471933.0000.416893.324742"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10133356"
+                    "id_variacao": "10133356",
+                    "sku": "3471933.0000.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-laura/?sku=3471933.0000.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "10133373"
+                    "id_variacao": "10133373",
+                    "sku": "3471933.0000.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-laura/?sku=3471933.0000.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "10131719"
+                    "id_variacao": "10131719",
+                    "sku": "3471933.0000.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-laura/?sku=3471933.0000.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "10131716"
+                    "id_variacao": "10131716",
+                    "sku": "3471933.0000.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-laura/?sku=3471933.0000.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10131721"
+                    "id_variacao": "10131721",
+                    "sku": "3471933.0000.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-laura/?sku=3471933.0000.404542.324742"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10131718"
+                    "id_variacao": "10131718",
+                    "sku": "3471933.0000.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-laura/?sku=3471933.0000.404551.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "10133374"
+                    "id_variacao": "10133374",
+                    "sku": "3471933.0000.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-laura/?sku=3471933.0000.404551.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "10133372"
+                    "id_variacao": "10133372",
+                    "sku": "3471933.0000.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-laura/?sku=3471933.0000.404551.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "10131713"
+                    "id_variacao": "10131713",
+                    "sku": "3471933.0000.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-laura/?sku=3471933.0000.404551.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10131723"
+                    "id_variacao": "10131723",
+                    "sku": "3471933.0000.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-laura/?sku=3471933.0000.404551.324742"
                 }
             }
         },
@@ -7202,95 +8938,131 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 299.9,
         "cores": [
-            "BAUNILHA",
             "PRETO VERNIZ",
+            "BAUNILHA",
             "MARSALA"
         ],
         "tamanhos": [
-            "37",
-            "36",
-            "38",
-            "35",
             "33",
-            "34"
+            "38",
+            "34",
+            "35",
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "BAUNILHA": {
                 "33": {
                     "qtd": 1,
-                    "id_variacao": "10135897"
+                    "id_variacao": "10135897",
+                    "sku": "3472410.249814.416893.324747",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-verniz-mia/?sku=3472410.249814.416893.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10135898"
+                    "id_variacao": "10135898",
+                    "sku": "3472410.249814.416893.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-verniz-mia/?sku=3472410.249814.416893.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "10135892"
+                    "id_variacao": "10135892",
+                    "sku": "3472410.249814.416893.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-verniz-mia/?sku=3472410.249814.416893.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "10135900"
+                    "id_variacao": "10135900",
+                    "sku": "3472410.249814.416893.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-verniz-mia/?sku=3472410.249814.416893.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10135906"
+                    "id_variacao": "10135906",
+                    "sku": "3472410.249814.416893.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-verniz-mia/?sku=3472410.249814.416893.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "10135903"
+                    "id_variacao": "10135903",
+                    "sku": "3472410.249814.416893.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-verniz-mia/?sku=3472410.249814.416893.324742"
                 }
             },
             "MARSALA": {
                 "33": {
                     "qtd": 1,
-                    "id_variacao": "10135895"
+                    "id_variacao": "10135895",
+                    "sku": "3472410.249814.404552.324747",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-verniz-mia/?sku=3472410.249814.404552.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10135899"
+                    "id_variacao": "10135899",
+                    "sku": "3472410.249814.404552.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-verniz-mia/?sku=3472410.249814.404552.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "10135894"
+                    "id_variacao": "10135894",
+                    "sku": "3472410.249814.404552.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-verniz-mia/?sku=3472410.249814.404552.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "10135901"
+                    "id_variacao": "10135901",
+                    "sku": "3472410.249814.404552.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-verniz-mia/?sku=3472410.249814.404552.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "10135905"
+                    "id_variacao": "10135905",
+                    "sku": "3472410.249814.404552.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-verniz-mia/?sku=3472410.249814.404552.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10135904"
+                    "id_variacao": "10135904",
+                    "sku": "3472410.249814.404552.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-verniz-mia/?sku=3472410.249814.404552.324742"
                 }
             },
             "PRETO VERNIZ": {
                 "33": {
                     "qtd": 1,
-                    "id_variacao": "10135896"
+                    "id_variacao": "10135896",
+                    "sku": "3472410.249814.416935.324747",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-verniz-mia/?sku=3472410.249814.416935.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10135890"
+                    "id_variacao": "10135890",
+                    "sku": "3472410.249814.416935.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-verniz-mia/?sku=3472410.249814.416935.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "10135893"
+                    "id_variacao": "10135893",
+                    "sku": "3472410.249814.416935.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-verniz-mia/?sku=3472410.249814.416935.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "10135902"
+                    "id_variacao": "10135902",
+                    "sku": "3472410.249814.416935.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-verniz-mia/?sku=3472410.249814.416935.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "10135907"
+                    "id_variacao": "10135907",
+                    "sku": "3472410.249814.416935.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-verniz-mia/?sku=3472410.249814.416935.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10135891"
+                    "id_variacao": "10135891",
+                    "sku": "3472410.249814.416935.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-verniz-mia/?sku=3472410.249814.416935.324742"
                 }
             }
         },
@@ -7326,94 +9098,130 @@ const STILETTO_PRODUCTS = [
         "preco": 159.9,
         "cores": [
             "Preto",
-            "ONIX",
-            "Prata"
+            "Prata",
+            "ONIX"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "ONIX": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "10442601"
+                    "id_variacao": "10442601",
+                    "sku": "3570964.249444.425655.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-dalia/?sku=3570964.249444.425655.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "10442592"
+                    "id_variacao": "10442592",
+                    "sku": "3570964.249444.425655.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-dalia/?sku=3570964.249444.425655.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "10442599"
+                    "id_variacao": "10442599",
+                    "sku": "3570964.249444.425655.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-dalia/?sku=3570964.249444.425655.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10442597"
+                    "id_variacao": "10442597",
+                    "sku": "3570964.249444.425655.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-dalia/?sku=3570964.249444.425655.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10442603"
+                    "id_variacao": "10442603",
+                    "sku": "3570964.249444.425655.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-dalia/?sku=3570964.249444.425655.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "10442608"
+                    "id_variacao": "10442608",
+                    "sku": "3570964.249444.425655.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-dalia/?sku=3570964.249444.425655.324746"
                 }
             },
             "Prata": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10442598"
+                    "id_variacao": "10442598",
+                    "sku": "3570964.249444.404559.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-dalia/?sku=3570964.249444.404559.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "10442594"
+                    "id_variacao": "10442594",
+                    "sku": "3570964.249444.404559.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-dalia/?sku=3570964.249444.404559.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "10442595"
+                    "id_variacao": "10442595",
+                    "sku": "3570964.249444.404559.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-dalia/?sku=3570964.249444.404559.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "10442605"
+                    "id_variacao": "10442605",
+                    "sku": "3570964.249444.404559.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-dalia/?sku=3570964.249444.404559.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10442600"
+                    "id_variacao": "10442600",
+                    "sku": "3570964.249444.404559.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-dalia/?sku=3570964.249444.404559.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "10442609"
+                    "id_variacao": "10442609",
+                    "sku": "3570964.249444.404559.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-dalia/?sku=3570964.249444.404559.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "10442607"
+                    "id_variacao": "10442607",
+                    "sku": "3570964.249444.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-dalia/?sku=3570964.249444.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10442604"
+                    "id_variacao": "10442604",
+                    "sku": "3570964.249444.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-dalia/?sku=3570964.249444.404542.324745"
                 },
                 "36": {
                     "qtd": 4,
-                    "id_variacao": "10442602"
+                    "id_variacao": "10442602",
+                    "sku": "3570964.249444.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-dalia/?sku=3570964.249444.404542.324744"
                 },
                 "37": {
                     "qtd": 4,
-                    "id_variacao": "10442593"
+                    "id_variacao": "10442593",
+                    "sku": "3570964.249444.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-dalia/?sku=3570964.249444.404542.324741"
                 },
                 "38": {
                     "qtd": 3,
-                    "id_variacao": "10442606"
+                    "id_variacao": "10442606",
+                    "sku": "3570964.249444.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-dalia/?sku=3570964.249444.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "10442596"
+                    "id_variacao": "10442596",
+                    "sku": "3570964.249444.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-dalia/?sku=3570964.249444.404542.324746"
                 }
             }
         },
@@ -7451,64 +9259,88 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10594814"
+                    "id_variacao": "10594814",
+                    "sku": "3608228.249444.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice/?sku=3608228.249444.404545.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "10594820"
+                    "id_variacao": "10594820",
+                    "sku": "3608228.249444.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice/?sku=3608228.249444.404545.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "10594816"
+                    "id_variacao": "10594816",
+                    "sku": "3608228.249444.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice/?sku=3608228.249444.404545.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "10594817"
+                    "id_variacao": "10594817",
+                    "sku": "3608228.249444.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice/?sku=3608228.249444.404545.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10594812"
+                    "id_variacao": "10594812",
+                    "sku": "3608228.249444.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice/?sku=3608228.249444.404545.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "10594819"
+                    "id_variacao": "10594819",
+                    "sku": "3608228.249444.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice/?sku=3608228.249444.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "10594815"
+                    "id_variacao": "10594815",
+                    "sku": "3608228.249444.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice/?sku=3608228.249444.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10594821"
+                    "id_variacao": "10594821",
+                    "sku": "3608228.249444.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice/?sku=3608228.249444.404542.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "10594813"
+                    "id_variacao": "10594813",
+                    "sku": "3608228.249444.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice/?sku=3608228.249444.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "10594811"
+                    "id_variacao": "10594811",
+                    "sku": "3608228.249444.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice/?sku=3608228.249444.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10594809"
+                    "id_variacao": "10594809",
+                    "sku": "3608228.249444.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice/?sku=3608228.249444.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "10594818"
+                    "id_variacao": "10594818",
+                    "sku": "3608228.249444.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice/?sku=3608228.249444.404542.324746"
                 }
             }
         },
@@ -7546,116 +9378,164 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "10595246"
+                    "id_variacao": "10595246",
+                    "sku": "3608400.249444.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.404545.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10595257"
+                    "id_variacao": "10595257",
+                    "sku": "3608400.249444.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.404545.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "10595251"
+                    "id_variacao": "10595251",
+                    "sku": "3608400.249444.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.404545.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10595240"
+                    "id_variacao": "10595240",
+                    "sku": "3608400.249444.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.404545.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10595235"
+                    "id_variacao": "10595235",
+                    "sku": "3608400.249444.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.404545.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "10595247"
+                    "id_variacao": "10595247",
+                    "sku": "3608400.249444.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.404545.324746"
                 }
             },
             "Ouro": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595249"
+                    "id_variacao": "10595249",
+                    "sku": "3608400.249444.434876.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.434876.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "10595245"
+                    "id_variacao": "10595245",
+                    "sku": "3608400.249444.434876.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.434876.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "10595242"
+                    "id_variacao": "10595242",
+                    "sku": "3608400.249444.434876.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.434876.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "10595255"
+                    "id_variacao": "10595255",
+                    "sku": "3608400.249444.434876.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.434876.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10595252"
+                    "id_variacao": "10595252",
+                    "sku": "3608400.249444.434876.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.434876.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "10595262"
+                    "id_variacao": "10595262",
+                    "sku": "3608400.249444.434876.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.434876.324746"
                 }
             },
             "Prata": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595237"
+                    "id_variacao": "10595237",
+                    "sku": "3608400.249444.404559.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.404559.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "10595253"
+                    "id_variacao": "10595253",
+                    "sku": "3608400.249444.404559.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.404559.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "10595239"
+                    "id_variacao": "10595239",
+                    "sku": "3608400.249444.404559.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.404559.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "10595254"
+                    "id_variacao": "10595254",
+                    "sku": "3608400.249444.404559.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.404559.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10595250"
+                    "id_variacao": "10595250",
+                    "sku": "3608400.249444.404559.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.404559.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "10595241"
+                    "id_variacao": "10595241",
+                    "sku": "3608400.249444.404559.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.404559.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595243"
+                    "id_variacao": "10595243",
+                    "sku": "3608400.249444.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "10595232"
+                    "id_variacao": "10595232",
+                    "sku": "3608400.249444.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.404542.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "10595260"
+                    "id_variacao": "10595260",
+                    "sku": "3608400.249444.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "10595244"
+                    "id_variacao": "10595244",
+                    "sku": "3608400.249444.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10595238"
+                    "id_variacao": "10595238",
+                    "sku": "3608400.249444.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "10595248"
+                    "id_variacao": "10595248",
+                    "sku": "3608400.249444.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-barbara/?sku=3608400.249444.404542.324746"
                 }
             }
         },
@@ -7710,64 +9590,88 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "10595270"
+                    "id_variacao": "10595270",
+                    "sku": "3608404.249444.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice-67292b94870f3/?sku=3608404.249444.404545.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "10595271"
+                    "id_variacao": "10595271",
+                    "sku": "3608404.249444.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice-67292b94870f3/?sku=3608404.249444.404545.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "10595576"
+                    "id_variacao": "10595576",
+                    "sku": "3608404.249444.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice-67292b94870f3/?sku=3608404.249444.404545.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "10595269"
+                    "id_variacao": "10595269",
+                    "sku": "3608404.249444.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice-67292b94870f3/?sku=3608404.249444.404545.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10595263"
+                    "id_variacao": "10595263",
+                    "sku": "3608404.249444.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice-67292b94870f3/?sku=3608404.249444.404545.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "10595277"
+                    "id_variacao": "10595277",
+                    "sku": "3608404.249444.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice-67292b94870f3/?sku=3608404.249444.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595276"
+                    "id_variacao": "10595276",
+                    "sku": "3608404.249444.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice-67292b94870f3/?sku=3608404.249444.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "10595272"
+                    "id_variacao": "10595272",
+                    "sku": "3608404.249444.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice-67292b94870f3/?sku=3608404.249444.404542.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "10595273"
+                    "id_variacao": "10595273",
+                    "sku": "3608404.249444.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice-67292b94870f3/?sku=3608404.249444.404542.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "10595274"
+                    "id_variacao": "10595274",
+                    "sku": "3608404.249444.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice-67292b94870f3/?sku=3608404.249444.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10595275"
+                    "id_variacao": "10595275",
+                    "sku": "3608404.249444.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice-67292b94870f3/?sku=3608404.249444.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "10595268"
+                    "id_variacao": "10595268",
+                    "sku": "3608404.249444.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-alice-67292b94870f3/?sku=3608404.249444.404542.324746"
                 }
             }
         },
@@ -7799,38 +9703,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595569"
+                    "id_variacao": "10595569",
+                    "sku": "3608489.260789.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-alice/?sku=3608489.260789.0.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10595565"
+                    "id_variacao": "10595565",
+                    "sku": "3608489.260789.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-alice/?sku=3608489.260789.0.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "10595570"
+                    "id_variacao": "10595570",
+                    "sku": "3608489.260789.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-alice/?sku=3608489.260789.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "10595567"
+                    "id_variacao": "10595567",
+                    "sku": "3608489.260789.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-alice/?sku=3608489.260789.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10595568"
+                    "id_variacao": "10595568",
+                    "sku": "3608489.260789.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-alice/?sku=3608489.260789.0.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "10595566"
+                    "id_variacao": "10595566",
+                    "sku": "3608489.260789.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-alice/?sku=3608489.260789.0.324746"
                 }
             }
         },
@@ -7857,33 +9773,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595573"
+                    "id_variacao": "10595573",
+                    "sku": "3608490.260790.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-brisa/?sku=3608490.260790.0.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10595574"
+                    "id_variacao": "10595574",
+                    "sku": "3608490.260790.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-brisa/?sku=3608490.260790.0.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "10595575"
+                    "id_variacao": "10595575",
+                    "sku": "3608490.260790.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-brisa/?sku=3608490.260790.0.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10595571"
+                    "id_variacao": "10595571",
+                    "sku": "3608490.260790.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-brisa/?sku=3608490.260790.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10595572"
+                    "id_variacao": "10595572",
+                    "sku": "3608490.260790.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-brisa/?sku=3608490.260790.0.324742"
                 }
             }
         },
@@ -7911,38 +9837,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "10595578"
+                    "id_variacao": "10595578",
+                    "sku": "3608491.260790.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/papete-aisha/?sku=3608491.260790.0.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "10595580"
+                    "id_variacao": "10595580",
+                    "sku": "3608491.260790.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/papete-aisha/?sku=3608491.260790.0.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "10595582"
+                    "id_variacao": "10595582",
+                    "sku": "3608491.260790.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/papete-aisha/?sku=3608491.260790.0.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10595577"
+                    "id_variacao": "10595577",
+                    "sku": "3608491.260790.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/papete-aisha/?sku=3608491.260790.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10595581"
+                    "id_variacao": "10595581",
+                    "sku": "3608491.260790.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/papete-aisha/?sku=3608491.260790.0.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "10595579"
+                    "id_variacao": "10595579",
+                    "sku": "3608491.260790.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/papete-aisha/?sku=3608491.260790.0.324746"
                 }
             }
         },
@@ -7974,55 +9912,75 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595584"
+                    "id_variacao": "10595584",
+                    "sku": "3608492.260790.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/birken-manu/?sku=3608492.260790.404545.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "10595590"
+                    "id_variacao": "10595590",
+                    "sku": "3608492.260790.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/birken-manu/?sku=3608492.260790.404545.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "10595583"
+                    "id_variacao": "10595583",
+                    "sku": "3608492.260790.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/birken-manu/?sku=3608492.260790.404545.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "10595588"
+                    "id_variacao": "10595588",
+                    "sku": "3608492.260790.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/birken-manu/?sku=3608492.260790.404545.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10595586"
+                    "id_variacao": "10595586",
+                    "sku": "3608492.260790.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/birken-manu/?sku=3608492.260790.404545.324742"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595589"
+                    "id_variacao": "10595589",
+                    "sku": "3608492.260790.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/birken-manu/?sku=3608492.260790.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "10595592"
+                    "id_variacao": "10595592",
+                    "sku": "3608492.260790.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/birken-manu/?sku=3608492.260790.404542.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "10595591"
+                    "id_variacao": "10595591",
+                    "sku": "3608492.260790.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/birken-manu/?sku=3608492.260790.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "10595585"
+                    "id_variacao": "10595585",
+                    "sku": "3608492.260790.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/birken-manu/?sku=3608492.260790.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10595587"
+                    "id_variacao": "10595587",
+                    "sku": "3608492.260790.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/birken-manu/?sku=3608492.260790.404542.324742"
                 }
             }
         },
@@ -8054,33 +10012,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "10595593"
+                    "id_variacao": "10595593",
+                    "sku": "3608493.249444.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-aurora/?sku=3608493.249444.0.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "10595595"
+                    "id_variacao": "10595595",
+                    "sku": "3608493.249444.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-aurora/?sku=3608493.249444.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "10595594"
+                    "id_variacao": "10595594",
+                    "sku": "3608493.249444.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-aurora/?sku=3608493.249444.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "10595597"
+                    "id_variacao": "10595597",
+                    "sku": "3608493.249444.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-aurora/?sku=3608493.249444.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10595596"
+                    "id_variacao": "10595596",
+                    "sku": "3608493.249444.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-aurora/?sku=3608493.249444.0.324742"
                 }
             }
         },
@@ -8108,38 +10076,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595599"
+                    "id_variacao": "10595599",
+                    "sku": "3608494.260791.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-patricia/?sku=3608494.260791.0.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "10595598"
+                    "id_variacao": "10595598",
+                    "sku": "3608494.260791.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-patricia/?sku=3608494.260791.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "10595600"
+                    "id_variacao": "10595600",
+                    "sku": "3608494.260791.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-patricia/?sku=3608494.260791.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "10595601"
+                    "id_variacao": "10595601",
+                    "sku": "3608494.260791.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-patricia/?sku=3608494.260791.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10595602"
+                    "id_variacao": "10595602",
+                    "sku": "3608494.260791.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-patricia/?sku=3608494.260791.0.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "10595603"
+                    "id_variacao": "10595603",
+                    "sku": "3608494.260791.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-patricia/?sku=3608494.260791.0.324746"
                 }
             }
         },
@@ -8168,82 +10148,112 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 260.0,
         "cores": [
-            "Azul céu",
             "caramelo",
+            "Azul céu",
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Azul céu": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595606"
+                    "id_variacao": "10595606",
+                    "sku": "3608495.249444.434888.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-flor/?sku=3608495.249444.434888.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10595607"
+                    "id_variacao": "10595607",
+                    "sku": "3608495.249444.434888.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-flor/?sku=3608495.249444.434888.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "10595616"
+                    "id_variacao": "10595616",
+                    "sku": "3608495.249444.434888.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-flor/?sku=3608495.249444.434888.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10595614"
+                    "id_variacao": "10595614",
+                    "sku": "3608495.249444.434888.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-flor/?sku=3608495.249444.434888.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10595604"
+                    "id_variacao": "10595604",
+                    "sku": "3608495.249444.434888.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-flor/?sku=3608495.249444.434888.324742"
                 }
             },
             "OFF WHITE": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "10595608"
+                    "id_variacao": "10595608",
+                    "sku": "3608495.249444.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-flor/?sku=3608495.249444.404545.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "10595610"
+                    "id_variacao": "10595610",
+                    "sku": "3608495.249444.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-flor/?sku=3608495.249444.404545.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "10595612"
+                    "id_variacao": "10595612",
+                    "sku": "3608495.249444.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-flor/?sku=3608495.249444.404545.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10595613"
+                    "id_variacao": "10595613",
+                    "sku": "3608495.249444.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-flor/?sku=3608495.249444.404545.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10595904"
+                    "id_variacao": "10595904",
+                    "sku": "3608495.249444.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-flor/?sku=3608495.249444.404545.324742"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595609"
+                    "id_variacao": "10595609",
+                    "sku": "3608495.249444.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-flor/?sku=3608495.249444.404551.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10595605"
+                    "id_variacao": "10595605",
+                    "sku": "3608495.249444.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-flor/?sku=3608495.249444.404551.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "10595615"
+                    "id_variacao": "10595615",
+                    "sku": "3608495.249444.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-flor/?sku=3608495.249444.404551.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10595905"
+                    "id_variacao": "10595905",
+                    "sku": "3608495.249444.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-flor/?sku=3608495.249444.404551.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10595611"
+                    "id_variacao": "10595611",
+                    "sku": "3608495.249444.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-flor/?sku=3608495.249444.404551.324742"
                 }
             }
         },
@@ -8276,50 +10286,64 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 305.9,
         "cores": [
+            "Preto",
             "Azul céu",
-            "caramelo",
-            "Preto"
+            "caramelo"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Azul céu": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12220209"
+                    "id_variacao": "12220209",
+                    "sku": "3608497.249014.434888.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-helena/?sku=3608497.249014.434888.324743"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595646"
+                    "id_variacao": "10595646",
+                    "sku": "3608497.249014.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-helena/?sku=3608497.249014.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "10595642"
+                    "id_variacao": "10595642",
+                    "sku": "3608497.249014.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-helena/?sku=3608497.249014.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "10595632"
+                    "id_variacao": "10595632",
+                    "sku": "3608497.249014.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-helena/?sku=3608497.249014.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "10595641"
+                    "id_variacao": "10595641",
+                    "sku": "3608497.249014.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-helena/?sku=3608497.249014.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10595637"
+                    "id_variacao": "10595637",
+                    "sku": "3608497.249014.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-helena/?sku=3608497.249014.404542.324742"
                 }
             },
             "caramelo": {
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12220210"
+                    "id_variacao": "12220210",
+                    "sku": "3608497.249014.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-helena/?sku=3608497.249014.404551.324742"
                 }
             }
         },
@@ -8359,55 +10383,75 @@ const STILETTO_PRODUCTS = [
             "Cinza"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Cinza": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595649"
+                    "id_variacao": "10595649",
+                    "sku": "3608498.260790.404556.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-mari/?sku=3608498.260790.404556.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "10595651"
+                    "id_variacao": "10595651",
+                    "sku": "3608498.260790.404556.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-mari/?sku=3608498.260790.404556.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "10595653"
+                    "id_variacao": "10595653",
+                    "sku": "3608498.260790.404556.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-mari/?sku=3608498.260790.404556.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "10595652"
+                    "id_variacao": "10595652",
+                    "sku": "3608498.260790.404556.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-mari/?sku=3608498.260790.404556.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12220211"
+                    "id_variacao": "12220211",
+                    "sku": "3608498.260790.404556.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-mari/?sku=3608498.260790.404556.324742"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595648"
+                    "id_variacao": "10595648",
+                    "sku": "3608498.260790.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-mari/?sku=3608498.260790.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10595654"
+                    "id_variacao": "10595654",
+                    "sku": "3608498.260790.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-mari/?sku=3608498.260790.404542.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "10595647"
+                    "id_variacao": "10595647",
+                    "sku": "3608498.260790.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-mari/?sku=3608498.260790.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "10595650"
+                    "id_variacao": "10595650",
+                    "sku": "3608498.260790.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-mari/?sku=3608498.260790.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12220212"
+                    "id_variacao": "12220212",
+                    "sku": "3608498.260790.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-mari/?sku=3608498.260790.404542.324742"
                 }
             }
         },
@@ -8442,64 +10486,88 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12220213"
+                    "id_variacao": "12220213",
+                    "sku": "3608499.260789.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-ivi/?sku=3608499.260789.404545.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "10595655"
+                    "id_variacao": "10595655",
+                    "sku": "3608499.260789.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-ivi/?sku=3608499.260789.404545.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "12220214"
+                    "id_variacao": "12220214",
+                    "sku": "3608499.260789.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-ivi/?sku=3608499.260789.404545.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12220215"
+                    "id_variacao": "12220215",
+                    "sku": "3608499.260789.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-ivi/?sku=3608499.260789.404545.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12220216"
+                    "id_variacao": "12220216",
+                    "sku": "3608499.260789.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-ivi/?sku=3608499.260789.404545.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "10595656"
+                    "id_variacao": "10595656",
+                    "sku": "3608499.260789.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-ivi/?sku=3608499.260789.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "10595659"
+                    "id_variacao": "10595659",
+                    "sku": "3608499.260789.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-ivi/?sku=3608499.260789.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "12220217"
+                    "id_variacao": "12220217",
+                    "sku": "3608499.260789.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-ivi/?sku=3608499.260789.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "12220218"
+                    "id_variacao": "12220218",
+                    "sku": "3608499.260789.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-ivi/?sku=3608499.260789.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10595658"
+                    "id_variacao": "10595658",
+                    "sku": "3608499.260789.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-ivi/?sku=3608499.260789.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10595657"
+                    "id_variacao": "10595657",
+                    "sku": "3608499.260789.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-ivi/?sku=3608499.260789.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "12220219"
+                    "id_variacao": "12220219",
+                    "sku": "3608499.260789.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-ivi/?sku=3608499.260789.404542.324746"
                 }
             }
         },
@@ -8535,55 +10603,75 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595669"
+                    "id_variacao": "10595669",
+                    "sku": "3608500.260790.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-bia/?sku=3608500.260790.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10595661"
+                    "id_variacao": "10595661",
+                    "sku": "3608500.260790.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-bia/?sku=3608500.260790.404542.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "10595664"
+                    "id_variacao": "10595664",
+                    "sku": "3608500.260790.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-bia/?sku=3608500.260790.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10595666"
+                    "id_variacao": "10595666",
+                    "sku": "3608500.260790.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-bia/?sku=3608500.260790.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10595663"
+                    "id_variacao": "10595663",
+                    "sku": "3608500.260790.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-bia/?sku=3608500.260790.404542.324742"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "10595660"
+                    "id_variacao": "10595660",
+                    "sku": "3608500.260790.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-bia/?sku=3608500.260790.404551.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10595667"
+                    "id_variacao": "10595667",
+                    "sku": "3608500.260790.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-bia/?sku=3608500.260790.404551.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "10595665"
+                    "id_variacao": "10595665",
+                    "sku": "3608500.260790.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-bia/?sku=3608500.260790.404551.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10595662"
+                    "id_variacao": "10595662",
+                    "sku": "3608500.260790.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-bia/?sku=3608500.260790.404551.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10595668"
+                    "id_variacao": "10595668",
+                    "sku": "3608500.260790.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-bia/?sku=3608500.260790.404551.324742"
                 }
             }
         },
@@ -8618,64 +10706,88 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595678"
+                    "id_variacao": "10595678",
+                    "sku": "3608501.260791.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-marta/?sku=3608501.260791.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "10595677"
+                    "id_variacao": "10595677",
+                    "sku": "3608501.260791.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-marta/?sku=3608501.260791.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "10595671"
+                    "id_variacao": "10595671",
+                    "sku": "3608501.260791.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-marta/?sku=3608501.260791.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10595674"
+                    "id_variacao": "10595674",
+                    "sku": "3608501.260791.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-marta/?sku=3608501.260791.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10595679"
+                    "id_variacao": "10595679",
+                    "sku": "3608501.260791.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-marta/?sku=3608501.260791.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "10595670"
+                    "id_variacao": "10595670",
+                    "sku": "3608501.260791.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-marta/?sku=3608501.260791.404542.324746"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595680"
+                    "id_variacao": "10595680",
+                    "sku": "3608501.260791.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-marta/?sku=3608501.260791.404551.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "10595672"
+                    "id_variacao": "10595672",
+                    "sku": "3608501.260791.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-marta/?sku=3608501.260791.404551.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "10595673"
+                    "id_variacao": "10595673",
+                    "sku": "3608501.260791.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-marta/?sku=3608501.260791.404551.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "10595681"
+                    "id_variacao": "10595681",
+                    "sku": "3608501.260791.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-marta/?sku=3608501.260791.404551.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10595676"
+                    "id_variacao": "10595676",
+                    "sku": "3608501.260791.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-marta/?sku=3608501.260791.404551.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "10595675"
+                    "id_variacao": "10595675",
+                    "sku": "3608501.260791.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-marta/?sku=3608501.260791.404551.324746"
                 }
             }
         },
@@ -8710,55 +10822,75 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595683"
+                    "id_variacao": "10595683",
+                    "sku": "3608502.249444.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-bruna/?sku=3608502.249444.404545.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "10595685"
+                    "id_variacao": "10595685",
+                    "sku": "3608502.249444.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-bruna/?sku=3608502.249444.404545.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "10595691"
+                    "id_variacao": "10595691",
+                    "sku": "3608502.249444.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-bruna/?sku=3608502.249444.404545.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "10595682"
+                    "id_variacao": "10595682",
+                    "sku": "3608502.249444.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-bruna/?sku=3608502.249444.404545.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10595687"
+                    "id_variacao": "10595687",
+                    "sku": "3608502.249444.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-bruna/?sku=3608502.249444.404545.324742"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595689"
+                    "id_variacao": "10595689",
+                    "sku": "3608502.249444.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-bruna/?sku=3608502.249444.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10595692"
+                    "id_variacao": "10595692",
+                    "sku": "3608502.249444.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-bruna/?sku=3608502.249444.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "10595684"
+                    "id_variacao": "10595684",
+                    "sku": "3608502.249444.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-bruna/?sku=3608502.249444.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "10595690"
+                    "id_variacao": "10595690",
+                    "sku": "3608502.249444.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-bruna/?sku=3608502.249444.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10595686"
+                    "id_variacao": "10595686",
+                    "sku": "3608502.249444.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-bruna/?sku=3608502.249444.404542.324742"
                 }
             }
         },
@@ -8794,64 +10926,88 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Azul escuro": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595893"
+                    "id_variacao": "10595893",
+                    "sku": "3608574.260790.404563.324743",
+                    "url_variacao": "https://loja.usebede.com.br/papete-maria/?sku=3608574.260790.404563.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10595900"
+                    "id_variacao": "10595900",
+                    "sku": "3608574.260790.404563.324745",
+                    "url_variacao": "https://loja.usebede.com.br/papete-maria/?sku=3608574.260790.404563.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "10595903"
+                    "id_variacao": "10595903",
+                    "sku": "3608574.260790.404563.324744",
+                    "url_variacao": "https://loja.usebede.com.br/papete-maria/?sku=3608574.260790.404563.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "10595902"
+                    "id_variacao": "10595902",
+                    "sku": "3608574.260790.404563.324741",
+                    "url_variacao": "https://loja.usebede.com.br/papete-maria/?sku=3608574.260790.404563.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10595898"
+                    "id_variacao": "10595898",
+                    "sku": "3608574.260790.404563.324742",
+                    "url_variacao": "https://loja.usebede.com.br/papete-maria/?sku=3608574.260790.404563.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "10595894"
+                    "id_variacao": "10595894",
+                    "sku": "3608574.260790.404563.324746",
+                    "url_variacao": "https://loja.usebede.com.br/papete-maria/?sku=3608574.260790.404563.324746"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10595895"
+                    "id_variacao": "10595895",
+                    "sku": "3608574.260790.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/papete-maria/?sku=3608574.260790.404551.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10595896"
+                    "id_variacao": "10595896",
+                    "sku": "3608574.260790.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/papete-maria/?sku=3608574.260790.404551.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "10595899"
+                    "id_variacao": "10595899",
+                    "sku": "3608574.260790.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/papete-maria/?sku=3608574.260790.404551.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10595897"
+                    "id_variacao": "10595897",
+                    "sku": "3608574.260790.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/papete-maria/?sku=3608574.260790.404551.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10595901"
+                    "id_variacao": "10595901",
+                    "sku": "3608574.260790.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/papete-maria/?sku=3608574.260790.404551.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "10595887"
+                    "id_variacao": "10595887",
+                    "sku": "3608574.260790.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/papete-maria/?sku=3608574.260790.404551.324746"
                 }
             }
         },
@@ -8885,121 +11041,169 @@ const STILETTO_PRODUCTS = [
         "preco": 159.9,
         "cores": [
             "Preto",
-            "VERMELHO VERNIZ",
             "OFF WHITE VERNIZ",
+            "VERMELHO VERNIZ",
             "PRETO VERNIZ"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE VERNIZ": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "10610972"
+                    "id_variacao": "10610972",
+                    "sku": "3614779.249444.435717.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.435717.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10610956"
+                    "id_variacao": "10610956",
+                    "sku": "3614779.249444.435717.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.435717.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "10610949"
+                    "id_variacao": "10610949",
+                    "sku": "3614779.249444.435717.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.435717.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10610971"
+                    "id_variacao": "10610971",
+                    "sku": "3614779.249444.435717.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.435717.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10610965"
+                    "id_variacao": "10610965",
+                    "sku": "3614779.249444.435717.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.435717.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "10610959"
+                    "id_variacao": "10610959",
+                    "sku": "3614779.249444.435717.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.435717.324746"
                 }
             },
             "PRETO VERNIZ": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10610961"
+                    "id_variacao": "10610961",
+                    "sku": "3614779.249444.416935.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.416935.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10610962"
+                    "id_variacao": "10610962",
+                    "sku": "3614779.249444.416935.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.416935.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "10610963"
+                    "id_variacao": "10610963",
+                    "sku": "3614779.249444.416935.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.416935.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10610964"
+                    "id_variacao": "10610964",
+                    "sku": "3614779.249444.416935.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.416935.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10610960"
+                    "id_variacao": "10610960",
+                    "sku": "3614779.249444.416935.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.416935.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "10610967"
+                    "id_variacao": "10610967",
+                    "sku": "3614779.249444.416935.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.416935.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "10610950"
+                    "id_variacao": "10610950",
+                    "sku": "3614779.249444.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10610966"
+                    "id_variacao": "10610966",
+                    "sku": "3614779.249444.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "10610952"
+                    "id_variacao": "10610952",
+                    "sku": "3614779.249444.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10610951"
+                    "id_variacao": "10610951",
+                    "sku": "3614779.249444.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10610957"
+                    "id_variacao": "10610957",
+                    "sku": "3614779.249444.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "10610968"
+                    "id_variacao": "10610968",
+                    "sku": "3614779.249444.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.404542.324746"
                 }
             },
             "VERMELHO VERNIZ": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "10610954"
+                    "id_variacao": "10610954",
+                    "sku": "3614779.249444.435718.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.435718.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10610958"
+                    "id_variacao": "10610958",
+                    "sku": "3614779.249444.435718.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.435718.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "10610953"
+                    "id_variacao": "10610953",
+                    "sku": "3614779.249444.435718.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.435718.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10610969"
+                    "id_variacao": "10610969",
+                    "sku": "3614779.249444.435718.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.435718.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10610955"
+                    "id_variacao": "10610955",
+                    "sku": "3614779.249444.435718.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.435718.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "10610970"
+                    "id_variacao": "10610970",
+                    "sku": "3614779.249444.435718.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-sigtuna/?sku=3614779.249444.435718.324746"
                 }
             }
         },
@@ -9050,38 +11254,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10613385"
+                    "id_variacao": "10613385",
+                    "sku": "3615386.249444.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-julia/?sku=3615386.249444.0.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "10613390"
+                    "id_variacao": "10613390",
+                    "sku": "3615386.249444.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-julia/?sku=3615386.249444.0.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "10613387"
+                    "id_variacao": "10613387",
+                    "sku": "3615386.249444.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-julia/?sku=3615386.249444.0.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "10613389"
+                    "id_variacao": "10613389",
+                    "sku": "3615386.249444.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-julia/?sku=3615386.249444.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10613386"
+                    "id_variacao": "10613386",
+                    "sku": "3615386.249444.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-julia/?sku=3615386.249444.0.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "10613388"
+                    "id_variacao": "10613388",
+                    "sku": "3615386.249444.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-julia/?sku=3615386.249444.0.324746"
                 }
             }
         },
@@ -9108,43 +11324,57 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
-            "38",
-            "35",
             "33",
+            "38",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "33": {
                     "qtd": 1,
-                    "id_variacao": "10613396"
+                    "id_variacao": "10613396",
+                    "sku": "3615388.249444.0.324747",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-carmen/?sku=3615388.249444.0.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10613397"
+                    "id_variacao": "10613397",
+                    "sku": "3615388.249444.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-carmen/?sku=3615388.249444.0.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "10613391"
+                    "id_variacao": "10613391",
+                    "sku": "3615388.249444.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-carmen/?sku=3615388.249444.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "10613394"
+                    "id_variacao": "10613394",
+                    "sku": "3615388.249444.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-carmen/?sku=3615388.249444.0.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "10613395"
+                    "id_variacao": "10613395",
+                    "sku": "3615388.249444.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-carmen/?sku=3615388.249444.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10613398"
+                    "id_variacao": "10613398",
+                    "sku": "3615388.249444.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-carmen/?sku=3615388.249444.0.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "10613399"
+                    "id_variacao": "10613399",
+                    "sku": "3615388.249444.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-carmen/?sku=3615388.249444.0.324746"
                 }
             }
         },
@@ -9171,43 +11401,57 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
-            "38",
-            "35",
             "33",
+            "38",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "33": {
                     "qtd": 1,
-                    "id_variacao": "10613401"
+                    "id_variacao": "10613401",
+                    "sku": "3615389.249444.0.324747",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-camila/?sku=3615389.249444.0.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10613402"
+                    "id_variacao": "10613402",
+                    "sku": "3615389.249444.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-camila/?sku=3615389.249444.0.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "10613404"
+                    "id_variacao": "10613404",
+                    "sku": "3615389.249444.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-camila/?sku=3615389.249444.0.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "10613403"
+                    "id_variacao": "10613403",
+                    "sku": "3615389.249444.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-camila/?sku=3615389.249444.0.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "10613400"
+                    "id_variacao": "10613400",
+                    "sku": "3615389.249444.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-camila/?sku=3615389.249444.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10613406"
+                    "id_variacao": "10613406",
+                    "sku": "3615389.249444.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-camila/?sku=3615389.249444.0.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "10613405"
+                    "id_variacao": "10613405",
+                    "sku": "3615389.249444.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-camila/?sku=3615389.249444.0.324746"
                 }
             }
         },
@@ -9234,38 +11478,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10613410"
+                    "id_variacao": "10613410",
+                    "sku": "3615390.249444.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-rosa/?sku=3615390.249444.0.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "10613408"
+                    "id_variacao": "10613408",
+                    "sku": "3615390.249444.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-rosa/?sku=3615390.249444.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "10613407"
+                    "id_variacao": "10613407",
+                    "sku": "3615390.249444.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-rosa/?sku=3615390.249444.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "10613411"
+                    "id_variacao": "10613411",
+                    "sku": "3615390.249444.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-rosa/?sku=3615390.249444.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10613412"
+                    "id_variacao": "10613412",
+                    "sku": "3615390.249444.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-rosa/?sku=3615390.249444.0.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "10613409"
+                    "id_variacao": "10613409",
+                    "sku": "3615390.249444.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-rosa/?sku=3615390.249444.0.324746"
                 }
             }
         },
@@ -9292,43 +11548,57 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
-            "38",
-            "35",
             "33",
+            "38",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "33": {
                     "qtd": 1,
-                    "id_variacao": "10613414"
+                    "id_variacao": "10613414",
+                    "sku": "3615391.249444.0.324747",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ella/?sku=3615391.249444.0.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10613417"
+                    "id_variacao": "10613417",
+                    "sku": "3615391.249444.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ella/?sku=3615391.249444.0.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "10613418"
+                    "id_variacao": "10613418",
+                    "sku": "3615391.249444.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ella/?sku=3615391.249444.0.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "10613415"
+                    "id_variacao": "10613415",
+                    "sku": "3615391.249444.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ella/?sku=3615391.249444.0.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "10613419"
+                    "id_variacao": "10613419",
+                    "sku": "3615391.249444.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ella/?sku=3615391.249444.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10613413"
+                    "id_variacao": "10613413",
+                    "sku": "3615391.249444.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ella/?sku=3615391.249444.0.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "10613416"
+                    "id_variacao": "10613416",
+                    "sku": "3615391.249444.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ella/?sku=3615391.249444.0.324746"
                 }
             }
         },
@@ -9358,73 +11628,101 @@ const STILETTO_PRODUCTS = [
             "nude"
         ],
         "tamanhos": [
-            "37",
-            "36",
-            "38",
-            "35",
             "33",
+            "38",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "33": {
                     "qtd": 1,
-                    "id_variacao": "10949051"
+                    "id_variacao": "10949051",
+                    "sku": "3718732.249814.404542.324747",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-ouro/?sku=3718732.249814.404542.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "10949045"
+                    "id_variacao": "10949045",
+                    "sku": "3718732.249814.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-ouro/?sku=3718732.249814.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "10949043"
+                    "id_variacao": "10949043",
+                    "sku": "3718732.249814.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-ouro/?sku=3718732.249814.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "10949050"
+                    "id_variacao": "10949050",
+                    "sku": "3718732.249814.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-ouro/?sku=3718732.249814.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10949044"
+                    "id_variacao": "10949044",
+                    "sku": "3718732.249814.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-ouro/?sku=3718732.249814.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "10949046"
+                    "id_variacao": "10949046",
+                    "sku": "3718732.249814.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-ouro/?sku=3718732.249814.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "10949042"
+                    "id_variacao": "10949042",
+                    "sku": "3718732.249814.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-ouro/?sku=3718732.249814.404542.324746"
                 }
             },
             "nude": {
                 "33": {
                     "qtd": 1,
-                    "id_variacao": "10949048"
+                    "id_variacao": "10949048",
+                    "sku": "3718732.249814.404550.324747",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-ouro/?sku=3718732.249814.404550.324747"
                 },
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "10949052"
+                    "id_variacao": "10949052",
+                    "sku": "3718732.249814.404550.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-ouro/?sku=3718732.249814.404550.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "10949047"
+                    "id_variacao": "10949047",
+                    "sku": "3718732.249814.404550.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-ouro/?sku=3718732.249814.404550.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "10949049"
+                    "id_variacao": "10949049",
+                    "sku": "3718732.249814.404550.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-ouro/?sku=3718732.249814.404550.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "10949053"
+                    "id_variacao": "10949053",
+                    "sku": "3718732.249814.404550.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-ouro/?sku=3718732.249814.404550.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "10949040"
+                    "id_variacao": "10949040",
+                    "sku": "3718732.249814.404550.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-ouro/?sku=3718732.249814.404550.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "10949041"
+                    "id_variacao": "10949041",
+                    "sku": "3718732.249814.404550.324746",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-ouro/?sku=3718732.249814.404550.324746"
                 }
             }
         },
@@ -9471,77 +11769,107 @@ const STILETTO_PRODUCTS = [
             "cafe"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12219148"
+                    "id_variacao": "12219148",
+                    "sku": "4097379.245892.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-longo/?sku=4097379.245892.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "12219149"
+                    "id_variacao": "12219149",
+                    "sku": "4097379.245892.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-longo/?sku=4097379.245892.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12219150"
+                    "id_variacao": "12219150",
+                    "sku": "4097379.245892.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-longo/?sku=4097379.245892.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12219151"
+                    "id_variacao": "12219151",
+                    "sku": "4097379.245892.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-longo/?sku=4097379.245892.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12219152"
+                    "id_variacao": "12219152",
+                    "sku": "4097379.245892.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-longo/?sku=4097379.245892.404542.324742"
                 }
             },
             "SALMON": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12219153"
+                    "id_variacao": "12219153",
+                    "sku": "4097379.245892.404558.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-longo/?sku=4097379.245892.404558.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "12219154"
+                    "id_variacao": "12219154",
+                    "sku": "4097379.245892.404558.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-longo/?sku=4097379.245892.404558.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "12219155"
+                    "id_variacao": "12219155",
+                    "sku": "4097379.245892.404558.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-longo/?sku=4097379.245892.404558.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "12219156"
+                    "id_variacao": "12219156",
+                    "sku": "4097379.245892.404558.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-longo/?sku=4097379.245892.404558.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12219157"
+                    "id_variacao": "12219157",
+                    "sku": "4097379.245892.404558.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-longo/?sku=4097379.245892.404558.324742"
                 }
             },
             "cafe": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12219143"
+                    "id_variacao": "12219143",
+                    "sku": "4097379.245892.404557.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-longo/?sku=4097379.245892.404557.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "12219144"
+                    "id_variacao": "12219144",
+                    "sku": "4097379.245892.404557.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-longo/?sku=4097379.245892.404557.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "12219145"
+                    "id_variacao": "12219145",
+                    "sku": "4097379.245892.404557.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-longo/?sku=4097379.245892.404557.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12219146"
+                    "id_variacao": "12219146",
+                    "sku": "4097379.245892.404557.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-longo/?sku=4097379.245892.404557.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12219147"
+                    "id_variacao": "12219147",
+                    "sku": "4097379.245892.404557.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-malha-cano-longo/?sku=4097379.245892.404557.324742"
                 }
             }
         },
@@ -9582,38 +11910,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12219603"
+                    "id_variacao": "12219603",
+                    "sku": "4097464.245892.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-sara-cano-longo/?sku=4097464.245892.0.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "12219604"
+                    "id_variacao": "12219604",
+                    "sku": "4097464.245892.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-sara-cano-longo/?sku=4097464.245892.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "12219605"
+                    "id_variacao": "12219605",
+                    "sku": "4097464.245892.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-sara-cano-longo/?sku=4097464.245892.0.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12219607"
+                    "id_variacao": "12219607",
+                    "sku": "4097464.245892.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-sara-cano-longo/?sku=4097464.245892.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12219608"
+                    "id_variacao": "12219608",
+                    "sku": "4097464.245892.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-sara-cano-longo/?sku=4097464.245892.0.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "16465317"
+                    "id_variacao": "16465317",
+                    "sku": "4097464.245892.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-sara-cano-longo/?sku=4097464.245892.0.324746"
                 }
             }
         },
@@ -9642,38 +11982,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12352141"
+                    "id_variacao": "12352141",
+                    "sku": "4135409.245895.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-sofi/?sku=4135409.245895.0.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12352142"
+                    "id_variacao": "12352142",
+                    "sku": "4135409.245895.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-sofi/?sku=4135409.245895.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "12352143"
+                    "id_variacao": "12352143",
+                    "sku": "4135409.245895.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-sofi/?sku=4135409.245895.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "12352144"
+                    "id_variacao": "12352144",
+                    "sku": "4135409.245895.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-sofi/?sku=4135409.245895.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12352145"
+                    "id_variacao": "12352145",
+                    "sku": "4135409.245895.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-sofi/?sku=4135409.245895.0.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12352146"
+                    "id_variacao": "12352146",
+                    "sku": "4135409.245895.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-sofi/?sku=4135409.245895.0.324746"
                 }
             }
         },
@@ -9699,95 +12051,131 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 199.9,
         "cores": [
-            "cafe",
+            "vaca",
             "preta",
-            "vaca"
+            "cafe"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "cafe": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12352147"
+                    "id_variacao": "12352147",
+                    "sku": "4135410.245893.404557.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-nanda/?sku=4135410.245893.404557.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "12352149"
+                    "id_variacao": "12352149",
+                    "sku": "4135410.245893.404557.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-nanda/?sku=4135410.245893.404557.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "12352150"
+                    "id_variacao": "12352150",
+                    "sku": "4135410.245893.404557.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-nanda/?sku=4135410.245893.404557.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12352151"
+                    "id_variacao": "12352151",
+                    "sku": "4135410.245893.404557.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-nanda/?sku=4135410.245893.404557.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12352152"
+                    "id_variacao": "12352152",
+                    "sku": "4135410.245893.404557.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-nanda/?sku=4135410.245893.404557.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12352153"
+                    "id_variacao": "12352153",
+                    "sku": "4135410.245893.404557.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-nanda/?sku=4135410.245893.404557.324746"
                 }
             },
             "preta": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12352154"
+                    "id_variacao": "12352154",
+                    "sku": "4135410.245893.410925.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-nanda/?sku=4135410.245893.410925.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12352155"
+                    "id_variacao": "12352155",
+                    "sku": "4135410.245893.410925.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-nanda/?sku=4135410.245893.410925.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "12352156"
+                    "id_variacao": "12352156",
+                    "sku": "4135410.245893.410925.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-nanda/?sku=4135410.245893.410925.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "12352157"
+                    "id_variacao": "12352157",
+                    "sku": "4135410.245893.410925.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-nanda/?sku=4135410.245893.410925.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12352158"
+                    "id_variacao": "12352158",
+                    "sku": "4135410.245893.410925.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-nanda/?sku=4135410.245893.410925.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12352159"
+                    "id_variacao": "12352159",
+                    "sku": "4135410.245893.410925.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-nanda/?sku=4135410.245893.410925.324746"
                 }
             },
             "vaca": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "13901242"
+                    "id_variacao": "13901242",
+                    "sku": "4135410.245893.536204.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-nanda/?sku=4135410.245893.536204.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "13901243"
+                    "id_variacao": "13901243",
+                    "sku": "4135410.245893.536204.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-nanda/?sku=4135410.245893.536204.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "13901250"
+                    "id_variacao": "13901250",
+                    "sku": "4135410.245893.536204.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-nanda/?sku=4135410.245893.536204.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "13901251"
+                    "id_variacao": "13901251",
+                    "sku": "4135410.245893.536204.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-nanda/?sku=4135410.245893.536204.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "13901252"
+                    "id_variacao": "13901252",
+                    "sku": "4135410.245893.536204.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-nanda/?sku=4135410.245893.536204.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "13901253"
+                    "id_variacao": "13901253",
+                    "sku": "4135410.245893.536204.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-nanda/?sku=4135410.245893.536204.324746"
                 }
             }
         },
@@ -9824,64 +12212,88 @@ const STILETTO_PRODUCTS = [
             "onça"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "onça": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12360837"
+                    "id_variacao": "12360837",
+                    "sku": "4137286.245895.490680.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-animal/?sku=4137286.245895.490680.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12360886"
+                    "id_variacao": "12360886",
+                    "sku": "4137286.245895.490680.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-animal/?sku=4137286.245895.490680.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "12360895"
+                    "id_variacao": "12360895",
+                    "sku": "4137286.245895.490680.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-animal/?sku=4137286.245895.490680.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12360896"
+                    "id_variacao": "12360896",
+                    "sku": "4137286.245895.490680.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-animal/?sku=4137286.245895.490680.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12360897"
+                    "id_variacao": "12360897",
+                    "sku": "4137286.245895.490680.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-animal/?sku=4137286.245895.490680.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "12360899"
+                    "id_variacao": "12360899",
+                    "sku": "4137286.245895.490680.324746",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-animal/?sku=4137286.245895.490680.324746"
                 }
             },
             "zebra": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12360900"
+                    "id_variacao": "12360900",
+                    "sku": "4137286.245895.490683.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-animal/?sku=4137286.245895.490683.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "12360901"
+                    "id_variacao": "12360901",
+                    "sku": "4137286.245895.490683.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-animal/?sku=4137286.245895.490683.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "12360902"
+                    "id_variacao": "12360902",
+                    "sku": "4137286.245895.490683.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-animal/?sku=4137286.245895.490683.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12360909"
+                    "id_variacao": "12360909",
+                    "sku": "4137286.245895.490683.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-animal/?sku=4137286.245895.490683.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12360910"
+                    "id_variacao": "12360910",
+                    "sku": "4137286.245895.490683.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-animal/?sku=4137286.245895.490683.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "12360911"
+                    "id_variacao": "12360911",
+                    "sku": "4137286.245895.490683.324746",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-animal/?sku=4137286.245895.490683.324746"
                 }
             }
         },
@@ -9914,108 +12326,150 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 239.9,
         "cores": [
-            "caramelo",
             "Cinza",
-            "MARSALA"
+            "MARSALA",
+            "caramelo"
         ],
         "tamanhos": [
-            "37",
-            "36",
-            "38",
-            "35",
             "33",
+            "38",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Cinza": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "12360912"
+                    "id_variacao": "12360912",
+                    "sku": "4137293.249014.404556.324747",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404556.324747"
                 },
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12360918"
+                    "id_variacao": "12360918",
+                    "sku": "4137293.249014.404556.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404556.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "12360919"
+                    "id_variacao": "12360919",
+                    "sku": "4137293.249014.404556.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404556.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "12360920"
+                    "id_variacao": "12360920",
+                    "sku": "4137293.249014.404556.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404556.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12360921"
+                    "id_variacao": "12360921",
+                    "sku": "4137293.249014.404556.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404556.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12360922"
+                    "id_variacao": "12360922",
+                    "sku": "4137293.249014.404556.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404556.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12360923"
+                    "id_variacao": "12360923",
+                    "sku": "4137293.249014.404556.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404556.324746"
                 }
             },
             "MARSALA": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "12360924"
+                    "id_variacao": "12360924",
+                    "sku": "4137293.249014.404552.324747",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404552.324747"
                 },
                 "34": {
                     "qtd": 11,
-                    "id_variacao": "12360925"
+                    "id_variacao": "12360925",
+                    "sku": "4137293.249014.404552.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404552.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "12360926"
+                    "id_variacao": "12360926",
+                    "sku": "4137293.249014.404552.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404552.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "12360927"
+                    "id_variacao": "12360927",
+                    "sku": "4137293.249014.404552.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404552.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12360928"
+                    "id_variacao": "12360928",
+                    "sku": "4137293.249014.404552.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404552.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12360929"
+                    "id_variacao": "12360929",
+                    "sku": "4137293.249014.404552.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404552.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12360930"
+                    "id_variacao": "12360930",
+                    "sku": "4137293.249014.404552.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404552.324746"
                 }
             },
             "caramelo": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "13901647"
+                    "id_variacao": "13901647",
+                    "sku": "4137293.249014.404551.324747",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404551.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "13901648"
+                    "id_variacao": "13901648",
+                    "sku": "4137293.249014.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404551.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "13901649"
+                    "id_variacao": "13901649",
+                    "sku": "4137293.249014.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404551.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "13901650"
+                    "id_variacao": "13901650",
+                    "sku": "4137293.249014.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404551.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "13901651"
+                    "id_variacao": "13901651",
+                    "sku": "4137293.249014.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404551.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "13901652"
+                    "id_variacao": "13901652",
+                    "sku": "4137293.249014.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404551.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "13901653"
+                    "id_variacao": "13901653",
+                    "sku": "4137293.249014.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-marta/?sku=4137293.249014.404551.324746"
                 }
             }
         },
@@ -10054,95 +12508,131 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 339.9,
         "cores": [
-            "caramelo",
             "Marrom",
-            "azul marinho"
+            "azul marinho",
+            "caramelo"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Marrom": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12536108"
+                    "id_variacao": "12536108",
+                    "sku": "4137441.245891.404555.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-amanda/?sku=4137441.245891.404555.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "12536109"
+                    "id_variacao": "12536109",
+                    "sku": "4137441.245891.404555.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-amanda/?sku=4137441.245891.404555.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "12536110"
+                    "id_variacao": "12536110",
+                    "sku": "4137441.245891.404555.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-amanda/?sku=4137441.245891.404555.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12536111"
+                    "id_variacao": "12536111",
+                    "sku": "4137441.245891.404555.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-amanda/?sku=4137441.245891.404555.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12536112"
+                    "id_variacao": "12536112",
+                    "sku": "4137441.245891.404555.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-amanda/?sku=4137441.245891.404555.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12536113"
+                    "id_variacao": "12536113",
+                    "sku": "4137441.245891.404555.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-amanda/?sku=4137441.245891.404555.324746"
                 }
             },
             "azul marinho": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12362116"
+                    "id_variacao": "12362116",
+                    "sku": "4137441.245891.490717.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-amanda/?sku=4137441.245891.490717.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12362117"
+                    "id_variacao": "12362117",
+                    "sku": "4137441.245891.490717.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-amanda/?sku=4137441.245891.490717.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12362118"
+                    "id_variacao": "12362118",
+                    "sku": "4137441.245891.490717.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-amanda/?sku=4137441.245891.490717.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12362119"
+                    "id_variacao": "12362119",
+                    "sku": "4137441.245891.490717.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-amanda/?sku=4137441.245891.490717.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12362120"
+                    "id_variacao": "12362120",
+                    "sku": "4137441.245891.490717.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-amanda/?sku=4137441.245891.490717.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12362121"
+                    "id_variacao": "12362121",
+                    "sku": "4137441.245891.490717.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-amanda/?sku=4137441.245891.490717.324746"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12362122"
+                    "id_variacao": "12362122",
+                    "sku": "4137441.245891.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-amanda/?sku=4137441.245891.404551.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12362123"
+                    "id_variacao": "12362123",
+                    "sku": "4137441.245891.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-amanda/?sku=4137441.245891.404551.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12362124"
+                    "id_variacao": "12362124",
+                    "sku": "4137441.245891.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-amanda/?sku=4137441.245891.404551.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12362125"
+                    "id_variacao": "12362125",
+                    "sku": "4137441.245891.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-amanda/?sku=4137441.245891.404551.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12362126"
+                    "id_variacao": "12362126",
+                    "sku": "4137441.245891.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-amanda/?sku=4137441.245891.404551.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "12362127"
+                    "id_variacao": "12362127",
+                    "sku": "4137441.245891.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-amanda/?sku=4137441.245891.404551.324746"
                 }
             }
         },
@@ -10182,33 +12672,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12383269"
+                    "id_variacao": "12383269",
+                    "sku": "4141367.249814.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-helena/?sku=4141367.249814.0.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12383270"
+                    "id_variacao": "12383270",
+                    "sku": "4141367.249814.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-helena/?sku=4141367.249814.0.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12383271"
+                    "id_variacao": "12383271",
+                    "sku": "4141367.249814.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-helena/?sku=4141367.249814.0.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12383272"
+                    "id_variacao": "12383272",
+                    "sku": "4141367.249814.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-helena/?sku=4141367.249814.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12383273"
+                    "id_variacao": "12383273",
+                    "sku": "4141367.249814.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-helena/?sku=4141367.249814.0.324742"
                 }
             }
         },
@@ -10237,38 +12737,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12383274"
+                    "id_variacao": "12383274",
+                    "sku": "4141368.245893.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-helena/?sku=4141368.245893.0.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12383275"
+                    "id_variacao": "12383275",
+                    "sku": "4141368.245893.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-helena/?sku=4141368.245893.0.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12383276"
+                    "id_variacao": "12383276",
+                    "sku": "4141368.245893.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-helena/?sku=4141368.245893.0.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12383277"
+                    "id_variacao": "12383277",
+                    "sku": "4141368.245893.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-helena/?sku=4141368.245893.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12383278"
+                    "id_variacao": "12383278",
+                    "sku": "4141368.245893.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-helena/?sku=4141368.245893.0.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12383279"
+                    "id_variacao": "12383279",
+                    "sku": "4141368.245893.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sapatilha-helena/?sku=4141368.245893.0.324746"
                 }
             }
         },
@@ -10299,64 +12811,88 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12383285"
+                    "id_variacao": "12383285",
+                    "sku": "4141369.245897.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-jordana/?sku=4141369.245897.404545.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12383286"
+                    "id_variacao": "12383286",
+                    "sku": "4141369.245897.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-jordana/?sku=4141369.245897.404545.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12383287"
+                    "id_variacao": "12383287",
+                    "sku": "4141369.245897.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-jordana/?sku=4141369.245897.404545.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12383288"
+                    "id_variacao": "12383288",
+                    "sku": "4141369.245897.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-jordana/?sku=4141369.245897.404545.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12383289"
+                    "id_variacao": "12383289",
+                    "sku": "4141369.245897.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-jordana/?sku=4141369.245897.404545.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "12383290"
+                    "id_variacao": "12383290",
+                    "sku": "4141369.245897.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-jordana/?sku=4141369.245897.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12383291"
+                    "id_variacao": "12383291",
+                    "sku": "4141369.245897.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-jordana/?sku=4141369.245897.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12383292"
+                    "id_variacao": "12383292",
+                    "sku": "4141369.245897.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-jordana/?sku=4141369.245897.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12981766"
+                    "id_variacao": "12981766",
+                    "sku": "4141369.245897.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-jordana/?sku=4141369.245897.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12981767"
+                    "id_variacao": "12981767",
+                    "sku": "4141369.245897.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-jordana/?sku=4141369.245897.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12981768"
+                    "id_variacao": "12981768",
+                    "sku": "4141369.245897.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-jordana/?sku=4141369.245897.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "12981769"
+                    "id_variacao": "12981769",
+                    "sku": "4141369.245897.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-jordana/?sku=4141369.245897.404542.324746"
                 }
             }
         },
@@ -10388,38 +12924,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12383293"
+                    "id_variacao": "12383293",
+                    "sku": "4141370.245896.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mule-vera/?sku=4141370.245896.0.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12383294"
+                    "id_variacao": "12383294",
+                    "sku": "4141370.245896.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mule-vera/?sku=4141370.245896.0.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "12383295"
+                    "id_variacao": "12383295",
+                    "sku": "4141370.245896.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mule-vera/?sku=4141370.245896.0.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12383296"
+                    "id_variacao": "12383296",
+                    "sku": "4141370.245896.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mule-vera/?sku=4141370.245896.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12383297"
+                    "id_variacao": "12383297",
+                    "sku": "4141370.245896.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mule-vera/?sku=4141370.245896.0.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12383298"
+                    "id_variacao": "12383298",
+                    "sku": "4141370.245896.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mule-vera/?sku=4141370.245896.0.324746"
                 }
             }
         },
@@ -10445,11 +12993,11 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 169.0,
         "cores": [
-            "azul marinho",
-            "Marrom",
             "Cinza",
+            "OFF WHITE",
             "Preto",
-            "OFF WHITE"
+            "Marrom",
+            "azul marinho"
         ],
         "tamanhos": [
             "Único"
@@ -10458,31 +13006,41 @@ const STILETTO_PRODUCTS = [
             "Cinza": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "12451632"
+                    "id_variacao": "12451632",
+                    "sku": "4157584.245894.404556",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-bia/?sku=4157584.245894.404556"
                 }
             },
             "Marrom": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "12451633"
+                    "id_variacao": "12451633",
+                    "sku": "4157584.245894.404555",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-bia/?sku=4157584.245894.404555"
                 }
             },
             "OFF WHITE": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "12451634"
+                    "id_variacao": "12451634",
+                    "sku": "4157584.245894.404545",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-bia/?sku=4157584.245894.404545"
                 }
             },
             "Preto": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "12451635"
+                    "id_variacao": "12451635",
+                    "sku": "4157584.245894.404542",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-bia/?sku=4157584.245894.404542"
                 }
             },
             "azul marinho": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "12451631"
+                    "id_variacao": "12451631",
+                    "sku": "4157584.245894.490717",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-bia/?sku=4157584.245894.490717"
                 }
             }
         },
@@ -10532,12 +13090,12 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 549.0,
         "cores": [
-            "OFF WHITE",
-            "Vermelho escuro",
-            "Preto",
-            "DOURADA",
-            "nude",
             "caramelo",
+            "DOURADA",
+            "OFF WHITE",
+            "Preto",
+            "nude",
+            "Vermelho escuro",
             "Prata"
         ],
         "tamanhos": [
@@ -10547,43 +13105,57 @@ const STILETTO_PRODUCTS = [
             "DOURADA": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "12451637"
+                    "id_variacao": "12451637",
+                    "sku": "4157585.245894.404572",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-maria-luiza/?sku=4157585.245894.404572"
                 }
             },
             "OFF WHITE": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "12451639"
+                    "id_variacao": "12451639",
+                    "sku": "4157585.245894.404545",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-maria-luiza/?sku=4157585.245894.404545"
                 }
             },
             "Prata": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "12451640"
+                    "id_variacao": "12451640",
+                    "sku": "4157585.245894.404559",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-maria-luiza/?sku=4157585.245894.404559"
                 }
             },
             "Preto": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "12451641"
+                    "id_variacao": "12451641",
+                    "sku": "4157585.245894.404542",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-maria-luiza/?sku=4157585.245894.404542"
                 }
             },
             "Vermelho escuro": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "12451642"
+                    "id_variacao": "12451642",
+                    "sku": "4157585.245894.404564",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-maria-luiza/?sku=4157585.245894.404564"
                 }
             },
             "caramelo": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "12451636"
+                    "id_variacao": "12451636",
+                    "sku": "4157585.245894.404551",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-maria-luiza/?sku=4157585.245894.404551"
                 }
             },
             "nude": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "12451638"
+                    "id_variacao": "12451638",
+                    "sku": "4157585.245894.404550",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-maria-luiza/?sku=4157585.245894.404550"
                 }
             }
         },
@@ -10658,64 +13230,88 @@ const STILETTO_PRODUCTS = [
             "cafe"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12562563"
+                    "id_variacao": "12562563",
+                    "sku": "4196979.245892.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-lorena/?sku=4196979.245892.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12562564"
+                    "id_variacao": "12562564",
+                    "sku": "4196979.245892.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-lorena/?sku=4196979.245892.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12562565"
+                    "id_variacao": "12562565",
+                    "sku": "4196979.245892.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-lorena/?sku=4196979.245892.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12562566"
+                    "id_variacao": "12562566",
+                    "sku": "4196979.245892.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-lorena/?sku=4196979.245892.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12562567"
+                    "id_variacao": "12562567",
+                    "sku": "4196979.245892.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-lorena/?sku=4196979.245892.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12562568"
+                    "id_variacao": "12562568",
+                    "sku": "4196979.245892.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-lorena/?sku=4196979.245892.404542.324746"
                 }
             },
             "cafe": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12562557"
+                    "id_variacao": "12562557",
+                    "sku": "4196979.245892.404557.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-lorena/?sku=4196979.245892.404557.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12562558"
+                    "id_variacao": "12562558",
+                    "sku": "4196979.245892.404557.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-lorena/?sku=4196979.245892.404557.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12562559"
+                    "id_variacao": "12562559",
+                    "sku": "4196979.245892.404557.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-lorena/?sku=4196979.245892.404557.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12562560"
+                    "id_variacao": "12562560",
+                    "sku": "4196979.245892.404557.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-lorena/?sku=4196979.245892.404557.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12562561"
+                    "id_variacao": "12562561",
+                    "sku": "4196979.245892.404557.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-lorena/?sku=4196979.245892.404557.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12562562"
+                    "id_variacao": "12562562",
+                    "sku": "4196979.245892.404557.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-lorena/?sku=4196979.245892.404557.324746"
                 }
             }
         },
@@ -10748,38 +13344,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12562569"
+                    "id_variacao": "12562569",
+                    "sku": "4196980.245892.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-leona/?sku=4196980.245892.0.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12562570"
+                    "id_variacao": "12562570",
+                    "sku": "4196980.245892.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-leona/?sku=4196980.245892.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "12562571"
+                    "id_variacao": "12562571",
+                    "sku": "4196980.245892.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-leona/?sku=4196980.245892.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "12562572"
+                    "id_variacao": "12562572",
+                    "sku": "4196980.245892.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-leona/?sku=4196980.245892.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12562573"
+                    "id_variacao": "12562573",
+                    "sku": "4196980.245892.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-leona/?sku=4196980.245892.0.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12562574"
+                    "id_variacao": "12562574",
+                    "sku": "4196980.245892.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-leona/?sku=4196980.245892.0.324746"
                 }
             }
         },
@@ -10810,64 +13418,88 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Marrom": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12563114"
+                    "id_variacao": "12563114",
+                    "sku": "4197096.248989.404555.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-priscila/?sku=4197096.248989.404555.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12563115"
+                    "id_variacao": "12563115",
+                    "sku": "4197096.248989.404555.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-priscila/?sku=4197096.248989.404555.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12563116"
+                    "id_variacao": "12563116",
+                    "sku": "4197096.248989.404555.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-priscila/?sku=4197096.248989.404555.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12563117"
+                    "id_variacao": "12563117",
+                    "sku": "4197096.248989.404555.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-priscila/?sku=4197096.248989.404555.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12563118"
+                    "id_variacao": "12563118",
+                    "sku": "4197096.248989.404555.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-priscila/?sku=4197096.248989.404555.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "12563119"
+                    "id_variacao": "12563119",
+                    "sku": "4197096.248989.404555.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-priscila/?sku=4197096.248989.404555.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12563120"
+                    "id_variacao": "12563120",
+                    "sku": "4197096.248989.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-priscila/?sku=4197096.248989.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "12563121"
+                    "id_variacao": "12563121",
+                    "sku": "4197096.248989.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-priscila/?sku=4197096.248989.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "12563122"
+                    "id_variacao": "12563122",
+                    "sku": "4197096.248989.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-priscila/?sku=4197096.248989.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "12563123"
+                    "id_variacao": "12563123",
+                    "sku": "4197096.248989.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-priscila/?sku=4197096.248989.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12563124"
+                    "id_variacao": "12563124",
+                    "sku": "4197096.248989.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-priscila/?sku=4197096.248989.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12563125"
+                    "id_variacao": "12563125",
+                    "sku": "4197096.248989.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-priscila/?sku=4197096.248989.404542.324746"
                 }
             }
         },
@@ -10899,38 +13531,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12627080"
+                    "id_variacao": "12627080",
+                    "sku": "4220494.0000.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-sara/?sku=4220494.0000.0.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "12627081"
+                    "id_variacao": "12627081",
+                    "sku": "4220494.0000.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-sara/?sku=4220494.0000.0.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "12627082"
+                    "id_variacao": "12627082",
+                    "sku": "4220494.0000.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-sara/?sku=4220494.0000.0.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12627083"
+                    "id_variacao": "12627083",
+                    "sku": "4220494.0000.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-sara/?sku=4220494.0000.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12627084"
+                    "id_variacao": "12627084",
+                    "sku": "4220494.0000.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-sara/?sku=4220494.0000.0.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "12627085"
+                    "id_variacao": "12627085",
+                    "sku": "4220494.0000.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-sara/?sku=4220494.0000.0.324746"
                 }
             }
         },
@@ -10955,38 +13599,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12627086"
+                    "id_variacao": "12627086",
+                    "sku": "4220495.245897.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-duo-avela/?sku=4220495.245897.0.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12627087"
+                    "id_variacao": "12627087",
+                    "sku": "4220495.245897.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-duo-avela/?sku=4220495.245897.0.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12627088"
+                    "id_variacao": "12627088",
+                    "sku": "4220495.245897.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-duo-avela/?sku=4220495.245897.0.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12627089"
+                    "id_variacao": "12627089",
+                    "sku": "4220495.245897.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-duo-avela/?sku=4220495.245897.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12627090"
+                    "id_variacao": "12627090",
+                    "sku": "4220495.245897.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-duo-avela/?sku=4220495.245897.0.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "12627091"
+                    "id_variacao": "12627091",
+                    "sku": "4220495.245897.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-duo-avela/?sku=4220495.245897.0.324746"
                 }
             }
         },
@@ -11014,64 +13670,88 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12627739"
+                    "id_variacao": "12627739",
+                    "sku": "4220844.245898.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-carmen/?sku=4220844.245898.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12627740"
+                    "id_variacao": "12627740",
+                    "sku": "4220844.245898.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-carmen/?sku=4220844.245898.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12627741"
+                    "id_variacao": "12627741",
+                    "sku": "4220844.245898.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-carmen/?sku=4220844.245898.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12627742"
+                    "id_variacao": "12627742",
+                    "sku": "4220844.245898.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-carmen/?sku=4220844.245898.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12627743"
+                    "id_variacao": "12627743",
+                    "sku": "4220844.245898.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-carmen/?sku=4220844.245898.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "12627744"
+                    "id_variacao": "12627744",
+                    "sku": "4220844.245898.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-carmen/?sku=4220844.245898.404542.324746"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12627733"
+                    "id_variacao": "12627733",
+                    "sku": "4220844.245898.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-carmen/?sku=4220844.245898.404551.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12627734"
+                    "id_variacao": "12627734",
+                    "sku": "4220844.245898.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-carmen/?sku=4220844.245898.404551.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "12627735"
+                    "id_variacao": "12627735",
+                    "sku": "4220844.245898.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-carmen/?sku=4220844.245898.404551.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "12627736"
+                    "id_variacao": "12627736",
+                    "sku": "4220844.245898.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-carmen/?sku=4220844.245898.404551.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12627737"
+                    "id_variacao": "12627737",
+                    "sku": "4220844.245898.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-carmen/?sku=4220844.245898.404551.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12627738"
+                    "id_variacao": "12627738",
+                    "sku": "4220844.245898.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-carmen/?sku=4220844.245898.404551.324746"
                 }
             }
         },
@@ -11105,64 +13785,88 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Marrom": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12627745"
+                    "id_variacao": "12627745",
+                    "sku": "4220845.245898.404555.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-julia/?sku=4220845.245898.404555.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12627746"
+                    "id_variacao": "12627746",
+                    "sku": "4220845.245898.404555.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-julia/?sku=4220845.245898.404555.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12627747"
+                    "id_variacao": "12627747",
+                    "sku": "4220845.245898.404555.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-julia/?sku=4220845.245898.404555.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12627748"
+                    "id_variacao": "12627748",
+                    "sku": "4220845.245898.404555.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-julia/?sku=4220845.245898.404555.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12627749"
+                    "id_variacao": "12627749",
+                    "sku": "4220845.245898.404555.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-julia/?sku=4220845.245898.404555.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "12627750"
+                    "id_variacao": "12627750",
+                    "sku": "4220845.245898.404555.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-julia/?sku=4220845.245898.404555.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12627751"
+                    "id_variacao": "12627751",
+                    "sku": "4220845.245898.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-julia/?sku=4220845.245898.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12627752"
+                    "id_variacao": "12627752",
+                    "sku": "4220845.245898.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-julia/?sku=4220845.245898.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12627753"
+                    "id_variacao": "12627753",
+                    "sku": "4220845.245898.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-julia/?sku=4220845.245898.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12627754"
+                    "id_variacao": "12627754",
+                    "sku": "4220845.245898.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-julia/?sku=4220845.245898.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12627755"
+                    "id_variacao": "12627755",
+                    "sku": "4220845.245898.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-julia/?sku=4220845.245898.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "12627756"
+                    "id_variacao": "12627756",
+                    "sku": "4220845.245898.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-julia/?sku=4220845.245898.404542.324746"
                 }
             }
         },
@@ -11196,64 +13900,88 @@ const STILETTO_PRODUCTS = [
             "Castanho avermelhado"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Castanho avermelhado": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12627757"
+                    "id_variacao": "12627757",
+                    "sku": "4220846.249014.499080.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-virginia/?sku=4220846.249014.499080.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "12627758"
+                    "id_variacao": "12627758",
+                    "sku": "4220846.249014.499080.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-virginia/?sku=4220846.249014.499080.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "12627759"
+                    "id_variacao": "12627759",
+                    "sku": "4220846.249014.499080.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-virginia/?sku=4220846.249014.499080.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "12627760"
+                    "id_variacao": "12627760",
+                    "sku": "4220846.249014.499080.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-virginia/?sku=4220846.249014.499080.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12627761"
+                    "id_variacao": "12627761",
+                    "sku": "4220846.249014.499080.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-virginia/?sku=4220846.249014.499080.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12627762"
+                    "id_variacao": "12627762",
+                    "sku": "4220846.249014.499080.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-virginia/?sku=4220846.249014.499080.324746"
                 }
             },
             "Oliva": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12627763"
+                    "id_variacao": "12627763",
+                    "sku": "4220846.249014.499081.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-virginia/?sku=4220846.249014.499081.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "12627764"
+                    "id_variacao": "12627764",
+                    "sku": "4220846.249014.499081.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-virginia/?sku=4220846.249014.499081.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "12627765"
+                    "id_variacao": "12627765",
+                    "sku": "4220846.249014.499081.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-virginia/?sku=4220846.249014.499081.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "12627766"
+                    "id_variacao": "12627766",
+                    "sku": "4220846.249014.499081.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-virginia/?sku=4220846.249014.499081.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12627767"
+                    "id_variacao": "12627767",
+                    "sku": "4220846.249014.499081.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-virginia/?sku=4220846.249014.499081.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12627768"
+                    "id_variacao": "12627768",
+                    "sku": "4220846.249014.499081.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-virginia/?sku=4220846.249014.499081.324746"
                 }
             }
         },
@@ -11285,55 +14013,75 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Marrom": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12877917"
+                    "id_variacao": "12877917",
+                    "sku": "4314975.245892.404555.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-leticia/?sku=4314975.245892.404555.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "12877918"
+                    "id_variacao": "12877918",
+                    "sku": "4314975.245892.404555.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-leticia/?sku=4314975.245892.404555.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "12877919"
+                    "id_variacao": "12877919",
+                    "sku": "4314975.245892.404555.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-leticia/?sku=4314975.245892.404555.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "12877920"
+                    "id_variacao": "12877920",
+                    "sku": "4314975.245892.404555.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-leticia/?sku=4314975.245892.404555.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12877921"
+                    "id_variacao": "12877921",
+                    "sku": "4314975.245892.404555.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-leticia/?sku=4314975.245892.404555.324742"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12877922"
+                    "id_variacao": "12877922",
+                    "sku": "4314975.245892.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-leticia/?sku=4314975.245892.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12877923"
+                    "id_variacao": "12877923",
+                    "sku": "4314975.245892.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-leticia/?sku=4314975.245892.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12877924"
+                    "id_variacao": "12877924",
+                    "sku": "4314975.245892.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-leticia/?sku=4314975.245892.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12877925"
+                    "id_variacao": "12877925",
+                    "sku": "4314975.245892.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-leticia/?sku=4314975.245892.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12877926"
+                    "id_variacao": "12877926",
+                    "sku": "4314975.245892.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-leticia/?sku=4314975.245892.404542.324742"
                 }
             }
         },
@@ -11366,55 +14114,75 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "36",
             "35",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Marrom": {
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "12877927"
+                    "id_variacao": "12877927",
+                    "sku": "4314976.245892.404555.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-fatima/?sku=4314976.245892.404555.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "12877928"
+                    "id_variacao": "12877928",
+                    "sku": "4314976.245892.404555.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-fatima/?sku=4314976.245892.404555.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12877929"
+                    "id_variacao": "12877929",
+                    "sku": "4314976.245892.404555.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-fatima/?sku=4314976.245892.404555.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "12877930"
+                    "id_variacao": "12877930",
+                    "sku": "4314976.245892.404555.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-fatima/?sku=4314976.245892.404555.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12877931"
+                    "id_variacao": "12877931",
+                    "sku": "4314976.245892.404555.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-fatima/?sku=4314976.245892.404555.324746"
                 }
             },
             "Preto": {
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "12877932"
+                    "id_variacao": "12877932",
+                    "sku": "4314976.245892.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-fatima/?sku=4314976.245892.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "12877933"
+                    "id_variacao": "12877933",
+                    "sku": "4314976.245892.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-fatima/?sku=4314976.245892.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "12877934"
+                    "id_variacao": "12877934",
+                    "sku": "4314976.245892.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-fatima/?sku=4314976.245892.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12877935"
+                    "id_variacao": "12877935",
+                    "sku": "4314976.245892.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-fatima/?sku=4314976.245892.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12877936"
+                    "id_variacao": "12877936",
+                    "sku": "4314976.245892.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-fatima/?sku=4314976.245892.404542.324746"
                 }
             }
         },
@@ -11443,107 +14211,149 @@ const STILETTO_PRODUCTS = [
         "preco": 440.0,
         "cores": [
             "Preto",
-            "Azul escuro",
-            "Marrom"
+            "Marrom",
+            "Azul escuro"
         ],
         "tamanhos": [
-            "37",
-            "36",
-            "38",
-            "35",
             "33",
+            "38",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Azul escuro": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "12879077"
+                    "id_variacao": "12879077",
+                    "sku": "4315343.245898.404563.324747",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404563.324747"
                 },
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12879078"
+                    "id_variacao": "12879078",
+                    "sku": "4315343.245898.404563.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404563.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12879079"
+                    "id_variacao": "12879079",
+                    "sku": "4315343.245898.404563.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404563.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12879080"
+                    "id_variacao": "12879080",
+                    "sku": "4315343.245898.404563.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404563.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12879081"
+                    "id_variacao": "12879081",
+                    "sku": "4315343.245898.404563.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404563.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12879082"
+                    "id_variacao": "12879082",
+                    "sku": "4315343.245898.404563.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404563.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "12879083"
+                    "id_variacao": "12879083",
+                    "sku": "4315343.245898.404563.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404563.324746"
                 }
             },
             "Marrom": {
                 "33": {
                     "qtd": 1,
-                    "id_variacao": "12879084"
+                    "id_variacao": "12879084",
+                    "sku": "4315343.245898.404555.324747",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404555.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12879085"
+                    "id_variacao": "12879085",
+                    "sku": "4315343.245898.404555.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404555.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "12879086"
+                    "id_variacao": "12879086",
+                    "sku": "4315343.245898.404555.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404555.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "12879087"
+                    "id_variacao": "12879087",
+                    "sku": "4315343.245898.404555.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404555.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12879088"
+                    "id_variacao": "12879088",
+                    "sku": "4315343.245898.404555.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404555.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12879089"
+                    "id_variacao": "12879089",
+                    "sku": "4315343.245898.404555.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404555.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "12879090"
+                    "id_variacao": "12879090",
+                    "sku": "4315343.245898.404555.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404555.324746"
                 }
             },
             "Preto": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "12879091"
+                    "id_variacao": "12879091",
+                    "sku": "4315343.245898.404542.324747",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404542.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12879092"
+                    "id_variacao": "12879092",
+                    "sku": "4315343.245898.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12879529"
+                    "id_variacao": "12879529",
+                    "sku": "4315343.245898.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "12879530"
+                    "id_variacao": "12879530",
+                    "sku": "4315343.245898.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12981761"
+                    "id_variacao": "12981761",
+                    "sku": "4315343.245898.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12981762"
+                    "id_variacao": "12981762",
+                    "sku": "4315343.245898.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12981763"
+                    "id_variacao": "12981763",
+                    "sku": "4315343.245898.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabi/?sku=4315343.245898.404542.324746"
                 }
             }
         },
@@ -11577,107 +14387,149 @@ const STILETTO_PRODUCTS = [
         "preco": 430.0,
         "cores": [
             "Preto",
-            "Azul escuro",
-            "Marrom"
+            "Marrom",
+            "Azul escuro"
         ],
         "tamanhos": [
-            "37",
-            "36",
-            "38",
-            "35",
             "33",
+            "38",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Azul escuro": {
                 "33": {
                     "qtd": 1,
-                    "id_variacao": "12879511"
+                    "id_variacao": "12879511",
+                    "sku": "4315497.245898.404563.324747",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404563.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12879512"
+                    "id_variacao": "12879512",
+                    "sku": "4315497.245898.404563.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404563.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "12879513"
+                    "id_variacao": "12879513",
+                    "sku": "4315497.245898.404563.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404563.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12879514"
+                    "id_variacao": "12879514",
+                    "sku": "4315497.245898.404563.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404563.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "12879515"
+                    "id_variacao": "12879515",
+                    "sku": "4315497.245898.404563.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404563.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12879516"
+                    "id_variacao": "12879516",
+                    "sku": "4315497.245898.404563.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404563.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "12879517"
+                    "id_variacao": "12879517",
+                    "sku": "4315497.245898.404563.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404563.324746"
                 }
             },
             "Marrom": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "12879518"
+                    "id_variacao": "12879518",
+                    "sku": "4315497.245898.404555.324747",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404555.324747"
                 },
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12879519"
+                    "id_variacao": "12879519",
+                    "sku": "4315497.245898.404555.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404555.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12879520"
+                    "id_variacao": "12879520",
+                    "sku": "4315497.245898.404555.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404555.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12879521"
+                    "id_variacao": "12879521",
+                    "sku": "4315497.245898.404555.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404555.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12879522"
+                    "id_variacao": "12879522",
+                    "sku": "4315497.245898.404555.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404555.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12879523"
+                    "id_variacao": "12879523",
+                    "sku": "4315497.245898.404555.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404555.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "12879524"
+                    "id_variacao": "12879524",
+                    "sku": "4315497.245898.404555.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404555.324746"
                 }
             },
             "Preto": {
                 "33": {
                     "qtd": 1,
-                    "id_variacao": "12879525"
+                    "id_variacao": "12879525",
+                    "sku": "4315497.245898.404542.324747",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404542.324747"
                 },
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12879526"
+                    "id_variacao": "12879526",
+                    "sku": "4315497.245898.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "12879527"
+                    "id_variacao": "12879527",
+                    "sku": "4315497.245898.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12879528"
+                    "id_variacao": "12879528",
+                    "sku": "4315497.245898.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "12879871"
+                    "id_variacao": "12879871",
+                    "sku": "4315497.245898.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12879872"
+                    "id_variacao": "12879872",
+                    "sku": "4315497.245898.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "12879873"
+                    "id_variacao": "12879873",
+                    "sku": "4315497.245898.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-dani/?sku=4315497.245898.404542.324746"
                 }
             }
         },
@@ -11713,23 +14565,29 @@ const STILETTO_PRODUCTS = [
             "Preto"
         ],
         "tamanhos": [
-            "36",
+            "34",
             "35",
-            "34"
+            "36"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12987499"
+                    "id_variacao": "12987499",
+                    "sku": "4349840.245892.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-patricia/?sku=4349840.245892.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "12987500"
+                    "id_variacao": "12987500",
+                    "sku": "4349840.245892.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-patricia/?sku=4349840.245892.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "12987501"
+                    "id_variacao": "12987501",
+                    "sku": "4349840.245892.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-patricia/?sku=4349840.245892.404542.324744"
                 }
             }
         },
@@ -11758,109 +14616,151 @@ const STILETTO_PRODUCTS = [
         "preco": 310.9,
         "cores": [
             "Preto",
-            "caramelo",
             "Marrom",
-            "azul marinho"
+            "azul marinho",
+            "caramelo"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Marrom": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12987514"
+                    "id_variacao": "12987514",
+                    "sku": "4349841.249814.404555.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.404555.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "12987515"
+                    "id_variacao": "12987515",
+                    "sku": "4349841.249814.404555.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.404555.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "12987516"
+                    "id_variacao": "12987516",
+                    "sku": "4349841.249814.404555.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.404555.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12987517"
+                    "id_variacao": "12987517",
+                    "sku": "4349841.249814.404555.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.404555.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12987518"
+                    "id_variacao": "12987518",
+                    "sku": "4349841.249814.404555.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.404555.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12987519"
+                    "id_variacao": "12987519",
+                    "sku": "4349841.249814.404555.324746",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.404555.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12987520"
+                    "id_variacao": "12987520",
+                    "sku": "4349841.249814.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12987521"
+                    "id_variacao": "12987521",
+                    "sku": "4349841.249814.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12987522"
+                    "id_variacao": "12987522",
+                    "sku": "4349841.249814.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.404542.324744"
                 }
             },
             "azul marinho": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12987502"
+                    "id_variacao": "12987502",
+                    "sku": "4349841.249814.490717.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.490717.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12987503"
+                    "id_variacao": "12987503",
+                    "sku": "4349841.249814.490717.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.490717.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "12987504"
+                    "id_variacao": "12987504",
+                    "sku": "4349841.249814.490717.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.490717.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12987505"
+                    "id_variacao": "12987505",
+                    "sku": "4349841.249814.490717.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.490717.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12987506"
+                    "id_variacao": "12987506",
+                    "sku": "4349841.249814.490717.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.490717.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12987507"
+                    "id_variacao": "12987507",
+                    "sku": "4349841.249814.490717.324746",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.490717.324746"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12987508"
+                    "id_variacao": "12987508",
+                    "sku": "4349841.249814.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.404551.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "12987509"
+                    "id_variacao": "12987509",
+                    "sku": "4349841.249814.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.404551.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "12987510"
+                    "id_variacao": "12987510",
+                    "sku": "4349841.249814.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.404551.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "12987511"
+                    "id_variacao": "12987511",
+                    "sku": "4349841.249814.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.404551.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12987512"
+                    "id_variacao": "12987512",
+                    "sku": "4349841.249814.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.404551.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12987513"
+                    "id_variacao": "12987513",
+                    "sku": "4349841.249814.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-marta/?sku=4349841.249814.404551.324746"
                 }
             }
         },
@@ -11899,38 +14799,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12988179"
+                    "id_variacao": "12988179",
+                    "sku": "4350019.245895.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-flavia/?sku=4350019.245895.0.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "12988180"
+                    "id_variacao": "12988180",
+                    "sku": "4350019.245895.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-flavia/?sku=4350019.245895.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "12988181"
+                    "id_variacao": "12988181",
+                    "sku": "4350019.245895.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-flavia/?sku=4350019.245895.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "12988182"
+                    "id_variacao": "12988182",
+                    "sku": "4350019.245895.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-flavia/?sku=4350019.245895.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12988183"
+                    "id_variacao": "12988183",
+                    "sku": "4350019.245895.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-flavia/?sku=4350019.245895.0.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12988184"
+                    "id_variacao": "12988184",
+                    "sku": "4350019.245895.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-flavia/?sku=4350019.245895.0.324746"
                 }
             }
         },
@@ -11960,38 +14872,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12988185"
+                    "id_variacao": "12988185",
+                    "sku": "4350020.245895.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-chunky-bruna/?sku=4350020.245895.0.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12988186"
+                    "id_variacao": "12988186",
+                    "sku": "4350020.245895.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-chunky-bruna/?sku=4350020.245895.0.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "12988187"
+                    "id_variacao": "12988187",
+                    "sku": "4350020.245895.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-chunky-bruna/?sku=4350020.245895.0.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12988188"
+                    "id_variacao": "12988188",
+                    "sku": "4350020.245895.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-chunky-bruna/?sku=4350020.245895.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12988189"
+                    "id_variacao": "12988189",
+                    "sku": "4350020.245895.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-chunky-bruna/?sku=4350020.245895.0.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12988190"
+                    "id_variacao": "12988190",
+                    "sku": "4350020.245895.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-chunky-bruna/?sku=4350020.245895.0.324746"
                 }
             }
         },
@@ -12017,33 +14941,43 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "36",
             "35",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "12988191"
+                    "id_variacao": "12988191",
+                    "sku": "4350021.245891.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-ingrid/?sku=4350021.245891.0.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "12988192"
+                    "id_variacao": "12988192",
+                    "sku": "4350021.245891.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-ingrid/?sku=4350021.245891.0.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12988193"
+                    "id_variacao": "12988193",
+                    "sku": "4350021.245891.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-ingrid/?sku=4350021.245891.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12988194"
+                    "id_variacao": "12988194",
+                    "sku": "4350021.245891.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-ingrid/?sku=4350021.245891.0.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12988195"
+                    "id_variacao": "12988195",
+                    "sku": "4350021.245891.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-ingrid/?sku=4350021.245891.0.324746"
                 }
             }
         },
@@ -12067,68 +15001,92 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 319.9,
         "cores": [
-            "Bege",
-            "Cinza"
+            "Cinza",
+            "Bege"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Bege": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "12988196"
+                    "id_variacao": "12988196",
+                    "sku": "4350022.245895.509262.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-priscila/?sku=4350022.245895.509262.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "12988197"
+                    "id_variacao": "12988197",
+                    "sku": "4350022.245895.509262.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-priscila/?sku=4350022.245895.509262.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12988198"
+                    "id_variacao": "12988198",
+                    "sku": "4350022.245895.509262.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-priscila/?sku=4350022.245895.509262.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12988199"
+                    "id_variacao": "12988199",
+                    "sku": "4350022.245895.509262.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-priscila/?sku=4350022.245895.509262.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12988200"
+                    "id_variacao": "12988200",
+                    "sku": "4350022.245895.509262.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-priscila/?sku=4350022.245895.509262.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12988201"
+                    "id_variacao": "12988201",
+                    "sku": "4350022.245895.509262.324746",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-priscila/?sku=4350022.245895.509262.324746"
                 }
             },
             "Cinza": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12988202"
+                    "id_variacao": "12988202",
+                    "sku": "4350022.245895.404556.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-priscila/?sku=4350022.245895.404556.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12988203"
+                    "id_variacao": "12988203",
+                    "sku": "4350022.245895.404556.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-priscila/?sku=4350022.245895.404556.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "12988204"
+                    "id_variacao": "12988204",
+                    "sku": "4350022.245895.404556.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-priscila/?sku=4350022.245895.404556.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12988205"
+                    "id_variacao": "12988205",
+                    "sku": "4350022.245895.404556.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-priscila/?sku=4350022.245895.404556.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12988206"
+                    "id_variacao": "12988206",
+                    "sku": "4350022.245895.404556.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-priscila/?sku=4350022.245895.404556.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12988207"
+                    "id_variacao": "12988207",
+                    "sku": "4350022.245895.404556.324746",
+                    "url_variacao": "https://loja.usebede.com.br/tenis-priscila/?sku=4350022.245895.404556.324746"
                 }
             }
         },
@@ -12161,103 +15119,145 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
-            "38",
-            "35",
             "33",
+            "38",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "12989122"
+                    "id_variacao": "12989122",
+                    "sku": "4350254.249014.404545.324747",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404545.324747"
                 },
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12989123"
+                    "id_variacao": "12989123",
+                    "sku": "4350254.249014.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404545.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12989124"
+                    "id_variacao": "12989124",
+                    "sku": "4350254.249014.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404545.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12989125"
+                    "id_variacao": "12989125",
+                    "sku": "4350254.249014.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404545.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12989126"
+                    "id_variacao": "12989126",
+                    "sku": "4350254.249014.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404545.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12989127"
+                    "id_variacao": "12989127",
+                    "sku": "4350254.249014.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404545.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "12989128"
+                    "id_variacao": "12989128",
+                    "sku": "4350254.249014.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404545.324746"
                 }
             },
             "Preto": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "12989129"
+                    "id_variacao": "12989129",
+                    "sku": "4350254.249014.404542.324747",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404542.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "12989130"
+                    "id_variacao": "12989130",
+                    "sku": "4350254.249014.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "12989131"
+                    "id_variacao": "12989131",
+                    "sku": "4350254.249014.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "12989132"
+                    "id_variacao": "12989132",
+                    "sku": "4350254.249014.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "12989133"
+                    "id_variacao": "12989133",
+                    "sku": "4350254.249014.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "12989134"
+                    "id_variacao": "12989134",
+                    "sku": "4350254.249014.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "12989135"
+                    "id_variacao": "12989135",
+                    "sku": "4350254.249014.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404542.324746"
                 }
             },
             "caramelo": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "12989115"
+                    "id_variacao": "12989115",
+                    "sku": "4350254.249014.404551.324747",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404551.324747"
                 },
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "12989116"
+                    "id_variacao": "12989116",
+                    "sku": "4350254.249014.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404551.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "12989117"
+                    "id_variacao": "12989117",
+                    "sku": "4350254.249014.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404551.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "12989118"
+                    "id_variacao": "12989118",
+                    "sku": "4350254.249014.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404551.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "12989119"
+                    "id_variacao": "12989119",
+                    "sku": "4350254.249014.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404551.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "12989120"
+                    "id_variacao": "12989120",
+                    "sku": "4350254.249014.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404551.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "12989121"
+                    "id_variacao": "12989121",
+                    "sku": "4350254.249014.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-leona/?sku=4350254.249014.404551.324746"
                 }
             }
         },
@@ -12293,94 +15293,130 @@ const STILETTO_PRODUCTS = [
         "preco": 319.9,
         "cores": [
             "Preto",
-            "Vermelho",
-            "Marrom"
+            "Marrom",
+            "Vermelho"
         ],
         "tamanhos": [
-            "37",
-            "36",
-            "38",
-            "35",
             "33",
-            "34"
+            "38",
+            "34",
+            "35",
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Marrom": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "13002331"
+                    "id_variacao": "13002331",
+                    "sku": "4354358.249814.404555.324747",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-virginia/?sku=4354358.249814.404555.324747"
                 },
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "13002332"
+                    "id_variacao": "13002332",
+                    "sku": "4354358.249814.404555.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-virginia/?sku=4354358.249814.404555.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "13002333"
+                    "id_variacao": "13002333",
+                    "sku": "4354358.249814.404555.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-virginia/?sku=4354358.249814.404555.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "13002334"
+                    "id_variacao": "13002334",
+                    "sku": "4354358.249814.404555.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-virginia/?sku=4354358.249814.404555.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "13002335"
+                    "id_variacao": "13002335",
+                    "sku": "4354358.249814.404555.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-virginia/?sku=4354358.249814.404555.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "13002336"
+                    "id_variacao": "13002336",
+                    "sku": "4354358.249814.404555.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-virginia/?sku=4354358.249814.404555.324742"
                 }
             },
             "Preto": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "13002337"
+                    "id_variacao": "13002337",
+                    "sku": "4354358.249814.404542.324747",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-virginia/?sku=4354358.249814.404542.324747"
                 },
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "13002338"
+                    "id_variacao": "13002338",
+                    "sku": "4354358.249814.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-virginia/?sku=4354358.249814.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "13002339"
+                    "id_variacao": "13002339",
+                    "sku": "4354358.249814.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-virginia/?sku=4354358.249814.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "13002340"
+                    "id_variacao": "13002340",
+                    "sku": "4354358.249814.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-virginia/?sku=4354358.249814.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "13002341"
+                    "id_variacao": "13002341",
+                    "sku": "4354358.249814.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-virginia/?sku=4354358.249814.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "13002342"
+                    "id_variacao": "13002342",
+                    "sku": "4354358.249814.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-virginia/?sku=4354358.249814.404542.324742"
                 }
             },
             "Vermelho": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "13002343"
+                    "id_variacao": "13002343",
+                    "sku": "4354358.249814.404574.324747",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-virginia/?sku=4354358.249814.404574.324747"
                 },
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "13002344"
+                    "id_variacao": "13002344",
+                    "sku": "4354358.249814.404574.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-virginia/?sku=4354358.249814.404574.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "13002345"
+                    "id_variacao": "13002345",
+                    "sku": "4354358.249814.404574.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-virginia/?sku=4354358.249814.404574.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "13002346"
+                    "id_variacao": "13002346",
+                    "sku": "4354358.249814.404574.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-virginia/?sku=4354358.249814.404574.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "13002347"
+                    "id_variacao": "13002347",
+                    "sku": "4354358.249814.404574.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-virginia/?sku=4354358.249814.404574.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "13002348"
+                    "id_variacao": "13002348",
+                    "sku": "4354358.249814.404574.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-virginia/?sku=4354358.249814.404574.324742"
                 }
             }
         },
@@ -12418,38 +15454,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "13002349"
+                    "id_variacao": "13002349",
+                    "sku": "4354359.248989.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-madri/?sku=4354359.248989.0.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "13002350"
+                    "id_variacao": "13002350",
+                    "sku": "4354359.248989.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-madri/?sku=4354359.248989.0.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "13002351"
+                    "id_variacao": "13002351",
+                    "sku": "4354359.248989.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-madri/?sku=4354359.248989.0.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "13002352"
+                    "id_variacao": "13002352",
+                    "sku": "4354359.248989.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-madri/?sku=4354359.248989.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "13002353"
+                    "id_variacao": "13002353",
+                    "sku": "4354359.248989.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-madri/?sku=4354359.248989.0.324742"
                 },
                 "39": {
                     "qtd": 2,
-                    "id_variacao": "13002354"
+                    "id_variacao": "13002354",
+                    "sku": "4354359.248989.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/coturno-madri/?sku=4354359.248989.0.324746"
                 }
             }
         },
@@ -12475,68 +15523,92 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 330.0,
         "cores": [
-            "preta",
-            "Marrom"
+            "Marrom",
+            "preta"
         ],
         "tamanhos": [
-            "37",
-            "36",
-            "38",
-            "35",
             "33",
-            "34"
+            "38",
+            "34",
+            "35",
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Marrom": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "13002355"
+                    "id_variacao": "13002355",
+                    "sku": "4354360.245898.404555.324747",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luiza/?sku=4354360.245898.404555.324747"
                 },
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "13002356"
+                    "id_variacao": "13002356",
+                    "sku": "4354360.245898.404555.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luiza/?sku=4354360.245898.404555.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "13002357"
+                    "id_variacao": "13002357",
+                    "sku": "4354360.245898.404555.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luiza/?sku=4354360.245898.404555.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "13002358"
+                    "id_variacao": "13002358",
+                    "sku": "4354360.245898.404555.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luiza/?sku=4354360.245898.404555.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "13002359"
+                    "id_variacao": "13002359",
+                    "sku": "4354360.245898.404555.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luiza/?sku=4354360.245898.404555.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "13002360"
+                    "id_variacao": "13002360",
+                    "sku": "4354360.245898.404555.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luiza/?sku=4354360.245898.404555.324742"
                 }
             },
             "preta": {
                 "33": {
                     "qtd": 1,
-                    "id_variacao": "13002361"
+                    "id_variacao": "13002361",
+                    "sku": "4354360.245898.410925.324747",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luiza/?sku=4354360.245898.410925.324747"
                 },
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "13002362"
+                    "id_variacao": "13002362",
+                    "sku": "4354360.245898.410925.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luiza/?sku=4354360.245898.410925.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "13002363"
+                    "id_variacao": "13002363",
+                    "sku": "4354360.245898.410925.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luiza/?sku=4354360.245898.410925.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "13002364"
+                    "id_variacao": "13002364",
+                    "sku": "4354360.245898.410925.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luiza/?sku=4354360.245898.410925.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "13002365"
+                    "id_variacao": "13002365",
+                    "sku": "4354360.245898.410925.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luiza/?sku=4354360.245898.410925.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "13002366"
+                    "id_variacao": "13002366",
+                    "sku": "4354360.245898.410925.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-luiza/?sku=4354360.245898.410925.324742"
                 }
             }
         },
@@ -12566,64 +15638,88 @@ const STILETTO_PRODUCTS = [
             "Marrom"
         ],
         "tamanhos": [
-            "37",
-            "36",
-            "38",
-            "35",
             "33",
-            "34"
+            "38",
+            "34",
+            "35",
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Marrom": {
                 "33": {
                     "qtd": 1,
-                    "id_variacao": "13002819"
+                    "id_variacao": "13002819",
+                    "sku": "4354515.249814.404555.324747",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-chanel/?sku=4354515.249814.404555.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "13002820"
+                    "id_variacao": "13002820",
+                    "sku": "4354515.249814.404555.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-chanel/?sku=4354515.249814.404555.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "13002821"
+                    "id_variacao": "13002821",
+                    "sku": "4354515.249814.404555.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-chanel/?sku=4354515.249814.404555.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "13002822"
+                    "id_variacao": "13002822",
+                    "sku": "4354515.249814.404555.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-chanel/?sku=4354515.249814.404555.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "13002823"
+                    "id_variacao": "13002823",
+                    "sku": "4354515.249814.404555.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-chanel/?sku=4354515.249814.404555.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "13002824"
+                    "id_variacao": "13002824",
+                    "sku": "4354515.249814.404555.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-chanel/?sku=4354515.249814.404555.324742"
                 }
             },
             "Preto": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "13002825"
+                    "id_variacao": "13002825",
+                    "sku": "4354515.249814.404542.324747",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-chanel/?sku=4354515.249814.404542.324747"
                 },
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "13002826"
+                    "id_variacao": "13002826",
+                    "sku": "4354515.249814.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-chanel/?sku=4354515.249814.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "13002827"
+                    "id_variacao": "13002827",
+                    "sku": "4354515.249814.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-chanel/?sku=4354515.249814.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "13002828"
+                    "id_variacao": "13002828",
+                    "sku": "4354515.249814.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-chanel/?sku=4354515.249814.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "13002829"
+                    "id_variacao": "13002829",
+                    "sku": "4354515.249814.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-chanel/?sku=4354515.249814.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "13002830"
+                    "id_variacao": "13002830",
+                    "sku": "4354515.249814.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-chanel/?sku=4354515.249814.404542.324742"
                 }
             }
         },
@@ -12656,73 +15752,101 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
-            "38",
-            "35",
             "33",
+            "38",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "13002831"
+                    "id_variacao": "13002831",
+                    "sku": "4354516.245896.404545.324747",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-mule-gabi/?sku=4354516.245896.404545.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "13002833"
+                    "id_variacao": "13002833",
+                    "sku": "4354516.245896.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-mule-gabi/?sku=4354516.245896.404545.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "13002834"
+                    "id_variacao": "13002834",
+                    "sku": "4354516.245896.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-mule-gabi/?sku=4354516.245896.404545.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "13002835"
+                    "id_variacao": "13002835",
+                    "sku": "4354516.245896.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-mule-gabi/?sku=4354516.245896.404545.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "13002836"
+                    "id_variacao": "13002836",
+                    "sku": "4354516.245896.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-mule-gabi/?sku=4354516.245896.404545.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "13002837"
+                    "id_variacao": "13002837",
+                    "sku": "4354516.245896.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-mule-gabi/?sku=4354516.245896.404545.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "13002838"
+                    "id_variacao": "13002838",
+                    "sku": "4354516.245896.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-mule-gabi/?sku=4354516.245896.404545.324746"
                 }
             },
             "Preto": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "13002839"
+                    "id_variacao": "13002839",
+                    "sku": "4354516.245896.404542.324747",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-mule-gabi/?sku=4354516.245896.404542.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "13002840"
+                    "id_variacao": "13002840",
+                    "sku": "4354516.245896.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-mule-gabi/?sku=4354516.245896.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "13002841"
+                    "id_variacao": "13002841",
+                    "sku": "4354516.245896.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-mule-gabi/?sku=4354516.245896.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "13002842"
+                    "id_variacao": "13002842",
+                    "sku": "4354516.245896.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-mule-gabi/?sku=4354516.245896.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "13002843"
+                    "id_variacao": "13002843",
+                    "sku": "4354516.245896.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-mule-gabi/?sku=4354516.245896.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "13002844"
+                    "id_variacao": "13002844",
+                    "sku": "4354516.245896.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-mule-gabi/?sku=4354516.245896.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "13002845"
+                    "id_variacao": "13002845",
+                    "sku": "4354516.245896.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mocassim-mule-gabi/?sku=4354516.245896.404542.324746"
                 }
             }
         },
@@ -12757,64 +15881,88 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "37",
-            "36",
-            "38",
-            "35",
             "33",
-            "34"
+            "38",
+            "34",
+            "35",
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "33": {
                     "qtd": 1,
-                    "id_variacao": "13002852"
+                    "id_variacao": "13002852",
+                    "sku": "4354518.245891.404542.324747",
+                    "url_variacao": "https://loja.usebede.com.br/bota-mariana/?sku=4354518.245891.404542.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "13002853"
+                    "id_variacao": "13002853",
+                    "sku": "4354518.245891.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-mariana/?sku=4354518.245891.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "13002854"
+                    "id_variacao": "13002854",
+                    "sku": "4354518.245891.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-mariana/?sku=4354518.245891.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "13002855"
+                    "id_variacao": "13002855",
+                    "sku": "4354518.245891.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-mariana/?sku=4354518.245891.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "13002857"
+                    "id_variacao": "13002857",
+                    "sku": "4354518.245891.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-mariana/?sku=4354518.245891.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "13002859"
+                    "id_variacao": "13002859",
+                    "sku": "4354518.245891.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-mariana/?sku=4354518.245891.404542.324742"
                 }
             },
             "caramelo": {
                 "33": {
                     "qtd": 1,
-                    "id_variacao": "13002846"
+                    "id_variacao": "13002846",
+                    "sku": "4354518.245891.404551.324747",
+                    "url_variacao": "https://loja.usebede.com.br/bota-mariana/?sku=4354518.245891.404551.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "13002847"
+                    "id_variacao": "13002847",
+                    "sku": "4354518.245891.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-mariana/?sku=4354518.245891.404551.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "13002848"
+                    "id_variacao": "13002848",
+                    "sku": "4354518.245891.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-mariana/?sku=4354518.245891.404551.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "13002849"
+                    "id_variacao": "13002849",
+                    "sku": "4354518.245891.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-mariana/?sku=4354518.245891.404551.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "13002850"
+                    "id_variacao": "13002850",
+                    "sku": "4354518.245891.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-mariana/?sku=4354518.245891.404551.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "13002851"
+                    "id_variacao": "13002851",
+                    "sku": "4354518.245891.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-mariana/?sku=4354518.245891.404551.324742"
                 }
             }
         },
@@ -12853,7 +16001,9 @@ const STILETTO_PRODUCTS = [
             "Única": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "13023846"
+                    "id_variacao": "13023846",
+                    "sku": "4361534.245894.0",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-gabi/?sku=4361534.245894.0"
                 }
             }
         },
@@ -12888,13 +16038,17 @@ const STILETTO_PRODUCTS = [
             "Preto": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "13023848"
+                    "id_variacao": "13023848",
+                    "sku": "4361535.245894.404542",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-antonella/?sku=4361535.245894.404542"
                 }
             },
             "nude": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "13023847"
+                    "id_variacao": "13023847",
+                    "sku": "4361535.245894.404550",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-antonella/?sku=4361535.245894.404550"
                 }
             }
         },
@@ -12927,94 +16081,130 @@ const STILETTO_PRODUCTS = [
         "preco": 389.0,
         "cores": [
             "Preto",
-            "onça",
-            "MARSALA"
+            "MARSALA",
+            "onça"
         ],
         "tamanhos": [
-            "37",
-            "36",
-            "38",
-            "35",
             "33",
-            "34"
+            "38",
+            "34",
+            "35",
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "MARSALA": {
                 "33": {
                     "qtd": 1,
-                    "id_variacao": "13133313"
+                    "id_variacao": "13133313",
+                    "sku": "4396512.245898.404552.324747",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabriela/?sku=4396512.245898.404552.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "13133314"
+                    "id_variacao": "13133314",
+                    "sku": "4396512.245898.404552.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabriela/?sku=4396512.245898.404552.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "13133315"
+                    "id_variacao": "13133315",
+                    "sku": "4396512.245898.404552.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabriela/?sku=4396512.245898.404552.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "13133316"
+                    "id_variacao": "13133316",
+                    "sku": "4396512.245898.404552.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabriela/?sku=4396512.245898.404552.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "13133317"
+                    "id_variacao": "13133317",
+                    "sku": "4396512.245898.404552.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabriela/?sku=4396512.245898.404552.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "13133318"
+                    "id_variacao": "13133318",
+                    "sku": "4396512.245898.404552.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabriela/?sku=4396512.245898.404552.324742"
                 }
             },
             "Preto": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "13133325"
+                    "id_variacao": "13133325",
+                    "sku": "4396512.245898.404542.324747",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabriela/?sku=4396512.245898.404542.324747"
                 },
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "13133326"
+                    "id_variacao": "13133326",
+                    "sku": "4396512.245898.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabriela/?sku=4396512.245898.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "13133327"
+                    "id_variacao": "13133327",
+                    "sku": "4396512.245898.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabriela/?sku=4396512.245898.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "13133328"
+                    "id_variacao": "13133328",
+                    "sku": "4396512.245898.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabriela/?sku=4396512.245898.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "13133329"
+                    "id_variacao": "13133329",
+                    "sku": "4396512.245898.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabriela/?sku=4396512.245898.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "13133330"
+                    "id_variacao": "13133330",
+                    "sku": "4396512.245898.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabriela/?sku=4396512.245898.404542.324742"
                 }
             },
             "onça": {
                 "33": {
                     "qtd": 1,
-                    "id_variacao": "13133319"
+                    "id_variacao": "13133319",
+                    "sku": "4396512.245898.490680.324747",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabriela/?sku=4396512.245898.490680.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "13133320"
+                    "id_variacao": "13133320",
+                    "sku": "4396512.245898.490680.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabriela/?sku=4396512.245898.490680.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "13133321"
+                    "id_variacao": "13133321",
+                    "sku": "4396512.245898.490680.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabriela/?sku=4396512.245898.490680.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "13133322"
+                    "id_variacao": "13133322",
+                    "sku": "4396512.245898.490680.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabriela/?sku=4396512.245898.490680.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "13133323"
+                    "id_variacao": "13133323",
+                    "sku": "4396512.245898.490680.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabriela/?sku=4396512.245898.490680.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "13133324"
+                    "id_variacao": "13133324",
+                    "sku": "4396512.245898.490680.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-gabriela/?sku=4396512.245898.490680.324742"
                 }
             }
         },
@@ -13052,8 +16242,8 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 159.9,
         "cores": [
-            "Dourado",
-            "Prata"
+            "Prata",
+            "Dourado"
         ],
         "tamanhos": [
             "Único"
@@ -13062,13 +16252,17 @@ const STILETTO_PRODUCTS = [
             "Dourado": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "14455036"
+                    "id_variacao": "14455036",
+                    "sku": "4767149.245894.404567",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-clutch-fabi/?sku=4767149.245894.404567"
                 }
             },
             "Prata": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "14455037"
+                    "id_variacao": "14455037",
+                    "sku": "4767149.245894.404559",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-clutch-fabi/?sku=4767149.245894.404559"
                 }
             }
         },
@@ -13096,8 +16290,8 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 159.9,
         "cores": [
-            "Dourado",
-            "Prata"
+            "Prata",
+            "Dourado"
         ],
         "tamanhos": [
             "Único"
@@ -13106,13 +16300,17 @@ const STILETTO_PRODUCTS = [
             "Dourado": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "14455038"
+                    "id_variacao": "14455038",
+                    "sku": "4767150.245894.404567",
+                    "url_variacao": "https://loja.usebede.com.br/bolsas-clutch-laco/?sku=4767150.245894.404567"
                 }
             },
             "Prata": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "14455039"
+                    "id_variacao": "14455039",
+                    "sku": "4767150.245894.404559",
+                    "url_variacao": "https://loja.usebede.com.br/bolsas-clutch-laco/?sku=4767150.245894.404559"
                 }
             }
         },
@@ -13151,13 +16349,17 @@ const STILETTO_PRODUCTS = [
             "Bege": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "14455040"
+                    "id_variacao": "14455040",
+                    "sku": "4767151.245894.509262",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-palha-franja/?sku=4767151.245894.509262"
                 }
             },
             "Caqui": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "14455041"
+                    "id_variacao": "14455041",
+                    "sku": "4767151.245894.550239",
+                    "url_variacao": "https://loja.usebede.com.br/bolsa-palha-franja/?sku=4767151.245894.550239"
                 }
             }
         },
@@ -13197,13 +16399,17 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "14455114"
+                    "id_variacao": "14455114",
+                    "sku": "4767176.245894.404545",
+                    "url_variacao": "https://loja.usebede.com.br/clutch-tachas/?sku=4767176.245894.404545"
                 }
             },
             "preta": {
                 "Único": {
                     "qtd": 0,
-                    "id_variacao": "14455115"
+                    "id_variacao": "14455115",
+                    "sku": "4767176.245894.410925",
+                    "url_variacao": "https://loja.usebede.com.br/clutch-tachas/?sku=4767176.245894.410925"
                 }
             }
         },
@@ -13240,13 +16446,17 @@ const STILETTO_PRODUCTS = [
             "Bege": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "14455116"
+                    "id_variacao": "14455116",
+                    "sku": "4767177.245894.509262",
+                    "url_variacao": "https://loja.usebede.com.br/clutch-palha/?sku=4767177.245894.509262"
                 }
             },
             "Caqui": {
                 "Único": {
                     "qtd": 1,
-                    "id_variacao": "14455117"
+                    "id_variacao": "14455117",
+                    "sku": "4767177.245894.550239",
+                    "url_variacao": "https://loja.usebede.com.br/clutch-palha/?sku=4767177.245894.550239"
                 }
             }
         },
@@ -13279,121 +16489,169 @@ const STILETTO_PRODUCTS = [
         "preco": 319.9,
         "cores": [
             "Preto",
-            "nude",
             "pinhão",
+            "nude",
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "14699540"
+                    "id_variacao": "14699540",
+                    "sku": "4840409.249814.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404545.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "14699541"
+                    "id_variacao": "14699541",
+                    "sku": "4840409.249814.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404545.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "14699542"
+                    "id_variacao": "14699542",
+                    "sku": "4840409.249814.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404545.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "14699543"
+                    "id_variacao": "14699543",
+                    "sku": "4840409.249814.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404545.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "14699544"
+                    "id_variacao": "14699544",
+                    "sku": "4840409.249814.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404545.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "14699545"
+                    "id_variacao": "14699545",
+                    "sku": "4840409.249814.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 9,
-                    "id_variacao": "14699555"
+                    "id_variacao": "14699555",
+                    "sku": "4840409.249814.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "14699556"
+                    "id_variacao": "14699556",
+                    "sku": "4840409.249814.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "14699558"
+                    "id_variacao": "14699558",
+                    "sku": "4840409.249814.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "14699559"
+                    "id_variacao": "14699559",
+                    "sku": "4840409.249814.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "14699560"
+                    "id_variacao": "14699560",
+                    "sku": "4840409.249814.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "14699561"
+                    "id_variacao": "14699561",
+                    "sku": "4840409.249814.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404542.324746"
                 }
             },
             "nude": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "14699534"
+                    "id_variacao": "14699534",
+                    "sku": "4840409.249814.404550.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404550.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "14699535"
+                    "id_variacao": "14699535",
+                    "sku": "4840409.249814.404550.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404550.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "14699536"
+                    "id_variacao": "14699536",
+                    "sku": "4840409.249814.404550.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404550.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "14699537"
+                    "id_variacao": "14699537",
+                    "sku": "4840409.249814.404550.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404550.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "14699538"
+                    "id_variacao": "14699538",
+                    "sku": "4840409.249814.404550.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404550.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "14699539"
+                    "id_variacao": "14699539",
+                    "sku": "4840409.249814.404550.324746",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404550.324746"
                 }
             },
             "pinhão": {
                 "34": {
                     "qtd": 7,
-                    "id_variacao": "14699546"
+                    "id_variacao": "14699546",
+                    "sku": "4840409.249814.404547.324743",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404547.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "14699547"
+                    "id_variacao": "14699547",
+                    "sku": "4840409.249814.404547.324745",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404547.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "14699549"
+                    "id_variacao": "14699549",
+                    "sku": "4840409.249814.404547.324744",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404547.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "14699551"
+                    "id_variacao": "14699551",
+                    "sku": "4840409.249814.404547.324741",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404547.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "14699553"
+                    "id_variacao": "14699553",
+                    "sku": "4840409.249814.404547.324742",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404547.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "14699554"
+                    "id_variacao": "14699554",
+                    "sku": "4840409.249814.404547.324746",
+                    "url_variacao": "https://loja.usebede.com.br/scarpin-martina/?sku=4840409.249814.404547.324746"
                 }
             }
         },
@@ -13435,64 +16693,88 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 8,
-                    "id_variacao": "14701416"
+                    "id_variacao": "14701416",
+                    "sku": "4840824.260789.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-bia/?sku=4840824.260789.404545.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "14701418"
+                    "id_variacao": "14701418",
+                    "sku": "4840824.260789.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-bia/?sku=4840824.260789.404545.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "14701419"
+                    "id_variacao": "14701419",
+                    "sku": "4840824.260789.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-bia/?sku=4840824.260789.404545.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "14701420"
+                    "id_variacao": "14701420",
+                    "sku": "4840824.260789.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-bia/?sku=4840824.260789.404545.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "14701421"
+                    "id_variacao": "14701421",
+                    "sku": "4840824.260789.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-bia/?sku=4840824.260789.404545.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "14701422"
+                    "id_variacao": "14701422",
+                    "sku": "4840824.260789.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-bia/?sku=4840824.260789.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 9,
-                    "id_variacao": "14701424"
+                    "id_variacao": "14701424",
+                    "sku": "4840824.260789.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-bia/?sku=4840824.260789.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "14701434"
+                    "id_variacao": "14701434",
+                    "sku": "4840824.260789.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-bia/?sku=4840824.260789.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "14701437"
+                    "id_variacao": "14701437",
+                    "sku": "4840824.260789.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-bia/?sku=4840824.260789.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "14701439"
+                    "id_variacao": "14701439",
+                    "sku": "4840824.260789.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-bia/?sku=4840824.260789.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "14701440"
+                    "id_variacao": "14701440",
+                    "sku": "4840824.260789.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-bia/?sku=4840824.260789.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "14701441"
+                    "id_variacao": "14701441",
+                    "sku": "4840824.260789.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-bia/?sku=4840824.260789.404542.324746"
                 }
             }
         },
@@ -13527,64 +16809,88 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Dourado": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "14847640"
+                    "id_variacao": "14847640",
+                    "sku": "4881997.249444.404567.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-scarlet/?sku=4881997.249444.404567.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "14847641"
+                    "id_variacao": "14847641",
+                    "sku": "4881997.249444.404567.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-scarlet/?sku=4881997.249444.404567.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "14847643"
+                    "id_variacao": "14847643",
+                    "sku": "4881997.249444.404567.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-scarlet/?sku=4881997.249444.404567.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "14847645"
+                    "id_variacao": "14847645",
+                    "sku": "4881997.249444.404567.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-scarlet/?sku=4881997.249444.404567.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "14847648"
+                    "id_variacao": "14847648",
+                    "sku": "4881997.249444.404567.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-scarlet/?sku=4881997.249444.404567.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "14847653"
+                    "id_variacao": "14847653",
+                    "sku": "4881997.249444.404567.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-scarlet/?sku=4881997.249444.404567.324746"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "14847631"
+                    "id_variacao": "14847631",
+                    "sku": "4881997.249444.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-scarlet/?sku=4881997.249444.404551.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "14847633"
+                    "id_variacao": "14847633",
+                    "sku": "4881997.249444.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-scarlet/?sku=4881997.249444.404551.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "14847635"
+                    "id_variacao": "14847635",
+                    "sku": "4881997.249444.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-scarlet/?sku=4881997.249444.404551.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "14847636"
+                    "id_variacao": "14847636",
+                    "sku": "4881997.249444.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-scarlet/?sku=4881997.249444.404551.324741"
                 },
                 "38": {
                     "qtd": 9,
-                    "id_variacao": "14847637"
+                    "id_variacao": "14847637",
+                    "sku": "4881997.249444.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-scarlet/?sku=4881997.249444.404551.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "14847638"
+                    "id_variacao": "14847638",
+                    "sku": "4881997.249444.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-scarlet/?sku=4881997.249444.404551.324746"
                 }
             }
         },
@@ -13619,122 +16925,170 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 275.9,
         "cores": [
-            "Dourado",
-            "Vermelho",
             "Preto",
+            "Vermelho",
+            "Dourado",
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Dourado": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "14847654"
+                    "id_variacao": "14847654",
+                    "sku": "4882001.323507.404567.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404567.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "14847656"
+                    "id_variacao": "14847656",
+                    "sku": "4882001.323507.404567.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404567.324745"
                 },
                 "36": {
                     "qtd": 38,
-                    "id_variacao": "14847657"
+                    "id_variacao": "14847657",
+                    "sku": "4882001.323507.404567.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404567.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "14847658"
+                    "id_variacao": "14847658",
+                    "sku": "4882001.323507.404567.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404567.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "14847659"
+                    "id_variacao": "14847659",
+                    "sku": "4882001.323507.404567.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404567.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "14847660"
+                    "id_variacao": "14847660",
+                    "sku": "4882001.323507.404567.324746",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404567.324746"
                 }
             },
             "OFF WHITE": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "14847661"
+                    "id_variacao": "14847661",
+                    "sku": "4882001.323507.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404545.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "14847662"
+                    "id_variacao": "14847662",
+                    "sku": "4882001.323507.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404545.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "14847663"
+                    "id_variacao": "14847663",
+                    "sku": "4882001.323507.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404545.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "14847664"
+                    "id_variacao": "14847664",
+                    "sku": "4882001.323507.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404545.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "14847665"
+                    "id_variacao": "14847665",
+                    "sku": "4882001.323507.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404545.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "14847666"
+                    "id_variacao": "14847666",
+                    "sku": "4882001.323507.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "14847667"
+                    "id_variacao": "14847667",
+                    "sku": "4882001.323507.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "14847668"
+                    "id_variacao": "14847668",
+                    "sku": "4882001.323507.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "14847669"
+                    "id_variacao": "14847669",
+                    "sku": "4882001.323507.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "14847670"
+                    "id_variacao": "14847670",
+                    "sku": "4882001.323507.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "14847671"
+                    "id_variacao": "14847671",
+                    "sku": "4882001.323507.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "14847672"
+                    "id_variacao": "14847672",
+                    "sku": "4882001.323507.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404542.324746"
                 }
             },
             "Vermelho": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "14847673"
+                    "id_variacao": "14847673",
+                    "sku": "4882001.323507.404574.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404574.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "14847674"
+                    "id_variacao": "14847674",
+                    "sku": "4882001.323507.404574.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404574.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "14847675"
+                    "id_variacao": "14847675",
+                    "sku": "4882001.323507.404574.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404574.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "14847676"
+                    "id_variacao": "14847676",
+                    "sku": "4882001.323507.404574.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404574.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "14847677"
+                    "id_variacao": "14847677",
+                    "sku": "4882001.323507.404574.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404574.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "14847678"
+                    "id_variacao": "14847678",
+                    "sku": "4882001.323507.404574.324746",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-gina/?sku=4882001.323507.404574.324746"
                 }
             }
         },
@@ -13776,64 +17130,88 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "14908741"
+                    "id_variacao": "14908741",
+                    "sku": "4905308.249444.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-aurora-6909132b8877a/?sku=4905308.249444.404545.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "14908742"
+                    "id_variacao": "14908742",
+                    "sku": "4905308.249444.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-aurora-6909132b8877a/?sku=4905308.249444.404545.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "14908743"
+                    "id_variacao": "14908743",
+                    "sku": "4905308.249444.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-aurora-6909132b8877a/?sku=4905308.249444.404545.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "14908744"
+                    "id_variacao": "14908744",
+                    "sku": "4905308.249444.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-aurora-6909132b8877a/?sku=4905308.249444.404545.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "14908746"
+                    "id_variacao": "14908746",
+                    "sku": "4905308.249444.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-aurora-6909132b8877a/?sku=4905308.249444.404545.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "14908747"
+                    "id_variacao": "14908747",
+                    "sku": "4905308.249444.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-aurora-6909132b8877a/?sku=4905308.249444.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "14908748"
+                    "id_variacao": "14908748",
+                    "sku": "4905308.249444.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-aurora-6909132b8877a/?sku=4905308.249444.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "14908749"
+                    "id_variacao": "14908749",
+                    "sku": "4905308.249444.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-aurora-6909132b8877a/?sku=4905308.249444.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "14908750"
+                    "id_variacao": "14908750",
+                    "sku": "4905308.249444.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-aurora-6909132b8877a/?sku=4905308.249444.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "14908751"
+                    "id_variacao": "14908751",
+                    "sku": "4905308.249444.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-aurora-6909132b8877a/?sku=4905308.249444.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "14908752"
+                    "id_variacao": "14908752",
+                    "sku": "4905308.249444.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-aurora-6909132b8877a/?sku=4905308.249444.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "14908753"
+                    "id_variacao": "14908753",
+                    "sku": "4905308.249444.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-aurora-6909132b8877a/?sku=4905308.249444.404542.324746"
                 }
             }
         },
@@ -13865,64 +17243,88 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 9,
-                    "id_variacao": "14909037"
+                    "id_variacao": "14909037",
+                    "sku": "4905399.249444.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ananda/?sku=4905399.249444.404545.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "14909041"
+                    "id_variacao": "14909041",
+                    "sku": "4905399.249444.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ananda/?sku=4905399.249444.404545.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "14909042"
+                    "id_variacao": "14909042",
+                    "sku": "4905399.249444.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ananda/?sku=4905399.249444.404545.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "14909043"
+                    "id_variacao": "14909043",
+                    "sku": "4905399.249444.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ananda/?sku=4905399.249444.404545.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "14909044"
+                    "id_variacao": "14909044",
+                    "sku": "4905399.249444.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ananda/?sku=4905399.249444.404545.324742"
                 },
                 "39": {
                     "qtd": 2,
-                    "id_variacao": "14909045"
+                    "id_variacao": "14909045",
+                    "sku": "4905399.249444.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ananda/?sku=4905399.249444.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "14909046"
+                    "id_variacao": "14909046",
+                    "sku": "4905399.249444.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ananda/?sku=4905399.249444.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "14909047"
+                    "id_variacao": "14909047",
+                    "sku": "4905399.249444.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ananda/?sku=4905399.249444.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "14909048"
+                    "id_variacao": "14909048",
+                    "sku": "4905399.249444.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ananda/?sku=4905399.249444.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "14909049"
+                    "id_variacao": "14909049",
+                    "sku": "4905399.249444.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ananda/?sku=4905399.249444.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "14909050"
+                    "id_variacao": "14909050",
+                    "sku": "4905399.249444.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ananda/?sku=4905399.249444.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "14909051"
+                    "id_variacao": "14909051",
+                    "sku": "4905399.249444.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-ananda/?sku=4905399.249444.404542.324746"
                 }
             }
         },
@@ -13954,90 +17356,126 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "14909058"
+                    "id_variacao": "14909058",
+                    "sku": "4905400.249444.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-charlote/?sku=4905400.249444.404545.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "14909059"
+                    "id_variacao": "14909059",
+                    "sku": "4905400.249444.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-charlote/?sku=4905400.249444.404545.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "14909060"
+                    "id_variacao": "14909060",
+                    "sku": "4905400.249444.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-charlote/?sku=4905400.249444.404545.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "14909061"
+                    "id_variacao": "14909061",
+                    "sku": "4905400.249444.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-charlote/?sku=4905400.249444.404545.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "14909062"
+                    "id_variacao": "14909062",
+                    "sku": "4905400.249444.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-charlote/?sku=4905400.249444.404545.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "14909063"
+                    "id_variacao": "14909063",
+                    "sku": "4905400.249444.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-charlote/?sku=4905400.249444.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "14909064"
+                    "id_variacao": "14909064",
+                    "sku": "4905400.249444.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-charlote/?sku=4905400.249444.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "14909065"
+                    "id_variacao": "14909065",
+                    "sku": "4905400.249444.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-charlote/?sku=4905400.249444.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "14909066"
+                    "id_variacao": "14909066",
+                    "sku": "4905400.249444.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-charlote/?sku=4905400.249444.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "14909067"
+                    "id_variacao": "14909067",
+                    "sku": "4905400.249444.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-charlote/?sku=4905400.249444.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "14909068"
+                    "id_variacao": "14909068",
+                    "sku": "4905400.249444.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-charlote/?sku=4905400.249444.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "14909069"
+                    "id_variacao": "14909069",
+                    "sku": "4905400.249444.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-charlote/?sku=4905400.249444.404542.324746"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "14909052"
+                    "id_variacao": "14909052",
+                    "sku": "4905400.249444.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-charlote/?sku=4905400.249444.404551.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "14909053"
+                    "id_variacao": "14909053",
+                    "sku": "4905400.249444.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-charlote/?sku=4905400.249444.404551.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "14909054"
+                    "id_variacao": "14909054",
+                    "sku": "4905400.249444.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-charlote/?sku=4905400.249444.404551.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "14909055"
+                    "id_variacao": "14909055",
+                    "sku": "4905400.249444.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-charlote/?sku=4905400.249444.404551.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "14909056"
+                    "id_variacao": "14909056",
+                    "sku": "4905400.249444.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-charlote/?sku=4905400.249444.404551.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "14909057"
+                    "id_variacao": "14909057",
+                    "sku": "4905400.249444.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-charlote/?sku=4905400.249444.404551.324746"
                 }
             }
         },
@@ -14073,90 +17511,126 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "15268313"
+                    "id_variacao": "15268313",
+                    "sku": "5016060.249444.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-couro/?sku=5016060.249444.404545.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "15268314"
+                    "id_variacao": "15268314",
+                    "sku": "5016060.249444.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-couro/?sku=5016060.249444.404545.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "15268315"
+                    "id_variacao": "15268315",
+                    "sku": "5016060.249444.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-couro/?sku=5016060.249444.404545.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "15268316"
+                    "id_variacao": "15268316",
+                    "sku": "5016060.249444.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-couro/?sku=5016060.249444.404545.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "15268317"
+                    "id_variacao": "15268317",
+                    "sku": "5016060.249444.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-couro/?sku=5016060.249444.404545.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "15268318"
+                    "id_variacao": "15268318",
+                    "sku": "5016060.249444.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-couro/?sku=5016060.249444.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 9,
-                    "id_variacao": "15268319"
+                    "id_variacao": "15268319",
+                    "sku": "5016060.249444.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-couro/?sku=5016060.249444.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "15268320"
+                    "id_variacao": "15268320",
+                    "sku": "5016060.249444.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-couro/?sku=5016060.249444.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "15268321"
+                    "id_variacao": "15268321",
+                    "sku": "5016060.249444.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-couro/?sku=5016060.249444.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "15268322"
+                    "id_variacao": "15268322",
+                    "sku": "5016060.249444.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-couro/?sku=5016060.249444.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "15268323"
+                    "id_variacao": "15268323",
+                    "sku": "5016060.249444.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-couro/?sku=5016060.249444.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "15268324"
+                    "id_variacao": "15268324",
+                    "sku": "5016060.249444.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-couro/?sku=5016060.249444.404542.324746"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "15268304"
+                    "id_variacao": "15268304",
+                    "sku": "5016060.249444.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-couro/?sku=5016060.249444.404551.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "15268308"
+                    "id_variacao": "15268308",
+                    "sku": "5016060.249444.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-couro/?sku=5016060.249444.404551.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "15268309"
+                    "id_variacao": "15268309",
+                    "sku": "5016060.249444.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-couro/?sku=5016060.249444.404551.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "15268310"
+                    "id_variacao": "15268310",
+                    "sku": "5016060.249444.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-couro/?sku=5016060.249444.404551.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "15268311"
+                    "id_variacao": "15268311",
+                    "sku": "5016060.249444.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-couro/?sku=5016060.249444.404551.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "15268312"
+                    "id_variacao": "15268312",
+                    "sku": "5016060.249444.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-couro/?sku=5016060.249444.404551.324746"
                 }
             }
         },
@@ -14187,68 +17661,92 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 255.9,
         "cores": [
-            "Terra",
-            "TAUPE"
+            "TAUPE",
+            "Terra"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "TAUPE": {
                 "34": {
                     "qtd": 9,
-                    "id_variacao": "15268325"
+                    "id_variacao": "15268325",
+                    "sku": "5016064.249444.404540.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-camurca/?sku=5016064.249444.404540.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "15268326"
+                    "id_variacao": "15268326",
+                    "sku": "5016064.249444.404540.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-camurca/?sku=5016064.249444.404540.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "15268327"
+                    "id_variacao": "15268327",
+                    "sku": "5016064.249444.404540.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-camurca/?sku=5016064.249444.404540.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "15268328"
+                    "id_variacao": "15268328",
+                    "sku": "5016064.249444.404540.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-camurca/?sku=5016064.249444.404540.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "15268329"
+                    "id_variacao": "15268329",
+                    "sku": "5016064.249444.404540.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-camurca/?sku=5016064.249444.404540.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "15268330"
+                    "id_variacao": "15268330",
+                    "sku": "5016064.249444.404540.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-camurca/?sku=5016064.249444.404540.324746"
                 }
             },
             "Terra": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "15268331"
+                    "id_variacao": "15268331",
+                    "sku": "5016064.249444.410926.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-camurca/?sku=5016064.249444.410926.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "15268332"
+                    "id_variacao": "15268332",
+                    "sku": "5016064.249444.410926.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-camurca/?sku=5016064.249444.410926.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "15268333"
+                    "id_variacao": "15268333",
+                    "sku": "5016064.249444.410926.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-camurca/?sku=5016064.249444.410926.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "15268334"
+                    "id_variacao": "15268334",
+                    "sku": "5016064.249444.410926.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-camurca/?sku=5016064.249444.410926.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "15268335"
+                    "id_variacao": "15268335",
+                    "sku": "5016064.249444.410926.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-camurca/?sku=5016064.249444.410926.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "15268336"
+                    "id_variacao": "15268336",
+                    "sku": "5016064.249444.410926.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-tati-camurca/?sku=5016064.249444.410926.324746"
                 }
             }
         },
@@ -14280,64 +17778,88 @@ const STILETTO_PRODUCTS = [
             "caramelo"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "15268342"
+                    "id_variacao": "15268342",
+                    "sku": "5016065.323507.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-patricia/?sku=5016065.323507.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "15268343"
+                    "id_variacao": "15268343",
+                    "sku": "5016065.323507.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-patricia/?sku=5016065.323507.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "15268344"
+                    "id_variacao": "15268344",
+                    "sku": "5016065.323507.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-patricia/?sku=5016065.323507.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "15359144"
+                    "id_variacao": "15359144",
+                    "sku": "5016065.323507.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-patricia/?sku=5016065.323507.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "15268345"
+                    "id_variacao": "15268345",
+                    "sku": "5016065.323507.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-patricia/?sku=5016065.323507.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "15268346"
+                    "id_variacao": "15268346",
+                    "sku": "5016065.323507.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-patricia/?sku=5016065.323507.404542.324746"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "15268337"
+                    "id_variacao": "15268337",
+                    "sku": "5016065.323507.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-patricia/?sku=5016065.323507.404551.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "15268338"
+                    "id_variacao": "15268338",
+                    "sku": "5016065.323507.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-patricia/?sku=5016065.323507.404551.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "15268339"
+                    "id_variacao": "15268339",
+                    "sku": "5016065.323507.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-patricia/?sku=5016065.323507.404551.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "15359143"
+                    "id_variacao": "15359143",
+                    "sku": "5016065.323507.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-patricia/?sku=5016065.323507.404551.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "15268340"
+                    "id_variacao": "15268340",
+                    "sku": "5016065.323507.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-patricia/?sku=5016065.323507.404551.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "15268341"
+                    "id_variacao": "15268341",
+                    "sku": "5016065.323507.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-patricia/?sku=5016065.323507.404551.324746"
                 }
             }
         },
@@ -14368,64 +17890,88 @@ const STILETTO_PRODUCTS = [
             "CAPUCCINO"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "CAPUCCINO": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "15268347"
+                    "id_variacao": "15268347",
+                    "sku": "5016066.323507.404562.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-tessi/?sku=5016066.323507.404562.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "15268348"
+                    "id_variacao": "15268348",
+                    "sku": "5016066.323507.404562.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-tessi/?sku=5016066.323507.404562.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "15268349"
+                    "id_variacao": "15268349",
+                    "sku": "5016066.323507.404562.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-tessi/?sku=5016066.323507.404562.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "15268350"
+                    "id_variacao": "15268350",
+                    "sku": "5016066.323507.404562.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-tessi/?sku=5016066.323507.404562.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "15268351"
+                    "id_variacao": "15268351",
+                    "sku": "5016066.323507.404562.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-tessi/?sku=5016066.323507.404562.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "15268352"
+                    "id_variacao": "15268352",
+                    "sku": "5016066.323507.404562.324746",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-tessi/?sku=5016066.323507.404562.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "15268353"
+                    "id_variacao": "15268353",
+                    "sku": "5016066.323507.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-tessi/?sku=5016066.323507.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "15268354"
+                    "id_variacao": "15268354",
+                    "sku": "5016066.323507.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-tessi/?sku=5016066.323507.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "15268355"
+                    "id_variacao": "15268355",
+                    "sku": "5016066.323507.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-tessi/?sku=5016066.323507.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "15268356"
+                    "id_variacao": "15268356",
+                    "sku": "5016066.323507.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-tessi/?sku=5016066.323507.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "15268357"
+                    "id_variacao": "15268357",
+                    "sku": "5016066.323507.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-tessi/?sku=5016066.323507.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "15268358"
+                    "id_variacao": "15268358",
+                    "sku": "5016066.323507.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/tamanco-tessi/?sku=5016066.323507.404542.324746"
                 }
             }
         },
@@ -14459,116 +18005,164 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Bronze": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "15303303"
+                    "id_variacao": "15303303",
+                    "sku": "5027515.260790.572752.324743",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.572752.324743"
                 },
                 "35": {
                     "qtd": 4,
-                    "id_variacao": "15303304"
+                    "id_variacao": "15303304",
+                    "sku": "5027515.260790.572752.324745",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.572752.324745"
                 },
                 "36": {
                     "qtd": 6,
-                    "id_variacao": "15303305"
+                    "id_variacao": "15303305",
+                    "sku": "5027515.260790.572752.324744",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.572752.324744"
                 },
                 "37": {
                     "qtd": 6,
-                    "id_variacao": "15303306"
+                    "id_variacao": "15303306",
+                    "sku": "5027515.260790.572752.324741",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.572752.324741"
                 },
                 "38": {
                     "qtd": 3,
-                    "id_variacao": "15303307"
+                    "id_variacao": "15303307",
+                    "sku": "5027515.260790.572752.324742",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.572752.324742"
                 },
                 "39": {
                     "qtd": 2,
-                    "id_variacao": "15303308"
+                    "id_variacao": "15303308",
+                    "sku": "5027515.260790.572752.324746",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.572752.324746"
                 }
             },
             "OFF WHITE": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "15303315"
+                    "id_variacao": "15303315",
+                    "sku": "5027515.260790.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.404545.324743"
                 },
                 "35": {
                     "qtd": 4,
-                    "id_variacao": "15303316"
+                    "id_variacao": "15303316",
+                    "sku": "5027515.260790.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.404545.324745"
                 },
                 "36": {
                     "qtd": 6,
-                    "id_variacao": "15303317"
+                    "id_variacao": "15303317",
+                    "sku": "5027515.260790.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.404545.324744"
                 },
                 "37": {
                     "qtd": 6,
-                    "id_variacao": "15303318"
+                    "id_variacao": "15303318",
+                    "sku": "5027515.260790.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.404545.324741"
                 },
                 "38": {
                     "qtd": 4,
-                    "id_variacao": "15303319"
+                    "id_variacao": "15303319",
+                    "sku": "5027515.260790.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.404545.324742"
                 },
                 "39": {
                     "qtd": 2,
-                    "id_variacao": "15303320"
+                    "id_variacao": "15303320",
+                    "sku": "5027515.260790.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "15303321"
+                    "id_variacao": "15303321",
+                    "sku": "5027515.260790.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.404542.324743"
                 },
                 "35": {
                     "qtd": 4,
-                    "id_variacao": "15303322"
+                    "id_variacao": "15303322",
+                    "sku": "5027515.260790.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.404542.324745"
                 },
                 "36": {
                     "qtd": 6,
-                    "id_variacao": "15303323"
+                    "id_variacao": "15303323",
+                    "sku": "5027515.260790.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.404542.324744"
                 },
                 "37": {
                     "qtd": 6,
-                    "id_variacao": "15303324"
+                    "id_variacao": "15303324",
+                    "sku": "5027515.260790.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.404542.324741"
                 },
                 "38": {
                     "qtd": 4,
-                    "id_variacao": "15303325"
+                    "id_variacao": "15303325",
+                    "sku": "5027515.260790.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.404542.324742"
                 },
                 "39": {
                     "qtd": 2,
-                    "id_variacao": "15303326"
+                    "id_variacao": "15303326",
+                    "sku": "5027515.260790.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.404542.324746"
                 }
             },
             "nude/preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "15303309"
+                    "id_variacao": "15303309",
+                    "sku": "5027515.260790.572753.324743",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.572753.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "15303310"
+                    "id_variacao": "15303310",
+                    "sku": "5027515.260790.572753.324745",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.572753.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "15303311"
+                    "id_variacao": "15303311",
+                    "sku": "5027515.260790.572753.324744",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.572753.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "15303312"
+                    "id_variacao": "15303312",
+                    "sku": "5027515.260790.572753.324741",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.572753.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "15303313"
+                    "id_variacao": "15303313",
+                    "sku": "5027515.260790.572753.324742",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.572753.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "15303314"
+                    "id_variacao": "15303314",
+                    "sku": "5027515.260790.572753.324746",
+                    "url_variacao": "https://loja.usebede.com.br/papete-veronica/?sku=5027515.260790.572753.324746"
                 }
             }
         },
@@ -14606,38 +18200,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "15303354"
+                    "id_variacao": "15303354",
+                    "sku": "5027530.260790.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/papete-onca/?sku=5027530.260790.0.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "15303355"
+                    "id_variacao": "15303355",
+                    "sku": "5027530.260790.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/papete-onca/?sku=5027530.260790.0.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "15303356"
+                    "id_variacao": "15303356",
+                    "sku": "5027530.260790.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/papete-onca/?sku=5027530.260790.0.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "15303357"
+                    "id_variacao": "15303357",
+                    "sku": "5027530.260790.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/papete-onca/?sku=5027530.260790.0.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "15303358"
+                    "id_variacao": "15303358",
+                    "sku": "5027530.260790.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/papete-onca/?sku=5027530.260790.0.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "15303359"
+                    "id_variacao": "15303359",
+                    "sku": "5027530.260790.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/papete-onca/?sku=5027530.260790.0.324746"
                 }
             }
         },
@@ -14665,64 +18271,88 @@ const STILETTO_PRODUCTS = [
             "Prata"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Prata": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "15303381"
+                    "id_variacao": "15303381",
+                    "sku": "5027552.260791.404559.324743",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-corrente-tratorado/?sku=5027552.260791.404559.324743"
                 },
                 "35": {
                     "qtd": 3,
-                    "id_variacao": "15303382"
+                    "id_variacao": "15303382",
+                    "sku": "5027552.260791.404559.324745",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-corrente-tratorado/?sku=5027552.260791.404559.324745"
                 },
                 "36": {
                     "qtd": 6,
-                    "id_variacao": "15303383"
+                    "id_variacao": "15303383",
+                    "sku": "5027552.260791.404559.324744",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-corrente-tratorado/?sku=5027552.260791.404559.324744"
                 },
                 "37": {
                     "qtd": 6,
-                    "id_variacao": "15303384"
+                    "id_variacao": "15303384",
+                    "sku": "5027552.260791.404559.324741",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-corrente-tratorado/?sku=5027552.260791.404559.324741"
                 },
                 "38": {
                     "qtd": 3,
-                    "id_variacao": "15303385"
+                    "id_variacao": "15303385",
+                    "sku": "5027552.260791.404559.324742",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-corrente-tratorado/?sku=5027552.260791.404559.324742"
                 },
                 "39": {
                     "qtd": 2,
-                    "id_variacao": "15303386"
+                    "id_variacao": "15303386",
+                    "sku": "5027552.260791.404559.324746",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-corrente-tratorado/?sku=5027552.260791.404559.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "15303387"
+                    "id_variacao": "15303387",
+                    "sku": "5027552.260791.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-corrente-tratorado/?sku=5027552.260791.404542.324743"
                 },
                 "35": {
                     "qtd": 4,
-                    "id_variacao": "15303388"
+                    "id_variacao": "15303388",
+                    "sku": "5027552.260791.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-corrente-tratorado/?sku=5027552.260791.404542.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "15303389"
+                    "id_variacao": "15303389",
+                    "sku": "5027552.260791.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-corrente-tratorado/?sku=5027552.260791.404542.324744"
                 },
                 "37": {
                     "qtd": 6,
-                    "id_variacao": "15303390"
+                    "id_variacao": "15303390",
+                    "sku": "5027552.260791.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-corrente-tratorado/?sku=5027552.260791.404542.324741"
                 },
                 "38": {
                     "qtd": 4,
-                    "id_variacao": "15303391"
+                    "id_variacao": "15303391",
+                    "sku": "5027552.260791.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-corrente-tratorado/?sku=5027552.260791.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "15303392"
+                    "id_variacao": "15303392",
+                    "sku": "5027552.260791.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-corrente-tratorado/?sku=5027552.260791.404542.324746"
                 }
             }
         },
@@ -14753,64 +18383,88 @@ const STILETTO_PRODUCTS = [
             "Bronze"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Bronze": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "15303429"
+                    "id_variacao": "15303429",
+                    "sku": "5027573.260790.572752.324743",
+                    "url_variacao": "https://loja.usebede.com.br/papete-slim/?sku=5027573.260790.572752.324743"
                 },
                 "35": {
                     "qtd": 4,
-                    "id_variacao": "15303430"
+                    "id_variacao": "15303430",
+                    "sku": "5027573.260790.572752.324745",
+                    "url_variacao": "https://loja.usebede.com.br/papete-slim/?sku=5027573.260790.572752.324745"
                 },
                 "36": {
                     "qtd": 5,
-                    "id_variacao": "15303431"
+                    "id_variacao": "15303431",
+                    "sku": "5027573.260790.572752.324744",
+                    "url_variacao": "https://loja.usebede.com.br/papete-slim/?sku=5027573.260790.572752.324744"
                 },
                 "37": {
                     "qtd": 6,
-                    "id_variacao": "15303432"
+                    "id_variacao": "15303432",
+                    "sku": "5027573.260790.572752.324741",
+                    "url_variacao": "https://loja.usebede.com.br/papete-slim/?sku=5027573.260790.572752.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "15303433"
+                    "id_variacao": "15303433",
+                    "sku": "5027573.260790.572752.324742",
+                    "url_variacao": "https://loja.usebede.com.br/papete-slim/?sku=5027573.260790.572752.324742"
                 },
                 "39": {
                     "qtd": 2,
-                    "id_variacao": "15303434"
+                    "id_variacao": "15303434",
+                    "sku": "5027573.260790.572752.324746",
+                    "url_variacao": "https://loja.usebede.com.br/papete-slim/?sku=5027573.260790.572752.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "15303435"
+                    "id_variacao": "15303435",
+                    "sku": "5027573.260790.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/papete-slim/?sku=5027573.260790.404542.324743"
                 },
                 "35": {
                     "qtd": 4,
-                    "id_variacao": "15303436"
+                    "id_variacao": "15303436",
+                    "sku": "5027573.260790.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/papete-slim/?sku=5027573.260790.404542.324745"
                 },
                 "36": {
                     "qtd": 6,
-                    "id_variacao": "15303437"
+                    "id_variacao": "15303437",
+                    "sku": "5027573.260790.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/papete-slim/?sku=5027573.260790.404542.324744"
                 },
                 "37": {
                     "qtd": 6,
-                    "id_variacao": "15303438"
+                    "id_variacao": "15303438",
+                    "sku": "5027573.260790.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/papete-slim/?sku=5027573.260790.404542.324741"
                 },
                 "38": {
                     "qtd": 4,
-                    "id_variacao": "15303439"
+                    "id_variacao": "15303439",
+                    "sku": "5027573.260790.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/papete-slim/?sku=5027573.260790.404542.324742"
                 },
                 "39": {
                     "qtd": 2,
-                    "id_variacao": "15303440"
+                    "id_variacao": "15303440",
+                    "sku": "5027573.260790.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/papete-slim/?sku=5027573.260790.404542.324746"
                 }
             }
         },
@@ -14840,38 +18494,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "15303441"
+                    "id_variacao": "15303441",
+                    "sku": "5027574.260791.0.324743",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-onca/?sku=5027574.260791.0.324743"
                 },
                 "35": {
                     "qtd": 4,
-                    "id_variacao": "15303442"
+                    "id_variacao": "15303442",
+                    "sku": "5027574.260791.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-onca/?sku=5027574.260791.0.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "15303443"
+                    "id_variacao": "15303443",
+                    "sku": "5027574.260791.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-onca/?sku=5027574.260791.0.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "15303444"
+                    "id_variacao": "15303444",
+                    "sku": "5027574.260791.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-onca/?sku=5027574.260791.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "15303445"
+                    "id_variacao": "15303445",
+                    "sku": "5027574.260791.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-onca/?sku=5027574.260791.0.324742"
                 },
                 "39": {
                     "qtd": 2,
-                    "id_variacao": "15303446"
+                    "id_variacao": "15303446",
+                    "sku": "5027574.260791.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-onca/?sku=5027574.260791.0.324746"
                 }
             }
         },
@@ -14899,38 +18565,50 @@ const STILETTO_PRODUCTS = [
             "Única"
         ],
         "tamanhos": [
-            "37",
-            "36",
+            "33",
             "38",
             "35",
-            "33",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Única": {
                 "33": {
                     "qtd": 2,
-                    "id_variacao": "15303447"
+                    "id_variacao": "15303447",
+                    "sku": "5027575.260791.0.324747",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-new/?sku=5027575.260791.0.324747"
                 },
                 "35": {
                     "qtd": 5,
-                    "id_variacao": "15303448"
+                    "id_variacao": "15303448",
+                    "sku": "5027575.260791.0.324745",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-new/?sku=5027575.260791.0.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "15303449"
+                    "id_variacao": "15303449",
+                    "sku": "5027575.260791.0.324744",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-new/?sku=5027575.260791.0.324744"
                 },
                 "37": {
                     "qtd": 4,
-                    "id_variacao": "15303450"
+                    "id_variacao": "15303450",
+                    "sku": "5027575.260791.0.324741",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-new/?sku=5027575.260791.0.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "15303451"
+                    "id_variacao": "15303451",
+                    "sku": "5027575.260791.0.324742",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-new/?sku=5027575.260791.0.324742"
                 },
                 "39": {
                     "qtd": 7,
-                    "id_variacao": "15303452"
+                    "id_variacao": "15303452",
+                    "sku": "5027575.260791.0.324746",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-new/?sku=5027575.260791.0.324746"
                 }
             }
         },
@@ -14960,64 +18638,88 @@ const STILETTO_PRODUCTS = [
             "Bronze"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Bronze": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "15303471"
+                    "id_variacao": "15303471",
+                    "sku": "5027589.260791.572752.324743",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-jane/?sku=5027589.260791.572752.324743"
                 },
                 "35": {
                     "qtd": 3,
-                    "id_variacao": "15303472"
+                    "id_variacao": "15303472",
+                    "sku": "5027589.260791.572752.324745",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-jane/?sku=5027589.260791.572752.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "15303473"
+                    "id_variacao": "15303473",
+                    "sku": "5027589.260791.572752.324744",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-jane/?sku=5027589.260791.572752.324744"
                 },
                 "37": {
                     "qtd": 5,
-                    "id_variacao": "15303474"
+                    "id_variacao": "15303474",
+                    "sku": "5027589.260791.572752.324741",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-jane/?sku=5027589.260791.572752.324741"
                 },
                 "38": {
                     "qtd": 4,
-                    "id_variacao": "15303475"
+                    "id_variacao": "15303475",
+                    "sku": "5027589.260791.572752.324742",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-jane/?sku=5027589.260791.572752.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "15303476"
+                    "id_variacao": "15303476",
+                    "sku": "5027589.260791.572752.324746",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-jane/?sku=5027589.260791.572752.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "15303477"
+                    "id_variacao": "15303477",
+                    "sku": "5027589.260791.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-jane/?sku=5027589.260791.404542.324743"
                 },
                 "35": {
                     "qtd": 4,
-                    "id_variacao": "15303478"
+                    "id_variacao": "15303478",
+                    "sku": "5027589.260791.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-jane/?sku=5027589.260791.404542.324745"
                 },
                 "36": {
                     "qtd": 4,
-                    "id_variacao": "15303479"
+                    "id_variacao": "15303479",
+                    "sku": "5027589.260791.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-jane/?sku=5027589.260791.404542.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "15303480"
+                    "id_variacao": "15303480",
+                    "sku": "5027589.260791.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-jane/?sku=5027589.260791.404542.324741"
                 },
                 "38": {
                     "qtd": 4,
-                    "id_variacao": "15303481"
+                    "id_variacao": "15303481",
+                    "sku": "5027589.260791.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-jane/?sku=5027589.260791.404542.324742"
                 },
                 "39": {
                     "qtd": 2,
-                    "id_variacao": "15303482"
+                    "id_variacao": "15303482",
+                    "sku": "5027589.260791.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/chinelo-jane/?sku=5027589.260791.404542.324746"
                 }
             }
         },
@@ -15053,90 +18755,126 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "15320479"
+                    "id_variacao": "15320479",
+                    "sku": "5032496.260789.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-mari/?sku=5032496.260789.404545.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "15320480"
+                    "id_variacao": "15320480",
+                    "sku": "5032496.260789.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-mari/?sku=5032496.260789.404545.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "15320481"
+                    "id_variacao": "15320481",
+                    "sku": "5032496.260789.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-mari/?sku=5032496.260789.404545.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "15320482"
+                    "id_variacao": "15320482",
+                    "sku": "5032496.260789.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-mari/?sku=5032496.260789.404545.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "15320483"
+                    "id_variacao": "15320483",
+                    "sku": "5032496.260789.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-mari/?sku=5032496.260789.404545.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "15320484"
+                    "id_variacao": "15320484",
+                    "sku": "5032496.260789.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-mari/?sku=5032496.260789.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "15320485"
+                    "id_variacao": "15320485",
+                    "sku": "5032496.260789.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-mari/?sku=5032496.260789.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "15320486"
+                    "id_variacao": "15320486",
+                    "sku": "5032496.260789.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-mari/?sku=5032496.260789.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "15320487"
+                    "id_variacao": "15320487",
+                    "sku": "5032496.260789.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-mari/?sku=5032496.260789.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "15320488"
+                    "id_variacao": "15320488",
+                    "sku": "5032496.260789.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-mari/?sku=5032496.260789.404542.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "15320489"
+                    "id_variacao": "15320489",
+                    "sku": "5032496.260789.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-mari/?sku=5032496.260789.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "15320490"
+                    "id_variacao": "15320490",
+                    "sku": "5032496.260789.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-mari/?sku=5032496.260789.404542.324746"
                 }
             },
             "caramelo": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "15320473"
+                    "id_variacao": "15320473",
+                    "sku": "5032496.260789.404551.324743",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-mari/?sku=5032496.260789.404551.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "15320474"
+                    "id_variacao": "15320474",
+                    "sku": "5032496.260789.404551.324745",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-mari/?sku=5032496.260789.404551.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "15320475"
+                    "id_variacao": "15320475",
+                    "sku": "5032496.260789.404551.324744",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-mari/?sku=5032496.260789.404551.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "15320476"
+                    "id_variacao": "15320476",
+                    "sku": "5032496.260789.404551.324741",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-mari/?sku=5032496.260789.404551.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "15320477"
+                    "id_variacao": "15320477",
+                    "sku": "5032496.260789.404551.324742",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-mari/?sku=5032496.260789.404551.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "15320478"
+                    "id_variacao": "15320478",
+                    "sku": "5032496.260789.404551.324746",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-mari/?sku=5032496.260789.404551.324746"
                 }
             }
         },
@@ -15173,64 +18911,88 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "15320491"
+                    "id_variacao": "15320491",
+                    "sku": "5032497.249444.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-cris/?sku=5032497.249444.404545.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "15320492"
+                    "id_variacao": "15320492",
+                    "sku": "5032497.249444.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-cris/?sku=5032497.249444.404545.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "15320493"
+                    "id_variacao": "15320493",
+                    "sku": "5032497.249444.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-cris/?sku=5032497.249444.404545.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "15320494"
+                    "id_variacao": "15320494",
+                    "sku": "5032497.249444.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-cris/?sku=5032497.249444.404545.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "15320495"
+                    "id_variacao": "15320495",
+                    "sku": "5032497.249444.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-cris/?sku=5032497.249444.404545.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "15320496"
+                    "id_variacao": "15320496",
+                    "sku": "5032497.249444.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-cris/?sku=5032497.249444.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "15320497"
+                    "id_variacao": "15320497",
+                    "sku": "5032497.249444.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-cris/?sku=5032497.249444.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "15320498"
+                    "id_variacao": "15320498",
+                    "sku": "5032497.249444.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-cris/?sku=5032497.249444.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "15320499"
+                    "id_variacao": "15320499",
+                    "sku": "5032497.249444.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-cris/?sku=5032497.249444.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "15320500"
+                    "id_variacao": "15320500",
+                    "sku": "5032497.249444.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-cris/?sku=5032497.249444.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "15320501"
+                    "id_variacao": "15320501",
+                    "sku": "5032497.249444.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-cris/?sku=5032497.249444.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "15320502"
+                    "id_variacao": "15320502",
+                    "sku": "5032497.249444.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-cris/?sku=5032497.249444.404542.324746"
                 }
             }
         },
@@ -15260,68 +19022,92 @@ const STILETTO_PRODUCTS = [
         ],
         "preco": 275.0,
         "cores": [
-            "Ouro",
-            "Prata"
+            "Prata",
+            "Ouro"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Ouro": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "15320503"
+                    "id_variacao": "15320503",
+                    "sku": "5032498.249444.434876.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paola/?sku=5032498.249444.434876.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "15320504"
+                    "id_variacao": "15320504",
+                    "sku": "5032498.249444.434876.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paola/?sku=5032498.249444.434876.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "15320505"
+                    "id_variacao": "15320505",
+                    "sku": "5032498.249444.434876.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paola/?sku=5032498.249444.434876.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "15320506"
+                    "id_variacao": "15320506",
+                    "sku": "5032498.249444.434876.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paola/?sku=5032498.249444.434876.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "15320507"
+                    "id_variacao": "15320507",
+                    "sku": "5032498.249444.434876.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paola/?sku=5032498.249444.434876.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "15320508"
+                    "id_variacao": "15320508",
+                    "sku": "5032498.249444.434876.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paola/?sku=5032498.249444.434876.324746"
                 }
             },
             "Prata": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "15320509"
+                    "id_variacao": "15320509",
+                    "sku": "5032498.249444.404559.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paola/?sku=5032498.249444.404559.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "15320510"
+                    "id_variacao": "15320510",
+                    "sku": "5032498.249444.404559.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paola/?sku=5032498.249444.404559.324745"
                 },
                 "36": {
                     "qtd": 1,
-                    "id_variacao": "15320511"
+                    "id_variacao": "15320511",
+                    "sku": "5032498.249444.404559.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paola/?sku=5032498.249444.404559.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "15320512"
+                    "id_variacao": "15320512",
+                    "sku": "5032498.249444.404559.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paola/?sku=5032498.249444.404559.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "15320513"
+                    "id_variacao": "15320513",
+                    "sku": "5032498.249444.404559.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paola/?sku=5032498.249444.404559.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "15320514"
+                    "id_variacao": "15320514",
+                    "sku": "5032498.249444.404559.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paola/?sku=5032498.249444.404559.324746"
                 }
             }
         },
@@ -15354,64 +19140,88 @@ const STILETTO_PRODUCTS = [
             "nude"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "15320521"
+                    "id_variacao": "15320521",
+                    "sku": "5032499.249444.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paula/?sku=5032499.249444.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "15320522"
+                    "id_variacao": "15320522",
+                    "sku": "5032499.249444.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paula/?sku=5032499.249444.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "15320523"
+                    "id_variacao": "15320523",
+                    "sku": "5032499.249444.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paula/?sku=5032499.249444.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "15320524"
+                    "id_variacao": "15320524",
+                    "sku": "5032499.249444.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paula/?sku=5032499.249444.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "15320525"
+                    "id_variacao": "15320525",
+                    "sku": "5032499.249444.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paula/?sku=5032499.249444.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "15320526"
+                    "id_variacao": "15320526",
+                    "sku": "5032499.249444.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paula/?sku=5032499.249444.404542.324746"
                 }
             },
             "nude": {
                 "34": {
                     "qtd": 10,
-                    "id_variacao": "15320515"
+                    "id_variacao": "15320515",
+                    "sku": "5032499.249444.404550.324743",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paula/?sku=5032499.249444.404550.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "15320516"
+                    "id_variacao": "15320516",
+                    "sku": "5032499.249444.404550.324745",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paula/?sku=5032499.249444.404550.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "15320517"
+                    "id_variacao": "15320517",
+                    "sku": "5032499.249444.404550.324744",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paula/?sku=5032499.249444.404550.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "15320518"
+                    "id_variacao": "15320518",
+                    "sku": "5032499.249444.404550.324741",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paula/?sku=5032499.249444.404550.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "15320519"
+                    "id_variacao": "15320519",
+                    "sku": "5032499.249444.404550.324742",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paula/?sku=5032499.249444.404550.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "15320520"
+                    "id_variacao": "15320520",
+                    "sku": "5032499.249444.404550.324746",
+                    "url_variacao": "https://loja.usebede.com.br/sandalia-paula/?sku=5032499.249444.404550.324746"
                 }
             }
         },
@@ -15445,64 +19255,88 @@ const STILETTO_PRODUCTS = [
             "OFF WHITE"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "OFF WHITE": {
                 "34": {
                     "qtd": 9,
-                    "id_variacao": "15320591"
+                    "id_variacao": "15320591",
+                    "sku": "5032543.245896.404545.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mule-tamara/?sku=5032543.245896.404545.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "15320592"
+                    "id_variacao": "15320592",
+                    "sku": "5032543.245896.404545.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mule-tamara/?sku=5032543.245896.404545.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "15320593"
+                    "id_variacao": "15320593",
+                    "sku": "5032543.245896.404545.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mule-tamara/?sku=5032543.245896.404545.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "15320594"
+                    "id_variacao": "15320594",
+                    "sku": "5032543.245896.404545.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mule-tamara/?sku=5032543.245896.404545.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "15320595"
+                    "id_variacao": "15320595",
+                    "sku": "5032543.245896.404545.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mule-tamara/?sku=5032543.245896.404545.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "15320596"
+                    "id_variacao": "15320596",
+                    "sku": "5032543.245896.404545.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mule-tamara/?sku=5032543.245896.404545.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 8,
-                    "id_variacao": "15320597"
+                    "id_variacao": "15320597",
+                    "sku": "5032543.245896.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/mule-tamara/?sku=5032543.245896.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "15320598"
+                    "id_variacao": "15320598",
+                    "sku": "5032543.245896.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/mule-tamara/?sku=5032543.245896.404542.324745"
                 },
                 "36": {
                     "qtd": 0,
-                    "id_variacao": "15320599"
+                    "id_variacao": "15320599",
+                    "sku": "5032543.245896.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/mule-tamara/?sku=5032543.245896.404542.324744"
                 },
                 "37": {
                     "qtd": 0,
-                    "id_variacao": "15320600"
+                    "id_variacao": "15320600",
+                    "sku": "5032543.245896.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/mule-tamara/?sku=5032543.245896.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "15320601"
+                    "id_variacao": "15320601",
+                    "sku": "5032543.245896.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/mule-tamara/?sku=5032543.245896.404542.324742"
                 },
                 "39": {
                     "qtd": 0,
-                    "id_variacao": "15320602"
+                    "id_variacao": "15320602",
+                    "sku": "5032543.245896.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/mule-tamara/?sku=5032543.245896.404542.324746"
                 }
             }
         },
@@ -15533,64 +19367,88 @@ const STILETTO_PRODUCTS = [
             "Branco"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Branco": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "15354695"
+                    "id_variacao": "15354695",
+                    "sku": "5041626.260789.404561.324743",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-sara/?sku=5041626.260789.404561.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "15354696"
+                    "id_variacao": "15354696",
+                    "sku": "5041626.260789.404561.324745",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-sara/?sku=5041626.260789.404561.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "15354697"
+                    "id_variacao": "15354697",
+                    "sku": "5041626.260789.404561.324744",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-sara/?sku=5041626.260789.404561.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "15354698"
+                    "id_variacao": "15354698",
+                    "sku": "5041626.260789.404561.324741",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-sara/?sku=5041626.260789.404561.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "15354699"
+                    "id_variacao": "15354699",
+                    "sku": "5041626.260789.404561.324742",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-sara/?sku=5041626.260789.404561.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "15354700"
+                    "id_variacao": "15354700",
+                    "sku": "5041626.260789.404561.324746",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-sara/?sku=5041626.260789.404561.324746"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "15354701"
+                    "id_variacao": "15354701",
+                    "sku": "5041626.260789.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-sara/?sku=5041626.260789.404542.324743"
                 },
                 "35": {
                     "qtd": 2,
-                    "id_variacao": "15354702"
+                    "id_variacao": "15354702",
+                    "sku": "5041626.260789.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-sara/?sku=5041626.260789.404542.324745"
                 },
                 "36": {
                     "qtd": 3,
-                    "id_variacao": "15354703"
+                    "id_variacao": "15354703",
+                    "sku": "5041626.260789.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-sara/?sku=5041626.260789.404542.324744"
                 },
                 "37": {
                     "qtd": 3,
-                    "id_variacao": "15354704"
+                    "id_variacao": "15354704",
+                    "sku": "5041626.260789.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-sara/?sku=5041626.260789.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "15354705"
+                    "id_variacao": "15354705",
+                    "sku": "5041626.260789.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-sara/?sku=5041626.260789.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "15354706"
+                    "id_variacao": "15354706",
+                    "sku": "5041626.260789.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/rasteirinha-sara/?sku=5041626.260789.404542.324746"
                 }
             }
         },
@@ -15620,55 +19478,75 @@ const STILETTO_PRODUCTS = [
             "Conhaque"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Conhaque": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "16717902"
+                    "id_variacao": "16717902",
+                    "sku": "5439702.245898.612533.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-bella/?sku=5439702.245898.612533.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "16717903"
+                    "id_variacao": "16717903",
+                    "sku": "5439702.245898.612533.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-bella/?sku=5439702.245898.612533.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "16717904"
+                    "id_variacao": "16717904",
+                    "sku": "5439702.245898.612533.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-bella/?sku=5439702.245898.612533.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "16717905"
+                    "id_variacao": "16717905",
+                    "sku": "5439702.245898.612533.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-bella/?sku=5439702.245898.612533.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "16717906"
+                    "id_variacao": "16717906",
+                    "sku": "5439702.245898.612533.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-bella/?sku=5439702.245898.612533.324742"
                 }
             },
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "16717907"
+                    "id_variacao": "16717907",
+                    "sku": "5439702.245898.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-bella/?sku=5439702.245898.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "16717908"
+                    "id_variacao": "16717908",
+                    "sku": "5439702.245898.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-bella/?sku=5439702.245898.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "16717909"
+                    "id_variacao": "16717909",
+                    "sku": "5439702.245898.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-bella/?sku=5439702.245898.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "16717910"
+                    "id_variacao": "16717910",
+                    "sku": "5439702.245898.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-bella/?sku=5439702.245898.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "16717911"
+                    "id_variacao": "16717911",
+                    "sku": "5439702.245898.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-bella/?sku=5439702.245898.404542.324742"
                 }
             }
         },
@@ -15701,64 +19579,88 @@ const STILETTO_PRODUCTS = [
             "cafe"
         ],
         "tamanhos": [
-            "37",
-            "36",
-            "38",
-            "35",
             "33",
-            "34"
+            "38",
+            "34",
+            "35",
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "33": {
                     "qtd": 1,
-                    "id_variacao": "16729085"
+                    "id_variacao": "16729085",
+                    "sku": "5439739.245897.404542.324747",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-marta/?sku=5439739.245897.404542.324747"
                 },
                 "34": {
                     "qtd": 2,
-                    "id_variacao": "16718043"
+                    "id_variacao": "16718043",
+                    "sku": "5439739.245897.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-marta/?sku=5439739.245897.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "16718044"
+                    "id_variacao": "16718044",
+                    "sku": "5439739.245897.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-marta/?sku=5439739.245897.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "16718045"
+                    "id_variacao": "16718045",
+                    "sku": "5439739.245897.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-marta/?sku=5439739.245897.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "16718046"
+                    "id_variacao": "16718046",
+                    "sku": "5439739.245897.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-marta/?sku=5439739.245897.404542.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "16718047"
+                    "id_variacao": "16718047",
+                    "sku": "5439739.245897.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-marta/?sku=5439739.245897.404542.324742"
                 }
             },
             "cafe": {
                 "33": {
                     "qtd": 0,
-                    "id_variacao": "16729084"
+                    "id_variacao": "16729084",
+                    "sku": "5439739.245897.404557.324747",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-marta/?sku=5439739.245897.404557.324747"
                 },
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "16718038"
+                    "id_variacao": "16718038",
+                    "sku": "5439739.245897.404557.324743",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-marta/?sku=5439739.245897.404557.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "16718039"
+                    "id_variacao": "16718039",
+                    "sku": "5439739.245897.404557.324745",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-marta/?sku=5439739.245897.404557.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "16718040"
+                    "id_variacao": "16718040",
+                    "sku": "5439739.245897.404557.324744",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-marta/?sku=5439739.245897.404557.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "16718041"
+                    "id_variacao": "16718041",
+                    "sku": "5439739.245897.404557.324741",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-marta/?sku=5439739.245897.404557.324741"
                 },
                 "38": {
                     "qtd": 1,
-                    "id_variacao": "16718042"
+                    "id_variacao": "16718042",
+                    "sku": "5439739.245897.404557.324742",
+                    "url_variacao": "https://loja.usebede.com.br/slingback-marta/?sku=5439739.245897.404557.324742"
                 }
             }
         },
@@ -15791,38 +19693,50 @@ const STILETTO_PRODUCTS = [
             "Preto"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
-            "35",
             "34",
+            "35",
+            "36",
+            "37",
             "39"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "34": {
                     "qtd": 1,
-                    "id_variacao": "16718234"
+                    "id_variacao": "16718234",
+                    "sku": "5439795.245892.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-lia/?sku=5439795.245892.404542.324743"
                 },
                 "35": {
                     "qtd": 1,
-                    "id_variacao": "16718235"
+                    "id_variacao": "16718235",
+                    "sku": "5439795.245892.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-lia/?sku=5439795.245892.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "16718236"
+                    "id_variacao": "16718236",
+                    "sku": "5439795.245892.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-lia/?sku=5439795.245892.404542.324744"
                 },
                 "37": {
                     "qtd": 2,
-                    "id_variacao": "16718237"
+                    "id_variacao": "16718237",
+                    "sku": "5439795.245892.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-lia/?sku=5439795.245892.404542.324741"
                 },
                 "38": {
                     "qtd": 2,
-                    "id_variacao": "16718238"
+                    "id_variacao": "16718238",
+                    "sku": "5439795.245892.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-lia/?sku=5439795.245892.404542.324742"
                 },
                 "39": {
                     "qtd": 1,
-                    "id_variacao": "16718239"
+                    "id_variacao": "16718239",
+                    "sku": "5439795.245892.404542.324746",
+                    "url_variacao": "https://loja.usebede.com.br/bota-montaria-lia/?sku=5439795.245892.404542.324746"
                 }
             }
         },
@@ -15850,33 +19764,43 @@ const STILETTO_PRODUCTS = [
             "Preto"
         ],
         "tamanhos": [
-            "37",
-            "36",
             "38",
+            "34",
             "35",
-            "34"
+            "36",
+            "37"
         ],
         "estoque_por_cor": {
             "Preto": {
                 "34": {
                     "qtd": 0,
-                    "id_variacao": "16718240"
+                    "id_variacao": "16718240",
+                    "sku": "5439796.248989.404542.324743",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-brenda/?sku=5439796.248989.404542.324743"
                 },
                 "35": {
                     "qtd": 0,
-                    "id_variacao": "16718241"
+                    "id_variacao": "16718241",
+                    "sku": "5439796.248989.404542.324745",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-brenda/?sku=5439796.248989.404542.324745"
                 },
                 "36": {
                     "qtd": 2,
-                    "id_variacao": "16718242"
+                    "id_variacao": "16718242",
+                    "sku": "5439796.248989.404542.324744",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-brenda/?sku=5439796.248989.404542.324744"
                 },
                 "37": {
                     "qtd": 1,
-                    "id_variacao": "16718243"
+                    "id_variacao": "16718243",
+                    "sku": "5439796.248989.404542.324741",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-brenda/?sku=5439796.248989.404542.324741"
                 },
                 "38": {
                     "qtd": 0,
-                    "id_variacao": "16718244"
+                    "id_variacao": "16718244",
+                    "sku": "5439796.248989.404542.324742",
+                    "url_variacao": "https://loja.usebede.com.br/bota-coturno-brenda/?sku=5439796.248989.404542.324742"
                 }
             }
         },
