@@ -36,8 +36,7 @@
     parcelamentoMax: (typeof CFG_LOJA !== 'undefined' && CFG_LOJA.parcelamentoMax !== undefined) ? CFG_LOJA.parcelamentoMax : null,
     descontoPix: 5,
     primeiraTrocaGratisDias: null,
-    descontoMaxLiquidacao: 40,
-    cnpj: '55.068.034/0001-00',
+        cnpj: '55.068.034/0001-00',
     whatsapp: '5551980150391',
     whatsappFormatado: '(51) 98015-0391',
     endereco: 'Rua Cirurgião Vaz Ferreira, 457 · Centro · Viamão/RS',
@@ -112,14 +111,14 @@
     const homeBar = $('homeBarClaims');
     if (homeBar) {
       homeBar.textContent = CFG.parcelamentoMax
-        ? `Frete grátis acima de R$ ${CFG.freteGratisAcimaDe} para Sul e Sudeste · até ${CFG.parcelamentoMax}x [A CONFIRMAR]`
+        ? `Frete grátis acima de R$ ${CFG.freteGratisAcimaDe} para Sul e Sudeste · até ${CFG.parcelamentoMax}x`
         : `Frete grátis acima de R$ ${CFG.freteGratisAcimaDe} para Sul e Sudeste · ⚡ ${CFG.descontoPix}% no PIX`;
     }
 
     // 2. Gaveta Mobile
     const mobClaims = $('mobDrawerClaims');
     if (mobClaims) {
-      mobClaims.textContent = CFG.parcelamentoMax ? `Boutique em Viamão · RS · até ${CFG.parcelamentoMax}x [A CONFIRMAR]` : `Boutique em Viamão · RS`;
+      mobClaims.textContent = CFG.parcelamentoMax ? `Boutique em Viamão · RS · até ${CFG.parcelamentoMax}x sem juros` : `Boutique em Viamão · RS`;
     }
     const mobWa = $('mobDrawerWa');
     if (mobWa) {
@@ -163,7 +162,10 @@
     const cartPixLbl = $('cartPixLabel');
     if (cartPixLbl) cartPixLbl.textContent = `⚡ No PIX (${CFG.descontoPix}% OFF)`;
     const cartInstLbl = $('cartInstLabel');
-    if (cartInstLbl) cartInstLbl.textContent = `Até ${CFG.parcelamentoMax}x sem juros`;
+    if (cartInstLbl) {
+      cartInstLbl.textContent = CFG.parcelamentoMax ? `Até ${CFG.parcelamentoMax}x sem juros` : '';
+      cartInstLbl.style.display = CFG.parcelamentoMax ? '' : 'none';
+    }
   }
 
   // ── INIT ───────────────────────────────────────────────────
@@ -176,6 +178,7 @@
     updateWishlistBadge();
     updateActiveFiltersBadge();
     updateSaleUI();
+    renderMobileMenu();
     goToSlide(0, true);
   }
 
@@ -785,7 +788,7 @@
           </div>
           
           <span class="p-card-pix">⚡ R$ ${pix} no PIX (5% OFF)</span>
-          ${CFG.parcelamentoMax ? `<span class="p-card-inst">ou até ${CFG.parcelamentoMax}x de R$ ${(pr / CFG.parcelamentoMax).toFixed(2)} [A CONFIRMAR]</span>` : ''}
+          ${CFG.parcelamentoMax ? `<span class="p-card-inst">ou até ${CFG.parcelamentoMax}x de R$ ${(pr / CFG.parcelamentoMax).toFixed(2)}</span>` : ''}
         </div>`;
     }).join('');
   }
@@ -1349,6 +1352,21 @@
     return Math.floor(Math.max(...descontos) / 5) * 5;
   };
 
+  
+  window.renderMobileMenu = function() {
+    const mobSub = document.getElementById('mobSubCategories');
+    if (!mobSub || !window.PRODUCTS) return;
+
+    const catsSet = new Set(PRODUCTS.map(p => p.categoria).filter(Boolean));
+    const catList = Array.from(catsSet);
+
+    let html = '';
+    catList.forEach(cat => {
+      html += `<a href="#" onclick="openCollection('${cat}');closeMobileMenu();return false;" class="mob-sub-link">${cat}</a>`;
+    });
+    mobSub.innerHTML = html;
+  };
+
   window.updateSaleUI = function() {
     const saleMax = descontoMaximoReal(PRODUCTS);
     const temPromo = (saleMax !== null);
@@ -1361,7 +1379,11 @@
       saleHeadline.textContent = `ATÉ ${saleMax}% OFF`;
     }
 
-    // Chip de liquidação identificado estritamente pelo onclick
+    const mobSaleHeadline = document.getElementById('mobSaleHeadline');
+    if (mobSaleHeadline) {
+      mobSaleHeadline.textContent = temPromo ? `Special Sale (Até ${saleMax}% OFF)` : 'Special Sale';
+    }
+
     const chipSale = document.querySelector('[onclick*="LIQUIDA"]');
     if (chipSale) chipSale.style.display = temPromo ? '' : 'none';
   };
