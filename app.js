@@ -551,12 +551,7 @@
       desc: 'O clássico redesenhado para liberdade total de movimento e sofisticação atemporal.',
       img: 'assets/split_shoes.jpg?v=crop_v3'
     },
-    SANDÁLIA: {
-      title: 'Sandálias & Tiras Finas',
-      eyebrow: 'Festa, Eventos & Alto Verão',
-      desc: 'Tiras delicadas com firmeza impecável no calcanhar e estabilidade em cada passo.',
-      img: 'assets/split_shoes.jpg?v=crop_v3'
-    },
+    
     BOTA: {
       title: 'Botas & Coturnos',
       eyebrow: 'Cano Curto, Médio e Longo',
@@ -1226,42 +1221,39 @@
       `
     },
     trocas: {
-      title: 'Trocas & Devoluções',
-      body: `
-        <p style="margin-bottom:14px;line-height:1.6;">Nosso compromisso é com a sua total satisfação. Se você precisar trocar ou devolver seu calçado, o processo é ágil e humanizado:</p>
-        <ul style="margin-left:20px;margin-bottom:16px;line-height:1.7;">
-          <li style="margin-bottom:8px;"><strong>Direito de Devolução / Arrependimento:</strong> Até 7 dias corridos após o recebimento, conforme o Código de Defesa do Consumidor.</li>
-          <li style="margin-bottom:8px;"><strong>Troca Facilitada:</strong> Solicitação direto pelo canal de atendimento do WhatsApp [A CONFIRMAR: prazo de dias de troca].</li>
-          <li style="margin-bottom:8px;"><strong>Condições do Produto:</strong> O calçado deve estar sem sinais de uso, em perfeito estado, com etiqueta e na embalagem original da BEDÊ.</li>
-        </ul>
-        <p style="margin-bottom:14px;line-height:1.6;">Para solicitar sua troca, basta enviar uma mensagem no nosso WhatsApp informando o número do pedido ou seu nome completo.</p>
-        <div style="background:#fff8e6;border:1px solid #f0dc9e;padding:10px 14px;border-radius:6px;font-size:12px;color:#856404;margin-top:12px;">
-          📌 <em>Nota de Transparência: Políticas de frete reverso e prazos estendidos em fase de confirmação pela gestão.</em>
-        </div>
-      `
+    title: 'Trocas & Devoluções',
+    body: `
+<p style="margin-bottom:14px;line-height:1.6;">Nosso compromisso é com a sua total satisfação. Se você precisar trocar ou devolver seu calçado, o processo é simples e humanizado:</p>
+<ul style="margin-left:20px;margin-bottom:16px;line-height:1.7;">
+  <li style="margin-bottom:8px;"><strong>Direito de Arrependimento:</strong> Até 7 dias corridos após o recebimento, conforme o Código de Defesa do Consumidor.</li>
+  <li style="margin-bottom:8px;"><strong>Troca Facilitada:</strong> Solicitação feita diretamente pelo nosso canal de atendimento no WhatsApp.</li>
+  <li style="margin-bottom:8px;"><strong>Condições do Produto:</strong> O calçado deve estar sem sinais de uso, em perfeito estado e na embalagem original.</li>
+</ul>
+<p style="margin-bottom:14px;line-height:1.6;">Para solicitar sua troca, basta enviar uma mensagem no nosso WhatsApp informando o número do pedido ou seu nome completo.</p>
+`
     },
     faq: {
-      title: 'Perguntas Frequentes (FAQ)',
-      body: `
-        <div style="display:flex;flex-direction:column;gap:16px;line-height:1.6;">
-          <div>
-            <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">1. Como escolher a minha numeração?</h5>
-            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">Nossos calçados seguem a fôrma padrão brasileira. Você pode consultar nosso Guia de Medidas no site ou chamar nossa consultora no WhatsApp para orientações sobre o calce específico de cada modelo.</p>
-          </div>
-          <div>
-            <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">2. Quais são as formas de pagamento?</h5>
-            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">Aceitamos PIX (com desconto especial) e Cartão de Crédito em até ${CFG.parcelamentoMax}x sem juros .</p>
-          </div>
-          <div>
-            <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">3. Qual é o prazo de entrega?</h5>
-            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">O prazo varia de acordo com a sua região e a modalidade de frete selecionada [A CONFIRMAR: prazos por região]. Enviamos para todo o Brasil com código de rastreamento.</p>
-          </div>
-          <div>
-            <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">4. Posso retirar meu pedido na loja física?</h5>
-            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">Sim! Você pode fazer o pedido pelo site/WhatsApp e retirar diretamente na nossa boutique em Viamão/RS sem nenhum custo de frete.</p>
-          </div>
-        </div>
-      `
+    title: 'Perguntas Frequentes (FAQ)',
+    body: `
+<div style="display:flex;flex-direction:column;gap:16px;line-height:1.6;">
+  <div>
+    <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">1. Como escolher a minha numeração?</h5>
+    <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">Nossos calçados seguem a fôrma padrão brasileira. Você pode consultar nosso Guia de Medidas no site ou chamar nossa consultora no WhatsApp para orientações sobre o calce específico de cada modelo.</p>
+  </div>
+  <div>
+    <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">2. Quais são as formas de pagamento?</h5>
+    <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">Aceitamos PIX com ${CFG.descontoPix}% de desconto${CFG.parcelamentoMax ? ` e Cartão de Crédito em até ${CFG.parcelamentoMax}x sem juros` : ''}.</p>
+  </div>
+  <div>
+    <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">3. Qual é o prazo de entrega?</h5>
+    <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">O prazo de entrega é informado no fechamento do pedido, conforme o CEP de entrega. Compras acima de R$ 449 têm frete grátis para as regiões Sul e Sudeste.</p>
+  </div>
+  <div>
+    <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">4. Posso retirar meu pedido na loja física?</h5>
+    <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">Sim! Você pode fazer o pedido pelo site/WhatsApp e retirar diretamente na nossa boutique em Viamão/RS sem nenhum custo de frete.</p>
+  </div>
+</div>
+`
     },
     privacidade: {
       title: 'Política de Privacidade',
@@ -1357,13 +1349,30 @@
     const mobSub = document.getElementById('mobSubCategories');
     if (!mobSub || !window.PRODUCTS) return;
 
-    const catsSet = new Set(PRODUCTS.map(p => p.categoria).filter(Boolean));
-    const catList = Array.from(catsSet);
+    const navCategories = [
+      { key: 'SCARPIN', label: 'Scarpins & Saltos' },
+      { key: 'BOTA', label: 'Botas & Coturnos' },
+      { key: 'MOCASSIM', label: 'Mocassins & Loafers' },
+      { key: 'MULE', label: 'Mules & Tamancos' },
+      { key: 'TÊNIS', label: 'Tênis Contemporâneos' },
+      { key: 'SLINGBACK', label: 'Slingbacks' },
+      { key: 'SAPATILHA', label: 'Sapatilhas' },
+      { key: 'BOLSA', label: 'Bolsas & Acessórios' }
+    ];
 
-    let html = '';
-    catList.forEach(cat => {
-      html += `<a href="#" onclick="openCollection('${cat}');closeMobileMenu();return false;" class="mob-sub-link">${cat}</a>`;
+    let html = '<a href="#" onclick="openCollection(\'CALÇADOS\');closeMobileMenu();return false;" class="mob-sub-link highlight">Ver Todos os Calçados</a>';
+    
+    navCategories.forEach(item => {
+      const hasProds = PRODUCTS.some(p => {
+        const cat = (p.categoria || '').toUpperCase();
+        if (item.key === 'BOTA') return cat.includes('BOTA') || cat.includes('COTURNO');
+        return cat.includes(item.key);
+      });
+      if (hasProds) {
+        html += `<a href="#" onclick="openCollection('${item.key}');closeMobileMenu();return false;" class="mob-sub-link">${item.label}</a>`;
+      }
     });
+    
     mobSub.innerHTML = html;
   };
 
