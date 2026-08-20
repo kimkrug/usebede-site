@@ -32,12 +32,12 @@
   });
     // ── CONFIGURAÇÕES DA LOJA (LIDAS DE CONFIG_LOJA.JS) ───────
   const CFG = (typeof CONFIG_LOJA !== 'undefined' && CONFIG_LOJA) ? CONFIG_LOJA : {
-    freteGratisAcimaDe: 299,
-    parcelamentoMax: 6,
+    freteGratisAcimaDe: 449,
+    parcelamentoMax: (typeof CFG_LOJA !== 'undefined' && CFG_LOJA.parcelamentoMax !== undefined) ? CFG_LOJA.parcelamentoMax : null,
     descontoPix: 5,
-    primeiraTrocaGratisDias: 30,
+    primeiraTrocaGratisDias: null,
     descontoMaxLiquidacao: 40,
-    cnpj: '45.892.311/0001-80',
+    cnpj: '55.068.034/0001-00',
     whatsapp: '5551980150391',
     whatsappFormatado: '(51) 98015-0391',
     endereco: 'Rua Cirurgião Vaz Ferreira, 457 · Centro · Viamão/RS',
@@ -111,13 +111,15 @@
     // 1. Barra superior / Home
     const homeBar = $('homeBarClaims');
     if (homeBar) {
-      homeBar.textContent = `Frete grátis acima de R$ ${CFG.freteGratisAcimaDe} · ${CFG.parcelamentoMax}x sem juros · ${CFG.descontoPix}% off no PIX`;
+      homeBar.textContent = CFG.parcelamentoMax
+        ? `Frete grátis acima de R$ ${CFG.freteGratisAcimaDe} para Sul e Sudeste · até ${CFG.parcelamentoMax}x [A CONFIRMAR]`
+        : `Frete grátis acima de R$ ${CFG.freteGratisAcimaDe} para Sul e Sudeste · ⚡ ${CFG.descontoPix}% no PIX`;
     }
 
     // 2. Gaveta Mobile
     const mobClaims = $('mobDrawerClaims');
     if (mobClaims) {
-      mobClaims.textContent = `Boutique em Viamão · RS · ${CFG.parcelamentoMax}x sem juros`;
+      mobClaims.textContent = CFG.parcelamentoMax ? `Boutique em Viamão · RS · até ${CFG.parcelamentoMax}x [A CONFIRMAR]` : `Boutique em Viamão · RS`;
     }
     const mobWa = $('mobDrawerWa');
     if (mobWa) {
@@ -149,12 +151,12 @@
     const footPix = $('footerPixTag');
     if (footPix) footPix.textContent = `PIX ${CFG.descontoPix}% OFF`;
     const footLeg = $('footerLegal');
-    if (footLeg) footLeg.textContent = `BEDÊ COMÉRCIO DE CALÇADOS E ACESSÓRIOS LTDA · CNPJ ${CFG.cnpj} · Viamão / RS`;
+    if (footLeg) footLeg.textContent = `${CFG.razaoSocial} · CNPJ ${CFG.cnpj} · ${CFG.endereco}`;
 
     // 6. Modal de Produto Perk
     const pmPerk = $('pmPerkTroca');
     if (pmPerk) {
-      pmPerk.textContent = `Primeira Troca Grátis e Fácil em até ${CFG.primeiraTrocaGratisDias} Dias`;
+      pmPerk.textContent = 'Troca facilitada pelo WhatsApp';
     }
 
     // 7. Carrinho
@@ -173,6 +175,7 @@
     updateCartBadge();
     updateWishlistBadge();
     updateActiveFiltersBadge();
+    updateSaleUI();
     goToSlide(0, true);
   }
 
@@ -261,7 +264,22 @@
     if (!S.collOpen) {
       openCollection('ALL');
     } else {
-      renderGrid();
+      
+    const saleMax = descontoMaximoReal(PRODUCTS);
+    const saleHeadline = document.getElementById('saleHeadline');
+    const saleSection = document.getElementById('saleSection');
+    if (saleHeadline) {
+      if (saleMax) {
+        saleHeadline.textContent = `ATÉ ${saleMax}% OFF`;
+        if (saleSection) saleSection.style.display = 'block';
+      } else {
+        saleHeadline.textContent = `LIQUIDAÇÃO`;
+        // Se nenhum produto em promoção, oculta o banner numérico ou seção se configurado
+      }
+    }
+
+    renderGrid();
+    updateSaleUI();
     }
   };
 
@@ -579,7 +597,7 @@
       img: 'assets/split_bags.jpg?v=crop_v3'
     },
     'LIQUIDAÇÃO': {
-      title: 'Special Sale · Até 40% OFF',
+      title: 'Special Sale · Liquidação',
       eyebrow: 'Oportunidades Especiais de Curadoria',
       desc: 'Peças selecionadas com condições exclusivas e a mesma excelência de acabamento.',
       img: 'assets/split_editorial.jpg?v=showroom_v1'
@@ -767,7 +785,7 @@
           </div>
           
           <span class="p-card-pix">⚡ R$ ${pix} no PIX (5% OFF)</span>
-          <span class="p-card-inst">ou até 6x de R$ ${inst} sem juros</span>
+          ${CFG.parcelamentoMax ? `<span class="p-card-inst">ou até ${CFG.parcelamentoMax}x de R$ ${(pr / CFG.parcelamentoMax).toFixed(2)} [A CONFIRMAR]</span>` : ''}
         </div>`;
     }).join('');
   }
@@ -789,28 +807,140 @@
   };
 
   // ============================================================
-  // PRODUTO MODAL COM GALERIA DE THUMBNAILS & AVALIAÇÕES
+  
   // ============================================================
+  // PRODUTO MODAL COM SELEÇÃO DE COR, TAMANHO E DEEP-LINK WBUY
+  // ============================================================
+  window.updateVariationUI = function() {
+    const p = S.product;
+    if (!p) return;
+    
+    // 1. Fotos por cor
+    if (S.selectedColor && p.fotos_por_cor && p.fotos_por_cor[S.selectedColor] && p.fotos_por_cor[S.selectedColor].length > 0) {
+      D.pmImg.src = p.fotos_por_cor[S.selectedColor][0];
+    } else if (p.foto) {
+      D.pmImg.src = p.foto;
+    }
+    
+    // 2. Cores (Color pills)
+    const colContainer = document.getElementById('pmColors');
+    if (colContainer && p.cores) {
+      let colHtml = '';
+      p.cores.forEach(c => {
+        const isActive = (S.selectedColor === c);
+        colHtml += `<span class="col-pill ${isActive ? 'active' : ''}" 
+          onclick="S.selectedColor='${c}'; S.size=null; updateVariationUI();">
+          ${c}
+        </span>`;
+      });
+      colContainer.innerHTML = colHtml;
+      colContainer.style.display = p.cores.length > 0 ? 'flex' : 'none';
+    }
+    
+    // 3. Tamanhos (Size pills - recalcula disponibilidade para a cor selecionada)
+    const szContainer = document.getElementById('pmSizes');
+    if (szContainer && p.tamanhos) {
+      let szHtml = '';
+      p.tamanhos.forEach(sz => {
+        let isAvailable = true;
+        let idVar = null;
+        
+        if (S.selectedColor && p.estoque_por_cor && p.estoque_por_cor[S.selectedColor]) {
+          const varData = p.estoque_por_cor[S.selectedColor][sz];
+          if (!varData || Number(varData.qtd || 0) <= 0) {
+            isAvailable = false;
+          } else {
+            idVar = varData.id_variacao;
+          }
+        }
+        
+        const isActive = (S.size === sz && isAvailable);
+        const isDisabled = !isAvailable;
+        
+        szHtml += `<span class="sz-pill ${isDisabled ? 'disabled' : ''} ${isActive ? 'active' : ''}" 
+          onclick="if(!this.classList.contains('disabled')){ S.size='${sz}'; updateVariationUI(); }">
+          ${sz}
+        </span>`;
+      });
+      szContainer.innerHTML = szHtml;
+    }
+    
+    // 4. Montar Deep Link WBuy com id_variacao (ou Fallback Gracioso para WhatsApp se for catálogo antigo)
+    const btnBuy = document.getElementById('pmAddBtn');
+    if (btnBuy) {
+      if (!p.url_absolute || !p.estoque_por_cor) {
+        // Catálogo antigo: degradação suave para atendimento no WhatsApp
+        btnBuy.href = 'javascript:void(0)';
+        btnBuy.style.opacity = '1';
+        btnBuy.style.pointerEvents = 'auto';
+        btnBuy.textContent = 'Falar com consultora no WhatsApp';
+        btnBuy.onclick = function(e) { e.preventDefault(); buyViaWhatsAppDirect(); };
+      } else {
+        let idVar = null;
+        if (S.selectedColor && S.size && p.estoque_por_cor && p.estoque_por_cor[S.selectedColor]) {
+          const v = p.estoque_por_cor[S.selectedColor][S.size];
+          if (v && Number(v.qtd || 0) > 0) idVar = v.id_variacao;
+        }
+        
+        if (p.url_absolute && S.selectedColor && S.size && idVar) {
+          let base = p.url_absolute;
+          if (typeof CFG_LOJA !== 'undefined' && CFG_LOJA.dominioLoja) {
+            base = base.replace(/^https?:\/\/[^\/]+/, CFG_LOJA.dominioLoja);
+          }
+          btnBuy.href = base + "?v=" + idVar;
+          btnBuy.style.opacity = '1';
+          btnBuy.style.pointerEvents = 'auto';
+          btnBuy.textContent = 'Comprar agora';
+          btnBuy.onclick = null;
+        } else {
+          btnBuy.href = 'javascript:void(0)';
+          btnBuy.style.opacity = '0.5';
+          btnBuy.style.pointerEvents = 'none';
+          btnBuy.textContent = 'Selecione cor e tamanho';
+          btnBuy.onclick = null;
+        }
+      }
+    }
+  };
+
   window.openProduct = function (id) {
     const p = PRODUCTS.find(x => String(x.id) === String(id));
     if (!p) return;
     S.product = p;
-    S.size = (p.tamanhos && p.tamanhos[0]) || '36';
+    S.size = null;
+    S.selectedColor = null;
+    
+    // Auto-seleciona cor se houver apenas uma
+    if (p.cores && p.cores.length === 1) {
+      S.selectedColor = p.cores[0];
+    }
 
     const pr = Number(p.preco || 0);
-    const old = Number(p.preco_antigo || pr * 1.25);
+    const old = Number(p.preco_antigo || 0);
 
     D.pmImg.src = p.foto;
     D.pmImg.alt = p.nome;
     D.pmCat.textContent = p.categoria || 'Calçados';
     D.pmName.textContent = p.nome;
     D.pmPrice.textContent = fmt(pr);
-    D.pmOld.textContent = fmt(old);
-    D.pmPix.textContent = `⚡ ${fmt(pr * (1 - CFG.descontoPix / 100))} no PIX (${CFG.descontoPix}% OFF)`;
-    D.pmInst.textContent = `ou ${CFG.parcelamentoMax}x de R$ ${(pr / CFG.parcelamentoMax).toLocaleString('pt-BR', { minimumFractionDigits: 2 })} sem juros`;
+    
+    if (old > pr) {
+      D.pmOld.textContent = fmt(old);
+      D.pmOld.style.display = 'inline';
+    } else {
+      D.pmOld.style.display = 'none';
+    }
+
+    if (D.pmPix) D.pmPix.style.display = 'none';
+    if (D.pmInst) D.pmInst.style.display = 'none';
+
     D.pmDesc.textContent = p.descricao || 'Acabamento artesanal nobre com palmilha anatômica e design contemporâneo.';
 
-    // Gerenciamento de Avaliações Reais (AVALIACOES.js)
+    updateVariationUI();
+    openProductModal();
+  };
+
+  // Gerenciamento de Avaliações Reais (AVALIACOES.js)
     const revSection = $('pmReviewsSection');
     const ratingBadge = $('pmRatingBadge');
     const revList = $('pmReviewsList');
@@ -945,11 +1075,18 @@
     if (checkoutBtn) {
       checkoutBtn.addEventListener('click', () => {
         if (!S.cart.length) return;
-        const sub = S.cart.reduce((t, i) => t + i.price * i.qty, 0);
-        let msg = `Olá! Gostaria de finalizar meu pedido — *BEDÊ Stiletto*:\n\n`;
+        let msg = "Olá! Gostaria de enviar a minha seleção da vitrine BEDÊ:
+
+";
         S.cart.forEach((it, i) => {
-          msg += `${i + 1}. *${it.name}* (Tam: ${it.size}) × ${it.qty} — ${fmt(it.price * it.qty)}\n`;
+          msg += `*${i + 1}. ${it.name}*
+   Cor: ${it.cor || 'Única'} | Tam: ${it.size} | Qtd: ${it.qty}
+
+`;
         });
+        msg += "Poderiam confirmar a disponibilidade e os valores por favor?";
+        window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank');
+      });
         msg += `\n*Total:* ${fmt(sub)}\n*No PIX (${CFG.descontoPix}% OFF):* ${fmt(sub * (1 - CFG.descontoPix / 100))}`;
         window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank');
       });
@@ -968,10 +1105,11 @@
   };
 
   function addToCart(p, size) {
-    const ex = S.cart.find(i => i.id === p.id && i.size === size);
+    const cor = S.selectedColor || 'Única';
+    const ex = S.cart.find(i => i.id === p.id && i.size === size && i.cor === cor);
     if (ex) { ex.qty++; }
     else {
-      S.cart.push({ id: p.id, name: p.nome, price: Number(p.preco || 0), img: p.foto, size: size || '36', qty: 1 });
+      S.cart.push({ id: p.id, name: p.nome, img: p.foto, size: size || '36', cor: cor, qty: 1 });
     }
     saveCart();
     updateCartBadge();
@@ -1091,7 +1229,7 @@
         <p style="margin-bottom:14px;line-height:1.6;">Nosso compromisso é com a sua total satisfação. Se você precisar trocar ou devolver seu calçado, o processo é ágil e humanizado:</p>
         <ul style="margin-left:20px;margin-bottom:16px;line-height:1.7;">
           <li style="margin-bottom:8px;"><strong>Direito de Devolução / Arrependimento:</strong> Até 7 dias corridos após o recebimento, conforme o Código de Defesa do Consumidor.</li>
-          <li style="margin-bottom:8px;"><strong>Primeira Troca Facilitada:</strong> Solicitação direto pelo canal de atendimento do WhatsApp [A CONFIRMAR: prazo de dias de troca].</li>
+          <li style="margin-bottom:8px;"><strong>Troca Facilitada:</strong> Solicitação direto pelo canal de atendimento do WhatsApp [A CONFIRMAR: prazo de dias de troca].</li>
           <li style="margin-bottom:8px;"><strong>Condições do Produto:</strong> O calçado deve estar sem sinais de uso, em perfeito estado, com etiqueta e na embalagem original da BEDÊ.</li>
         </ul>
         <p style="margin-bottom:14px;line-height:1.6;">Para solicitar sua troca, basta enviar uma mensagem no nosso WhatsApp informando o número do pedido ou seu nome completo.</p>
@@ -1110,7 +1248,7 @@
           </div>
           <div>
             <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">2. Quais são as formas de pagamento?</h5>
-            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">Aceitamos PIX (com desconto especial) e Cartão de Crédito em até ${CFG.parcelamentoMax}x sem juros [A CONFIRMAR].</p>
+            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">Aceitamos PIX (com desconto especial) e Cartão de Crédito em até ${CFG.parcelamentoMax}x sem juros .</p>
           </div>
           <div>
             <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">3. Qual é o prazo de entrega?</h5>
@@ -1126,12 +1264,12 @@
     privacidade: {
       title: 'Política de Privacidade',
       body: `
-        <p style="margin-bottom:14px;line-height:1.6;">A <strong>BEDÊ Comércio de Calçados e Acessórios LTDA</strong> valoriza e respeita a privacidade de suas clientes. Seus dados pessoais (nome, telefone, endereço e e-mail) são tratados com total sigilo e proteção, em conformidade com a LGPD (Lei Geral de Proteção de Dados - Lei nº 13.709/2018).</p>
+        <p style="margin-bottom:14px;line-height:1.6;">A <strong>Stiletto Bd Boutique Ltda</strong> valoriza e respeita a privacidade de suas clientes. Seus dados pessoais (nome, telefone, endereço e e-mail) são tratados com total sigilo e proteção, em conformidade com a LGPD (Lei Geral de Proteção de Dados - Lei nº 13.709/2018).</p>
         <p style="margin-bottom:14px;line-height:1.6;"><strong>Uso das Informações:</strong> Seus dados são utilizados estritamente para o processamento de pedidos, entrega segura e atendimento de suporte via WhatsApp.</p>
         <p style="margin-bottom:14px;line-height:1.6;"><strong>Compartilhamento:</strong> Não comercializamos nem repassamos seus dados a terceiros, exceto com parceiros logísticos indispensáveis para a entrega de suas compras.</p>
         <p style="margin-bottom:14px;line-height:1.6;">Você tem o direito de solicitar a confirmação, correção ou exclusão definitiva de seus dados cadastrais a qualquer momento através do nosso canal oficial de atendimento.</p>
         <div style="font-size:12px;color:var(--color-muted,#777);margin-top:16px;border-top:1px solid var(--color-border,#eee);padding-top:10px;">
-          BEDÊ COMÉRCIO DE CALÇADOS E ACESSÓRIOS LTDA · CNPJ ${CFG.cnpj} [A CONFIRMAR] · Viamão / RS
+          ${CFG.razaoSocial} · CNPJ ${CFG.cnpj} · ${CFG.endereco}
         </div>
       `
     },
@@ -1139,7 +1277,7 @@
       title: 'Termos de Compra e Uso',
       body: `
         <p style="margin-bottom:12px;line-height:1.6;">Ao navegar e realizar compras na boutique da <strong>BEDÊ</strong>, você concorda com nossos termos e condições gerais de atendimento e comercialização.</p>
-        <p style="margin-bottom:12px;line-height:1.6;"><strong>Pagamentos:</strong> Aceitamos PIX com ${CFG.descontoPix}% de desconto e parcelamento no cartão de crédito em até ${CFG.parcelamentoMax}x sem juros [A CONFIRMAR].</p>
+        <p style="margin-bottom:12px;line-height:1.6;"><strong>Pagamentos:</strong> Aceitamos PIX com ${CFG.descontoPix}% de desconto e parcelamento no cartão de crédito em até ${CFG.parcelamentoMax}x sem juros .</p>
         <p style="margin-bottom:12px;line-height:1.6;"><strong>Disponibilidade:</strong> Nossos produtos possuem estoque limitado por numeração. Em caso de indisponibilidade simultânea, nossa equipe entrará em contato imediato para substituição ou estorno integral.</p>
         <p style="margin-bottom:12px;line-height:1.6;"><strong>Propriedade Intelectual:</strong> Todos os logotipos, fotografias, textos e marcas presentes neste site são de propriedade exclusiva da BEDÊ.</p>
       `
@@ -1193,3 +1331,38 @@
   document.addEventListener('DOMContentLoaded', init);
 
 })();
+
+  window.buyViaWhatsAppDirect = function() {
+    const p = S.product;
+    if (!p) return;
+    const size = S.size || 'Não informada';
+    const cor = S.selectedColor || 'Única';
+    let msg = Olá! Gostaria de falar com uma consultora sobre o produto:\n\n**\nCor: \nTamanho: \n\nPoderiam me atender?;
+    window.open(https://wa.me/?text=, '_blank');
+  };
+
+  
+  window.descontoMaximoReal = function(produtos) {
+    const descontos = (produtos || [])
+      .filter(p => p.preco_antigo && Number(p.preco_antigo) > Number(p.preco))
+      .map(p => (Number(p.preco_antigo) - Number(p.preco)) / Number(p.preco_antigo) * 100);
+    if (!descontos.length) return null;
+    return Math.floor(Math.max(...descontos) / 5) * 5;
+  };
+
+  window.updateSaleUI = function() {
+    const saleMax = descontoMaximoReal(PRODUCTS);
+    const temPromo = (saleMax !== null);
+
+    const saleSection = document.getElementById('saleSection') || document.querySelector('.split-hero-sale');
+    if (saleSection) saleSection.style.display = temPromo ? '' : 'none';
+
+    const saleHeadline = document.getElementById('saleHeadline');
+    if (saleHeadline && temPromo) {
+      saleHeadline.textContent = `ATÉ ${saleMax}% OFF`;
+    }
+
+    // Chip de liquidação identificado estritamente pelo onclick
+    const chipSale = document.querySelector('[onclick*="LIQUIDA"]');
+    if (chipSale) chipSale.style.display = temPromo ? '' : 'none';
+  };
