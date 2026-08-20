@@ -865,16 +865,13 @@
       szContainer.innerHTML = szHtml;
     }
     
-    // 4. Montar Deep Link WBuy com id_variacao (ou Fallback Gracioso para WhatsApp se for catálogo antigo)
+    // 4. Montar Deep Link WBuy com id_variacao (Esconder se for catálogo antigo sem url_absolute)
     const btnBuy = document.getElementById('pmAddBtn');
     if (btnBuy) {
       if (!p.url_absolute || !p.estoque_por_cor) {
-        // Catálogo antigo: degradação suave para atendimento no WhatsApp
-        btnBuy.href = 'javascript:void(0)';
-        btnBuy.style.opacity = '1';
-        btnBuy.style.pointerEvents = 'auto';
-        btnBuy.textContent = 'Falar com consultora no WhatsApp';
-        btnBuy.onclick = function(e) { e.preventDefault(); buyViaWhatsAppDirect(); };
+        // Catálogo antigo (v10 Etapa 3): Oculta o botão 'Comprar agora' para evitar duplicação do botão de WhatsApp
+        btnBuy.style.display = 'none';
+        btnBuy.onclick = null;
       } else {
         let idVar = null;
         if (S.selectedColor && S.size && p.estoque_por_cor && p.estoque_por_cor[S.selectedColor]) {
@@ -888,12 +885,14 @@
             base = base.replace(/^https?:\/\/[^\/]+/, CFG_LOJA.dominioLoja);
           }
           btnBuy.href = base + "?v=" + idVar;
+          btnBuy.style.display = 'flex';
           btnBuy.style.opacity = '1';
           btnBuy.style.pointerEvents = 'auto';
           btnBuy.textContent = 'Comprar agora';
           btnBuy.onclick = null;
         } else {
           btnBuy.href = 'javascript:void(0)';
+          btnBuy.style.display = 'flex';
           btnBuy.style.opacity = '0.5';
           btnBuy.style.pointerEvents = 'none';
           btnBuy.textContent = 'Selecione cor e tamanho';
