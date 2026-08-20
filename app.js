@@ -5,6 +5,33 @@
 (function () {
   'use strict';
 
+  function loadCart() {
+    try {
+      if (typeof localStorage === 'undefined') return [];
+      // Limpeza de chave legada sem os campos novos
+      if (localStorage.getItem('bede_cart')) {
+        localStorage.removeItem('bede_cart');
+      }
+      const raw = localStorage.getItem('bede_cart_v2');
+      if (!raw) return [];
+      const parsed = JSON.parse(raw);
+      if (!Array.isArray(parsed)) return [];
+      return parsed.filter(item => 
+        item &&
+        typeof item.id !== 'undefined' &&
+        item.name &&
+        item.size &&
+        item.cor &&
+        typeof item.price === 'number' &&
+        item.price > 0 &&
+        typeof item.qty === 'number' &&
+        item.qty > 0
+      );
+    } catch (e) {
+      return [];
+    }
+  }
+
   // ── STATE ──────────────────────────────────────────────────
   const S = {
     slide: 0,
@@ -18,8 +45,8 @@
     searchQuery: '',
     product: null,
     size: null,
-    cart: JSON.parse(localStorage.getItem('bede_cart') || '[]'),
-    wishlist: JSON.parse(localStorage.getItem('bede_wishlist') || '[]')
+    cart: loadCart(),
+    wishlist: JSON.parse((typeof localStorage !== 'undefined' && localStorage.getItem('bede_wishlist')) || '[]')
   };
 
   // Filtro na origem: exclui inativos, registros vazios e produtos sem imagem
@@ -31,16 +58,21 @@
     return !isInactive && hasPhoto;
   });
     // ── CONFIGURAÇÕES DA LOJA (LIDAS DE CONFIG_LOJA.JS) ───────
-  const CFG = (typeof CONFIG_LOJA !== 'undefined' && CONFIG_LOJA) ? CONFIG_LOJA : {
-    freteGratisAcimaDe: 299,
-    parcelamentoMax: 6,
-    descontoPix: 5,
-    primeiraTrocaGratisDias: 30,
-    descontoMaxLiquidacao: 40,
-    cnpj: '45.892.311/0001-80',
-    whatsapp: '5551980150391',
-    whatsappFormatado: '(51) 98015-0391',
-    endereco: 'Rua Cirurgião Vaz Ferreira, 457 · Centro · Viamão/RS',
+  const CFG_SRC = (typeof CFG_LOJA !== 'undefined' && CFG_LOJA) ? CFG_LOJA : (typeof CONFIG_LOJA !== 'undefined' ? CONFIG_LOJA : {});
+  const CFG = {
+    razaoSocial: CFG_SRC.razaoSocial || 'Stiletto Bd Boutique Ltda',
+    cnpj: CFG_SRC.cnpj || '55.068.034/0001-00',
+    nomeFantasia: CFG_SRC.nomeFantasia || 'BEDÊ',
+    endereco: CFG_SRC.endereco || 'Rua Cirurgião Vaz Ferreira, 457 · Centro · Viamão/RS',
+    whatsapp: CFG_SRC.whatsapp ? CFG_SRC.whatsapp.replace(/\D/g, '') : '5551980150391',
+    whatsappFormatado: CFG_SRC.whatsapp || '(51) 98015-0391',
+    descontoPix: CFG_SRC.descontoPix !== undefined ? CFG_SRC.descontoPix : 5,
+    primeiraTrocaGratisDias: CFG_SRC.primeiraTrocaGratisDias !== undefined ? CFG_SRC.primeiraTrocaGratisDias : null,
+    freteGratisAcimaDe: CFG_SRC.freteGratisAcimaDe !== undefined ? CFG_SRC.freteGratisAcimaDe : 449,
+    freteGratisRegioes: CFG_SRC.freteGratisRegioes || [],
+    freteGratisEstados: CFG_SRC.freteGratisEstados || [],
+    parcelamentoMax: CFG_SRC.parcelamentoMax !== undefined ? CFG_SRC.parcelamentoMax : 6,
+    dominioLoja: CFG_SRC.dominioLoja || 'https://loja.usebede.com.br',
     horario: 'Segunda a Sábado · 9h às 19h'
   };
   const WA = CFG.whatsapp;
@@ -85,7 +117,7 @@
     pmInst:     $('pmInst'),
     pmSizes:    $('pmSizes'),
     pmAddBtn:   $('pmAddBtn'),
-    pmWaBtn:    $('pmWaBtn'),
+    pmWaBtn:    $('pmWaDirectBtn'),
     pmDesc:     $('pmDesc'),
     // Cart
     cartOverlay:$('cartOverlay'),
@@ -103,6 +135,9 @@
     guideOvl:  $('guideOverlay')
   };
 
+  const faltando = Object.entries(D).filter(([k, v]) => !v).map(([k]) => k);
+  if (faltando.length) console.warn('[BEDÊ] elementos ausentes no HTML:', faltando);
+
   // ── UTILS ──────────────────────────────────────────────────
   const fmt = v => Number(v || 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
@@ -111,13 +146,15 @@
     // 1. Barra superior / Home
     const homeBar = $('homeBarClaims');
     if (homeBar) {
-      homeBar.textContent = `Frete grátis acima de R$ ${CFG.freteGratisAcimaDe} · ${CFG.parcelamentoMax}x sem juros · ${CFG.descontoPix}% off no PIX`;
+      homeBar.textContent = CFG.parcelamentoMax
+        ? `Frete grátis acima de R$ ${CFG.freteGratisAcimaDe} · até ${CFG.parcelamentoMax}x`
+        : `Frete grátis acima de R$ ${CFG.freteGratisAcimaDe} · ⚡ ${CFG.descontoPix}% no PIX`;
     }
 
     // 2. Gaveta Mobile
     const mobClaims = $('mobDrawerClaims');
     if (mobClaims) {
-      mobClaims.textContent = `Boutique em Viamão · RS · ${CFG.parcelamentoMax}x sem juros`;
+      mobClaims.textContent = CFG.parcelamentoMax ? `Boutique em Viamão · RS · até ${CFG.parcelamentoMax}x sem juros` : `Boutique em Viamão · RS`;
     }
     const mobWa = $('mobDrawerWa');
     if (mobWa) {
@@ -148,20 +185,25 @@
     if (footHor) footHor.textContent = CFG.horario;
     const footPix = $('footerPixTag');
     if (footPix) footPix.textContent = `PIX ${CFG.descontoPix}% OFF`;
+    const footCartao = $('footerCartaoTag');
+    if (footCartao) footCartao.textContent = CFG.parcelamentoMax ? `Cartão em até ${CFG.parcelamentoMax}x` : 'Cartão de Crédito';
     const footLeg = $('footerLegal');
-    if (footLeg) footLeg.textContent = `BEDÊ COMÉRCIO DE CALÇADOS E ACESSÓRIOS LTDA · CNPJ ${CFG.cnpj} · Viamão / RS`;
+    if (footLeg) footLeg.textContent = `${CFG.razaoSocial} · CNPJ ${CFG.cnpj} · ${CFG.endereco}`;
 
     // 6. Modal de Produto Perk
     const pmPerk = $('pmPerkTroca');
     if (pmPerk) {
-      pmPerk.textContent = `Primeira Troca Grátis e Fácil em até ${CFG.primeiraTrocaGratisDias} Dias`;
+      pmPerk.textContent = 'Troca facilitada pelo WhatsApp';
     }
 
     // 7. Carrinho
     const cartPixLbl = $('cartPixLabel');
     if (cartPixLbl) cartPixLbl.textContent = `⚡ No PIX (${CFG.descontoPix}% OFF)`;
     const cartInstLbl = $('cartInstLabel');
-    if (cartInstLbl) cartInstLbl.textContent = `Até ${CFG.parcelamentoMax}x sem juros`;
+    if (cartInstLbl) {
+      cartInstLbl.textContent = CFG.parcelamentoMax ? `Até ${CFG.parcelamentoMax}x sem juros` : '';
+      cartInstLbl.style.display = CFG.parcelamentoMax ? '' : 'none';
+    }
   }
 
   // ── INIT ───────────────────────────────────────────────────
@@ -173,6 +215,8 @@
     updateCartBadge();
     updateWishlistBadge();
     updateActiveFiltersBadge();
+    updateSaleUI();
+    renderMenus();
     goToSlide(0, true);
   }
 
@@ -188,18 +232,22 @@
     S.busy = true;
     S.slide = idx;
 
-    D.track.style.transition = instant ? 'none' : 'transform 600ms cubic-bezier(0.25, 1, 0.5, 1)';
-    D.track.style.transform = `translateY(-${idx * 100}%)`;
-
-    if (idx === 0) {
-      D.header.className = 'site-header ghost';
-      if (D.logoImg) D.logoImg.src = 'assets/brand/logo_header_branco.svg';
-    } else {
-      D.header.className = 'site-header solid-light';
-      if (D.logoImg) D.logoImg.src = 'assets/brand/logo_header_preto.svg';
+    if (D.track) {
+      D.track.style.transition = instant ? 'none' : 'transform 600ms cubic-bezier(0.25, 1, 0.5, 1)';
+      D.track.style.transform = `translateY(-${idx * 100}%)`;
     }
 
-    D.dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+    if (D.header) {
+      if (idx === 0) {
+        D.header.className = 'site-header ghost';
+        if (D.logoImg) D.logoImg.src = 'assets/brand/logo_header_branco.svg';
+      } else {
+        D.header.className = 'site-header solid-light';
+        if (D.logoImg) D.logoImg.src = 'assets/brand/logo_header_preto.svg';
+      }
+    }
+
+    if (D.dots) D.dots.forEach((d, i) => d.classList.toggle('active', i === idx));
     setTimeout(() => { S.busy = false; }, instant ? 0 : 550);
   };
 
@@ -261,7 +309,22 @@
     if (!S.collOpen) {
       openCollection('ALL');
     } else {
-      renderGrid();
+      
+    const saleMax = descontoMaximoReal(PRODUCTS);
+    const saleHeadline = document.getElementById('saleHeadline');
+    const saleSection = document.getElementById('saleSection');
+    if (saleHeadline) {
+      if (saleMax) {
+        saleHeadline.textContent = `ATÉ ${saleMax}% OFF`;
+        if (saleSection) saleSection.style.display = 'block';
+      } else {
+        saleHeadline.textContent = `LIQUIDAÇÃO`;
+        // Se nenhum produto em promoção, oculta o banner numérico ou seção se configurado
+      }
+    }
+
+    renderGrid();
+    updateSaleUI();
     }
   };
 
@@ -579,7 +642,7 @@
       img: 'assets/split_bags.jpg?v=crop_v3'
     },
     'LIQUIDAÇÃO': {
-      title: 'Special Sale · Até 40% OFF',
+      title: 'Special Sale · Liquidação',
       eyebrow: 'Oportunidades Especiais de Curadoria',
       desc: 'Peças selecionadas com condições exclusivas e a mesma excelência de acabamento.',
       img: 'assets/split_editorial.jpg?v=showroom_v1'
@@ -767,7 +830,7 @@
           </div>
           
           <span class="p-card-pix">⚡ R$ ${pix} no PIX (5% OFF)</span>
-          <span class="p-card-inst">ou até 6x de R$ ${inst} sem juros</span>
+          ${CFG.parcelamentoMax ? `<span class="p-card-inst">ou até ${CFG.parcelamentoMax}x de R$ ${(pr / CFG.parcelamentoMax).toFixed(2)}</span>` : ''}
         </div>`;
     }).join('');
   }
@@ -776,8 +839,9 @@
   window.quickAddToCart = function (id) {
     const p = PRODUCTS.find(x => String(x.id) === String(id));
     if (!p) return;
+    const defaultColor = (p.cores && p.cores[0]) || 'Única';
     const defaultSize = (p.tamanhos && p.tamanhos[0]) || '36';
-    addToCart(p, defaultSize);
+    addToCart(p, defaultSize, defaultColor);
     openCart();
   };
 
@@ -789,26 +853,139 @@
   };
 
   // ============================================================
-  // PRODUTO MODAL COM GALERIA DE THUMBNAILS & AVALIAÇÕES
+  
   // ============================================================
+  // PRODUTO MODAL COM SELEÇÃO DE COR, TAMANHO E DEEP-LINK WBUY
+  // ============================================================
+  window.updateVariationUI = function() {
+    const p = S.product;
+    if (!p) return;
+    
+    // 1. Fotos por cor
+    if (S.selectedColor && p.fotos_por_cor && p.fotos_por_cor[S.selectedColor] && p.fotos_por_cor[S.selectedColor].length > 0) {
+      D.pmImg.src = p.fotos_por_cor[S.selectedColor][0];
+    } else if (p.foto) {
+      D.pmImg.src = p.foto;
+    }
+    
+    // 2. Cores (Color pills)
+    const colContainer = document.getElementById('pmColors');
+    if (colContainer && p.cores) {
+      let colHtml = '';
+      p.cores.forEach(c => {
+        const isActive = (S.selectedColor === c);
+        colHtml += `<span class="col-pill ${isActive ? 'active' : ''}" 
+          onclick="selectColor('${c}', this)">
+          ${c}
+        </span>`;
+      });
+      colContainer.innerHTML = colHtml;
+      colContainer.style.display = p.cores.length > 0 ? 'flex' : 'none';
+    }
+    
+    // 3. Tamanhos (Size pills - recalcula disponibilidade para a cor selecionada)
+    const szContainer = document.getElementById('pmSizes');
+    if (szContainer && p.tamanhos) {
+      let szHtml = '';
+      p.tamanhos.forEach(sz => {
+        let isAvailable = true;
+        let idVar = null;
+        
+        if (S.selectedColor && p.estoque_por_cor && p.estoque_por_cor[S.selectedColor]) {
+          const varData = p.estoque_por_cor[S.selectedColor][sz];
+          if (!varData || Number(varData.qtd || 0) <= 0) {
+            isAvailable = false;
+          } else {
+            idVar = varData.id_variacao;
+          }
+        }
+        
+        const isActive = (S.size === sz && isAvailable);
+        const isDisabled = !isAvailable;
+        
+        szHtml += `<span class="sz-pill ${isDisabled ? 'disabled' : ''} ${isActive ? 'active' : ''}" 
+          onclick="selectSize('${sz}', this)">
+          ${sz}
+        </span>`;
+      });
+      szContainer.innerHTML = szHtml;
+    }
+    
+    // 4. Montar Deep Link WBuy com id_variacao (Esconder se for catálogo antigo sem url_absolute)
+    const btnBuy = document.getElementById('pmAddBtn');
+    if (btnBuy) {
+      if (!p.url_absolute || !p.estoque_por_cor) {
+        // Catálogo antigo (v10 Etapa 3): Oculta o botão 'Comprar agora' para evitar duplicação do botão de WhatsApp
+        btnBuy.style.display = 'none';
+        btnBuy.onclick = null;
+      } else {
+        let idVar = null;
+        let urlVar = null;
+        if (S.selectedColor && S.size && p.estoque_por_cor && p.estoque_por_cor[S.selectedColor]) {
+          const v = p.estoque_por_cor[S.selectedColor][S.size];
+          if (v && Number(v.qtd || 0) > 0) {
+            idVar = v.id_variacao;
+            urlVar = v.url_variacao || (v.sku ? (p.url_absolute + "?sku=" + v.sku) : p.url_absolute);
+          }
+        }
+        
+        if (p.url_absolute && S.selectedColor && S.size && (urlVar || idVar)) {
+          let targetUrl = urlVar || p.url_absolute;
+          if (typeof CFG_LOJA !== 'undefined' && CFG_LOJA.dominioLoja) {
+            targetUrl = targetUrl.replace(/^https?:\/\/[^\/]+/, CFG_LOJA.dominioLoja);
+          }
+          btnBuy.href = targetUrl;
+          btnBuy.style.display = 'flex';
+          btnBuy.style.opacity = '1';
+          btnBuy.style.pointerEvents = 'auto';
+          btnBuy.textContent = 'Comprar agora';
+          btnBuy.onclick = null;
+        } else {
+          btnBuy.href = 'javascript:void(0)';
+          btnBuy.style.display = 'flex';
+          btnBuy.style.opacity = '0.5';
+          btnBuy.style.pointerEvents = 'none';
+          btnBuy.textContent = 'Selecione cor e tamanho';
+          btnBuy.onclick = null;
+        }
+      }
+    }
+  };
+
   window.openProduct = function (id) {
     const p = PRODUCTS.find(x => String(x.id) === String(id));
     if (!p) return;
     S.product = p;
-    S.size = (p.tamanhos && p.tamanhos[0]) || '36';
+    S.size = null;
+    S.selectedColor = null;
+    
+    // Auto-seleciona cor se houver apenas uma
+    if (p.cores && p.cores.length === 1) {
+      S.selectedColor = p.cores[0];
+    }
 
     const pr = Number(p.preco || 0);
-    const old = Number(p.preco_antigo || pr * 1.25);
+    const old = Number(p.preco_antigo || 0);
 
     D.pmImg.src = p.foto;
     D.pmImg.alt = p.nome;
     D.pmCat.textContent = p.categoria || 'Calçados';
     D.pmName.textContent = p.nome;
     D.pmPrice.textContent = fmt(pr);
-    D.pmOld.textContent = fmt(old);
-    D.pmPix.textContent = `⚡ ${fmt(pr * (1 - CFG.descontoPix / 100))} no PIX (${CFG.descontoPix}% OFF)`;
-    D.pmInst.textContent = `ou ${CFG.parcelamentoMax}x de R$ ${(pr / CFG.parcelamentoMax).toLocaleString('pt-BR', { minimumFractionDigits: 2 })} sem juros`;
+    
+    if (old > pr) {
+      D.pmOld.textContent = fmt(old);
+      D.pmOld.style.display = 'inline';
+    } else {
+      D.pmOld.style.display = 'none';
+    }
+
+    if (D.pmPix) D.pmPix.style.display = 'none';
+    if (D.pmInst) D.pmInst.style.display = 'none';
+
     D.pmDesc.textContent = p.descricao || 'Acabamento artesanal nobre com palmilha anatômica e design contemporâneo.';
+
+    updateVariationUI();
 
     // Gerenciamento de Avaliações Reais (AVALIACOES.js)
     const revSection = $('pmReviewsSection');
@@ -878,12 +1055,7 @@
       }
     }
 
-    const sizes = p.tamanhos || ['34','35','36','37','38','39','40'];
-    D.pmSizes.innerHTML = sizes.map(s =>
-      `<button class="sz-btn ${s === S.size ? 'active' : ''}" onclick="selectSize('${s}',this)">${s}</button>`
-    ).join('');
-
-    D.prodModal.classList.add('open');
+    if (D.prodModal) D.prodModal.classList.add('open');
   };
 
   window.switchProductPhoto = function (src, el) {
@@ -893,32 +1065,46 @@
   };
 
   window.closeProduct = function () {
-    D.prodModal.classList.remove('open');
+    if (D.prodModal) D.prodModal.classList.remove('open');
     S.product = null;
-    if (!S.collOpen) D.header.classList.add('ghost');
+    if (!S.collOpen && D.header) D.header.classList.add('ghost');
+  };
+
+  window.selectColor = function (c, btn) {
+    S.selectedColor = c;
+    S.size = null;
+    updateVariationUI();
   };
 
   window.selectSize = function (s, btn) {
+    if (btn && btn.classList.contains('disabled')) return;
     S.size = s;
-    document.querySelectorAll('.sz-btn').forEach(b => b.classList.remove('active'));
-    if (btn) btn.classList.add('active');
+    updateVariationUI();
   };
 
-  // Botões do produto
-  D.pmAddBtn.addEventListener('click', () => {
-    if (!S.product) return;
-    addToCart(S.product, S.size);
+  window.addCurrentToSelection = function () {
+    const p = S.product;
+    if (!p) return;
+    if (!S.size) {
+      alert('Selecione cor e tamanho');
+      return;
+    }
+    addToCart(p, S.size, S.selectedColor);
     closeProduct();
     openCart();
-  });
+  };
 
-  D.pmWaBtn.addEventListener('click', () => {
-    if (!S.product) return;
-    const msg = encodeURIComponent(
-      `Olá! Gostaria de atendimento para comprar o modelo:\n\n*${S.product.nome}* — Tamanho: *${S.size}* — *${fmt(S.product.preco)}*\n\nComo finalizamos o pagamento?`
-    );
-    window.open(`https://wa.me/${WA}?text=${msg}`, '_blank');
-  });
+  if (D.pmWaBtn) {
+    D.pmWaBtn.addEventListener('click', () => {
+      if (!S.product) return;
+      const size = S.size || 'Não informada';
+      const cor = S.selectedColor || 'Única';
+      const msg = encodeURIComponent(
+        `Olá! Gostaria de atendimento para comprar o modelo:\n\n*${S.product.nome}*\nCor: *${cor}* — Tamanho: *${size}* — *${fmt(S.product.preco)}*\n\nComo finalizamos o pagamento?`
+      );
+      window.open(`https://wa.me/${WA}?text=${msg}`, '_blank');
+    });
+  }
 
   // ============================================================
   // CARRINHO & CONTA
@@ -945,12 +1131,18 @@
     if (checkoutBtn) {
       checkoutBtn.addEventListener('click', () => {
         if (!S.cart.length) return;
-        const sub = S.cart.reduce((t, i) => t + i.price * i.qty, 0);
-        let msg = `Olá! Gostaria de finalizar meu pedido — *BEDÊ Stiletto*:\n\n`;
+        let msg = `Olá! Gostaria de enviar a minha seleção da vitrine BEDÊ:\n\n`;
         S.cart.forEach((it, i) => {
-          msg += `${i + 1}. *${it.name}* (Tam: ${it.size}) × ${it.qty} — ${fmt(it.price * it.qty)}\n`;
+          msg += `*${i + 1}. ${it.name}*\n`;
+          msg += `Cor: ${it.cor} | Tam: ${it.size} | Qtd: ${it.qty} | Valor: ${fmt(it.price * it.qty)}`;
+          if (it.sku || it.idVar) {
+            msg += ` (Cód: ${it.sku || it.idVar})`;
+          }
+          msg += `\n\n`;
         });
-        msg += `\n*Total:* ${fmt(sub)}\n*No PIX (${CFG.descontoPix}% OFF):* ${fmt(sub * (1 - CFG.descontoPix / 100))}`;
+        const total = S.cart.reduce((acc, it) => acc + (it.price * it.qty), 0);
+        msg += `*Total estimado:* ${fmt(total)}\n\n`;
+        msg += "Poderiam confirmar a disponibilidade e os valores por favor?";
         window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank');
       });
     }
@@ -958,20 +1150,42 @@
 
   window.openCart = function () {
     renderCart();
-    D.cartOverlay.classList.add('open');
-    D.cartDrawer.classList.add('open');
+    if (D.cartOverlay) D.cartOverlay.classList.add('open');
+    if (D.cartDrawer) D.cartDrawer.classList.add('open');
   };
 
   window.closeCart = function () {
-    D.cartOverlay.classList.remove('open');
-    D.cartDrawer.classList.remove('open');
+    if (D.cartOverlay) D.cartOverlay.classList.remove('open');
+    if (D.cartDrawer) D.cartDrawer.classList.remove('open');
   };
 
-  function addToCart(p, size) {
-    const ex = S.cart.find(i => i.id === p.id && i.size === size);
-    if (ex) { ex.qty++; }
-    else {
-      S.cart.push({ id: p.id, name: p.nome, price: Number(p.preco || 0), img: p.foto, size: size || '36', qty: 1 });
+  function addToCart(p, size, cor) {
+    const selectedColor = cor || S.selectedColor || 'Única';
+    const selectedSize = size || S.size || '36';
+    let idVar = null;
+    let sku = null;
+    if (p.estoque_por_cor && p.estoque_por_cor[selectedColor] && p.estoque_por_cor[selectedColor][selectedSize]) {
+      const vData = p.estoque_por_cor[selectedColor][selectedSize];
+      idVar = vData.id_variacao || null;
+      sku = vData.sku || null;
+    }
+    const priceNum = Number(p.preco || 0);
+
+    const ex = S.cart.find(i => i.id === p.id && i.size === selectedSize && i.cor === selectedColor);
+    if (ex) {
+      ex.qty++;
+    } else {
+      S.cart.push({
+        id: p.id,
+        name: p.nome,
+        img: p.foto,
+        size: selectedSize,
+        cor: selectedColor,
+        price: priceNum,
+        idVar: idVar,
+        sku: sku,
+        qty: 1
+      });
     }
     saveCart();
     updateCartBadge();
@@ -984,16 +1198,24 @@
     renderCart();
   };
 
-  function saveCart() { localStorage.setItem('bede_cart', JSON.stringify(S.cart)); }
+  function saveCart() {
+    try {
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem('bede_cart_v2', JSON.stringify(S.cart));
+      }
+    } catch (e) {}
+  }
 
   function updateCartBadge() {
     const n = S.cart.reduce((t, i) => t + i.qty, 0);
-    D.cartPill.textContent = n;
-    const hasItems = n > 0;
-    D.cartPill.classList.toggle('visible', hasItems);
+    if (D.cartPill) {
+      D.cartPill.textContent = n;
+      const hasItems = n > 0;
+      D.cartPill.classList.toggle('visible', hasItems);
+    }
     if (D.cartHead) D.cartHead.textContent = n;
 
-    if (hasItems) {
+    if (n > 0) {
       if (D.cartBtn) D.cartBtn.classList.add('cart-bump');
       if (D.cartPill) D.cartPill.classList.add('bump');
       setTimeout(() => {
@@ -1004,7 +1226,7 @@
   }
 
   function renderCart() {
-    const sub = S.cart.reduce((t, i) => t + i.price * i.qty, 0);
+    const sub = S.cart.reduce((t, i) => t + (Number(i.price) || 0) * i.qty, 0);
     const totalQty = S.cart.reduce((t, i) => t + i.qty, 0);
     if (D.cartSub) D.cartSub.textContent = fmt(sub);
     if (D.cartPix) D.cartPix.textContent = fmt(sub * (1 - CFG.descontoPix / 100));
@@ -1014,6 +1236,8 @@
       sumCount.textContent = `${totalQty} ${totalQty === 1 ? 'produto' : 'produtos'}`;
     }
 
+    if (!D.cartBody) return;
+
     if (!S.cart.length) {
       D.cartBody.innerHTML = `
         <div style="text-align:center;padding:3.5rem 1rem;color:#888;">
@@ -1022,7 +1246,7 @@
             <line x1="3" y1="6" x2="21" y2="6"/>
             <path d="M16 10a4 4 0 0 1-8 0"/>
           </svg>
-          <p style="font-size:14px;font-weight:500;color:#000404;margin-bottom:4px;">Sua sacola está vazia</p>
+          <p style="font-size:14px;font-weight:500;color:#000404;margin-bottom:4px;">Sua seleção está vazia</p>
           <p style="font-size:12px;font-weight:300;color:#888;">Explore nossa curadoria e adicione suas peças favoritas.</p>
         </div>`;
       return;
@@ -1033,11 +1257,11 @@
         <div class="cart-item-info">
           <p class="cart-item-name">${it.name}</p>
           <div class="cart-item-meta">
-            <span>Tam: <strong>${it.size}</strong></span>
+            <span>${it.cor} · Tam: <strong>${it.size}</strong></span>
             <span>·</span>
             <span>Qtd: <strong>${it.qty}</strong></span>
           </div>
-          <p class="cart-item-price">${fmt(it.price * it.qty)}</p>
+          <p class="cart-item-price">${fmt((Number(it.price) || 0) * it.qty)}</p>
         </div>
         <button class="cart-item-remove" onclick="removeItem(${i})" aria-label="Remover item" title="Remover">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1052,8 +1276,8 @@
   // ============================================================
   // GUIA DE MEDIDAS & MODAIS INSTITUCIONAIS
   // ============================================================
-  window.openSizeGuide = function () { D.guideOvl.classList.add('open'); };
-  window.closeSizeGuide = function () { D.guideOvl.classList.remove('open'); };
+  window.openSizeGuide = function () { if (D.guideOvl) D.guideOvl.classList.add('open'); };
+  window.closeSizeGuide = function () { if (D.guideOvl) D.guideOvl.classList.remove('open'); };
 
     const instData = {
     sobre: {
@@ -1091,13 +1315,10 @@
         <p style="margin-bottom:14px;line-height:1.6;">Nosso compromisso é com a sua total satisfação. Se você precisar trocar ou devolver seu calçado, o processo é ágil e humanizado:</p>
         <ul style="margin-left:20px;margin-bottom:16px;line-height:1.7;">
           <li style="margin-bottom:8px;"><strong>Direito de Devolução / Arrependimento:</strong> Até 7 dias corridos após o recebimento, conforme o Código de Defesa do Consumidor.</li>
-          <li style="margin-bottom:8px;"><strong>Primeira Troca Facilitada:</strong> Solicitação direto pelo canal de atendimento do WhatsApp [A CONFIRMAR: prazo de dias de troca].</li>
+          <li style="margin-bottom:8px;"><strong>Troca Facilitada:</strong> Solicitação feita diretamente pelo nosso canal de atendimento no WhatsApp.</li>
           <li style="margin-bottom:8px;"><strong>Condições do Produto:</strong> O calçado deve estar sem sinais de uso, em perfeito estado, com etiqueta e na embalagem original da BEDÊ.</li>
         </ul>
         <p style="margin-bottom:14px;line-height:1.6;">Para solicitar sua troca, basta enviar uma mensagem no nosso WhatsApp informando o número do pedido ou seu nome completo.</p>
-        <div style="background:#fff8e6;border:1px solid #f0dc9e;padding:10px 14px;border-radius:6px;font-size:12px;color:#856404;margin-top:12px;">
-          📌 <em>Nota de Transparência: Políticas de frete reverso e prazos estendidos em fase de confirmação pela gestão.</em>
-        </div>
       `
     },
     faq: {
@@ -1110,11 +1331,11 @@
           </div>
           <div>
             <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">2. Quais são as formas de pagamento?</h5>
-            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">Aceitamos PIX (com desconto especial) e Cartão de Crédito em até ${CFG.parcelamentoMax}x sem juros [A CONFIRMAR].</p>
+            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">Aceitamos PIX com ${CFG.descontoPix}% de desconto${CFG.parcelamentoMax ? ` e Cartão de Crédito em até ${CFG.parcelamentoMax}x sem juros` : ''}.</p>
           </div>
           <div>
             <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">3. Qual é o prazo de entrega?</h5>
-            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">O prazo varia de acordo com a sua região e a modalidade de frete selecionada [A CONFIRMAR: prazos por região]. Enviamos para todo o Brasil com código de rastreamento.</p>
+            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">O prazo de entrega é informado no fechamento do pedido, conforme o CEP de entrega. Compras acima de R$ 449 têm frete grátis.</p>
           </div>
           <div>
             <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">4. Posso retirar meu pedido na loja física?</h5>
@@ -1126,12 +1347,12 @@
     privacidade: {
       title: 'Política de Privacidade',
       body: `
-        <p style="margin-bottom:14px;line-height:1.6;">A <strong>BEDÊ Comércio de Calçados e Acessórios LTDA</strong> valoriza e respeita a privacidade de suas clientes. Seus dados pessoais (nome, telefone, endereço e e-mail) são tratados com total sigilo e proteção, em conformidade com a LGPD (Lei Geral de Proteção de Dados - Lei nº 13.709/2018).</p>
+        <p style="margin-bottom:14px;line-height:1.6;">A <strong>Stiletto Bd Boutique Ltda</strong> valoriza e respeita a privacidade de suas clientes. Seus dados pessoais (nome, telefone, endereço e e-mail) são tratados com total sigilo e proteção, em conformidade com a LGPD (Lei Geral de Proteção de Dados - Lei nº 13.709/2018).</p>
         <p style="margin-bottom:14px;line-height:1.6;"><strong>Uso das Informações:</strong> Seus dados são utilizados estritamente para o processamento de pedidos, entrega segura e atendimento de suporte via WhatsApp.</p>
         <p style="margin-bottom:14px;line-height:1.6;"><strong>Compartilhamento:</strong> Não comercializamos nem repassamos seus dados a terceiros, exceto com parceiros logísticos indispensáveis para a entrega de suas compras.</p>
         <p style="margin-bottom:14px;line-height:1.6;">Você tem o direito de solicitar a confirmação, correção ou exclusão definitiva de seus dados cadastrais a qualquer momento através do nosso canal oficial de atendimento.</p>
         <div style="font-size:12px;color:var(--color-muted,#777);margin-top:16px;border-top:1px solid var(--color-border,#eee);padding-top:10px;">
-          BEDÊ COMÉRCIO DE CALÇADOS E ACESSÓRIOS LTDA · CNPJ ${CFG.cnpj} [A CONFIRMAR] · Viamão / RS
+          ${CFG.razaoSocial} · CNPJ ${CFG.cnpj} · ${CFG.endereco}
         </div>
       `
     },
@@ -1139,7 +1360,7 @@
       title: 'Termos de Compra e Uso',
       body: `
         <p style="margin-bottom:12px;line-height:1.6;">Ao navegar e realizar compras na boutique da <strong>BEDÊ</strong>, você concorda com nossos termos e condições gerais de atendimento e comercialização.</p>
-        <p style="margin-bottom:12px;line-height:1.6;"><strong>Pagamentos:</strong> Aceitamos PIX com ${CFG.descontoPix}% de desconto e parcelamento no cartão de crédito em até ${CFG.parcelamentoMax}x sem juros [A CONFIRMAR].</p>
+        <p style="margin-bottom:12px;line-height:1.6;"><strong>Pagamentos:</strong> Aceitamos PIX com ${CFG.descontoPix}% de desconto${CFG.parcelamentoMax ? ` e parcelamento no cartão em até ${CFG.parcelamentoMax}x sem juros` : ''}.</p>
         <p style="margin-bottom:12px;line-height:1.6;"><strong>Disponibilidade:</strong> Nossos produtos possuem estoque limitado por numeração. Em caso de indisponibilidade simultânea, nossa equipe entrará em contato imediato para substituição ou estorno integral.</p>
         <p style="margin-bottom:12px;line-height:1.6;"><strong>Propriedade Intelectual:</strong> Todos os logotipos, fotografias, textos e marcas presentes neste site são de propriedade exclusiva da BEDÊ.</p>
       `
@@ -1189,7 +1410,142 @@
     if (ovl) ovl.classList.remove('open');
   };
 
+
+  // ============================================================
+  // MENUS DINÂMICOS — chips, dropdown desktop e gaveta mobile
+  // Gerados a partir das categorias presentes em PRODUCTS.
+  // NUNCA editar as listas no HTML diretamente.
+  // ============================================================
+  const MENU_NAV = [
+    { key: 'SCARPIN',            label: 'Scarpins & Saltos',    group: 'calcados' },
+    { key: 'BOTA',               label: 'Botas & Coturnos',     group: 'calcados' },
+    { key: 'SANDÁLIA',           label: 'Sandálias & Festa',    group: 'calcados' },
+    { key: 'PAPETE',             label: 'Papetes & Rasteiras',  group: 'calcados' },
+    { key: 'MOCASSIM',           label: 'Mocassins & Loafers',  group: 'calcados' },
+    { key: 'MULE',               label: 'Mules & Tamancos',     group: 'calcados' },
+    { key: 'TÊNIS',              label: 'Tênis Contemporâneos', group: 'calcados' },
+    { key: 'SLINGBACK',          label: 'Slingbacks',           group: 'calcados' },
+    { key: 'SAPATILHA',          label: 'Sapatilhas',           group: 'calcados' },
+    { key: 'CHINELO',            label: 'Chinelos',             group: 'calcados' },
+    { key: 'RASTEIRINHA',        label: 'Rasteirinhas',         group: 'calcados' },
+    { key: 'TAMANCO',            label: 'Tamancos',             group: 'calcados' },
+    { key: 'BOLSA',              label: 'Bolsas & Acessórios',  group: 'bolsas'   }
+  ];
+
+  function hasProductsForKey(key) {
+    return PRODUCTS.some(p => {
+      const cat = (p.categoria || '').toUpperCase();
+      if (key === 'BOTA') return cat.includes('BOTA') || cat.includes('COTURNO');
+      if (key === 'TÊNIS') return cat.includes('TÊNIS') || cat.includes('TENIS');
+      return cat.includes(key.toUpperCase());
+    });
+  }
+
+  function renderMenus() {
+    const activeNav = MENU_NAV.filter(item => hasProductsForKey(item.key));
+
+    // — Chips de categoria (barra de filtros na vitrine) —
+    const chipsContainer = document.getElementById('filterChips');
+    if (chipsContainer) {
+      let html = `<button class="f-chip active" onclick="filterCat('ALL',this)">Todos</button>`;
+      activeNav.forEach(item => {
+        html += `<button class="f-chip" onclick="filterCat('${item.key}',this)">${item.label}</button>`;
+      });
+      // Liquidação: só aparece se existir produto com preco_antigo real
+      const temLiquidacao = PRODUCTS.some(p => p.preco_antigo && Number(p.preco_antigo) > Number(p.preco));
+      if (temLiquidacao) {
+        html += `<button class="f-chip" id="chipLiquidacao" onclick="filterCat('LIQUIDAÇÃO',this)">Sale / Off</button>`;
+      }
+      chipsContainer.innerHTML = html;
+    }
+
+    // — Dropdown do desktop (submenu Calçados no header) —
+    const desktopSubMenu = document.getElementById('desktopSubMenu');
+    if (desktopSubMenu) {
+      const calcadoItems = activeNav.filter(i => i.group === 'calcados');
+      const bolsaItems   = activeNav.filter(i => i.group === 'bolsas');
+      let html = `<a href="#" onclick="openCollection('CALÇADOS');return false;" class="sub-link view-all-link">Ver Todos os Calçados</a>`;
+      calcadoItems.forEach(item => {
+        html += `<a href="#" onclick="openCollection('${item.key}');return false;" class="sub-link">${item.label}</a>`;
+      });
+      bolsaItems.forEach(item => {
+        html += `<a href="#" onclick="openCollection('${item.key}');return false;" class="sub-link">${item.label}</a>`;
+      });
+      desktopSubMenu.innerHTML = html;
+    }
+
+    // — Gaveta mobile (accordion de Calçados) —
+    const mobSub = document.getElementById('mobSubCategories');
+    if (mobSub) {
+      let html = `<a href="#" onclick="openCollection('CALÇADOS');closeMobileMenu();return false;" class="mob-sub-link highlight">Ver Todos os Calçados</a>`;
+      activeNav.forEach(item => {
+        html += `<a href="#" onclick="openCollection('${item.key}');closeMobileMenu();return false;" class="mob-sub-link">${item.label}</a>`;
+      });
+      mobSub.innerHTML = html;
+    }
+  }
+
   // ── START ──────────────────────────────────────────────────
   document.addEventListener('DOMContentLoaded', init);
+
+  window.buyViaWhatsAppDirect = function() {
+  const p = S.product;
+  if (!p) return;
+  const size = S.size || 'Não informada';
+  const cor = S.selectedColor || 'Única';
+  const WA = (typeof CFG !== 'undefined' && CFG.whatsapp) ? CFG.whatsapp : '5551980150391';
+  let msg = `Olá! Gostaria de falar com uma consultora sobre o produto:\n\n*${p.nome}*\nCor: ${cor}\nTamanho: ${size}\n\nPoderiam me atender?`;
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank');
+};
+
+  
+  window.descontoMaximoReal = function(produtos) {
+    const descontos = (produtos || [])
+      .filter(p => p.preco_antigo && Number(p.preco_antigo) > Number(p.preco))
+      .map(p => (Number(p.preco_antigo) - Number(p.preco)) / Number(p.preco_antigo) * 100);
+    if (!descontos.length) return null;
+    return Math.floor(Math.max(...descontos) / 5) * 5;
+  };
+
+  
+;
+
+  window.updateSaleUI = function() {
+    const saleMax = descontoMaximoReal(PRODUCTS);
+    const temPromo = (saleMax !== null);
+
+    // 1. Menu do topo (Desktop)
+    const navSale = document.getElementById('navSaleItem') || document.querySelector('.sale-tag');
+    if (navSale) navSale.style.display = temPromo ? '' : 'none';
+
+    // 2. Menu da gaveta (Mobile)
+    const mobNavSale = document.getElementById('mobNavSaleItem') || document.querySelector('.mob-nav-link.highlight');
+    if (mobNavSale) mobNavSale.style.display = temPromo ? '' : 'none';
+
+    // 3. Slide 2: Seção e botão "Ver Liquidação"
+    const saleSection = document.getElementById('saleSection') || document.querySelector('.split-hero-sale');
+    if (saleSection) saleSection.style.display = temPromo ? '' : 'none';
+
+    const slideSaleBtn = document.getElementById('slideSaleBtn');
+    if (slideSaleBtn) slideSaleBtn.style.display = temPromo ? '' : 'none';
+
+    const saleHeadline = document.getElementById('saleHeadline');
+    if (saleHeadline && temPromo) {
+      saleHeadline.textContent = `ATÉ ${saleMax}% OFF`;
+    }
+
+    const mobSaleHeadline = document.getElementById('mobSaleHeadline');
+    if (mobSaleHeadline) {
+      mobSaleHeadline.textContent = temPromo ? `Special Sale (Até ${saleMax}% OFF)` : 'Special Sale';
+    }
+
+    // 4. Chip de filtro
+    const chipSale = document.getElementById('chipLiquidacao') || document.querySelector('[onclick*="LIQUIDA"]');
+    if (chipSale) chipSale.style.display = temPromo ? '' : 'none';
+
+    // 5. Dot do carrossel para o Slide 2 (Liquidação)
+    const dots = document.querySelectorAll('.s-dot');
+    if (dots && dots[2]) dots[2].style.display = temPromo ? '' : 'none';
+  };
 
 })();

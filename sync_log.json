@@ -1,0 +1,785 @@
+{
+  "paginas_lidas": 3,
+  "total_recuperados_api": 223,
+  "total_processados_elegiveis": 186,
+  "total_anterior_publicado": 186,
+  "total_variacoes_negativas_zeradas": 81,
+  "diff": {
+    "produtos_novos": [],
+    "produtos_removidos": []
+  },
+  "descartes_detalhados": {
+    "ativo_false_count": 7,
+    "oculto_true_count": 0,
+    "sem_estoque_count": 20,
+    "sem_foto_count": 5,
+    "sem_nome_count": 0,
+    "sem_categoria_count": 5,
+    "itens_descartados": {
+      "ativo_false": [
+        {
+          "id": "3325679",
+          "nome": "CALCADO   35",
+          "motivo": "ativo='0'"
+        },
+        {
+          "id": "3325682",
+          "nome": "CLOGS CRYSTAL KR2002 Cor:CAMURCA PRETO;Tamanho:38",
+          "motivo": "ativo='0'"
+        },
+        {
+          "id": "3325683",
+          "nome": "TENIS",
+          "motivo": "ativo='0'"
+        },
+        {
+          "id": "3325684",
+          "nome": "INATIVO",
+          "motivo": "ativo='0'"
+        },
+        {
+          "id": "3325724",
+          "nome": "SCARPIN MELINA RG1001 Cor:NAPA MARSALA;Tamanho:38",
+          "motivo": "ativo='0'"
+        },
+        {
+          "id": "3325733",
+          "nome": "INATIVO 2",
+          "motivo": "ativo='0'"
+        },
+        {
+          "id": "3325738",
+          "nome": "SCARPIN LUISA 21",
+          "motivo": "ativo='0'"
+        }
+      ],
+      "oculto_true": [],
+      "sem_estoque": [
+        {
+          "id": "3325665",
+          "nome": "SAPATILHA ODRE PRETO FIVELA DOURADA",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        },
+        {
+          "id": "3325669",
+          "nome": "BOLSA BARBARA",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        },
+        {
+          "id": "3325672",
+          "nome": "BOLSA CANTIL",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        },
+        {
+          "id": "3325694",
+          "nome": "BOTA CANO ALTO CAMURÇA",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        },
+        {
+          "id": "3325715",
+          "nome": "BOLSA LAURA",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        },
+        {
+          "id": "3325742",
+          "nome": "BOLSA LULUZINHAS",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        },
+        {
+          "id": "3325744",
+          "nome": "BOTAS ONCA CONHAQUE 1169",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        },
+        {
+          "id": "3325747",
+          "nome": "BOLSA JANIARA",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        },
+        {
+          "id": "3325759",
+          "nome": "BOLSA DANI",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        },
+        {
+          "id": "3340399",
+          "nome": "BOLSA JANAINA",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        },
+        {
+          "id": "3399509",
+          "nome": "SANDALIA MAIA",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        },
+        {
+          "id": "3608496",
+          "nome": "TAMANCO FLÁVIA",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        },
+        {
+          "id": "3614778",
+          "nome": "SANDALIA TARANTO",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        },
+        {
+          "id": "3764169",
+          "nome": "BOLSA MIRIAM",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        },
+        {
+          "id": "4767198",
+          "nome": "BOLSA CARTEIRA PALHA",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        },
+        {
+          "id": "4767199",
+          "nome": "BOLSA PALHA BAÚ",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        },
+        {
+          "id": "4767243",
+          "nome": "BOLSA ZARA",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        },
+        {
+          "id": "4767244",
+          "nome": "BOLSA PALHA BERLOQUE",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        },
+        {
+          "id": "5041627",
+          "nome": "RASTEIRINHA LUZ",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        },
+        {
+          "id": "5041628",
+          "nome": "RASTEIRINHA BROW",
+          "motivo": "Nenhuma variação possui saldo positivo (qtd > 0)"
+        }
+      ],
+      "sem_foto": [
+        {
+          "id": "3325662",
+          "nome": "BOTA KARLSTAD JEANS ESCURO",
+          "motivo": "Sem fotos cadastradas"
+        },
+        {
+          "id": "3325678",
+          "nome": "BOTAS TECIDO MLR 3721 KNIT-TULE",
+          "motivo": "Sem fotos cadastradas"
+        },
+        {
+          "id": "3325703",
+          "nome": "BOLSA ROSE",
+          "motivo": "Sem fotos cadastradas"
+        },
+        {
+          "id": "3325729",
+          "nome": "BOLSA SILVIA",
+          "motivo": "Sem fotos cadastradas"
+        },
+        {
+          "id": "5365253",
+          "nome": "SAPATILHA DRICA",
+          "motivo": "Sem fotos cadastradas"
+        }
+      ],
+      "sem_nome": [],
+      "sem_categoria": [
+        {
+          "id": "3325741",
+          "nome": "CARTEIRA",
+          "motivo": "Sem categoria definida"
+        },
+        {
+          "id": "3325749",
+          "nome": "BOTAS JEANS AZUL",
+          "motivo": "Sem categoria definida"
+        },
+        {
+          "id": "3325750",
+          "nome": "CLOGS CRYSTAL KR2002 Cor:CAMURCA PRETO;Tamanho:35",
+          "motivo": "Sem categoria definida"
+        },
+        {
+          "id": "3471778",
+          "nome": "SAPATO BONECA FIVELA",
+          "motivo": "Sem categoria definida"
+        },
+        {
+          "id": "3471934",
+          "nome": "SLINGBACK CHANEL",
+          "motivo": "Sem categoria definida"
+        }
+      ]
+    }
+  },
+  "variacoes_negativas_para_conferencia": [
+    {
+      "produto_id": "3325663",
+      "produto_nome": "BOTA CANO ALTO SALTO TAÇA",
+      "cor": "Preto",
+      "tamanho": "34",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325664",
+      "produto_nome": "SAPATO PATRÍCIA",
+      "cor": "CACAU",
+      "tamanho": "35",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325665",
+      "produto_nome": "SAPATILHA ODRE PRETO FIVELA DOURADA",
+      "cor": "Única",
+      "tamanho": "35",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325665",
+      "produto_nome": "SAPATILHA ODRE PRETO FIVELA DOURADA",
+      "cor": "Única",
+      "tamanho": "36",
+      "qtd_original": -2
+    },
+    {
+      "produto_id": "3325665",
+      "produto_nome": "SAPATILHA ODRE PRETO FIVELA DOURADA",
+      "cor": "Única",
+      "tamanho": "37",
+      "qtd_original": -2
+    },
+    {
+      "produto_id": "3325665",
+      "produto_nome": "SAPATILHA ODRE PRETO FIVELA DOURADA",
+      "cor": "Única",
+      "tamanho": "38",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325671",
+      "produto_nome": "SCARPIN COURO",
+      "cor": "Preto",
+      "tamanho": "34",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325671",
+      "produto_nome": "SCARPIN COURO",
+      "cor": "caramelo",
+      "tamanho": "35",
+      "qtd_original": -2
+    },
+    {
+      "produto_id": "3325674",
+      "produto_nome": "BOTAS CROCO",
+      "cor": "Única",
+      "tamanho": "35",
+      "qtd_original": -2
+    },
+    {
+      "produto_id": "3325675",
+      "produto_nome": "MOCASSIM COM CRAVINHOS",
+      "cor": "MARSALA",
+      "tamanho": "35",
+      "qtd_original": -2
+    },
+    {
+      "produto_id": "3325675",
+      "produto_nome": "MOCASSIM COM CRAVINHOS",
+      "cor": "OFF WHITE",
+      "tamanho": "37",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325675",
+      "produto_nome": "MOCASSIM COM CRAVINHOS",
+      "cor": "OFF WHITE",
+      "tamanho": "38",
+      "qtd_original": -2
+    },
+    {
+      "produto_id": "3325675",
+      "produto_nome": "MOCASSIM COM CRAVINHOS",
+      "cor": "Preto",
+      "tamanho": "38",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325681",
+      "produto_nome": "BOTA MONTARIA CELINE COURO FLOATER",
+      "cor": "Preto",
+      "tamanho": "37",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325685",
+      "produto_nome": "BOTA FERNANDA",
+      "cor": "cafe",
+      "tamanho": "34",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325688",
+      "produto_nome": "SLINGBACK POÁ",
+      "cor": "MARSALA",
+      "tamanho": "39",
+      "qtd_original": -2
+    },
+    {
+      "produto_id": "3325688",
+      "produto_nome": "SLINGBACK POÁ",
+      "cor": "OFF WHITE",
+      "tamanho": "38",
+      "qtd_original": -3
+    },
+    {
+      "produto_id": "3325688",
+      "produto_nome": "SLINGBACK POÁ",
+      "cor": "Preto",
+      "tamanho": "38",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325688",
+      "produto_nome": "SLINGBACK POÁ",
+      "cor": "Preto",
+      "tamanho": "39",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325693",
+      "produto_nome": "BOLSA LARA PEQUENA",
+      "cor": "Preto",
+      "tamanho": "Único",
+      "qtd_original": -2
+    },
+    {
+      "produto_id": "3325694",
+      "produto_nome": "BOTA CANO ALTO CAMURÇA",
+      "cor": "Única",
+      "tamanho": "35",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325694",
+      "produto_nome": "BOTA CANO ALTO CAMURÇA",
+      "cor": "Única",
+      "tamanho": "36",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325696",
+      "produto_nome": "BOLSA CARLA",
+      "cor": "Preto",
+      "tamanho": "Único",
+      "qtd_original": -2
+    },
+    {
+      "produto_id": "3325699",
+      "produto_nome": "BOTA PRADA",
+      "cor": "Preto",
+      "tamanho": "37",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325700",
+      "produto_nome": "SLINGBACK SLIN",
+      "cor": "OFF WHITE",
+      "tamanho": "34",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325700",
+      "produto_nome": "SLINGBACK SLIN",
+      "cor": "OFF WHITE",
+      "tamanho": "35",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325700",
+      "produto_nome": "SLINGBACK SLIN",
+      "cor": "OFF WHITE",
+      "tamanho": "39",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325720",
+      "produto_nome": "MOCASSIM TRATORADO VERNIZ",
+      "cor": "Preto",
+      "tamanho": "34",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325720",
+      "produto_nome": "MOCASSIM TRATORADO VERNIZ",
+      "cor": "Preto",
+      "tamanho": "35",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325720",
+      "produto_nome": "MOCASSIM TRATORADO VERNIZ",
+      "cor": "Preto",
+      "tamanho": "37",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325720",
+      "produto_nome": "MOCASSIM TRATORADO VERNIZ",
+      "cor": "nude",
+      "tamanho": "37",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325737",
+      "produto_nome": "BOLSA JAQUELINE",
+      "cor": "OFF WHITE",
+      "tamanho": "Único",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325739",
+      "produto_nome": "TENIS RAFA",
+      "cor": "Branco",
+      "tamanho": "36",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325742",
+      "produto_nome": "BOLSA LULUZINHAS",
+      "cor": "caramelo",
+      "tamanho": "Único",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325756",
+      "produto_nome": "SAPATO SANTORINE DETALHE DOURADO",
+      "cor": "Preto",
+      "tamanho": "35",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3325759",
+      "produto_nome": "BOLSA DANI",
+      "cor": "Vermelho escuro",
+      "tamanho": "Único",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3397548",
+      "produto_nome": "SANDÁLIA LUA",
+      "cor": "ANGELICAL",
+      "tamanho": "35",
+      "qtd_original": -2
+    },
+    {
+      "produto_id": "3397549",
+      "produto_nome": "SANDÁLIA OURO",
+      "cor": "OFF WHITE",
+      "tamanho": "39",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3399509",
+      "produto_nome": "SANDALIA MAIA",
+      "cor": "OFF WHITE",
+      "tamanho": "35",
+      "qtd_original": -2
+    },
+    {
+      "produto_id": "3399509",
+      "produto_nome": "SANDALIA MAIA",
+      "cor": "OFF WHITE",
+      "tamanho": "37",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3399509",
+      "produto_nome": "SANDALIA MAIA",
+      "cor": "PRETO E OFF WHITE",
+      "tamanho": "35",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3399509",
+      "produto_nome": "SANDALIA MAIA",
+      "cor": "PRETO E OFF WHITE",
+      "tamanho": "36",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3399509",
+      "produto_nome": "SANDALIA MAIA",
+      "cor": "PRETO E OFF WHITE",
+      "tamanho": "38",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3399509",
+      "produto_nome": "SANDALIA MAIA",
+      "cor": "Preto",
+      "tamanho": "34",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3399509",
+      "produto_nome": "SANDALIA MAIA",
+      "cor": "Preto",
+      "tamanho": "36",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3399509",
+      "produto_nome": "SANDALIA MAIA",
+      "cor": "Preto",
+      "tamanho": "37",
+      "qtd_original": -2
+    },
+    {
+      "produto_id": "3399509",
+      "produto_nome": "SANDALIA MAIA",
+      "cor": "Preto",
+      "tamanho": "38",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3399509",
+      "produto_nome": "SANDALIA MAIA",
+      "cor": "nude",
+      "tamanho": "35",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3447901",
+      "produto_nome": "SCARPIN NAPA FIVELA",
+      "cor": "CACAU",
+      "tamanho": "36",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3471777",
+      "produto_nome": "SAPATILHA PARIS BAUNILHA",
+      "cor": "Preto",
+      "tamanho": "34",
+      "qtd_original": -2
+    },
+    {
+      "produto_id": "3471777",
+      "produto_nome": "SAPATILHA PARIS BAUNILHA",
+      "cor": "Preto",
+      "tamanho": "37",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3570964",
+      "produto_nome": "SANDÁLIA DÁLIA",
+      "cor": "ONIX",
+      "tamanho": "37",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3608228",
+      "produto_nome": "SANDÁLIA NATALIA",
+      "cor": "OFF WHITE",
+      "tamanho": "36",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3608491",
+      "produto_nome": "PAPETE AISHA",
+      "cor": "Única",
+      "tamanho": "36",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3608496",
+      "produto_nome": "TAMANCO FLÁVIA",
+      "cor": "nude",
+      "tamanho": "38",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3614779",
+      "produto_nome": "SANDALIA SIGTUNA",
+      "cor": "OFF WHITE VERNIZ",
+      "tamanho": "36",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3614779",
+      "produto_nome": "SANDALIA SIGTUNA",
+      "cor": "OFF WHITE VERNIZ",
+      "tamanho": "37",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3614779",
+      "produto_nome": "SANDALIA SIGTUNA",
+      "cor": "OFF WHITE VERNIZ",
+      "tamanho": "38",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3614779",
+      "produto_nome": "SANDALIA SIGTUNA",
+      "cor": "PRETO VERNIZ",
+      "tamanho": "35",
+      "qtd_original": -2
+    },
+    {
+      "produto_id": "3614779",
+      "produto_nome": "SANDALIA SIGTUNA",
+      "cor": "PRETO VERNIZ",
+      "tamanho": "38",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3614779",
+      "produto_nome": "SANDALIA SIGTUNA",
+      "cor": "PRETO VERNIZ",
+      "tamanho": "39",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3614779",
+      "produto_nome": "SANDALIA SIGTUNA",
+      "cor": "Preto",
+      "tamanho": "34",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3614779",
+      "produto_nome": "SANDALIA SIGTUNA",
+      "cor": "Preto",
+      "tamanho": "35",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "3614779",
+      "produto_nome": "SANDALIA SIGTUNA",
+      "cor": "Preto",
+      "tamanho": "37",
+      "qtd_original": -5
+    },
+    {
+      "produto_id": "3614779",
+      "produto_nome": "SANDALIA SIGTUNA",
+      "cor": "Preto",
+      "tamanho": "38",
+      "qtd_original": -2
+    },
+    {
+      "produto_id": "3614779",
+      "produto_nome": "SANDALIA SIGTUNA",
+      "cor": "VERMELHO VERNIZ",
+      "tamanho": "38",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "4141369",
+      "produto_nome": "SLINGBACK JORDANA",
+      "cor": "OFF WHITE",
+      "tamanho": "36",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "4141369",
+      "produto_nome": "SLINGBACK JORDANA",
+      "cor": "Preto",
+      "tamanho": "37",
+      "qtd_original": -2
+    },
+    {
+      "produto_id": "4220495",
+      "produto_nome": "SLINGBACK DUO AVELÃ",
+      "cor": "Única",
+      "tamanho": "35",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "4315343",
+      "produto_nome": "BOTA GABI",
+      "cor": "Marrom",
+      "tamanho": "37",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "4354358",
+      "produto_nome": "SCARPIN VIRGINIA",
+      "cor": "Marrom",
+      "tamanho": "34",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "4767198",
+      "produto_nome": "BOLSA CARTEIRA PALHA",
+      "cor": "Bege",
+      "tamanho": "Único",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "4767199",
+      "produto_nome": "BOLSA PALHA BAÚ",
+      "cor": "Bege",
+      "tamanho": "Único",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "4767199",
+      "produto_nome": "BOLSA PALHA BAÚ",
+      "cor": "Caqui",
+      "tamanho": "Único",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "4767243",
+      "produto_nome": "BOLSA ZARA",
+      "cor": "preta",
+      "tamanho": "Único",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "4767244",
+      "produto_nome": "BOLSA PALHA BERLOQUE",
+      "cor": "Caqui",
+      "tamanho": "Único",
+      "qtd_original": -2
+    },
+    {
+      "produto_id": "5032496",
+      "produto_nome": "RASTEIRINHA MARI",
+      "cor": "caramelo",
+      "tamanho": "35",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "5032543",
+      "produto_nome": "MULE TAMARA",
+      "cor": "OFF WHITE",
+      "tamanho": "37",
+      "qtd_original": -1
+    },
+    {
+      "produto_id": "5032543",
+      "produto_nome": "MULE TAMARA",
+      "cor": "Preto",
+      "tamanho": "36",
+      "qtd_original": -2
+    },
+    {
+      "produto_id": "5032543",
+      "produto_nome": "MULE TAMARA",
+      "cor": "Preto",
+      "tamanho": "37",
+      "qtd_original": -2
+    },
+    {
+      "produto_id": "5439702",
+      "produto_nome": "BOTA BELLA",
+      "cor": "Conhaque",
+      "tamanho": "35",
+      "qtd_original": -1
+    }
+  ]
+}
