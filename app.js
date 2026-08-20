@@ -940,9 +940,8 @@
 
     updateVariationUI();
     openProductModal();
-  };
 
-  // Gerenciamento de Avaliações Reais (AVALIACOES.js)
+    // Gerenciamento de Avaliações Reais (AVALIACOES.js)
     const revSection = $('pmReviewsSection');
     const ratingBadge = $('pmRatingBadge');
     const revList = $('pmReviewsList');
@@ -1077,19 +1076,11 @@
     if (checkoutBtn) {
       checkoutBtn.addEventListener('click', () => {
         if (!S.cart.length) return;
-        let msg = "Olá! Gostaria de enviar a minha seleção da vitrine BEDÊ:
-
-";
+        let msg = `Olá! Gostaria de enviar a minha seleção da vitrine BEDÊ:\n\n`;
         S.cart.forEach((it, i) => {
-          msg += `*${i + 1}. ${it.name}*
-   Cor: ${it.cor || 'Única'} | Tam: ${it.size} | Qtd: ${it.qty}
-
-`;
+          msg += `*${i + 1}. ${it.name}*\nCor: ${it.cor || 'Única'} | Tam: ${it.size} | Qtd: ${it.qty}\n\n`;
         });
         msg += "Poderiam confirmar a disponibilidade e os valores por favor?";
-        window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank');
-      });
-        msg += `\n*Total:* ${fmt(sub)}\n*No PIX (${CFG.descontoPix}% OFF):* ${fmt(sub * (1 - CFG.descontoPix / 100))}`;
         window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank');
       });
     }
@@ -1329,16 +1320,15 @@
   // ── START ──────────────────────────────────────────────────
   document.addEventListener('DOMContentLoaded', init);
 
-})();
-
   window.buyViaWhatsAppDirect = function() {
-    const p = S.product;
-    if (!p) return;
-    const size = S.size || 'Não informada';
-    const cor = S.selectedColor || 'Única';
-    let msg = Olá! Gostaria de falar com uma consultora sobre o produto:\n\n**\nCor: \nTamanho: \n\nPoderiam me atender?;
-    window.open(https://wa.me/?text=, '_blank');
-  };
+  const p = S.product;
+  if (!p) return;
+  const size = S.size || 'Não informada';
+  const cor = S.selectedColor || 'Única';
+  const WA = (typeof CFG !== 'undefined' && CFG.whatsapp) ? CFG.whatsapp : '5551980150391';
+  let msg = `Olá! Gostaria de falar com uma consultora sobre o produto:\n\n*${p.nome}*\nCor: ${cor}\nTamanho: ${size}\n\nPoderiam me atender?`;
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank');
+};
 
   
   window.descontoMaximoReal = function(produtos) {
@@ -1354,9 +1344,11 @@
     const mobSub = document.getElementById('mobSubCategories');
     if (!mobSub || !window.PRODUCTS) return;
 
-    const navCategories = [
+        const navCategories = [
       { key: 'SCARPIN', label: 'Scarpins & Saltos' },
       { key: 'BOTA', label: 'Botas & Coturnos' },
+      { key: 'SANDÁLIA', label: 'Sandálias & Festa' },
+      { key: 'PAPETE', label: 'Papetes & Rasteirinhas' },
       { key: 'MOCASSIM', label: 'Mocassins & Loafers' },
       { key: 'MULE', label: 'Mules & Tamancos' },
       { key: 'TÊNIS', label: 'Tênis Contemporâneos' },
@@ -1401,3 +1393,5 @@
     const chipSale = document.querySelector('[onclick*="LIQUIDA"]');
     if (chipSale) chipSale.style.display = temPromo ? '' : 'none';
   };
+
+})();
