@@ -5,6 +5,33 @@
 (function () {
   'use strict';
 
+  function loadCart() {
+    try {
+      if (typeof localStorage === 'undefined') return [];
+      // Limpeza de chave legada sem os campos novos
+      if (localStorage.getItem('bede_cart')) {
+        localStorage.removeItem('bede_cart');
+      }
+      const raw = localStorage.getItem('bede_cart_v2');
+      if (!raw) return [];
+      const parsed = JSON.parse(raw);
+      if (!Array.isArray(parsed)) return [];
+      return parsed.filter(item => 
+        item &&
+        typeof item.id !== 'undefined' &&
+        item.name &&
+        item.size &&
+        item.cor &&
+        typeof item.price === 'number' &&
+        item.price > 0 &&
+        typeof item.qty === 'number' &&
+        item.qty > 0
+      );
+    } catch (e) {
+      return [];
+    }
+  }
+
   // ── STATE ──────────────────────────────────────────────────
   const S = {
     slide: 0,
@@ -18,8 +45,8 @@
     searchQuery: '',
     product: null,
     size: null,
-    cart: JSON.parse(localStorage.getItem('bede_cart') || '[]'),
-    wishlist: JSON.parse(localStorage.getItem('bede_wishlist') || '[]')
+    cart: loadCart(),
+    wishlist: JSON.parse((typeof localStorage !== 'undefined' && localStorage.getItem('bede_wishlist')) || '[]')
   };
 
   // Filtro na origem: exclui inativos, registros vazios e produtos sem imagem
@@ -1165,7 +1192,13 @@
     renderCart();
   };
 
-  function saveCart() { localStorage.setItem('bede_cart', JSON.stringify(S.cart)); }
+  function saveCart() {
+    try {
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem('bede_cart_v2', JSON.stringify(S.cart));
+      }
+    } catch (e) {}
+  }
 
   function updateCartBadge() {
     const n = S.cart.reduce((t, i) => t + i.qty, 0);
