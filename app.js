@@ -939,7 +939,26 @@
           btnBuy.style.opacity = '1';
           btnBuy.style.pointerEvents = 'auto';
           btnBuy.textContent = 'Comprar agora';
-          btnBuy.onclick = null;
+          btnBuy.onclick = function (e) {
+            e.preventDefault();
+            const vData = (p.estoque_por_cor && p.estoque_por_cor[S.selectedColor]) ? p.estoque_por_cor[S.selectedColor][S.size] : null;
+            const sku = vData ? vData.sku : null;
+            if (!sku) {
+              window.location.href = targetUrl;
+              return;
+            }
+            btnBuy.textContent = 'Levando para o checkout...';
+            btnBuy.style.opacity = '0.85';
+            btnBuy.style.pointerEvents = 'none';
+            enviarParaLoja([{
+              sku: sku,
+              qty: 1,
+              name: p.nome,
+              size: S.size,
+              cor: S.selectedColor,
+              price: p.preco
+            }], btnBuy);
+          };
         } else {
           btnBuy.href = 'javascript:void(0)';
           btnBuy.style.display = 'flex';
@@ -1157,9 +1176,9 @@
    *    deverá ser reavaliada.
    * =========================================================================
    */
-  async function enviarParaLoja(itens) {
+  async function enviarParaLoja(itens, triggerBtn) {
     const LOJA = CFG.dominioLoja || 'https://loja.usebede.com.br';
-    const btn = document.getElementById('cartCheckoutLoja');
+    const btn = triggerBtn || document.getElementById('cartCheckoutLoja');
 
     // Validação estrita: enviar apenas SKUs reais que existem no catálogo carregado
     const validos = (itens || []).filter(it => {
@@ -1182,6 +1201,7 @@
       btn.classList.add('loading');
       btn.style.opacity = '0.85';
       btn.style.cursor = 'wait';
+      btn.style.pointerEvents = 'none';
     }
 
     const ifr = document.createElement('iframe');
@@ -1243,6 +1263,15 @@
         disc.textContent = 'Confira sua sacola na próxima tela — o estoque é confirmado lá.';
         disc.style.display = 'block';
       }
+
+      // Mudança 1 — A gaveta esvazia depois do envio (único carrinho na loja)
+      S.cart = [];
+      saveCart();
+      updateCartBadge();
+      try {
+        localStorage.setItem('bede_enviado_em', String(Date.now()));
+      } catch (e) {}
+
       await new Promise(r => setTimeout(r, 600));
     } catch (e) {
       console.error('[BEDÊ] Erro no envio da seleção para a loja:', e);
@@ -1299,6 +1328,10 @@
   };
 
   function addToCart(p, size, cor) {
+    try {
+      localStorage.removeItem('bede_enviado_em');
+    } catch (e) {}
+
     const selectedColor = cor || S.selectedColor || 'Única';
     const selectedSize = size || S.size || '36';
     let idVar = null;
@@ -1378,6 +1411,43 @@
     if (!D.cartBody) return;
 
     if (!S.cart.length) {
+      const foot = document.querySelector('.cart-foot');
+      if (foot) foot.style.display = 'none';
+
+      let enviadoRecente = false;
+      try {
+        const rawEnviado = localStorage.getItem('bede_enviado_em');
+        if (rawEnviado) {
+          const t = Number(rawEnviado);
+          // Válido se enviado nas últimas 12 horas
+          if (Date.now() - t < 12 * 3600 * 1000) {
+            enviadoRecente = true;
+          }
+        }
+      } catch (e) {}
+
+      if (enviadoRecente) {
+        const LOJA = CFG.dominioLoja || 'https://loja.usebede.com.br';
+        D.cartBody.innerHTML = `
+          <div style="text-align:center;padding:2.5rem 1rem;color:#000404;">
+            <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#000404" stroke-width="1.5" style="margin-bottom:14px;">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            <p style="font-size:15px;font-weight:600;color:#000404;margin-bottom:8px;letter-spacing:0.02em;">Sua seleção foi enviada para a loja.</p>
+            <p style="font-size:12px;font-weight:300;color:#737378;margin-bottom:24px;line-height:1.5;">O estoque e o pagamento são confirmados diretamente no carrinho da boutique.</p>
+            <div style="display:flex;flex-direction:column;gap:10px;max-width:280px;margin:0 auto;">
+              <a href="${LOJA}/carrinho/" class="btn-solid-pill" style="display:block;text-decoration:none;text-align:center;">
+                Ver minha sacola na loja &rarr;
+              </a>
+              <button class="btn-outline-pill" onclick="closeCart()">
+                Continuar navegando
+              </button>
+            </div>
+          </div>`;
+        return;
+      }
+
       D.cartBody.innerHTML = `
         <div style="text-align:center;padding:3.5rem 1rem;color:#888;">
           <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5" style="margin-bottom:12px;">
@@ -1390,6 +1460,12 @@
         </div>`;
       return;
     }
+
+    const foot = document.querySelector('.cart-foot');
+    if (foot) foot.style.display = 'block';
+    const disc = document.getElementById('cartDisclaimer');
+    if (disc) disc.style.display = 'none';
+
     D.cartBody.innerHTML = S.cart.map((it, i) => `
       <div class="cart-item">
         <img class="cart-item-img" src="${it.img}" alt="${it.name}">
