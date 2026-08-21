@@ -1238,7 +1238,12 @@
       if (btn) {
         btn.textContent = 'Levando sua seleção para o checkout...';
       }
-      await new Promise(r => setTimeout(r, 400));
+      const disc = document.getElementById('cartDisclaimer');
+      if (disc) {
+        disc.textContent = 'Confira sua sacola na próxima tela — o estoque é confirmado lá.';
+        disc.style.display = 'block';
+      }
+      await new Promise(r => setTimeout(r, 600));
     } catch (e) {
       console.error('[BEDÊ] Erro no envio da seleção para a loja:', e);
     } finally {
