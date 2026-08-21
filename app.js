@@ -1123,13 +1123,147 @@
     }
   });
 
+  /**
+   * =========================================================================
+   * ENVIAR SELEÇÃO DO SITE PARA O CARRINHO DA LOJA WBUY
+   * =========================================================================
+   * 
+   * ARQUITETURA & MOTIVAÇÃO TÉCNICA:
+   * 
+   * 1. CORS & FORM SUBMISSION:
+   *    O endpoint /shop_func.php da wBuy não suporta requisições fetch/XHR
+   *    diretas de origens cruzadas por ausência de headers CORS permissivos.
+   *    No entanto, envios de <form method="POST"> com target para um <iframe>
+   *    oculto contornam o bloqueio de CORS do navegador.
+   * 
+   * 2. COOKIES DE MESMO SITE (eTLD+1):
+   *    Como o site (www.usebede.com.br) e a loja (loja.usebede.com.br)
+   *    compartilham o domínio raiz "usebede.com.br", os cookies de sessão da
+   *    loja trafegam com os formulários POST sem serem classificados como
+   *    cookies de terceiros (Third-Party Cookies).
+   * 
+   * 3. CONTRATO DO ENDPOINT WBUY:
+   *    POST https://loja.usebede.com.br/shop_func.php
+   *    - funcao=adicionar_produto
+   *    - sku={sku}
+   *    - quantidade={qty}
+   *    - campo_anotacao=
+   *    - evento_tipo=
+   *    Cada requisição adiciona 1 SKU. O envio é sequencial com espaçamento.
+   * 
+   * 4. DEPENDÊNCIA:
+   *    Este mecanismo depende exclusivamente de ambos os subdomínios estarem sob
+   *    usebede.com.br. Caso a loja mude de domínio base no futuro, a estratégia
+   *    deverá ser reavaliada.
+   * =========================================================================
+   */
+  async function enviarParaLoja(itens) {
+    const LOJA = CFG.dominioLoja || 'https://loja.usebede.com.br';
+    const btn = document.getElementById('cartCheckoutLoja');
+
+    // Validação estrita: enviar apenas SKUs reais que existem no catálogo carregado
+    const validos = (itens || []).filter(it => {
+      if (!it.sku) return false;
+      return PRODUCTS.some(p => {
+        if (!p.estoque_por_cor) return false;
+        return Object.values(p.estoque_por_cor).some(tams =>
+          Object.values(tams).some(v => v.sku === it.sku)
+        );
+      });
+    });
+
+    if (!validos.length) {
+      window.location.href = LOJA + '/carrinho/';
+      return;
+    }
+
+    if (btn) {
+      btn.disabled = true;
+      btn.classList.add('loading');
+      btn.style.opacity = '0.85';
+      btn.style.cursor = 'wait';
+    }
+
+    const ifr = document.createElement('iframe');
+    ifr.name = 'wbuySacola';
+    ifr.style.cssText = 'position:fixed;left:-9999px;width:1px;height:1px;visibility:hidden;opacity:0;pointer-events:none;';
+    document.body.appendChild(ifr);
+
+    function enviarUm(sku, qtd) {
+      return new Promise(resolve => {
+        const f = document.createElement('form');
+        f.method = 'POST';
+        f.action = LOJA + '/shop_func.php';
+        f.target = 'wbuySacola';
+
+        const campo = (n, v) => {
+          const i = document.createElement('input');
+          i.type = 'hidden';
+          i.name = n;
+          i.value = v;
+          f.appendChild(i);
+        };
+
+        campo('funcao', 'adicionar_produto');
+        campo('sku', sku);
+        campo('quantidade', String(qtd || 1));
+        campo('campo_anotacao', '');
+        campo('evento_tipo', '');
+        document.body.appendChild(f);
+
+        let resolvido = false;
+        const pronto = () => {
+          if (resolvido) return;
+          resolvido = true;
+          f.remove();
+          setTimeout(resolve, 500); // Fôlego entre requisições para persistência da sessão wBuy
+        };
+
+        ifr.onload = pronto;
+        f.submit();
+        setTimeout(pronto, 2500); // Fallback de segurança caso onload não dispare
+      });
+    }
+
+    try {
+      const total = validos.length;
+      for (let i = 0; i < total; i++) {
+        const it = validos[i];
+        if (btn) {
+          btn.textContent = `Enviando ${i + 1} de ${total}...`;
+        }
+        await enviarUm(it.sku, it.qty || 1);
+      }
+
+      if (btn) {
+        btn.textContent = 'Levando sua seleção para o checkout...';
+      }
+      await new Promise(r => setTimeout(r, 400));
+    } catch (e) {
+      console.error('[BEDÊ] Erro no envio da seleção para a loja:', e);
+    } finally {
+      if (ifr.parentNode) ifr.parentNode.removeChild(ifr);
+      window.location.href = LOJA + '/carrinho/';
+    }
+  }
+
   function setupCart() {
     if (D.cartBtn) D.cartBtn.addEventListener('click', openCart);
     if (D.cartOverlay) D.cartOverlay.addEventListener('click', closeCart);
 
-    const checkoutBtn = document.getElementById('cartCheckout');
-    if (checkoutBtn) {
-      checkoutBtn.addEventListener('click', () => {
+    // 1. Botão Principal: Finalizar compra na loja wBuy
+    const checkoutLojaBtn = document.getElementById('cartCheckoutLoja');
+    if (checkoutLojaBtn) {
+      checkoutLojaBtn.addEventListener('click', () => {
+        if (!S.cart.length) return;
+        enviarParaLoja(S.cart);
+      });
+    }
+
+    // 2. Botão Secundário: Falar com Consultora no WhatsApp
+    const checkoutWaBtn = document.getElementById('cartCheckoutWa') || document.getElementById('cartCheckout');
+    if (checkoutWaBtn) {
+      checkoutWaBtn.addEventListener('click', () => {
         if (!S.cart.length) return;
         let msg = `Olá! Gostaria de enviar a minha seleção da vitrine BEDÊ:\n\n`;
         S.cart.forEach((it, i) => {
