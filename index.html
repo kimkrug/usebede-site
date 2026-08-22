@@ -3,66 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>BEDÊ Stiletto · Design que define. Conforto que liberta.</title>
-  
-  <meta name="description" content="Boutique autoral de calçados femininos e acessórios de alto padrão. Scarpins, botas, sandálias e bolsas com palmilhas anatômicas nobres e couro legítimo.">
-  <meta name="author" content="Stiletto Bd Boutique Ltda">
-  <meta name="robots" content="index, follow">
-  
-  <!-- Open Graph -->
+  <title>BEDÊ Stiletto — Boutique de Calçados Femininos | Viamão RS</title>
+    <meta name="description" content="Calçados e bolsas femininas com curadoria, design e conforto. Boutique em Viamão/RS.">
+  <!-- Favicon Oficial BD -->
+  <link rel="icon" type="image/svg+xml" href="favicon-bd.svg?v=2026_bd_v12">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=2026_bd_v12">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2026_bd_v12">
+  <link rel="shortcut icon" href="favicon.ico?v=2026_bd_v12">
+  <link rel="stylesheet" href="style.css?v=2026_v12">
+
+  <!-- Open Graph (Instagram, Facebook, WhatsApp) -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="BEDÊ Stiletto · Boutique de Calçados & Acessórios">
-  <meta property="og:description" content="Design autoral, curadoria refinada e conforto absoluto. Scarpins, botas, sandálias e bolsas.">
-  <meta property="og:url" content="https://www.usebede.com.br">
-  <meta property="og:image" content="https://www.usebede.com.br/assets/split_shoes.jpg">
-  <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="BEDÊ Stiletto">
+  <meta property="og:title" content="BEDÊ Stiletto — Boutique de Calçados Femininos | Viamão RS">
+  <meta property="og:description" content="Calçados e bolsas femininas com curadoria, design e conforto. Boutique em Viamão/RS.">
+  <meta property="og:image" content="https://www.usebede.com.br/og-image.jpg?v=2026_hero_wall_v6">
+  <meta property="og:image:secure_url" content="https://www.usebede.com.br/og-image.jpg?v=2026_hero_wall_v6">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://www.usebede.com.br">
+  <link rel="image_src" href="https://www.usebede.com.br/og-image.jpg?v=2026_hero_wall_v6">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.usebede.com.br/og-image.jpg?v=2026_hero_wall_v6">
 
-  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="style.css?v=30.0">
+  <!-- --vh fix: roda ANTES do CSS pintar (iOS Safari 100vh bug) -->
+  <script>
+    (function() {
+      function setVH() {
+        var vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', (vh * 100) + 'px');
+      }
+      setVH();
+      window.addEventListener('resize', setVH);
+    })();
+  </script>
 </head>
-<body class="site-body">
+<body>
+  
+  <!-- OVERLAY DE TRANSIÇÃO -->
+  <div id="pageTransition" class="page-transition"></div>
 
-  <!-- ============================================================
-       HEADER PRINCIPAL (NOVO PADRÃO NEW BALANCE — MAX 6 ITENS)
-  ============================================================ -->
-  <header class="site-header" id="siteHeader">
+  <!-- ── HEADER byNV (2 MODOS: GHOST NO HERO / SOLID-LIGHT NOS DEMAIS) ── -->
+  <header class="site-header ghost" id="siteHeader">
     <div class="header-inner">
 
-      <!-- GRUPO ESQUERDA: MENU PRINCIPAL DE 1º NÍVEL (SEM ACORDEÃO) -->
+      <!-- GRUPO ESQUERDA: MENU NAV (6 ITENS DIRETOS, SEM SUBMENU) -->
       <div class="header-left">
-        <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Abrir Menu" id="hamburgerBtn">
-          <span class="ham-line"></span>
-          <span class="ham-line"></span>
-          <span class="ham-line"></span>
+        <button class="btn-menu-mobile" id="mobileMenuBtn" onclick="toggleMobileMenu()" aria-label="Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
         </button>
 
-        <nav class="nav-menu" id="navMenu" aria-label="Navegação principal">
-          <a class="nav-item" href="https://loja.usebede.com.br/todos-produtos/">Calçados</a>
-          <a class="nav-item" href="https://loja.usebede.com.br/lancamento/">Novidades</a>
-          <a class="nav-item" href="https://loja.usebede.com.br/scarpin/">Scarpin</a>
-          <a class="nav-item" href="https://loja.usebede.com.br/bota-cano-baixo/">Botas</a>
+        <nav class="main-nav" id="mainNav">
+          <a class="nav-item" href="https://loja.usebede.com.br/todos-produtos/" onclick="irParaLoja('https://loja.usebede.com.br/todos-produtos/');return false;">Calçados</a>
+          <a class="nav-item" href="https://loja.usebede.com.br/lancamento/" onclick="irParaLoja('https://loja.usebede.com.br/lancamento/');return false;">Novidades</a>
+          <a class="nav-item" href="https://loja.usebede.com.br/scarpin/" onclick="irParaLoja('https://loja.usebede.com.br/scarpin/');return false;">Scarpin</a>
+          <a class="nav-item" href="https://loja.usebede.com.br/bota-cano-baixo/" onclick="irParaLoja('https://loja.usebede.com.br/bota-cano-baixo/');return false;">Botas</a>
           <a class="nav-item" href="#" onclick="openInstitutionalModal('sobre');return false;">Sobre</a>
           <a class="nav-item" href="https://wa.me/5551980150391?text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20personalizado%20na%20BED%C3%8A%20Stiletto." target="_blank" rel="noopener">Atendimento</a>
         </nav>
       </div>
 
-      <!-- GRUPO CENTRO: LOGO BEDÊ -->
+      <!-- GRUPO CENTRO: LOGO BEDÊ CENTRALIZADO -->
       <div class="header-center">
-        <a class="logo-link" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" aria-label="BEDÊ Stiletto — Início">
-          <img src="assets/brand/logo_header_preto.svg" alt="BEDÊ Stiletto" id="logoImg">
+        <a class="logo-link" href="#" onclick="goToSlide(0);return false;" id="logoLink" aria-label="BEDÊ Stiletto — Início">
+          <img src="assets/brand/logo_header_branco.svg"
+               alt="BEDÊ Stiletto"
+               id="logoImg"
+               onerror="this.style.display='none';document.getElementById('logoFallback').style.display='block';">
+          <span id="logoFallback" style="display:none;" class="logo-text-fallback">
+            BEDÊ
+            <span class="logo-sub-fallback">Stiletto</span>
+          </span>
         </a>
       </div>
 
-      <!-- GRUPO DIREITA: ÍCONES (BUSCA, WISHLIST, SACOLA WBUY) -->
+      <!-- GRUPO DIREITA: SACOLA (link direto para wBuy) -->
       <div class="header-right">
-        <!-- SACOLA DIRETA PARA O CARRINHO WBUY -->
-        <a href="https://loja.usebede.com.br/carrinho/" class="icon-btn icon-btn-cart" title="Ver Sacola de Compras" aria-label="Sacola de Compras" id="cartBtn">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <!-- SACOLA → DIRETO PARA CARRINHO DA WBUY -->
+        <a class="icon-btn" href="https://loja.usebede.com.br/carrinho/" onclick="irParaLoja('https://loja.usebede.com.br/carrinho/');return false;" title="Minha Sacola" aria-label="Sacola" id="cartBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
             <line x1="3" y1="6" x2="21" y2="6"/>
             <path d="M16 10a4 4 0 0 1-8 0"/>
@@ -73,7 +95,7 @@
     </div>
   </header>
 
-  <!-- ── GAVETA MOBILE (SLIDE-IN LATERAL ESQUERDO) ── -->
+  <!-- ── MENU DRAWER MOBILE (SLIDE-IN LATERAL ESQUERDO) ── -->
   <div class="mobile-drawer-overlay" id="mobileDrawerOverlay" onclick="closeMobileMenu()"></div>
   <aside class="mobile-drawer" id="mobileDrawer" aria-label="Menu principal">
     <div class="mob-drawer-header">
@@ -83,52 +105,50 @@
       <button class="mob-drawer-close" onclick="closeMobileMenu()" aria-label="Fechar menu">&times;</button>
     </div>
     <div class="mob-drawer-nav">
-      <a href="https://loja.usebede.com.br/todos-produtos/" class="mob-nav-link">
-        <span>Todos os Calçados</span>
+      <a href="https://loja.usebede.com.br/todos-produtos/" onclick="irParaLoja('https://loja.usebede.com.br/todos-produtos/');closeMobileMenu();return false;" class="mob-nav-link">
+        <span>Calçados</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
-      <a href="https://loja.usebede.com.br/lancamento/" class="mob-nav-link">
-        <span>Novidades & Lançamentos</span>
+      <a href="https://loja.usebede.com.br/lancamento/" onclick="irParaLoja('https://loja.usebede.com.br/lancamento/');closeMobileMenu();return false;" class="mob-nav-link">
+        <span>Novidades</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
-      <a href="https://loja.usebede.com.br/scarpin/" class="mob-nav-link">
-        <span>Scarpins</span>
+      <a href="https://loja.usebede.com.br/scarpin/" onclick="irParaLoja('https://loja.usebede.com.br/scarpin/');closeMobileMenu();return false;" class="mob-nav-link">
+        <span>Scarpin</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
-      <a href="https://loja.usebede.com.br/bota-cano-baixo/" class="mob-nav-link">
+      <a href="https://loja.usebede.com.br/bota-cano-baixo/" onclick="irParaLoja('https://loja.usebede.com.br/bota-cano-baixo/');closeMobileMenu();return false;" class="mob-nav-link">
         <span>Botas</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
-      <a href="https://loja.usebede.com.br/sandalia/" class="mob-nav-link">
-        <span>Sandálias</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-      </a>
-      <a href="https://loja.usebede.com.br/papete/" class="mob-nav-link">
-        <span>Papetes & Flats</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-      </a>
-      <a href="https://loja.usebede.com.br/bolsa/" class="mob-nav-link">
-        <span>Bolsas & Acessórios</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-      </a>
       <a href="#" onclick="openInstitutionalModal('sobre');closeMobileMenu();return false;" class="mob-nav-link">
-        <span>Sobre a Boutique</span>
+        <span>Sobre a BEDÊ</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
       <a href="https://wa.me/5551980150391?text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20personalizado%20na%20BED%C3%8A%20Stiletto." target="_blank" rel="noopener" class="mob-nav-link">
-        <span>Atendimento Boutique & Concierge</span>
+        <span>Atendimento via WhatsApp</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
     </div>
     <div class="mob-drawer-footer">
-      <a href="https://wa.me/5551980150391?text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20personalizado%20na%20BED%C3%8A%20Stiletto." target="_blank" rel="noopener" class="mob-drawer-wa">
+      <a href="https://wa.me/5551980150391?text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20personalizado%20na%20BED%C3%8A%20Stiletto." target="_blank" class="mob-drawer-wa" id="mobDrawerWa">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-        <span>Falar no WhatsApp</span>
+        <span>Falar com Consultora no WhatsApp</span>
       </a>
+      <p class="mob-drawer-info" id="mobDrawerClaims"></p>
     </div>
   </aside>
 
-  <!-- ── BOTÃO FLUTUANTE WHATSAPP ─────────────────────── -->
+  <!-- ── DOTS DE NAVEGAÇÃO LATERAL (5 SLIDES) ─────────────────── -->
+  <nav class="slide-dots" id="slideDots" aria-label="Navegação de slides">
+    <button class="s-dot active" onclick="goToSlide(0)" aria-label="Slide 1"></button>
+    <button class="s-dot" onclick="goToSlide(1)" aria-label="Slide 2"></button>
+    <button class="s-dot" onclick="goToSlide(2)" aria-label="Slide 3"></button>
+    <button class="s-dot" onclick="goToSlide(3)" aria-label="Slide 4"></button>
+    <button class="s-dot" onclick="goToSlide(4)" aria-label="Slide 5"></button>
+  </nav>
+
+  <!-- ── BOTÃO FLUTUANTE WHATSAPP (VERDE COM BORDA BRANCA FINA, SEM SOMBRA) ────── -->
   <a href="https://wa.me/5551980150391?text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20personalizado%20na%20BED%C3%8A%20Stiletto."
      target="_blank"
      rel="noopener"
@@ -141,246 +161,566 @@
   </a>
 
   <!-- ============================================================
-       CORPO EDITORIAL DA HOME
+       MOTOR DE TELAS CHEIAS — 5 SLIDES 100VH
   ============================================================ -->
-  <main class="home-main">
+  <div class="viewport-stage" id="viewportStage">
+    <div class="slides-track" id="slidesTrack">
 
-    <!-- ── 1. HERO EDITORIAL ──────────────────────────────────── -->
-    <section class="home-hero-section" aria-label="Hero editorial">
-      <div class="hero-bg-container">
-        <img src="assets/split_shoes.jpg?v=crop_v3" alt="BEDÊ Stiletto — Nova Coleção" class="hero-bg-image" loading="eager">
-        <div class="hero-shade-overlay"></div>
-      </div>
-      <div class="hero-content-wrap">
-        <span class="hero-eyebrow">Nova Coleção · Inverno 2026</span>
-        <h1 class="hero-headline">Design que define.<br>Conforto que liberta.</h1>
-        <a href="https://loja.usebede.com.br/todos-produtos/" class="btn-primary-hero">
-          Descobrir a coleção &rarr;
-        </a>
-      </div>
-      <!-- Barra de benefícios/claims -->
-      <div class="home-claims-strip">
-        <div class="claims-inner" id="homeClaimsInner">
-          <span>Palmilhas anatômicas nobres</span>
-          <span>·</span>
-          <span>Até 6x sem juros</span>
-          <span>·</span>
-          <span>5% OFF no PIX</span>
-          <span>·</span>
-          <span>1ª Troca Grátis</span>
+      <!-- ── SLIDE 0: HERO EDITORIAL ─────────────────────── -->
+      <section class="v-slide" id="slide0" aria-label="Hero editorial">
+        <div class="hero-bg" id="heroBg"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <span class="hero-eyebrow">Nova Coleção · Inverno 2026</span>
+          <h1 class="hero-headline">Design que define.<br>Conforto que liberta.</h1>
+          <a href="https://loja.usebede.com.br/todos-produtos/" class="btn-nv" onclick="irParaLoja('https://loja.usebede.com.br/todos-produtos/');return false;">
+            Descobrir a coleção &rarr;
+          </a>
         </div>
-      </div>
-    </section>
+        <!-- Informações de benefícios: Sem caixa, fundo da foto e linha suave superior alinhada -->
+        <div class="home-bottom-bar">
+          <div class="home-bar-inner">
+            <span id="homeBarClaims"></span>
+          </div>
+        </div>
+      </section>
 
-    <!-- ── 2. SEÇÃO: DESCUBRA OS TIPOS (SILHUETAS — PADRÃO NEW BALANCE) ── -->
-    <section class="section-silhuetas" id="tiposSection" aria-label="Descubra os tipos de calçados">
-      <div class="section-header-center">
-        <h2 class="section-title">DESCUBRA OS TIPOS</h2>
-        <p class="section-subtitle">Navegue por silhueta e encontre o formato ideal para cada ocasião.</p>
-      </div>
+      <!-- ── SLIDE 1: DUPLO 50/50 byNV (CATEGORIAS / PRODUTOS) ───── -->
+      <section class="v-slide" id="slide1" aria-label="Categorias de Produtos">
+        <div class="split-dual-slide">
 
-      <!-- TRILHO HORIZONTAL COM SCROLL-SNAP -->
-      <div class="silhuetas-rail-wrap">
-        <div class="silhuetas-rail" id="silhuetasRail">
-
-          <!-- 1. SCARPIN -->
-          <a href="https://loja.usebede.com.br/scarpin/" class="tipo-tile">
-            <div class="tipo-img-box">
-              <span class="tipo-placeholder"></span>
+          <div class="dual-half" onclick="irParaLoja('https://loja.usebede.com.br/todos-produtos/')" role="button" tabindex="0" aria-label="Ver Sapataria e Saltos">
+            <img class="dual-img" src="assets/split_shoes.jpg?v=crop_v3" alt="Sapataria &amp; Saltos — Stiletto BEDÊ" loading="lazy">
+            <div class="dual-shade"></div>
+            <div class="dual-caption">
+              <span class="dual-eyebrow">Ateliê</span>
+              <h3 class="dual-title">Sapataria<br>&amp; Saltos</h3>
+              <span class="dual-cta">Explorar &rarr;</span>
             </div>
-            <span class="tipo-label">Scarpin</span>
-          </a>
+          </div>
 
-          <!-- 2. BOTA -->
-          <a href="https://loja.usebede.com.br/bota-cano-baixo/" class="tipo-tile">
-            <div class="tipo-img-box">
-              <span class="tipo-placeholder"></span>
+          <div class="dual-half" onclick="irParaLoja('https://loja.usebede.com.br/bolsa/')" role="button" tabindex="0" aria-label="Ver Bolsas e Casuais">
+            <img class="dual-img" src="assets/split_bags.jpg?v=crop_v3" alt="Bolsas &amp; Casuais — Stiletto BEDÊ" loading="lazy">
+            <div class="dual-shade"></div>
+            <div class="dual-caption">
+              <span class="dual-eyebrow">Essenciais</span>
+              <h3 class="dual-title">Bolsas<br>&amp; Casuais</h3>
+              <span class="dual-cta">Explorar &rarr;</span>
             </div>
-            <span class="tipo-label">Bota</span>
-          </a>
-
-          <!-- 3. SANDÁLIA -->
-          <a href="https://loja.usebede.com.br/sandalia/" class="tipo-tile">
-            <div class="tipo-img-box">
-              <span class="tipo-placeholder"></span>
-            </div>
-            <span class="tipo-label">Sandália</span>
-          </a>
-
-          <!-- 4. PAPETE -->
-          <a href="https://loja.usebede.com.br/papete/" class="tipo-tile">
-            <div class="tipo-img-box">
-              <span class="tipo-placeholder"></span>
-            </div>
-            <span class="tipo-label">Papete</span>
-          </a>
-
-          <!-- 5. RASTEIRINHA -->
-          <a href="https://loja.usebede.com.br/rasteirinha/" class="tipo-tile">
-            <div class="tipo-img-box">
-              <span class="tipo-placeholder"></span>
-            </div>
-            <span class="tipo-label">Rasteirinha</span>
-          </a>
-
-          <!-- 6. TÊNIS -->
-          <a href="https://loja.usebede.com.br/tenis/" class="tipo-tile">
-            <div class="tipo-img-box">
-              <span class="tipo-placeholder"></span>
-            </div>
-            <span class="tipo-label">Tênis</span>
-          </a>
-
-          <!-- 7. MOCASSIM -->
-          <a href="https://loja.usebede.com.br/mocassim/" class="tipo-tile">
-            <div class="tipo-img-box">
-              <span class="tipo-placeholder"></span>
-            </div>
-            <span class="tipo-label">Mocassim</span>
-          </a>
-
-          <!-- 8. SLINGBACK -->
-          <a href="https://loja.usebede.com.br/slingback/" class="tipo-tile">
-            <div class="tipo-img-box">
-              <span class="tipo-placeholder"></span>
-            </div>
-            <span class="tipo-label">Slingback</span>
-          </a>
+          </div>
 
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ── 3. SEÇÃO: NOSSOS DESTAQUES (CURADORIA EM TRILHO) ────── -->
-    <section class="section-destaques" id="destaquesSection" aria-label="Nossos Destaques">
-      <div class="destaques-header">
-        <h2 class="section-title">NOSSOS DESTAQUES</h2>
-        
-        <!-- ABAS: DESTAQUES / EM ALTA -->
-        <div class="destaques-tabs">
-          <button class="d-tab active" onclick="switchDestaquesTab('destaques', this)">Destaques</button>
-          <button class="d-tab" onclick="switchDestaquesTab('em_alta', this)">Em Alta</button>
+      <!-- ── SLIDE 2: DESCUBRA OS TIPOS (TRILHO HORIZONTAL) ─────── -->
+      <section class="v-slide" id="slide2" aria-label="Descubra os Tipos">
+        <div class="tipos-slide">
+          <div class="tipos-header">
+            <span class="tipos-eyebrow">Curadoria BEDÊ</span>
+            <h2 class="tipos-title">DESCUBRA OS TIPOS</h2>
+          </div>
+          <div class="tipos-rail" id="tiposRail">
+            <a class="tipo-card" href="https://loja.usebede.com.br/scarpin/" onclick="irParaLoja('https://loja.usebede.com.br/scarpin/');return false;">
+              <div class="tipo-img-wrap">
+                <img src="assets/tipos/scarpin.jpg" alt="Scarpin" loading="lazy" onerror="this.parentElement.style.background='#1a1a1a'">
+              </div>
+              <span class="tipo-label">Scarpin</span>
+            </a>
+            <a class="tipo-card" href="https://loja.usebede.com.br/sandalia/" onclick="irParaLoja('https://loja.usebede.com.br/sandalia/');return false;">
+              <div class="tipo-img-wrap">
+                <img src="assets/tipos/sandalia.jpg" alt="Sandália" loading="lazy" onerror="this.parentElement.style.background='#1a1a1a'">
+              </div>
+              <span class="tipo-label">Sandália</span>
+            </a>
+            <a class="tipo-card" href="https://loja.usebede.com.br/bota-cano-baixo/" onclick="irParaLoja('https://loja.usebede.com.br/bota-cano-baixo/');return false;">
+              <div class="tipo-img-wrap">
+                <img src="assets/tipos/bota.jpg" alt="Bota" loading="lazy" onerror="this.parentElement.style.background='#1a1a1a'">
+              </div>
+              <span class="tipo-label">Bota</span>
+            </a>
+            <a class="tipo-card" href="https://loja.usebede.com.br/papete/" onclick="irParaLoja('https://loja.usebede.com.br/papete/');return false;">
+              <div class="tipo-img-wrap">
+                <img src="assets/tipos/papete.jpg" alt="Papete" loading="lazy" onerror="this.parentElement.style.background='#1a1a1a'">
+              </div>
+              <span class="tipo-label">Papete</span>
+            </a>
+            <a class="tipo-card" href="https://loja.usebede.com.br/rasteirinha/" onclick="irParaLoja('https://loja.usebede.com.br/rasteirinha/');return false;">
+              <div class="tipo-img-wrap">
+                <img src="assets/tipos/rasteirinha.jpg" alt="Rasteirinha" loading="lazy" onerror="this.parentElement.style.background='#1a1a1a'">
+              </div>
+              <span class="tipo-label">Rasteirinha</span>
+            </a>
+            <a class="tipo-card" href="https://loja.usebede.com.br/slingback/" onclick="irParaLoja('https://loja.usebede.com.br/slingback/');return false;">
+              <div class="tipo-img-wrap">
+                <img src="assets/tipos/slingback.jpg" alt="Slingback" loading="lazy" onerror="this.parentElement.style.background='#1a1a1a'">
+              </div>
+              <span class="tipo-label">Slingback</span>
+            </a>
+            <a class="tipo-card" href="https://loja.usebede.com.br/mocassim/" onclick="irParaLoja('https://loja.usebede.com.br/mocassim/');return false;">
+              <div class="tipo-img-wrap">
+                <img src="assets/tipos/mocassim.jpg" alt="Mocassim" loading="lazy" onerror="this.parentElement.style.background='#1a1a1a'">
+              </div>
+              <span class="tipo-label">Mocassim</span>
+            </a>
+            <a class="tipo-card" href="https://loja.usebede.com.br/tenis/" onclick="irParaLoja('https://loja.usebede.com.br/tenis/');return false;">
+              <div class="tipo-img-wrap">
+                <img src="assets/tipos/tenis.jpg" alt="Tênis" loading="lazy" onerror="this.parentElement.style.background='#1a1a1a'">
+              </div>
+              <span class="tipo-label">Tênis</span>
+            </a>
+          </div>
+          <div class="tipos-cta-wrap">
+            <a class="btn-nv" href="https://loja.usebede.com.br/todos-produtos/" onclick="irParaLoja('https://loja.usebede.com.br/todos-produtos/');return false;">Ver todos os calçados &rarr;</a>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <!-- TRILHO HORIZONTAL DE CARDS DE PRODUTO -->
-      <div class="destaques-rail-wrap">
-        <div class="destaques-rail" id="destaquesRail">
-          <!-- Renderizado dinamicamente via app.js a partir de CURADORIA -->
+      <!-- ── SLIDE 3: SPLIT 64/31 byNV (SPECIAL SALE / LIQUIDAÇÃO) ───── -->
+      <section class="v-slide" id="slide3" aria-label="Liquidação Especial">
+        <div class="split-text-slide">
+          <div class="split-photo">
+            <img src="assets/split_editorial.jpg?v=showroom_v1" alt="BEDÊ Stiletto — Showroom &amp; Coleção" loading="lazy">
+          </div>
+          <div class="split-text-content">
+            <h2 class="split-headline single-line">LIQUIDAÇÃO</h2>
+            <a href="https://loja.usebede.com.br/promocao/" id="slideSaleBtn" class="btn-nv dark" onclick="irParaLoja('https://loja.usebede.com.br/promocao/');return false;">
+              Ver Liquidação &rarr;
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ── 4. SEÇÃO EDITORIAL & CONCIERGE VIP ───────────────────── -->
-    <section class="section-concierge" id="conciergeSection" aria-label="Atendimento Boutique">
-      <div class="concierge-box">
-        <img class="concierge-monogram" src="assets/brand/monograma-bd.svg?v=2026_bd_v12" alt="BEDÊ">
-        <h2 class="concierge-title">Atendimento Boutique & Concierge</h2>
-        <p class="concierge-desc">Dúvidas sobre calce, materiais nobres ou prazo de entrega? Nossa consultoria pessoal atende você diretamente no WhatsApp.</p>
-        <a href="https://wa.me/5551980150391?text=Ol%C3%A1!%20Gostaria%20de%20uma%20consultoria%20personalizada%20na%20BED%C3%8A%20Stiletto."
-           target="_blank"
-           rel="noopener"
-           class="btn-whatsapp-concierge">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-right:8px;">
-            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.848.815 2.796.815 3.182 0 5.769-2.587 5.77-5.766.001-3.182-2.585-5.802-5.77-5.802zm0 10.428c-.854 0-1.656-.244-2.361-.689l-.169-.107-1.758.461.469-1.713-.117-.187c-.495-.788-.756-1.579-.755-2.427.001-2.493 2.029-4.52 4.522-4.52 2.492 0 4.521 2.027 4.522 4.521-.001 2.494-2.03 4.661-4.523 4.661zm3.178-3.468c-.174-.087-1.03-.509-1.189-.567-.159-.058-.275-.087-.391.087-.116.174-.45 0.567-.552.683-.102.116-.203.13-.377.043-.174-.087-.736-.271-1.402-.865-.518-.462-.868-1.033-.97-1.207-.101-.174-.011-.268.077-.354.079-.078.174-.203.261-.304.087-.101.116-.174.174-.29.058-.116.029-.217-.015-.304-.043-.087-.391-.942-.536-1.291-.141-.339-.284-.293-.391-.299-.101-.006-.217-.007-.333-.007s-.304.043-.464.217c-.159.174-.609.594-.609 1.45 0 .855.623 1.682.71 1.798.087.116 1.226 1.872 2.97 2.624.415.179.739.286.992.367.417.133.796.114 1.096.069.334-.05 1.03-.421 1.175-.827.145-.406.145-.754.101-.827-.044-.073-.16-.116-.334-.203z"/>
-          </svg>
-          Falar com Consultora no WhatsApp
-        </a>
-      </div>
-    </section>
+      <!-- ── SLIDE 4: FINALE BOUTIQUE & RODAPÉ REAL ────────── -->
+      <section class="v-slide" id="slide4" aria-label="Atendimento Boutique e Rodapé">
+        <div class="footer-slide">
 
-  </main>
+          <!-- CONCIERGE VIP / WHATSAPP BOUTIQUE -->
+          <div class="concierge-vip">
+            <img class="concierge-monogram" src="assets/brand/monograma-bd.svg?v=2026_bd_v12" alt="BEDÊ">
+            <h2 class="concierge-title">Atendimento Boutique<br><span class="concierge-subtitle">Personal Shopper</span></h2>
+            <p class="concierge-desc">Consultoria exclusiva sobre numeração, acabamentos e entrega expressa. Converse diretamente com nossa equipe no WhatsApp.</p>
+            <a href="https://wa.me/5551980150391?text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20personalizado%20na%20BEDE%20Stiletto."
+               target="_blank"
+               rel="noopener"
+               class="btn-whatsapp-vip">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.848.815 2.796.815 3.182 0 5.769-2.587 5.77-5.766.001-3.182-2.585-5.802-5.77-5.802zm0 10.428c-.854 0-1.656-.244-2.361-.689l-.169-.107-1.758.461.469-1.713-.117-.187c-.495-.788-.756-1.579-.755-2.427.001-2.493 2.029-4.52 4.522-4.52 2.492 0 4.521 2.027 4.522 4.521-.001 2.494-2.03 4.661-4.523 4.661zm3.178-3.468c-.174-.087-1.03-.509-1.189-.567-.159-.058-.275-.087-.391.087-.116.174-.45 0.567-.552.683-.102.116-.203.13-.377.043-.174-.087-.736-.271-1.402-.865-.518-.462-.868-1.033-.97-1.207-.101-.174-.011-.268.077-.354.079-.078.174-.203.261-.304.087-.101.116-.174.174-.29.058-.116.029-.217-.015-.304-.043-.087-.391-.942-.536-1.291-.141-.339-.284-.293-.391-.299-.101-.006-.217-.007-.333-.007s-.304.043-.464.217c-.159.174-.609.594-.609 1.45 0 .855.623 1.682.71 1.798.087.116 1.226 1.872 2.97 2.624.415.179.739.286.992.367.417.133.796.114 1.096.069.334-.05 1.03-.421 1.175-.827.145-.406.145-.754.101-.827-.044-.073-.16-.116-.334-.203z"/>
+              </svg>
+              Falar com Consultora no WhatsApp
+            </a>
+            <div class="concierge-trust">
+              <span>✓ Atendimento Humanizado</span>
+              <span>✓ Consultoria de Numeração</span>
+              <span>✓ Troca facilitada pelo WhatsApp</span>
+            </div>
+          </div>
+
+          <!-- RODAPÉ REAL NO LIMITE INFERIOR -->
+          <div class="clean-footer-bottom">
+            <footer class="clean-footer">
+
+              <!-- COLUNA 1: MARCA & INSTAGRAM -->
+              <div class="cf-col">
+                <div class="cf-logo">
+                  <img src="assets/brand/logo_bede_preto.svg"
+                       alt="BEDÊ"
+                       onerror="this.style.display='none'">
+                </div>
+                <p class="cf-desc">Calçados e bolsas femininas com curadoria, design autoral e alto conforto.</p>
+                <div class="cf-social-links">
+                  <a href="https://www.instagram.com/usebede.com.br/" target="_blank" rel="noopener" class="cf-social-btn" aria-label="Instagram BEDÊ">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    <span>@usebede.com.br</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- COLUNA 2: INSTITUCIONAL & POLÍTICAS -->
+              <div class="cf-col">
+                <h4>Institucional</h4>
+                <a href="#" onclick="openInstitutionalModal('sobre');return false;">Sobre a BEDÊ</a>
+                <a href="#" onclick="openInstitutionalModal('como_comprar');return false;">Como Comprar</a>
+                <a href="#" onclick="openInstitutionalModal('trocas');return false;">Trocas & Devoluções</a>
+                <a href="#" onclick="openInstitutionalModal('faq');return false;">Perguntas Frequentes (FAQ)</a>
+                <a href="#" onclick="openInstitutionalModal('privacidade');return false;">Política de Privacidade</a>
+                <a href="#" onclick="openInstitutionalModal('termos');return false;">Termos de Compra e Uso</a>
+                <a href="#" onclick="openSizeGuide();return false;">Guia de Numeração e Medidas</a>
+              </div>
+
+              <!-- COLUNA 3: ATENDIMENTO & LOCALIZAÇÃO -->
+              <div class="cf-col">
+                <h4>Atendimento</h4>
+                <a href="#" id="footerWa" target="_blank" rel="noopener" style="font-weight:600;color:var(--color-text);"></a>
+                <p id="footerAddress"></p>
+                <p>Centro · Viamão / RS</p>
+                <p id="footerHorario"></p>
+              </div>
+
+            </footer>
+
+            <!-- BANDEIRAS DE PAGAMENTO & SELO GOOGLE SAFE BROWSING REAL -->
+            <div class="footer-trust-row">
+              <div class="payment-methods">
+                <span class="pay-label">Formas de Pagamento:</span>
+                <div class="pay-icons">
+                  <span class="pay-tag" id="footerPixTag">PIX 5% OFF</span>
+                  <span class="pay-tag" id="footerCartaoTag">Cartão de Crédito</span>
+                </div>
+              </div>
+              <div class="security-seals">
+                <a href="https://transparencyreport.google.com/safe-browsing/search?url=https://loja.usebede.com.br"
+                   target="_blank"
+                   rel="noopener"
+                   class="google-safe-link"
+                   title="Verificar status de segurança no Google Safe Browsing">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <polyline points="9 12 11 14 15 10"/>
+                  </svg>
+                  <span><strong>Google Safe Browsing</strong> · Site Seguro Verificado</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-legal-bar">
+              <p class="footer-legal" id="footerLegal"></p>
+              <p class="footer-copy">© 2026 BEDÊ. Todos os direitos reservados.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div><!-- /slides-track -->
+  </div><!-- /viewport-stage -->
+
 
   <!-- ============================================================
-       RODAPÉ EDITORIAL REAL (LEGAL & TRANSPARÊNCIA)
+       TELA DE COLEÇÃO / CATÁLOGO (APP VIEW — SINGLE SCROLL CONTEXT)
   ============================================================ -->
-  <footer class="clean-footer">
-    <div class="footer-grid">
-
-      <!-- COLUNA 1: MARCA & INSTAGRAM -->
-      <div class="cf-col">
-        <div class="cf-logo">
-          <img src="assets/brand/logo_bede_preto.svg" alt="BEDÊ" onerror="this.style.display='none'">
-        </div>
-        <p class="cf-desc">Calçados e bolsas femininas com curadoria autoral, materiais nobres e alto conforto.</p>
-        <div class="cf-social-links">
-          <a href="https://www.instagram.com/usebede.com.br/" target="_blank" rel="noopener" class="cf-social-btn" aria-label="Instagram BEDÊ">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
-            <span>@usebede.com.br</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- COLUNA 2: INSTITUCIONAL -->
-      <div class="cf-col">
-        <h4>Institucional</h4>
-        <a href="#" onclick="openInstitutionalModal('sobre');return false;">Sobre a BEDÊ</a>
-        <a href="#" onclick="openInstitutionalModal('como_comprar');return false;">Como Comprar</a>
-        <a href="#" onclick="openInstitutionalModal('trocas');return false;">Trocas & Devoluções</a>
-        <a href="#" onclick="openInstitutionalModal('faq');return false;">Perguntas Frequentes (FAQ)</a>
-        <a href="#" onclick="openInstitutionalModal('privacidade');return false;">Política de Privacidade</a>
-        <a href="#" onclick="openInstitutionalModal('termos');return false;">Termos de Compra e Uso</a>
-        <a href="#" onclick="openSizeGuide();return false;">Guia de Numeração e Medidas</a>
-      </div>
-
-      <!-- COLUNA 3: ATENDIMENTO -->
-      <div class="cf-col">
-        <h4>Atendimento</h4>
-        <a href="https://wa.me/5551980150391" target="_blank" rel="noopener" id="footerWa" style="font-weight:600;color:#000404;">(51) 98015-0391</a>
-        <p id="footerAddress">Rua Cirurgião Vaz Ferreira, 457</p>
-        <p>Centro · Viamão / RS</p>
-        <p id="footerHorario">Segunda a Sábado · 9h às 19h</p>
-      </div>
-
+  <div class="collection-view" id="collectionView" role="dialog" aria-label="Catálogo de produtos">
+    
+    <!-- 1. BARRA DE NAVEGAÇÃO SUPERIOR (FLUXO NORMAL) -->
+    <div class="coll-nav-bar">
+      <button class="app-back-btn" onclick="closeCollection()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Voltar à Home
+      </button>
+      <span class="coll-product-count" id="collProductCount">Carregando peças...</span>
     </div>
 
-    <!-- BANDEIRAS & SEGURANÇA -->
-    <div class="footer-trust-row">
-      <div class="payment-methods">
-        <span class="pay-label">Formas de Pagamento:</span>
-        <div class="pay-icons">
-          <span class="pay-tag" id="footerPixTag">PIX 5% OFF</span>
-          <span class="pay-tag" id="footerCartaoTag">Cartão de Crédito até 6x</span>
-        </div>
+    <!-- 2. BANNER EDITORIAL CONTEXTUAL (FLUXO NORMAL — SAI DA TELA AO ROLAR) -->
+    <div class="collection-hero-banner" id="collHeroBanner">
+      <div class="coll-banner-img-wrap">
+        <img id="collBannerImg" src="assets/split_shoes.jpg?v=crop_v3" alt="Editorial BEDÊ Stiletto" loading="lazy">
+        <div class="coll-banner-shade"></div>
       </div>
-      <div class="security-seals">
-        <a href="https://transparencyreport.google.com/safe-browsing/search?url=https://loja.usebede.com.br"
-           target="_blank"
-           rel="noopener"
-           class="google-safe-link"
-           title="Verificar status de segurança no Google Safe Browsing">
+      <div class="coll-banner-content">
+        <span class="coll-banner-eyebrow" id="collBannerEyebrow">Curadoria BEDÊ · Uso Real & Sofisticação</span>
+        <h2 class="collection-title" id="collectionTitle">Coleção Completa</h2>
+        <p class="coll-banner-desc" id="collBannerDesc">Palmilhas anatômicas de amortecimento contínuo com acabamentos em couros nobres e design atemporal.</p>
+      </div>
+    </div>
+
+    <!-- 3. BARRA STICKY CONDENSADA (ÚNICO ELEMENTO STICKY — AUTO-HIDE DIRECIONAL) -->
+    <div class="collection-sticky-bar" id="collStickyBar">
+      <div class="sticky-bar-top-row">
+        <!-- CHIPS DE CATEGORIA EM ROLAGEM HORIZONTAL -->
+        <div class="filter-chips" id="filterChips">
+          <!-- Preenchido por renderMenus() em runtime a partir de PRODUCTS -->
+        </div>
+
+        <!-- BOTÃO COMPACTO DE FILTROS (VISÍVEL NO ESTADO CONDENSADO) -->
+        <button class="btn-condensed-filters" id="btnCondensedFilters" onclick="openFiltersDrawer()" aria-label="Abrir filtros">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            <polyline points="9 12 11 14 15 10"/>
+            <line x1="4" y1="21" x2="4" y2="14"></line>
+            <line x1="4" y1="10" x2="4" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12" y2="3"></line>
+            <line x1="20" y1="21" x2="20" y2="16"></line>
+            <line x1="20" y1="12" x2="20" y2="3"></line>
+            <line x1="1" y1="14" x2="7" y2="14"></line>
+            <line x1="9" y1="8" x2="15" y2="8"></line>
+            <line x1="17" y1="16" x2="23" y2="16"></line>
           </svg>
-          <span><strong>Google Safe Browsing</strong> · Site Seguro Verificado</span>
-        </a>
+          <span>Filtros</span>
+          <span class="active-filters-badge" id="activeFiltersBadge" style="display:none;">0</span>
+        </button>
+      </div>
+
+      <!-- BARRA DE FILTROS EXPANDIDA (ESTADO NORMAL <= 120px DE SCROLL) -->
+      <div class="collection-filters-bar" id="collFiltersBar">
+        <div class="filter-group">
+          <span class="filter-group-label">Numeração:</span>
+          <div class="filter-pills" id="filterSizes">
+            <button class="sz-filter-pill active" onclick="setFilterSize('ALL', this)">Todas</button>
+            <button class="sz-filter-pill" onclick="setFilterSize('34', this)">34</button>
+            <button class="sz-filter-pill" onclick="setFilterSize('35', this)">35</button>
+            <button class="sz-filter-pill" onclick="setFilterSize('36', this)">36</button>
+            <button class="sz-filter-pill" onclick="setFilterSize('37', this)">37</button>
+            <button class="sz-filter-pill" onclick="setFilterSize('38', this)">38</button>
+            <button class="sz-filter-pill" onclick="setFilterSize('39', this)">39</button>
+            <button class="sz-filter-pill" onclick="setFilterSize('40', this)">40</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-group-label">Tonalidade:</span>
+          <div class="filter-pills" id="filterColors">
+            <button class="col-filter-pill active" onclick="setFilterColor('ALL', this)">Todas</button>
+            <button class="col-filter-pill" onclick="setFilterColor('PRETO', this)">Preto</button>
+            <button class="col-filter-pill" onclick="setFilterColor('NUDE', this)">Nude</button>
+            <button class="col-filter-pill" onclick="setFilterColor('OFF', this)">Off-White</button>
+            <button class="col-filter-pill" onclick="setFilterColor('CARAMELO', this)">Caramelo</button>
+            <button class="col-filter-pill" onclick="setFilterColor('METALIZADO', this)">Metalizado</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-group-label">Faixa de Preço:</span>
+          <div class="filter-pills" id="filterPrices">
+            <button class="prc-filter-pill active" onclick="setFilterPrice('ALL', this)">Todos</button>
+            <button class="prc-filter-pill" onclick="setFilterPrice('ATE200', this)">Até R$&nbsp;200</button>
+            <button class="prc-filter-pill" onclick="setFilterPrice('200A350', this)">R$&nbsp;200 a 350</button>
+            <button class="prc-filter-pill" onclick="setFilterPrice('ACIMA350', this)">Acima de R$&nbsp;350</button>
+          </div>
+        </div>
+
+        <button class="btn-clear-filters" id="btnClearFilters" onclick="resetAllFilters()" style="display:none;">
+          <span>Limpar filtros</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
       </div>
     </div>
 
-    <div class="footer-legal-bar">
-      <p class="footer-legal" id="footerLegal">Stiletto Bd Boutique Ltda · CNPJ 55.068.034/0001-00 · RUA CIRURGIÃO VAZ FERREIRA, 457 · CENTRO · VIAMÃO/RS</p>
-      <p class="footer-copy">© 2026 BEDÊ. Todos os direitos reservados.</p>
+    <!-- 4. GRADE DE PRODUTOS (SEM OVERFLOW ANINHADO — SCROLL NATURAL) -->
+    <div class="collection-grid-wrap">
+      <div class="collection-grid" id="collectionGrid"></div>
     </div>
-  </footer>
+  </div>
 
   <!-- ============================================================
-       MODAIS INSTITUCIONAIS & GUIA DE MEDIDAS
+       DRAWER DE FILTROS (MODAL ACESSÍVEL PARA ESTADO CONDENSADO & MOBILE)
+  ============================================================ -->
+  <div class="filters-drawer-overlay" id="filtersDrawerOverlay" onclick="closeFiltersDrawer()" aria-hidden="true"></div>
+  <aside class="filters-drawer" id="filtersDrawer" role="dialog" aria-modal="true" aria-label="Filtros da coleção">
+    <div class="filters-drawer-head">
+      <div class="filters-drawer-title">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="4" y1="21" x2="4" y2="14"></line>
+          <line x1="4" y1="10" x2="4" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12" y2="3"></line>
+          <line x1="20" y1="21" x2="20" y2="16"></line>
+          <line x1="20" y1="12" x2="20" y2="3"></line>
+          <line x1="1" y1="14" x2="7" y2="14"></line>
+          <line x1="9" y1="8" x2="15" y2="8"></line>
+          <line x1="17" y1="16" x2="23" y2="16"></line>
+        </svg>
+        <h3>Filtros de Coleção</h3>
+      </div>
+      <button class="pm-close" onclick="closeFiltersDrawer()" aria-label="Fechar filtros">&times;</button>
+    </div>
+
+    <div class="filters-drawer-body">
+      <!-- Grupo Numeração -->
+      <div class="drawer-filter-section">
+        <h4>Numeração</h4>
+        <div class="drawer-filter-pills" id="drawerSizes">
+          <button class="sz-filter-pill active" onclick="setFilterSize('ALL', this)">Todas</button>
+          <button class="sz-filter-pill" onclick="setFilterSize('34', this)">34</button>
+          <button class="sz-filter-pill" onclick="setFilterSize('35', this)">35</button>
+          <button class="sz-filter-pill" onclick="setFilterSize('36', this)">36</button>
+          <button class="sz-filter-pill" onclick="setFilterSize('37', this)">37</button>
+          <button class="sz-filter-pill" onclick="setFilterSize('38', this)">38</button>
+          <button class="sz-filter-pill" onclick="setFilterSize('39', this)">39</button>
+          <button class="sz-filter-pill" onclick="setFilterSize('40', this)">40</button>
+        </div>
+      </div>
+
+      <!-- Grupo Tonalidade -->
+      <div class="drawer-filter-section">
+        <h4>Tonalidade</h4>
+        <div class="drawer-filter-pills" id="drawerColors">
+          <button class="col-filter-pill active" onclick="setFilterColor('ALL', this)">Todas</button>
+          <button class="col-filter-pill" onclick="setFilterColor('PRETO', this)">Preto</button>
+          <button class="col-filter-pill" onclick="setFilterColor('NUDE', this)">Nude</button>
+          <button class="col-filter-pill" onclick="setFilterColor('OFF', this)">Off-White</button>
+          <button class="col-filter-pill" onclick="setFilterColor('CARAMELO', this)">Caramelo</button>
+          <button class="col-filter-pill" onclick="setFilterColor('METALIZADO', this)">Metalizado</button>
+        </div>
+      </div>
+
+      <!-- Grupo Preço -->
+      <div class="drawer-filter-section">
+        <h4>Faixa de Preço</h4>
+        <div class="drawer-filter-pills" id="drawerPrices">
+          <button class="prc-filter-pill active" onclick="setFilterPrice('ALL', this)">Todos</button>
+          <button class="prc-filter-pill" onclick="setFilterPrice('ATE200', this)">Até R$&nbsp;200</button>
+          <button class="prc-filter-pill" onclick="setFilterPrice('200A350', this)">R$&nbsp;200 a 350</button>
+          <button class="prc-filter-pill" onclick="setFilterPrice('ACIMA350', this)">Acima de R$&nbsp;350</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="filters-drawer-foot">
+      <button class="btn-clear-drawer" onclick="resetAllFilters()">Limpar Tudo</button>
+      <button class="btn-apply-drawer" onclick="closeFiltersDrawer()">Ver Resultados</button>
+    </div>
+  </aside>
+
+
+  <!-- ============================================================
+       MODAL DE PRODUTO (APP NATIVO)
+  ============================================================ -->
+  <div class="product-modal" id="productModal" role="dialog" aria-label="Detalhes do produto">
+    <div class="pm-top">
+      <button class="app-back-btn" onclick="closeProduct()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Voltar
+      </button>
+      <button class="pm-close" onclick="closeProduct()" aria-label="Fechar">&times;</button>
+    </div>
+    <div class="pm-grid">
+      <div class="pm-photo-wrap">
+        <div class="pm-photo">
+          <img src="" id="pmImg" alt="">
+        </div>
+        <div class="pm-thumbnails" id="pmThumbnails"></div>
+      </div>
+      <div class="pm-info">
+        <div class="pm-header-meta">
+          <span class="pm-cat" id="pmCat"></span>
+          <div class="pm-rating-badge" id="pmRatingBadge" style="display:none;"></div>
+        </div>
+        
+        <h2 class="pm-name" id="pmName"></h2>
+        
+        <div class="pm-price-block">
+          <div class="pm-price-row">
+            <span class="pm-price" id="pmPrice"></span>
+            <span class="pm-old" id="pmOld"></span>
+          </div>
+          <span class="pm-pix" id="pmPix"></span>
+          <span class="pm-inst" id="pmInst"></span>
+        </div>
+
+        <div class="pm-sizes-label">
+          <span>Cor</span>
+        </div>
+        <div class="pm-colors" id="pmColors"></div>
+
+        <div class="pm-sizes-label" style="margin-top:20px;">
+          <span>Numeração Disponível</span>
+          <a class="pm-guide-link" href="#" onclick="openSizeGuide();return false;">Guia de medidas</a>
+        </div>
+        <div class="pm-sizes" id="pmSizes"></div>
+
+        <div class="pm-cta-group" style="display:flex;flex-direction:column;gap:10px;margin-top:20px;">
+          <a class="btn-solid" id="pmAddBtn" style="display:flex;justify-content:center;align-items:center;text-decoration:none;width:100%;height:48px;font-weight:600;" target="_blank">Comprar agora</a>
+          <button class="btn-outline-pill" id="pmSelectBtn" style="width:100%;height:44px;font-weight:500;display:flex;justify-content:center;align-items:center;gap:8px;" onclick="addCurrentToSelection()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            Adicionar à minha seleção
+          </button>
+          <button class="btn-whatsapp-editorial" id="pmWaDirectBtn" style="width:100%;height:44px;display:flex;justify-content:center;align-items:center;gap:8px;" onclick="buyViaWhatsAppDirect()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.848.815 2.796.815 3.182 0 5.769-2.587 5.77-5.766.001-3.182-2.585-5.802-5.77-5.802zm0 10.428c-.854 0-1.656-.244-2.361-.689l-.169-.107-1.758.461.469-1.713-.117-.187c-.495-.788-.756-1.579-.755-2.427.001-2.493 2.029-4.52 4.522-4.52 2.492 0 4.521 2.027 4.522 4.521-.001 2.494-2.03 4.661-4.523 4.661zm3.178-3.468c-.174-.087-1.03-.509-1.189-.567-.159-.058-.275-.087-.391.087-.116.174-.45 0.567-.552.683-.102.116-.203.13-.377.043-.174-.087-.736-.271-1.402-.865-.518-.462-.868-1.033-.97-1.207-.101-.174-.011-.268.077-.354.079-.078.174-.203.261-.304.087-.101.116-.174.174-.29.058-.116.029-.217-.015-.304-.043-.087-.391-.942-.536-1.291-.141-.339-.284-.293-.391-.299-.101-.006-.217-.007-.333-.007s-.304.043-.464.217c-.159.174-.609.594-.609 1.45 0 .855.623 1.682.71 1.798.087.116 1.226 1.872 2.97 2.624.415.179.739.286.992.367.417.133.796.114 1.096.069.334-.05 1.03-.421 1.175-.827.145-.406.145-.754.101-.827-.044-.073-.16-.116-.334-.203z"/></svg>
+            Falar com consultora
+          </button>
+        </div>
+
+        <div class="pm-editorial-perks">
+          <div class="pm-perk-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Palmilha Anatômica Acolchoada de Alta Densidade</span>
+          </div>
+          <div class="pm-perk-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Couro Legítimo & Forração Sedosa que Não Aperta</span>
+          </div>
+          <div class="pm-perk-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span id="pmPerkTroca"></span>
+          </div>
+        </div>
+
+        <p class="pm-desc" id="pmDesc"></p>
+
+        <!-- SEÇÃO DE AVALIAÇÕES DE CLIENTES (DINÂMICA VIA AVALIACOES.JS) -->
+        <div class="pm-reviews-section" id="pmReviewsSection" style="display:none;">
+          <div class="pm-reviews-head">
+            <div class="pm-rev-title-wrap">
+              <h3 class="pm-rev-title">Avaliações & Experiência de Uso</h3>
+              <span class="pm-rev-sub">Comentários de clientes da boutique</span>
+            </div>
+            <div class="pm-rev-stat-badge" id="pmRevStatBadge"></div>
+          </div>
+          <div class="pm-reviews-list" id="pmReviewsList"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       NOVA SACOLA FLUTUANTE (MODERNA & ARREDONDADA) -> AGORA "MINHA SELEÇÃO"
+  ============================================================ -->
+  <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+  <div class="cart-drawer" id="cartDrawer" role="dialog" aria-label="Sua seleção">
+    <div class="cart-head">
+      <div class="cart-head-title">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+        <h3>Minha seleção (<span id="cartCountHead">0</span>)</h3>
+      </div>
+      <button class="pm-close" onclick="closeCart()" aria-label="Fechar">&times;</button>
+    </div>
+    
+    <div class="cart-main-content">
+      <div class="cart-body" id="cartBody"></div>
+
+      <div class="cart-foot">
+        <div class="cart-actions">
+          <button class="btn-solid-pill" id="cartCheckoutLoja">
+            Finalizar compra na loja &rarr;
+          </button>
+          <div class="cart-dispatch-notice" id="cartDisclaimer" style="display:none;font-size:11px;color:#737378;text-align:center;line-height:1.4;margin-top:2px;font-family:'Montserrat',sans-serif;"></div>
+          <button class="btn-outline-pill" id="cartCheckoutWa">
+            <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24" style="margin-right:6px;vertical-align:text-bottom;">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.662-2.06-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a5.416 5.416 0 0 0-.571-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.575-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.052 0C5.495 0 .16 5.335.158 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+            </svg>
+            Falar com consultora no WhatsApp
+          </button>
+          <button class="btn-outline-pill" onclick="closeCart()">Continuar navegando</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       GUIA DE MEDIDAS
   ============================================================ -->
   <div class="guide-overlay" id="guideOverlay" onclick="closeSizeGuide()">
     <div class="guide-box" onclick="event.stopPropagation()">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
-        <h4 style="font-size:16px;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin:0;">Guia de Numeração & Medidas</h4>
+        <h4>Guia de Medidas</h4>
         <button class="pm-close" onclick="closeSizeGuide()">&times;</button>
       </div>
-      <p style="font-size:13px;color:#737378;margin-bottom:14px;">Recomendamos posicionar o calcanhar contra uma parede e medir o comprimento do pé até o dedo mais longo:</p>
       <table class="guide-table">
-        <tr><th>Numeração BR</th><th>Comprimento do Pé</th></tr>
-        <tr><td>33</td><td>21,8 cm</td></tr>
+        <tr><th>Tamanho BR</th><th>Comprimento</th></tr>
         <tr><td>34</td><td>22,5 cm</td></tr>
         <tr><td>35</td><td>23,2 cm</td></tr>
         <tr><td>36</td><td>23,8 cm</td></tr>
@@ -388,23 +728,30 @@
         <tr><td>38</td><td>25,2 cm</td></tr>
         <tr><td>39</td><td>25,8 cm</td></tr>
         <tr><td>40</td><td>26,5 cm</td></tr>
+        <tr><td>41</td><td>27,2 cm</td></tr>
       </table>
     </div>
   </div>
 
+  <!-- ============================================================
+       MODAL INSTITUCIONAL (POLÍTICAS, TERMOS, SOBRE)
+  ============================================================ -->
   <div class="guide-overlay" id="instOverlay" onclick="closeInstitutionalModal()">
     <div class="guide-box" onclick="event.stopPropagation()" style="max-width:580px;max-height:85vh;overflow-y:auto;">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;border-bottom:1px solid #e9e9e9;padding-bottom:12px;">
-        <h4 id="instTitle" style="font-size:16px;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin:0;"></h4>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;border-bottom:1px solid var(--color-border);padding-bottom:12px;">
+        <h4 id="instTitle" style="margin:0;">Institucional</h4>
         <button class="pm-close" onclick="closeInstitutionalModal()">&times;</button>
       </div>
-      <div id="instBody" style="font-size:14px;color:#333;line-height:1.65;"></div>
+      <div id="instBody" style="font-size:13px;line-height:22px;color:var(--color-muted);font-weight:300;"></div>
+      <div style="margin-top:24px;border-top:1px solid var(--color-border);padding-top:16px;display:flex;justify-content:flex-end;">
+        <button class="btn-solid-pill" onclick="closeInstitutionalModal()" style="padding:10px 22px;font-size:13px;">&larr; Voltar ao Catálogo</button>
+      </div>
     </div>
   </div>
 
-  <!-- SCRIPTS -->
-  <script src="config_loja.js"></script>
-  <script src="products.js"></script>
-  <script src="app.js"></script>
+  <script src="config_loja.js?v=2026_v9"></script>
+  <script src="avaliacoes.js?v=2026_v9"></script>
+  <script src="products.js?v=2026_v9"></script>
+  <script src="app.js?v=2026_v9"></script>
 </body>
 </html>
