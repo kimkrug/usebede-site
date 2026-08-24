@@ -88,7 +88,7 @@ window.irParaLoja = function(url) {
     freteGratisEstados: CFG_SRC.freteGratisEstados || [],
     parcelamentoMax: CFG_SRC.parcelamentoMax !== undefined ? CFG_SRC.parcelamentoMax : 6,
     dominioLoja: CFG_SRC.dominioLoja || 'https://bedestiletto.lojavirtualnuvem.com.br',
-    horario: 'Segunda a Sábado · 9h às 19h'
+    horario: 'Segunda à Sexta · 09h às 18h'
   };
   const WA = CFG.whatsapp;
 
@@ -1519,7 +1519,7 @@ window.irParaLoja = function(url) {
         <p style="margin-bottom:14px;line-height:1.6;">Fundada com o propósito de unir elegância atemporal, curadoria refinada e conforto absoluto, a <strong>BEDÊ Stiletto</strong> nasceu da dedicação familiar em criar uma experiência única de calçados e acessórios femininos.</p>
         <p style="margin-bottom:14px;line-height:1.6;">Nossa boutique física está localizada no coração de Viamão/RS. Cada modelo é selecionado cuidadosamente para valorizar o estilo da mulher contemporânea em todas as ocasiões, desde o dia a dia até momentos especiais.</p>
         <div style="background:var(--color-surface,#f8f8f8);padding:14px 16px;border-radius:8px;border-left:3px solid var(--color-text,#111);margin-top:16px;">
-          <p style="margin:0;font-size:13px;color:var(--color-muted,#666);"><strong>Boutique Física:</strong> Rua Cirurgião Vaz Ferreira, 457 · Centro · Viamão/RS<br><strong>Atendimento:</strong> Segunda a Sábado · 9h às 19h</p>
+          <p style="margin:0;font-size:13px;color:var(--color-muted,#666);"><strong>Boutique Física:</strong> Rua Cirurgião Vaz Ferreira, 457 · Centro · Viamão/RS<br><strong>Atendimento:</strong> Segunda à Sexta · 09h às 18h
         </div>
       `
     },

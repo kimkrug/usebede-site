@@ -1,5 +1,5 @@
 /**
- * BEDÊ — Teste de Jornada & Validação da Arquitetura v31.2 (Nuvemshop + Institucionais).
+ * BEDÊ — Teste de Jornada & Validação da Arquitetura v31.3 (Nuvemshop + Institucionais + Travas de Conteúdo).
  *
  * Executa antes de cada commit contra o preview da Vercel, localhost ou produção.
  *
@@ -9,7 +9,7 @@
  * 3. Sem "null", "undefined", "NaN", "[object Object]" no texto visível
  * 4. Rodapé traz CNPJ (55.068.034/0001-00) e Razão Social (Stiletto Bd Boutique Ltda)
  * 5. Sem "OFERTA", preço riscado falso ou desconto inventado no texto
- * 6. Todo item de menu aponta para o host oficial da Nuvemshop (bedestiletto.lojavirtualnuvem.com.br), página institucional real (HTTP 200) ou WhatsApp
+ * 6. Todo item de menu aponta para o host oficial da Nuvemshop, página institucional real (HTTP 200) ou WhatsApp
  * 7. NENHUM link de menu tem href vazio, "#" ou "javascript:"
  * 8. NENHUM link de rodapé institucional tem href vazio, "#" ou "javascript:"
  * 9. O ícone de sacola aponta diretamente para o carrinho da Nuvemshop (/cart/)
@@ -19,16 +19,19 @@
  * 13. Contagem de destinos distintos nos ladrilhos (com aviso se < 4)
  * 14. Nenhuma imagem de card usa object-fit: cover (todas utilizam contain sobre #F7F7F7)
  * 15. Todas as páginas institucionais vinculadas respondem HTTP 200 OK
+ * 16. [v31.3] Sem "Sábado" nem "19h" no texto renderizado da home e das páginas institucionais
+ * 17. [v31.3] guia-medidas.html sem centímetros ("22,5" / "26,5") e com link wa.me
+ * 18. [v31.3] trocas.html contém "primeira troca" e "7 dias"
  *
  * Uso:
  *   node teste-jornada.mjs
- *   node teste-jornada.mjs http://localhost:8000/
+ *   node teste-jornada.mjs http://localhost:3000/
  *   node teste-jornada.mjs https://www.usebede.com.br/
  */
 
 import { chromium } from 'playwright';
 
-const URL_PADRAO = 'http://localhost:8000/';
+const URL_PADRAO = 'http://localhost:3000/';
 const BASE = process.argv[2] || URL_PADRAO;
 const HOST_LOJA = 'bedestiletto.lojavirtualnuvem.com.br';
 
@@ -140,7 +143,6 @@ checa(
   menuInfo.cartHref
 );
 
-// Verificação v31.2: Proibir href="#" ou vazio no menu
 const hasDeadMenuLink = menuInfo.items.some(i => !i.href || i.href === '#' || i.href.startsWith('javascript:'));
 checa(!hasDeadMenuLink, 'Nenhum link de menu tem href vazio, "#" ou "javascript:"');
 
@@ -152,7 +154,6 @@ for (const item of menuInfo.items) {
   } else if (item.fullHref.includes('wa.me') || item.fullHref.includes('whatsapp')) {
     ok(`Menu "${item.text}" aponta para atendimento WhatsApp`, item.fullHref);
   } else if (item.href.endsWith('.html') || !item.href.startsWith('#')) {
-    // Validar se página institucional responde HTTP 200
     try {
       const targetUrl = new URL(item.href, BASE).href;
       const res = await pagina.request.get(targetUrl);
@@ -253,11 +254,15 @@ checa(!/\[object Object\]/i.test(texto), 'Sem "[object Object]" no texto');
 checa(!/\bOFERTA\b/.test(texto), 'Sem selo "OFERTA" inventado');
 checa(!/\b5% OFF no PIX\b/i.test(texto), 'Sem "5% OFF no PIX" inventado na home');
 
+// [v31.3] Horário real na home
+checa(!/S[aá]bado/i.test(texto), 'Sem "Sábado" no texto da home');
+checa(!/19h\b/i.test(texto), 'Sem "19h" no texto da home');
+
 // CNPJ e Razão Social
 checa(/55\.068\.034\/0001-00/.test(texto), 'Rodapé traz o CNPJ oficial', '55.068.034/0001-00');
 checa(/Stiletto Bd Boutique Ltda/i.test(texto), 'Rodapé traz a razão social oficial', 'Stiletto Bd Boutique Ltda');
 
-// Validação v31.2: Links do Rodapé Institucional
+// Validação dos Links do Rodapé Institucional
 const footerLinks = await pagina.evaluate(() => {
   const colInstitucional = document.querySelectorAll('.clean-footer .cf-col:nth-child(2) a, footer .cf-col a');
   return [...colInstitucional].map(a => ({
@@ -284,6 +289,45 @@ for (const l of footerLinks) {
   }
 }
 
+// ── 7. Travas Específicas de Conteúdo Institucional [v31.3] ─────────────────
+secao('7. Validação Específica de Conteúdo Institucional [v31.3]');
+
+// 7.1. guia-medidas.html
+try {
+  const urlGuia = new URL('guia-medidas.html', BASE).href;
+  const resGuia = await pagina.request.get(urlGuia);
+  const htmlGuia = await resGuia.text();
+  
+  checa(!htmlGuia.includes('22,5') && !htmlGuia.includes('26,5'), 'guia-medidas.html não contém centímetros genéricos ("22,5" / "26,5")');
+  checa(htmlGuia.includes('wa.me'), 'guia-medidas.html contém link de atendimento no WhatsApp (wa.me)');
+  checa(!/S[aá]bado/i.test(htmlGuia) && !/19h\b/i.test(htmlGuia), 'guia-medidas.html traz horário correto (sem Sábado / 19h)');
+} catch (e) {
+  falhou('Falha ao validar guia-medidas.html', e.message);
+}
+
+// 7.2. trocas.html
+try {
+  const urlTrocas = new URL('trocas.html', BASE).href;
+  const resTrocas = await pagina.request.get(urlTrocas);
+  const htmlTrocas = await resTrocas.text();
+
+  checa(/primeira troca/i.test(htmlTrocas), 'trocas.html contém política explícita de "primeira troca"');
+  checa(/7 dias/i.test(htmlTrocas), 'trocas.html contém seção de arrependimento legal de "7 dias"');
+  checa(!/S[aá]bado/i.test(htmlTrocas) && !/19h\b/i.test(htmlTrocas), 'trocas.html traz horário correto (sem Sábado / 19h)');
+} catch (e) {
+  falhou('Falha ao validar trocas.html', e.message);
+}
+
+// 7.3. sobre.html e outras institucionais (horário real)
+try {
+  const urlSobre = new URL('sobre.html', BASE).href;
+  const resSobre = await pagina.request.get(urlSobre);
+  const htmlSobre = await resSobre.text();
+  checa(!/S[aá]bado/i.test(htmlSobre) && !/19h\b/i.test(htmlSobre), 'sobre.html traz horário correto (sem Sábado / 19h)');
+} catch (e) {
+  falhou('Falha ao validar sobre.html', e.message);
+}
+
 // Domínios Proibidos
 const dominiosBanidos = await pagina.evaluate(() => {
   const html = document.documentElement.innerHTML;
@@ -298,8 +342,8 @@ checa(!dominiosBanidos.lojaUsebede, 'Zero links para loja.usebede.com.br (bloque
 checa(!dominiosBanidos.sistemawbuy, 'Zero links para sistemawbuy.com.br');
 checa(!dominiosBanidos.stilettobmaisd, 'Zero links ou menções a stilettobmaisd');
 
-// ── 7. Levantamento Informacional da Nuvemshop (Catálogo) ───────────────────
-secao('7. Levantamento Informacional da Nuvemshop (Catálogo)');
+// ── 8. Levantamento Informacional da Nuvemshop (Catálogo) ───────────────────
+secao('8. Levantamento Informacional da Nuvemshop (Catálogo)');
 try {
   const paginaLoja = await contexto.newPage();
   await paginaLoja.goto(`https://${HOST_LOJA}/produtos/`, { waitUntil: 'domcontentloaded', timeout: 15000 });
