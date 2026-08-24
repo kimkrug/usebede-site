@@ -88,7 +88,8 @@ pagina.on('pageerror', (err) => {
 
 // ── 1. Carregamento & Título ───────────────────────────────────────────────
 secao('1. Carregamento & Título');
-await pagina.goto(BASE, { waitUntil: 'networkidle', timeout: 30000 });
+await pagina.goto(BASE, { waitUntil: 'domcontentloaded', timeout: 30000 });
+await pagina.waitForTimeout(1500);
 
 checa(
   errosConsole.length === 0,
