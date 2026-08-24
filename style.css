@@ -8,11 +8,15 @@
 /* ── RESET & BASE ─────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+html, body {
+  height: 100%;
+  overscroll-behavior: none;
+  -ms-scroll-chaining: none;
+}
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -23,8 +27,7 @@ body {
   background: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
   -ms-overflow-style: none;
 }
 
@@ -687,26 +690,28 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   stroke: #000404;
 }
 
-/* ── MOTOR DE SLIDES COM SCROLL-SNAP (v34) ── */
+/* ── MOTOR DE TELAS CHEIAS 100VH — TRILHO VERTICAL (ORIGINAL RESTAURADO v34.1) ── */
 .viewport-stage {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  min-height: 100vh;
-  overflow: visible;
+  height: var(--vh, 100vh);
+  overflow: hidden;
 }
 
 .slides-track {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
+  transform: translateY(0);
+  transition: transform 600ms cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
 }
 
 .v-slide {
   width: 100%;
   height: var(--vh, 100vh);
   min-height: var(--vh, 100vh);
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
@@ -1050,7 +1055,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   justify-content: center;
 }
 
-/* ── SLIDE 5 — RODAPÉ INSTITUCIONAL (SEÇÃO PRÓPRIA DO SNAP) ── */
+/* ── SLIDE 5 — RODAPÉ INSTITUCIONAL (ANCORADO EMBAIXO v34.1) ── */
 .site-footer-slide {
   width: 100%;
   height: var(--vh, 100vh);
@@ -1058,39 +1063,40 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   background: #f2f0eb;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 var(--pad-x) 16px;
   box-sizing: border-box;
   overflow: hidden;
 }
 .clean-footer-bottom {
   width: 100%;
-  height: 100%;
-  background: #f2f0eb;
-  border-top: 1px solid #dfdbd3;
+  max-width: 1200px;
+  background: transparent;
+  border-top: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: clamp(70px, 9vh, 96px) var(--pad-x) 20px;
+  justify-content: flex-end;
+  gap: clamp(12px, 2vh, 24px);
+  padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: visible;
 }
 .clean-footer {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 1.2fr 1.5fr;
-  gap: clamp(24px, 3vw, 40px);
+  gap: clamp(20px, 3vw, 40px);
   align-items: start;
 }
-.cf-logo { margin-bottom: 12px; }
-.cf-logo img, .cf-logo svg { height: 26px; width: auto; }
+.cf-logo { margin-bottom: 8px; }
+.cf-logo img, .cf-logo svg { height: 24px; width: auto; }
 .cf-desc {
   font-size: 12px;
   font-weight: 300;
-  line-height: 20px;
+  line-height: 18px;
   color: var(--color-muted);
-  max-width: 320px;
+  max-width: 300px;
 }
 .cf-social-links {
   margin-top: 10px;
@@ -2780,26 +2786,27 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* ════════════════════════════════════════════════════════════════
-   SLIDE 2 — DESCUBRA OS TIPOS (v33)
-   Trilho horizontal sobre fundo claro · Ladrilhos 270×220px
+   SLIDE 2 — DESCUBRA OS TIPOS (v34.1)
+   Trilho horizontal com overflow no Desktop (~4,5 visíveis)
    ════════════════════════════════════════════════════════════════ */
 #slide2,
 .tipos-slide {
   width: 100%;
+  height: 100%;
   background: #ffffff;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 96px var(--pad-x);
+  padding: calc(var(--header-h) + 10px) var(--pad-x) 24px;
   box-sizing: border-box;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .tipos-header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 .tipos-eyebrow {
   display: block;
@@ -2823,29 +2830,30 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .tipos-rail {
   display: flex;
-  gap: 16px;
+  gap: 20px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
+  margin: 0 auto;
   justify-content: flex-start;
-  padding: 10px 4px 20px;
+  padding: 8px 4px 16px;
   box-sizing: border-box;
 }
 .tipos-rail::-webkit-scrollbar { display: none; }
 
 .tipo-card {
-  flex: 0 0 270px;
-  width: 270px;
-  height: 220px;
+  flex: 0 0 290px;
+  width: 290px;
+  height: 230px;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 14px 18px;
+  padding: 16px 14px 16px;
   box-sizing: border-box;
   border-radius: 10px;
   background-color: #F7F7F7;
@@ -2860,7 +2868,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .tipo-img-wrap {
   width: 100%;
-  height: 135px;
+  height: 145px;
   border-radius: 6px;
   background: #EFEFEF;
   overflow: hidden;
@@ -2896,13 +2904,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .tipos-cta-wrap {
   text-align: center;
-  margin-top: 36px;
+  margin-top: 24px;
 }
 
 @media (max-width: 768px) {
-  .tipos-slide { padding: 64px var(--pad-x); }
+  #slide2,
+  .tipos-slide { padding: 80px var(--pad-x) 32px; }
   .tipos-title { font-size: 18px; letter-spacing: 3px; }
-  .tipos-header { margin-bottom: 24px; }
+  .tipos-header { margin-bottom: 20px; }
+  .tipos-rail { gap: 14px; max-width: 100%; }
   .tipo-card {
     flex: 0 0 160px;
     width: 160px;
@@ -2912,5 +2922,5 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   }
   .tipo-img-wrap { height: 80px; }
   .tipo-label { font-size: 12px; }
-  .tipos-cta-wrap { margin-top: 24px; }
+  .tipos-cta-wrap { margin-top: 16px; }
 }

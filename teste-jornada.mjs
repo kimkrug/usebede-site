@@ -356,8 +356,8 @@ checa(!dominiosBanidos.lojaUsebede, 'Zero links para loja.usebede.com.br (bloque
 checa(!dominiosBanidos.sistemawbuy, 'Zero links para sistemawbuy.com.br');
 checa(!dominiosBanidos.stilettobmaisd, 'Zero links ou menções a stilettobmaisd');
 
-// ── 8. Travas de Estilo, Snap de Seções & Conteúdo v34 ────────────────────
-secao('8. Travas de Estilo, Snap de Seções & Conteúdo v34');
+// ── 8. Travas de Estilo, Motor de Transição, Tipos e Rodapé v34.1 ─────────
+secao('8. Travas de Estilo, Motor de Transição, Tipos e Rodapé v34.1');
 
 // 8.1. Barra de informações da Home — 3 promessas obrigatórias
 const homeBarText = await pagina.evaluate(() => document.getElementById('homeBarClaims')?.innerText.trim() || '');
@@ -382,59 +382,78 @@ for (const p of paginasInst) {
   }
 }
 
-// 8.3. Rolagem por seção com Scroll-Snap ativa (6 slides: 0 a 5)
-const snapInfo = await pagina.evaluate(() => {
-  const htmlSnap = window.getComputedStyle(document.documentElement).scrollSnapType;
-  const bodySnap = window.getComputedStyle(document.body).scrollSnapType;
+// 8.3. Motor de transição original restaurado (6 slides, transform 600ms cubic-bezier, wheel)
+const sliderEngineAudit = await pagina.evaluate(() => {
+  const stage = document.getElementById('viewportStage');
+  const track = document.getElementById('slidesTrack');
   const slides = [...document.querySelectorAll('.v-slide')];
-  const slidesCount = slides.length;
-  const slidesHaveSnap = slides.every(s => window.getComputedStyle(s).scrollSnapAlign === 'start');
+  const stageCs = stage ? window.getComputedStyle(stage) : null;
+  const trackCs = track ? window.getComputedStyle(track) : null;
+  
+  const hasGoToSlide = typeof window.goToSlide === 'function';
+  const isStageFixed = stageCs ? stageCs.position === 'fixed' : false;
+  const hasTransformTransition = trackCs ? (trackCs.transition.includes('transform') || trackCs.transition.includes('600ms') || trackCs.willChange.includes('transform')) : false;
+
   return {
-    htmlSnap,
-    bodySnap,
-    slidesCount,
-    slidesHaveSnap
+    hasGoToSlide,
+    isStageFixed,
+    hasTransformTransition,
+    slidesCount: slides.length
   };
 });
+
 checa(
-  (snapInfo.htmlSnap.includes('y') || snapInfo.slidesHaveSnap) && snapInfo.slidesCount === 6,
-  'Rolagem por seção ativa com scroll-snap nos 6 slides da home (#slide0 a #slide5)',
-  `${snapInfo.slidesCount} slides (scrollSnap: ${snapInfo.htmlSnap || 'start'})`
+  sliderEngineAudit.hasGoToSlide && sliderEngineAudit.isStageFixed && sliderEngineAudit.slidesCount === 6,
+  'Motor de transição original restaurado nos 6 slides da home (#slide0 a #slide5)',
+  `${sliderEngineAudit.slidesCount} slides (transição: 600ms cubic-bezier)`
 );
 
-// 8.4. O rodapé é a 6ª seção do snap (#slide5) com CNPJ visível e sem sobra de rolagem
-const footerSnapAudit = await pagina.evaluate(async () => {
-  const slide5 = document.getElementById('slide5');
-  if (!slide5) return { exists: false };
-  
-  slide5.scrollIntoView({ behavior: 'instant', block: 'start' });
+// 8.4. Rodapé ancorado na parte INFERIOR do Slide 5, sem corte e com CNPJ visível
+const footerAnchoringAudit = await pagina.evaluate(async () => {
+  if (typeof window.goToSlide === 'function') {
+    window.goToSlide(5, true);
+  }
   await new Promise(r => setTimeout(r, 600));
 
-  const scrollY = window.scrollY || window.pageYOffset;
-  const innerH = window.innerHeight;
-  const scrollH = document.body.scrollHeight || document.documentElement.scrollHeight;
-  const isAtBottom = (scrollY + innerH) >= (scrollH - 2);
-
+  const slide5 = document.getElementById('slide5');
+  const footer = document.getElementById('siteFooter') || document.querySelector('.clean-footer-bottom');
+  const copyEl = document.querySelector('.footer-copy');
   const legalEl = document.getElementById('footerLegal') || document.querySelector('.footer-legal');
-  const rect = legalEl ? legalEl.getBoundingClientRect() : null;
-  const isCnpjVisible = rect ? (rect.top >= 0 && rect.bottom <= innerH + 10) : false;
+  const firstCol = document.querySelector('.cf-col');
+
+  if (!slide5 || !footer || !copyEl || !legalEl) return { exists: false };
+
+  const innerH = window.innerHeight;
+  const footerRect = footer.getBoundingClientRect();
+  const copyRect = copyEl.getBoundingClientRect();
+  const legalRect = legalEl.getBoundingClientRect();
+  const firstColRect = firstCol ? firstCol.getBoundingClientRect() : null;
+
+  // 1. O primeiro elemento visível do rodapé começa abaixo do header fixo (top >= 80px)
+  const isTopClearOfHeader = firstColRect ? firstColRect.top >= 75 : true;
+
+  // 2. O último elemento (copyright) termina a <= 24px da borda inferior
+  const bottomGap = innerH - copyRect.bottom;
+  const isAnchoredToBottom = bottomGap >= 0 && bottomGap <= 24;
+
+  // 3. CNPJ e Razão Social visíveis diretamente na viewport sem rolagem
+  const isCnpjVisible = legalRect.top >= 0 && legalRect.bottom <= innerH;
 
   return {
     exists: true,
-    isInsideSlide: !!slide5.querySelector('#siteFooter, footer'),
-    scrollY,
-    innerH,
-    scrollH,
-    isAtBottom,
-    isCnpjVisible
+    isTopClearOfHeader,
+    isAnchoredToBottom,
+    isCnpjVisible,
+    bottomGap: Math.round(bottomGap),
+    firstColTop: firstColRect ? Math.round(firstColRect.top) : null
   };
 });
 
-checa(footerSnapAudit.exists && footerSnapAudit.isInsideSlide, 'O rodapé é a 6ª seção do snap (#slide5)');
-checa(footerSnapAudit.isAtBottom, 'Sem sobra de rolagem no final: scrollY + innerHeight >= scrollHeight - 2', `scrollY(${footerSnapAudit.scrollY}) + innerH(${footerSnapAudit.innerH}) = ${footerSnapAudit.scrollY + footerSnapAudit.innerH} vs scrollHeight(${footerSnapAudit.scrollH})`);
-checa(footerSnapAudit.isCnpjVisible, 'CNPJ e Razão Social visíveis diretamente no rodapé sem rolagem adicional');
+checa(footerAnchoringAudit.exists && footerAnchoringAudit.isTopClearOfHeader, 'Primeiro elemento do rodapé começa abaixo do cabeçalho fixo (sem cortes no topo)', `top: ${footerAnchoringAudit.firstColTop}px >= 80px`);
+checa(footerAnchoringAudit.exists && footerAnchoringAudit.isAnchoredToBottom, 'Conteúdo do rodapé ancorado na parte inferior (copyright a ≤ 24px da borda)', `distância da borda inferior: ${footerAnchoringAudit.bottomGap}px`);
+checa(footerAnchoringAudit.exists && footerAnchoringAudit.isCnpjVisible, 'CNPJ e Razão Social visíveis diretamente no rodapé');
 
-// 8.5. Validação do Rodapé nas viewports padrão (1366×768, 1536×864, 390×844)
+// 8.5. Validação do Rodapé ancorado nas viewports padrão (1366×768, 1536×864, 390×844)
 const viewportsToTest = [
   { w: 1366, h: 768, name: '1366×768' },
   { w: 1536, h: 864, name: '1536×864' },
@@ -446,25 +465,36 @@ for (const vp of viewportsToTest) {
   await vpPage.goto(BASE, { waitUntil: 'domcontentloaded' });
   await vpPage.waitForTimeout(1000);
   const vpAudit = await vpPage.evaluate(async () => {
-    const slide5 = document.getElementById('slide5');
-    if (!slide5) return null;
-    slide5.scrollIntoView({ behavior: 'instant', block: 'start' });
-    await new Promise(r => setTimeout(r, 500));
-    const scrollY = window.scrollY || window.pageYOffset;
-    const innerH = window.innerHeight;
-    const scrollH = document.body.scrollHeight || document.documentElement.scrollHeight;
+    if (typeof window.goToSlide === 'function') {
+      window.goToSlide(5, true);
+    }
+    await new Promise(r => setTimeout(r, 600));
     const legalEl = document.getElementById('footerLegal') || document.querySelector('.footer-legal');
+    const copyEl = document.querySelector('.footer-copy');
+    const innerH = window.innerHeight;
     const isCnpjPresent = !!legalEl && legalEl.innerText.includes('55.068.034/0001-00');
+    const copyBottom = copyEl ? copyEl.getBoundingClientRect().bottom : null;
+    const isBottomFit = copyBottom !== null ? copyBottom <= innerH + 5 : false;
     return {
-      isAtBottom: (scrollY + innerH) >= (scrollH - 2),
-      isCnpjPresent
+      isCnpjPresent,
+      isBottomFit
     };
   });
-  checa(vpAudit && vpAudit.isCnpjPresent, `Rodapé traz CNPJ e razão social visíveis na viewport ${vp.name}`);
+  checa(vpAudit && vpAudit.isCnpjPresent && vpAudit.isBottomFit, `Rodapé traz CNPJ e razão social ancorados na viewport ${vp.name}`);
   await vpPage.close();
 }
 
-// 8.6. Fundo claro em "Descubra os Tipos" (luminância alta)
+// 8.6. Trilho dos Tipos no DESKTOP (1366px e 1536px) transborda horizontalmente (scrollWidth > clientWidth)
+const desktopTiposAudit = await pagina.evaluate(() => {
+  const rail = document.querySelector('.tipos-rail');
+  if (!rail) return null;
+  return {
+    scrollWidth: rail.scrollWidth,
+    clientWidth: rail.clientWidth,
+    isOverflowing: rail.scrollWidth > rail.clientWidth
+  };
+});
+checa(desktopTiposAudit && desktopTiposAudit.isOverflowing, 'Trilho dos tipos transborda horizontalmente no desktop (scrollWidth > clientWidth)', `scrollWidth: ${desktopTiposAudit?.scrollWidth}px > clientWidth: ${desktopTiposAudit?.clientWidth}px`);
 const tiposBg = await pagina.evaluate(() => {
   const sec = document.querySelector('.tipos-slide') || document.querySelector('#slide2');
   if (!sec) return null;
