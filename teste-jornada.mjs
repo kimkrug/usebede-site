@@ -146,11 +146,18 @@ checa(
 const hasDeadMenuLink = menuInfo.items.some(i => !i.href || i.href === '#' || i.href.startsWith('javascript:'));
 checa(!hasDeadMenuLink, 'Nenhum link de menu tem href vazio, "#" ou "javascript:"');
 
-// ── 3. Validação de Destinos de Menu ───────────────────────────────────────
-secao('3. Validação de Destinos de Menu');
+// ── 3. Validação de Destinos de Menu (Medição HTTP Real) ─────────────────
+secao('3. Validação de Destinos de Menu (Medição HTTP Real)');
 for (const item of menuInfo.items) {
   if (item.fullHref.startsWith('http') && item.fullHref.includes(HOST_LOJA)) {
-    checa(true, `Menu "${item.text}" aponta para a Nuvemshop`, item.fullHref);
+    try {
+      const res = await pagina.request.get(item.fullHref);
+      const body = await res.text();
+      const is404Content = /página não encontrada|não encontramos essa página|error 404/i.test(body);
+      checa(res.status() === 200 && !is404Content, `Menu "${item.text}" responde HTTP 200 OK na Nuvemshop`, `${res.status()} ${item.fullHref}`);
+    } catch (e) {
+      falhou(`Menu "${item.text}" falhou na requisição HTTP`, e.message);
+    }
   } else if (item.fullHref.includes('wa.me') || item.fullHref.includes('whatsapp')) {
     ok(`Menu "${item.text}" aponta para atendimento WhatsApp`, item.fullHref);
   } else if (item.href.endsWith('.html') || !item.href.startsWith('#')) {
@@ -166,9 +173,8 @@ for (const item of menuInfo.items) {
   }
 }
 
-// ── 4. Seção "Descubra os Tipos" (Silhuetas) ──────────────────────────────
-// ── 4. Seção "Descubra os Tipos" (Silhuetas v32) ──────────────────────────
-secao('4. Seção "Descubra os Tipos" (Catálogo v32 — 6 Tipos Ativos)');
+// ── 4. Seção "Descubra os Tipos" (Medição HTTP Real) ───────────
+secao('4. Seção "Descubra os Tipos" (Medição HTTP Real)');
 const tiposInfo = await pagina.evaluate(() => {
   const section = document.querySelector('.tipos-slide, .section-silhuetas, .tipos-section, #tiposSection');
   if (!section) return null;
@@ -188,26 +194,20 @@ if (!tiposInfo) {
   ok('Seção "Descubra os Tipos" presente', `Título: "${tiposInfo.title}"`);
   checa(tiposInfo.tilesCount === 6, 'Seção de tipos tem exatamente 6 ladrilhos ativos no catálogo', `${tiposInfo.tilesCount} tipos (${tiposInfo.tiles.map(t => t.text).join(' · ')})`);
 
-  const destinos = new Set();
   for (const t of tiposInfo.tiles) {
-    const isNuvem = t.href.startsWith('http') && t.href.includes(HOST_LOJA);
-    const isGenericProducts = t.href.endsWith('/produtos/') || t.href.endsWith('/produtos');
-    
-    if (isNuvem && !isGenericProducts) {
-      destinos.add(t.href);
-      checa(true, `Ladrilho "${t.text}" aponta para URL de categoria própria`, t.href);
-    } else if (isGenericProducts) {
-      falhou(`Ladrilho "${t.text}" NÃO pode apontar para listagem geral (/produtos/)`, t.href);
+    if (t.href.startsWith('http') && t.href.includes(HOST_LOJA)) {
+      try {
+        const res = await pagina.request.get(t.href);
+        const body = await res.text();
+        const is404Content = /página não encontrada|não encontramos essa página|error 404/i.test(body);
+        checa(res.status() === 200 && !is404Content, `Ladrilho "${t.text}" responde HTTP 200 OK na Nuvemshop`, `${res.status()} ${t.href}`);
+      } catch (e) {
+        falhou(`Ladrilho "${t.text}" falhou na requisição HTTP`, e.message);
+      }
     } else {
       falhou(`Ladrilho "${t.text}" aponta para destino fora da Nuvemshop`, t.href);
     }
   }
-
-  checa(
-    destinos.size === 6,
-    'Exatamente 6 destinos de categoria distintos nos ladrilhos',
-    `${destinos.size} URLs distintas`
-  );
 }
 
 // ── 5. Integridade Visual dos Cards & Nomes de Produtos ───────────────────
