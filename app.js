@@ -50,7 +50,7 @@ window.irParaLoja = function(url) {
   // ── STATE ──────────────────────────────────────────────────
   const S = {
     slide: 0,
-    total: 5,
+    total: 6,
     busy: false,
     collOpen: false,
     filter: 'ALL',
@@ -83,7 +83,7 @@ window.irParaLoja = function(url) {
     whatsappFormatado: CFG_SRC.whatsapp || '(51) 98015-0391',
     descontoPix: CFG_SRC.descontoPix !== undefined ? CFG_SRC.descontoPix : 5,
     primeiraTrocaGratisDias: CFG_SRC.primeiraTrocaGratisDias !== undefined ? CFG_SRC.primeiraTrocaGratisDias : null,
-    freteGratisAcimaDe: CFG_SRC.freteGratisAcimaDe !== undefined ? CFG_SRC.freteGratisAcimaDe : 449,
+    freteGratisAcimaDe: CFG_SRC.freteGratisAcimaDe !== undefined ? CFG_SRC.freteGratisAcimaDe : 599,
     freteGratisRegioes: CFG_SRC.freteGratisRegioes || [],
     freteGratisEstados: CFG_SRC.freteGratisEstados || [],
     parcelamentoMax: CFG_SRC.parcelamentoMax !== undefined ? CFG_SRC.parcelamentoMax : 6,
@@ -158,18 +158,16 @@ window.irParaLoja = function(url) {
 
     // ── INJEÇÃO DINÂMICA DE PROMESSAS COMERCIAIS ─────────────
   function aplicarConfigLoja() {
-    // 1. Barra superior / Home
+    // 1. Barra superior / Home — 3 promessas exatas da v34
     const homeBar = $('homeBarClaims');
     if (homeBar) {
-      homeBar.textContent = CFG.parcelamentoMax
-        ? `Frete grátis acima de R$ ${CFG.freteGratisAcimaDe} · até ${CFG.parcelamentoMax}x`
-        : `Frete grátis acima de R$ ${CFG.freteGratisAcimaDe} · ⚡ ${CFG.descontoPix}% no PIX`;
+      homeBar.textContent = `Frete grátis a partir de R$ ${CFG.freteGratisAcimaDe} · Até ${CFG.parcelamentoMax}x sem juros · ${CFG.descontoPix}% de desconto no PIX`;
     }
 
     // 2. Gaveta Mobile
     const mobClaims = $('mobDrawerClaims');
     if (mobClaims) {
-      mobClaims.textContent = CFG.parcelamentoMax ? `Boutique em Viamão · RS · até ${CFG.parcelamentoMax}x sem juros` : `Boutique em Viamão · RS`;
+      mobClaims.textContent = `Frete grátis a partir de R$ ${CFG.freteGratisAcimaDe} · Até ${CFG.parcelamentoMax}x sem juros · ${CFG.descontoPix}% no PIX`;
     }
     const mobWa = $('mobDrawerWa');
     if (mobWa) {
@@ -236,7 +234,7 @@ window.irParaLoja = function(url) {
   }
 
   // ============================================================
-  // NAVEGAÇÃO DE SEÇÕES E HEADER FLUIDO
+  // NAVEGAÇÃO DE SEÇÕES E HEADER FLUIDO (6 SLIDES)
   // ============================================================
   window.goToSlide = function (idx, instant) {
     if (S.collOpen) return;
@@ -278,9 +276,9 @@ window.irParaLoja = function(url) {
         }
       }
 
-      // Mapeamento dos slides reais (0 a 4)
-      const slides = [0, 1, 2, 3, 4].map(i => document.getElementById('slide' + i)).filter(Boolean);
-      const viewportMid = scrollY + window.innerHeight * 0.35;
+      // Mapeamento dos slides reais (0 a 5)
+      const slides = [0, 1, 2, 3, 4, 5].map(i => document.getElementById('slide' + i)).filter(Boolean);
+      const viewportMid = scrollY + window.innerHeight * 0.45;
       
       let activeIdx = 0;
       slides.forEach((sl, idx) => {
@@ -295,6 +293,19 @@ window.irParaLoja = function(url) {
     };
 
     window.addEventListener('scroll', updateScrollState, { passive: true });
+    
+    window.addEventListener('keydown', e => {
+      if (S.collOpen) return;
+      if (e.key === 'ArrowDown' || e.key === 'PageDown') {
+        e.preventDefault();
+        goToSlide(S.slide + 1);
+      }
+      if (e.key === 'ArrowUp' || e.key === 'PageUp') {
+        e.preventDefault();
+        goToSlide(S.slide - 1);
+      }
+    });
+
     updateScrollState();
   }
 
@@ -1557,7 +1568,7 @@ window.irParaLoja = function(url) {
           </div>
           <div>
             <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">3. Qual é o prazo de entrega?</h5>
-            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">O prazo de entrega é informado no fechamento do pedido, conforme o CEP de entrega. Compras acima de R$ 449 têm frete grátis.</p>
+            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">O prazo de entrega é informado no fechamento do pedido, conforme o CEP de entrega. Compras a partir de R$ ${CFG.freteGratisAcimaDe} têm frete grátis.</p>
           </div>
           <div>
             <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">4. Posso retirar meu pedido na loja física?</h5>

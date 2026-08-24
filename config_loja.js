@@ -11,7 +11,7 @@ const CFG_LOJA = {
     whatsapp: '(51) 98015-0391',
     descontoPix: 5,
     primeiraTrocaGratisDias: null,
-    freteGratisAcimaDe: 449,
+    freteGratisAcimaDe: 599,
     freteGratisRegioes: [],
     freteGratisEstados: [],
     parcelamentoMax: 6,

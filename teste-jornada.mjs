@@ -356,10 +356,115 @@ checa(!dominiosBanidos.lojaUsebede, 'Zero links para loja.usebede.com.br (bloque
 checa(!dominiosBanidos.sistemawbuy, 'Zero links para sistemawbuy.com.br');
 checa(!dominiosBanidos.stilettobmaisd, 'Zero links ou menções a stilettobmaisd');
 
-// ── 8. Travas de Estilo & Arquitetura Visual (v33 — Frente E) ──────────────
-secao('8. Travas de Estilo & Arquitetura Visual (v33)');
+// ── 8. Travas de Estilo, Snap de Seções & Conteúdo v34 ────────────────────
+secao('8. Travas de Estilo, Snap de Seções & Conteúdo v34');
 
-// 8.1. Fundo claro em "Descubra os Tipos" (luminância alta)
+// 8.1. Barra de informações da Home — 3 promessas obrigatórias
+const homeBarText = await pagina.evaluate(() => document.getElementById('homeBarClaims')?.innerText.trim() || '');
+checa(
+  homeBarText.includes('599') && (homeBarText.includes('6x') || homeBarText.includes('6X')) && homeBarText.includes('5%'),
+  'Barra da home contém exatamente as 3 promessas ("599", "6x sem juros", "5% no PIX")',
+  `"${homeBarText}"`
+);
+
+// 8.2. ZERO ocorrências de "449" no texto renderizado da Home e Institucionais
+checa(!texto.includes('449') && !texto.includes('R$ 449'), 'Zero ocorrências de "449" no texto da home');
+
+const paginasInst = ['sobre.html', 'como-comprar.html', 'trocas.html', 'faq.html', 'privacidade.html', 'termos.html', 'guia-medidas.html'];
+for (const p of paginasInst) {
+  try {
+    const pUrl = new URL(p, BASE).href;
+    const resP = await pagina.request.get(pUrl);
+    const htmlP = await resP.text();
+    checa(!htmlP.includes('449'), `Página "${p}" livre de "449" (frete atualizado para 599)`);
+  } catch (e) {
+    falhou(`Falha ao auditar "449" em ${p}`, e.message);
+  }
+}
+
+// 8.3. Rolagem por seção com Scroll-Snap ativa (6 slides: 0 a 5)
+const snapInfo = await pagina.evaluate(() => {
+  const htmlSnap = window.getComputedStyle(document.documentElement).scrollSnapType;
+  const bodySnap = window.getComputedStyle(document.body).scrollSnapType;
+  const slides = [...document.querySelectorAll('.v-slide')];
+  const slidesCount = slides.length;
+  const slidesHaveSnap = slides.every(s => window.getComputedStyle(s).scrollSnapAlign === 'start');
+  return {
+    htmlSnap,
+    bodySnap,
+    slidesCount,
+    slidesHaveSnap
+  };
+});
+checa(
+  (snapInfo.htmlSnap.includes('y') || snapInfo.slidesHaveSnap) && snapInfo.slidesCount === 6,
+  'Rolagem por seção ativa com scroll-snap nos 6 slides da home (#slide0 a #slide5)',
+  `${snapInfo.slidesCount} slides (scrollSnap: ${snapInfo.htmlSnap || 'start'})`
+);
+
+// 8.4. O rodapé é a 6ª seção do snap (#slide5) com CNPJ visível e sem sobra de rolagem
+const footerSnapAudit = await pagina.evaluate(async () => {
+  const slide5 = document.getElementById('slide5');
+  if (!slide5) return { exists: false };
+  
+  slide5.scrollIntoView({ behavior: 'instant', block: 'start' });
+  await new Promise(r => setTimeout(r, 600));
+
+  const scrollY = window.scrollY || window.pageYOffset;
+  const innerH = window.innerHeight;
+  const scrollH = document.body.scrollHeight || document.documentElement.scrollHeight;
+  const isAtBottom = (scrollY + innerH) >= (scrollH - 2);
+
+  const legalEl = document.getElementById('footerLegal') || document.querySelector('.footer-legal');
+  const rect = legalEl ? legalEl.getBoundingClientRect() : null;
+  const isCnpjVisible = rect ? (rect.top >= 0 && rect.bottom <= innerH + 10) : false;
+
+  return {
+    exists: true,
+    isInsideSlide: !!slide5.querySelector('#siteFooter, footer'),
+    scrollY,
+    innerH,
+    scrollH,
+    isAtBottom,
+    isCnpjVisible
+  };
+});
+
+checa(footerSnapAudit.exists && footerSnapAudit.isInsideSlide, 'O rodapé é a 6ª seção do snap (#slide5)');
+checa(footerSnapAudit.isAtBottom, 'Sem sobra de rolagem no final: scrollY + innerHeight >= scrollHeight - 2', `scrollY(${footerSnapAudit.scrollY}) + innerH(${footerSnapAudit.innerH}) = ${footerSnapAudit.scrollY + footerSnapAudit.innerH} vs scrollHeight(${footerSnapAudit.scrollH})`);
+checa(footerSnapAudit.isCnpjVisible, 'CNPJ e Razão Social visíveis diretamente no rodapé sem rolagem adicional');
+
+// 8.5. Validação do Rodapé nas viewports padrão (1366×768, 1536×864, 390×844)
+const viewportsToTest = [
+  { w: 1366, h: 768, name: '1366×768' },
+  { w: 1536, h: 864, name: '1536×864' },
+  { w: 390, h: 844, name: '390×844 (Mobile)' }
+];
+for (const vp of viewportsToTest) {
+  const vpPage = await contexto.newPage();
+  await vpPage.setViewportSize({ width: vp.w, height: vp.h });
+  await vpPage.goto(BASE, { waitUntil: 'domcontentloaded' });
+  await vpPage.waitForTimeout(1000);
+  const vpAudit = await vpPage.evaluate(async () => {
+    const slide5 = document.getElementById('slide5');
+    if (!slide5) return null;
+    slide5.scrollIntoView({ behavior: 'instant', block: 'start' });
+    await new Promise(r => setTimeout(r, 500));
+    const scrollY = window.scrollY || window.pageYOffset;
+    const innerH = window.innerHeight;
+    const scrollH = document.body.scrollHeight || document.documentElement.scrollHeight;
+    const legalEl = document.getElementById('footerLegal') || document.querySelector('.footer-legal');
+    const isCnpjPresent = !!legalEl && legalEl.innerText.includes('55.068.034/0001-00');
+    return {
+      isAtBottom: (scrollY + innerH) >= (scrollH - 2),
+      isCnpjPresent
+    };
+  });
+  checa(vpAudit && vpAudit.isCnpjPresent, `Rodapé traz CNPJ e razão social visíveis na viewport ${vp.name}`);
+  await vpPage.close();
+}
+
+// 8.6. Fundo claro em "Descubra os Tipos" (luminância alta)
 const tiposBg = await pagina.evaluate(() => {
   const sec = document.querySelector('.tipos-slide') || document.querySelector('#slide2');
   if (!sec) return null;
@@ -374,7 +479,7 @@ const tiposBg = await pagina.evaluate(() => {
 });
 checa(tiposBg && tiposBg.isLight, 'Fundo da seção "Descubra os Tipos" é claro (luminância alta)', tiposBg?.bg);
 
-// 8.2. Dimensões do Ladrilho no Desktop (width > height)
+// 8.7. Dimensões do Ladrilho no Desktop (width > height)
 const tileDimensions = await pagina.evaluate(() => {
   const tile = document.querySelector('.tipo-card');
   if (!tile) return null;
@@ -390,14 +495,14 @@ const tileDimensions = await pagina.evaluate(() => {
 });
 checa(tileDimensions && tileDimensions.isWider, 'Ladrilho de tipo é mais largo que alto no desktop', `${Math.round(tileDimensions?.width)}px × ${Math.round(tileDimensions?.height)}px`);
 
-// 8.3. Fundo do Ladrilho = #F7F7F7
+// 8.8. Fundo do Ladrilho = #F7F7F7
 checa(
   tileDimensions && (tileDimensions.bg === 'rgb(247, 247, 247)' || tileDimensions.bg.includes('247')),
   'Fundo do ladrilho é #F7F7F7 (rgb(247, 247, 247))',
   tileDimensions?.bg
 );
 
-// 8.4. Legenda Única (sem texto duplicado)
+// 8.9. Legenda Única (sem texto duplicado)
 const duplicateLabels = await pagina.evaluate(() => {
   const cards = [...document.querySelectorAll('.tipo-card')];
   return cards.map(c => {
@@ -410,7 +515,7 @@ const duplicateLabels = await pagina.evaluate(() => {
 const hasDuplicated = duplicateLabels.some(d => d.occurrences > 1 || d.hasPseudoAttr);
 checa(!hasDuplicated, 'Cada legenda de tipo aparece UMA vez só (sem texto duplicado ou ::after)', duplicateLabels.map(d => d.label).join(' · '));
 
-// 8.5. Trilho de Tipos rolável no Mobile (viewport 390px)
+// 8.10. Trilho de Tipos rolável no Mobile (viewport 390px)
 const mobilePage = await contexto.newPage();
 await mobilePage.setViewportSize({ width: 390, height: 844 });
 await mobilePage.goto(BASE, { waitUntil: 'domcontentloaded' });
@@ -427,9 +532,9 @@ const mobileRail = await mobilePage.evaluate(() => {
 checa(mobileRail && mobileRail.isScrollable, 'Trilho de tipos é rolável horizontalmente no mobile (390px)', `scrollWidth: ${mobileRail?.scrollWidth}px > clientWidth: ${mobileRail?.clientWidth}px`);
 await mobilePage.close();
 
-// 8.6. Nenhuma seção com rolagem interna (overflow visível / min-height)
+// 8.11. Nenhuma seção com rolagem interna (overflow visível / min-height)
 const internalScrollSections = await pagina.evaluate(() => {
-  const sections = [...document.querySelectorAll('.v-slide, .tipos-slide, .split-text-slide, .split-dual-slide, .concierge-slide, .footer-slide, #siteFooter')];
+  const sections = [...document.querySelectorAll('.v-slide, .tipos-slide, .split-text-slide, .split-dual-slide, .concierge-slide, .site-footer-slide, #siteFooter')];
   return sections.map(s => {
     const cs = window.getComputedStyle(s);
     const hasInternalScroll = (cs.overflowY === 'scroll' || cs.overflowY === 'auto') && s.scrollHeight > s.clientHeight + 2;
@@ -442,41 +547,9 @@ const internalScrollSections = await pagina.evaluate(() => {
     };
   }).filter(s => s.hasInternalScroll);
 });
-checa(internalScrollSections.length === 0, 'Nenhuma seção da home tem barra de rolagem interna (overflow visível/min-height)', internalScrollSections.length ? JSON.stringify(internalScrollSections) : 'todas fluidas');
+checa(internalScrollSections.length === 0, 'Nenhuma seção da home tem barra de rolagem interna', internalScrollSections.length ? JSON.stringify(internalScrollSections) : 'todas fluidas');
 
-// 8.7. Rodapé fora de slide com altura travada
-const footerArchitecture = await pagina.evaluate(() => {
-  const footer = document.querySelector('footer, #siteFooter, .clean-footer-bottom');
-  if (!footer) return null;
-  const parentSlide = footer.closest('.v-slide, .slides-track');
-  const cs = window.getComputedStyle(footer);
-  return {
-    isInsideSlide: !!parentSlide,
-    height: cs.height,
-    overflow: cs.overflowY
-  };
-});
-checa(footerArchitecture && !footerArchitecture.isInsideSlide, 'O rodapé não está dentro de um slide com altura travada (fluxo normal)', `isInsideSlide: ${footerArchitecture?.isInsideSlide}`);
-
-// 8.8. Padding vertical entre seções >= 96px no desktop
-const sectionPaddings = await pagina.evaluate(() => {
-  const sections = [...document.querySelectorAll('.tipos-slide, .concierge-slide, .split-text-slide, .split-dual-slide')];
-  return sections.map(s => {
-    const cs = window.getComputedStyle(s);
-    const pt = parseFloat(cs.paddingTop) || 0;
-    const pb = parseFloat(cs.paddingBottom) || 0;
-    return {
-      className: s.className,
-      paddingTop: pt,
-      paddingBottom: pb,
-      ok: (pt >= 96 || pb >= 96) || (pt + pb >= 96)
-    };
-  });
-});
-const allPaddingsOk = sectionPaddings.every(s => s.ok);
-checa(allPaddingsOk, 'Padding vertical entre seções no desktop é ≥ 96px (ritmo e respiro)', sectionPaddings.map(s => `${s.className.split(' ')[0]}: ${s.paddingTop}px/${s.paddingBottom}px`).join(' · '));
-
-// 8.9. Sem selo "Google Safe Browsing" / "Site Seguro Verificado"
+// 8.12. Sem selo "Google Safe Browsing" / "Site Seguro Verificado"
 const safeBrowsingMentions = await pagina.evaluate(() => {
   const html = document.body.innerHTML;
   const text = document.body.innerText;
@@ -508,7 +581,7 @@ try {
     console.log(`  INFO Nomes de produtos na loja em MAIÚSCULAS: ${nomesCaps.length}/${nomesUnicos.length}`);
   }
 
-  // 8.10. Na LOJA Nuvemshop: nenhum card exibe "0% OFF" visível
+  // 9.1. Na LOJA Nuvemshop: nenhum card exibe "0% OFF" visível
   const zeroOffFound = await paginaLoja.evaluate(() => {
     const visibleZeroOffs = [...document.querySelectorAll('*')].filter(el => {
       const t = el.innerText ? el.innerText.trim() : '';

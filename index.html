@@ -139,13 +139,14 @@
     </div>
   </aside>
 
-  <!-- ── DOTS DE NAVEGAÇÃO LATERAL (5 SLIDES) ─────────────────── -->
+  <!-- ── DOTS DE NAVEGAÇÃO LATERAL (6 SLIDES COM SNAP) ───────── -->
   <nav class="slide-dots" id="slideDots" aria-label="Navegação de slides">
-    <button class="s-dot active" onclick="goToSlide(0)" aria-label="Slide 1"></button>
-    <button class="s-dot" onclick="goToSlide(1)" aria-label="Slide 2"></button>
-    <button class="s-dot" onclick="goToSlide(2)" aria-label="Slide 3"></button>
-    <button class="s-dot" onclick="goToSlide(3)" aria-label="Slide 4"></button>
-    <button class="s-dot" onclick="goToSlide(4)" aria-label="Slide 5"></button>
+    <button class="s-dot active" onclick="goToSlide(0)" aria-label="Slide 1 — Hero"></button>
+    <button class="s-dot" onclick="goToSlide(1)" aria-label="Slide 2 — Categorias"></button>
+    <button class="s-dot" onclick="goToSlide(2)" aria-label="Slide 3 — Tipos"></button>
+    <button class="s-dot" onclick="goToSlide(3)" aria-label="Slide 4 — Liquidação"></button>
+    <button class="s-dot" onclick="goToSlide(4)" aria-label="Slide 5 — Atendimento"></button>
+    <button class="s-dot" onclick="goToSlide(5)" aria-label="Slide 6 — Informações e Rodapé"></button>
   </nav>
 
   <!-- ── BOTÃO FLUTUANTE WHATSAPP (VERDE COM BORDA BRANCA FINA, SEM SOMBRA) ────── -->
@@ -321,74 +322,74 @@
         </div>
       </section>
 
+      <!-- ── SLIDE 5: RODAPÉ INSTITUCIONAL (SEÇÃO PRÓPRIA DO SNAP) ── -->
+      <section class="v-slide site-footer-slide" id="slide5" aria-label="Rodapé Institucional">
+        <footer class="clean-footer-bottom site-footer" id="siteFooter">
+          <div class="clean-footer">
+
+            <!-- COLUNA 1: MARCA & INSTAGRAM -->
+            <div class="cf-col">
+              <div class="cf-logo">
+                <img src="assets/brand/logo_bede_preto.svg"
+                     alt="BEDÊ"
+                     onerror="this.style.display='none'">
+              </div>
+              <p class="cf-desc">Calçados e bolsas femininas com curadoria, design autoral e alto conforto.</p>
+              <div class="cf-social-links">
+                <a href="https://www.instagram.com/usebede.com.br/" target="_blank" rel="noopener" class="cf-social-btn" aria-label="Instagram BEDÊ">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                  <span>@usebede.com.br</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- COLUNA 2: INSTITUCIONAL & POLÍTICAS -->
+            <div class="cf-col">
+              <h4>Institucional</h4>
+              <a href="sobre.html">Sobre a BEDÊ</a>
+              <a href="como-comprar.html">Como Comprar</a>
+              <a href="trocas.html">Trocas & Devoluções</a>
+              <a href="faq.html">Perguntas Frequentes (FAQ)</a>
+              <a href="privacidade.html">Política de Privacidade</a>
+              <a href="termos.html">Termos de Compra e Uso</a>
+              <a href="guia-medidas.html">Guia de Numeração e Medidas</a>
+            </div>
+
+            <!-- COLUNA 3: ATENDIMENTO & LOCALIZAÇÃO -->
+            <div class="cf-col">
+              <h4>Atendimento</h4>
+              <a href="https://wa.me/5551980150391?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20BED%C3%8A." id="footerWa" target="_blank" rel="noopener" style="font-weight:600;color:var(--color-text);">WhatsApp: (51) 98015-0391</a>
+              <p id="footerAddress"></p>
+              <p>Centro · Viamão / RS</p>
+              <p id="footerHorario"></p>
+            </div>
+
+          </div>
+
+          <!-- BANDEIRAS DE PAGAMENTO (UMA VEZ SÓ, SEM SELOS INVENTADOS) -->
+          <div class="footer-trust-row">
+            <div class="payment-methods">
+              <span class="pay-label">Formas de Pagamento:</span>
+              <div class="pay-icons">
+                <span class="pay-tag" id="footerPixTag">PIX 5% OFF</span>
+                <span class="pay-tag" id="footerCartaoTag">Cartão em até 6x</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-legal-bar">
+            <p class="footer-legal" id="footerLegal"></p>
+            <p class="footer-copy">© 2026 BEDÊ. Todos os direitos reservados.</p>
+          </div>
+        </footer>
+      </section>
+
     </div><!-- /slides-track -->
   </div><!-- /viewport-stage -->
-
-  <!-- ============================================================
-       RODAPÉ REAL — FLUXO NORMAL DO DOCUMENTO
-  ============================================================ -->
-  <footer class="clean-footer-bottom site-footer" id="siteFooter">
-    <div class="clean-footer">
-
-      <!-- COLUNA 1: MARCA & INSTAGRAM -->
-      <div class="cf-col">
-        <div class="cf-logo">
-          <img src="assets/brand/logo_bede_preto.svg"
-               alt="BEDÊ"
-               onerror="this.style.display='none'">
-        </div>
-        <p class="cf-desc">Calçados e bolsas femininas com curadoria, design autoral e alto conforto.</p>
-        <div class="cf-social-links">
-          <a href="https://www.instagram.com/usebede.com.br/" target="_blank" rel="noopener" class="cf-social-btn" aria-label="Instagram BEDÊ">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
-            <span>@usebede.com.br</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- COLUNA 2: INSTITUCIONAL & POLÍTICAS -->
-      <div class="cf-col">
-        <h4>Institucional</h4>
-        <a href="sobre.html">Sobre a BEDÊ</a>
-        <a href="como-comprar.html">Como Comprar</a>
-        <a href="trocas.html">Trocas & Devoluções</a>
-        <a href="faq.html">Perguntas Frequentes (FAQ)</a>
-        <a href="privacidade.html">Política de Privacidade</a>
-        <a href="termos.html">Termos de Compra e Uso</a>
-        <a href="guia-medidas.html">Guia de Numeração e Medidas</a>
-      </div>
-
-      <!-- COLUNA 3: ATENDIMENTO & LOCALIZAÇÃO -->
-      <div class="cf-col">
-        <h4>Atendimento</h4>
-        <a href="https://wa.me/5551980150391?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20BED%C3%8A." id="footerWa" target="_blank" rel="noopener" style="font-weight:600;color:var(--color-text);">WhatsApp: (51) 98015-0391</a>
-        <p id="footerAddress"></p>
-        <p>Centro · Viamão / RS</p>
-        <p id="footerHorario"></p>
-      </div>
-
-    </div>
-
-    <!-- BANDEIRAS DE PAGAMENTO (UMA VEZ SÓ, SEM SELOS INVENTADOS) -->
-    <div class="footer-trust-row">
-      <div class="payment-methods">
-        <span class="pay-label">Formas de Pagamento:</span>
-        <div class="pay-icons">
-          <span class="pay-tag" id="footerPixTag">PIX 5% OFF</span>
-          <span class="pay-tag" id="footerCartaoTag">Cartão em até 6x</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-legal-bar">
-      <p class="footer-legal" id="footerLegal"></p>
-      <p class="footer-copy">© 2026 BEDÊ. Todos os direitos reservados.</p>
-    </div>
-  </footer>
 
 
   <!-- ============================================================
