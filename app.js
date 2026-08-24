@@ -4,7 +4,7 @@
  */
 
 // ── OVERLAY DE TRANSIÇÃO PARA wBUY ─────────────────────────────
-// Intercepta qualquer navegação para loja.usebede.com.br e exibe
+// Intercepta qualquer navegação para bedestiletto.lojavirtualnuvem.com.br e exibe
 // um overlay BEDÊ por ~700ms antes de redirecionar — criando a
 // ilusão de continuidade entre os dois domínios.
 window.irParaLoja = function(url) {
@@ -87,7 +87,7 @@ window.irParaLoja = function(url) {
     freteGratisRegioes: CFG_SRC.freteGratisRegioes || [],
     freteGratisEstados: CFG_SRC.freteGratisEstados || [],
     parcelamentoMax: CFG_SRC.parcelamentoMax !== undefined ? CFG_SRC.parcelamentoMax : 6,
-    dominioLoja: CFG_SRC.dominioLoja || 'https://loja.usebede.com.br',
+    dominioLoja: CFG_SRC.dominioLoja || 'https://bedestiletto.lojavirtualnuvem.com.br',
     horario: 'Segunda a Sábado · 9h às 19h'
   };
   const WA = CFG.whatsapp;
@@ -1171,13 +1171,13 @@ window.irParaLoja = function(url) {
    *    oculto contornam o bloqueio de CORS do navegador.
    * 
    * 2. COOKIES DE MESMO SITE (eTLD+1):
-   *    Como o site (www.usebede.com.br) e a loja (loja.usebede.com.br)
+   *    Como o site (www.usebede.com.br) e a loja (bedestiletto.lojavirtualnuvem.com.br)
    *    compartilham o domínio raiz "usebede.com.br", os cookies de sessão da
    *    loja trafegam com os formulários POST sem serem classificados como
    *    cookies de terceiros (Third-Party Cookies).
    * 
    * 3. CONTRATO DO ENDPOINT WBUY:
-   *    POST https://loja.usebede.com.br/shop_func.php
+   *    POST https://bedestiletto.lojavirtualnuvem.com.br/shop_func.php
    *    - funcao=adicionar_produto
    *    - sku={sku}
    *    - quantidade={qty}
@@ -1192,7 +1192,7 @@ window.irParaLoja = function(url) {
    * =========================================================================
    */
   async function enviarParaLoja(itens, triggerBtn) {
-    const LOJA = CFG.dominioLoja || 'https://loja.usebede.com.br';
+    const LOJA = CFG.dominioLoja || 'https://bedestiletto.lojavirtualnuvem.com.br';
     const btn = triggerBtn || document.getElementById('cartCheckoutLoja');
 
     // Validação estrita: enviar apenas SKUs reais que existem no catálogo carregado
@@ -1442,7 +1442,7 @@ window.irParaLoja = function(url) {
       } catch (e) {}
 
       if (enviadoRecente) {
-        const LOJA = CFG.dominioLoja || 'https://loja.usebede.com.br';
+        const LOJA = CFG.dominioLoja || 'https://bedestiletto.lojavirtualnuvem.com.br';
         D.cartBody.innerHTML = `
           <div style="text-align:center;padding:2.5rem 1rem;color:#000404;">
             <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#000404" stroke-width="1.5" style="margin-bottom:14px;">

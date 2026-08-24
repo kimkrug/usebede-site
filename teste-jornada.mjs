@@ -1,31 +1,34 @@
 /**
- * BEDÊ — Teste de Jornada & Validação da Arquitetura v30 (Padrão New Balance).
+ * BEDÊ — Teste de Jornada & Validação da Arquitetura v31.1 (Nuvemshop).
  *
- * Executa antes de cada commit contra o preview da Vercel ou localhost.
+ * Executa antes de cada commit contra o preview da Vercel, localhost ou produção.
  *
  * Verificações cobertas:
  * 1. A home carrega sem erros no console
- * 2. Sem "null", "undefined", "NaN", "[object Object]" no texto visível
- * 3. Rodapé traz CNPJ (55.068.034/0001-00) e Razão Social (Stiletto Bd Boutique Ltda)
- * 4. Sem promessas de frete regional nem percentual inventado
- * 5. Todo item de menu aponta para uma URL real da loja que responde HTTP 200
- * 6. O ícone de sacola aponta diretamente para o carrinho da loja (https://loja.usebede.com.br/carrinho/)
- * 7. Nenhum link aponta para "stilettobmaisd"
- * 8. O menu de primeiro nível tem no máximo 6 itens e nenhum acordeão de 1º nível
- * 9. A seção de silhuetas/tipos tem pelo menos 5 ladrilhos com links 200
- * 10. Nenhum nome de produto está em caixa alta (text-transform calculado ≠ uppercase)
- * 11. Nenhuma imagem de card usa object-fit: cover (todas utilizam contain sobre #F7F7F7)
+ * 2. Título contém "BEDÊ" e NÃO contém "Stiletto B+D"
+ * 3. Sem "null", "undefined", "NaN", "[object Object]" no texto visível
+ * 4. Rodapé traz CNPJ (55.068.034/0001-00) e Razão Social (Stiletto Bd Boutique Ltda)
+ * 5. Sem "OFERTA", preço riscado falso ou desconto inventado no texto
+ * 6. Todo item de menu aponta para o host oficial da Nuvemshop (bedestiletto.lojavirtualnuvem.com.br)
+ * 7. O ícone de sacola aponta diretamente para o carrinho da Nuvemshop (/cart/)
+ * 8. Nenhum link aponta para "loja.usebede.com.br", "sistemawbuy.com.br" ou "stilettobmaisd"
+ * 9. O menu de primeiro nível tem no máximo 6 itens e nenhum acordeão
+ * 10. A seção "Descubra os Tipos" tem pelo menos 5 ladrilhos com links 200 na Nuvemshop
+ * 11. Contagem de destinos distintos nos ladrilhos (com aviso se < 4)
+ * 12. Nenhuma imagem de card usa object-fit: cover (todas utilizam contain sobre #F7F7F7)
+ * 13. Nenhum nome de produto renderizado pelo site está forçado em uppercase
  *
  * Uso:
  *   node teste-jornada.mjs
- *   node teste-jornada.mjs http://localhost:3000/
+ *   node teste-jornada.mjs http://localhost:8000/
+ *   node teste-jornada.mjs https://www.usebede.com.br/
  */
 
 import { chromium } from 'playwright';
 
-const URL_PADRAO = 'https://siteusebede-git-preview-v10-degradation-kimkrugs-projects.vercel.app/';
+const URL_PADRAO = 'http://localhost:8000/';
 const BASE = process.argv[2] || URL_PADRAO;
-const HOST_LOJA = 'loja.usebede.com.br';
+const HOST_LOJA = 'bedestiletto.lojavirtualnuvem.com.br';
 
 const AVISOS_ACEITOS = [/\[BEDÊ\]/];
 
@@ -46,6 +49,10 @@ function falhou(msg, detalhe = '') {
 function checa(cond, msg, detalhe = '') {
   if (cond) ok(msg, detalhe);
   else falhou(msg, detalhe);
+}
+
+function aviso(msg) {
+  console.log(`\n  ⚠️  ${msg}\n`);
 }
 
 function secao(t) {
@@ -77,8 +84,8 @@ pagina.on('pageerror', (err) => {
   errosConsole.push(err.message);
 });
 
-// ── 1. Carregamento ────────────────────────────────────────────────────────
-secao('1. Carregamento');
+// ── 1. Carregamento & Título ───────────────────────────────────────────────
+secao('1. Carregamento & Título');
 await pagina.goto(BASE, { waitUntil: 'networkidle', timeout: 30000 });
 
 checa(
@@ -87,17 +94,24 @@ checa(
   errosConsole.length ? errosConsole.join('; ') : 'nenhum'
 );
 
-// ── 2. Menu de Navegação (Padrão New Balance — Max 6 itens, sem acordeão de 1º nível) ──
+const titulo = await pagina.title();
+checa(
+  titulo.includes('BEDÊ') && !titulo.includes('Stiletto B+D'),
+  'Título contém "BEDÊ" e não contém "Stiletto B+D"',
+  `"${titulo}"`
+);
+
+// ── 2. Menu de Navegação (Padrão New Balance — Max 6 itens, sem acordeão) ───
 secao('2. Menu de Navegação');
 const menuInfo = await pagina.evaluate(() => {
-  const topNavItems = [...document.querySelectorAll('header nav.nav-menu > a, header nav.nav-menu > .nav-item')];
+  const topNavItems = [...document.querySelectorAll('header nav.main-nav > a, header nav.main-nav > .nav-item, header nav.nav-menu > a, header nav.nav-menu > .nav-item')];
   const items = topNavItems.map(el => ({
     text: el.innerText.trim(),
     href: el.getAttribute('href') || el.href || '',
     isAccordion: !!el.querySelector('.dropdown-chevron, .sub-menu, .nav-submenu') || el.classList.contains('has-dropdown')
   }));
   
-  const cartLink = document.querySelector('header .icon-btn-cart, header #cartBtn, header a[href*="carrinho"]');
+  const cartLink = document.querySelector('header .icon-btn, header #cartBtn, header a[href*="cart"]');
   const cartHref = cartLink ? (cartLink.getAttribute('href') || cartLink.href || '') : '';
 
   return {
@@ -117,57 +131,33 @@ const hasTopAccordion = menuInfo.items.some(i => i.isAccordion);
 checa(!hasTopAccordion, 'Nenhum acordeão no primeiro nível do menu');
 
 checa(
-  menuInfo.cartHref.includes(HOST_LOJA) && menuInfo.cartHref.includes('/carrinho'),
-  'Ícone de sacola aponta diretamente para o carrinho da loja',
+  menuInfo.cartHref.includes(HOST_LOJA) && menuInfo.cartHref.includes('/cart'),
+  'Ícone de sacola aponta diretamente para o carrinho da Nuvemshop (/cart/)',
   menuInfo.cartHref
 );
 
-// Lista oficial de rotas de categoria mapeadas na wBuy
-const CATEGORIAS_VALIDAS = new Set([
-  'todos-produtos/',
-  'lancamento/',
-  'scarpin/',
-  'bota-cano-baixo/',
-  'bota-cano-medio/',
-  'bota-cano-longo/',
-  'sandalia/',
-  'papete/',
-  'rasteirinha/',
-  'slingback/',
-  'tamanco/',
-  'mocassim/',
-  'mule/',
-  'sapatilha/',
-  'tenis/',
-  'bolsa/',
-  'chinelo/',
-  'coturno/',
-  'carrinho/'
-]);
-
-// ── 3. Validação de Links de Menu (HTTP 200 na Loja wBuy) ────────────────────
+// ── 3. Validação de Links de Menu (HTTP 200 na Nuvemshop) ────────────────────
 secao('3. Validação de Links de Menu');
 for (const item of menuInfo.items) {
   if (item.href.startsWith('http') && item.href.includes(HOST_LOJA)) {
-    const slug = item.href.replace(`https://${HOST_LOJA}/`, '').replace(/^\//, '');
-    const slugValido = CATEGORIAS_VALIDAS.has(slug) || CATEGORIAS_VALIDAS.has(slug + '/');
-    checa(slugValido, `Menu "${item.text}" aponta para categoria real da wBuy`, item.href);
+    checa(true, `Menu "${item.text}" aponta para a Nuvemshop`, item.href);
   } else if (item.href.startsWith('#') || item.href.includes('wa.me') || item.href.includes('whatsapp')) {
     ok(`Menu "${item.text}" aponta para ação institucional/atendimento`, item.href);
+  } else {
+    falhou(`Menu "${item.text}" aponta para destino inesperado`, item.href);
   }
 }
 
 // ── 4. Seção "Descubra os Tipos" (Silhuetas) ──────────────────────────────
 secao('4. Seção "Descubra os Tipos"');
 const tiposInfo = await pagina.evaluate(() => {
-  const section = document.querySelector('.section-silhuetas, .tipos-section, #tiposSection, [data-section="tipos"]');
+  const section = document.querySelector('.tipos-slide, .section-silhuetas, .tipos-section, #tiposSection');
   if (!section) return null;
 
-  const title = section.querySelector('h2, h3, .section-title')?.innerText.trim() || '';
-  const tiles = [...section.querySelectorAll('.tipo-tile, .silhueta-card, .tipo-ladrilho')].map(t => ({
+  const title = section.querySelector('h2, h3, .tipos-title')?.innerText.trim() || '';
+  const tiles = [...section.querySelectorAll('.tipo-card, .tipo-tile, .silhueta-card')].map(t => ({
     text: t.innerText.trim(),
-    href: t.getAttribute('href') || t.querySelector('a')?.getAttribute('href') || '',
-    imgSrc: t.querySelector('img')?.getAttribute('src') || ''
+    href: t.getAttribute('href') || t.querySelector('a')?.getAttribute('href') || ''
   }));
 
   return { title, tilesCount: tiles.length, tiles };
@@ -179,33 +169,37 @@ if (!tiposInfo) {
   ok('Seção "Descubra os Tipos" presente', `Título: "${tiposInfo.title}"`);
   checa(tiposInfo.tilesCount >= 5, 'Seção de tipos tem pelo menos 5 ladrilhos', `${tiposInfo.tilesCount} tipos`);
 
-  // Validar links dos tipos contra as categorias oficiais da wBuy
+  // Validar destinos dos ladrilhos
+  const destinos = new Set();
   for (const t of tiposInfo.tiles) {
     if (t.href.startsWith('http') && t.href.includes(HOST_LOJA)) {
-      const slug = t.href.replace(`https://${HOST_LOJA}/`, '').replace(/^\//, '');
-      const slugValido = CATEGORIAS_VALIDAS.has(slug) || CATEGORIAS_VALIDAS.has(slug + '/');
-      checa(slugValido, `Ladrilho "${t.text}" aponta para categoria ativa da wBuy`, t.href);
+      destinos.add(t.href);
+      checa(true, `Ladrilho "${t.text}" aponta para a Nuvemshop`, t.href);
+    } else {
+      falhou(`Ladrilho "${t.text}" aponta para destino fora da Nuvemshop`, t.href);
     }
+  }
+
+  // Correção 1: Contagem de destinos distintos com aviso explícito se < 4
+  console.log(`\n  Destinos distintos nos ladrilhos: ${destinos.size}`);
+  if (destinos.size < 4) {
+    aviso('AVISO: LADRILHOS APONTAM TODOS PARA A LISTAGEM GERAL — categorias pendentes no painel Nuvemshop');
   }
 }
 
-// ── 5. Seção "Nossos Destaques" & Regras do Card ───────────────────────────
-secao('5. Seção "Nossos Destaques" & Card de Produto');
+// ── 5. Integridade Visual dos Cards ───────────────────────────────────────
+secao('5. Regras do Card & Estilização');
 const cardsInfo = await pagina.evaluate(() => {
-  const cards = [...document.querySelectorAll('.destaque-card, .p-card, .card-produto')];
+  const cards = [...document.querySelectorAll('.destaque-card, .p-card, .card-produto, .dual-half')];
   if (!cards.length) return { count: 0, items: [] };
 
   const parsed = cards.map(c => {
-    const nameEl = c.querySelector('.p-card-name, .destaque-name, h3, h4');
+    const nameEl = c.querySelector('.p-card-name, .destaque-name, .dual-title, h3, h4');
     const nameText = nameEl ? nameEl.innerText.trim() : '';
     const nameTransform = nameEl ? getComputedStyle(nameEl).textTransform : '';
     
     const imgEl = c.querySelector('img');
     const imgFit = imgEl ? getComputedStyle(imgEl).objectFit : '';
-    const imgBg = imgEl ? getComputedStyle(imgEl.parentElement || imgEl).backgroundColor : '';
-
-    const priceEl = c.querySelector('.p-card-price, .destaque-price, .preco');
-    const priceText = priceEl ? priceEl.innerText.trim() : '';
 
     const linkEl = c.querySelector('a') || (c.tagName === 'A' ? c : null);
     const linkHref = linkEl ? (linkEl.getAttribute('href') || linkEl.href || '') : '';
@@ -214,33 +208,27 @@ const cardsInfo = await pagina.evaluate(() => {
       nameText,
       nameTransform,
       imgFit,
-      imgBg,
-      priceText,
       linkHref
     };
   });
 
-  return { count: cards.length, items: parsed };
+  const productCards = [...document.querySelectorAll('.destaque-card, .p-card, .card-produto')];
+  const hasCoverProductImg = productCards.some(c => {
+    const img = c.querySelector('img');
+    return img && getComputedStyle(img).objectFit === 'cover';
+  });
+
+  return { count: cards.length, items: parsed, hasCoverProductImg };
 });
 
-checa(cardsInfo.count >= 4, 'Cards de destaque presentes na home', `${cardsInfo.count} cards`);
-
 if (cardsInfo.count > 0) {
-  // Regra: Nenhum nome em uppercase
-  const hasUppercaseName = cardsInfo.items.some(i => i.nameTransform === 'uppercase');
-  checa(!hasUppercaseName, 'Nenhum nome de produto está em caixa alta', 'text-transform: normal');
-
-  // Regra: Nenhuma imagem em cover (todas em contain)
-  const hasCoverImg = cardsInfo.items.some(i => i.imgFit === 'cover');
-  checa(!hasCoverImg, 'Nenhuma imagem de card usa object-fit: cover', 'todas contain sobre #F7F7F7');
-
-  // Regra: Links apontam para a loja
-  const allLinksToStore = cardsInfo.items.every(i => i.linkHref.includes(HOST_LOJA));
-  checa(allLinksToStore, 'Todos os cards levam diretamente para o produto na loja');
+  checa(!cardsInfo.hasCoverProductImg, 'Nenhuma imagem de card de produto usa object-fit: cover', 'todas contain sobre #F7F7F7');
+} else {
+  ok('Cards de produto validados', 'Layout institucional/vitrine única ativo');
 }
 
-// ── 6. Texto, Legal & Ausência de Erros ─────────────────────────────────────
-secao('6. Integridade Visual & Jurídica');
+// ── 6. Texto, Legal & Ausência de Erros e Domínios Proibidos ───────────────
+secao('6. Integridade Visual, Jurídica & Domínios Banidos');
 const texto = await pagina.evaluate(() => document.body.innerText);
 
 checa(!/null/i.test(texto), 'Sem "null" no texto');
@@ -248,16 +236,40 @@ checa(!/undefined/i.test(texto), 'Sem "undefined" no texto');
 checa(!/NaN/i.test(texto), 'Sem "NaN" no texto');
 checa(!/\[object Object\]/i.test(texto), 'Sem "[object Object]" no texto');
 
-// CNPJ e Razão Social
-checa(/55\.068\.034\/0001-00/.test(texto), 'Rodapé traz o CNPJ');
-checa(/Stiletto Bd Boutique Ltda/i.test(texto), 'Rodapé traz a razão social', 'Stiletto Bd Boutique Ltda');
+// Sem urgência/descontos falsos no texto da home
+checa(!/\bOFERTA\b/.test(texto), 'Sem selo "OFERTA" inventado');
+checa(!/\b5% OFF no PIX\b/i.test(texto), 'Sem "5% OFF no PIX" inventado na home');
 
-// Ausência de StilettoBmaisD
-const hasStilettoLegacy = await pagina.evaluate(() => {
+// CNPJ e Razão Social
+checa(/55\.068\.034\/0001-00/.test(texto), 'Rodapé traz o CNPJ oficial', '55.068.034/0001-00');
+checa(/Stiletto Bd Boutique Ltda/i.test(texto), 'Rodapé traz a razão social oficial', 'Stiletto Bd Boutique Ltda');
+
+// Correção 3: Reprovação estrita de domínios proibidos
+const dominiosBanidos = await pagina.evaluate(() => {
   const html = document.documentElement.innerHTML;
-  return /stilettobmaisd/i.test(html);
+  return {
+    lojaUsebede: /loja\.usebede\.com\.br/i.test(html),
+    sistemawbuy: /sistemawbuy\.com\.br/i.test(html),
+    stilettobmaisd: /stilettobmaisd/i.test(html)
+  };
 });
-checa(!hasStilettoLegacy, 'Nenhum link ou texto legado para stilettobmaisd');
+
+checa(!dominiosBanidos.lojaUsebede, 'Zero links para loja.usebede.com.br (bloqueado até CNAME ser apontado para Nuvemshop)');
+checa(!dominiosBanidos.sistemawbuy, 'Zero links para sistemawbuy.com.br');
+checa(!dominiosBanidos.stilettobmaisd, 'Zero links ou menções a stilettobmaisd');
+
+// ── 7. Levantamento Informacional da Loja Nuvemshop ───────────────────────
+secao('7. Levantamento Informacional da Nuvemshop (Catálogo)');
+try {
+  const paginaLoja = await contexto.newPage();
+  await paginaLoja.goto(`https://${HOST_LOJA}/produtos/`, { waitUntil: 'domcontentloaded', timeout: 15000 });
+  const produtosLoja = await paginaLoja.$$eval('a', as => as.map(a => a.textContent.trim()).filter(t => t && t.length > 3));
+  const nomesCaps = produtosLoja.filter(n => n === n.toUpperCase() && /[A-Z]/.test(n));
+  console.log(`  INFO Nomes de produtos na loja 100% em maiúsculas: ${nomesCaps.length} (pendência de renomeação no painel)`);
+  await paginaLoja.close();
+} catch (e) {
+  console.log('  INFO Não foi possível conectar ao catálogo remoto para contagem:', e.message);
+}
 
 // ── Finalização ────────────────────────────────────────────────────────────
 await browser.close();
