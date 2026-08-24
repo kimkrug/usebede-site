@@ -236,24 +236,20 @@ window.irParaLoja = function(url) {
   }
 
   // ============================================================
-  // FULLPAGE SLIDER — TRILHO VERTICAL CONTÍNUO (byNV EXACT)
+  // NAVEGAÇÃO DE SEÇÕES E HEADER FLUIDO
   // ============================================================
   window.goToSlide = function (idx, instant) {
     if (S.collOpen) return;
     idx = Math.max(0, Math.min(S.total - 1, idx));
-    if (idx === S.slide && !instant) return;
-    if (S.busy && !instant) return;
-
-    S.busy = true;
     S.slide = idx;
 
-    if (D.track) {
-      D.track.style.transition = instant ? 'none' : 'transform 600ms cubic-bezier(0.25, 1, 0.5, 1)';
-      D.track.style.transform = `translateY(-${idx * 100}%)`;
+    const targetEl = document.getElementById('slide' + idx);
+    if (targetEl) {
+      targetEl.scrollIntoView({ behavior: instant ? 'auto' : 'smooth', block: 'start' });
     }
 
     if (D.header) {
-      if (idx === 0) {
+      if (idx === 0 && window.scrollY < 60) {
         D.header.className = 'site-header ghost';
         if (D.logoImg) D.logoImg.src = 'assets/brand/logo_header_branco.svg';
       } else {
@@ -263,47 +259,43 @@ window.irParaLoja = function(url) {
     }
 
     if (D.dots) D.dots.forEach((d, i) => d.classList.toggle('active', i === idx));
-    setTimeout(() => { S.busy = false; }, instant ? 0 : 550);
   };
 
   function setupSlider() {
-    window.addEventListener('wheel', e => {
+    // Atualizar estado do header e dots conforme scroll natural
+    const updateScrollState = () => {
       if (S.collOpen) return;
-      e.preventDefault();
-      if (S.busy) return;
-      if (e.deltaY > 15) {
-        goToSlide(S.slide + 1);
-      } else if (e.deltaY < -15) {
-        goToSlide(S.slide - 1);
+      const scrollY = window.scrollY || window.pageYOffset;
+      
+      // Header ghost só no topo do Hero
+      if (D.header) {
+        if (scrollY < 60) {
+          D.header.className = 'site-header ghost';
+          if (D.logoImg) D.logoImg.src = 'assets/brand/logo_header_branco.svg';
+        } else {
+          D.header.className = 'site-header solid-light';
+          if (D.logoImg) D.logoImg.src = 'assets/brand/logo_header_preto.svg';
+        }
       }
-    }, { passive: false });
 
-    let ty = 0;
-    window.addEventListener('touchstart', e => {
-      if (S.collOpen) return;
-      ty = e.touches[0].clientY;
-    }, { passive: true });
+      // Mapeamento dos slides reais (0 a 4)
+      const slides = [0, 1, 2, 3, 4].map(i => document.getElementById('slide' + i)).filter(Boolean);
+      const viewportMid = scrollY + window.innerHeight * 0.35;
+      
+      let activeIdx = 0;
+      slides.forEach((sl, idx) => {
+        const top = sl.offsetTop;
+        if (viewportMid >= top) {
+          activeIdx = idx;
+        }
+      });
 
-    window.addEventListener('touchend', e => {
-      if (S.collOpen) return;
-      const dy = ty - e.changedTouches[0].clientY;
-      if (Math.abs(dy) > 35) {
-        if (dy > 0) goToSlide(S.slide + 1);
-        else goToSlide(S.slide - 1);
-      }
-    }, { passive: true });
+      S.slide = activeIdx;
+      if (D.dots) D.dots.forEach((d, i) => d.classList.toggle('active', i === activeIdx));
+    };
 
-    window.addEventListener('keydown', e => {
-      if (S.collOpen) return;
-      if (e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === ' ') {
-        e.preventDefault();
-        goToSlide(S.slide + 1);
-      }
-      if (e.key === 'ArrowUp' || e.key === 'PageUp') {
-        e.preventDefault();
-        goToSlide(S.slide - 1);
-      }
-    });
+    window.addEventListener('scroll', updateScrollState, { passive: true });
+    updateScrollState();
   }
 
   // ============================================================

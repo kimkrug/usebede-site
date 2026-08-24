@@ -356,11 +356,142 @@ checa(!dominiosBanidos.lojaUsebede, 'Zero links para loja.usebede.com.br (bloque
 checa(!dominiosBanidos.sistemawbuy, 'Zero links para sistemawbuy.com.br');
 checa(!dominiosBanidos.stilettobmaisd, 'Zero links ou menções a stilettobmaisd');
 
-// ── 8. Auditoria do Catálogo Remoto Nuvemshop ─────────────────────────────
-secao('8. Auditoria do Catálogo Remoto Nuvemshop');
+// ── 8. Travas de Estilo & Arquitetura Visual (v33 — Frente E) ──────────────
+secao('8. Travas de Estilo & Arquitetura Visual (v33)');
+
+// 8.1. Fundo claro em "Descubra os Tipos" (luminância alta)
+const tiposBg = await pagina.evaluate(() => {
+  const sec = document.querySelector('.tipos-slide') || document.querySelector('#slide2');
+  if (!sec) return null;
+  const bg = window.getComputedStyle(sec).backgroundColor;
+  const match = bg.match(/rgb\((\d+),\s*(\d+),\s*(\d+)\)/);
+  if (match) {
+    const [_, r, g, b] = match.map(Number);
+    const lum = 0.299 * r + 0.587 * g + 0.114 * b;
+    return { bg, lum, isLight: lum > 180 };
+  }
+  return { bg, isLight: bg === 'rgb(255, 255, 255)' || bg.includes('255') };
+});
+checa(tiposBg && tiposBg.isLight, 'Fundo da seção "Descubra os Tipos" é claro (luminância alta)', tiposBg?.bg);
+
+// 8.2. Dimensões do Ladrilho no Desktop (width > height)
+const tileDimensions = await pagina.evaluate(() => {
+  const tile = document.querySelector('.tipo-card');
+  if (!tile) return null;
+  const rect = tile.getBoundingClientRect();
+  const cs = window.getComputedStyle(tile);
+  return {
+    width: rect.width,
+    height: rect.height,
+    isWider: rect.width > rect.height,
+    bg: cs.backgroundColor,
+    borderRadius: cs.borderRadius
+  };
+});
+checa(tileDimensions && tileDimensions.isWider, 'Ladrilho de tipo é mais largo que alto no desktop', `${Math.round(tileDimensions?.width)}px × ${Math.round(tileDimensions?.height)}px`);
+
+// 8.3. Fundo do Ladrilho = #F7F7F7
+checa(
+  tileDimensions && (tileDimensions.bg === 'rgb(247, 247, 247)' || tileDimensions.bg.includes('247')),
+  'Fundo do ladrilho é #F7F7F7 (rgb(247, 247, 247))',
+  tileDimensions?.bg
+);
+
+// 8.4. Legenda Única (sem texto duplicado)
+const duplicateLabels = await pagina.evaluate(() => {
+  const cards = [...document.querySelectorAll('.tipo-card')];
+  return cards.map(c => {
+    const text = c.innerText.trim();
+    const label = c.querySelector('.tipo-label')?.innerText.trim() || '';
+    const occurrences = (text.match(new RegExp(label, 'gi')) || []).length;
+    return { label, text, occurrences, hasPseudoAttr: c.querySelector('[data-tipo]') !== null };
+  });
+});
+const hasDuplicated = duplicateLabels.some(d => d.occurrences > 1 || d.hasPseudoAttr);
+checa(!hasDuplicated, 'Cada legenda de tipo aparece UMA vez só (sem texto duplicado ou ::after)', duplicateLabels.map(d => d.label).join(' · '));
+
+// 8.5. Trilho de Tipos rolável no Mobile (viewport 390px)
+const mobilePage = await contexto.newPage();
+await mobilePage.setViewportSize({ width: 390, height: 844 });
+await mobilePage.goto(BASE, { waitUntil: 'domcontentloaded' });
+await mobilePage.waitForTimeout(1000);
+const mobileRail = await mobilePage.evaluate(() => {
+  const rail = document.querySelector('.tipos-rail');
+  if (!rail) return null;
+  return {
+    scrollWidth: rail.scrollWidth,
+    clientWidth: rail.clientWidth,
+    isScrollable: rail.scrollWidth > rail.clientWidth
+  };
+});
+checa(mobileRail && mobileRail.isScrollable, 'Trilho de tipos é rolável horizontalmente no mobile (390px)', `scrollWidth: ${mobileRail?.scrollWidth}px > clientWidth: ${mobileRail?.clientWidth}px`);
+await mobilePage.close();
+
+// 8.6. Nenhuma seção com rolagem interna (overflow visível / min-height)
+const internalScrollSections = await pagina.evaluate(() => {
+  const sections = [...document.querySelectorAll('.v-slide, .tipos-slide, .split-text-slide, .split-dual-slide, .concierge-slide, .footer-slide, #siteFooter')];
+  return sections.map(s => {
+    const cs = window.getComputedStyle(s);
+    const hasInternalScroll = (cs.overflowY === 'scroll' || cs.overflowY === 'auto') && s.scrollHeight > s.clientHeight + 2;
+    return {
+      id: s.id || s.className,
+      overflowY: cs.overflowY,
+      scrollHeight: s.scrollHeight,
+      clientHeight: s.clientHeight,
+      hasInternalScroll
+    };
+  }).filter(s => s.hasInternalScroll);
+});
+checa(internalScrollSections.length === 0, 'Nenhuma seção da home tem barra de rolagem interna (overflow visível/min-height)', internalScrollSections.length ? JSON.stringify(internalScrollSections) : 'todas fluidas');
+
+// 8.7. Rodapé fora de slide com altura travada
+const footerArchitecture = await pagina.evaluate(() => {
+  const footer = document.querySelector('footer, #siteFooter, .clean-footer-bottom');
+  if (!footer) return null;
+  const parentSlide = footer.closest('.v-slide, .slides-track');
+  const cs = window.getComputedStyle(footer);
+  return {
+    isInsideSlide: !!parentSlide,
+    height: cs.height,
+    overflow: cs.overflowY
+  };
+});
+checa(footerArchitecture && !footerArchitecture.isInsideSlide, 'O rodapé não está dentro de um slide com altura travada (fluxo normal)', `isInsideSlide: ${footerArchitecture?.isInsideSlide}`);
+
+// 8.8. Padding vertical entre seções >= 96px no desktop
+const sectionPaddings = await pagina.evaluate(() => {
+  const sections = [...document.querySelectorAll('.tipos-slide, .concierge-slide, .split-text-slide, .split-dual-slide')];
+  return sections.map(s => {
+    const cs = window.getComputedStyle(s);
+    const pt = parseFloat(cs.paddingTop) || 0;
+    const pb = parseFloat(cs.paddingBottom) || 0;
+    return {
+      className: s.className,
+      paddingTop: pt,
+      paddingBottom: pb,
+      ok: (pt >= 96 || pb >= 96) || (pt + pb >= 96)
+    };
+  });
+});
+const allPaddingsOk = sectionPaddings.every(s => s.ok);
+checa(allPaddingsOk, 'Padding vertical entre seções no desktop é ≥ 96px (ritmo e respiro)', sectionPaddings.map(s => `${s.className.split(' ')[0]}: ${s.paddingTop}px/${s.paddingBottom}px`).join(' · '));
+
+// 8.9. Sem selo "Google Safe Browsing" / "Site Seguro Verificado"
+const safeBrowsingMentions = await pagina.evaluate(() => {
+  const html = document.body.innerHTML;
+  const text = document.body.innerText;
+  const hasSafeBrowsing = /safe-browsing|safebrowsing|safe\s*browsing/i.test(html) || /site seguro verificado/i.test(text);
+  return hasSafeBrowsing;
+});
+checa(!safeBrowsingMentions, 'Sem selo fabricado "Google Safe Browsing" ou "Site Seguro Verificado"');
+
+// ── 9. Auditoria do Catálogo Remoto Nuvemshop ─────────────────────────────
+secao('9. Auditoria do Catálogo Remoto Nuvemshop');
 try {
   const paginaLoja = await contexto.newPage();
   await paginaLoja.goto(`https://${HOST_LOJA}/produtos/`, { waitUntil: 'domcontentloaded', timeout: 20000 });
+  await paginaLoja.waitForTimeout(2000);
+  
   const produtosLoja = await paginaLoja.$$eval('a[href*="/produtos/"]', as => 
     as.filter(a => !a.href.includes('sort=') && !a.href.endsWith('/produtos/') && !a.href.endsWith('/produtos'))
       .map(a => a.textContent.trim())
@@ -376,6 +507,18 @@ try {
   } else {
     console.log(`  INFO Nomes de produtos na loja em MAIÚSCULAS: ${nomesCaps.length}/${nomesUnicos.length}`);
   }
+
+  // 8.10. Na LOJA Nuvemshop: nenhum card exibe "0% OFF" visível
+  const zeroOffFound = await paginaLoja.evaluate(() => {
+    const visibleZeroOffs = [...document.querySelectorAll('*')].filter(el => {
+      const t = el.innerText ? el.innerText.trim() : '';
+      const cs = window.getComputedStyle(el);
+      return (t === '0% OFF' || t === '0%' || /0%\s*OFF/i.test(t)) && cs.display !== 'none' && cs.visibility !== 'hidden' && el.offsetParent !== null;
+    });
+    return visibleZeroOffs.length;
+  });
+  checa(zeroOffFound === 0, 'Na loja Nuvemshop: nenhum card exibe selo "0% OFF" visível', `visíveis: ${zeroOffFound}`);
+
   await paginaLoja.close();
 } catch (e) {
   console.log('  INFO Não foi possível conectar ao catálogo remoto para contagem:', e.message);
