@@ -1,6 +1,6 @@
 /**
  * BEDÊ Stiletto — Configuração Centralizada de Links da Loja
- * Plataforma: NUVEMSHOP (v32.1 — Hotfix Estancar 404)
+ * Plataforma: NUVEMSHOP (v32.2 — Categorias Definitivas e Vínculo Confirmado)
  */
 
 const LOJA_BASE = 'https://bedestiletto.lojavirtualnuvem.com.br';
@@ -13,22 +13,22 @@ const LINKS_LOJA = {
   contato:         LOJA_BASE + '/contato/',
   novidades:       LOJA_BASE + '/produtos/?sort=date_desc',
 
-  // PROVISÓRIO (HOTFIX ESTANCAR 404): Categorias apontam para /produtos/ enquanto URLs reais são verificadas
-  scarpin:         LOJA_BASE + '/produtos/',
-  bota:            LOJA_BASE + '/produtos/',
-  mule:            LOJA_BASE + '/produtos/',
-  mocassim:        LOJA_BASE + '/produtos/',
-  tenis:           LOJA_BASE + '/produtos/',
-  bolsa:           LOJA_BASE + '/produtos/',
+  // Categorias Ativas e Confirmadas (HTTP 200 com produtos dentro)
+  scarpin:         LOJA_BASE + '/scarpin/',
+  bota:            LOJA_BASE + '/bota/',
+  mule:            LOJA_BASE + '/mule/',
+  mocassim:        LOJA_BASE + '/mocassim/',
+  tenis:           LOJA_BASE + '/tenis/',
+  bolsa:           LOJA_BASE + '/bolsa/',
 
-  // Categorias Inativas no momento
+  // Categorias Inativas no catálogo atual (redirecionam para catálogo geral)
   sandalia:        LOJA_BASE + '/produtos/',
   papete:          LOJA_BASE + '/produtos/',
-  rasteirinha:     LOJA_BASE + '/rasteirinha/',
-  slingback:       LOJA_BASE + '/slingback/',
-  tamanco:         LOJA_BASE + '/tamanco/',
-  sapatilha:       LOJA_BASE + '/sapatilha/',
-  chinelo:         LOJA_BASE + '/chinelo/'
+  rasteirinha:     LOJA_BASE + '/produtos/',
+  slingback:       LOJA_BASE + '/produtos/',
+  tamanco:         LOJA_BASE + '/produtos/',
+  sapatilha:       LOJA_BASE + '/produtos/',
+  chinelo:         LOJA_BASE + '/produtos/'
 };
 
 if (typeof module !== 'undefined' && module.exports) {
