@@ -1,5 +1,5 @@
 /**
- * BEDÊ — Teste de Jornada & Validação da Arquitetura v31.1 (Nuvemshop).
+ * BEDÊ — Teste de Jornada & Validação da Arquitetura v31.2 (Nuvemshop + Institucionais).
  *
  * Executa antes de cada commit contra o preview da Vercel, localhost ou produção.
  *
@@ -9,14 +9,16 @@
  * 3. Sem "null", "undefined", "NaN", "[object Object]" no texto visível
  * 4. Rodapé traz CNPJ (55.068.034/0001-00) e Razão Social (Stiletto Bd Boutique Ltda)
  * 5. Sem "OFERTA", preço riscado falso ou desconto inventado no texto
- * 6. Todo item de menu aponta para o host oficial da Nuvemshop (bedestiletto.lojavirtualnuvem.com.br)
- * 7. O ícone de sacola aponta diretamente para o carrinho da Nuvemshop (/cart/)
- * 8. Nenhum link aponta para "loja.usebede.com.br", "sistemawbuy.com.br" ou "stilettobmaisd"
- * 9. O menu de primeiro nível tem no máximo 6 itens e nenhum acordeão
- * 10. A seção "Descubra os Tipos" tem pelo menos 5 ladrilhos com links 200 na Nuvemshop
- * 11. Contagem de destinos distintos nos ladrilhos (com aviso se < 4)
- * 12. Nenhuma imagem de card usa object-fit: cover (todas utilizam contain sobre #F7F7F7)
- * 13. Nenhum nome de produto renderizado pelo site está forçado em uppercase
+ * 6. Todo item de menu aponta para o host oficial da Nuvemshop (bedestiletto.lojavirtualnuvem.com.br), página institucional real (HTTP 200) ou WhatsApp
+ * 7. NENHUM link de menu tem href vazio, "#" ou "javascript:"
+ * 8. NENHUM link de rodapé institucional tem href vazio, "#" ou "javascript:"
+ * 9. O ícone de sacola aponta diretamente para o carrinho da Nuvemshop (/cart/)
+ * 10. Nenhum link aponta para "loja.usebede.com.br", "sistemawbuy.com.br" ou "stilettobmaisd"
+ * 11. O menu de primeiro nível tem no máximo 6 itens e nenhum acordeão
+ * 12. A seção "Descubra os Tipos" tem pelo menos 5 ladrilhos com links 200 na Nuvemshop
+ * 13. Contagem de destinos distintos nos ladrilhos (com aviso se < 4)
+ * 14. Nenhuma imagem de card usa object-fit: cover (todas utilizam contain sobre #F7F7F7)
+ * 15. Todas as páginas institucionais vinculadas respondem HTTP 200 OK
  *
  * Uso:
  *   node teste-jornada.mjs
@@ -102,12 +104,13 @@ checa(
 );
 
 // ── 2. Menu de Navegação (Padrão New Balance — Max 6 itens, sem acordeão) ───
-secao('2. Menu de Navegação');
+secao('2. Menu de Navegação & Ausência de Links Mortos');
 const menuInfo = await pagina.evaluate(() => {
   const topNavItems = [...document.querySelectorAll('header nav.main-nav > a, header nav.main-nav > .nav-item, header nav.nav-menu > a, header nav.nav-menu > .nav-item')];
   const items = topNavItems.map(el => ({
     text: el.innerText.trim(),
     href: el.getAttribute('href') || el.href || '',
+    fullHref: el.href || '',
     isAccordion: !!el.querySelector('.dropdown-chevron, .sub-menu, .nav-submenu') || el.classList.contains('has-dropdown')
   }));
   
@@ -136,13 +139,26 @@ checa(
   menuInfo.cartHref
 );
 
-// ── 3. Validação de Links de Menu (HTTP 200 na Nuvemshop) ────────────────────
-secao('3. Validação de Links de Menu');
+// Verificação v31.2: Proibir href="#" ou vazio no menu
+const hasDeadMenuLink = menuInfo.items.some(i => !i.href || i.href === '#' || i.href.startsWith('javascript:'));
+checa(!hasDeadMenuLink, 'Nenhum link de menu tem href vazio, "#" ou "javascript:"');
+
+// ── 3. Validação de Destinos de Menu ───────────────────────────────────────
+secao('3. Validação de Destinos de Menu');
 for (const item of menuInfo.items) {
-  if (item.href.startsWith('http') && item.href.includes(HOST_LOJA)) {
-    checa(true, `Menu "${item.text}" aponta para a Nuvemshop`, item.href);
-  } else if (item.href.startsWith('#') || item.href.includes('wa.me') || item.href.includes('whatsapp')) {
-    ok(`Menu "${item.text}" aponta para ação institucional/atendimento`, item.href);
+  if (item.fullHref.startsWith('http') && item.fullHref.includes(HOST_LOJA)) {
+    checa(true, `Menu "${item.text}" aponta para a Nuvemshop`, item.fullHref);
+  } else if (item.fullHref.includes('wa.me') || item.fullHref.includes('whatsapp')) {
+    ok(`Menu "${item.text}" aponta para atendimento WhatsApp`, item.fullHref);
+  } else if (item.href.endsWith('.html') || !item.href.startsWith('#')) {
+    // Validar se página institucional responde HTTP 200
+    try {
+      const targetUrl = new URL(item.href, BASE).href;
+      const res = await pagina.request.get(targetUrl);
+      checa(res.status() === 200, `Menu "${item.text}" abre página institucional com 200 OK`, targetUrl);
+    } catch (e) {
+      falhou(`Menu "${item.text}" falhou ao responder`, item.href);
+    }
   } else {
     falhou(`Menu "${item.text}" aponta para destino inesperado`, item.href);
   }
@@ -169,7 +185,6 @@ if (!tiposInfo) {
   ok('Seção "Descubra os Tipos" presente', `Título: "${tiposInfo.title}"`);
   checa(tiposInfo.tilesCount >= 5, 'Seção de tipos tem pelo menos 5 ladrilhos', `${tiposInfo.tilesCount} tipos`);
 
-  // Validar destinos dos ladrilhos
   const destinos = new Set();
   for (const t of tiposInfo.tiles) {
     if (t.href.startsWith('http') && t.href.includes(HOST_LOJA)) {
@@ -180,7 +195,6 @@ if (!tiposInfo) {
     }
   }
 
-  // Correção 1: Contagem de destinos distintos com aviso explícito se < 4
   console.log(`\n  Destinos distintos nos ladrilhos: ${destinos.size}`);
   if (destinos.size < 4) {
     aviso('AVISO: LADRILHOS APONTAM TODOS PARA A LISTAGEM GERAL — categorias pendentes no painel Nuvemshop');
@@ -191,7 +205,7 @@ if (!tiposInfo) {
 secao('5. Regras do Card & Estilização');
 const cardsInfo = await pagina.evaluate(() => {
   const cards = [...document.querySelectorAll('.destaque-card, .p-card, .card-produto, .dual-half')];
-  if (!cards.length) return { count: 0, items: [] };
+  if (!cards.length) return { count: 0, items: [], hasCoverProductImg: false };
 
   const parsed = cards.map(c => {
     const nameEl = c.querySelector('.p-card-name, .destaque-name, .dual-title, h3, h4');
@@ -227,16 +241,14 @@ if (cardsInfo.count > 0) {
   ok('Cards de produto validados', 'Layout institucional/vitrine única ativo');
 }
 
-// ── 6. Texto, Legal & Ausência de Erros e Domínios Proibidos ───────────────
-secao('6. Integridade Visual, Jurídica & Domínios Banidos');
+// ── 6. Texto, Legal & Links Institucionais do Rodapé ────────────────────────
+secao('6. Integridade Visual, Jurídica & Links Institucionais');
 const texto = await pagina.evaluate(() => document.body.innerText);
 
 checa(!/null/i.test(texto), 'Sem "null" no texto');
 checa(!/undefined/i.test(texto), 'Sem "undefined" no texto');
 checa(!/NaN/i.test(texto), 'Sem "NaN" no texto');
 checa(!/\[object Object\]/i.test(texto), 'Sem "[object Object]" no texto');
-
-// Sem urgência/descontos falsos no texto da home
 checa(!/\bOFERTA\b/.test(texto), 'Sem selo "OFERTA" inventado');
 checa(!/\b5% OFF no PIX\b/i.test(texto), 'Sem "5% OFF no PIX" inventado na home');
 
@@ -244,7 +256,34 @@ checa(!/\b5% OFF no PIX\b/i.test(texto), 'Sem "5% OFF no PIX" inventado na home'
 checa(/55\.068\.034\/0001-00/.test(texto), 'Rodapé traz o CNPJ oficial', '55.068.034/0001-00');
 checa(/Stiletto Bd Boutique Ltda/i.test(texto), 'Rodapé traz a razão social oficial', 'Stiletto Bd Boutique Ltda');
 
-// Correção 3: Reprovação estrita de domínios proibidos
+// Validação v31.2: Links do Rodapé Institucional
+const footerLinks = await pagina.evaluate(() => {
+  const colInstitucional = document.querySelectorAll('.clean-footer .cf-col:nth-child(2) a, footer .cf-col a');
+  return [...colInstitucional].map(a => ({
+    text: a.innerText.trim(),
+    href: a.getAttribute('href') || a.href || '',
+    fullHref: a.href || ''
+  })).filter(a => a.text);
+});
+
+console.log(`  Links institucionais no rodapé encontrados: ${footerLinks.length}`);
+const hasDeadFooterLink = footerLinks.some(l => !l.href || l.href === '#' || l.href.startsWith('javascript:'));
+checa(!hasDeadFooterLink, 'Nenhum link institucional do rodapé tem href vazio, "#" ou "javascript:"');
+
+// Testar cada página institucional para HTTP 200
+for (const l of footerLinks) {
+  if (l.href.endsWith('.html') || (!l.href.startsWith('http') && !l.href.startsWith('#'))) {
+    try {
+      const targetUrl = new URL(l.href, BASE).href;
+      const res = await pagina.request.get(targetUrl);
+      checa(res.status() === 200, `Página institucional "${l.text}" responde HTTP 200 OK`, targetUrl);
+    } catch (e) {
+      falhou(`Página institucional "${l.text}" inacessível`, l.href);
+    }
+  }
+}
+
+// Domínios Proibidos
 const dominiosBanidos = await pagina.evaluate(() => {
   const html = document.documentElement.innerHTML;
   return {
@@ -258,7 +297,7 @@ checa(!dominiosBanidos.lojaUsebede, 'Zero links para loja.usebede.com.br (bloque
 checa(!dominiosBanidos.sistemawbuy, 'Zero links para sistemawbuy.com.br');
 checa(!dominiosBanidos.stilettobmaisd, 'Zero links ou menções a stilettobmaisd');
 
-// ── 7. Levantamento Informacional da Loja Nuvemshop ───────────────────────
+// ── 7. Levantamento Informacional da Nuvemshop (Catálogo) ───────────────────
 secao('7. Levantamento Informacional da Nuvemshop (Catálogo)');
 try {
   const paginaLoja = await contexto.newPage();
