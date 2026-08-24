@@ -167,7 +167,8 @@ for (const item of menuInfo.items) {
 }
 
 // ── 4. Seção "Descubra os Tipos" (Silhuetas) ──────────────────────────────
-secao('4. Seção "Descubra os Tipos"');
+// ── 4. Seção "Descubra os Tipos" (Silhuetas v32) ──────────────────────────
+secao('4. Seção "Descubra os Tipos" (Catálogo v32 — 6 Tipos Ativos)');
 const tiposInfo = await pagina.evaluate(() => {
   const section = document.querySelector('.tipos-slide, .section-silhuetas, .tipos-section, #tiposSection');
   if (!section) return null;
@@ -185,29 +186,35 @@ if (!tiposInfo) {
   falhou('Seção "Descubra os Tipos" encontrada no DOM');
 } else {
   ok('Seção "Descubra os Tipos" presente', `Título: "${tiposInfo.title}"`);
-  checa(tiposInfo.tilesCount >= 5, 'Seção de tipos tem pelo menos 5 ladrilhos', `${tiposInfo.tilesCount} tipos`);
+  checa(tiposInfo.tilesCount === 6, 'Seção de tipos tem exatamente 6 ladrilhos ativos no catálogo', `${tiposInfo.tilesCount} tipos (${tiposInfo.tiles.map(t => t.text).join(' · ')})`);
 
   const destinos = new Set();
   for (const t of tiposInfo.tiles) {
-    if (t.href.startsWith('http') && t.href.includes(HOST_LOJA)) {
+    const isNuvem = t.href.startsWith('http') && t.href.includes(HOST_LOJA);
+    const isGenericProducts = t.href.endsWith('/produtos/') || t.href.endsWith('/produtos');
+    
+    if (isNuvem && !isGenericProducts) {
       destinos.add(t.href);
-      checa(true, `Ladrilho "${t.text}" aponta para a Nuvemshop`, t.href);
+      checa(true, `Ladrilho "${t.text}" aponta para URL de categoria própria`, t.href);
+    } else if (isGenericProducts) {
+      falhou(`Ladrilho "${t.text}" NÃO pode apontar para listagem geral (/produtos/)`, t.href);
     } else {
       falhou(`Ladrilho "${t.text}" aponta para destino fora da Nuvemshop`, t.href);
     }
   }
 
-  console.log(`\n  Destinos distintos nos ladrilhos: ${destinos.size}`);
-  if (destinos.size < 4) {
-    aviso('AVISO: LADRILHOS APONTAM TODOS PARA A LISTAGEM GERAL — categorias pendentes no painel Nuvemshop');
-  }
+  checa(
+    destinos.size === 6,
+    'Exatamente 6 destinos de categoria distintos nos ladrilhos',
+    `${destinos.size} URLs distintas`
+  );
 }
 
-// ── 5. Integridade Visual dos Cards ───────────────────────────────────────
-secao('5. Regras do Card & Estilização');
+// ── 5. Integridade Visual dos Cards & Nomes de Produtos ───────────────────
+secao('5. Regras do Card, Nomes & Estilização (Title Case)');
 const cardsInfo = await pagina.evaluate(() => {
   const cards = [...document.querySelectorAll('.destaque-card, .p-card, .card-produto, .dual-half')];
-  if (!cards.length) return { count: 0, items: [], hasCoverProductImg: false };
+  if (!cards.length) return { count: 0, items: [], hasCoverProductImg: false, hasAllUppercaseNames: false };
 
   const parsed = cards.map(c => {
     const nameEl = c.querySelector('.p-card-name, .destaque-name, .dual-title, h3, h4');
@@ -234,11 +241,18 @@ const cardsInfo = await pagina.evaluate(() => {
     return img && getComputedStyle(img).objectFit === 'cover';
   });
 
-  return { count: cards.length, items: parsed, hasCoverProductImg };
+  const hasAllUppercaseNames = productCards.some(c => {
+    const nameEl = c.querySelector('.p-card-name, .destaque-name, h3, h4');
+    const txt = nameEl ? nameEl.innerText.trim() : '';
+    return txt.length > 3 && txt === txt.toUpperCase() && !txt.includes('&');
+  });
+
+  return { count: cards.length, items: parsed, hasCoverProductImg, hasAllUppercaseNames };
 });
 
 if (cardsInfo.count > 0) {
   checa(!cardsInfo.hasCoverProductImg, 'Nenhuma imagem de card de produto usa object-fit: cover', 'todas contain sobre #F7F7F7');
+  checa(!cardsInfo.hasAllUppercaseNames, 'Nenhum nome de produto em CAIXA ALTA na vitrine', 'Title Case ativo');
 } else {
   ok('Cards de produto validados', 'Layout institucional/vitrine única ativo');
 }
@@ -342,14 +356,26 @@ checa(!dominiosBanidos.lojaUsebede, 'Zero links para loja.usebede.com.br (bloque
 checa(!dominiosBanidos.sistemawbuy, 'Zero links para sistemawbuy.com.br');
 checa(!dominiosBanidos.stilettobmaisd, 'Zero links ou menções a stilettobmaisd');
 
-// ── 8. Levantamento Informacional da Nuvemshop (Catálogo) ───────────────────
-secao('8. Levantamento Informacional da Nuvemshop (Catálogo)');
+// ── 8. Auditoria do Catálogo Remoto Nuvemshop ─────────────────────────────
+secao('8. Auditoria do Catálogo Remoto Nuvemshop');
 try {
   const paginaLoja = await contexto.newPage();
-  await paginaLoja.goto(`https://${HOST_LOJA}/produtos/`, { waitUntil: 'domcontentloaded', timeout: 15000 });
-  const produtosLoja = await paginaLoja.$$eval('a', as => as.map(a => a.textContent.trim()).filter(t => t && t.length > 3));
-  const nomesCaps = produtosLoja.filter(n => n === n.toUpperCase() && /[A-Z]/.test(n));
-  console.log(`  INFO Nomes de produtos na loja 100% em maiúsculas: ${nomesCaps.length} (pendência de renomeação no painel)`);
+  await paginaLoja.goto(`https://${HOST_LOJA}/produtos/`, { waitUntil: 'domcontentloaded', timeout: 20000 });
+  const produtosLoja = await paginaLoja.$$eval('a[href*="/produtos/"]', as => 
+    as.filter(a => !a.href.includes('sort=') && !a.href.endsWith('/produtos/') && !a.href.endsWith('/produtos'))
+      .map(a => a.textContent.trim())
+      .filter(t => t && t.length > 3)
+  );
+  
+  const nomesUnicos = [...new Set(produtosLoja)];
+  ok(`Catálogo Nuvemshop conectado`, `${nomesUnicos.length} produtos identificados na vitrine`);
+  
+  const nomesCaps = nomesUnicos.filter(n => n === n.toUpperCase() && /[A-Z]/.test(n));
+  if (nomesCaps.length === 0) {
+    ok('Todos os produtos do catálogo utilizam Title Case (sem CAIXA ALTA)');
+  } else {
+    console.log(`  INFO Nomes de produtos na loja em MAIÚSCULAS: ${nomesCaps.length}/${nomesUnicos.length}`);
+  }
   await paginaLoja.close();
 } catch (e) {
   console.log('  INFO Não foi possível conectar ao catálogo remoto para contagem:', e.message);
