@@ -2657,7 +2657,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .clean-footer .cf-col h4 { font-size: 11px; margin-bottom: 8px; text-align: center; }
   .clean-footer .cf-col a, .clean-footer .cf-col p { font-size: 12px; line-height: 20px; display: block; margin: 4px 0; text-align: center; }
   .clean-footer .cf-col:first-child a { display: inline-block; margin: 6px auto 0; text-align: center; }
-  .footer-legal-bar { padding-top: 16px; border-top: 1px solid rgba(0,0,0,0.08); font-size: 9.5px; line-height: 15px; text-align: center; }
+  .footer-legal-bar { padding-top: 16px; padding-bottom: 28px; border-top: 1px solid rgba(0,0,0,0.08); font-size: 9.5px; line-height: 16px; text-align: center; }
 
   /* Catálogo & Banner Mobile */
   .coll-nav-bar { padding: 16px 14px 8px; }
