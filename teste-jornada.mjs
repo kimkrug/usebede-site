@@ -356,18 +356,39 @@ checa(!dominiosBanidos.lojaUsebede, 'Zero links para loja.usebede.com.br (bloque
 checa(!dominiosBanidos.sistemawbuy, 'Zero links para sistemawbuy.com.br');
 checa(!dominiosBanidos.stilettobmaisd, 'Zero links ou menções a stilettobmaisd');
 
-// ── 8. Travas de Estilo, Motor de Transição, Tipos e Rodapé v34.1 ─────────
-secao('8. Travas de Estilo, Motor de Transição, Tipos e Rodapé v34.1');
+// ── 8. Travas de Estilo, Frete Regional, Transição e Rodapé v34.2 ─────────
+secao('8. Travas de Estilo, Frete Regional, Transição e Rodapé v34.2');
 
-// 8.1. Barra de informações da Home — 3 promessas obrigatórias
+// 8.1. Barra de informações da Home — 3 promessas com qualificação regional
 const homeBarText = await pagina.evaluate(() => document.getElementById('homeBarClaims')?.innerText.trim() || '');
+const hbUpper = homeBarText.toUpperCase();
 checa(
-  homeBarText.includes('599') && (homeBarText.includes('6x') || homeBarText.includes('6X')) && homeBarText.includes('5%'),
-  'Barra da home contém exatamente as 3 promessas ("599", "6x sem juros", "5% no PIX")',
+  hbUpper.includes('SUL E SUDESTE') && hbUpper.includes('599') && hbUpper.includes('6X') && hbUpper.includes('5%'),
+  'Barra da home contém exatamente as 3 promessas com qualificação regional ("Sul e Sudeste", "599", "6x sem juros", "5% no PIX")',
   `"${homeBarText}"`
 );
 
-// 8.2. ZERO ocorrências de "449" no texto renderizado da Home e Institucionais
+// 8.2. Qualificação regional em todas as menções de frete grátis
+const regionalShippingAudit = await pagina.evaluate(async () => {
+  const homeText = document.body.innerText;
+  const matches = [];
+  const regex = /frete\s+gr[aá]tis/gi;
+  let m;
+  let allQualified = true;
+  while ((m = regex.exec(homeText)) !== null) {
+    const start = Math.max(0, m.index - 50);
+    const end = Math.min(homeText.length, m.index + 80);
+    const context = homeText.slice(start, end);
+    if (!/sul\s+e\s+sudeste/i.test(context)) {
+      allQualified = false;
+      matches.push(context);
+    }
+  }
+  return { allQualified, nonQualifiedMatches: matches };
+});
+checa(regionalShippingAudit.allQualified, 'Todas as menções de frete grátis na home trazem a qualificação "Sul e Sudeste"');
+
+// 8.3. ZERO ocorrências de "449" no texto renderizado da Home e Institucionais
 checa(!texto.includes('449') && !texto.includes('R$ 449'), 'Zero ocorrências de "449" no texto da home');
 
 const paginasInst = ['sobre.html', 'como-comprar.html', 'trocas.html', 'faq.html', 'privacidade.html', 'termos.html', 'guia-medidas.html'];
@@ -377,8 +398,11 @@ for (const p of paginasInst) {
     const resP = await pagina.request.get(pUrl);
     const htmlP = await resP.text();
     checa(!htmlP.includes('449'), `Página "${p}" livre de "449" (frete atualizado para 599)`);
+    if (/frete\s+gr[aá]tis/i.test(htmlP)) {
+      checa(htmlP.includes('Sul e Sudeste'), `Página "${p}" qualifica frete grátis com "Sul e Sudeste"`);
+    }
   } catch (e) {
-    falhou(`Falha ao auditar "449" em ${p}`, e.message);
+    falhou(`Falha ao auditar "449" / frete regional em ${p}`, e.message);
   }
 }
 

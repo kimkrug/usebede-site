@@ -158,16 +158,16 @@ window.irParaLoja = function(url) {
 
     // ── INJEÇÃO DINÂMICA DE PROMESSAS COMERCIAIS ─────────────
   function aplicarConfigLoja() {
-    // 1. Barra superior / Home — 3 promessas exatas da v34
+    // 1. Barra superior / Home — 3 promessas exatas da v34.2 (com região Sul e Sudeste)
     const homeBar = $('homeBarClaims');
     if (homeBar) {
-      homeBar.textContent = `Frete grátis a partir de R$ ${CFG.freteGratisAcimaDe} · Até ${CFG.parcelamentoMax}x sem juros · ${CFG.descontoPix}% de desconto no PIX`;
+      homeBar.textContent = `Frete grátis Sul e Sudeste a partir de R$ ${CFG.freteGratisAcimaDe} · Até ${CFG.parcelamentoMax}x sem juros · ${CFG.descontoPix}% no PIX`;
     }
 
     // 2. Gaveta Mobile
     const mobClaims = $('mobDrawerClaims');
     if (mobClaims) {
-      mobClaims.textContent = `Frete grátis a partir de R$ ${CFG.freteGratisAcimaDe} · Até ${CFG.parcelamentoMax}x sem juros · ${CFG.descontoPix}% no PIX`;
+      mobClaims.textContent = `Frete grátis Sul e Sudeste a partir de R$ ${CFG.freteGratisAcimaDe} · Até ${CFG.parcelamentoMax}x sem juros · ${CFG.descontoPix}% no PIX`;
     }
     const mobWa = $('mobDrawerWa');
     if (mobWa) {
@@ -1563,7 +1563,7 @@ window.irParaLoja = function(url) {
           </div>
           <div>
             <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">3. Qual é o prazo de entrega?</h5>
-            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">O prazo de entrega é informado no fechamento do pedido, conforme o CEP de entrega. Compras a partir de R$ ${CFG.freteGratisAcimaDe} têm frete grátis.</p>
+            <p style="margin:0;font-size:14px;color:var(--color-muted,#555);">O prazo de entrega é informado no fechamento do pedido, conforme o CEP de entrega. Compras a partir de R$ ${CFG.freteGratisAcimaDe} têm frete grátis para as regiões Sul e Sudeste.</p>
           </div>
           <div>
             <h5 style="margin:0 0 4px 0;font-size:15px;color:var(--color-text,#111);">4. Posso retirar meu pedido na loja física?</h5>

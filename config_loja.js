@@ -12,7 +12,7 @@ const CFG_LOJA = {
     descontoPix: 5,
     primeiraTrocaGratisDias: null,
     freteGratisAcimaDe: 599,
-    freteGratisRegioes: [],
+    freteGratisRegioes: ['Sul', 'Sudeste'],
     freteGratisEstados: [],
     parcelamentoMax: 6,
     instagram: '@usebede.com.br',
