@@ -56,6 +56,18 @@ function checa(cond, msg, detalhe = '') {
   else falhou(msg, detalhe);
 }
 
+function isSoft404(body, title = '') {
+  const norm = ((body || '') + ' ' + (title || '')).toLowerCase();
+  return norm.includes('erro - 404') ||
+         norm.includes('erro 404') ||
+         norm.includes('error 404') ||
+         norm.includes('a página que você está procurando não existe') ||
+         norm.includes('não encontramos essa página') ||
+         norm.includes('página não encontrada') ||
+         norm.includes('esta página não foi encontrada') ||
+         norm.includes('página não existe');
+}
+
 function aviso(msg) {
   console.log(`\n  ⚠️  ${msg}\n`);
 }
@@ -118,7 +130,7 @@ const menuInfo = await pagina.evaluate(() => {
     isAccordion: !!el.querySelector('.dropdown-chevron, .sub-menu, .nav-submenu') || el.classList.contains('has-dropdown')
   }));
   
-  const cartLink = document.querySelector('header .icon-btn, header #cartBtn, header a[href*="cart"]');
+  const cartLink = document.querySelector('header .icon-btn, header #cartBtn, header a[href*="comprar"], header a[href*="cart"]');
   const cartHref = cartLink ? (cartLink.getAttribute('href') || cartLink.href || '') : '';
 
   return {
@@ -138,23 +150,23 @@ const hasTopAccordion = menuInfo.items.some(i => i.isAccordion);
 checa(!hasTopAccordion, 'Nenhum acordeão no primeiro nível do menu');
 
 checa(
-  menuInfo.cartHref.includes(HOST_LOJA) && menuInfo.cartHref.includes('/cart'),
-  'Ícone de sacola aponta diretamente para o carrinho da Nuvemshop (/cart/)',
+  menuInfo.cartHref.includes(HOST_LOJA) && menuInfo.cartHref.includes('/comprar/'),
+  'Ícone de sacola aponta diretamente para o carrinho da Nuvemshop (/comprar/)',
   menuInfo.cartHref
 );
 
 const hasDeadMenuLink = menuInfo.items.some(i => !i.href || i.href === '#' || i.href.startsWith('javascript:'));
 checa(!hasDeadMenuLink, 'Nenhum link de menu tem href vazio, "#" ou "javascript:"');
 
-// ── 3. Validação de Destinos de Menu (Medição HTTP Real) ─────────────────
-secao('3. Validação de Destinos de Menu (Medição HTTP Real)');
+// ── 3. Validação de Destinos de Menu (Medição HTTP Real & Anti-Soft-404) ─────────────────
+secao('3. Validação de Destinos de Menu (Medição HTTP Real & Anti-Soft-404)');
 for (const item of menuInfo.items) {
   if (item.fullHref.startsWith('http') && item.fullHref.includes(HOST_LOJA)) {
     try {
       const res = await pagina.request.get(item.fullHref);
       const body = await res.text();
-      const is404Content = /página não encontrada|não encontramos essa página|error 404/i.test(body);
-      checa(res.status() === 200 && !is404Content, `Menu "${item.text}" responde HTTP 200 OK na Nuvemshop`, `${res.status()} ${item.fullHref}`);
+      const soft404 = isSoft404(body);
+      checa(res.status() === 200 && !soft404, `Menu "${item.text}" responde HTTP 200 OK real (sem soft-404) na Nuvemshop`, `${res.status()} ${item.fullHref}`);
     } catch (e) {
       falhou(`Menu "${item.text}" falhou na requisição HTTP`, e.message);
     }
@@ -173,8 +185,8 @@ for (const item of menuInfo.items) {
   }
 }
 
-// ── 4. Seção "Descubra os Tipos" (Medição HTTP Real) ───────────
-secao('4. Seção "Descubra os Tipos" (Medição HTTP Real)');
+// ── 4. Seção "Descubra os Tipos" (Medição HTTP Real & Anti-Soft-404) ───────────
+secao('4. Seção "Descubra os Tipos" (Medição HTTP Real & Anti-Soft-404)');
 const tiposInfo = await pagina.evaluate(() => {
   const section = document.querySelector('.tipos-slide, .section-silhuetas, .tipos-section, #tiposSection, #slide3');
   if (!section) return null;
@@ -199,8 +211,8 @@ if (!tiposInfo) {
       try {
         const res = await pagina.request.get(t.href);
         const body = await res.text();
-        const is404Content = /página não encontrada|não encontramos essa página|error 404/i.test(body);
-        checa(res.status() === 200 && !is404Content, `Ladrilho "${t.text}" responde HTTP 200 OK na Nuvemshop`, `${res.status()} ${t.href}`);
+        const soft404 = isSoft404(body);
+        checa(res.status() === 200 && !soft404, `Ladrilho "${t.text}" responde HTTP 200 OK real (sem soft-404) na Nuvemshop`, `${res.status()} ${t.href}`);
       } catch (e) {
         falhou(`Ladrilho "${t.text}" falhou na requisição HTTP`, e.message);
       }
@@ -800,13 +812,15 @@ checa(tiposDetails.every(t => t.hasImg), 'Todos os 6 cards de tipo utilizam foto
 for (const t of tiposDetails) {
   try {
     const res = await pagina.request.get(t.href);
-    checa(res.status() === 200, `Card Tipo "${t.name}" responde HTTP 200 OK`, `${res.status()} ${t.href}`);
+    const body = await res.text();
+    const soft404 = isSoft404(body);
+    checa(res.status() === 200 && !soft404, `Card Tipo "${t.name}" responde HTTP 200 OK real (sem soft-404)`, `${res.status()} ${t.href}`);
   } catch (e) {
     falhou(`Falha HTTP no card Tipo "${t.name}"`, e.message);
   }
 }
 
-// 10.8. Slide 5 (Coleção por Categoria): 3 abas funcionais com cards
+// 810: Slide 5 (Coleção por Categoria): 3 abas funcionais com cards
 const tabsDetails = await pagina.evaluate(async () => {
   const pills = [...document.querySelectorAll('#categoryTabs .tab-pill')];
   const rail = document.getElementById('tabsRail');
@@ -923,6 +937,50 @@ for (const card of emAltaCardsData) {
   }
 }
 console.log('  ' + '─'.repeat(84) + '\n');
+
+// ── 12. Trava Anti-Soft-404 Retroativa & Renderização Real da Loja [v37.1] ───
+secao('12. Trava Anti-Soft-404 Retroativa & Renderização Real da Loja [v37.1]');
+
+// 12.1. Checagem da Rota Standalone do Carrinho
+try {
+  const cartUrl = menuInfo.cartHref || `https://${HOST_LOJA}/comprar/`;
+  const resCart = await pagina.request.get(cartUrl);
+  const cartBody = await resCart.text();
+  const cartSoft404 = isSoft404(cartBody);
+  
+  checa(resCart.status() === 200, 'Página de carrinho responde HTTP 200', `${resCart.status()} ${cartUrl}`);
+  checa(!cartSoft404, 'Página de carrinho NÃO é um soft-404 (sem "Erro - 404" ou "não existe")', cartUrl);
+  
+  const hasCartElements = /carrinho|carrinho de compras|subtotal|finalizar|comprar|meios de envio/i.test(cartBody);
+  checa(hasCartElements, 'Página de carrinho renderiza componentes reais de carrinho (sem página de erro do tema)');
+} catch (e) {
+  falhou('Falha ao auditar página standalone de carrinho', e.message);
+}
+
+// 12.2. Checagem Anti-Soft-404 Retroativa em Todas as Rotas Oficiais da Loja
+const rotasLojaParaTestar = [
+  `https://${HOST_LOJA}/produtos/`,
+  `https://${HOST_LOJA}/produtos/?sort=date_desc`,
+  `https://${HOST_LOJA}/scarpin/`,
+  `https://${HOST_LOJA}/bota/`,
+  `https://${HOST_LOJA}/mule/`,
+  `https://${HOST_LOJA}/mocassim/`,
+  `https://${HOST_LOJA}/tenis/`,
+  `https://${HOST_LOJA}/bolsa/`,
+  `https://${HOST_LOJA}/comprar/`
+];
+
+for (const rUrl of rotasLojaParaTestar) {
+  try {
+    const res = await pagina.request.get(rUrl);
+    const body = await res.text();
+    const soft404 = isSoft404(body);
+    const slug = new URL(rUrl).pathname + (new URL(rUrl).search || '');
+    checa(res.status() === 200 && !soft404, `Rota da Loja "${slug}" responde HTTP 200 sem soft-404`, `${res.status()} ${rUrl}`);
+  } catch(e) {
+    falhou(`Falha ao auditar rota ${rUrl}`, e.message);
+  }
+}
 
 // ── Finalização ────────────────────────────────────────────────────────────
 await browser.close();

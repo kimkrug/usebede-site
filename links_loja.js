@@ -9,7 +9,7 @@ const LINKS_LOJA = {
   // Rotas Nativas e Confirmadas da Nuvemshop
   loja:            LOJA_BASE + '/',
   todos:           LOJA_BASE + '/produtos/',
-  carrinho:        LOJA_BASE + '/cart/',
+  carrinho:        LOJA_BASE + '/comprar/',
   contato:         LOJA_BASE + '/contato/',
   novidades:       LOJA_BASE + '/produtos/?sort=date_desc',
 
