@@ -982,6 +982,82 @@ for (const rUrl of rotasLojaParaTestar) {
   }
 }
 
+// ── 13. Funil do Carrinho Vazio — Botão, Estilo Neutro & Link do Logo [v37.2] ───
+secao('13. Funil do Carrinho Vazio — Botão VER PRODUTOS, Estilo Neutro & Logo [v37.2]');
+try {
+  const cartPage = await browser.newPage();
+  await cartPage.goto(`https://${HOST_LOJA}/comprar/`, { waitUntil: 'domcontentloaded', timeout: 20000 });
+  await cartPage.waitForTimeout(2000);
+
+  const emptyCartAudit = await cartPage.evaluate(() => {
+    const logoLink = document.querySelector('#logo a, .logo-img-container a, [data-store="head-logo"] a, .js-logo-container a, .head-logo-row a');
+    const logoHref = logoLink ? (logoLink.getAttribute('href') || logoLink.href || '') : '';
+
+    const alertEl = document.querySelector('.alert, .alert-info, .cart-empty, .js-empty-cart');
+    const alertCs = alertEl ? window.getComputedStyle(alertEl) : null;
+
+    const btnEl = document.querySelector('#emptyCartVerProdutosBtn, .btn-empty-cart-ver-produtos, a[href*="/produtos/"]#emptyCartVerProdutosBtn');
+    const btnCs = btnEl ? window.getComputedStyle(btnEl) : null;
+
+    const isBlue = (str) => {
+      if (!str) return false;
+      const s = str.toLowerCase();
+      return s.includes('blue') || s.includes('rgb(0, 123') || s.includes('rgb(13, 202') || s.includes('rgb(188, 232') || s.includes('rgb(12, 84');
+    };
+
+    return {
+      logoHref,
+      hasAlert: !!alertEl,
+      alertText: alertEl ? alertEl.innerText.trim() : '',
+      alertBorderWidth: alertCs ? alertCs.borderWidth : '',
+      alertBg: alertCs ? alertCs.backgroundColor : '',
+      alertColor: alertCs ? alertCs.color : '',
+      alertIsBlue: isBlue(alertCs?.color) || isBlue(alertCs?.backgroundColor) || isBlue(alertCs?.borderColor),
+      hasBtn: !!btnEl,
+      btnText: btnEl ? btnEl.innerText.trim() : '',
+      btnHref: btnEl ? (btnEl.getAttribute('href') || btnEl.href || '') : '',
+      btnBg: btnCs ? btnCs.backgroundColor : '',
+      btnHeight: btnCs ? btnCs.height : '',
+      btnColor: btnCs ? btnCs.color : ''
+    };
+  });
+
+  await cartPage.close();
+
+  // 1. Logo linka para o site principal (usebede.com.br)
+  checa(
+    emptyCartAudit.logoHref.includes('usebede.com.br') && !emptyCartAudit.logoHref.includes('loja.usebede.com.br'),
+    'Logo no cabeçalho do carrinho funil linka para o site principal (https://www.usebede.com.br/)',
+    emptyCartAudit.logoHref
+  );
+
+  // 2. Mensagem de vazio neutra (sem caixinha azul, sem borda)
+  checa(
+    emptyCartAudit.hasAlert && /vazio/i.test(emptyCartAudit.alertText),
+    'Mensagem de carrinho vazio presente na página',
+    `"${emptyCartAudit.alertText}"`
+  );
+  checa(
+    (emptyCartAudit.alertBorderWidth === '0px' || emptyCartAudit.alertBorderWidth === '') && !emptyCartAudit.alertIsBlue,
+    'Mensagem de carrinho vazio não possui caixinha azul nem bordas (estilo neutro #737378)',
+    `border: ${emptyCartAudit.alertBorderWidth}, color: ${emptyCartAudit.alertColor}`
+  );
+
+  // 3. Botão VER PRODUTOS no carrinho vazio
+  checa(
+    emptyCartAudit.hasBtn && emptyCartAudit.btnHref.includes('/produtos/'),
+    'Carrinho vazio contém botão de saída para /produtos/ (funil com porta de saída)',
+    `${emptyCartAudit.btnText} → ${emptyCartAudit.btnHref}`
+  );
+  checa(
+    emptyCartAudit.btnBg === 'rgb(0, 4, 4)' && (emptyCartAudit.btnHeight === '56px' || parseInt(emptyCartAudit.btnHeight) >= 50),
+    'Botão "VER PRODUTOS" estilizado no padrão primário BEDÊ (preto #000404, altura 56px)',
+    `bg: ${emptyCartAudit.btnBg}, height: ${emptyCartAudit.btnHeight}`
+  );
+} catch (e) {
+  falhou('Falha ao auditar funil do carrinho vazio', e.message);
+}
+
 // ── Finalização ────────────────────────────────────────────────────────────
 await browser.close();
 
