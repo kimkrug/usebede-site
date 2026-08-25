@@ -2009,7 +2009,7 @@ window.irParaLoja = function(url) {
     if (saleSection) saleSection.style.display = temPromo ? '' : 'none';
 
     const slideSaleBtn = document.getElementById('slideSaleBtn');
-    if (slideSaleBtn) slideSaleBtn.style.display = temPromo ? '' : 'none';
+    if (slideSaleBtn) slideSaleBtn.style.display = '';
 
     const saleHeadline = document.getElementById('saleHeadline');
     if (saleHeadline && temPromo) {
