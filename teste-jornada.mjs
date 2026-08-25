@@ -653,6 +653,183 @@ try {
   console.log('  INFO Não foi possível conectar ao catálogo remoto para contagem:', e.message);
 }
 
+// ── 10. Travas Visuais v36 (Hero 3 Quadros, Tipos com Abas, Destaques Em Alta e Seta Padronizada) ──
+secao('10. Travas Visuais v36 (Hero 3 Quadros, Tipos com Abas, Destaques Em Alta e Seta Padronizada)');
+
+// 10.1. Hero tem 3 quadros, controles presentes e transição por seta
+const heroAudit = await pagina.evaluate(async () => {
+  const frames = [...document.querySelectorAll('#heroCarousel .hero-frame')];
+  const prevBtn = document.getElementById('heroPrevBtn');
+  const nextBtn = document.getElementById('heroNextBtn');
+  const dots = [...document.querySelectorAll('#heroDots .hero-dot')];
+  
+  const frame0Active = frames[0]?.classList.contains('active');
+  
+  if (nextBtn) {
+    nextBtn.click();
+    if (typeof window.nextHeroFrame === 'function') window.nextHeroFrame();
+  }
+  await new Promise(r => setTimeout(r, 120));
+  const frame1Active = document.getElementById('heroFrame1')?.classList.contains('active');
+  const dot1Active = document.querySelectorAll('#heroDots .hero-dot')[1]?.classList.contains('active');
+
+  return {
+    framesCount: frames.length,
+    hasPrevBtn: !!prevBtn,
+    hasNextBtn: !!nextBtn,
+    dotsCount: dots.length,
+    frame0Active,
+    frame1Active,
+    dot1Active
+  };
+});
+
+checa(heroAudit.framesCount === 3, 'Hero contém exatamente 3 quadros', `${heroAudit.framesCount} quadros`);
+checa(heroAudit.hasPrevBtn && heroAudit.hasNextBtn && heroAudit.dotsCount === 3, 'Hero contém controles horizontais completos (setas + 3 pontinhos)', `dots: ${heroAudit.dotsCount}`);
+checa(heroAudit.frame1Active && heroAudit.dot1Active, 'Clique na seta da hero alterna para o próximo quadro com indicador ativo');
+
+// 10.2. Botões da Hero: links válidos (200 OK) no domínio definitivo sem "#"
+const heroLinks = await pagina.evaluate(() => {
+  const links = [...document.querySelectorAll('#slide0 .hero-cta-group a')];
+  return links.map(a => ({
+    text: a.innerText.trim(),
+    href: a.getAttribute('href') || a.href || '',
+    fullHref: a.href || ''
+  }));
+});
+const allHeroValid = heroLinks.every(l => l.href && l.href !== '#' && !l.href.startsWith('javascript:'));
+checa(allHeroValid && heroLinks.length >= 3, 'Todos os botões da hero apontam para destinos reais (sem links mortos ou "#")', `${heroLinks.length} botões`);
+
+for (const l of heroLinks) {
+  try {
+    const res = await pagina.request.get(l.fullHref);
+    checa(res.status() === 200, `Botão Hero "${l.text}" responde HTTP 200 OK`, `${res.status()} ${l.fullHref}`);
+  } catch (e) {
+    falhou(`Falha HTTP no botão Hero "${l.text}"`, e.message);
+  }
+}
+
+// 10.3. Seção de Abas entre Hero e Tipos com produtos reais
+const tabsAudit = await pagina.evaluate(async () => {
+  const slide1 = document.getElementById('slide1');
+  const pills = [...document.querySelectorAll('#categoryTabs .tab-pill')];
+  const pillNames = pills.map(p => p.innerText.trim());
+  const rail = document.getElementById('tabsRail');
+  
+  const results = {};
+  for (const pill of pills) {
+    pill.click();
+    if (typeof window.switchCategoryTab === 'function') window.switchCategoryTab(pill.getAttribute('data-tab') || pill.innerText.trim());
+    await new Promise(r => setTimeout(r, 80));
+    const cards = [...rail.querySelectorAll('.tab-product-card')];
+    results[pill.innerText.trim()] = {
+      count: cards.length,
+      names: cards.map(c => c.querySelector('.tab-card-name')?.innerText.trim())
+    };
+  }
+
+  pills[0]?.click();
+  if (typeof window.switchCategoryTab === 'function') window.switchCategoryTab('Scarpin');
+  await new Promise(r => setTimeout(r, 120));
+  const scrollLeft = rail ? rail.scrollLeft : 0;
+  const scrollWidth = rail ? rail.scrollWidth : 0;
+  const clientWidth = rail ? rail.clientWidth : 0;
+  const isBilateral = scrollLeft > 0 && (scrollLeft + clientWidth < scrollWidth);
+
+  return {
+    hasSlide1: !!slide1,
+    pillNames,
+    results,
+    scrollLeft,
+    scrollWidth,
+    clientWidth,
+    isBilateral
+  };
+});
+
+checa(tabsAudit.hasSlide1, 'Nova seção de categorias com abas presente no Slide 1');
+checa(tabsAudit.pillNames.join(' · ') === 'Scarpin · Bota · Mule', 'Abas contêm exatamente "Scarpin · Bota · Mule"', tabsAudit.pillNames.join(' · '));
+checa(tabsAudit.results['Scarpin']?.count >= 4 && tabsAudit.results['Bota']?.count >= 5 && tabsAudit.results['Mule']?.count >= 1, 'Trilho de abas renderiza produtos dinâmicos para cada categoria');
+checa(tabsAudit.isBilateral, 'Trilho da seção de abas transborda para os DOIS lados (scrollLeft > 0 e scrollLeft + clientWidth < scrollWidth)', `scrollLeft: ${tabsAudit.scrollLeft}px, scrollWidth: ${tabsAudit.scrollWidth}px, clientWidth: ${tabsAudit.clientWidth}px`);
+
+// 10.4. Seção Destaques Em Alta: ≥ 4 cards, contain, sem borda/sombra, nome e preço na mesma linha, transpasse à direita
+const emAltaAudit = await pagina.evaluate(() => {
+  const slide3 = document.getElementById('slide3');
+  const rail = document.getElementById('emAltaRail');
+  const cards = [...document.querySelectorAll('#emAltaRail .em-alta-card')];
+  
+  if (!cards.length) return { count: 0 };
+
+  const firstCard = cards[0];
+  const csCard = window.getComputedStyle(firstCard);
+  const imgWrap = firstCard.querySelector('.em-alta-img-wrap');
+  const csWrap = imgWrap ? window.getComputedStyle(imgWrap) : null;
+  const img = imgWrap ? imgWrap.querySelector('img') : null;
+  const csImg = img ? window.getComputedStyle(img) : null;
+  const infoRow = firstCard.querySelector('.em-alta-info-row');
+  const csInfo = infoRow ? window.getComputedStyle(infoRow) : null;
+  const nameEl = firstCard.querySelector('.em-alta-prod-name');
+  const priceEl = firstCard.querySelector('.em-alta-prod-price');
+
+  const hasNoBorder = (!csCard.borderWidth || csCard.borderWidth === '0px') && (!csWrap.borderWidth || csWrap.borderWidth === '0px');
+  const hasNoShadow = csCard.boxShadow === 'none' && csWrap.boxShadow === 'none';
+  const isContain = csImg?.objectFit === 'contain';
+  const isSingleLine = csInfo?.display === 'flex' && csInfo?.justifyContent === 'space-between';
+
+  return {
+    count: cards.length,
+    hasNoBorder,
+    hasNoShadow,
+    isContain,
+    isSingleLine,
+    hasNameAndPrice: !!nameEl && !!priceEl,
+    scrollWidth: rail?.scrollWidth || 0,
+    clientWidth: rail?.clientWidth || 0,
+    transbordaDireita: (rail?.scrollWidth || 0) > (rail?.clientWidth || 0)
+  };
+});
+
+checa(emAltaAudit.count >= 4, 'Seção Destaques "Em Alta" contém ≥ 4 cards grandes de produtos', `${emAltaAudit.count} cards`);
+checa(emAltaAudit.isContain, 'Cards de Destaques utilizam object-fit: contain');
+checa(emAltaAudit.hasNoBorder && emAltaAudit.hasNoShadow, 'Cards de Destaques não possuem bordas nem sombras');
+checa(emAltaAudit.isSingleLine && emAltaAudit.hasNameAndPrice, 'Nome e preço dispostos em linha única abaixo da imagem');
+checa(emAltaAudit.transbordaDireita, 'Trilho de Destaques transborda na borda direita no desktop (~3,5 cards visíveis)', `scrollWidth: ${emAltaAudit.scrollWidth}px > clientWidth: ${emAltaAudit.clientWidth}px`);
+
+// 10.5. Padronização de Todas as Setas do Site (Luminância Alta, Fundo Claro, Chevron Escuro)
+const arrowsAudit = await pagina.evaluate(() => {
+  const arrows = [...document.querySelectorAll('.btn-nav-arrow, .hero-arrow-btn, .rail-arrow')];
+  if (!arrows.length) return { count: 0, allLight: false };
+
+  function parseLuminance(colorStr) {
+    const m = colorStr.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/i);
+    if (!m) return 1;
+    const r = parseInt(m[1], 10) / 255;
+    const g = parseInt(m[2], 10) / 255;
+    const b = parseInt(m[3], 10) / 255;
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  }
+
+  let allLight = true;
+  let allHaveBlur = true;
+  for (const a of arrows) {
+    const cs = window.getComputedStyle(a);
+    const lum = parseLuminance(cs.backgroundColor);
+    if (lum < 0.75) allLight = false;
+    const filter = cs.backdropFilter || cs.webkitBackdropFilter || '';
+    if (!filter.includes('blur')) allHaveBlur = false;
+  }
+
+  return {
+    count: arrows.length,
+    allLight,
+    allHaveBlur
+  };
+});
+
+checa(arrowsAudit.count >= 6, 'Componente de seta padronizado presente em todos os controles do site', `${arrowsAudit.count} setas encontradas`);
+checa(arrowsAudit.allLight, 'Todas as setas possuem fundo claro com alta luminância (nenhuma seta escura)');
+checa(arrowsAudit.allHaveBlur, 'Todas as setas utilizam acabamento translúcido com backdrop-filter blur');
+
 // ── Finalização ────────────────────────────────────────────────────────────
 await browser.close();
 

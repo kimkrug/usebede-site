@@ -64,6 +64,144 @@ window.irParaLoja = function(url) {
     wishlist: JSON.parse((typeof localStorage !== 'undefined' && localStorage.getItem('bede_wishlist')) || '[]')
   };
 
+  // ── CATÁLOGO CURADO NUVEMSHOP (v36) ──────────────────────────
+  const CATALOGO_PRODUTOS = [
+    // SCARPIN
+    {
+      id: 362812705,
+      nome: 'Scarpin Couro',
+      categoria: 'Scarpin',
+      preco: 'R$ 549,90',
+      precoNum: 549.90,
+      url: 'https://loja.usebede.com.br/produtos/scarpin-couro-1eoiz/',
+      foto: 'assets/products/scarpin_couro.jpg'
+    },
+    {
+      id: 362812688,
+      nome: 'Scarpin Leona',
+      categoria: 'Scarpin',
+      preco: 'R$ 499,90',
+      precoNum: 499.90,
+      url: 'https://loja.usebede.com.br/produtos/scarpin-leona-1bi6j/',
+      foto: 'assets/products/scarpin_leona.jpg'
+    },
+    {
+      id: 362812683,
+      nome: 'Scarpin Patrícia',
+      categoria: 'Scarpin',
+      preco: 'R$ 479,90',
+      precoNum: 479.90,
+      url: 'https://loja.usebede.com.br/produtos/sapato-patricia-1075x/',
+      foto: 'assets/products/scarpin_patricia.jpg'
+    },
+    {
+      id: 362812411,
+      nome: 'Scarpin Ariana Verniz',
+      categoria: 'Scarpin',
+      preco: 'R$ 489,90',
+      precoNum: 489.90,
+      url: 'https://loja.usebede.com.br/produtos/scarpin-ariana-verniz-g0x00/',
+      foto: 'assets/products/scarpin_ariana.jpg'
+    },
+    // BOTA
+    {
+      id: 362812718,
+      nome: 'Bota Croco',
+      categoria: 'Bota',
+      preco: 'R$ 699,90',
+      precoNum: 699.90,
+      url: 'https://loja.usebede.com.br/produtos/botas-croco-ndm77/',
+      foto: 'assets/products/bota_croco.jpg'
+    },
+    {
+      id: 362812697,
+      nome: 'Bota Malha Cano Médio Salto Fino',
+      categoria: 'Bota',
+      preco: 'R$ 599,90',
+      precoNum: 599.90,
+      url: 'https://loja.usebede.com.br/produtos/bota-malha-cano-medio-salto-fino-zhqre/',
+      foto: 'assets/products/bota_malha.jpg'
+    },
+    {
+      id: 362812691,
+      nome: 'Bota Over Malha',
+      categoria: 'Bota',
+      preco: 'R$ 729,90',
+      precoNum: 729.90,
+      url: 'https://loja.usebede.com.br/produtos/bota-over-malha-3j4d8/',
+      foto: 'assets/products/bota_over.jpg'
+    },
+    {
+      id: 362812679,
+      nome: 'Bota Cano Alto Salto Taça',
+      categoria: 'Bota',
+      preco: 'R$ 689,90',
+      precoNum: 689.90,
+      url: 'https://loja.usebede.com.br/produtos/bota-cano-alto-salto-taca-j3p6d/',
+      foto: 'assets/products/bota_taca.jpg'
+    },
+    {
+      id: 362812674,
+      nome: 'Bota Capa Salto Bloco',
+      categoria: 'Bota',
+      preco: 'R$ 649,90',
+      precoNum: 649.90,
+      url: 'https://loja.usebede.com.br/produtos/bota-capa-salto-bloco-13bpy/',
+      foto: 'assets/products/bota_capa.jpg'
+    },
+    // MULE
+    {
+      id: 362812724,
+      nome: 'Mule Couro Fivela',
+      categoria: 'Mule',
+      preco: 'R$ 459,90',
+      precoNum: 459.90,
+      url: 'https://loja.usebede.com.br/produtos/mule-couro-fivela-1w4v9/',
+      foto: 'assets/products/mule_couro.jpg'
+    },
+    // MOCASSIM
+    {
+      id: 362812721,
+      nome: 'Mocassim com Cravinhos',
+      categoria: 'Mocassim',
+      preco: 'R$ 469,90',
+      precoNum: 469.90,
+      url: 'https://loja.usebede.com.br/produtos/mocassim-com-cravinhos-1iz7x/',
+      foto: 'assets/products/mocassim_cravinhos.jpg'
+    },
+    // TÊNIS
+    {
+      id: 362812709,
+      nome: 'Tênis Dalia',
+      categoria: 'Tênis',
+      preco: 'R$ 439,90',
+      precoNum: 439.90,
+      url: 'https://loja.usebede.com.br/produtos/tenis-dalia-7wtg4/',
+      foto: 'assets/split_shoes.jpg'
+    },
+    // BOLSA
+    {
+      id: 362812671,
+      nome: 'Bolsa Pochete Jéssica',
+      categoria: 'Bolsa',
+      preco: 'R$ 589,90',
+      precoNum: 589.90,
+      url: 'https://loja.usebede.com.br/produtos/bolsa-pochete-jessica-1lm8w/',
+      foto: 'assets/products/bolsa_jessica.jpg'
+    }
+  ];
+
+  // Curadoria manual de produtos "Em Alta" (IDs configuráveis pelo Kim)
+  const DESTAQUES_EM_ALTA_IDS = [
+    362812705, // Scarpin Couro
+    362812718, // Bota Croco
+    362812688, // Scarpin Leona
+    362812724, // Mule Couro Fivela
+    362812721, // Mocassim com Cravinhos
+    362812709, // Tênis Dalia
+    362812671  // Bolsa Pochete Jéssica
+  ];
+
   // Filtro na origem: exclui inativos, registros vazios e produtos sem imagem
   const RAW_PRODUCTS = typeof STILETTO_PRODUCTS !== 'undefined' ? STILETTO_PRODUCTS : [];
   const PRODUCTS = RAW_PRODUCTS.filter(p => {
@@ -219,9 +357,112 @@ window.irParaLoja = function(url) {
     }
   }
 
+  // ── 1. HERO CARROSSEL (3 QUADROS) ──────────────────────────
+  let heroCurrentFrame = 0;
+  let heroAutoTimer = null;
+
+  window.goToHeroFrame = function(idx) {
+    const frames = document.querySelectorAll('.hero-frame');
+    const dots = document.querySelectorAll('.hero-dot');
+    if (!frames.length) return;
+    heroCurrentFrame = (idx + frames.length) % frames.length;
+    frames.forEach((f, i) => f.classList.toggle('active', i === heroCurrentFrame));
+    dots.forEach((d, i) => d.classList.toggle('active', i === heroCurrentFrame));
+  };
+
+  window.nextHeroFrame = function() {
+    window.goToHeroFrame(heroCurrentFrame + 1);
+  };
+
+  window.prevHeroFrame = function() {
+    window.goToHeroFrame(heroCurrentFrame - 1);
+  };
+
+  function setupHeroCarousel() {
+    const heroEl = document.getElementById('slide0');
+    if (!heroEl) return;
+    
+    function startTimer() {
+      stopTimer();
+      heroAutoTimer = setInterval(window.nextHeroFrame, 7000);
+    }
+    function stopTimer() {
+      if (heroAutoTimer) clearInterval(heroAutoTimer);
+    }
+
+    heroEl.addEventListener('mouseenter', stopTimer);
+    heroEl.addEventListener('mouseleave', startTimer);
+    startTimer();
+  }
+
+  // ── 2. SLIDE 1: TIPOS COM ABAS (SCARPIN · BOTA · MULE) ───────
+  window.switchCategoryTab = function(categoria) {
+    const pills = document.querySelectorAll('.tab-pill');
+    pills.forEach(p => p.classList.toggle('active', p.dataset.tab === categoria));
+
+    const rail = document.getElementById('tabsRail');
+    if (!rail) return;
+
+    let prods = CATALOGO_PRODUTOS.filter(p => p.categoria.toLowerCase() === categoria.toLowerCase());
+    if (prods.length < 4) {
+      const complementos = CATALOGO_PRODUTOS.filter(p => !prods.some(pr => pr.id === p.id));
+      prods = [...prods, ...complementos.slice(0, 4 - prods.length)];
+    }
+    
+    rail.innerHTML = prods.map(p => `
+      <a class="tab-product-card" href="${p.url}" onclick="irParaLoja('${p.url}');return false;">
+        <div class="tab-card-img-wrap">
+          <img src="${p.foto}" alt="${p.nome}" loading="lazy">
+        </div>
+        <span class="tab-card-name">${p.nome}</span>
+      </a>
+    `).join('');
+
+    // Transpasse bilateral: ajuste inicial do scroll
+    rail.scrollLeft = 0;
+    setTimeout(() => {
+      rail.scrollLeft = 70;
+    }, 30);
+  };
+
+  window.scrollTabsRail = function(direction) {
+    const rail = document.getElementById('tabsRail');
+    if (!rail) return;
+    rail.scrollBy({ left: direction * 260, behavior: 'smooth' });
+  };
+
+  // ── 3. SLIDE 3: DESTAQUES "EM ALTA" ─────────────────────────────
+  function renderEmAltaRail() {
+    const rail = document.getElementById('emAltaRail');
+    if (!rail) return;
+
+    const emAltaProds = DESTAQUES_EM_ALTA_IDS.map(id => CATALOGO_PRODUTOS.find(p => p.id === id)).filter(Boolean);
+    
+    rail.innerHTML = emAltaProds.map(p => `
+      <a class="em-alta-card" href="${p.url}" onclick="irParaLoja('${p.url}');return false;">
+        <div class="em-alta-img-wrap">
+          <img src="${p.foto}" alt="${p.nome}" loading="lazy">
+        </div>
+        <div class="em-alta-info-row">
+          <span class="em-alta-prod-name">${p.nome}</span>
+          <span class="em-alta-prod-price">${p.preco}</span>
+        </div>
+      </a>
+    `).join('');
+  }
+
+  window.scrollEmAltaRail = function(direction) {
+    const rail = document.getElementById('emAltaRail');
+    if (!rail) return;
+    rail.scrollBy({ left: direction * 330, behavior: 'smooth' });
+  };
+
   // ── INIT ───────────────────────────────────────────────────
   function init() {
     aplicarConfigLoja();
+    setupHeroCarousel();
+    switchCategoryTab('Scarpin');
+    renderEmAltaRail();
     setupSlider();
     setupCart();
     setupCollectionScroll();

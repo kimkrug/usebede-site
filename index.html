@@ -142,14 +142,14 @@
   <!-- ── DOTS DE NAVEGAÇÃO LATERAL (6 SLIDES COM SNAP) ───────── -->
   <nav class="slide-dots" id="slideDots" aria-label="Navegação de slides">
     <button class="s-dot active" onclick="goToSlide(0)" aria-label="Slide 1 — Hero"></button>
-    <button class="s-dot" onclick="goToSlide(1)" aria-label="Slide 2 — Categorias"></button>
-    <button class="s-dot" onclick="goToSlide(2)" aria-label="Slide 3 — Tipos"></button>
-    <button class="s-dot" onclick="goToSlide(3)" aria-label="Slide 4 — Liquidação"></button>
-    <button class="s-dot" onclick="goToSlide(4)" aria-label="Slide 5 — Atendimento"></button>
+    <button class="s-dot" onclick="goToSlide(1)" aria-label="Slide 2 — Categorias com Abas"></button>
+    <button class="s-dot" onclick="goToSlide(2)" aria-label="Slide 3 — Descubra os Tipos"></button>
+    <button class="s-dot" onclick="goToSlide(3)" aria-label="Slide 4 — Em Alta"></button>
+    <button class="s-dot" onclick="goToSlide(4)" aria-label="Slide 5 — Atendimento Boutique"></button>
     <button class="s-dot" onclick="goToSlide(5)" aria-label="Slide 6 — Informações e Rodapé"></button>
   </nav>
 
-  <!-- ── BOTÃO FLUTUANTE WHATSAPP (VERDE COM BORDA BRANCA FINA, SEM SOMBRA) ────── -->
+  <!-- ── BOTÃO FLUTUANTE WHATSAPP ───────────────────────────────── -->
   <a href="https://wa.me/5551980150391?text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20personalizado%20na%20BED%C3%8A%20Stiletto."
      target="_blank"
      rel="noopener"
@@ -162,23 +162,82 @@
   </a>
 
   <!-- ============================================================
-       MOTOR DE TELAS CHEIAS — 5 SLIDES 100VH
+       MOTOR DE TELAS CHEIAS — 6 SLIDES 100VH (v36)
   ============================================================ -->
   <div class="viewport-stage" id="viewportStage">
     <div class="slides-track" id="slidesTrack">
 
-      <!-- ── SLIDE 0: HERO EDITORIAL ─────────────────────── -->
+      <!-- ── SLIDE 0: HERO CARROSSEL (3 QUADROS) ─────────────── -->
       <section class="v-slide" id="slide0" aria-label="Hero editorial">
-        <div class="hero-bg" id="heroBg"></div>
-        <div class="hero-shade"></div>
-        <div class="hero-content">
-          <span class="hero-eyebrow">Nova Coleção · Inverno 2026</span>
-          <h1 class="hero-headline">Design que define.<br>Conforto que liberta.</h1>
-          <a href="https://loja.usebede.com.br/produtos/" class="btn-nv" onclick="irParaLoja('https://loja.usebede.com.br/produtos/');return false;">
-            Descobrir a coleção &rarr;
-          </a>
+        <div class="hero-carousel" id="heroCarousel">
+          <!-- QUADRO 1: A FOTO ATUAL COMO ESTÁ -->
+          <div class="hero-frame active" id="heroFrame0" data-index="0">
+            <div class="hero-frame-bg hero-bg-1"></div>
+            <div class="hero-shade"></div>
+            <div class="hero-content">
+              <span class="hero-eyebrow">Nova Coleção · Inverno 2026</span>
+              <h1 class="hero-headline">Design que define.<br>Conforto que liberta.</h1>
+              <div class="hero-cta-group">
+                <a href="https://loja.usebede.com.br/produtos/" class="btn-nv" onclick="irParaLoja('https://loja.usebede.com.br/produtos/');return false;">
+                  Descobrir a coleção &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- QUADRO 2: ZOOM NA BOTA -->
+          <div class="hero-frame" id="heroFrame1" data-index="1">
+            <div class="hero-frame-bg hero-bg-2"></div>
+            <div class="hero-shade"></div>
+            <div class="hero-content">
+              <span class="hero-eyebrow">Botas em Destaque</span>
+              <h1 class="hero-headline">Design e Atitude.<br>Acabamento impecável.</h1>
+              <div class="hero-cta-group">
+                <a href="https://loja.usebede.com.br/bota/" class="btn-nv" onclick="irParaLoja('https://loja.usebede.com.br/bota/');return false;">
+                  Ver Botas &rarr;
+                </a>
+                <a href="https://loja.usebede.com.br/produtos/" class="btn-nv btn-nv-secondary" onclick="irParaLoja('https://loja.usebede.com.br/produtos/');return false;">
+                  Ver todos os calçados
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- QUADRO 3: ZOOM NA BOLSA -->
+          <div class="hero-frame" id="heroFrame2" data-index="2">
+            <div class="hero-frame-bg hero-bg-3"></div>
+            <div class="hero-shade"></div>
+            <div class="hero-content">
+              <span class="hero-eyebrow">Bolsas em Destaque</span>
+              <h1 class="hero-headline">Essenciais &amp; Autênticas.<br>Coleção Exclusiva.</h1>
+              <div class="hero-cta-group">
+                <a href="https://loja.usebede.com.br/bolsa/" class="btn-nv" onclick="irParaLoja('https://loja.usebede.com.br/bolsa/');return false;">
+                  Ver Bolsas &rarr;
+                </a>
+                <a href="https://loja.usebede.com.br/produtos/" class="btn-nv btn-nv-secondary" onclick="irParaLoja('https://loja.usebede.com.br/produtos/');return false;">
+                  Ver todos os calçados
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Informações de benefícios: Sem caixa, fundo da foto e linha suave superior alinhada -->
+
+        <!-- CONTROLES DA HERO: SETAS + PONTINHOS HORIZONTAIS ESTILO NB (‹ ● ○ ○ ›) -->
+        <div class="hero-nav-controls">
+          <button class="btn-nav-arrow circle hero-arrow-btn" id="heroPrevBtn" onclick="prevHeroFrame()" aria-label="Quadro anterior">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div class="hero-dots" id="heroDots">
+            <button class="hero-dot active" onclick="goToHeroFrame(0)" aria-label="Quadro 1"></button>
+            <button class="hero-dot" onclick="goToHeroFrame(1)" aria-label="Quadro 2"></button>
+            <button class="hero-dot" onclick="goToHeroFrame(2)" aria-label="Quadro 3"></button>
+          </div>
+          <button class="btn-nav-arrow circle hero-arrow-btn" id="heroNextBtn" onclick="nextHeroFrame()" aria-label="Próximo quadro">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+
+        <!-- Informações de benefícios: Sul e Sudeste -->
         <div class="home-bottom-bar">
           <div class="home-bar-inner">
             <span id="homeBarClaims"></span>
@@ -186,30 +245,32 @@
         </div>
       </section>
 
-      <!-- ── SLIDE 1: DUPLO 50/50 byNV (CATEGORIAS / PRODUTOS) ───── -->
-      <section class="v-slide" id="slide1" aria-label="Categorias de Produtos">
-        <div class="split-dual-slide">
-
-          <div class="dual-half" onclick="irParaLoja('https://loja.usebede.com.br/produtos/')" role="button" tabindex="0" aria-label="Ver Sapataria e Saltos">
-            <img class="dual-img" src="assets/split_shoes.jpg?v=crop_v3" alt="Sapataria &amp; Saltos — Stiletto BEDÊ" loading="lazy">
-            <div class="dual-shade"></div>
-            <div class="dual-caption">
-              <span class="dual-eyebrow">Ateliê</span>
-              <h3 class="dual-title">Sapataria<br>&amp; Saltos</h3>
-              <span class="dual-cta">Explorar &rarr;</span>
+      <!-- ── SLIDE 1: TIPOS COM ABAS (SCARPIN · BOTA · MULE) ─────── -->
+      <section class="v-slide" id="slide1" aria-label="Coleção por Categoria">
+        <div class="tabs-slide-container">
+          <div class="tabs-header">
+            <span class="tabs-eyebrow">Catálogo Exclusivo</span>
+            <h2 class="tabs-title">COLEÇÃO POR CATEGORIA</h2>
+            <div class="category-tabs" id="categoryTabs" role="tablist">
+              <button class="tab-pill active" data-tab="Scarpin" onclick="switchCategoryTab('Scarpin')" role="tab">Scarpin</button>
+              <button class="tab-pill" data-tab="Bota" onclick="switchCategoryTab('Bota')" role="tab">Bota</button>
+              <button class="tab-pill" data-tab="Mule" onclick="switchCategoryTab('Mule')" role="tab">Mule</button>
             </div>
           </div>
 
-          <div class="dual-half" onclick="irParaLoja('https://loja.usebede.com.br/produtos/')" role="button" tabindex="0" aria-label="Ver Bolsas e Casuais">
-            <img class="dual-img" src="assets/split_bags.jpg?v=crop_v3" alt="Bolsas &amp; Casuais — Stiletto BEDÊ" loading="lazy">
-            <div class="dual-shade"></div>
-            <div class="dual-caption">
-              <span class="dual-eyebrow">Essenciais</span>
-              <h3 class="dual-title">Bolsas<br>&amp; Casuais</h3>
-              <span class="dual-cta">Explorar &rarr;</span>
-            </div>
-          </div>
+          <div class="tabs-rail-wrapper">
+            <button class="btn-nav-arrow pill rail-arrow prev" id="tabsRailPrev" onclick="scrollTabsRail(-1)" aria-label="Anterior">
+              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
 
+            <div class="tabs-rail" id="tabsRail">
+              <!-- Renderizado dinamicamente via JS com fotos locais e links para loja.usebede.com.br -->
+            </div>
+
+            <button class="btn-nav-arrow pill rail-arrow next" id="tabsRailNext" onclick="scrollTabsRail(1)" aria-label="Próximo">
+              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -282,17 +343,26 @@
         </div>
       </section>
 
-      <!-- ── SLIDE 3: SPLIT 64/31 byNV (SPECIAL SALE / LIQUIDAÇÃO) ───── -->
-      <section class="v-slide" id="slide3" aria-label="Liquidação Especial">
-        <div class="split-text-slide">
-          <div class="split-photo">
-            <img src="assets/split_editorial.jpg?v=showroom_v1" alt="BEDÊ Stiletto — Showroom &amp; Coleção" loading="lazy">
+      <!-- ── SLIDE 3: DESTAQUES "EM ALTA" (PRINT 1 NEW BALANCE) ───── -->
+      <section class="v-slide" id="slide3" aria-label="Destaques Em Alta">
+        <div class="em-alta-slide-container">
+          <div class="em-alta-header">
+            <span class="em-alta-eyebrow">Seleção Especial</span>
+            <h2 class="em-alta-title">EM ALTA</h2>
           </div>
-          <div class="split-text-content">
-            <h2 class="split-headline single-line">LIQUIDAÇÃO</h2>
-            <a href="https://loja.usebede.com.br/produtos/" id="slideSaleBtn" class="btn-nv dark" onclick="irParaLoja('https://loja.usebede.com.br/produtos/');return false;">
-              Ver Liquidação &rarr;
-            </a>
+
+          <div class="em-alta-rail-wrapper">
+            <button class="btn-nav-arrow pill rail-arrow prev" id="emAltaRailPrev" onclick="scrollEmAltaRail(-1)" aria-label="Anterior">
+              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+
+            <div class="em-alta-rail" id="emAltaRail">
+              <!-- Renderizado dinamicamente via JS com produtos em alta -->
+            </div>
+
+            <button class="btn-nav-arrow pill rail-arrow next" id="emAltaRailNext" onclick="scrollEmAltaRail(1)" aria-label="Próximo">
+              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
           </div>
         </div>
       </section>
