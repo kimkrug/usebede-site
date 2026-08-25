@@ -828,6 +828,102 @@ const tabsDetails = await pagina.evaluate(async () => {
 checa(tabsDetails.pillsCount === 3 && tabsDetails.pillNames.join(' · ') === 'Scarpin · Bota · Mule', 'Coleção por Categoria possui 3 abas ativas', tabsDetails.pillNames.join(' · '));
 checa(tabsDetails.results['Scarpin'] >= 4 && tabsDetails.results['Bota'] >= 5 && tabsDetails.results['Mule'] >= 1, 'Trilho de abas renderiza produtos dinâmicos para cada categoria');
 
+// ── 11. Travas de Paridade Real de Preços e Nomes v36.2 ────────────────────
+secao('11. Paridade de Preços e Nomes (Fonte Única: products.js e Loja Real) [v36.2]');
+
+// 11.1. Verificação de Hardcoded Price Strings no Bundle
+const bundleAudit = await pagina.evaluate(async () => {
+  const scripts = [...document.querySelectorAll('script[src]')].map(s => s.src);
+  const appJsSrc = scripts.find(s => s.includes('app.js'));
+  let appJsContent = '';
+  if (appJsSrc) {
+    try {
+      const res = await fetch(appJsSrc);
+      appJsContent = await res.text();
+    } catch(e) {}
+  }
+  return { appJsContent };
+});
+
+const hardcodedCardsRegex = /preco:\s*['"]R\$\s*\d/i;
+checa(!hardcodedCardsRegex.test(bundleAudit.appJsContent), 'Zero preços hardcoded no app.js (todos resolvidos de products.js)');
+
+// 11.2. Paridade em 3 pontas (Card no Site x products.js x Loja Nuvemshop) para todos os cards do Em Alta
+const emAltaCardsData = await pagina.evaluate(() => {
+  const cards = [...document.querySelectorAll('#emAltaRail .nb-card')];
+  const pJs = (typeof STILETTO_PRODUCTS !== 'undefined' ? STILETTO_PRODUCTS : []);
+  return cards.map(c => {
+    const name = c.querySelector('.nb-card-name')?.innerText.trim() || '';
+    const price = c.querySelector('.nb-card-price')?.innerText.trim() || '';
+    const href = c.href || '';
+    
+    // Find matching in products.js
+    const norm = str => (str || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]/g, '');
+    const pMatch = pJs.find(p => p.url_absolute === href || norm(p.nome_title || p.nome) === norm(name));
+    
+    return {
+      name,
+      price,
+      href,
+      pJsFound: !!pMatch,
+      pJsName: pMatch ? (pMatch.nome_title || pMatch.nome) : null,
+      pJsPriceNum: pMatch ? Number(pMatch.preco) : null,
+      pJsPriceFmt: pMatch ? Number(pMatch.preco).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) : null
+    };
+  });
+});
+
+console.log('\n  TABELA DE PARIDADE DE PREÇOS (v36.2):');
+console.log('  ' + '─'.repeat(84));
+console.log('  | Produto                     | Card no Site | products.js  | Loja Nuvemshop | Status  |');
+console.log('  ' + '─'.repeat(84));
+
+for (const card of emAltaCardsData) {
+  // Fetch real product page
+  let livePriceText = 'ERR';
+  let livePriceNum = NaN;
+  try {
+    const pPage = await browser.newPage();
+    await pPage.goto(card.href, { waitUntil: 'domcontentloaded', timeout: 15000 });
+    livePriceText = await pPage.evaluate(() => {
+      const el = document.querySelector('#price_display, .js-price-display, .price, .js-product-price');
+      return el ? el.innerText.trim() : '';
+    });
+    await pPage.close();
+    
+    const std = s => (s || '').replace(/[R$\s\u00a0]/g, '').replace(',', '.').trim();
+    livePriceNum = parseFloat(std(livePriceText));
+  } catch (e) {
+    livePriceText = `Erro: ${e.message}`;
+  }
+
+  const std = s => (s || '').replace(/[R$\s\u00a0]/g, '').replace(',', '.').trim();
+  const cardPriceNum = parseFloat(std(card.price));
+  const pJsPriceNum = card.pJsPriceNum;
+
+  const priceMatchesPJs = Math.abs(cardPriceNum - pJsPriceNum) < 0.01;
+  const priceMatchesLive = Math.abs(cardPriceNum - livePriceNum) < 0.01;
+  const parityOk = priceMatchesPJs && priceMatchesLive;
+
+  const statusStr = parityOk ? 'OK' : 'DIVERGÊNCIA';
+  const namePad = card.name.padEnd(27, ' ');
+  const cardPricePad = card.price.padEnd(12, ' ');
+  const pJsPricePad = (card.pJsPriceFmt || 'N/A').padEnd(12, ' ');
+  const livePricePad = livePriceText.padEnd(14, ' ');
+
+  console.log(`  | ${namePad} | ${cardPricePad} | ${pJsPricePad} | ${livePricePad} | ${statusStr.padEnd(7, ' ')} |`);
+
+  checa(card.pJsFound, `Card "${card.name}" possui correspondência em products.js`);
+  checa(priceMatchesPJs, `Paridade Card × products.js para "${card.name}"`, `${card.price} == ${card.pJsPriceFmt}`);
+  checa(priceMatchesLive, `Paridade Card × Loja Nuvemshop para "${card.name}"`, `${card.price} == ${livePriceText}`);
+  
+  // Paridade de nome (sem acento em Jessica)
+  if (card.name.toLowerCase().includes('jessica')) {
+    checa(!card.name.includes('é') && card.name.includes('Jessica'), 'Nome da Bolsa Jessica sem acento (conforme catálogo)');
+  }
+}
+console.log('  ' + '─'.repeat(84) + '\n');
+
 // ── Finalização ────────────────────────────────────────────────────────────
 await browser.close();
 

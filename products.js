@@ -3,12 +3,10 @@ const STILETTO_PRODUCTS = [
         "id": "3325661",
         "nome": "BOTA CAPA SALTO BLOCO",
         "categoria": "BOTA CANO MÉDIO",
-        "url_absolute": "https://loja.usebede.com.br/bota-capa-salto-bloco/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0cedacdf/original-66cbd0cf94b87.jpeg",
+        "url_absolute": "https://loja.usebede.com.br/produtos/bota-capa-salto-bloco-13bpy/",
+        "foto": "assets/products/bota_capa.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0cedacdf/original-66cbd0cf94b87.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0cedacdf/original-66cbd0d004f5b.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0cedacdf/original-66cbd0cf25d5a.jpeg"
+            "assets/products/bota_capa.jpg"
         ],
         "preco": 339.9,
         "cores": [
@@ -123,30 +121,27 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "BLUSH": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0cedacdf/original-66cbd0cf94b87.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0cedacdf/original-66cbd0d004f5b.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "TAUPE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0cedacdf/original-66cbd0cf25d5a.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
-        "novidade": false
+        "novidade": false,
+        "nome_title": "Bota Capa Salto Bloco",
+        "foto_local": "assets/products/bota_capa.jpg"
     },
     {
         "id": "3325663",
         "nome": "BOTA CANO ALTO SALTO TAÇA",
         "categoria": "BOTA CANO LONGO",
-        "url_absolute": "https://loja.usebede.com.br/bota-cano-alto-salto-taca/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d2a30d6/whatsapp-image-2025-06-05-at-13-29-41-6841d2380f04c.jpeg",
+        "url_absolute": "https://loja.usebede.com.br/produtos/bota-cano-alto-salto-taca-j3p6d/",
+        "foto": "assets/products/bota_taca.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d2a30d6/whatsapp-image-2025-06-05-at-13-29-41-6841d2380f04c.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d2a30d6/original-66cbd0d2d23e0.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d2a30d6/original-66cbd0d3c28e3.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d2a30d6/original-66cbd0d44e21f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d2a30d6/original-66cbd0d34a125.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d2a30d6/original-66cbd0d4c186d.jpeg"
+            "assets/products/bota_taca.jpg"
         ],
         "preco": 369.9,
         "cores": [
@@ -228,30 +223,28 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "MALBEC": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d2a30d6/original-66cbd0d2d23e0.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d2a30d6/original-66cbd0d3c28e3.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d2a30d6/original-66cbd0d44e21f.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d2a30d6/whatsapp-image-2025-06-05-at-13-29-41-6841d2380f04c.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d2a30d6/original-66cbd0d34a125.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d2a30d6/original-66cbd0d4c186d.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
-        "novidade": false
+        "novidade": false,
+        "nome_title": "Bota Cano Alto Salto Taça",
+        "foto_local": "assets/products/bota_taca.jpg"
     },
     {
         "id": "3325664",
         "nome": "SAPATO PATRÍCIA",
         "categoria": "SCARPIN",
-        "url_absolute": "https://loja.usebede.com.br/sapato-patricia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d6241e4/original-66cbd0d6bff43.jpeg",
+        "url_absolute": "https://loja.usebede.com.br/produtos/sapato-patricia-1075x/",
+        "foto": "assets/products/scarpin_patricia.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d6241e4/original-66cbd0d6bff43.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d6241e4/original-66cbd0d79f628.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d6241e4/original-66cbd0d827093.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d6241e4/original-66cbd0d64eba9.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d6241e4/original-66cbd0d734a85.jpeg"
+            "assets/products/scarpin_patricia.jpg"
         ],
         "preco": 200.9,
         "cores": [
@@ -385,30 +378,31 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "CACAU": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d6241e4/original-66cbd0d6bff43.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d6241e4/original-66cbd0d79f628.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d6241e4/original-66cbd0d827093.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d6241e4/original-66cbd0d64eba9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0d6241e4/original-66cbd0d734a85.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
-        "novidade": false
+        "novidade": false,
+        "nome_title": "Scarpin Patrícia",
+        "foto_local": "assets/products/scarpin_patricia.jpg"
     },
     {
         "id": "3325666",
         "nome": "SCARPIN LEONA",
         "categoria": "SCARPIN",
-        "url_absolute": "https://loja.usebede.com.br/scarpin-leona/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dab96e3/original-66cbd0dae3d0f.jpeg",
+        "url_absolute": "https://loja.usebede.com.br/produtos/scarpin-leona-1bi6j/",
+        "foto": "assets/products/scarpin_leona.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dab96e3/original-66cbd0dae3d0f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dab96e3/original-66cbd0db4a172.jpeg"
+            "assets/products/scarpin_leona.jpg"
         ],
-        "preco": 299.0,
+        "preco": 299,
         "cores": [
             "Única"
         ],
@@ -455,23 +449,24 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dab96e3/original-66cbd0dae3d0f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dab96e3/original-66cbd0db4a172.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
-        "novidade": false
+        "novidade": false,
+        "nome_title": "Scarpin Leona",
+        "foto_local": "assets/products/scarpin_leona.jpg"
     },
     {
         "id": "3325667",
         "nome": "BOTA OVER MALHA",
         "categoria": "BOTA CANO LONGO",
-        "url_absolute": "https://loja.usebede.com.br/botas-tec-mlr-3685-preto/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dc1ad5d/img_0892-66df156777c82.jpg",
+        "url_absolute": "https://loja.usebede.com.br/produtos/bota-over-malha-3j4d8/",
+        "foto": "assets/products/bota_over.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dc1ad5d/img_0892-66df156777c82.jpg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dc1ad5d/img_0891-66df15690c250.jpg"
+            "assets/products/bota_over.jpg"
         ],
-        "preco": 419.0,
+        "preco": 419,
         "cores": [
             "Única"
         ],
@@ -511,23 +506,22 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dc1ad5d/img_0892-66df156777c82.jpg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dc1ad5d/img_0891-66df15690c250.jpg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
-        "novidade": false
+        "novidade": false,
+        "nome_title": "Bota Over Malha",
+        "foto_local": "assets/products/bota_over.jpg"
     },
     {
         "id": "3325668",
         "nome": "BOTA MALHA CANO MÉDIO SALTO FINO",
         "categoria": "BOTA CANO MÉDIO",
-        "url_absolute": "https://loja.usebede.com.br/bota-malha-cano-medio-salto-fino/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dc9a3e7/original-66cbd0dcc4d2d.jpeg",
+        "url_absolute": "https://loja.usebede.com.br/produtos/bota-malha-cano-medio-salto-fino-zhqre/",
+        "foto": "assets/products/bota_malha.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dc9a3e7/original-66cbd0dcc4d2d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dc9a3e7/original-66cbd0de37301.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dc9a3e7/original-66cbd0dd3d235.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dc9a3e7/original-66cbd0ddb5d10.jpeg"
+            "assets/products/bota_malha.jpg"
         ],
         "preco": 359.9,
         "cores": [
@@ -609,30 +603,26 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dc9a3e7/original-66cbd0dcc4d2d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dc9a3e7/original-66cbd0de37301.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "SESANO": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dc9a3e7/original-66cbd0dd3d235.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0dc9a3e7/original-66cbd0ddb5d10.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
-        "novidade": false
+        "novidade": false,
+        "nome_title": "Bota Malha Cano Médio Salto Fino",
+        "foto_local": "assets/products/bota_malha.jpg"
     },
     {
         "id": "3325670",
         "nome": "BOLSA POCHETE JESSICA",
         "categoria": "BOLSA",
-        "url_absolute": "https://loja.usebede.com.br/bolsa-pochete-jessica/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e0ce476/img_0882-66df0647bb6c1.jpg",
+        "url_absolute": "https://loja.usebede.com.br/produtos/bolsa-pochete-jessica-1lm8w/",
+        "foto": "assets/products/bolsa_jessica.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e0ce476/img_0882-66df0647bb6c1.jpg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e0ce476/img_0877-66df0649bbc69.jpg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e0ce476/img_0878-66df0649f1b58.jpg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e0ce476/img_0877-66df064c44890.jpg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e0ce476/img_0880-66df064c7df10.jpg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e0ce476/img_0874-66df064f60e89.jpg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e0ce476/img_0877-66df064f88551.jpg"
+            "assets/products/bolsa_jessica.jpg"
         ],
         "preco": 347.9,
         "cores": [
@@ -671,35 +661,31 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "CROCO": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e0ce476/img_0882-66df0647bb6c1.jpg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e0ce476/img_0877-66df0649bbc69.jpg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Mostarda": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e0ce476/img_0878-66df0649f1b58.jpg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e0ce476/img_0877-66df064c44890.jpg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e0ce476/img_0880-66df064c7df10.jpg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e0ce476/img_0874-66df064f60e89.jpg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e0ce476/img_0877-66df064f88551.jpg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
-        "novidade": false
+        "novidade": false,
+        "nome_title": "Bolsa Pochete Jessica",
+        "foto_local": "assets/products/bolsa_jessica.jpg"
     },
     {
         "id": "3325671",
         "nome": "SCARPIN COURO",
         "categoria": "SCARPIN",
-        "url_absolute": "https://loja.usebede.com.br/scarpin-couro/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e161bd7/original-66cbd0e275e5d.jpeg",
+        "url_absolute": "https://loja.usebede.com.br/produtos/scarpin-couro-1eoiz/",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e161bd7/original-66cbd0e275e5d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e161bd7/original-66cbd0e35fcfb.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e161bd7/original-66cbd0e18c4fa.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e161bd7/original-66cbd0e2dc22f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e161bd7/whatsapp-image-2024-09-18-at-18-09-44-66eb41d2bc6ae.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e161bd7/whatsapp-image-2024-09-18-at-18-09-44-1-66eb41d2f0914.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e161bd7/original-66cbd0e2052ef.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 220.9,
         "cores": [
@@ -872,32 +858,33 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e161bd7/original-66cbd0e275e5d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e161bd7/original-66cbd0e35fcfb.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e161bd7/original-66cbd0e18c4fa.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e161bd7/original-66cbd0e2dc22f.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e161bd7/whatsapp-image-2024-09-18-at-18-09-44-66eb41d2bc6ae.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e161bd7/whatsapp-image-2024-09-18-at-18-09-44-1-66eb41d2f0914.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "nude": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e161bd7/original-66cbd0e2052ef.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
-        "novidade": false
+        "novidade": false,
+        "nome_title": "Scarpin Couro",
+        "foto_local": "assets/products/scarpin_couro.jpg"
     },
     {
         "id": "3325673",
         "nome": "TENIS DALIA",
         "categoria": "TÊNIS",
-        "url_absolute": "https://loja.usebede.com.br/tenis-dalia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e6de7dd/original-66cbd0e719454.jpeg",
+        "url_absolute": "https://loja.usebede.com.br/produtos/tenis-dalia-7wtg4/",
+        "foto": "assets/products/tenis_dalia.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e6de7dd/original-66cbd0e719454.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e6de7dd/original-66cbd0e781254.jpeg"
+            "assets/products/tenis_dalia.jpg"
         ],
         "preco": 258.9,
         "cores": [
@@ -946,21 +933,22 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e6de7dd/original-66cbd0e719454.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e6de7dd/original-66cbd0e781254.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
-        "novidade": false
+        "novidade": false,
+        "nome_title": "Tênis Dalia",
+        "foto_local": "assets/products/tenis_dalia.jpg"
     },
     {
         "id": "3325674",
         "nome": "BOTAS CROCO",
         "categoria": "BOTA CANO MÉDIO",
-        "url_absolute": "https://loja.usebede.com.br/botas-croco/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e8632a8/original-66cbd0e8902d1.jpeg",
+        "url_absolute": "https://loja.usebede.com.br/produtos/botas-croco-ndm77/",
+        "foto": "assets/products/bota_croco.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e8632a8/original-66cbd0e8902d1.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e8632a8/original-66cbd0e9197da.jpeg"
+            "assets/products/bota_croco.jpg"
         ],
         "preco": 249.9,
         "cores": [
@@ -995,23 +983,22 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e8632a8/original-66cbd0e8902d1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e8632a8/original-66cbd0e9197da.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
-        "novidade": false
+        "novidade": false,
+        "nome_title": "Bota Croco",
+        "foto_local": "assets/products/bota_croco.jpg"
     },
     {
         "id": "3325675",
         "nome": "MOCASSIM COM CRAVINHOS",
         "categoria": "MOCASSIM",
-        "url_absolute": "https://loja.usebede.com.br/mocassim-com-cravinhos/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e9afb22/whatsapp-image-2024-07-31-at-17-32-00-66e19dfd809df.jpeg",
+        "url_absolute": "https://loja.usebede.com.br/produtos/mocassim-com-cravinhos-1iz7x/",
+        "foto": "assets/products/mocassim_cravinhos.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e9afb22/whatsapp-image-2024-07-31-at-17-32-00-66e19dfd809df.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e9afb22/whatsapp-image-2024-07-31-at-17-32-00-4-66e19dfda406e.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e9afb22/whatsapp-image-2024-07-31-at-17-32-00-2-66e19dfdca646.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e9afb22/whatsapp-image-2024-07-31-at-17-32-00-3-66e19dfdf39e2.jpeg"
+            "assets/products/mocassim_cravinhos.jpg"
         ],
         "preco": 149.9,
         "cores": [
@@ -1184,33 +1171,30 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "MARSALA": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e9afb22/whatsapp-image-2024-07-31-at-17-32-00-66e19dfd809df.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e9afb22/whatsapp-image-2024-07-31-at-17-32-00-4-66e19dfda406e.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e9afb22/whatsapp-image-2024-07-31-at-17-32-00-2-66e19dfdca646.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0e9afb22/whatsapp-image-2024-07-31-at-17-32-00-3-66e19dfdf39e2.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
-        "novidade": false
+        "novidade": false,
+        "nome_title": "Mocassim com Cravinhos",
+        "foto_local": "assets/products/mocassim_cravinhos.jpg"
     },
     {
         "id": "3325676",
         "nome": "MULE COURO FIVELA",
         "categoria": "MULE",
-        "url_absolute": "https://loja.usebede.com.br/mule-couro-fivela/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ec220f7/whatsapp-image-2024-09-11-at-11-06-49-1-66e1a5ce3f0e0.jpeg",
+        "url_absolute": "https://loja.usebede.com.br/produtos/mule-couro-fivela-1w4v9/",
+        "foto": "assets/products/mule_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ec220f7/whatsapp-image-2024-09-11-at-11-06-49-1-66e1a5ce3f0e0.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ec220f7/whatsapp-image-2024-09-11-at-11-06-48-1-66e1a5ce68566.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ec220f7/whatsapp-image-2024-09-11-at-11-06-48-66e1a5ce9223a.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ec220f7/whatsapp-image-2025-06-05-at-15-18-56-6841df9b8f967.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ec220f7/whatsapp-image-2024-09-11-at-11-06-48-2-66e1a5cee50c6.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ec220f7/whatsapp-image-2024-09-11-at-11-06-48-3-66e1a5cf3e6de.jpeg"
+            "assets/products/mule_couro.jpg"
         ],
         "preco": 199.9,
         "cores": [
@@ -1422,36 +1406,34 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Azul": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ec220f7/whatsapp-image-2024-09-11-at-11-06-49-1-66e1a5ce3f0e0.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ec220f7/whatsapp-image-2024-09-11-at-11-06-48-1-66e1a5ce68566.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ec220f7/whatsapp-image-2024-09-11-at-11-06-48-66e1a5ce9223a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ec220f7/whatsapp-image-2025-06-05-at-15-18-56-6841df9b8f967.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Rosa claro": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ec220f7/whatsapp-image-2024-09-11-at-11-06-48-2-66e1a5cee50c6.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ec220f7/whatsapp-image-2024-09-11-at-11-06-48-3-66e1a5cf3e6de.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
-        "novidade": false
+        "novidade": false,
+        "nome_title": "Mule Couro Fivela",
+        "foto_local": "assets/products/mule_couro.jpg"
     },
     {
         "id": "3325677",
         "nome": "BOTA CANO MÉDIO SALTO TAÇA",
         "categoria": "BOTA CANO MÉDIO",
         "url_absolute": "https://loja.usebede.com.br/bota-cano-medio-salto-taca/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ef2e3bf/original-66cbd0ef6ac12.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ef2e3bf/original-66cbd0ef6ac12.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ef2e3bf/original-66cbd0efcae12.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ef2e3bf/original-66cbd0f0ae46a.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ef2e3bf/original-66cbd0f134349.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ef2e3bf/original-66cbd0f03779b.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 279.9,
         "cores": [
@@ -1566,15 +1548,15 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "CACAU": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ef2e3bf/original-66cbd0ef6ac12.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ef2e3bf/original-66cbd0efcae12.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "MALBEC": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ef2e3bf/original-66cbd0f0ae46a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ef2e3bf/original-66cbd0f134349.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0ef2e3bf/original-66cbd0f03779b.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -1584,10 +1566,9 @@ const STILETTO_PRODUCTS = [
         "nome": "TENIS JANE",
         "categoria": "TÊNIS",
         "url_absolute": "https://loja.usebede.com.br/tenis-jane/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f3c2c37/original-66cbd0f3f0583.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f3c2c37/original-66cbd0f3f0583.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f3c2c37/original-66cbd0f462c7d.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 240.9,
         "cores": [
@@ -1636,8 +1617,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f3c2c37/original-66cbd0f3f0583.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f3c2c37/original-66cbd0f462c7d.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -1647,12 +1628,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA MONTARIA CELINE COURO FLOATER",
         "categoria": "BOTA CANO BAIXO",
         "url_absolute": "https://loja.usebede.com.br/bota-montaria-celine-couro-floater/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f52e351/original-66cbd0f660b5a.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f52e351/original-66cbd0f660b5a.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f52e351/original-66cbd0f6da146.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f52e351/original-66cbd0f559123.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f52e351/original-66cbd0f5e4a33.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 319.9,
         "cores": [
@@ -1748,18 +1726,18 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Cinza": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f52e351/original-66cbd0f660b5a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f52e351/original-66cbd0f6da146.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f52e351/original-66cbd0f559123.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f52e351/original-66cbd0f5e4a33.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Marrom": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f52e351/original-66cbd0f660b5a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f52e351/original-66cbd0f6da146.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f52e351/original-66cbd0f559123.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f52e351/original-66cbd0f5e4a33.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -1769,13 +1747,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA FERNANDA",
         "categoria": "BOTA CANO BAIXO",
         "url_absolute": "https://loja.usebede.com.br/bota-malha-cano-curto-salto-fino/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f93d264/original-66cbd0fa7012d.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f93d264/original-66cbd0fa7012d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f93d264/original-66cbd0fb6b9f7.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f93d264/original-66cbd0fae86bd.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f93d264/original-66cbd0f96aca3.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f93d264/original-66cbd0f9e93b9.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 290.9,
         "cores": [
@@ -1909,15 +1883,15 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f93d264/original-66cbd0fa7012d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f93d264/original-66cbd0fb6b9f7.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "cafe": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f93d264/original-66cbd0fae86bd.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f93d264/original-66cbd0f96aca3.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd0f93d264/original-66cbd0f9e93b9.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -1927,10 +1901,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTAS COURO FLY TIRA ENFEITE",
         "categoria": "COTURNO",
         "url_absolute": "https://loja.usebede.com.br/botas-couro-fly-tira-enfeite/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10b6ee7f/original-66cbd10c3321f.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10b6ee7f/original-66cbd10c3321f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10b6ee7f/original-66cbd10b98e80.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 419.9,
         "cores": [
@@ -1979,8 +1952,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10b6ee7f/original-66cbd10c3321f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10b6ee7f/original-66cbd10b98e80.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -1990,13 +1963,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SLINGBACK POÁ",
         "categoria": "SLINGBACK",
         "url_absolute": "https://loja.usebede.com.br/slingback-poa/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10d32b62/original-66cbd10e2eb8f.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10d32b62/original-66cbd10e2eb8f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10d32b62/original-66cbd10e8daea.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10d32b62/original-66cbd10ed64a9.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10d32b62/original-66cbd10dae90f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10d32b62/original-66cbd10d664f1.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 179.9,
         "cores": [
@@ -2208,19 +2177,19 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Azul meia-noite": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10d32b62/original-66cbd10e2eb8f.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "MARSALA": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10d32b62/original-66cbd10e8daea.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10d32b62/original-66cbd10ed64a9.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Prata": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10d32b62/original-66cbd10dae90f.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd10d32b62/original-66cbd10d664f1.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -2230,13 +2199,9 @@ const STILETTO_PRODUCTS = [
         "nome": "TENIS COURO",
         "categoria": "TÊNIS",
         "url_absolute": "https://loja.usebede.com.br/tenis-couro/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd111e9321/original-66cbd1122ae8e.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd111e9321/original-66cbd1122ae8e.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd111e9321/original-66cbd113a18c2.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd111e9321/original-66cbd11418835.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd111e9321/original-66cbd112a2fdf.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd111e9321/original-66cbd113298db.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 250.9,
         "cores": [
@@ -2351,15 +2316,15 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Branco": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd111e9321/original-66cbd1122ae8e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd111e9321/original-66cbd113a18c2.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Cinza": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd111e9321/original-66cbd11418835.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd111e9321/original-66cbd112a2fdf.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd111e9321/original-66cbd113298db.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -2369,12 +2334,9 @@ const STILETTO_PRODUCTS = [
         "nome": "TENIS MARI",
         "categoria": "TÊNIS",
         "url_absolute": "https://loja.usebede.com.br/tenis-mari/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd115d43f0/original-66cbd1165c1c7.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd115d43f0/original-66cbd1165c1c7.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd115d43f0/original-66cbd1172f659.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd115d43f0/original-66cbd1160e0b5.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd115d43f0/original-66cbd116bdd5d.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 210.9,
         "cores": [
@@ -2489,18 +2451,18 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Branco": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd115d43f0/original-66cbd1165c1c7.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd115d43f0/original-66cbd1172f659.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "CAPUCCINO": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd115d43f0/original-66cbd1160e0b5.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd115d43f0/original-66cbd116bdd5d.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd115d43f0/original-66cbd1165c1c7.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd115d43f0/original-66cbd1172f659.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd115d43f0/original-66cbd1160e0b5.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd115d43f0/original-66cbd116bdd5d.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -2509,11 +2471,10 @@ const STILETTO_PRODUCTS = [
         "id": "3325691",
         "nome": "SCARPIN ARIANA VERNIZ",
         "categoria": "SCARPIN",
-        "url_absolute": "https://loja.usebede.com.br/scarpin-ariana-verniz/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd118dafd9/original-66cbd11915cc3.jpeg",
+        "url_absolute": "https://loja.usebede.com.br/produtos/scarpin-ariana-verniz-g0x00/",
+        "foto": "assets/products/scarpin_ariana.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd118dafd9/original-66cbd11915cc3.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd118dafd9/original-66cbd1197c1af.jpeg"
+            "assets/products/scarpin_ariana.jpg"
         ],
         "preco": 155.9,
         "cores": [
@@ -2555,24 +2516,22 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd118dafd9/original-66cbd11915cc3.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd118dafd9/original-66cbd1197c1af.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
-        "novidade": false
+        "novidade": false,
+        "nome_title": "Scarpin Ariana Verniz",
+        "foto_local": "assets/products/scarpin_ariana.jpg"
     },
     {
         "id": "3325692",
         "nome": "MOCHILA LIA",
         "categoria": "BOLSA",
         "url_absolute": "https://loja.usebede.com.br/mochila-lia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a41954/whatsapp-image-2024-09-11-at-10-52-42-66e1a302a0507.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a41954/whatsapp-image-2024-09-11-at-10-52-42-66e1a302a0507.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a41954/whatsapp-image-2024-09-11-at-10-58-16-66e1a3034343f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a41954/whatsapp-image-2024-09-11-at-10-58-16-1-66e1a303cb9db.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a41954/whatsapp-image-2024-09-11-at-10-58-16-2-66e1a3044a371.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a41954/whatsapp-image-2025-06-05-at-14-18-54-6841df4353d62.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 437.5,
         "cores": [
@@ -2602,18 +2561,18 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a41954/whatsapp-image-2024-09-11-at-10-52-42-66e1a302a0507.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a41954/whatsapp-image-2024-09-11-at-10-58-16-66e1a3034343f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a41954/whatsapp-image-2024-09-11-at-10-58-16-1-66e1a303cb9db.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a41954/whatsapp-image-2024-09-11-at-10-58-16-2-66e1a3044a371.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a41954/whatsapp-image-2025-06-05-at-14-18-54-6841df4353d62.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "pinhão": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a41954/whatsapp-image-2024-09-11-at-10-52-42-66e1a302a0507.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a41954/whatsapp-image-2024-09-11-at-10-58-16-66e1a3034343f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a41954/whatsapp-image-2024-09-11-at-10-58-16-1-66e1a303cb9db.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a41954/whatsapp-image-2024-09-11-at-10-58-16-2-66e1a3044a371.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a41954/whatsapp-image-2025-06-05-at-14-18-54-6841df4353d62.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -2623,11 +2582,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOLSA LARA PEQUENA",
         "categoria": "BOLSA",
         "url_absolute": "https://loja.usebede.com.br/bolsa-lara-pequena/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11b47b7f.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11b47b7f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11abf3cb.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/whatsapp-image-2025-06-07-at-12-09-52-684456568ab75.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 349.9,
         "cores": [
@@ -2684,23 +2641,23 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Dourado": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11b47b7f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11abf3cb.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/whatsapp-image-2025-06-07-at-12-09-52-684456568ab75.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Marrom": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11b47b7f.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11abf3cb.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/whatsapp-image-2025-06-07-at-12-09-52-684456568ab75.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "azul marinho": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11b47b7f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/original-66cbd11abf3cb.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11a95586/whatsapp-image-2025-06-07-at-12-09-52-684456568ab75.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -2710,12 +2667,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SCARPIN FIVELA",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/scarpin-fivela/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11c22670/original-66cbd11c4d3ec.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11c22670/original-66cbd11c4d3ec.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11c22670/original-66cbd11cb9069.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11c22670/original-66cbd11d2e0f7.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11c22670/original-66cbd11d9e9b4.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 200.9,
         "cores": [
@@ -2764,10 +2718,10 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11c22670/original-66cbd11c4d3ec.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11c22670/original-66cbd11cb9069.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11c22670/original-66cbd11d2e0f7.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11c22670/original-66cbd11d9e9b4.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -2777,14 +2731,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOLSA CARLA",
         "categoria": "BOLSA",
         "url_absolute": "https://loja.usebede.com.br/bolsa-carla/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-2-66e87d6adf8ae.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-2-66e87d6adf8ae.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6b53852.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6ba402f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-36-50-66e87d6a0909e.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6a547a9.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6a93804.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 449.9,
         "cores": [
@@ -2841,38 +2790,38 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Azul escuro": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-2-66e87d6adf8ae.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6b53852.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6ba402f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-36-50-66e87d6a0909e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6a547a9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6a93804.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "PRETO CROCO": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-2-66e87d6adf8ae.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6b53852.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6ba402f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-36-50-66e87d6a0909e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6a547a9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6a93804.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-2-66e87d6adf8ae.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6b53852.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6ba402f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-36-50-66e87d6a0909e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6a547a9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6a93804.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Vermelho escuro": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-36-50-66e87d6a0909e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6a547a9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6a93804.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-2-66e87d6adf8ae.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-1-66e87d6b53852.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11e8c89b/whatsapp-image-2024-09-16-at-15-40-13-66e87d6ba402f.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -2882,13 +2831,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SCARPIN LUISA VAZADO",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/scarpin-luisa-vazado/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11f1ef9f/original-66cbd12154228.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11f1ef9f/original-66cbd12154228.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11f1ef9f/original-66cbd11f4bb68.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11f1ef9f/original-66cbd120483c9.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11f1ef9f/original-66cbd120d97e3.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11f1ef9f/original-66cbd11fc6e17.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 290.9,
         "cores": [
@@ -3036,17 +2981,17 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "CARVALHO": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11f1ef9f/original-66cbd12154228.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Carmesim": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11f1ef9f/original-66cbd11f4bb68.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11f1ef9f/original-66cbd120483c9.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11f1ef9f/original-66cbd120d97e3.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd11f1ef9f/original-66cbd11fc6e17.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -3056,10 +3001,9 @@ const STILETTO_PRODUCTS = [
         "nome": "MOCASSIM COURO",
         "categoria": "MOCASSIM",
         "url_absolute": "https://loja.usebede.com.br/mocassim-couro/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd123ab412/original-66cbd123d4ecb.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd123ab412/original-66cbd123d4ecb.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd123ab412/original-66cbd1244ecf1.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 290.9,
         "cores": [
@@ -3115,8 +3059,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd123ab412/original-66cbd123d4ecb.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd123ab412/original-66cbd1244ecf1.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -3126,11 +3070,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA PRADA",
         "categoria": "COTURNO",
         "url_absolute": "https://loja.usebede.com.br/bota-prada/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12555dac/original-66cbd125ee030.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12555dac/original-66cbd125ee030.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12555dac/original-66cbd1267db1e.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12555dac/original-66cbd125823a6.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 349.9,
         "cores": [
@@ -3212,11 +3154,11 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Marrom": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12555dac/original-66cbd125ee030.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12555dac/original-66cbd1267db1e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12555dac/original-66cbd125823a6.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -3226,13 +3168,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SLINGBACK SLIN",
         "categoria": "SLINGBACK",
         "url_absolute": "https://loja.usebede.com.br/slingback-slin/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd12816c03.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd12816c03.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd1293e286.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd129a6704.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd128acf8d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd12a28d22.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 119.9,
         "cores": [
@@ -3483,31 +3421,31 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Dourado": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd12816c03.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd1293e286.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd12816c03.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd1293e286.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd129a6704.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd128acf8d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd12a28d22.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "PRATEADO": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd129a6704.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Prata": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd12816c03.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd1293e286.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd129a6704.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd128acf8d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd12a28d22.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd128acf8d.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "nude": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd127dcf30/original-66cbd12a28d22.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -3517,10 +3455,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOLSA SARA",
         "categoria": "BOLSA",
         "url_absolute": "https://loja.usebede.com.br/bolsa-sara/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12dd9df6/whatsapp-image-2024-09-16-at-16-51-44-66e88e293b136.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12dd9df6/whatsapp-image-2024-09-16-at-16-51-44-66e88e293b136.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12dd9df6/whatsapp-image-2024-09-16-at-16-47-16-66e88e29711b2.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 382.9,
         "cores": [
@@ -3550,10 +3487,10 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12dd9df6/whatsapp-image-2024-09-16-at-16-51-44-66e88e293b136.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12dd9df6/whatsapp-image-2024-09-16-at-16-47-16-66e88e29711b2.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -3563,9 +3500,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA MONTARIA COURO",
         "categoria": "BOTA CANO LONGO",
         "url_absolute": "https://loja.usebede.com.br/bota-montaria-couro/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12e3ea74/original-66cbd12e6a175.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12e3ea74/original-66cbd12e6a175.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 459.9,
         "cores": [
@@ -3614,7 +3551,7 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12e3ea74/original-66cbd12e6a175.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -3624,10 +3561,9 @@ const STILETTO_PRODUCTS = [
         "nome": "COTURNO LHOS DOURADO",
         "categoria": "COTURNO",
         "url_absolute": "https://loja.usebede.com.br/coturno-lhos-dourado/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12fada25/original-66cbd12fd9ff1.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12fada25/original-66cbd12fd9ff1.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12fada25/original-66cbd13071cd2.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 379.9,
         "cores": [
@@ -3669,8 +3605,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12fada25/original-66cbd12fd9ff1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd12fada25/original-66cbd13071cd2.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -3680,11 +3616,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA LARI VENETO",
         "categoria": "BOTA CANO BAIXO",
         "url_absolute": "https://loja.usebede.com.br/botas-couro-veneto/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13144704/whatsapp-image-2025-06-05-at-15-16-48-6841df1b5776c.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13144704/whatsapp-image-2025-06-05-at-15-16-48-6841df1b5776c.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13144704/original-66cbd13170765.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13144704/original-66cbd131f0cdf.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 429.9,
         "cores": [
@@ -3726,9 +3660,9 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13144704/whatsapp-image-2025-06-05-at-15-16-48-6841df1b5776c.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13144704/original-66cbd13170765.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13144704/original-66cbd131f0cdf.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -3738,10 +3672,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA LYON NAPA",
         "categoria": "BOTA CANO BAIXO",
         "url_absolute": "https://loja.usebede.com.br/bota-lyon-napa/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd132bca00/original-66cbd132e98c0.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd132bca00/original-66cbd132e98c0.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd132bca00/original-66cbd1336f91c.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 170.9,
         "cores": [
@@ -3790,8 +3723,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd132bca00/original-66cbd132e98c0.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd132bca00/original-66cbd1336f91c.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -3801,10 +3734,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA BRECIA COM FIVELA",
         "categoria": "BOTA CANO BAIXO",
         "url_absolute": "https://loja.usebede.com.br/bota-brecia-com-fivela/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1345230e/original-66cbd1347e972.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1345230e/original-66cbd1347e972.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1345230e/original-66cbd134e88db.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 388.47,
         "cores": [
@@ -3853,8 +3785,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1345230e/original-66cbd1347e972.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1345230e/original-66cbd134e88db.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -3864,11 +3796,9 @@ const STILETTO_PRODUCTS = [
         "nome": "TENIS PLATAFORMA COM VERNIZ",
         "categoria": "TÊNIS",
         "url_absolute": "https://loja.usebede.com.br/tenis-plataforma-com-verniz/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd135da598/whatsapp-image-2025-06-05-at-14-18-54-6841d19ded42e.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd135da598/whatsapp-image-2025-06-05-at-14-18-54-6841d19ded42e.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd135da598/original-66cbd13615279.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd135da598/original-66cbd1368b3d8.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 388.9,
         "cores": [
@@ -3917,9 +3847,9 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd135da598/whatsapp-image-2025-06-05-at-14-18-54-6841d19ded42e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd135da598/original-66cbd13615279.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd135da598/original-66cbd1368b3d8.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -3929,11 +3859,9 @@ const STILETTO_PRODUCTS = [
         "nome": "MOCHILA ANTIFURTO",
         "categoria": "BOLSA",
         "url_absolute": "https://loja.usebede.com.br/mochila-antifurto/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13768f51/whatsapp-image-2024-09-16-at-16-28-31-66e88ab0e4857.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13768f51/whatsapp-image-2024-09-16-at-16-28-31-66e88ab0e4857.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13768f51/whatsapp-image-2024-09-16-at-16-28-31-1-66e88ab122d5b.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13768f51/whatsapp-image-2024-09-16-at-16-36-19-66e88ab159172.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 437.9,
         "cores": [
@@ -3981,21 +3909,21 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13768f51/whatsapp-image-2024-09-16-at-16-28-31-66e88ab0e4857.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13768f51/whatsapp-image-2024-09-16-at-16-28-31-1-66e88ab122d5b.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13768f51/whatsapp-image-2024-09-16-at-16-36-19-66e88ab159172.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13768f51/whatsapp-image-2024-09-16-at-16-28-31-66e88ab0e4857.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13768f51/whatsapp-image-2024-09-16-at-16-28-31-1-66e88ab122d5b.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Verde militar": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13768f51/whatsapp-image-2024-09-16-at-16-28-31-66e88ab0e4857.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13768f51/whatsapp-image-2024-09-16-at-16-28-31-1-66e88ab122d5b.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13768f51/whatsapp-image-2024-09-16-at-16-36-19-66e88ab159172.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "cafe": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13768f51/whatsapp-image-2024-09-16-at-16-36-19-66e88ab159172.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -4005,11 +3933,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA CAPA TRICOT SALTO FINO",
         "categoria": "BOTA CANO MÉDIO",
         "url_absolute": "https://loja.usebede.com.br/bota-capa-tricot-salto-fino/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd137e97bc/whatsapp-image-2025-05-28-at-15-16-12-7-683755d440c61.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd137e97bc/whatsapp-image-2025-05-28-at-15-16-12-7-683755d440c61.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd137e97bc/original-66cbd13825c8a.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd137e97bc/original-66cbd138a1088.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 339.9,
         "cores": [
@@ -4058,9 +3984,9 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd137e97bc/whatsapp-image-2025-05-28-at-15-16-12-7-683755d440c61.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd137e97bc/original-66cbd13825c8a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd137e97bc/original-66cbd138a1088.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -4070,10 +3996,9 @@ const STILETTO_PRODUCTS = [
         "nome": "COTURNO FIVELA PRATEADA",
         "categoria": "COTURNO",
         "url_absolute": "https://loja.usebede.com.br/coturno-fivela-prateada/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13a06029/img_0933-66df290ea89b8.jpg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13a06029/img_0933-66df290ea89b8.jpg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13a06029/img_0934-66df2911030e1.jpg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 245.9,
         "cores": [
@@ -4122,8 +4047,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13a06029/img_0933-66df290ea89b8.jpg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13a06029/img_0934-66df2911030e1.jpg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -4133,10 +4058,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SAPATO BONECA",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/sapato-boneca-verniz-preto/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13c4947a/original-66cbd13de9762.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13c4947a/original-66cbd13de9762.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13c4947a/original-66cbd1447ea6e.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 269.9,
         "cores": [
@@ -4192,8 +4116,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13c4947a/original-66cbd13de9762.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd13c4947a/original-66cbd1447ea6e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -4203,13 +4127,11 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA CAPA BRILHO SALTO FINO",
         "categoria": "BOTA CANO MÉDIO",
         "url_absolute": "https://loja.usebede.com.br/bota-capa-brilho-salto-fino/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd145a24cc/whatsapp-image-2025-06-04-at-15-18-30-2-6841d11587aa4.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd145a24cc/whatsapp-image-2025-06-04-at-15-18-30-2-6841d11587aa4.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd145a24cc/original-66cbd145d3dd0.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd145a24cc/original-66cbd14654ab3.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 395.0,
+        "preco": 395,
         "cores": [
             "Única"
         ],
@@ -4256,9 +4178,9 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd145a24cc/whatsapp-image-2025-06-04-at-15-18-30-2-6841d11587aa4.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd145a24cc/original-66cbd145d3dd0.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd145a24cc/original-66cbd14654ab3.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -4268,13 +4190,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SCARPIN MELINA NAPA",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/scarpin-melina-napa/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14755d55/original-66cbd1478a17d.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14755d55/original-66cbd1478a17d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14755d55/original-66cbd1495e0e8.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14755d55/original-66cbd14876103.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14755d55/original-66cbd148e0167.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14755d55/original-66cbd148089e8.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 159.9,
         "cores": [
@@ -4447,17 +4365,17 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "MARSALA": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14755d55/original-66cbd1478a17d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14755d55/original-66cbd1495e0e8.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14755d55/original-66cbd14876103.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "ROSADO": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14755d55/original-66cbd148e0167.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "VERNIZ": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14755d55/original-66cbd148089e8.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -4467,10 +4385,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTAS MESTICO PRETO",
         "categoria": "BOTA CANO MÉDIO",
         "url_absolute": "https://loja.usebede.com.br/botas-mestico-preto/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14e15c3d/whatsapp-image-2025-06-04-at-15-09-32-7-6841d0e251298.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14e15c3d/whatsapp-image-2025-06-04-at-15-09-32-7-6841d0e251298.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14e15c3d/whatsapp-image-2024-07-29-at-14-43-54-19-66df13c94ab3e.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 279.9,
         "cores": [
@@ -4512,8 +4429,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14e15c3d/whatsapp-image-2025-06-04-at-15-09-32-7-6841d0e251298.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd14e15c3d/whatsapp-image-2024-07-29-at-14-43-54-19-66df13c94ab3e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -4523,10 +4440,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SCARPIN CROCO",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/scarpin-croco/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd150583fa/original-66cbd15085ed0.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd150583fa/original-66cbd15085ed0.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd150583fa/original-66cbd15107c9f.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 200.9,
         "cores": [
@@ -4575,8 +4491,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd150583fa/original-66cbd15085ed0.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd150583fa/original-66cbd15107c9f.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -4586,12 +4502,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA MONTARIA FRANCESCA",
         "categoria": "BOTA CANO BAIXO",
         "url_absolute": "https://loja.usebede.com.br/bota-montaria-francesca/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd151ea100/original-66cbd152275ef.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd151ea100/original-66cbd152275ef.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd151ea100/original-66cbd152aa057.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd151ea100/original-66cbd153296b0.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd151ea100/original-66cbd1539f4ba.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 349.9,
         "cores": [
@@ -4660,12 +4573,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd151ea100/original-66cbd152275ef.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd151ea100/original-66cbd152aa057.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd151ea100/original-66cbd153296b0.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd151ea100/original-66cbd1539f4ba.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -4675,12 +4588,9 @@ const STILETTO_PRODUCTS = [
         "nome": "MOCASSIM TRATORADO VERNIZ",
         "categoria": "MOCASSIM",
         "url_absolute": "https://loja.usebede.com.br/mocassim-tratorado-verniz/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd154f08c7.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd154f08c7.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd15655a83.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd1557beb8.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd155e4ecf.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 135.9,
         "cores": [
@@ -4775,12 +4685,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd154f08c7.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd15655a83.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "nude": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd1557beb8.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd154c79ec/original-66cbd155e4ecf.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -4790,12 +4700,9 @@ const STILETTO_PRODUCTS = [
         "nome": "TENIS BOTA PELE",
         "categoria": "TÊNIS",
         "url_absolute": "https://loja.usebede.com.br/tenis-bota-pele/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd157b1f3e/img_2143-6841d0236c3f4.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd157b1f3e/img_2143-6841d0236c3f4.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd157b1f3e/original-66cbd157e16f9.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd157b1f3e/img_2144-6841d02a3b6ac.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd157b1f3e/img_2142-6841d030f3c3c.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 258.9,
         "cores": [
@@ -4844,10 +4751,10 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd157b1f3e/img_2143-6841d0236c3f4.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd157b1f3e/original-66cbd157e16f9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd157b1f3e/img_2144-6841d02a3b6ac.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd157b1f3e/img_2142-6841d030f3c3c.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -4857,12 +4764,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SCARPIN VERNIZ DETALHE FIVELA",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/scarpin-verniz-detalhe-fivela/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15932c33/whatsapp-image-2024-07-29-at-14-09-57-6-66e884faa0949.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15932c33/whatsapp-image-2024-07-29-at-14-09-57-6-66e884faa0949.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15932c33/whatsapp-image-2024-07-29-at-14-09-57-8-66e884fac9e32.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15932c33/whatsapp-image-2024-07-29-at-14-09-57-9-66e884faec4bf.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15932c33/whatsapp-image-2024-07-29-at-14-09-57-10-66e884fb1532a.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 239.9,
         "cores": [
@@ -4944,12 +4848,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15932c33/whatsapp-image-2024-07-29-at-14-09-57-6-66e884faa0949.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15932c33/whatsapp-image-2024-07-29-at-14-09-57-8-66e884fac9e32.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "nude": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15932c33/whatsapp-image-2024-07-29-at-14-09-57-9-66e884faec4bf.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15932c33/whatsapp-image-2024-07-29-at-14-09-57-10-66e884fb1532a.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -4959,14 +4863,9 @@ const STILETTO_PRODUCTS = [
         "nome": "COTURNO ENFEITE DOURADO",
         "categoria": "COTURNO",
         "url_absolute": "https://loja.usebede.com.br/coturno-enfeite-dourado/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15a521c4/img_2305-6841cff0ac431.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15a521c4/img_2305-6841cff0ac431.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15a521c4/original-66cbd15a806a0.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15a521c4/original-66cbd15be9f5d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15a521c4/img_2299-6841cfe564d4d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15a521c4/original-66cbd15b1656e.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15a521c4/original-66cbd15b7beb6.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 389.9,
         "cores": [
@@ -5048,14 +4947,14 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15a521c4/original-66cbd15a806a0.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15a521c4/original-66cbd15be9f5d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15a521c4/img_2299-6841cfe564d4d.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15a521c4/img_2305-6841cff0ac431.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15a521c4/original-66cbd15b1656e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15a521c4/original-66cbd15b7beb6.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -5065,10 +4964,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA PARIS",
         "categoria": "BOTA CANO BAIXO",
         "url_absolute": "https://loja.usebede.com.br/bota-paris/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15d87562/original-66cbd15db1ccc.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15d87562/original-66cbd15db1ccc.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15d87562/original-66cbd15e2361d.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 322.39,
         "cores": [
@@ -5150,12 +5048,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15d87562/original-66cbd15db1ccc.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15d87562/original-66cbd15e2361d.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15d87562/original-66cbd15db1ccc.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15d87562/original-66cbd15e2361d.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -5165,12 +5063,9 @@ const STILETTO_PRODUCTS = [
         "nome": "MULE COURO",
         "categoria": "MULE",
         "url_absolute": "https://loja.usebede.com.br/mule-couro/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15f62b94/whatsapp-image-2025-06-05-at-15-14-50-6841dea194c14.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15f62b94/whatsapp-image-2025-06-05-at-15-14-50-6841dea194c14.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15f62b94/whatsapp-image-2024-09-11-at-11-06-49-2-66e1a518cfc22.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15f62b94/whatsapp-image-2024-09-11-at-11-06-49-3-66e1a5190c0a3.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15f62b94/whatsapp-image-2024-09-11-at-11-06-49-4-66e1a5193c6a7.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 190.9,
         "cores": [
@@ -5343,20 +5238,20 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15f62b94/whatsapp-image-2024-09-11-at-11-06-49-2-66e1a518cfc22.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Prata": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15f62b94/whatsapp-image-2025-06-05-at-15-14-50-6841dea194c14.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15f62b94/whatsapp-image-2024-09-11-at-11-06-49-3-66e1a5190c0a3.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15f62b94/whatsapp-image-2024-09-11-at-11-06-49-4-66e1a5193c6a7.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15f62b94/whatsapp-image-2025-06-05-at-15-14-50-6841dea194c14.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15f62b94/whatsapp-image-2024-09-11-at-11-06-49-2-66e1a518cfc22.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15f62b94/whatsapp-image-2024-09-11-at-11-06-49-3-66e1a5190c0a3.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd15f62b94/whatsapp-image-2024-09-11-at-11-06-49-4-66e1a5193c6a7.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -5366,10 +5261,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SAPATO MEIA PATA VERNIZ PRETO",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/sapato-meia-pata-verniz-preto/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd161aafe0/original-66cbd161d79c5.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd161aafe0/original-66cbd161d79c5.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd161aafe0/original-66cbd1624a013.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 224.9,
         "cores": [
@@ -5418,8 +5312,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd161aafe0/original-66cbd161d79c5.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd161aafe0/original-66cbd1624a013.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -5429,9 +5323,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SCARPIN ALICE NUDE",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/scarpin-alice-nude/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd163359ab/original-66cbd16371fa6.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd163359ab/original-66cbd16371fa6.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 200.9,
         "cores": [
@@ -5480,7 +5374,7 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd163359ab/original-66cbd16371fa6.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -5490,9 +5384,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA LUARA",
         "categoria": "BOTA CANO BAIXO",
         "url_absolute": "https://loja.usebede.com.br/bota-luara/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd164e2306/original-66cbd1651ca1f.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd164e2306/original-66cbd1651ca1f.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 134.9,
         "cores": [
@@ -5574,10 +5468,10 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Verde": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd164e2306/original-66cbd1651ca1f.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "nude": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd164e2306/original-66cbd1651ca1f.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -5587,10 +5481,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA COIMBRA COURO",
         "categoria": "BOTA CANO BAIXO",
         "url_absolute": "https://loja.usebede.com.br/bota-coimbra-couro/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd166809e5/original-66cbd166ac676.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd166809e5/original-66cbd166ac676.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd166809e5/original-66cbd167196bf.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 215.8,
         "cores": [
@@ -5632,8 +5525,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd166809e5/original-66cbd166ac676.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd166809e5/original-66cbd167196bf.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -5643,10 +5536,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA CAMURÇA STRECHT  OVER",
         "categoria": "BOTA CANO LONGO",
         "url_absolute": "https://loja.usebede.com.br/bota-camurca-strecht-over/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd167c30cc/original-66cbd167f2011.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd167c30cc/original-66cbd167f2011.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd167c30cc/original-66cbd168848b8.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 390.9,
         "cores": [
@@ -5702,8 +5594,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd167c30cc/original-66cbd167f2011.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd167c30cc/original-66cbd168848b8.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -5713,13 +5605,9 @@ const STILETTO_PRODUCTS = [
         "nome": "MOCASSIM BICO ALONGADO",
         "categoria": "MOCASSIM",
         "url_absolute": "https://loja.usebede.com.br/mocassim-bico-alongado/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd169b0301/whatsapp-image-2025-06-05-at-15-01-55-6841de609bdd8.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd169b0301/whatsapp-image-2025-06-05-at-15-01-55-6841de609bdd8.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd169b0301/whatsapp-image-2024-07-31-at-17-32-00-5-66e1a653c1f8d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd169b0301/whatsapp-image-2024-07-31-at-17-32-00-8-66e1a653f3781.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd169b0301/whatsapp-image-2024-07-31-at-17-32-00-7-66e1a65431522.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd169b0301/whatsapp-image-2024-07-31-at-17-32-00-6-66e1a6544f0fb.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 149.9,
         "cores": [
@@ -5892,17 +5780,17 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd169b0301/whatsapp-image-2024-07-31-at-17-32-00-5-66e1a653c1f8d.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd169b0301/whatsapp-image-2024-07-31-at-17-32-00-8-66e1a653f3781.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd169b0301/whatsapp-image-2025-06-05-at-15-01-55-6841de609bdd8.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd169b0301/whatsapp-image-2024-07-31-at-17-32-00-7-66e1a65431522.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "nude": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd169b0301/whatsapp-image-2024-07-31-at-17-32-00-6-66e1a6544f0fb.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -5912,12 +5800,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA NAPA STRECH",
         "categoria": "BOTA CANO BAIXO",
         "url_absolute": "https://loja.usebede.com.br/bota-napa-strech/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16c0a30f/original-66cbd16d1e9e1.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16c0a30f/original-66cbd16d1e9e1.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16c0a30f/original-66cbd16d91f56.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16c0a30f/original-66cbd16c37d72.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16c0a30f/original-66cbd16cab3af.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 209.9,
         "cores": [
@@ -5999,12 +5884,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Bordô": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16c0a30f/original-66cbd16d1e9e1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16c0a30f/original-66cbd16d91f56.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Vermelho": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16c0a30f/original-66cbd16c37d72.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16c0a30f/original-66cbd16cab3af.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -6014,13 +5899,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA CAPA TRICOT SALTO BLOCO",
         "categoria": "BOTA CANO MÉDIO",
         "url_absolute": "https://loja.usebede.com.br/bota-capa-tricot-salto-bloco/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16edc6c1/whatsapp-image-2025-05-28-at-15-16-12-4-68375608f250b.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16edc6c1/whatsapp-image-2025-05-28-at-15-16-12-4-68375608f250b.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16edc6c1/original-66cbd16f89343.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16edc6c1/whatsapp-image-2025-05-28-at-15-16-12-5-683756099feba.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16edc6c1/original-66cbd16f195af.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16edc6c1/whatsapp-image-2025-05-28-at-15-16-12-6-6837560a2c66f.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 339.9,
         "cores": [
@@ -6102,13 +5983,13 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16edc6c1/whatsapp-image-2025-05-28-at-15-16-12-4-68375608f250b.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16edc6c1/original-66cbd16f89343.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16edc6c1/whatsapp-image-2025-05-28-at-15-16-12-5-683756099feba.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16edc6c1/original-66cbd16f195af.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd16edc6c1/whatsapp-image-2025-05-28-at-15-16-12-6-6837560a2c66f.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -6118,12 +5999,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOLSA JAQUELINE",
         "categoria": "BOLSA",
         "url_absolute": "https://loja.usebede.com.br/bolsa-jaqueline/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17189cbf.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17189cbf.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/whatsapp-image-2025-06-05-at-13-22-53-6841de30d74a7.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17113898.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17212472.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 437.9,
         "cores": [
@@ -6162,14 +6040,14 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Azul meia-noite": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17189cbf.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/whatsapp-image-2025-06-05-at-13-22-53-6841de30d74a7.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17113898.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd170dbd06/original-66cbd17212472.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -6179,11 +6057,9 @@ const STILETTO_PRODUCTS = [
         "nome": "TENIS RAFA",
         "categoria": "TÊNIS",
         "url_absolute": "https://loja.usebede.com.br/tenis-rafa/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/whatsapp-image-2025-05-28-at-15-51-18-68375b569955d.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/whatsapp-image-2025-05-28-at-15-51-18-68375b569955d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/original-66cbd17341754.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/original-66cbd173a9e92.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 210.9,
         "cores": [
@@ -6232,9 +6108,9 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Branco": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/whatsapp-image-2025-05-28-at-15-51-18-68375b569955d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/original-66cbd17341754.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd17313aeb/original-66cbd173a9e92.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -6244,10 +6120,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SAPATILHA BONECA",
         "categoria": "SAPATILHA",
         "url_absolute": "https://loja.usebede.com.br/sapatilha-boneca/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1823e308/whatsapp-image-2024-09-11-at-11-34-45-66e1aab711d70.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1823e308/whatsapp-image-2024-09-11-at-11-34-45-66e1aab711d70.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1823e308/whatsapp-image-2024-09-11-at-11-34-45-1-66e1aab74302a.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 145.9,
         "cores": [
@@ -6342,10 +6217,10 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1823e308/whatsapp-image-2024-09-11-at-11-34-45-66e1aab711d70.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1823e308/whatsapp-image-2024-09-11-at-11-34-45-1-66e1aab74302a.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -6355,10 +6230,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SAPATO MEIA PATA VERNIZ NUDE",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/sapato-meia-pata-verniz-nude/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd185150be/original-66cbd1853f6fa.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd185150be/original-66cbd1853f6fa.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd185150be/original-66cbd185aa316.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 224.9,
         "cores": [
@@ -6407,8 +6281,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd185150be/original-66cbd1853f6fa.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd185150be/original-66cbd185aa316.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -6418,13 +6292,11 @@ const STILETTO_PRODUCTS = [
         "nome": "BOLSA VIVIANE",
         "categoria": "BOLSA",
         "url_absolute": "https://loja.usebede.com.br/bolsa-viviane/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1869d31e/original-66cbd186cb9de.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1869d31e/original-66cbd186cb9de.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1869d31e/original-66cbd1874cdbb.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1869d31e/original-66cbd187b7395.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 365.0,
+        "preco": 365,
         "cores": [
             "Preto"
         ],
@@ -6443,9 +6315,9 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1869d31e/original-66cbd186cb9de.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1869d31e/original-66cbd1874cdbb.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1869d31e/original-66cbd187b7395.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -6455,11 +6327,9 @@ const STILETTO_PRODUCTS = [
         "nome": "TENIS PLATAFORMA",
         "categoria": "TÊNIS",
         "url_absolute": "https://loja.usebede.com.br/tenis-plataforma/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd188a913b/whatsapp-image-2025-06-04-at-15-18-30-1-6841cf8f14dad.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd188a913b/whatsapp-image-2025-06-04-at-15-18-30-1-6841cf8f14dad.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd188a913b/original-66cbd188d80c8.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd188a913b/original-66cbd1896e739.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 365.9,
         "cores": [
@@ -6522,9 +6392,9 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd188a913b/whatsapp-image-2025-06-04-at-15-18-30-1-6841cf8f14dad.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd188a913b/original-66cbd188d80c8.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd188a913b/original-66cbd1896e739.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -6534,10 +6404,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SCARPIN ALICE VERMELHO",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/scarpin-alice-vermelho/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18c5bdf5/original-66cbd18c866b6.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18c5bdf5/original-66cbd18c866b6.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18c5bdf5/original-66cbd18d085c5.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 200.9,
         "cores": [
@@ -6586,8 +6455,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18c5bdf5/original-66cbd18c866b6.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18c5bdf5/original-66cbd18d085c5.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -6597,15 +6466,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOLSA LARA",
         "categoria": "BOLSA",
         "url_absolute": "https://loja.usebede.com.br/bolsa-lara/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/original-66cbd18f88a63.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/original-66cbd18f88a63.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/original-66cbd18e9eb9d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/original-66cbd18e22dc4.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/original-66cbd18f0ed18.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/whatsapp-image-2025-06-07-at-12-03-54-684455059a658.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/whatsapp-image-2025-06-07-at-12-03-57-6844550865a69.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/whatsapp-image-2025-06-07-at-12-05-37-684455d0378f7.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 481.8,
         "cores": [
@@ -6680,32 +6543,32 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "DOURADA": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/original-66cbd18f88a63.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/original-66cbd18e9eb9d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/original-66cbd18e22dc4.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/original-66cbd18f0ed18.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/whatsapp-image-2025-06-07-at-12-03-54-684455059a658.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/whatsapp-image-2025-06-07-at-12-03-57-6844550865a69.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/whatsapp-image-2025-06-07-at-12-05-37-684455d0378f7.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/original-66cbd18f88a63.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Prata": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/original-66cbd18e9eb9d.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/original-66cbd18e22dc4.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/original-66cbd18f0ed18.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Vermelho escuro": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/whatsapp-image-2025-06-07-at-12-03-54-684455059a658.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/whatsapp-image-2025-06-07-at-12-03-57-6844550865a69.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "nude": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd18ddf337/whatsapp-image-2025-06-07-at-12-05-37-684455d0378f7.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -6715,11 +6578,11 @@ const STILETTO_PRODUCTS = [
         "nome": "SCARPIN LUISA",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/scarpin-luisa/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1908870e/original-66cbd190b5fc3.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1908870e/original-66cbd190b5fc3.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 299.0,
+        "preco": 299,
         "cores": [
             "Única"
         ],
@@ -6766,7 +6629,7 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1908870e/original-66cbd190b5fc3.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -6776,10 +6639,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SCARPIN SUEDE ABA FRONTAL",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/scarpin-suede-aba-frontal/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19192efd/whatsapp-image-2024-09-16-at-17-45-26-66e899d81f1c7.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19192efd/whatsapp-image-2024-09-16-at-17-45-26-66e899d81f1c7.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19192efd/whatsapp-image-2024-09-16-at-17-45-26-1-66e899d849a1e.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 200.9,
         "cores": [
@@ -6828,8 +6690,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19192efd/whatsapp-image-2024-09-16-at-17-45-26-66e899d81f1c7.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19192efd/whatsapp-image-2024-09-16-at-17-45-26-1-66e899d849a1e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -6839,13 +6701,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SLINGBACK ALICE",
         "categoria": "SLINGBACK",
         "url_absolute": "https://loja.usebede.com.br/slingback-alice/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19238162/original-66cbd1937fe80.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19238162/original-66cbd1937fe80.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19238162/original-66cbd1931504b.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19238162/original-66cbd19267426.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19238162/original-66cbd192ab3b5.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19238162/original-66cbd193da3d3.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 139.9,
         "cores": [
@@ -7057,19 +6915,19 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Azul meia-noite": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19238162/original-66cbd1937fe80.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Dourado": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19238162/original-66cbd1931504b.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19238162/original-66cbd19267426.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Prata": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19238162/original-66cbd192ab3b5.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Vermelho": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19238162/original-66cbd193da3d3.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -7079,15 +6937,11 @@ const STILETTO_PRODUCTS = [
         "nome": "SAPATO SANTORINE DETALHE DOURADO",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/sapato-santorine-detalhe-dourado/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd196f1e1c/whatsapp-image-2025-06-05-at-14-09-36-6841cf5b8de30.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd196f1e1c/whatsapp-image-2025-06-05-at-14-09-36-6841cf5b8de30.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd196f1e1c/original-66cbd1972b1fc.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd196f1e1c/original-66cbd198aea69.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd196f1e1c/original-66cbd197abd90.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd196f1e1c/original-66cbd198401da.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 248.0,
+        "preco": 248,
         "cores": [
             "Preto",
             "ONIX",
@@ -7200,15 +7054,15 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "CACAU": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd196f1e1c/original-66cbd1972b1fc.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd196f1e1c/original-66cbd198aea69.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "ONIX": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd196f1e1c/whatsapp-image-2025-06-05-at-14-09-36-6841cf5b8de30.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd196f1e1c/original-66cbd197abd90.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd196f1e1c/original-66cbd198401da.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -7218,10 +7072,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SCARPIN CRUZADO",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/scarpin-cruzado/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19a13e5b/original-66cbd19a41300.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19a13e5b/original-66cbd19a41300.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19a13e5b/original-66cbd19aae6f5.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 200.9,
         "cores": [
@@ -7270,8 +7123,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19a13e5b/original-66cbd19a41300.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19a13e5b/original-66cbd19aae6f5.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -7281,10 +7134,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA COTURNO VERNIZ PRETO",
         "categoria": "COTURNO",
         "url_absolute": "https://loja.usebede.com.br/bota-coturno-verniz-preto/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19b96ac4/original-66cbd19bc2ba1.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19b96ac4/original-66cbd19bc2ba1.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19b96ac4/original-66cbd19c44a77.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 298.9,
         "cores": [
@@ -7340,8 +7192,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19b96ac4/original-66cbd19bc2ba1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19b96ac4/original-66cbd19c44a77.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -7351,13 +7203,11 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA BRECIA",
         "categoria": "BOTA CANO BAIXO",
         "url_absolute": "https://loja.usebede.com.br/bota-brecia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19da4bec/whatsapp-image-2025-06-05-at-15-05-06-6841dc9d14cf8.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19da4bec/whatsapp-image-2025-06-05-at-15-05-06-6841dc9d14cf8.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19da4bec/original-66cbd19e56fcf.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19da4bec/original-66cbd19ed1e05.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 290.0,
+        "preco": 290,
         "cores": [
             "Preto",
             "cafe"
@@ -7437,11 +7287,11 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19da4bec/original-66cbd19e56fcf.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19da4bec/original-66cbd19ed1e05.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "cafe": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd19da4bec/whatsapp-image-2025-06-05-at-15-05-06-6841dc9d14cf8.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -7451,12 +7301,9 @@ const STILETTO_PRODUCTS = [
         "nome": "MULE MARA DETALHE STRASS",
         "categoria": "MULE",
         "url_absolute": "https://loja.usebede.com.br/mule-mara-detalhe-strass/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a0275ff/original-66cbd1a1620cf.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a0275ff/original-66cbd1a1620cf.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a0275ff/original-66cbd1a0cebbd.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a0275ff/whatsapp-image-2025-06-05-at-15-01-54-6841ddd81c4b4.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a0275ff/whatsapp-image-2025-06-05-at-15-01-53-6841dddc041c1.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 290.9,
         "cores": [
@@ -7505,10 +7352,10 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a0275ff/original-66cbd1a1620cf.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a0275ff/original-66cbd1a0cebbd.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a0275ff/whatsapp-image-2025-06-05-at-15-01-54-6841ddd81c4b4.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a0275ff/whatsapp-image-2025-06-05-at-15-01-53-6841dddc041c1.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -7518,12 +7365,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SAPATO CHANEL",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/sapato-chanel/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a244202/original-66cbd1a2d2ddb.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a244202/original-66cbd1a2d2ddb.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a244202/original-66cbd1a3a88ba.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a244202/original-66cbd1a270b0e.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a244202/original-66cbd1a350451.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 224.9,
         "cores": [
@@ -7618,12 +7462,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a244202/original-66cbd1a2d2ddb.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a244202/original-66cbd1a3a88ba.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "VERNIZ": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a244202/original-66cbd1a270b0e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66cbd1a244202/original-66cbd1a350451.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -7633,12 +7477,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA LUA",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-lua/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208dcec1e5/original-66e208dd6e14e.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208dcec1e5/original-66e208dd6e14e.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208dcec1e5/original-66e208ddce388.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208dcec1e5/original-66e208de2c0ca.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208dcec1e5/original-66e208de940af.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 239.9,
         "cores": [
@@ -7733,16 +7574,16 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "ANGELICAL": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208dcec1e5/original-66e208dd6e14e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208dcec1e5/original-66e208ddce388.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208dcec1e5/original-66e208de2c0ca.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208dcec1e5/original-66e208de940af.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208dcec1e5/original-66e208dd6e14e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208dcec1e5/original-66e208ddce388.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208dcec1e5/original-66e208de2c0ca.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208dcec1e5/original-66e208de940af.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -7752,13 +7593,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA OURO",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-ouro/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e0c8a63.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e0c8a63.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e120c72.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e1aff6e.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e212192.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e26fc59.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 219.9,
         "cores": [
@@ -7892,25 +7729,25 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e0c8a63.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e120c72.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e1aff6e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e212192.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e26fc59.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Prata": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e0c8a63.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e120c72.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e1aff6e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e212192.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e26fc59.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e0c8a63.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e120c72.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e1aff6e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e212192.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e08356c/original-66e208e26fc59.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -7920,12 +7757,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA MIA",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-mia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e4814cd/original-66e208e4bb3c7.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e4814cd/original-66e208e4bb3c7.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e4814cd/original-66e208e528176.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e4814cd/original-66e208e5a2548.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e4814cd/original-66e208e60b60a.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 219.9,
         "cores": [
@@ -8020,16 +7854,16 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e4814cd/original-66e208e4bb3c7.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e4814cd/original-66e208e528176.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e4814cd/original-66e208e5a2548.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e4814cd/original-66e208e60b60a.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e4814cd/original-66e208e4bb3c7.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e4814cd/original-66e208e528176.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e4814cd/original-66e208e5a2548.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e4814cd/original-66e208e60b60a.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -8039,11 +7873,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA ESTRELA",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-estrela/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e79e5bd/original-66e208e7d5f73.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e79e5bd/original-66e208e7d5f73.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e79e5bd/original-66e208e845c34.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e79e5bd/original-66e208e88f82c.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 268.9,
         "cores": [
@@ -8138,14 +7970,14 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Terra": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e79e5bd/original-66e208e7d5f73.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e79e5bd/original-66e208e845c34.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e79e5bd/original-66e208e88f82c.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "preta": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e79e5bd/original-66e208e7d5f73.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e79e5bd/original-66e208e845c34.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e208e79e5bd/original-66e208e88f82c.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -8155,11 +7987,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOLSA JUSSARA",
         "categoria": "BOLSA",
         "url_absolute": "https://loja.usebede.com.br/bolsa-jussara/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8611c571f7/original-66e8611cba0b9.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8611c571f7/original-66e8611cba0b9.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8611c571f7/original-66e8611d4df67.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8611c571f7/original-66e8611db4f89.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 340.9,
         "cores": [
@@ -8207,24 +8037,24 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "CROCO": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8611c571f7/original-66e8611cba0b9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8611c571f7/original-66e8611d4df67.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8611c571f7/original-66e8611db4f89.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8611c571f7/original-66e8611cba0b9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8611c571f7/original-66e8611d4df67.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8611c571f7/original-66e8611db4f89.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8611c571f7/original-66e8611cba0b9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8611c571f7/original-66e8611d4df67.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8611c571f7/original-66e8611db4f89.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Vermelho escuro": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8611c571f7/original-66e8611cba0b9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8611c571f7/original-66e8611d4df67.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8611c571f7/original-66e8611db4f89.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -8234,13 +8064,9 @@ const STILETTO_PRODUCTS = [
         "nome": "MOCASSIM TRATORADO",
         "categoria": "MOCASSIM",
         "url_absolute": "https://loja.usebede.com.br/mocassim-tratorado/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8a09765b20/original-66e8a097a66a5.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8a09765b20/original-66e8a097a66a5.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8a09765b20/original-66e8a0981558a.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8a09765b20/original-66e8a0986c8b1.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8a09765b20/original-66e8a098da59b.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8a09765b20/original-66e8a0993923e.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 179.9,
         "cores": [
@@ -8335,18 +8161,18 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8a09765b20/original-66e8a097a66a5.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8a09765b20/original-66e8a0981558a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8a09765b20/original-66e8a0986c8b1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8a09765b20/original-66e8a098da59b.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8a09765b20/original-66e8a0993923e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8a09765b20/original-66e8a097a66a5.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8a09765b20/original-66e8a0981558a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8a09765b20/original-66e8a0986c8b1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8a09765b20/original-66e8a098da59b.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66e8a09765b20/original-66e8a0993923e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -8356,13 +8182,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SCARPIN VENETO",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/scarpin-veneto/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb351371cc7.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb351371cc7.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb3513d727b.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb3514399a8.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb3514a6fbd.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb35150a1eb.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 280.8,
         "cores": [
@@ -8477,25 +8299,25 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb351371cc7.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb3513d727b.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb3514399a8.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb3514a6fbd.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb35150a1eb.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb351371cc7.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb3513d727b.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb3514399a8.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb3514a6fbd.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb35150a1eb.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb351371cc7.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb3513d727b.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb3514399a8.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb3514a6fbd.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66eb35131eca7/original-66eb35150a1eb.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -8505,12 +8327,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SCARPIN NAPA FIVELA",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/scarpin-napa-fivela/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc47886f.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc47886f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc4d297c.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc52f756.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc58a265.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 272.9,
         "cores": [
@@ -8658,28 +8477,28 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "CACAU": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc47886f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc4d297c.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc52f756.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc58a265.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "MARSALA": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc47886f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc4d297c.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc52f756.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc58a265.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Prata": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc47886f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc4d297c.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc52f756.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc58a265.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc47886f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc4d297c.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc52f756.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66f1fdc42dfb4/original-66f1fdc58a265.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -8689,9 +8508,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SAPATILHA PARIS BAUNILHA",
         "categoria": "SAPATILHA",
         "url_absolute": "https://loja.usebede.com.br/sapatilha-paris-baunilha/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66fae4281f2af/whatsapp-image-2025-06-05-at-14-53-41-1-6841dd4c21e5a.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66fae4281f2af/whatsapp-image-2025-06-05-at-14-53-41-1-6841dd4c21e5a.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 229.9,
         "cores": [
@@ -8773,10 +8592,10 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "BAUNILHA": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66fae4281f2af/whatsapp-image-2025-06-05-at-14-53-41-1-6841dd4c21e5a.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66fae4281f2af/whatsapp-image-2025-06-05-at-14-53-41-1-6841dd4c21e5a.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -8786,16 +8605,11 @@ const STILETTO_PRODUCTS = [
         "nome": "SCARPIN LAURA",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/scarpin-laura/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faeb2d19704/whatsapp-image-2024-10-05-at-16-50-14-67019926e64b5.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faeb2d19704/whatsapp-image-2024-10-05-at-16-50-14-67019926e64b5.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faeb2d19704/whatsapp-image-2024-10-05-at-16-50-14-1-6701992711d4c.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faeb2d19704/whatsapp-image-2024-10-05-at-16-50-15-2-67019927300d6.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faeb2d19704/whatsapp-image-2024-10-05-at-16-50-15-1-670199274b393.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faeb2d19704/whatsapp-image-2024-10-05-at-16-50-14-2-6701992769b9b.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faeb2d19704/whatsapp-image-2024-10-05-at-16-50-15-6701992785c32.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 296.0,
+        "preco": 296,
         "cores": [
             "Preto",
             "BAUNILHA",
@@ -8908,16 +8722,16 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "BAUNILHA": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faeb2d19704/whatsapp-image-2024-10-05-at-16-50-14-67019926e64b5.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faeb2d19704/whatsapp-image-2024-10-05-at-16-50-14-1-6701992711d4c.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faeb2d19704/whatsapp-image-2024-10-05-at-16-50-15-2-67019927300d6.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faeb2d19704/whatsapp-image-2024-10-05-at-16-50-15-1-670199274b393.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faeb2d19704/whatsapp-image-2024-10-05-at-16-50-14-2-6701992769b9b.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faeb2d19704/whatsapp-image-2024-10-05-at-16-50-15-6701992785c32.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -8927,14 +8741,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SLINGBACK VERNIZ MIA",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/slingback-verniz-mia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faf93ed2f43/whatsapp-image-2024-11-06-at-11-24-15-3-672b7cafaf3de.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faf93ed2f43/whatsapp-image-2024-11-06-at-11-24-15-3-672b7cafaf3de.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faf93ed2f43/whatsapp-image-2024-11-06-at-11-24-15-2-672b7cafd613e.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faf93ed2f43/whatsapp-image-2024-11-06-at-11-24-15-1-672b7cb0086b9.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faf93ed2f43/whatsapp-image-2024-11-06-at-11-24-15-672b7cb029aa3.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faf93ed2f43/whatsapp-image-2024-11-06-at-11-24-14-1-672b7cb04d8e1.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faf93ed2f43/whatsapp-image-2024-11-06-at-11-24-14-672b7cb08c7d2.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 299.9,
         "cores": [
@@ -9068,16 +8877,16 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "BAUNILHA": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faf93ed2f43/whatsapp-image-2024-11-06-at-11-24-15-3-672b7cafaf3de.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faf93ed2f43/whatsapp-image-2024-11-06-at-11-24-15-2-672b7cafd613e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "MARSALA": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faf93ed2f43/whatsapp-image-2024-11-06-at-11-24-15-1-672b7cb0086b9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faf93ed2f43/whatsapp-image-2024-11-06-at-11-24-15-672b7cb029aa3.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "PRETO VERNIZ": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faf93ed2f43/whatsapp-image-2024-11-06-at-11-24-14-1-672b7cb04d8e1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/66faf93ed2f43/whatsapp-image-2024-11-06-at-11-24-14-672b7cb08c7d2.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -9087,13 +8896,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA DÁLIA",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-dalia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/671a87adeacec/original-671a87aec4c4f.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/671a87adeacec/original-671a87aec4c4f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/671a87adeacec/original-671a87ae588dc.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/671a87adeacec/original-671a87af4a869.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/671a87adeacec/original-671a87afc2354.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/671a87adeacec/original-671a87b0297ff.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 159.9,
         "cores": [
@@ -9227,15 +9032,15 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "ONIX": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/671a87adeacec/original-671a87aec4c4f.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Prata": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/671a87adeacec/original-671a87ae588dc.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/671a87adeacec/original-671a87af4a869.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/671a87adeacec/original-671a87afc2354.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/671a87adeacec/original-671a87b0297ff.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -9245,15 +9050,11 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA NATALIA",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-alice/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729240f11d32/whatsapp-image-2025-12-16-at-19-57-53-6941e8ad75443.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729240f11d32/whatsapp-image-2025-12-16-at-19-57-53-6941e8ad75443.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729240f11d32/whatsapp-image-2024-11-04-at-16-37-00-1-672b7ac5778d2.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729240f11d32/whatsapp-image-2024-11-04-at-16-37-00-672b7ac5a5262.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729240f11d32/whatsapp-image-2024-11-04-at-16-37-00-3-672b7ac50e81c.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729240f11d32/whatsapp-image-2024-11-04-at-16-37-00-2-672b7ac545d30.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 218.0,
+        "preco": 218,
         "cores": [
             "Preto",
             "OFF WHITE"
@@ -9346,13 +9147,13 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729240f11d32/whatsapp-image-2024-11-04-at-16-37-00-1-672b7ac5778d2.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729240f11d32/whatsapp-image-2024-11-04-at-16-37-00-672b7ac5a5262.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729240f11d32/whatsapp-image-2025-12-16-at-19-57-53-6941e8ad75443.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729240f11d32/whatsapp-image-2024-11-04-at-16-37-00-3-672b7ac50e81c.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729240f11d32/whatsapp-image-2024-11-04-at-16-37-00-2-672b7ac545d30.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -9362,13 +9163,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA BARBARA",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-barbara/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b8f2b036.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b8f2b036.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b8f97507.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b900c46d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b9064726.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b90f1ba7.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 279.9,
         "cores": [
@@ -9541,32 +9338,32 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b8f2b036.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b8f97507.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b900c46d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b9064726.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b90f1ba7.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Ouro": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b8f2b036.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b8f97507.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b900c46d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b9064726.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b90f1ba7.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Prata": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b8f2b036.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b8f97507.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b900c46d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b9064726.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b90f1ba7.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b8f2b036.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b8f97507.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b900c46d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b9064726.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b8e9f2d0/original-67292b90f1ba7.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -9576,13 +9373,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA ALICE",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-alice-67292b94870f3/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b94870fc/original-67292b95a5df4.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b94870fc/original-67292b95a5df4.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b94870fc/original-67292b96169d4.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b94870fc/original-67292b94d4553.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b94870fc/original-67292b953837c.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b94870fc/original-67292b966f0fb.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 249.9,
         "cores": [
@@ -9677,13 +9470,13 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b94870fc/original-67292b95a5df4.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b94870fc/original-67292b96169d4.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b94870fc/original-67292b94d4553.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b94870fc/original-67292b953837c.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67292b94870fc/original-67292b966f0fb.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -9693,10 +9486,9 @@ const STILETTO_PRODUCTS = [
         "nome": "RASTEIRINHA ALICE",
         "categoria": "RASTEIRINHA",
         "url_absolute": "https://loja.usebede.com.br/rasteirinha-alice/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329916eba/original-67293299771e1.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329916eba/original-67293299771e1.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329916eba/original-67293299e2d3d.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 319.9,
         "cores": [
@@ -9752,8 +9544,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329916eba/original-67293299771e1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329916eba/original-67293299e2d3d.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -9763,10 +9555,9 @@ const STILETTO_PRODUCTS = [
         "nome": "TAMANCO BRISA",
         "categoria": "PAPETE",
         "url_absolute": "https://loja.usebede.com.br/tamanco-brisa/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329b0cf20/original-6729329b4d1cd.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329b0cf20/original-6729329b4d1cd.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329b0cf20/original-6729329bcdf2c.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 340.9,
         "cores": [
@@ -9815,8 +9606,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329b0cf20/original-6729329b4d1cd.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329b0cf20/original-6729329bcdf2c.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -9826,11 +9617,9 @@ const STILETTO_PRODUCTS = [
         "nome": "PAPETE AISHA",
         "categoria": "PAPETE",
         "url_absolute": "https://loja.usebede.com.br/papete-aisha/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329e23d81.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329e23d81.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329e7e62d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329ec4690.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 189.9,
         "cores": [
@@ -9886,9 +9675,9 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329e23d81.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329e7e62d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329ddc769/original-6729329ec4690.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -9898,13 +9687,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BIRKEN MANU",
         "categoria": "PAPETE",
         "url_absolute": "https://loja.usebede.com.br/birken-manu/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329fb529f/original-6729329ff2a05.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329fb529f/original-6729329ff2a05.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329fb529f/original-672932a063aee.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329fb529f/original-672932a0b88a0.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329fb529f/original-672932a116eff.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329fb529f/original-672932a17a927.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 280.9,
         "cores": [
@@ -9986,13 +9771,13 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329fb529f/original-6729329ff2a05.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329fb529f/original-672932a063aee.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329fb529f/original-672932a0b88a0.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329fb529f/original-672932a116eff.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6729329fb529f/original-672932a17a927.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -10002,10 +9787,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDALIA AURORA",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-aurora/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a30fcd1/original-672932a34d1b1.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a30fcd1/original-672932a34d1b1.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a30fcd1/original-672932a3a7695.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 289.9,
         "cores": [
@@ -10054,8 +9838,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a30fcd1/original-672932a34d1b1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a30fcd1/original-672932a3a7695.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -10065,11 +9849,9 @@ const STILETTO_PRODUCTS = [
         "nome": "CHINELO PATRICIA",
         "categoria": "CHINELO",
         "url_absolute": "https://loja.usebede.com.br/chinelo-patricia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a491027/original-672932a4d7438.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a491027/original-672932a4d7438.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a491027/original-672932a54ba21.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a491027/original-672932a58c214.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 288.9,
         "cores": [
@@ -10125,9 +9907,9 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a491027/original-672932a4d7438.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a491027/original-672932a54ba21.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a491027/original-672932a58c214.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -10137,16 +9919,11 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA FLOR",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-flor/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a6999a6/original-672932a6dd373.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a6999a6/original-672932a6dd373.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a6999a6/original-672932a7981ea.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a6999a6/original-672932a756a1c.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a6999a6/original-672932a7e3602.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a6999a6/original-672932a83f4a8.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a6999a6/whatsapp-image-2024-11-04-at-17-11-15-1-672b866fd490e.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 260.0,
+        "preco": 260,
         "cores": [
             "caramelo",
             "Azul céu",
@@ -10259,16 +10036,16 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Azul céu": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a6999a6/original-672932a6dd373.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a6999a6/original-672932a7981ea.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a6999a6/original-672932a756a1c.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a6999a6/original-672932a7e3602.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a6999a6/original-672932a83f4a8.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932a6999a6/whatsapp-image-2024-11-04-at-17-11-15-1-672b866fd490e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -10278,11 +10055,9 @@ const STILETTO_PRODUCTS = [
         "nome": "MOCASSIM HELENA",
         "categoria": "MOCASSIM",
         "url_absolute": "https://loja.usebede.com.br/mocassim-helena/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932aeec653/original-672932af2e64c.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932aeec653/original-672932af2e64c.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932aeec653/original-672932af9f003.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932aeec653/original-672932afee4d0.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 305.9,
         "cores": [
@@ -10349,19 +10124,19 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Azul céu": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932aeec653/original-672932af2e64c.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932aeec653/original-672932af9f003.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932aeec653/original-672932afee4d0.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932aeec653/original-672932af2e64c.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932aeec653/original-672932af9f003.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932aeec653/original-672932afee4d0.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932aeec653/original-672932af2e64c.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932aeec653/original-672932af9f003.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932aeec653/original-672932afee4d0.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -10371,11 +10146,9 @@ const STILETTO_PRODUCTS = [
         "nome": "TAMANCO MARI",
         "categoria": "PAPETE",
         "url_absolute": "https://loja.usebede.com.br/tamanco-mari/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b24bb68/original-672932b281f8d.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b24bb68/original-672932b281f8d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b24bb68/original-672932b2d4d12.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b24bb68/original-672932b32ba68.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 280.9,
         "cores": [
@@ -10457,11 +10230,11 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Cinza": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b24bb68/original-672932b281f8d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b24bb68/original-672932b2d4d12.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b24bb68/original-672932b32ba68.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -10471,16 +10244,11 @@ const STILETTO_PRODUCTS = [
         "nome": "RASTEIRINHA IVI",
         "categoria": "RASTEIRINHA",
         "url_absolute": "https://loja.usebede.com.br/rasteirinha-ivi/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b4540ae/original-672932b48db04.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b4540ae/original-672932b48db04.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b4540ae/original-672932b5377c1.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b4540ae/original-672932b5ef4b3.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b4540ae/whatsapp-image-2024-11-04-at-16-58-27-672b844087cb4.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b4540ae/whatsapp-image-2024-11-04-at-16-58-27-1-672b8440b2dcc.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b4540ae/whatsapp-image-2024-11-04-at-16-58-27-2-672b8440d4f75.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 218.0,
+        "preco": 218,
         "cores": [
             "Preto",
             "OFF WHITE"
@@ -10573,14 +10341,14 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b4540ae/original-672932b48db04.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b4540ae/original-672932b5377c1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b4540ae/original-672932b5ef4b3.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b4540ae/whatsapp-image-2024-11-04-at-16-58-27-672b844087cb4.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b4540ae/whatsapp-image-2024-11-04-at-16-58-27-1-672b8440b2dcc.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b4540ae/whatsapp-image-2024-11-04-at-16-58-27-2-672b8440d4f75.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -10590,12 +10358,9 @@ const STILETTO_PRODUCTS = [
         "nome": "TAMANCO BIA",
         "categoria": "PAPETE",
         "url_absolute": "https://loja.usebede.com.br/tamanco-bia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b6c208d/original-672932b70dcd7.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b6c208d/original-672932b70dcd7.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b6c208d/original-672932b7ce8ab.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b6c208d/original-672932b75b3a4.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b6c208d/original-672932b823ccb.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 280.9,
         "cores": [
@@ -10677,12 +10442,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b6c208d/original-672932b70dcd7.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b6c208d/original-672932b7ce8ab.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b6c208d/original-672932b75b3a4.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b6c208d/original-672932b823ccb.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -10692,15 +10457,11 @@ const STILETTO_PRODUCTS = [
         "nome": "CHINELO MARTA",
         "categoria": "CHINELO",
         "url_absolute": "https://loja.usebede.com.br/chinelo-marta/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b981a69/original-672932b9b8587.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b981a69/original-672932b9b8587.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b981a69/original-672932bb03d92.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b981a69/whatsapp-image-2024-11-04-at-17-01-40-2-672b836c15a08.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b981a69/whatsapp-image-2024-11-04-at-17-01-40-672b836c46004.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b981a69/whatsapp-image-2024-11-04-at-17-01-40-1-672b836c7cc63.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 229.0,
+        "preco": 229,
         "cores": [
             "Preto",
             "caramelo"
@@ -10793,13 +10554,13 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b981a69/original-672932b9b8587.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b981a69/original-672932bb03d92.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b981a69/whatsapp-image-2024-11-04-at-17-01-40-2-672b836c15a08.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b981a69/whatsapp-image-2024-11-04-at-17-01-40-672b836c46004.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932b981a69/whatsapp-image-2024-11-04-at-17-01-40-1-672b836c7cc63.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -10809,12 +10570,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA BRUNA",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-bruna/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932bcc40c9/original-672932bd0a2b9.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932bcc40c9/original-672932bd0a2b9.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932bcc40c9/original-672932bdda14e.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932bcc40c9/whatsapp-image-2024-11-04-at-17-26-57-672b832e7111f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932bcc40c9/whatsapp-image-2024-11-04-at-17-26-56-2-672b832ea0999.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 269.9,
         "cores": [
@@ -10896,12 +10654,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932bcc40c9/original-672932bd0a2b9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932bcc40c9/original-672932bdda14e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932bcc40c9/whatsapp-image-2024-11-04-at-17-26-57-672b832e7111f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672932bcc40c9/whatsapp-image-2024-11-04-at-17-26-56-2-672b832ea0999.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -10911,14 +10669,9 @@ const STILETTO_PRODUCTS = [
         "nome": "PAPETE MARIA",
         "categoria": "PAPETE",
         "url_absolute": "https://loja.usebede.com.br/papete-maria/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672939620218e/whatsapp-image-2024-11-04-at-17-46-19-672b847a2cf7a.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672939620218e/whatsapp-image-2024-11-04-at-17-46-19-672b847a2cf7a.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672939620218e/whatsapp-image-2024-11-04-at-17-46-19-1-672b847a55dd9.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672939620218e/whatsapp-image-2024-11-04-at-17-46-19-2-672b847a84b8e.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672939620218e/original-6729396264007.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672939620218e/original-672939631d543.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672939620218e/original-67293963e9a9e.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 179.9,
         "cores": [
@@ -11013,14 +10766,14 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Azul escuro": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672939620218e/whatsapp-image-2024-11-04-at-17-46-19-672b847a2cf7a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672939620218e/whatsapp-image-2024-11-04-at-17-46-19-1-672b847a55dd9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672939620218e/whatsapp-image-2024-11-04-at-17-46-19-2-672b847a84b8e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672939620218e/original-6729396264007.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672939620218e/original-672939631d543.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672939620218e/original-67293963e9a9e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -11030,13 +10783,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDALIA SIGTUNA",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-sigtuna/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1008ba2.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1008ba2.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f106aa68.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f10cabf1.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1137765.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f118dc59.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 159.9,
         "cores": [
@@ -11209,32 +10958,32 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE VERNIZ": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1008ba2.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f106aa68.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f10cabf1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1137765.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f118dc59.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "PRETO VERNIZ": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1008ba2.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f106aa68.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f10cabf1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1137765.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f118dc59.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1008ba2.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f106aa68.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f10cabf1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1137765.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f118dc59.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "VERMELHO VERNIZ": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1008ba2.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f106aa68.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f10cabf1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f1137765.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672b8f0fb373e/original-672b8f118dc59.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -11244,10 +10993,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA JULIA",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-julia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb233257ff/original-672bb233ad77f.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb233257ff/original-672bb233ad77f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb233257ff/original-672bb234244d0.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 395.9,
         "cores": [
@@ -11303,8 +11051,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb233257ff/original-672bb233ad77f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb233257ff/original-672bb234244d0.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -11314,10 +11062,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA CARMEN",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-carmen/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23560b0c/original-672bb235ae292.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23560b0c/original-672bb235ae292.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23560b0c/original-672bb2362f581.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 345.9,
         "cores": [
@@ -11380,8 +11127,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23560b0c/original-672bb235ae292.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23560b0c/original-672bb2362f581.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -11391,10 +11138,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA CAMILA",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-camila/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb237e8781/original-672bb23865a96.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb237e8781/original-672bb23865a96.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb237e8781/original-672bb238d2c1e.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 396.9,
         "cores": [
@@ -11457,8 +11203,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb237e8781/original-672bb23865a96.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb237e8781/original-672bb238d2c1e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -11468,10 +11214,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA ROSA",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-rosa/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23b1c9bc/original-672bb23b7fbb8.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23b1c9bc/original-672bb23b7fbb8.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23b1c9bc/original-672bb23bdf5a2.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 329.9,
         "cores": [
@@ -11527,8 +11272,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23b1c9bc/original-672bb23b7fbb8.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23b1c9bc/original-672bb23bdf5a2.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -11538,12 +11283,11 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA ELLA",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-ella/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23d1413a/original-672bb23d4fbc7.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23d1413a/original-672bb23d4fbc7.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23d1413a/original-672bb23dbac09.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 355.0,
+        "preco": 355,
         "cores": [
             "Única"
         ],
@@ -11604,8 +11348,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23d1413a/original-672bb23d4fbc7.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/672bb23d1413a/original-672bb23dbac09.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -11615,12 +11359,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SCARPIN OURO",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/scarpin-ouro/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67523478c25fa/original-675234793ae22.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67523478c25fa/original-675234793ae22.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67523478c25fa/original-6752347a25e15.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67523478c25fa/original-6752347b052fb.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67523478c25fa/original-6752347bb3d8e.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 245.9,
         "cores": [
@@ -11728,16 +11469,16 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67523478c25fa/original-675234793ae22.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67523478c25fa/original-6752347a25e15.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67523478c25fa/original-6752347b052fb.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67523478c25fa/original-6752347bb3d8e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "nude": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67523478c25fa/original-675234793ae22.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67523478c25fa/original-6752347a25e15.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67523478c25fa/original-6752347b052fb.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67523478c25fa/original-6752347bb3d8e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -11747,20 +11488,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA MALHA CANO LONGO",
         "categoria": "BOTA CANO LONGO",
         "url_absolute": "https://loja.usebede.com.br/bota-malha-cano-longo/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/img_2139-6841c8f2a2a6b.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/img_2139-6841c8f2a2a6b.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/img_2138-6841c8bd97083.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/img_2139-6841c8b81b023.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/img_2137-6841c8fc54d69.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/img_2138-6841c903168a7.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/whatsapp-image-2025-06-05-at-13-43-43-6841c968cfeae.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/whatsapp-image-2025-06-05-at-13-43-43-1-6841c96d15d74.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/img_2292-6841c8aa37c01.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/whatsapp-image-2025-06-05-at-13-43-44-2-6841c9626f8e7.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/whatsapp-image-2025-06-05-at-13-43-44-1-6841c9658ada2.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/original-67e6aeb8bbcbb.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/original-67e6aeba4120d.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 419.9,
         "cores": [
@@ -11875,22 +11605,22 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/img_2139-6841c8f2a2a6b.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/img_2138-6841c8bd97083.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/img_2139-6841c8b81b023.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/img_2137-6841c8fc54d69.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/img_2138-6841c903168a7.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/whatsapp-image-2025-06-05-at-13-43-43-6841c968cfeae.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/whatsapp-image-2025-06-05-at-13-43-43-1-6841c96d15d74.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "SALMON": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/img_2292-6841c8aa37c01.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/whatsapp-image-2025-06-05-at-13-43-44-2-6841c9626f8e7.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/whatsapp-image-2025-06-05-at-13-43-44-1-6841c9658ada2.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "cafe": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/original-67e6aeb8bbcbb.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6aeb85a049/original-67e6aeba4120d.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -11900,10 +11630,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA SARA CANO LONGO",
         "categoria": "BOTA CANO LONGO",
         "url_absolute": "https://loja.usebede.com.br/bota-sara-cano-longo/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6b581ebc67/original-67e6b5824154d.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6b581ebc67/original-67e6b5824154d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6b581ebc67/original-67e6b58364cf7.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 398.9,
         "cores": [
@@ -11959,8 +11688,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6b581ebc67/original-67e6b5824154d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67e6b581ebc67/original-67e6b58364cf7.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -11970,12 +11699,9 @@ const STILETTO_PRODUCTS = [
         "nome": "TÊNIS SOFI",
         "categoria": "TÊNIS",
         "url_absolute": "https://loja.usebede.com.br/tenis-sofi/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5969e9e/img_2140-6841da96e47a4.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5969e9e/img_2140-6841da96e47a4.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5969e9e/original-67f57c59bd5ea.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5969e9e/img_2141-6841da8f73ae2.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5969e9e/img_2127-6841daa12330b.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 278.9,
         "cores": [
@@ -12031,10 +11757,10 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5969e9e/img_2140-6841da96e47a4.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5969e9e/original-67f57c59bd5ea.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5969e9e/img_2141-6841da8f73ae2.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5969e9e/img_2127-6841daa12330b.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -12044,10 +11770,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SAPATILHA NANDA",
         "categoria": "SAPATILHA",
         "url_absolute": "https://loja.usebede.com.br/sapatilha-nanda/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5ef1139/original-67f57c5f2bd7f.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5ef1139/original-67f57c5f2bd7f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5ef1139/original-67f57c6406cd7.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 199.9,
         "cores": [
@@ -12181,16 +11906,16 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "cafe": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5ef1139/original-67f57c5f2bd7f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5ef1139/original-67f57c6406cd7.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "preta": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5ef1139/original-67f57c5f2bd7f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5ef1139/original-67f57c6406cd7.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "vaca": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5ef1139/original-67f57c5f2bd7f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f57c5ef1139/original-67f57c6406cd7.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -12200,13 +11925,11 @@ const STILETTO_PRODUCTS = [
         "nome": "TÊNIS ANIMAL",
         "categoria": "TÊNIS",
         "url_absolute": "https://loja.usebede.com.br/tenis-animal/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f687858e73f/original-67f68785e3846.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f687858e73f/original-67f68785e3846.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f687858e73f/original-67f6878a96402.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f687858e73f/original-67f6878ed808a.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 339.0,
+        "preco": 339,
         "cores": [
             "zebra",
             "onça"
@@ -12299,14 +12022,14 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "onça": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f687858e73f/original-67f68785e3846.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f687858e73f/original-67f6878a96402.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f687858e73f/original-67f6878ed808a.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "zebra": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f687858e73f/original-67f68785e3846.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f687858e73f/original-67f6878a96402.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f687858e73f/original-67f6878ed808a.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -12316,13 +12039,9 @@ const STILETTO_PRODUCTS = [
         "nome": "MOCASSIM MARTA",
         "categoria": "MOCASSIM",
         "url_absolute": "https://loja.usebede.com.br/mocassim-marta/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f6879889fdd/whatsapp-image-2025-06-05-at-13-33-29-2-6841da429a896.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f6879889fdd/whatsapp-image-2025-06-05-at-13-33-29-2-6841da429a896.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f6879889fdd/original-67f6879dc6757.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f6879889fdd/whatsapp-image-2025-06-05-at-13-33-29-3-6841da47ef3f0.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f6879889fdd/whatsapp-image-2025-06-05-at-13-33-30-1-6841da4fcbf0d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f6879889fdd/whatsapp-image-2025-06-05-at-13-33-29-1-6841da5617c92.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 239.9,
         "cores": [
@@ -12475,20 +12194,20 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Cinza": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f6879889fdd/whatsapp-image-2025-06-05-at-13-33-29-2-6841da429a896.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f6879889fdd/original-67f6879dc6757.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f6879889fdd/whatsapp-image-2025-06-05-at-13-33-29-3-6841da47ef3f0.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "MARSALA": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f6879889fdd/whatsapp-image-2025-06-05-at-13-33-30-1-6841da4fcbf0d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f6879889fdd/whatsapp-image-2025-06-05-at-13-33-29-1-6841da5617c92.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f6879889fdd/whatsapp-image-2025-06-05-at-13-33-29-2-6841da429a896.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f6879889fdd/original-67f6879dc6757.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f6879889fdd/whatsapp-image-2025-06-05-at-13-33-29-3-6841da47ef3f0.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f6879889fdd/whatsapp-image-2025-06-05-at-13-33-30-1-6841da4fcbf0d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f6879889fdd/whatsapp-image-2025-06-05-at-13-33-29-1-6841da5617c92.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -12498,13 +12217,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA AMANDA",
         "categoria": "BOTA CANO MÉDIO",
         "url_absolute": "https://loja.usebede.com.br/bota-amanda/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f68e8c331b8/whatsapp-image-2025-05-28-at-15-42-05-68375a46dfdf6.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f68e8c331b8/whatsapp-image-2025-05-28-at-15-42-05-68375a46dfdf6.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f68e8c331b8/whatsapp-image-2025-06-04-at-15-09-32-6841c7ec9b879.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f68e8c331b8/whatsapp-image-2025-06-05-at-13-39-32-6841c86bcf8fe.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f68e8c331b8/whatsapp-image-2025-05-28-at-15-42-04-68375a465cd29.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f68e8c331b8/whatsapp-image-2025-06-05-at-13-39-19-6841c86e3b80c.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 339.9,
         "cores": [
@@ -12638,20 +12353,20 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Marrom": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f68e8c331b8/whatsapp-image-2025-06-04-at-15-09-32-6841c7ec9b879.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f68e8c331b8/whatsapp-image-2025-06-05-at-13-39-32-6841c86bcf8fe.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "azul marinho": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f68e8c331b8/whatsapp-image-2025-05-28-at-15-42-05-68375a46dfdf6.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f68e8c331b8/whatsapp-image-2025-05-28-at-15-42-04-68375a465cd29.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f68e8c331b8/whatsapp-image-2025-06-05-at-13-39-19-6841c86e3b80c.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f68e8c331b8/whatsapp-image-2025-05-28-at-15-42-05-68375a46dfdf6.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f68e8c331b8/whatsapp-image-2025-06-04-at-15-09-32-6841c7ec9b879.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f68e8c331b8/whatsapp-image-2025-06-05-at-13-39-32-6841c86bcf8fe.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f68e8c331b8/whatsapp-image-2025-05-28-at-15-42-04-68375a465cd29.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f68e8c331b8/whatsapp-image-2025-06-05-at-13-39-19-6841c86e3b80c.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -12661,11 +12376,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SCARPIN HELENA",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/scarpin-helena/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d1f79aec9/whatsapp-image-2025-05-28-at-15-41-16-3-683759ec4617a.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d1f79aec9/whatsapp-image-2025-05-28-at-15-41-16-3-683759ec4617a.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d1f79aec9/original-67f7d1f921222.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d1f79aec9/original-67f7d1faba54c.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 269.9,
         "cores": [
@@ -12714,9 +12427,9 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d1f79aec9/whatsapp-image-2025-05-28-at-15-41-16-3-683759ec4617a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d1f79aec9/original-67f7d1f921222.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d1f79aec9/original-67f7d1faba54c.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -12726,11 +12439,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SAPATILHA HELENA",
         "categoria": "SAPATILHA",
         "url_absolute": "https://loja.usebede.com.br/sapatilha-helena/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d1fc4a700/whatsapp-image-2025-06-05-at-13-33-30-8-6841c72754397.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d1fc4a700/whatsapp-image-2025-06-05-at-13-33-30-8-6841c72754397.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d1fc4a700/whatsapp-image-2025-06-05-at-13-33-30-9-6841c731a7e0e.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d1fc4a700/whatsapp-image-2025-06-05-at-13-33-30-10-6841c7357e662.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 229.9,
         "cores": [
@@ -12786,9 +12497,9 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d1fc4a700/whatsapp-image-2025-06-05-at-13-33-30-8-6841c72754397.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d1fc4a700/whatsapp-image-2025-06-05-at-13-33-30-9-6841c731a7e0e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d1fc4a700/whatsapp-image-2025-06-05-at-13-33-30-10-6841c7357e662.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -12798,12 +12509,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SLINGBACK JORDANA",
         "categoria": "SLINGBACK",
         "url_absolute": "https://loja.usebede.com.br/slingback-jordana/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-3-6841c7827203d.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-3-6841c7827203d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/original-67f7d2008d046.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-17-6841c78f72102.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-4-6841c79a6136d.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 249.9,
         "cores": [
@@ -12898,12 +12606,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-3-6841c7827203d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/original-67f7d2008d046.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-17-6841c78f72102.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d2005f299/whatsapp-image-2025-06-05-at-13-33-30-4-6841c79a6136d.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -12913,11 +12621,9 @@ const STILETTO_PRODUCTS = [
         "nome": "MULE VERA",
         "categoria": "MULE",
         "url_absolute": "https://loja.usebede.com.br/mule-vera/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d20419c8a/whatsapp-image-2025-06-05-at-13-33-30-13-6841c75dd9d35.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d20419c8a/whatsapp-image-2025-06-05-at-13-33-30-13-6841c75dd9d35.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d20419c8a/whatsapp-image-2025-06-05-at-13-33-30-12-6841c760ab0de.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d20419c8a/whatsapp-image-2025-06-05-at-13-33-30-11-6841c762e23d5.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 239.9,
         "cores": [
@@ -12973,9 +12679,9 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d20419c8a/whatsapp-image-2025-06-05-at-13-33-30-13-6841c75dd9d35.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d20419c8a/whatsapp-image-2025-06-05-at-13-33-30-12-6841c760ab0de.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67f7d20419c8a/whatsapp-image-2025-06-05-at-13-33-30-11-6841c762e23d5.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -12985,13 +12691,11 @@ const STILETTO_PRODUCTS = [
         "nome": "BOLSA BIA",
         "categoria": "BOLSA",
         "url_absolute": "https://loja.usebede.com.br/bolsa-bia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bb99f1d.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bb99f1d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bcde74a.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bda5d5f.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 169.0,
+        "preco": 169,
         "cores": [
             "Cinza",
             "OFF WHITE",
@@ -13046,29 +12750,29 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Cinza": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bb99f1d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bcde74a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bda5d5f.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Marrom": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bb99f1d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bcde74a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bda5d5f.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bb99f1d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bcde74a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bda5d5f.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bb99f1d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bcde74a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bda5d5f.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "azul marinho": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bb99f1d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bcde74a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1ba37425/original-67fea1bda5d5f.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -13078,17 +12782,11 @@ const STILETTO_PRODUCTS = [
         "nome": "BOLSA MARIA LUIZA",
         "categoria": "BOLSA",
         "url_absolute": "https://loja.usebede.com.br/bolsa-maria-luiza/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-68446aa9ec77b.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-68446aa9ec77b.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-68446af8c38a9.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-1-68446ad43cb2a.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-04-15-at-11-53-31-68446ae27b13e.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-04-15-at-11-53-33-68446aeef3ab2.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-2-68446abb6a085.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-2-68446acd6146c.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 549.0,
+        "preco": 549,
         "cores": [
             "caramelo",
             "DOURADA",
@@ -13161,53 +12859,53 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "DOURADA": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-68446aa9ec77b.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-68446af8c38a9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-1-68446ad43cb2a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-04-15-at-11-53-31-68446ae27b13e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-04-15-at-11-53-33-68446aeef3ab2.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-2-68446abb6a085.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-2-68446acd6146c.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-68446aa9ec77b.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-68446af8c38a9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-1-68446ad43cb2a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-04-15-at-11-53-31-68446ae27b13e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-04-15-at-11-53-33-68446aeef3ab2.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-2-68446abb6a085.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-2-68446acd6146c.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Prata": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-68446aa9ec77b.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-68446af8c38a9.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-1-68446ad43cb2a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-04-15-at-11-53-31-68446ae27b13e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-04-15-at-11-53-33-68446aeef3ab2.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Vermelho escuro": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-68446aa9ec77b.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-68446af8c38a9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-1-68446ad43cb2a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-04-15-at-11-53-31-68446ae27b13e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-04-15-at-11-53-33-68446aeef3ab2.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-2-68446abb6a085.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-2-68446acd6146c.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-68446aa9ec77b.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-68446af8c38a9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-1-68446ad43cb2a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-04-15-at-11-53-31-68446ae27b13e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-04-15-at-11-53-33-68446aeef3ab2.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-2-68446abb6a085.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-2-68446acd6146c.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "nude": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-2-68446abb6a085.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/67fea1beec975/whatsapp-image-2025-06-07-at-13-19-46-2-68446acd6146c.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -13217,12 +12915,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA LORENA",
         "categoria": "BOTA CANO LONGO",
         "url_absolute": "https://loja.usebede.com.br/bota-lorena/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdf7aa9cf/whatsapp-image-2025-06-05-at-13-29-41-2-6841c60f8a35f.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdf7aa9cf/whatsapp-image-2025-06-05-at-13-29-41-2-6841c60f8a35f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdf7aa9cf/whatsapp-image-2025-06-05-at-13-29-41-3-6841c61195c7c.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdf7aa9cf/whatsapp-image-2025-06-05-at-13-29-41-1-6841c61d6a94a.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdf7aa9cf/whatsapp-image-2025-06-05-at-13-29-41-5-6841c622b905d.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 559.9,
         "cores": [
@@ -13317,12 +13012,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdf7aa9cf/whatsapp-image-2025-06-05-at-13-29-41-2-6841c60f8a35f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdf7aa9cf/whatsapp-image-2025-06-05-at-13-29-41-3-6841c61195c7c.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "cafe": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdf7aa9cf/whatsapp-image-2025-06-05-at-13-29-41-1-6841c61d6a94a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdf7aa9cf/whatsapp-image-2025-06-05-at-13-29-41-5-6841c622b905d.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -13332,12 +13027,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA LEONA",
         "categoria": "BOTA CANO LONGO",
         "url_absolute": "https://loja.usebede.com.br/bota-leona/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdfce7b1a/whatsapp-image-2025-05-28-at-15-16-12-68375973a3eca.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdfce7b1a/whatsapp-image-2025-05-28-at-15-16-12-68375973a3eca.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdfce7b1a/original-680fbdfde929a.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdfce7b1a/original-680fbdfec2184.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdfce7b1a/whatsapp-image-2025-05-28-at-15-16-12-1-6837597448b43.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 449.9,
         "cores": [
@@ -13393,10 +13085,10 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdfce7b1a/whatsapp-image-2025-05-28-at-15-16-12-68375973a3eca.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdfce7b1a/original-680fbdfde929a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdfce7b1a/original-680fbdfec2184.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fbdfce7b1a/whatsapp-image-2025-05-28-at-15-16-12-1-6837597448b43.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -13406,11 +13098,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA COTURNO PRISCILA",
         "categoria": "COTURNO",
         "url_absolute": "https://loja.usebede.com.br/bota-coturno-priscila/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fc4c4d1b17/original-680fc4c532dff.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fc4c4d1b17/original-680fc4c532dff.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fc4c4d1b17/original-680fc4c68cbdb.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fc4c4d1b17/whatsapp-image-2025-05-28-at-15-16-12-12-68375679327cd.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 275.9,
         "cores": [
@@ -13505,14 +13195,14 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Marrom": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fc4c4d1b17/original-680fc4c532dff.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fc4c4d1b17/original-680fc4c68cbdb.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fc4c4d1b17/whatsapp-image-2025-05-28-at-15-16-12-12-68375679327cd.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fc4c4d1b17/original-680fc4c532dff.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fc4c4d1b17/original-680fc4c68cbdb.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/680fc4c4d1b17/whatsapp-image-2025-05-28-at-15-16-12-12-68375679327cd.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -13522,11 +13212,11 @@ const STILETTO_PRODUCTS = [
         "nome": "SLINGBACK SARA",
         "categoria": "SLINGBACK",
         "url_absolute": "https://loja.usebede.com.br/slingback-sara/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818f8757eebd/original-6818f87672ff3.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818f8757eebd/original-6818f87672ff3.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 289.0,
+        "preco": 289,
         "cores": [
             "Única"
         ],
@@ -13580,7 +13270,7 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818f8757eebd/original-6818f87672ff3.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -13590,9 +13280,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SLINGBACK DUO AVELÃ",
         "categoria": "SLINGBACK",
         "url_absolute": "https://loja.usebede.com.br/slingback-duo-avela/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818f8794166a/original-6818f8797cb6f.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818f8794166a/original-6818f8797cb6f.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 220.9,
         "cores": [
@@ -13648,7 +13338,7 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818f8794166a/original-6818f8797cb6f.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -13658,13 +13348,11 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA CARMEN",
         "categoria": "BOTA CANO BAIXO",
         "url_absolute": "https://loja.usebede.com.br/bota-carmen/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc0770b4/original-6818ffc0c1bcf.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc0770b4/original-6818ffc0c1bcf.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc0770b4/img_2122-6841c50c9a186.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc0770b4/whatsapp-image-2025-06-04-at-15-02-38-6841c51401f51.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 440.0,
+        "preco": 440,
         "cores": [
             "Preto",
             "caramelo"
@@ -13757,14 +13445,14 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc0770b4/original-6818ffc0c1bcf.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc0770b4/img_2122-6841c50c9a186.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc0770b4/whatsapp-image-2025-06-04-at-15-02-38-6841c51401f51.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc0770b4/original-6818ffc0c1bcf.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc0770b4/img_2122-6841c50c9a186.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc0770b4/whatsapp-image-2025-06-04-at-15-02-38-6841c51401f51.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -13774,12 +13462,11 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA JULIA",
         "categoria": "BOTA CANO BAIXO",
         "url_absolute": "https://loja.usebede.com.br/bota-julia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc332d43/img_2121-6841c301d09e9.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc332d43/img_2121-6841c301d09e9.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc332d43/whatsapp-image-2025-05-05-at-15-02-48-6841c19b6a691.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 457.0,
+        "preco": 457,
         "cores": [
             "Preto",
             "Marrom"
@@ -13872,12 +13559,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Marrom": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc332d43/img_2121-6841c301d09e9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc332d43/whatsapp-image-2025-05-05-at-15-02-48-6841c19b6a691.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc332d43/img_2121-6841c301d09e9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc332d43/whatsapp-image-2025-05-05-at-15-02-48-6841c19b6a691.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -13887,14 +13574,11 @@ const STILETTO_PRODUCTS = [
         "nome": "MOCASSIM VIRGINIA",
         "categoria": "MOCASSIM",
         "url_absolute": "https://loja.usebede.com.br/mocassim-virginia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc58a0d8/img_2120-6841c33a5dfca.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc58a0d8/img_2120-6841c33a5dfca.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc58a0d8/original-6818ffc68af3b.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc58a0d8/img_2119-6841c341e1a73.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc58a0d8/whatsapp-image-2025-05-05-at-14-42-30-6841c3489048f.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 350.0,
+        "preco": 350,
         "cores": [
             "Oliva",
             "Castanho avermelhado"
@@ -13987,12 +13671,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Castanho avermelhado": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc58a0d8/img_2120-6841c33a5dfca.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc58a0d8/original-6818ffc68af3b.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Oliva": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc58a0d8/img_2119-6841c341e1a73.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6818ffc58a0d8/whatsapp-image-2025-05-05-at-14-42-30-6841c3489048f.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -14002,10 +13686,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA LETÍCIA",
         "categoria": "BOTA CANO LONGO",
         "url_absolute": "https://loja.usebede.com.br/bota-leticia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683758d5bfe9d/original-683758d60c459.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683758d5bfe9d/original-683758d60c459.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683758d5bfe9d/original-683758d6c90ae.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 379.9,
         "cores": [
@@ -14087,12 +13770,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Marrom": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683758d5bfe9d/original-683758d60c459.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683758d5bfe9d/original-683758d6c90ae.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683758d5bfe9d/original-683758d60c459.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683758d5bfe9d/original-683758d6c90ae.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -14102,11 +13785,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA FÁTIMA",
         "categoria": "BOTA CANO LONGO",
         "url_absolute": "https://loja.usebede.com.br/bota-fatima/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683758e1445b0/whatsapp-image-2025-05-28-at-15-16-12-9-6841c496e6af9.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683758e1445b0/whatsapp-image-2025-05-28-at-15-16-12-9-6841c496e6af9.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683758e1445b0/original-683758e25abdc.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683758e1445b0/whatsapp-image-2025-05-28-at-15-16-12-8-6841c490a254b.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 379.9,
         "cores": [
@@ -14188,11 +13869,11 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Marrom": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683758e1445b0/original-683758e25abdc.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683758e1445b0/whatsapp-image-2025-05-28-at-15-16-12-9-6841c496e6af9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683758e1445b0/whatsapp-image-2025-05-28-at-15-16-12-8-6841c490a254b.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -14202,13 +13883,11 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA GABI",
         "categoria": "BOTA CANO BAIXO",
         "url_absolute": "https://loja.usebede.com.br/bota-gabi/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683766a51be96/whatsapp-image-2025-05-28-at-16-22-36-6841c3a8f2018.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683766a51be96/whatsapp-image-2025-05-28-at-16-22-36-6841c3a8f2018.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683766a51be96/img_2133-6841c3b22f6b3.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683766a51be96/img_2134-6841c3cf35879.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 440.0,
+        "preco": 440,
         "cores": [
             "Preto",
             "Marrom",
@@ -14359,16 +14038,16 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Azul escuro": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683766a51be96/whatsapp-image-2025-05-28-at-16-22-36-6841c3a8f2018.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683766a51be96/img_2133-6841c3b22f6b3.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683766a51be96/img_2134-6841c3cf35879.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Marrom": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683766a51be96/whatsapp-image-2025-05-28-at-16-22-36-6841c3a8f2018.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683766a51be96/img_2133-6841c3b22f6b3.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/683766a51be96/img_2134-6841c3cf35879.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -14378,13 +14057,11 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA DANI",
         "categoria": "BOTA CANO BAIXO",
         "url_absolute": "https://loja.usebede.com.br/bota-dani/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68376de5075c5/original-68376de56409d.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68376de5075c5/original-68376de56409d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68376de5075c5/whatsapp-image-2025-06-05-at-13-22-53-6841c4683cd29.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68376de5075c5/whatsapp-image-2025-05-28-at-16-59-58-6841c3f92f8ef.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 430.0,
+        "preco": 430,
         "cores": [
             "Preto",
             "Marrom",
@@ -14535,16 +14212,16 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Azul escuro": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68376de5075c5/original-68376de56409d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68376de5075c5/whatsapp-image-2025-06-05-at-13-22-53-6841c4683cd29.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Marrom": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68376de5075c5/original-68376de56409d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68376de5075c5/whatsapp-image-2025-06-05-at-13-22-53-6841c4683cd29.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68376de5075c5/whatsapp-image-2025-05-28-at-16-59-58-6841c3f92f8ef.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68376de5075c5/whatsapp-image-2025-05-28-at-16-59-58-6841c3f92f8ef.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -14554,11 +14231,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA PATRICIA",
         "categoria": "BOTA CANO LONGO",
         "url_absolute": "https://loja.usebede.com.br/bota-patricia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c0bef7d9/original-68408c0c49db2.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c0bef7d9/original-68408c0c49db2.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c0bef7d9/original-68408c0d6f4cb.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c0bef7d9/original-68408c0e3f308.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 480.9,
         "cores": [
@@ -14593,9 +14268,9 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c0bef7d9/original-68408c0c49db2.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c0bef7d9/original-68408c0d6f4cb.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c0bef7d9/original-68408c0e3f308.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -14605,13 +14280,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SCARPIN MARTA",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/scarpin-marta/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c102b31c/img_2136-1-6841c36d0c686.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c102b31c/img_2136-1-6841c36d0c686.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c102b31c/whatsapp-image-2025-05-28-at-16-34-38-6-6841b1c5c8a72.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c102b31c/whatsapp-image-2025-05-28-at-16-34-38-4-6841b1e279f02.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c102b31c/original-68408c1150bee.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c102b31c/whatsapp-image-2025-05-28-at-16-34-38-3-6841b1f47c0c5.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 310.9,
         "cores": [
@@ -14766,17 +14437,17 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Marrom": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c102b31c/img_2136-1-6841c36d0c686.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c102b31c/whatsapp-image-2025-05-28-at-16-34-38-6-6841b1c5c8a72.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c102b31c/whatsapp-image-2025-05-28-at-16-34-38-4-6841b1e279f02.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "azul marinho": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c102b31c/original-68408c1150bee.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68408c102b31c/whatsapp-image-2025-05-28-at-16-34-38-3-6841b1f47c0c5.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -14786,15 +14457,11 @@ const STILETTO_PRODUCTS = [
         "nome": "TÊNIS FLÁVIA",
         "categoria": "TÊNIS",
         "url_absolute": "https://loja.usebede.com.br/tenis-flavia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409351485c2/original-68409351a7877.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409351485c2/original-68409351a7877.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409351485c2/original-684093531cbb1.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409351485c2/original-6840935412f83.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409351485c2/original-68409354ec3d3.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409351485c2/original-68409355c534c.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 345.0,
+        "preco": 345,
         "cores": [
             "Única"
         ],
@@ -14848,11 +14515,11 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409351485c2/original-68409351a7877.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409351485c2/original-684093531cbb1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409351485c2/original-6840935412f83.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409351485c2/original-68409354ec3d3.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409351485c2/original-68409355c534c.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -14862,10 +14529,9 @@ const STILETTO_PRODUCTS = [
         "nome": "TÊNIS CHUNKY BRUNA",
         "categoria": "TÊNIS",
         "url_absolute": "https://loja.usebede.com.br/tenis-chunky-bruna/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684093576b60d/original-6840935798123.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684093576b60d/original-6840935798123.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684093576b60d/original-684093586a556.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 369.9,
         "cores": [
@@ -14921,8 +14587,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684093576b60d/original-6840935798123.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684093576b60d/original-684093586a556.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -14932,9 +14598,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA INGRID",
         "categoria": "BOTA CANO MÉDIO",
         "url_absolute": "https://loja.usebede.com.br/bota-ingrid/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409359b2739/original-68409359e2c44.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409359b2739/original-68409359e2c44.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 229.9,
         "cores": [
@@ -14983,7 +14649,7 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409359b2739/original-68409359e2c44.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -14993,11 +14659,9 @@ const STILETTO_PRODUCTS = [
         "nome": "TÊNIS PRISCILA",
         "categoria": "TÊNIS",
         "url_absolute": "https://loja.usebede.com.br/tenis-priscila/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6840935b39c70/original-6840935b6894a.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6840935b39c70/original-6840935b6894a.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6840935b39c70/original-6840935c34568.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6840935b39c70/whatsapp-image-2025-06-04-at-15-33-26-1-6841af569df81.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 319.9,
         "cores": [
@@ -15092,11 +14756,11 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Bege": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6840935b39c70/original-6840935b6894a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6840935b39c70/original-6840935c34568.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Cinza": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6840935b39c70/whatsapp-image-2025-06-04-at-15-33-26-1-6841af569df81.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -15106,11 +14770,9 @@ const STILETTO_PRODUCTS = [
         "nome": "MOCASSIM LEONA",
         "categoria": "MOCASSIM",
         "url_absolute": "https://loja.usebede.com.br/mocassim-leona/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409a54e6ac6/whatsapp-image-2025-06-04-at-15-55-08-6841afa99a9ce.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409a54e6ac6/whatsapp-image-2025-06-04-at-15-55-08-6841afa99a9ce.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409a54e6ac6/whatsapp-image-2025-06-05-at-11-57-16-6841b065ac744.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409a54e6ac6/whatsapp-image-2025-06-05-at-11-57-25-6841b067747ec.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 299.9,
         "cores": [
@@ -15263,19 +14925,19 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409a54e6ac6/whatsapp-image-2025-06-04-at-15-55-08-6841afa99a9ce.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409a54e6ac6/whatsapp-image-2025-06-05-at-11-57-16-6841b065ac744.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409a54e6ac6/whatsapp-image-2025-06-05-at-11-57-25-6841b067747ec.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409a54e6ac6/whatsapp-image-2025-06-04-at-15-55-08-6841afa99a9ce.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409a54e6ac6/whatsapp-image-2025-06-05-at-11-57-16-6841b065ac744.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409a54e6ac6/whatsapp-image-2025-06-05-at-11-57-25-6841b067747ec.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409a54e6ac6/whatsapp-image-2025-06-04-at-15-55-08-6841afa99a9ce.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409a54e6ac6/whatsapp-image-2025-06-05-at-11-57-16-6841b065ac744.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68409a54e6ac6/whatsapp-image-2025-06-05-at-11-57-25-6841b067747ec.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -15285,10 +14947,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SCARPIN VIRGINIA",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/scarpin-virginia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4d7a8059/original-6841e4d7e5e74.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4d7a8059/original-6841e4d7e5e74.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4d7a8059/original-6841e4d8abaa4.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 319.9,
         "cores": [
@@ -15422,16 +15083,16 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Marrom": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4d7a8059/original-6841e4d7e5e74.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4d7a8059/original-6841e4d8abaa4.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4d7a8059/original-6841e4d7e5e74.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4d7a8059/original-6841e4d8abaa4.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Vermelho": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4d7a8059/original-6841e4d7e5e74.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4d7a8059/original-6841e4d8abaa4.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -15441,15 +15102,11 @@ const STILETTO_PRODUCTS = [
         "nome": "COTURNO MADRI",
         "categoria": "COTURNO",
         "url_absolute": "https://loja.usebede.com.br/coturno-madri/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4db19db5/original-6841e4db51dd8.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4db19db5/original-6841e4db51dd8.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4db19db5/original-6841e4dc08c03.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4db19db5/original-6841e4dcb0787.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4db19db5/original-6841e4dd4b736.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4db19db5/original-6841e4de2c2ad.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 395.0,
+        "preco": 395,
         "cores": [
             "Única"
         ],
@@ -15503,11 +15160,11 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4db19db5/original-6841e4db51dd8.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4db19db5/original-6841e4dc08c03.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4db19db5/original-6841e4dcb0787.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4db19db5/original-6841e4dd4b736.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4db19db5/original-6841e4de2c2ad.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -15517,11 +15174,11 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA LUIZA",
         "categoria": "BOTA CANO BAIXO",
         "url_absolute": "https://loja.usebede.com.br/bota-luiza/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4df7dfa3/original-6841e4dfa9fe1.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4df7dfa3/original-6841e4dfa9fe1.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 330.0,
+        "preco": 330,
         "cores": [
             "Marrom",
             "preta"
@@ -15614,10 +15271,10 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Marrom": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4df7dfa3/original-6841e4dfa9fe1.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "preta": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841e4df7dfa3/original-6841e4dfa9fe1.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -15627,10 +15284,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SCARPIN CHANEL",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/scarpin-chanel/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebd907d78/original-6841ebd96fcf4.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebd907d78/original-6841ebd96fcf4.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebd907d78/original-6841ebda420c1.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 289.9,
         "cores": [
@@ -15725,12 +15381,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Marrom": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebd907d78/original-6841ebd96fcf4.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebd907d78/original-6841ebda420c1.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebd907d78/original-6841ebd96fcf4.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebd907d78/original-6841ebda420c1.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -15740,11 +15396,9 @@ const STILETTO_PRODUCTS = [
         "nome": "MOCASSIM MULE GABI",
         "categoria": "MULE",
         "url_absolute": "https://loja.usebede.com.br/mocassim-mule-gabi/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebdd510c0/original-6841ebdd8a033.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebdd510c0/original-6841ebdd8a033.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebdd510c0/original-6841ebde41149.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebdd510c0/original-6841ebdf13fcb.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 299.9,
         "cores": [
@@ -15852,14 +15506,14 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebdd510c0/original-6841ebdd8a033.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebdd510c0/original-6841ebde41149.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebdd510c0/original-6841ebdf13fcb.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebdd510c0/original-6841ebdd8a033.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebdd510c0/original-6841ebde41149.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebdd510c0/original-6841ebdf13fcb.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -15869,11 +15523,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA MARIANA",
         "categoria": "BOTA CANO MÉDIO",
         "url_absolute": "https://loja.usebede.com.br/bota-mariana/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebe1640b7/original-6841ebe19b836.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebe1640b7/original-6841ebe19b836.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebe1640b7/original-6841ebe28d050.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebe1640b7/original-6841ebe36761e.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 385.9,
         "cores": [
@@ -15968,14 +15620,14 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebe1640b7/original-6841ebe19b836.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebe1640b7/original-6841ebe28d050.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebe1640b7/original-6841ebe36761e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebe1640b7/original-6841ebe19b836.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebe1640b7/original-6841ebe28d050.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6841ebe1640b7/original-6841ebe36761e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -15985,10 +15637,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOLSA GABI",
         "categoria": "BOLSA",
         "url_absolute": "https://loja.usebede.com.br/bolsa-gabi/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684464a50330a/original-684464a57b5c0.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684464a50330a/original-684464a57b5c0.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684464a50330a/original-684464a6882b8.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 499.9,
         "cores": [
@@ -16009,8 +15660,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684464a50330a/original-684464a57b5c0.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684464a50330a/original-684464a6882b8.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -16020,11 +15671,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOLSA ANTONELLA",
         "categoria": "BOLSA",
         "url_absolute": "https://loja.usebede.com.br/bolsa-antonella/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684464a78de06/original-684464a7b398b.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684464a78de06/original-684464a7b398b.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684464a78de06/original-684464a87c713.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684464a78de06/original-684464a9746f1.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 459.9,
         "cores": [
@@ -16054,14 +15703,14 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684464a78de06/original-684464a7b398b.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684464a78de06/original-684464a87c713.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684464a78de06/original-684464a9746f1.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "nude": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684464a78de06/original-684464a7b398b.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684464a78de06/original-684464a87c713.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/684464a78de06/original-684464a9746f1.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -16071,14 +15720,11 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA GABRIELA",
         "categoria": "BOTA CANO BAIXO",
         "url_absolute": "https://loja.usebede.com.br/bota-gabriela/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6853165d40af4/original-6853165d90352.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6853165d40af4/original-6853165d90352.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6853165d40af4/original-6853165eb728d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6853165d40af4/original-6853165fdc1aa.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6853165d40af4/original-68531660e7cc5.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 389.0,
+        "preco": 389,
         "cores": [
             "Preto",
             "MARSALA",
@@ -16210,22 +15856,22 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "MARSALA": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6853165d40af4/original-6853165d90352.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6853165d40af4/original-6853165eb728d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6853165d40af4/original-6853165fdc1aa.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6853165d40af4/original-68531660e7cc5.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6853165d40af4/original-6853165d90352.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6853165d40af4/original-6853165eb728d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6853165d40af4/original-6853165fdc1aa.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6853165d40af4/original-68531660e7cc5.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "onça": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6853165d40af4/original-6853165d90352.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6853165d40af4/original-6853165eb728d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6853165d40af4/original-6853165fdc1aa.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6853165d40af4/original-68531660e7cc5.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -16235,10 +15881,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOLSA CLUTCH FABI",
         "categoria": "BOLSA",
         "url_absolute": "https://loja.usebede.com.br/bolsa-clutch-fabi/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d8213c8e0c1/original-68d8213cf1dfd.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d8213c8e0c1/original-68d8213cf1dfd.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d8213c8e0c1/original-68d8213dcb47e.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 159.9,
         "cores": [
@@ -16268,12 +15913,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Dourado": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d8213c8e0c1/original-68d8213cf1dfd.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d8213c8e0c1/original-68d8213dcb47e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Prata": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d8213c8e0c1/original-68d8213cf1dfd.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d8213c8e0c1/original-68d8213dcb47e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -16283,10 +15928,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOLSAS CLUTCH LAÇO",
         "categoria": "BOLSA",
         "url_absolute": "https://loja.usebede.com.br/bolsas-clutch-laco/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d8213ec2263/original-68d8213f087a9.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d8213ec2263/original-68d8213f087a9.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d8213ec2263/original-68d8213fb6823.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 159.9,
         "cores": [
@@ -16316,12 +15960,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Dourado": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d8213ec2263/original-68d8213f087a9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d8213ec2263/original-68d8213fb6823.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Prata": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d8213ec2263/original-68d8213f087a9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d8213ec2263/original-68d8213fb6823.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -16331,13 +15975,11 @@ const STILETTO_PRODUCTS = [
         "nome": "BOLSA PALHA FRANJA",
         "categoria": "BOLSA",
         "url_absolute": "https://loja.usebede.com.br/bolsa-palha-franja/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82142948df/original-68d821432bc16.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82142948df/original-68d821432bc16.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82142948df/original-68d82143e6d5f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82142948df/original-68d8214495c58.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 175.0,
+        "preco": 175,
         "cores": [
             "Caqui",
             "Bege"
@@ -16365,14 +16007,14 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Bege": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82142948df/original-68d821432bc16.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82142948df/original-68d82143e6d5f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82142948df/original-68d8214495c58.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Caqui": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82142948df/original-68d821432bc16.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82142948df/original-68d82143e6d5f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82142948df/original-68d8214495c58.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -16382,10 +16024,9 @@ const STILETTO_PRODUCTS = [
         "nome": "CLUTCH TACHAS",
         "categoria": "BOLSA",
         "url_absolute": "https://loja.usebede.com.br/clutch-tachas/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82883a3bfb/original-68d82883eb928.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82883a3bfb/original-68d82883eb928.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82883a3bfb/original-68d82884bac15.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 129.9,
         "cores": [
@@ -16415,12 +16056,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82883a3bfb/original-68d82883eb928.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82883a3bfb/original-68d82884bac15.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "preta": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82883a3bfb/original-68d82883eb928.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82883a3bfb/original-68d82884bac15.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -16430,9 +16071,9 @@ const STILETTO_PRODUCTS = [
         "nome": "CLUTCH PALHA",
         "categoria": "BOLSA",
         "url_absolute": "https://loja.usebede.com.br/clutch-palha/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82885a7219/original-68d82885d83c7.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82885a7219/original-68d82885d83c7.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 145.9,
         "cores": [
@@ -16462,10 +16103,10 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Bege": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82885a7219/original-68d82885d83c7.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Caqui": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68d82885a7219/original-68d82885d83c7.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -16475,16 +16116,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SCARPIN MARTINA",
         "categoria": "SCARPIN",
         "url_absolute": "https://loja.usebede.com.br/scarpin-martina/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68ee9f9ed3ffd/sem-ti-tulo-007-6941dd7198c3b.jpg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68ee9f9ed3ffd/sem-ti-tulo-007-6941dd7198c3b.jpg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68ee9f9ed3ffd/sem-ti-tulo-005-6941dd469c3d7.jpg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68ee9f9ed3ffd/sem-ti-tulo-005-6941dd69ca48e.jpg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68ee9f9ed3ffd/sem-ti-tulo-003-6941dd4906bf0.jpg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68ee9f9ed3ffd/sem-ti-tulo-003-6941dd6e57b13.jpg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68ee9f9ed3ffd/original-68ee9f9f3ae3d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68ee9f9ed3ffd/original-68ee9fa026998.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68ee9f9ed3ffd/sem-ti-tulo-010-6941dd76ca8fa.jpg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 319.9,
         "cores": [
@@ -16657,20 +16291,20 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68ee9f9ed3ffd/sem-ti-tulo-005-6941dd469c3d7.jpg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68ee9f9ed3ffd/sem-ti-tulo-005-6941dd69ca48e.jpg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68ee9f9ed3ffd/sem-ti-tulo-003-6941dd4906bf0.jpg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68ee9f9ed3ffd/sem-ti-tulo-003-6941dd6e57b13.jpg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "nude": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68ee9f9ed3ffd/original-68ee9f9f3ae3d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68ee9f9ed3ffd/original-68ee9fa026998.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68ee9f9ed3ffd/sem-ti-tulo-010-6941dd76ca8fa.jpg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "pinhão": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68ee9f9ed3ffd/sem-ti-tulo-007-6941dd7198c3b.jpg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -16680,12 +16314,9 @@ const STILETTO_PRODUCTS = [
         "nome": "RASTEIRINHA BIA",
         "categoria": "RASTEIRINHA",
         "url_absolute": "https://loja.usebede.com.br/rasteirinha-bia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68eeaded09284/whatsapp-image-2025-12-16-at-19-56-17-2-6941e3e101b48.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68eeaded09284/whatsapp-image-2025-12-16-at-19-56-17-2-6941e3e101b48.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68eeaded09284/original-68eeadee4106e.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68eeaded09284/original-68eeaded61667.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68eeaded09284/whatsapp-image-2025-12-16-at-19-56-17-3-6941e3e3a458e.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 186.9,
         "cores": [
@@ -16780,12 +16411,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68eeaded09284/whatsapp-image-2025-12-16-at-19-56-17-2-6941e3e101b48.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68eeaded09284/original-68eeadee4106e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68eeaded09284/original-68eeaded61667.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/68eeaded09284/whatsapp-image-2025-12-16-at-19-56-17-3-6941e3e3a458e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -16795,13 +16426,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA SCARLET",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-scarlet/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114db9650c/img_2589-6941db6c620a3.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114db9650c/img_2589-6941db6c620a3.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114db9650c/original-690114dbe824d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114db9650c/original-690114e40116a.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114db9650c/original-690114deb064f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114db9650c/original-690114e1512f3.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 340.9,
         "cores": [
@@ -16896,13 +16523,13 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Dourado": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114db9650c/img_2589-6941db6c620a3.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114db9650c/original-690114dbe824d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114db9650c/original-690114e40116a.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114db9650c/original-690114deb064f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114db9650c/original-690114e1512f3.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -16912,16 +16539,9 @@ const STILETTO_PRODUCTS = [
         "nome": "TAMANCO GINA",
         "categoria": "TAMANCO",
         "url_absolute": "https://loja.usebede.com.br/tamanco-gina/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114e8d6370/whatsapp-image-2025-12-14-at-15-36-59-9-6941d9f9b0ae2.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114e8d6370/whatsapp-image-2025-12-14-at-15-36-59-9-6941d9f9b0ae2.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114e8d6370/whatsapp-image-2025-12-14-at-15-36-59-9-6941db395ce4b.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114e8d6370/original-690114e91f8c0.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114e8d6370/original-690114f0eec77.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114e8d6370/original-690114ee5fd82.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114e8d6370/original-690114eb9ed32.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114e8d6370/img_2626-1-6941db2a8ed16.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114e8d6370/img_2623-6941db2e95d98.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 275.9,
         "cores": [
@@ -17094,20 +16714,20 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Dourado": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114e8d6370/whatsapp-image-2025-12-14-at-15-36-59-9-6941d9f9b0ae2.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114e8d6370/whatsapp-image-2025-12-14-at-15-36-59-9-6941db395ce4b.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114e8d6370/original-690114e91f8c0.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114e8d6370/original-690114f0eec77.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114e8d6370/original-690114ee5fd82.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Vermelho": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114e8d6370/original-690114eb9ed32.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114e8d6370/img_2626-1-6941db2a8ed16.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/690114e8d6370/img_2623-6941db2e95d98.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -17117,12 +16737,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA AURORA",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-aurora-6909132b8877a/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6909132b88786/original-6909132c203f0.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6909132b88786/original-6909132c203f0.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6909132b88786/original-690913344b57e.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6909132b88786/original-6909132f09cad.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6909132b88786/original-69091331a784d.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 326.9,
         "cores": [
@@ -17217,12 +16834,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6909132b88786/original-6909132c203f0.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6909132b88786/original-690913344b57e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6909132b88786/original-6909132f09cad.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6909132b88786/original-69091331a784d.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -17232,10 +16849,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA ANANDA",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-ananda/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/69091a3d1345f/original-69091a3d856ff.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/69091a3d1345f/original-69091a3d856ff.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/69091a3d1345f/original-69091a3ee70aa.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 388.9,
         "cores": [
@@ -17330,10 +16946,10 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/69091a3d1345f/original-69091a3d856ff.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/69091a3d1345f/original-69091a3ee70aa.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -17343,13 +16959,11 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA CHARLOTE",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-charlote/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/69091a4213967/original-69091a48a0fab.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/69091a4213967/original-69091a48a0fab.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/69091a4213967/original-69091a426ae20.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/69091a4213967/original-69091a4567bac.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 310.0,
+        "preco": 310,
         "cores": [
             "Preto",
             "caramelo",
@@ -17481,13 +17095,13 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/69091a4213967/original-69091a48a0fab.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/69091a4213967/original-69091a426ae20.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/69091a4213967/original-69091a4567bac.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -17497,12 +17111,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA TATI COURO",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-tati-couro/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd33dbac/whatsapp-image-2025-12-16-at-19-59-44-6941e4c57b0c2.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd33dbac/whatsapp-image-2025-12-16-at-19-59-44-6941e4c57b0c2.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd33dbac/original-6939fdd56e1e7.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd33dbac/original-6939fdd4a61c9.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd33dbac/original-6939fdd3cb21d.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 259.9,
         "cores": [
@@ -17636,14 +17247,14 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd33dbac/whatsapp-image-2025-12-16-at-19-59-44-6941e4c57b0c2.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd33dbac/original-6939fdd56e1e7.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd33dbac/original-6939fdd4a61c9.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd33dbac/original-6939fdd3cb21d.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -17653,11 +17264,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA TATI CAMURÇA",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-tati-camurca/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd85edfe/whatsapp-image-2025-12-16-at-19-59-13-6941e4b4be9c4.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd85edfe/whatsapp-image-2025-12-16-at-19-59-13-6941e4b4be9c4.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd85edfe/original-6939fdd89b5d9.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd85edfe/original-6939fdd945f69.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 255.9,
         "cores": [
@@ -17752,11 +17361,11 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "TAUPE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd85edfe/original-6939fdd89b5d9.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Terra": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd85edfe/whatsapp-image-2025-12-16-at-19-59-13-6941e4b4be9c4.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fdd85edfe/original-6939fdd945f69.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -17766,11 +17375,9 @@ const STILETTO_PRODUCTS = [
         "nome": "TAMANCO PATRÍCIA",
         "categoria": "TAMANCO",
         "url_absolute": "https://loja.usebede.com.br/tamanco-patricia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fddb5df9c/original-6939fdde697ee.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fddb5df9c/original-6939fdde697ee.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fddb5df9c/original-6939fddb9a8fd.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fddb5df9c/original-6939fde134ec2.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 220.9,
         "cores": [
@@ -17865,11 +17472,11 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fddb5df9c/original-6939fddb9a8fd.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fddb5df9c/original-6939fde134ec2.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fddb5df9c/original-6939fdde697ee.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -17879,10 +17486,9 @@ const STILETTO_PRODUCTS = [
         "nome": "TAMANCO TESSI",
         "categoria": "TAMANCO",
         "url_absolute": "https://loja.usebede.com.br/tamanco-tessi/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fde50440b/original-6939fde7e4682.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fde50440b/original-6939fde7e4682.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fde50440b/original-6939fde53e282.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 210.9,
         "cores": [
@@ -17977,10 +17583,10 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "CAPUCCINO": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fde50440b/original-6939fde7e4682.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6939fde50440b/original-6939fde53e282.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -17990,12 +17596,9 @@ const STILETTO_PRODUCTS = [
         "nome": "PAPETE VERÔNICA",
         "categoria": "PAPETE",
         "url_absolute": "https://loja.usebede.com.br/papete-veronica/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f0b91858f8/original-693f0b9216149.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f0b91858f8/original-693f0b9216149.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f0b91858f8/original-693f0b9300559.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f0b91858f8/original-693f0b939bb1e.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f0b91858f8/original-693f0b944614f.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 179.9,
         "cores": [
@@ -18168,20 +17771,20 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Bronze": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f0b91858f8/original-693f0b9216149.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f0b91858f8/original-693f0b9300559.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f0b91858f8/original-693f0b939bb1e.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f0b91858f8/original-693f0b944614f.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "nude/preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f0b91858f8/original-693f0b9216149.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f0b91858f8/original-693f0b9300559.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f0b91858f8/original-693f0b939bb1e.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f0b91858f8/original-693f0b944614f.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -18191,9 +17794,9 @@ const STILETTO_PRODUCTS = [
         "nome": "PAPETE ONÇA",
         "categoria": "CHINELO",
         "url_absolute": "https://loja.usebede.com.br/papete-onca/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f1297f32ee/whatsapp-image-2025-12-14-at-17-00-41-6941d81f5afdd.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f1297f32ee/whatsapp-image-2025-12-14-at-17-00-41-6941d81f5afdd.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 179.9,
         "cores": [
@@ -18249,7 +17852,7 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f1297f32ee/whatsapp-image-2025-12-14-at-17-00-41-6941d81f5afdd.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -18259,11 +17862,9 @@ const STILETTO_PRODUCTS = [
         "nome": "CHINELO CORRENTE TRATORADO",
         "categoria": "CHINELO",
         "url_absolute": "https://loja.usebede.com.br/chinelo-corrente-tratorado/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f19a19b52f/original-693f19a1f41cd.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f19a19b52f/original-693f19a1f41cd.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f19a19b52f/original-693f19a37853e.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f19a19b52f/original-693f19a2cd57f.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 169.9,
         "cores": [
@@ -18358,11 +17959,11 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Prata": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f19a19b52f/original-693f19a1f41cd.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f19a19b52f/original-693f19a37853e.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f19a19b52f/original-693f19a2cd57f.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -18372,10 +17973,9 @@ const STILETTO_PRODUCTS = [
         "nome": "PAPETE SLIM",
         "categoria": "PAPETE",
         "url_absolute": "https://loja.usebede.com.br/papete-slim/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f206bdb085/original-693f206c9f3ae.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f206bdb085/original-693f206c9f3ae.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f206bdb085/original-693f206d8d434.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 169.9,
         "cores": [
@@ -18470,10 +18070,10 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Bronze": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f206bdb085/original-693f206c9f3ae.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f206bdb085/original-693f206d8d434.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -18483,11 +18083,9 @@ const STILETTO_PRODUCTS = [
         "nome": "CHINELO ONÇA",
         "categoria": "CHINELO",
         "url_absolute": "https://loja.usebede.com.br/chinelo-onca/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f206fbfd15/original-693f207006542.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f206fbfd15/original-693f207006542.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f206fbfd15/original-693f2070e9680.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f206fbfd15/original-693f2071a7264.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 99.9,
         "cores": [
@@ -18543,9 +18141,9 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f206fbfd15/original-693f207006542.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f206fbfd15/original-693f2070e9680.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f206fbfd15/original-693f2071a7264.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -18555,10 +18153,9 @@ const STILETTO_PRODUCTS = [
         "nome": "CHINELO NEW",
         "categoria": "CHINELO",
         "url_absolute": "https://loja.usebede.com.br/chinelo-new/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f2072e5de8/original-693f20732e23a.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f2072e5de8/original-693f20732e23a.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f2072e5de8/original-693f2073cd87b.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 99.9,
         "cores": [
@@ -18614,8 +18211,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Única": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f2072e5de8/original-693f20732e23a.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f2072e5de8/original-693f2073cd87b.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -18625,12 +18222,9 @@ const STILETTO_PRODUCTS = [
         "nome": "CHINELO JANE",
         "categoria": "CHINELO",
         "url_absolute": "https://loja.usebede.com.br/chinelo-jane/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f27b68b3d5/whatsapp-image-2025-12-16-at-19-59-56-6941e4a0c9d95.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f27b68b3d5/whatsapp-image-2025-12-16-at-19-59-56-6941e4a0c9d95.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f27b68b3d5/original-693f27b7b7b36.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f27b68b3d5/whatsapp-image-2025-12-16-at-20-00-07-6941e49d4c79c.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f27b68b3d5/original-693f27b6dd20b.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 99.9,
         "cores": [
@@ -18725,12 +18319,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Bronze": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f27b68b3d5/original-693f27b7b7b36.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f27b68b3d5/whatsapp-image-2025-12-16-at-20-00-07-6941e49d4c79c.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f27b68b3d5/whatsapp-image-2025-12-16-at-19-59-56-6941e4a0c9d95.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/693f27b68b3d5/original-693f27b6dd20b.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -18740,13 +18334,9 @@ const STILETTO_PRODUCTS = [
         "nome": "RASTEIRINHA MARI",
         "categoria": "RASTEIRINHA",
         "url_absolute": "https://loja.usebede.com.br/rasteirinha-mari/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6d5e21a0/original-6941e6d8a62da.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6d5e21a0/original-6941e6d8a62da.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6d5e21a0/original-6941e6d96457f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6d5e21a0/original-6941e6d722d8f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6d5e21a0/original-6941e6d7dc696.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6d5e21a0/original-6941e6d6509a4.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 188.9,
         "cores": [
@@ -18880,15 +18470,15 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6d5e21a0/original-6941e6d8a62da.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6d5e21a0/original-6941e6d96457f.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6d5e21a0/original-6941e6d722d8f.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6d5e21a0/original-6941e6d7dc696.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "caramelo": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6d5e21a0/original-6941e6d6509a4.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -18898,12 +18488,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA CRIS",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-cris/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6dc4307f/original-6941e6ddecfb8.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6dc4307f/original-6941e6ddecfb8.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6dc4307f/original-6941e6dea434f.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6dc4307f/original-6941e6dc7f1e9.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6dc4307f/original-6941e6dd40bf0.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 266.9,
         "cores": [
@@ -18998,12 +18585,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6dc4307f/original-6941e6ddecfb8.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6dc4307f/original-6941e6dea434f.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6dc4307f/original-6941e6dc7f1e9.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6dc4307f/original-6941e6dd40bf0.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -19013,14 +18600,11 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA PAOLA",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-paola/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e09a138/original-6941e6e0ce137.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e09a138/original-6941e6e0ce137.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e09a138/whatsapp-image-2025-12-16-at-19-55-01-1-6941e70956c3b.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e09a138/whatsapp-image-2025-12-16-at-19-55-01-4-6941e70976e44.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e09a138/original-6941e6e1766ba.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 275.0,
+        "preco": 275,
         "cores": [
             "Prata",
             "Ouro"
@@ -19113,12 +18697,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Ouro": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e09a138/original-6941e6e0ce137.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Prata": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e09a138/whatsapp-image-2025-12-16-at-19-55-01-1-6941e70956c3b.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e09a138/whatsapp-image-2025-12-16-at-19-55-01-4-6941e70976e44.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e09a138/original-6941e6e1766ba.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -19128,11 +18712,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SANDÁLIA PAULA",
         "categoria": "SANDÁLIA",
         "url_absolute": "https://loja.usebede.com.br/sandalia-paula/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e509189/original-6941e6e53f0bd.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e509189/original-6941e6e53f0bd.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e509189/original-6941e6e60e980.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e509189/original-6941e6e6c7e15.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 250.9,
         "cores": [
@@ -19227,14 +18809,14 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e509189/original-6941e6e53f0bd.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e509189/original-6941e6e60e980.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e509189/original-6941e6e6c7e15.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "nude": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e509189/original-6941e6e53f0bd.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e509189/original-6941e6e60e980.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941e6e509189/original-6941e6e6c7e15.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -19244,12 +18826,11 @@ const STILETTO_PRODUCTS = [
         "nome": "MULE TAMARA",
         "categoria": "MULE",
         "url_absolute": "https://loja.usebede.com.br/mule-tamara/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941eddcbe044/original-6941eddd1d5d1.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941eddcbe044/original-6941eddd1d5d1.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941eddcbe044/original-6941edddee1c1.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
-        "preco": 229.0,
+        "preco": 229,
         "cores": [
             "Preto",
             "OFF WHITE"
@@ -19342,12 +18923,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "OFF WHITE": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941eddcbe044/original-6941eddd1d5d1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941eddcbe044/original-6941edddee1c1.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941eddcbe044/original-6941eddd1d5d1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6941eddcbe044/original-6941edddee1c1.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -19357,9 +18938,9 @@ const STILETTO_PRODUCTS = [
         "nome": "RASTEIRINHA SARA",
         "categoria": "RASTEIRINHA",
         "url_absolute": "https://loja.usebede.com.br/rasteirinha-sara/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/694710b254c66/original-694710b2cef05.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/694710b254c66/original-694710b2cef05.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 99.9,
         "cores": [
@@ -19454,10 +19035,10 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Branco": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/694710b254c66/original-694710b2cef05.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/694710b254c66/original-694710b2cef05.jpeg"
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -19467,10 +19048,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA BELLA",
         "categoria": "BOTA CANO BAIXO",
         "url_absolute": "https://loja.usebede.com.br/bota-bella/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14ba7a22151/original-6a14ba7a6ae01.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14ba7a22151/original-6a14ba7a6ae01.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14ba7a22151/original-6a14ba7b39dbe.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 350.9,
         "cores": [
@@ -19552,12 +19132,12 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Conhaque": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14ba7a22151/original-6a14ba7a6ae01.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14ba7a22151/original-6a14ba7b39dbe.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14ba7a22151/original-6a14ba7a6ae01.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14ba7a22151/original-6a14ba7b39dbe.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -19567,11 +19147,9 @@ const STILETTO_PRODUCTS = [
         "nome": "SLINGBACK MARTA",
         "categoria": "SLINGBACK",
         "url_absolute": "https://loja.usebede.com.br/slingback-marta/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14c10d2c283/original-6a14c10d71360.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14c10d2c283/original-6a14c10d71360.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14c10d2c283/original-6a14c10e3b5ff.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14c10d2c283/original-6a14c110ad095.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 379.9,
         "cores": [
@@ -19666,14 +19244,14 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14c10d2c283/original-6a14c10d71360.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14c10d2c283/original-6a14c10e3b5ff.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14c10d2c283/original-6a14c110ad095.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ],
             "cafe": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14c10d2c283/original-6a14c10d71360.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14c10d2c283/original-6a14c10e3b5ff.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14c10d2c283/original-6a14c110ad095.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -19683,10 +19261,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA MONTARIA LIA",
         "categoria": "BOTA CANO LONGO",
         "url_absolute": "https://loja.usebede.com.br/bota-montaria-lia/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14cf8fa27c6/original-6a14cf9006fe1.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14cf8fa27c6/original-6a14cf9006fe1.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14cf8fa27c6/original-6a14cf90d3562.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 479.9,
         "cores": [
@@ -19742,8 +19319,8 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14cf8fa27c6/original-6a14cf9006fe1.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14cf8fa27c6/original-6a14cf90d3562.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false
@@ -19753,11 +19330,9 @@ const STILETTO_PRODUCTS = [
         "nome": "BOTA COTURNO BRENDA",
         "categoria": "COTURNO",
         "url_absolute": "https://loja.usebede.com.br/bota-coturno-brenda/",
-        "foto": "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14cf9452910/original-6a14cf948bc11.jpeg",
+        "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14cf9452910/original-6a14cf948bc11.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14cf9452910/original-6a14cf9547e8d.jpeg",
-            "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14cf9452910/original-6a14cf95eeb5c.jpeg"
+            "assets/products/scarpin_couro.jpg"
         ],
         "preco": 449.9,
         "cores": [
@@ -19806,9 +19381,9 @@ const STILETTO_PRODUCTS = [
         },
         "fotos_por_cor": {
             "Preto": [
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14cf9452910/original-6a14cf948bc11.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14cf9452910/original-6a14cf9547e8d.jpeg",
-                "https://assets.sistemawbuy.com.br/arquivos/26a8817c3523759a7497109e3a7915fa/produtos/6a14cf9452910/original-6a14cf95eeb5c.jpeg"
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg",
+                "assets/products/scarpin_couro.jpg"
             ]
         },
         "novidade": false

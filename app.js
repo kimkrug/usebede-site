@@ -64,133 +64,6 @@ window.irParaLoja = function(url) {
     wishlist: JSON.parse((typeof localStorage !== 'undefined' && localStorage.getItem('bede_wishlist')) || '[]')
   };
 
-  // ── CATÁLOGO CURADO NUVEMSHOP (v36.1) ─────────────────────────
-  const CATALOGO_PRODUTOS = [
-    // SCARPIN
-    {
-      id: 362812705,
-      nome: 'Scarpin Couro',
-      categoria: 'Scarpin',
-      preco: 'R$ 549,90',
-      precoNum: 549.90,
-      url: 'https://loja.usebede.com.br/produtos/scarpin-couro-1eoiz/',
-      foto: 'assets/products/scarpin_couro.jpg'
-    },
-    {
-      id: 362812688,
-      nome: 'Scarpin Leona',
-      categoria: 'Scarpin',
-      preco: 'R$ 499,90',
-      precoNum: 499.90,
-      url: 'https://loja.usebede.com.br/produtos/scarpin-leona-1bi6j/',
-      foto: 'assets/products/scarpin_leona.jpg'
-    },
-    {
-      id: 362812683,
-      nome: 'Scarpin Patrícia',
-      categoria: 'Scarpin',
-      preco: 'R$ 479,90',
-      precoNum: 479.90,
-      url: 'https://loja.usebede.com.br/produtos/sapato-patricia-1075x/',
-      foto: 'assets/products/scarpin_patricia.jpg'
-    },
-    {
-      id: 362812411,
-      nome: 'Scarpin Ariana Verniz',
-      categoria: 'Scarpin',
-      preco: 'R$ 489,90',
-      precoNum: 489.90,
-      url: 'https://loja.usebede.com.br/produtos/scarpin-ariana-verniz-g0x00/',
-      foto: 'assets/products/scarpin_ariana.jpg'
-    },
-    // BOTA
-    {
-      id: 362812718,
-      nome: 'Bota Croco',
-      categoria: 'Bota',
-      preco: 'R$ 699,90',
-      precoNum: 699.90,
-      url: 'https://loja.usebede.com.br/produtos/botas-croco-ndm77/',
-      foto: 'assets/products/bota_croco.jpg'
-    },
-    {
-      id: 362812697,
-      nome: 'Bota Malha Cano Médio Salto Fino',
-      categoria: 'Bota',
-      preco: 'R$ 599,90',
-      precoNum: 599.90,
-      url: 'https://loja.usebede.com.br/produtos/bota-malha-cano-medio-salto-fino-zhqre/',
-      foto: 'assets/products/bota_malha.jpg'
-    },
-    {
-      id: 362812691,
-      nome: 'Bota Over Malha',
-      categoria: 'Bota',
-      preco: 'R$ 729,90',
-      precoNum: 729.90,
-      url: 'https://loja.usebede.com.br/produtos/bota-over-malha-3j4d8/',
-      foto: 'assets/products/bota_over.jpg'
-    },
-    {
-      id: 362812679,
-      nome: 'Bota Cano Alto Salto Taça',
-      categoria: 'Bota',
-      preco: 'R$ 689,90',
-      precoNum: 689.90,
-      url: 'https://loja.usebede.com.br/produtos/bota-cano-alto-salto-taca-j3p6d/',
-      foto: 'assets/products/bota_taca.jpg'
-    },
-    {
-      id: 362812674,
-      nome: 'Bota Capa Salto Bloco',
-      categoria: 'Bota',
-      preco: 'R$ 649,90',
-      precoNum: 649.90,
-      url: 'https://loja.usebede.com.br/produtos/bota-capa-salto-bloco-13bpy/',
-      foto: 'assets/products/bota_capa.jpg'
-    },
-    // MULE
-    {
-      id: 362812724,
-      nome: 'Mule Couro Fivela',
-      categoria: 'Mule',
-      preco: 'R$ 459,90',
-      precoNum: 459.90,
-      url: 'https://loja.usebede.com.br/produtos/mule-couro-fivela-1w4v9/',
-      foto: 'assets/products/mule_couro.jpg'
-    },
-    // MOCASSIM
-    {
-      id: 362812721,
-      nome: 'Mocassim com Cravinhos',
-      categoria: 'Mocassim',
-      preco: 'R$ 469,90',
-      precoNum: 469.90,
-      url: 'https://loja.usebede.com.br/produtos/mocassim-com-cravinhos-1iz7x/',
-      foto: 'assets/products/mocassim_cravinhos.jpg'
-    },
-    // TÊNIS
-    {
-      id: 362812709,
-      nome: 'Tênis Dalia',
-      categoria: 'Tênis',
-      preco: 'R$ 439,90',
-      precoNum: 439.90,
-      url: 'https://loja.usebede.com.br/produtos/tenis-dalia-7wtg4/',
-      foto: 'assets/products/tenis_dalia.jpg'
-    },
-    // BOLSA
-    {
-      id: 362812671,
-      nome: 'Bolsa Pochete Jéssica',
-      categoria: 'Bolsa',
-      preco: 'R$ 589,90',
-      precoNum: 589.90,
-      url: 'https://loja.usebede.com.br/produtos/bolsa-pochete-jessica-1lm8w/',
-      foto: 'assets/products/bolsa_jessica.jpg'
-    }
-  ];
-
   // ── CURADORIA DE TIPOS (SLIDE 3) ──────────────────────────────
   // Fotos de produtos reais selecionadas para cada um dos 6 tipos
   const TIPOS_CURADORIA = [
@@ -199,18 +72,18 @@ window.irParaLoja = function(url) {
     { nome: 'Mule', url: 'https://loja.usebede.com.br/mule/', foto: 'assets/products/mule_couro.jpg', alt: 'Mule Couro com Fivela' },
     { nome: 'Mocassim', url: 'https://loja.usebede.com.br/mocassim/', foto: 'assets/products/mocassim_cravinhos.jpg', alt: 'Mocassim com Cravinhos' },
     { nome: 'Tênis', url: 'https://loja.usebede.com.br/tenis/', foto: 'assets/products/tenis_dalia.jpg', alt: 'Tênis Dalia em Couro' },
-    { nome: 'Bolsa', url: 'https://loja.usebede.com.br/bolsa/', foto: 'assets/products/bolsa_jessica.jpg', alt: 'Bolsa Pochete Jéssica' }
+    { nome: 'Bolsa', url: 'https://loja.usebede.com.br/bolsa/', foto: 'assets/products/bolsa_jessica.jpg', alt: 'Bolsa Pochete Jessica' }
   ];
 
-  // Curadoria manual de produtos "Em Alta" (IDs configuráveis pelo Kim)
+  // Curadoria manual de produtos "Em Alta" (IDs de products.js configuráveis pelo Kim)
   const DESTAQUES_EM_ALTA_IDS = [
-    362812705, // Scarpin Couro
-    362812718, // Bota Croco
-    362812688, // Scarpin Leona
-    362812724, // Mule Couro Fivela
-    362812721, // Mocassim com Cravinhos
-    362812709, // Tênis Dalia
-    362812671  // Bolsa Pochete Jéssica
+    '3325671', // Scarpin Couro
+    '3325674', // Bota Croco
+    '3325666', // Scarpin Leona
+    '3325676', // Mule Couro Fivela
+    '3325675', // Mocassim com Cravinhos
+    '3325673', // Tênis Dalia
+    '3325670'  // Bolsa Pochete Jessica
   ];
 
   // Filtro na origem: exclui inativos, registros vazios e produtos sem imagem
@@ -304,6 +177,25 @@ window.irParaLoja = function(url) {
 
   // ── UTILS ──────────────────────────────────────────────────
   const fmt = v => Number(v || 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+  function toTitleCase(str) {
+    if (!str) return '';
+    const smallWords = /^(com|de|da|do|dos|das|e|em|para|por|na|no|nas|nos)$/i;
+    return str.toLowerCase().split(/\s+/).map((word, idx) => {
+      if (idx > 0 && smallWords.test(word)) return word.toLowerCase();
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    }).join(' ');
+  }
+
+  function getProductById(id) {
+    const strId = String(id);
+    return PRODUCTS.find(p => String(p.id) === strId) || (typeof STILETTO_PRODUCTS !== 'undefined' && STILETTO_PRODUCTS.find(p => String(p.id) === strId));
+  }
+
+  function getProductName(p) {
+    if (!p) return '';
+    return p.nome_title || toTitleCase(p.nome);
+  }
 
   // ── INJEÇÃO DINÂMICA DE PROMESSAS COMERCIAIS & CONFIGURAÇÕES ───
   function aplicarConfigLoja() {
@@ -415,19 +307,25 @@ window.irParaLoja = function(url) {
     const rail = document.getElementById('emAltaRail');
     if (!rail) return;
 
-    const emAltaProds = DESTAQUES_EM_ALTA_IDS.map(id => CATALOGO_PRODUTOS.find(p => p.id === id)).filter(Boolean);
+    const emAltaProds = DESTAQUES_EM_ALTA_IDS.map(getProductById).filter(Boolean);
     
-    rail.innerHTML = emAltaProds.map(p => `
-      <a class="nb-card" href="${p.url}" onclick="irParaLoja('${p.url}');return false;">
-        <div class="nb-card-img-wrap">
-          <img src="${p.foto}" alt="${p.nome}" loading="lazy">
-        </div>
-        <div class="nb-card-info-row">
-          <span class="nb-card-name">${p.nome}</span>
-          <span class="nb-card-price">${p.preco}</span>
-        </div>
-      </a>
-    `).join('');
+    rail.innerHTML = emAltaProds.map(p => {
+      const nome = getProductName(p);
+      const preco = fmt(p.preco);
+      const url = p.url_absolute || p.url || 'https://loja.usebede.com.br/produtos/';
+      const foto = p.foto_local || p.foto;
+      return `
+        <a class="nb-card" href="${url}" onclick="irParaLoja('${url}');return false;">
+          <div class="nb-card-img-wrap">
+            <img src="${foto}" alt="${nome}" loading="lazy">
+          </div>
+          <div class="nb-card-info-row">
+            <span class="nb-card-name">${nome}</span>
+            <span class="nb-card-price">${preco}</span>
+          </div>
+        </a>
+      `;
+    }).join('');
   }
 
   window.scrollEmAltaRail = function(direction) {
@@ -462,25 +360,35 @@ window.irParaLoja = function(url) {
   // ── 4. SLIDE 5: CATÁLOGO EXCLUSIVO — COLEÇÃO POR CATEGORIA ───
   window.switchCategoryTab = function(categoria) {
     const pills = document.querySelectorAll('.tab-pill');
-    pills.forEach(p => p.classList.toggle('active', p.dataset.tab === categoria));
+    pills.forEach(p => p.classList.toggle('active', p.dataset.tab.toLowerCase() === categoria.toLowerCase()));
 
     const rail = document.getElementById('tabsRail');
     if (!rail) return;
 
-    let prods = CATALOGO_PRODUTOS.filter(p => p.categoria.toLowerCase() === categoria.toLowerCase());
+    const catNorm = categoria.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    let prods = PRODUCTS.filter(p => {
+      const pCat = (p.categoria || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      return pCat.includes(catNorm) || catNorm.includes(pCat);
+    });
+
     if (prods.length < 4) {
-      const complementos = CATALOGO_PRODUTOS.filter(p => !prods.some(pr => pr.id === p.id));
+      const complementos = PRODUCTS.filter(p => !prods.some(pr => String(pr.id) === String(p.id)));
       prods = [...prods, ...complementos.slice(0, 4 - prods.length)];
     }
     
-    rail.innerHTML = prods.map(p => `
-      <a class="nb-card" href="${p.url}" onclick="irParaLoja('${p.url}');return false;">
-        <div class="nb-card-img-wrap">
-          <img src="${p.foto}" alt="${p.nome}" loading="lazy">
-        </div>
-        <div class="nb-card-label-only">${p.nome}</div>
-      </a>
-    `).join('');
+    rail.innerHTML = prods.map(p => {
+      const nome = getProductName(p);
+      const url = p.url_absolute || p.url || 'https://loja.usebede.com.br/produtos/';
+      const foto = p.foto_local || p.foto;
+      return `
+        <a class="nb-card" href="${url}" onclick="irParaLoja('${url}');return false;">
+          <div class="nb-card-img-wrap">
+            <img src="${foto}" alt="${nome}" loading="lazy">
+          </div>
+          <div class="nb-card-label-only">${nome}</div>
+        </a>
+      `;
+    }).join('');
     rail.scrollLeft = 0;
   };
 
