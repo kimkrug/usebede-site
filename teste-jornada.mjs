@@ -665,11 +665,8 @@ const heroAudit = await pagina.evaluate(async () => {
   
   const frame0Active = frames[0]?.classList.contains('active');
   
-  if (nextBtn) {
-    nextBtn.click();
-    if (typeof window.nextHeroFrame === 'function') window.nextHeroFrame();
-  }
-  await new Promise(r => setTimeout(r, 120));
+  if (nextBtn) nextBtn.click();
+  await new Promise(r => setTimeout(r, 150));
   const frame1Active = document.getElementById('heroFrame1')?.classList.contains('active');
   const dot1Active = document.querySelectorAll('#heroDots .hero-dot')[1]?.classList.contains('active');
 
@@ -692,7 +689,7 @@ checa(heroAudit.frame1Active && heroAudit.dot1Active, 'Clique na seta da hero al
 const heroLinks = await pagina.evaluate(() => {
   const links = [...document.querySelectorAll('#slide0 .hero-cta-group a')];
   return links.map(a => ({
-    text: a.innerText.trim(),
+    text: (a.innerText || a.textContent || '').trim().replace(/\s+/g, ' '),
     href: a.getAttribute('href') || a.href || '',
     fullHref: a.href || ''
   }));
@@ -719,7 +716,6 @@ const tabsAudit = await pagina.evaluate(async () => {
   const results = {};
   for (const pill of pills) {
     pill.click();
-    if (typeof window.switchCategoryTab === 'function') window.switchCategoryTab(pill.getAttribute('data-tab') || pill.innerText.trim());
     await new Promise(r => setTimeout(r, 80));
     const cards = [...rail.querySelectorAll('.tab-product-card')];
     results[pill.innerText.trim()] = {
@@ -729,7 +725,6 @@ const tabsAudit = await pagina.evaluate(async () => {
   }
 
   pills[0]?.click();
-  if (typeof window.switchCategoryTab === 'function') window.switchCategoryTab('Scarpin');
   await new Promise(r => setTimeout(r, 120));
   const scrollLeft = rail ? rail.scrollLeft : 0;
   const scrollWidth = rail ? rail.scrollWidth : 0;
