@@ -139,14 +139,16 @@
     </div>
   </aside>
 
-  <!-- ── DOTS DE NAVEGAÇÃO LATERAL (6 SLIDES COM SNAP) ───────── -->
+  <!-- ── DOTS DE NAVEGAÇÃO LATERAL (8 SLIDES COM SNAP) ───────── -->
   <nav class="slide-dots" id="slideDots" aria-label="Navegação de slides">
     <button class="s-dot active" onclick="goToSlide(0)" aria-label="Slide 1 — Hero"></button>
-    <button class="s-dot" onclick="goToSlide(1)" aria-label="Slide 2 — Categorias com Abas"></button>
-    <button class="s-dot" onclick="goToSlide(2)" aria-label="Slide 3 — Descubra os Tipos"></button>
-    <button class="s-dot" onclick="goToSlide(3)" aria-label="Slide 4 — Em Alta"></button>
-    <button class="s-dot" onclick="goToSlide(4)" aria-label="Slide 5 — Atendimento Boutique"></button>
-    <button class="s-dot" onclick="goToSlide(5)" aria-label="Slide 6 — Informações e Rodapé"></button>
+    <button class="s-dot" onclick="goToSlide(1)" aria-label="Slide 2 — Seleção Especial Em Alta"></button>
+    <button class="s-dot" onclick="goToSlide(2)" aria-label="Slide 3 — Sapataria & Bolsas"></button>
+    <button class="s-dot" onclick="goToSlide(3)" aria-label="Slide 4 — Descubra os Tipos"></button>
+    <button class="s-dot" onclick="goToSlide(4)" aria-label="Slide 5 — Liquidação Especial"></button>
+    <button class="s-dot" onclick="goToSlide(5)" aria-label="Slide 6 — Coleção por Categoria"></button>
+    <button class="s-dot" onclick="goToSlide(6)" aria-label="Slide 7 — Atendimento Boutique"></button>
+    <button class="s-dot" onclick="goToSlide(7)" aria-label="Slide 8 — Informações e Rodapé"></button>
   </nav>
 
   <!-- ── BOTÃO FLUTUANTE WHATSAPP ───────────────────────────────── -->
@@ -162,7 +164,7 @@
   </a>
 
   <!-- ============================================================
-       MOTOR DE TELAS CHEIAS — 6 SLIDES 100VH (v36)
+       MOTOR DE TELAS CHEIAS — 8 SLIDES 100VH (v36.1 DEFINITIVO)
   ============================================================ -->
   <div class="viewport-stage" id="viewportStage">
     <div class="slides-track" id="slidesTrack">
@@ -203,7 +205,7 @@
             </div>
           </div>
 
-          <!-- QUADRO 3: ZOOM NA BOLSA -->
+          <!-- QUADRO 3: ZOOM NA BOLSA (ENQUADRA A BOLSA, 1 BOTÃO SÓ) -->
           <div class="hero-frame" id="heroFrame2" data-index="2">
             <div class="hero-frame-bg hero-bg-3"></div>
             <div class="hero-shade"></div>
@@ -214,17 +216,14 @@
                 <a href="https://loja.usebede.com.br/bolsa/" class="btn-nv" onclick="irParaLoja('https://loja.usebede.com.br/bolsa/');return false;">
                   Ver Bolsas &rarr;
                 </a>
-                <a href="https://loja.usebede.com.br/produtos/" class="btn-nv btn-nv-secondary" onclick="irParaLoja('https://loja.usebede.com.br/produtos/');return false;">
-                  Ver todos os calçados
-                </a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- CONTROLES DA HERO: SETAS + PONTINHOS HORIZONTAIS ESTILO NB (‹ ● ○ ○ ›) -->
+        <!-- CONTROLES DA HERO: SETAS CIRCULARES + PONTINHOS HORIZONTAIS IDÊNTICOS AOS VERTICAIS (‹ ● ○ ○ ›) -->
         <div class="hero-nav-controls">
-          <button class="btn-nav-arrow circle hero-arrow-btn" id="heroPrevBtn" onclick="prevHeroFrame()" aria-label="Quadro anterior">
+          <button class="btn-nav-arrow hero-arrow-btn" id="heroPrevBtn" onclick="prevHeroFrame()" aria-label="Quadro anterior">
             <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
           </button>
           <div class="hero-dots" id="heroDots">
@@ -232,7 +231,7 @@
             <button class="hero-dot" onclick="goToHeroFrame(1)" aria-label="Quadro 2"></button>
             <button class="hero-dot" onclick="goToHeroFrame(2)" aria-label="Quadro 3"></button>
           </div>
-          <button class="btn-nav-arrow circle hero-arrow-btn" id="heroNextBtn" onclick="nextHeroFrame()" aria-label="Próximo quadro">
+          <button class="btn-nav-arrow hero-arrow-btn" id="heroNextBtn" onclick="nextHeroFrame()" aria-label="Próximo quadro">
             <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
           </button>
         </div>
@@ -240,17 +239,105 @@
         <!-- Informações de benefícios: Sul e Sudeste -->
         <div class="home-bottom-bar">
           <div class="home-bar-inner">
-            <span id="homeBarClaims"></span>
+            <span id="homeBarClaims">FRETE GRÁTIS SUL E SUDESTE A PARTIR DE R$ 599 · ATÉ 6X SEM JUROS · 5% NO PIX</span>
           </div>
         </div>
       </section>
 
-      <!-- ── SLIDE 1: TIPOS COM ABAS (SCARPIN · BOTA · MULE) ─────── -->
-      <section class="v-slide" id="slide1" aria-label="Coleção por Categoria">
-        <div class="tabs-slide-container">
-          <div class="tabs-header">
-            <span class="tabs-eyebrow">Catálogo Exclusivo</span>
-            <h2 class="tabs-title">COLEÇÃO POR CATEGORIA</h2>
+      <!-- ── SLIDE 1: SELEÇÃO ESPECIAL — EM ALTA (CARD ÚNICO PADRÃO NB) ─ -->
+      <section class="v-slide" id="slide1" aria-label="Seleção Especial Em Alta">
+        <div class="nb-slide-container">
+          <div class="nb-header">
+            <span class="section-eyebrow">Seleção Especial</span>
+            <h2 class="section-title">EM ALTA</h2>
+          </div>
+
+          <div class="nb-rail-wrapper">
+            <button class="btn-nav-arrow rail-arrow prev" id="emAltaRailPrev" onclick="scrollEmAltaRail(-1)" aria-label="Anterior">
+              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+
+            <div class="nb-rail" id="emAltaRail">
+              <!-- Renderizado dinamicamente via JS (nome à esquerda + preço à direita) -->
+            </div>
+
+            <button class="btn-nav-arrow rail-arrow next" id="emAltaRailNext" onclick="scrollEmAltaRail(1)" aria-label="Próximo">
+              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SLIDE 2: SEÇÃO RESTAURADA (DUPLO 50/50 SAPATARIA & BOLSAS) ─ -->
+      <section class="v-slide" id="slide2" aria-label="Sapataria &amp; Bolsas">
+        <div class="split-dual-slide">
+          <div class="dual-half" onclick="irParaLoja('https://loja.usebede.com.br/produtos/')" role="button" tabindex="0" aria-label="Ver Sapataria e Saltos">
+            <img class="dual-img" src="assets/split_shoes.jpg?v=crop_v3" alt="Sapataria &amp; Saltos — Stiletto BEDÊ" loading="lazy">
+            <div class="dual-shade"></div>
+            <div class="dual-caption">
+              <span class="dual-eyebrow">Exclusividade</span>
+              <h3 class="dual-title">Sapataria<br>&amp; Saltos</h3>
+              <span class="dual-cta">Explorar &rarr;</span>
+            </div>
+          </div>
+
+          <div class="dual-half" onclick="irParaLoja('https://loja.usebede.com.br/produtos/')" role="button" tabindex="0" aria-label="Ver Bolsas e Casuais">
+            <img class="dual-img" src="assets/split_bags.jpg?v=crop_v3" alt="Bolsas &amp; Casuais — Stiletto BEDÊ" loading="lazy">
+            <div class="dual-shade"></div>
+            <div class="dual-caption">
+              <span class="dual-eyebrow">Essenciais</span>
+              <h3 class="dual-title">Bolsas<br>&amp; Casuais</h3>
+              <span class="dual-cta">Explorar &rarr;</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SLIDE 3: CURADORIA BEDÊ — DESCUBRA OS TIPOS (CARD ÚNICO NB) ─ -->
+      <section class="v-slide" id="slide3" aria-label="Descubra os Tipos">
+        <div class="nb-slide-container">
+          <div class="nb-header">
+            <span class="section-eyebrow">Curadoria BEDÊ</span>
+            <h2 class="section-title">DESCUBRA OS TIPOS</h2>
+          </div>
+
+          <div class="nb-rail-wrapper">
+            <button class="btn-nav-arrow rail-arrow prev" id="tiposRailPrev" onclick="scrollTiposRail(-1)" aria-label="Anterior">
+              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+
+            <div class="nb-rail" id="tiposRail">
+              <!-- Renderizado dinamicamente via JS (6 tipos, foto real, só o nome) -->
+            </div>
+
+            <button class="btn-nav-arrow rail-arrow next" id="tiposRailNext" onclick="scrollTiposRail(1)" aria-label="Próximo">
+              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SLIDE 4: SEÇÃO RESTAURADA (LIQUIDAÇÃO ESPECIAL) ──────────── -->
+      <section class="v-slide" id="slide4" aria-label="Liquidação Especial">
+        <div class="split-text-slide">
+          <div class="split-photo">
+            <img src="assets/split_editorial.jpg?v=showroom_v1" alt="BEDÊ Stiletto — Showroom &amp; Coleção" loading="lazy">
+          </div>
+          <div class="split-text-content">
+            <h2 class="split-headline single-line">LIQUIDAÇÃO</h2>
+            <a href="https://loja.usebede.com.br/produtos/" id="slideSaleBtn" class="btn-nv dark" onclick="irParaLoja('https://loja.usebede.com.br/produtos/');return false;">
+              Ver Liquidação &rarr;
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SLIDE 5: CATÁLOGO EXCLUSIVO — COLEÇÃO POR CATEGORIA ──────── -->
+      <section class="v-slide" id="slide5" aria-label="Coleção por Categoria">
+        <div class="nb-slide-container">
+          <div class="nb-header">
+            <span class="section-eyebrow">Catálogo Exclusivo</span>
+            <h2 class="section-title">COLEÇÃO POR CATEGORIA</h2>
             <div class="category-tabs" id="categoryTabs" role="tablist">
               <button class="tab-pill active" data-tab="Scarpin" onclick="switchCategoryTab('Scarpin')" role="tab">Scarpin</button>
               <button class="tab-pill" data-tab="Bota" onclick="switchCategoryTab('Bota')" role="tab">Bota</button>
@@ -258,117 +345,24 @@
             </div>
           </div>
 
-          <div class="tabs-rail-wrapper">
-            <button class="btn-nav-arrow pill rail-arrow prev" id="tabsRailPrev" onclick="scrollTabsRail(-1)" aria-label="Anterior">
+          <div class="nb-rail-wrapper">
+            <button class="btn-nav-arrow rail-arrow prev" id="tabsRailPrev" onclick="scrollTabsRail(-1)" aria-label="Anterior">
               <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
             </button>
 
-            <div class="tabs-rail" id="tabsRail">
-              <!-- Renderizado dinamicamente via JS com fotos locais e links para loja.usebede.com.br -->
+            <div class="nb-rail" id="tabsRail">
+              <!-- Renderizado dinamicamente via JS (produtos da aba, só o nome) -->
             </div>
 
-            <button class="btn-nav-arrow pill rail-arrow next" id="tabsRailNext" onclick="scrollTabsRail(1)" aria-label="Próximo">
+            <button class="btn-nav-arrow rail-arrow next" id="tabsRailNext" onclick="scrollTabsRail(1)" aria-label="Próximo">
               <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
             </button>
           </div>
         </div>
       </section>
 
-      <!-- ── SLIDE 2: DESCUBRA OS TIPOS (TRILHO HORIZONTAL) ─────── -->
-      <section class="v-slide" id="slide2" aria-label="Descubra os Tipos">
-        <div class="tipos-slide">
-          <div class="tipos-header">
-            <span class="tipos-eyebrow">Curadoria BEDÊ</span>
-            <h2 class="tipos-title">DESCUBRA OS TIPOS</h2>
-          </div>
-          <div class="tipos-rail" id="tiposRail">
-            <a class="tipo-card" href="https://loja.usebede.com.br/scarpin/" onclick="irParaLoja('https://loja.usebede.com.br/scarpin/');return false;">
-              <div class="tipo-img-wrap">
-                <svg class="tipo-placeholder-icon" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#B0B0B0" stroke-width="1.3">
-                  <path d="M4 16c2-4 5-8 10-8s6 4 6 8H4z"/>
-                  <path d="M4 16v2h16v-2"/>
-                </svg>
-              </div>
-              <span class="tipo-label">Scarpin</span>
-            </a>
-            <a class="tipo-card" href="https://loja.usebede.com.br/bota/" onclick="irParaLoja('https://loja.usebede.com.br/bota/');return false;">
-              <div class="tipo-img-wrap">
-                <svg class="tipo-placeholder-icon" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#B0B0B0" stroke-width="1.3">
-                  <path d="M7 4v10c0 2 2 4 5 4h5v-3c0-2-2-3-4-3h-2V4H7z"/>
-                </svg>
-              </div>
-              <span class="tipo-label">Bota</span>
-            </a>
-            <a class="tipo-card" href="https://loja.usebede.com.br/mule/" onclick="irParaLoja('https://loja.usebede.com.br/mule/');return false;">
-              <div class="tipo-img-wrap">
-                <svg class="tipo-placeholder-icon" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#B0B0B0" stroke-width="1.3">
-                  <path d="M5 15c2-3 5-5 9-5 2 0 4 1 5 3H5z"/>
-                  <path d="M19 13v3H5v-1"/>
-                </svg>
-              </div>
-              <span class="tipo-label">Mule</span>
-            </a>
-            <a class="tipo-card" href="https://loja.usebede.com.br/mocassim/" onclick="irParaLoja('https://loja.usebede.com.br/mocassim/');return false;">
-              <div class="tipo-img-wrap">
-                <svg class="tipo-placeholder-icon" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#B0B0B0" stroke-width="1.3">
-                  <path d="M4 14c1-3 4-5 8-5s7 2 8 5H4z"/>
-                  <path d="M8 11h8"/>
-                </svg>
-              </div>
-              <span class="tipo-label">Mocassim</span>
-            </a>
-            <a class="tipo-card" href="https://loja.usebede.com.br/tenis/" onclick="irParaLoja('https://loja.usebede.com.br/tenis/');return false;">
-              <div class="tipo-img-wrap">
-                <svg class="tipo-placeholder-icon" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#B0B0B0" stroke-width="1.3">
-                  <path d="M4 15c2-2 6-4 11-3 2 .3 4 1.5 5 3H4z"/>
-                  <circle cx="8" cy="14" r="1"/>
-                  <circle cx="12" cy="13.5" r="1"/>
-                </svg>
-              </div>
-              <span class="tipo-label">Tênis</span>
-            </a>
-            <a class="tipo-card" href="https://loja.usebede.com.br/bolsa/" onclick="irParaLoja('https://loja.usebede.com.br/bolsa/');return false;">
-              <div class="tipo-img-wrap">
-                <svg class="tipo-placeholder-icon" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#B0B0B0" stroke-width="1.3">
-                  <rect x="5" y="8" width="14" height="12" rx="2"/>
-                  <path d="M8 8V6a4 4 0 0 1 8 0v2"/>
-                </svg>
-              </div>
-              <span class="tipo-label">Bolsa</span>
-            </a>
-          </div>
-          <div class="tipos-cta-wrap">
-            <a class="btn-nv" href="https://loja.usebede.com.br/produtos/" onclick="irParaLoja('https://loja.usebede.com.br/produtos/');return false;">Ver todos os calçados &rarr;</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- ── SLIDE 3: DESTAQUES "EM ALTA" (PRINT 1 NEW BALANCE) ───── -->
-      <section class="v-slide" id="slide3" aria-label="Destaques Em Alta">
-        <div class="em-alta-slide-container">
-          <div class="em-alta-header">
-            <span class="em-alta-eyebrow">Seleção Especial</span>
-            <h2 class="em-alta-title">EM ALTA</h2>
-          </div>
-
-          <div class="em-alta-rail-wrapper">
-            <button class="btn-nav-arrow pill rail-arrow prev" id="emAltaRailPrev" onclick="scrollEmAltaRail(-1)" aria-label="Anterior">
-              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
-            </button>
-
-            <div class="em-alta-rail" id="emAltaRail">
-              <!-- Renderizado dinamicamente via JS com produtos em alta -->
-            </div>
-
-            <button class="btn-nav-arrow pill rail-arrow next" id="emAltaRailNext" onclick="scrollEmAltaRail(1)" aria-label="Próximo">
-              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!-- ── SLIDE 4: ATENDIMENTO BOUTIQUE ENXUTO ───────────── -->
-      <section class="v-slide" id="slide4" aria-label="Atendimento Boutique">
+      <!-- ── SLIDE 6: ATENDIMENTO BOUTIQUE ENXUTO ─────────────────────── -->
+      <section class="v-slide" id="slide6" aria-label="Atendimento Boutique">
         <div class="concierge-slide">
           <div class="concierge-vip">
             <img class="concierge-monogram" src="assets/brand/monograma-bd.svg?v=2026_bd_v12" alt="BEDÊ">
@@ -392,8 +386,8 @@
         </div>
       </section>
 
-      <!-- ── SLIDE 5: RODAPÉ INSTITUCIONAL (SEÇÃO PRÓPRIA DO SNAP) ── -->
-      <section class="v-slide site-footer-slide" id="slide5" aria-label="Rodapé Institucional">
+      <!-- ── SLIDE 7: RODAPÉ INSTITUCIONAL (SEÇÃO PRÓPRIA DO SNAP) ──── -->
+      <section class="v-slide site-footer-slide" id="slide7" aria-label="Rodapé Institucional">
         <footer class="clean-footer-bottom site-footer" id="siteFooter">
           <div class="clean-footer">
 
@@ -452,7 +446,7 @@
           </div>
 
           <div class="footer-legal-bar">
-            <p class="footer-legal" id="footerLegal"></p>
+            <p class="footer-legal" id="footerLegal">Stiletto Bd Boutique Ltda · CNPJ 55.068.034/0001-00 · Centro · Viamão / RS</p>
             <p class="footer-copy">© 2026 BEDÊ. Todos os direitos reservados.</p>
           </div>
         </footer>

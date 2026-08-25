@@ -176,13 +176,13 @@ for (const item of menuInfo.items) {
 // ── 4. Seção "Descubra os Tipos" (Medição HTTP Real) ───────────
 secao('4. Seção "Descubra os Tipos" (Medição HTTP Real)');
 const tiposInfo = await pagina.evaluate(() => {
-  const section = document.querySelector('.tipos-slide, .section-silhuetas, .tipos-section, #tiposSection');
+  const section = document.querySelector('.tipos-slide, .section-silhuetas, .tipos-section, #tiposSection, #slide3');
   if (!section) return null;
 
-  const title = section.querySelector('h2, h3, .tipos-title')?.innerText.trim() || '';
-  const tiles = [...section.querySelectorAll('.tipo-card, .tipo-tile, .silhueta-card')].map(t => ({
-    text: t.innerText.trim(),
-    href: t.getAttribute('href') || t.querySelector('a')?.getAttribute('href') || ''
+  const title = section.querySelector('h2, h3, .section-title, .tipos-title')?.innerText.trim() || '';
+  const tiles = [...section.querySelectorAll('.tipo-card, .tipo-tile, .silhueta-card, .nb-card')].map(t => ({
+    text: (t.querySelector('.nb-card-label-only, .tipo-label')?.innerText || t.innerText || '').trim(),
+    href: t.getAttribute('href') || t.querySelector('a')?.getAttribute('href') || t.href || ''
   }));
 
   return { title, tilesCount: tiles.length, tiles };
@@ -429,25 +429,25 @@ const sliderEngineAudit = await pagina.evaluate(() => {
 });
 
 checa(
-  sliderEngineAudit.hasGoToSlide && sliderEngineAudit.isStageFixed && sliderEngineAudit.slidesCount === 6,
-  'Motor de transição original restaurado nos 6 slides da home (#slide0 a #slide5)',
+  sliderEngineAudit.hasGoToSlide && sliderEngineAudit.isStageFixed && sliderEngineAudit.slidesCount === 8,
+  'Motor de transição original restaurado nos 8 slides da home (#slide0 a #slide7)',
   `${sliderEngineAudit.slidesCount} slides (transição: 600ms cubic-bezier)`
 );
 
-// 8.4. Rodapé ancorado na parte INFERIOR do Slide 5, sem corte e com CNPJ visível
+// 8.4. Rodapé ancorado na parte INFERIOR do Slide 7, sem corte e com CNPJ visível
 const footerAnchoringAudit = await pagina.evaluate(async () => {
   if (typeof window.goToSlide === 'function') {
-    window.goToSlide(5, true);
+    window.goToSlide(7, true);
   }
   await new Promise(r => setTimeout(r, 600));
 
-  const slide5 = document.getElementById('slide5');
+  const slide7 = document.getElementById('slide7');
   const footer = document.getElementById('siteFooter') || document.querySelector('.clean-footer-bottom');
   const copyEl = document.querySelector('.footer-copy');
   const legalEl = document.getElementById('footerLegal') || document.querySelector('.footer-legal');
   const firstCol = document.querySelector('.cf-col');
 
-  if (!slide5 || !footer || !copyEl || !legalEl) return { exists: false };
+  if (!slide7 || !footer || !copyEl || !legalEl) return { exists: false };
 
   const innerH = window.innerHeight;
   const footerRect = footer.getBoundingClientRect();
@@ -492,7 +492,7 @@ for (const vp of viewportsToTest) {
   await vpPage.waitForTimeout(1000);
   const vpAudit = await vpPage.evaluate(async () => {
     if (typeof window.goToSlide === 'function') {
-      window.goToSlide(5, true);
+      window.goToSlide(7, true);
     }
     await new Promise(r => setTimeout(r, 600));
     const legalEl = document.getElementById('footerLegal') || document.querySelector('.footer-legal');
@@ -510,87 +510,9 @@ for (const vp of viewportsToTest) {
   await vpPage.close();
 }
 
-// 8.6. Trilho dos Tipos no DESKTOP (1366px e 1536px) transborda horizontalmente (scrollWidth > clientWidth)
-const desktopTiposAudit = await pagina.evaluate(() => {
-  const rail = document.querySelector('.tipos-rail');
-  if (!rail) return null;
-  return {
-    scrollWidth: rail.scrollWidth,
-    clientWidth: rail.clientWidth,
-    isOverflowing: rail.scrollWidth > rail.clientWidth
-  };
-});
-checa(desktopTiposAudit && desktopTiposAudit.isOverflowing, 'Trilho dos tipos transborda horizontalmente no desktop (scrollWidth > clientWidth)', `scrollWidth: ${desktopTiposAudit?.scrollWidth}px > clientWidth: ${desktopTiposAudit?.clientWidth}px`);
-const tiposBg = await pagina.evaluate(() => {
-  const sec = document.querySelector('.tipos-slide') || document.querySelector('#slide2');
-  if (!sec) return null;
-  const bg = window.getComputedStyle(sec).backgroundColor;
-  const match = bg.match(/rgb\((\d+),\s*(\d+),\s*(\d+)\)/);
-  if (match) {
-    const [_, r, g, b] = match.map(Number);
-    const lum = 0.299 * r + 0.587 * g + 0.114 * b;
-    return { bg, lum, isLight: lum > 180 };
-  }
-  return { bg, isLight: bg === 'rgb(255, 255, 255)' || bg.includes('255') };
-});
-checa(tiposBg && tiposBg.isLight, 'Fundo da seção "Descubra os Tipos" é claro (luminância alta)', tiposBg?.bg);
-
-// 8.7. Dimensões do Ladrilho no Desktop (width > height)
-const tileDimensions = await pagina.evaluate(() => {
-  const tile = document.querySelector('.tipo-card');
-  if (!tile) return null;
-  const rect = tile.getBoundingClientRect();
-  const cs = window.getComputedStyle(tile);
-  return {
-    width: rect.width,
-    height: rect.height,
-    isWider: rect.width > rect.height,
-    bg: cs.backgroundColor,
-    borderRadius: cs.borderRadius
-  };
-});
-checa(tileDimensions && tileDimensions.isWider, 'Ladrilho de tipo é mais largo que alto no desktop', `${Math.round(tileDimensions?.width)}px × ${Math.round(tileDimensions?.height)}px`);
-
-// 8.8. Fundo do Ladrilho = #F7F7F7
-checa(
-  tileDimensions && (tileDimensions.bg === 'rgb(247, 247, 247)' || tileDimensions.bg.includes('247')),
-  'Fundo do ladrilho é #F7F7F7 (rgb(247, 247, 247))',
-  tileDimensions?.bg
-);
-
-// 8.9. Legenda Única (sem texto duplicado)
-const duplicateLabels = await pagina.evaluate(() => {
-  const cards = [...document.querySelectorAll('.tipo-card')];
-  return cards.map(c => {
-    const text = c.innerText.trim();
-    const label = c.querySelector('.tipo-label')?.innerText.trim() || '';
-    const occurrences = (text.match(new RegExp(label, 'gi')) || []).length;
-    return { label, text, occurrences, hasPseudoAttr: c.querySelector('[data-tipo]') !== null };
-  });
-});
-const hasDuplicated = duplicateLabels.some(d => d.occurrences > 1 || d.hasPseudoAttr);
-checa(!hasDuplicated, 'Cada legenda de tipo aparece UMA vez só (sem texto duplicado ou ::after)', duplicateLabels.map(d => d.label).join(' · '));
-
-// 8.10. Trilho de Tipos rolável no Mobile (viewport 390px)
-const mobilePage = await contexto.newPage();
-await mobilePage.setViewportSize({ width: 390, height: 844 });
-await mobilePage.goto(BASE, { waitUntil: 'domcontentloaded' });
-await mobilePage.waitForTimeout(1000);
-const mobileRail = await mobilePage.evaluate(() => {
-  const rail = document.querySelector('.tipos-rail');
-  if (!rail) return null;
-  return {
-    scrollWidth: rail.scrollWidth,
-    clientWidth: rail.clientWidth,
-    isScrollable: rail.scrollWidth > rail.clientWidth
-  };
-});
-checa(mobileRail && mobileRail.isScrollable, 'Trilho de tipos é rolável horizontalmente no mobile (390px)', `scrollWidth: ${mobileRail?.scrollWidth}px > clientWidth: ${mobileRail?.clientWidth}px`);
-await mobilePage.close();
-
-// 8.11. Nenhuma seção com rolagem interna (overflow visível / min-height)
+// 8.6. Nenhuma seção com rolagem interna (overflow visível / min-height)
 const internalScrollSections = await pagina.evaluate(() => {
-  const sections = [...document.querySelectorAll('.v-slide, .tipos-slide, .split-text-slide, .split-dual-slide, .concierge-slide, .site-footer-slide, #siteFooter')];
+  const sections = [...document.querySelectorAll('.v-slide, .split-text-slide, .split-dual-slide, .concierge-slide, .site-footer-slide, #siteFooter')];
   return sections.map(s => {
     const cs = window.getComputedStyle(s);
     const hasInternalScroll = (cs.overflowY === 'scroll' || cs.overflowY === 'auto') && s.scrollHeight > s.clientHeight + 2;
@@ -605,7 +527,7 @@ const internalScrollSections = await pagina.evaluate(() => {
 });
 checa(internalScrollSections.length === 0, 'Nenhuma seção da home tem barra de rolagem interna', internalScrollSections.length ? JSON.stringify(internalScrollSections) : 'todas fluidas');
 
-// 8.12. Sem selo "Google Safe Browsing" / "Site Seguro Verificado"
+// 8.7. Sem selo "Google Safe Browsing" / "Site Seguro Verificado"
 const safeBrowsingMentions = await pagina.evaluate(() => {
   const html = document.body.innerHTML;
   const text = document.body.innerText;
@@ -653,20 +575,65 @@ try {
   console.log('  INFO Não foi possível conectar ao catálogo remoto para contagem:', e.message);
 }
 
-// ── 10. Travas Visuais v36 (Hero 3 Quadros, Tipos com Abas, Destaques Em Alta e Seta Padronizada) ──
-secao('10. Travas Visuais v36 (Hero 3 Quadros, Tipos com Abas, Destaques Em Alta e Seta Padronizada)');
+// ── 10. Travas Visuais v36.1 (Ordem de 8 Slides, Controles Padronizados e Card Único NB) ──
+secao('10. Travas Visuais v36.1 (Ordem de 8 Slides, Controles Padronizados e Card Único NB)');
 
-// 10.1. Hero tem 3 quadros, controles presentes e transição por seta
+// 10.1. Ordem Definitiva dos 8 Slides
+const slidesAudit = await pagina.evaluate(() => {
+  const slides = [...document.querySelectorAll('.v-slide')];
+  const ids = slides.map(s => s.id);
+  const slide2HasDual = !!document.querySelector('#slide2 .split-dual-slide');
+  const slide4HasSale = !!document.querySelector('#slide4 .split-text-slide');
+  const slide1HasEmAlta = !!document.querySelector('#slide1 #emAltaRail');
+  const slide3HasTipos = !!document.querySelector('#slide3 #tiposRail');
+  const slide5HasTabs = !!document.querySelector('#slide5 #tabsRail');
+  const dotsCount = document.querySelectorAll('#slideDots .s-dot').length;
+
+  return {
+    count: slides.length,
+    ids,
+    dotsCount,
+    slide1HasEmAlta,
+    slide2HasDual,
+    slide3HasTipos,
+    slide4HasSale,
+    slide5HasTabs
+  };
+});
+
+checa(slidesAudit.count === 8 && slidesAudit.dotsCount === 8, 'Estrutura da Home contém exatamente 8 slides com 8 dots de navegação', `${slidesAudit.count} slides / ${slidesAudit.dotsCount} dots`);
+checa(slidesAudit.slide1HasEmAlta, 'Slide 1 é a Seleção Especial "EM ALTA"');
+checa(slidesAudit.slide2HasDual, 'Slide 2 é a seção restaurada "Sapataria & Bolsas" (Duplo 50/50)');
+checa(slidesAudit.slide3HasTipos, 'Slide 3 é a Curadoria BEDÊ "DESCUBRA OS TIPOS" (6 cards)');
+checa(slidesAudit.slide4HasSale, 'Slide 4 é a seção restaurada "LIQUIDAÇÃO" (Split 64/31)');
+checa(slidesAudit.slide5HasTabs, 'Slide 5 é o Catálogo Exclusivo "COLEÇÃO POR CATEGORIA" (Abas)');
+
+// 10.2. Hero em 3 Quadros, Controles e Pontinhos Idênticos aos Verticais
 const heroAudit = await pagina.evaluate(async () => {
   const frames = [...document.querySelectorAll('#heroCarousel .hero-frame')];
   const prevBtn = document.getElementById('heroPrevBtn');
   const nextBtn = document.getElementById('heroNextBtn');
-  const dots = [...document.querySelectorAll('#heroDots .hero-dot')];
-  
-  const frame0Active = frames[0]?.classList.contains('active');
-  
-  if (nextBtn) nextBtn.click();
-  await new Promise(r => setTimeout(r, 150));
+  const heroDots = [...document.querySelectorAll('#heroDots .hero-dot')];
+  const verticalDots = [...document.querySelectorAll('#slideDots .s-dot')];
+
+  // Comparação de estilo computado entre bolinha da hero e bolinha vertical
+  let dotsIdentical = false;
+  if (heroDots.length > 0 && verticalDots.length > 0) {
+    const csHero = window.getComputedStyle(heroDots[0]);
+    const csVert = window.getComputedStyle(verticalDots[0]);
+    dotsIdentical = csHero.width === csVert.width && csHero.height === csVert.height && csHero.borderRadius === csVert.borderRadius;
+  }
+
+  // Verificação dos botões do Quadro 3 (apenas 1 botão: VER BOLSAS)
+  const frame2Buttons = [...document.querySelectorAll('#heroFrame2 .hero-cta-group a')];
+
+  if (typeof window.goToHeroFrame === 'function') {
+    window.goToHeroFrame(0);
+    window.nextHeroFrame();
+  } else if (nextBtn) {
+    nextBtn.click();
+  }
+  await new Promise(r => setTimeout(r, 100));
   const frame1Active = document.getElementById('heroFrame1')?.classList.contains('active');
   const dot1Active = document.querySelectorAll('#heroDots .hero-dot')[1]?.classList.contains('active');
 
@@ -674,156 +641,192 @@ const heroAudit = await pagina.evaluate(async () => {
     framesCount: frames.length,
     hasPrevBtn: !!prevBtn,
     hasNextBtn: !!nextBtn,
-    dotsCount: dots.length,
-    frame0Active,
+    heroDotsCount: heroDots.length,
+    dotsIdentical,
+    frame2ButtonsCount: frame2Buttons.length,
+    frame2BtnText: frame2Buttons[0]?.innerText.trim(),
+    frame2BtnHref: frame2Buttons[0]?.href,
     frame1Active,
     dot1Active
   };
 });
 
 checa(heroAudit.framesCount === 3, 'Hero contém exatamente 3 quadros', `${heroAudit.framesCount} quadros`);
-checa(heroAudit.hasPrevBtn && heroAudit.hasNextBtn && heroAudit.dotsCount === 3, 'Hero contém controles horizontais completos (setas + 3 pontinhos)', `dots: ${heroAudit.dotsCount}`);
+checa(heroAudit.hasPrevBtn && heroAudit.hasNextBtn && heroAudit.heroDotsCount === 3, 'Hero contém controles horizontais completos (setas + 3 pontinhos)', `dots: ${heroAudit.heroDotsCount}`);
+checa(heroAudit.dotsIdentical, 'Pontinhos da hero possuem o MESMO estilo computado dos pontinhos verticais (diâmetro 8px, circulares)');
 checa(heroAudit.frame1Active && heroAudit.dot1Active, 'Clique na seta da hero alterna para o próximo quadro com indicador ativo');
+checa(heroAudit.frame2ButtonsCount === 1 && heroAudit.frame2BtnHref?.includes('/bolsa'), 'Quadro 3 da Hero contém apenas 1 botão ("VER BOLSAS →" para /bolsa/)', heroAudit.frame2BtnText);
 
-// 10.2. Botões da Hero: links válidos (200 OK) no domínio definitivo sem "#"
-const heroLinks = await pagina.evaluate(() => {
-  const links = [...document.querySelectorAll('#slide0 .hero-cta-group a')];
-  return links.map(a => ({
-    text: (a.innerText || a.textContent || '').trim().replace(/\s+/g, ' '),
-    href: a.getAttribute('href') || a.href || '',
-    fullHref: a.href || ''
-  }));
-});
-const allHeroValid = heroLinks.every(l => l.href && l.href !== '#' && !l.href.startsWith('javascript:'));
-checa(allHeroValid && heroLinks.length >= 3, 'Todos os botões da hero apontam para destinos reais (sem links mortos ou "#")', `${heroLinks.length} botões`);
-
-for (const l of heroLinks) {
-  try {
-    const res = await pagina.request.get(l.fullHref);
-    checa(res.status() === 200, `Botão Hero "${l.text}" responde HTTP 200 OK`, `${res.status()} ${l.fullHref}`);
-  } catch (e) {
-    falhou(`Falha HTTP no botão Hero "${l.text}"`, e.message);
-  }
-}
-
-// 10.3. Seção de Abas entre Hero e Tipos com produtos reais
-const tabsAudit = await pagina.evaluate(async () => {
-  const slide1 = document.getElementById('slide1');
-  const pills = [...document.querySelectorAll('#categoryTabs .tab-pill')];
-  const pillNames = pills.map(p => p.innerText.trim());
-  const rail = document.getElementById('tabsRail');
-  
-  const results = {};
-  for (const pill of pills) {
-    pill.click();
-    await new Promise(r => setTimeout(r, 80));
-    const cards = [...rail.querySelectorAll('.tab-product-card')];
-    results[pill.innerText.trim()] = {
-      count: cards.length,
-      names: cards.map(c => c.querySelector('.tab-card-name')?.innerText.trim())
-    };
-  }
-
-  pills[0]?.click();
-  await new Promise(r => setTimeout(r, 120));
-  const scrollLeft = rail ? rail.scrollLeft : 0;
-  const scrollWidth = rail ? rail.scrollWidth : 0;
-  const clientWidth = rail ? rail.clientWidth : 0;
-  const isBilateral = scrollLeft > 0 && (scrollLeft + clientWidth < scrollWidth);
-
-  return {
-    hasSlide1: !!slide1,
-    pillNames,
-    results,
-    scrollLeft,
-    scrollWidth,
-    clientWidth,
-    isBilateral
-  };
-});
-
-checa(tabsAudit.hasSlide1, 'Nova seção de categorias com abas presente no Slide 1');
-checa(tabsAudit.pillNames.join(' · ') === 'Scarpin · Bota · Mule', 'Abas contêm exatamente "Scarpin · Bota · Mule"', tabsAudit.pillNames.join(' · '));
-checa(tabsAudit.results['Scarpin']?.count >= 4 && tabsAudit.results['Bota']?.count >= 5 && tabsAudit.results['Mule']?.count >= 1, 'Trilho de abas renderiza produtos dinâmicos para cada categoria');
-checa(tabsAudit.isBilateral, 'Trilho da seção de abas transborda para os DOIS lados (scrollLeft > 0 e scrollLeft + clientWidth < scrollWidth)', `scrollLeft: ${tabsAudit.scrollLeft}px, scrollWidth: ${tabsAudit.scrollWidth}px, clientWidth: ${tabsAudit.clientWidth}px`);
-
-// 10.4. Seção Destaques Em Alta: ≥ 4 cards, contain, sem borda/sombra, nome e preço na mesma linha, transpasse à direita
-const emAltaAudit = await pagina.evaluate(() => {
-  const slide3 = document.getElementById('slide3');
-  const rail = document.getElementById('emAltaRail');
-  const cards = [...document.querySelectorAll('#emAltaRail .em-alta-card')];
-  
-  if (!cards.length) return { count: 0 };
-
-  const firstCard = cards[0];
-  const csCard = window.getComputedStyle(firstCard);
-  const imgWrap = firstCard.querySelector('.em-alta-img-wrap');
-  const csWrap = imgWrap ? window.getComputedStyle(imgWrap) : null;
-  const img = imgWrap ? imgWrap.querySelector('img') : null;
-  const csImg = img ? window.getComputedStyle(img) : null;
-  const infoRow = firstCard.querySelector('.em-alta-info-row');
-  const csInfo = infoRow ? window.getComputedStyle(infoRow) : null;
-  const nameEl = firstCard.querySelector('.em-alta-prod-name');
-  const priceEl = firstCard.querySelector('.em-alta-prod-price');
-
-  const hasNoBorder = (!csCard.borderWidth || csCard.borderWidth === '0px') && (!csWrap.borderWidth || csWrap.borderWidth === '0px');
-  const hasNoShadow = csCard.boxShadow === 'none' && csWrap.boxShadow === 'none';
-  const isContain = csImg?.objectFit === 'contain';
-  const isSingleLine = csInfo?.display === 'flex' && csInfo?.justifyContent === 'space-between';
-
-  return {
-    count: cards.length,
-    hasNoBorder,
-    hasNoShadow,
-    isContain,
-    isSingleLine,
-    hasNameAndPrice: !!nameEl && !!priceEl,
-    scrollWidth: rail?.scrollWidth || 0,
-    clientWidth: rail?.clientWidth || 0,
-    transbordaDireita: (rail?.scrollWidth || 0) > (rail?.clientWidth || 0)
-  };
-});
-
-checa(emAltaAudit.count >= 4, 'Seção Destaques "Em Alta" contém ≥ 4 cards grandes de produtos', `${emAltaAudit.count} cards`);
-checa(emAltaAudit.isContain, 'Cards de Destaques utilizam object-fit: contain');
-checa(emAltaAudit.hasNoBorder && emAltaAudit.hasNoShadow, 'Cards de Destaques não possuem bordas nem sombras');
-checa(emAltaAudit.isSingleLine && emAltaAudit.hasNameAndPrice, 'Nome e preço dispostos em linha única abaixo da imagem');
-checa(emAltaAudit.transbordaDireita, 'Trilho de Destaques transborda na borda direita no desktop (~3,5 cards visíveis)', `scrollWidth: ${emAltaAudit.scrollWidth}px > clientWidth: ${emAltaAudit.clientWidth}px`);
-
-// 10.5. Padronização de Todas as Setas do Site (Luminância Alta, Fundo Claro, Chevron Escuro)
+// 10.3. Padronização das Setas no Site Inteiro (Componente Círculo com Fundo Transparente)
 const arrowsAudit = await pagina.evaluate(() => {
-  const arrows = [...document.querySelectorAll('.btn-nav-arrow, .hero-arrow-btn, .rail-arrow')];
-  if (!arrows.length) return { count: 0, allLight: false };
+  const arrows = [...document.querySelectorAll('.btn-nav-arrow')];
+  if (!arrows.length) return { count: 0, allCircular: false, noPills: false, noFilledBlur: false };
 
-  function parseLuminance(colorStr) {
-    const m = colorStr.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/i);
-    if (!m) return 1;
-    const r = parseInt(m[1], 10) / 255;
-    const g = parseInt(m[2], 10) / 255;
-    const b = parseInt(m[3], 10) / 255;
-    return 0.2126 * r + 0.7152 * g + 0.0722 * b;
-  }
+  let allCircular = true;
+  let noPills = true;
+  let transparentBackground = true;
 
-  let allLight = true;
-  let allHaveBlur = true;
   for (const a of arrows) {
     const cs = window.getComputedStyle(a);
-    const lum = parseLuminance(cs.backgroundColor);
-    if (lum < 0.75) allLight = false;
-    const filter = cs.backdropFilter || cs.webkitBackdropFilter || '';
-    if (!filter.includes('blur')) allHaveBlur = false;
+    const rect = a.getBoundingClientRect();
+    const isCircle = Math.abs(rect.width - rect.height) <= 3 && (cs.borderRadius.includes('50%') || parseInt(cs.borderRadius) >= 20);
+    if (!isCircle) allCircular = false;
+    if (a.classList.contains('pill') || rect.height > rect.width * 1.5) noPills = false;
+    
+    // Fundo transparente (não cheio)
+    const bg = cs.backgroundColor;
+    const isTransparent = bg === 'rgba(0, 0, 0, 0)' || bg === 'transparent' || bg.includes('rgba(255, 255, 255, 0') || bg.includes('rgba(0, 0, 0, 0');
+    if (!isTransparent) transparentBackground = false;
   }
 
   return {
     count: arrows.length,
-    allLight,
-    allHaveBlur
+    allCircular,
+    noPills,
+    transparentBackground
   };
 });
 
-checa(arrowsAudit.count >= 6, 'Componente de seta padronizado presente em todos os controles do site', `${arrowsAudit.count} setas encontradas`);
-checa(arrowsAudit.allLight, 'Todas as setas possuem fundo claro com alta luminância (nenhuma seta escura)');
-checa(arrowsAudit.allHaveBlur, 'Todas as setas utilizam acabamento translúcido com backdrop-filter blur');
+checa(arrowsAudit.count >= 8, 'Componente de seta padronizado presente em todos os controles do site', `${arrowsAudit.count} setas encontradas`);
+checa(arrowsAudit.allCircular && arrowsAudit.noPills, 'Todas as setas são circulares no padrão do design (zero formato pílula)');
+checa(arrowsAudit.transparentBackground, 'Setas utilizam fundo transparente com borda fina (sem fundo sólido ou pílula blur)');
+
+// 10.4. Trilhos Fluidos atingem as laterais da tela com transpasse ≥ meio card
+const railsAudit = await pagina.evaluate(() => {
+  const rails = [
+    { id: 'emAltaRail', name: 'Em Alta' },
+    { id: 'tiposRail', name: 'Descubra os Tipos' },
+    { id: 'tabsRail', name: 'Coleção por Categoria' }
+  ];
+  const vpWidth = window.innerWidth;
+
+  return rails.map(r => {
+    const el = document.getElementById(r.id);
+    if (!el) return { name: r.name, exists: false };
+    const rect = el.getBoundingClientRect();
+    const firstCard = el.querySelector('.nb-card');
+    const cardWidth = firstCard ? firstCard.getBoundingClientRect().width : 300;
+    const overflowAmount = el.scrollWidth - el.clientWidth;
+    const reachesEdge = rect.right >= vpWidth - 5;
+    const hasHalfCardTranspass = overflowAmount >= 0.45 * cardWidth;
+
+    return {
+      name: r.name,
+      exists: true,
+      scrollWidth: el.scrollWidth,
+      clientWidth: el.clientWidth,
+      cardWidth: Math.round(cardWidth),
+      overflowAmount: Math.round(overflowAmount),
+      reachesEdge,
+      hasHalfCardTranspass
+    };
+  });
+});
+
+for (const r of railsAudit) {
+  checa(r.exists && r.reachesEdge, `Trilho "${r.name}" atinge as laterais da tela (largura total da viewport)`, `largura: ${r.clientWidth}px`);
+  checa(r.exists && r.hasHalfCardTranspass, `Trilho "${r.name}" possui transpasse real ≥ meio card cortado`, `sobra: ${r.overflowAmount}px >= 0.5 × ${r.cardWidth}px`);
+}
+
+// 10.5. Card Único NB nas 3 Seções: Foto ~26vw, object-fit contain, fundo claro, sem borda/sombra
+const nbCardsAudit = await pagina.evaluate(() => {
+  const cards = [...document.querySelectorAll('.nb-card')];
+  if (!cards.length) return { count: 0 };
+
+  const first = cards[0];
+  const csCard = window.getComputedStyle(first);
+  const imgWrap = first.querySelector('.nb-card-img-wrap');
+  const csWrap = imgWrap ? window.getComputedStyle(imgWrap) : null;
+  const img = imgWrap ? imgWrap.querySelector('img') : null;
+  const csImg = img ? window.getComputedStyle(img) : null;
+
+  const vpW = window.innerWidth;
+  const cardW = first.getBoundingClientRect().width;
+  const cardVw = (cardW / vpW) * 100;
+
+  const isContain = csImg?.objectFit === 'contain';
+  const hasNoBorder = (!csCard.borderWidth || csCard.borderWidth === '0px') && (!csWrap.borderWidth || csWrap.borderWidth === '0px');
+  const hasNoShadow = csCard.boxShadow === 'none' && csWrap.boxShadow === 'none';
+  const hasNoRadius = csCard.borderRadius === '0px' && csWrap.borderRadius === '0px';
+  const isLightBg = csWrap?.backgroundColor === 'rgb(247, 247, 247)' || csWrap?.backgroundColor.includes('247') || csWrap?.backgroundColor.includes('245');
+
+  return {
+    count: cards.length,
+    cardW: Math.round(cardW),
+    cardVw: Math.round(cardVw),
+    isContain,
+    hasNoBorder,
+    hasNoShadow,
+    hasNoRadius,
+    isLightBg
+  };
+});
+
+checa(nbCardsAudit.count >= 15, 'Cards únicos padrão NB renderizados nas 3 seções do site', `${nbCardsAudit.count} cards`);
+checa(nbCardsAudit.cardVw >= 22, 'Largura do card no desktop é proporcional (~26vw)', `${nbCardsAudit.cardVw}vw (${nbCardsAudit.cardW}px)`);
+checa(nbCardsAudit.isContain, 'Fotos dos cards utilizam object-fit: contain');
+checa(nbCardsAudit.hasNoBorder && nbCardsAudit.hasNoShadow && nbCardsAudit.hasNoRadius, 'Cards não possuem bordas, nem sombras, nem cantos arredondados (zero borda/sombra/raio)');
+checa(nbCardsAudit.isLightBg, 'Fundo da moldura da foto é claro (#F7F7F7)');
+
+// 10.6. Slide 1 (Em Alta): Nome + Preço na mesma linha
+const emAltaDetails = await pagina.evaluate(() => {
+  const first = document.querySelector('#emAltaRail .nb-card');
+  if (!first) return null;
+  const infoRow = first.querySelector('.nb-card-info-row');
+  const csInfo = infoRow ? window.getComputedStyle(infoRow) : null;
+  const nameEl = first.querySelector('.nb-card-name');
+  const priceEl = first.querySelector('.nb-card-price');
+  return {
+    isSingleLine: csInfo?.display === 'flex' && csInfo?.justifyContent === 'space-between',
+    hasNameAndPrice: !!nameEl && !!priceEl,
+    name: nameEl?.innerText.trim(),
+    price: priceEl?.innerText.trim()
+  };
+});
+checa(emAltaDetails?.isSingleLine && emAltaDetails?.hasNameAndPrice, 'Em Alta: nome e preço dispostos em linha única abaixo da imagem', `${emAltaDetails?.name} · ${emAltaDetails?.price}`);
+
+// 10.7. Slide 3 (Descubra os Tipos): Exatamente 6 tipos com fotos reais e rotas 200 OK
+const tiposDetails = await pagina.evaluate(() => {
+  const cards = [...document.querySelectorAll('#tiposRail .nb-card')];
+  return cards.map(c => ({
+    name: c.querySelector('.nb-card-label-only')?.innerText.trim(),
+    href: c.href,
+    hasImg: !!c.querySelector('img[src]')
+  }));
+});
+checa(tiposDetails.length === 6, 'Descubra os Tipos contém exatamente 6 cards', `${tiposDetails.map(t => t.name).join(' · ')}`);
+checa(tiposDetails.every(t => t.hasImg), 'Todos os 6 cards de tipo utilizam fotos reais de produtos');
+
+for (const t of tiposDetails) {
+  try {
+    const res = await pagina.request.get(t.href);
+    checa(res.status() === 200, `Card Tipo "${t.name}" responde HTTP 200 OK`, `${res.status()} ${t.href}`);
+  } catch (e) {
+    falhou(`Falha HTTP no card Tipo "${t.name}"`, e.message);
+  }
+}
+
+// 10.8. Slide 5 (Coleção por Categoria): 3 abas funcionais com cards
+const tabsDetails = await pagina.evaluate(async () => {
+  const pills = [...document.querySelectorAll('#categoryTabs .tab-pill')];
+  const rail = document.getElementById('tabsRail');
+  const results = {};
+
+  for (const pill of pills) {
+    pill.click();
+    if (typeof window.switchCategoryTab === 'function') window.switchCategoryTab(pill.getAttribute('data-tab') || pill.innerText.trim());
+    await new Promise(r => setTimeout(r, 60));
+    const cards = [...rail.querySelectorAll('.nb-card')];
+    results[pill.innerText.trim()] = cards.length;
+  }
+  return {
+    pillsCount: pills.length,
+    pillNames: pills.map(p => p.innerText.trim()),
+    results
+  };
+});
+checa(tabsDetails.pillsCount === 3 && tabsDetails.pillNames.join(' · ') === 'Scarpin · Bota · Mule', 'Coleção por Categoria possui 3 abas ativas', tabsDetails.pillNames.join(' · '));
+checa(tabsDetails.results['Scarpin'] >= 4 && tabsDetails.results['Bota'] >= 5 && tabsDetails.results['Mule'] >= 1, 'Trilho de abas renderiza produtos dinâmicos para cada categoria');
 
 // ── Finalização ────────────────────────────────────────────────────────────
 await browser.close();

@@ -50,7 +50,7 @@ window.irParaLoja = function(url) {
   // ── STATE ──────────────────────────────────────────────────
   const S = {
     slide: 0,
-    total: 6,
+    total: 8,
     busy: false,
     collOpen: false,
     filter: 'ALL',
@@ -64,7 +64,7 @@ window.irParaLoja = function(url) {
     wishlist: JSON.parse((typeof localStorage !== 'undefined' && localStorage.getItem('bede_wishlist')) || '[]')
   };
 
-  // ── CATÁLOGO CURADO NUVEMSHOP (v36) ──────────────────────────
+  // ── CATÁLOGO CURADO NUVEMSHOP (v36.1) ─────────────────────────
   const CATALOGO_PRODUTOS = [
     // SCARPIN
     {
@@ -177,7 +177,7 @@ window.irParaLoja = function(url) {
       preco: 'R$ 439,90',
       precoNum: 439.90,
       url: 'https://loja.usebede.com.br/produtos/tenis-dalia-7wtg4/',
-      foto: 'assets/split_shoes.jpg'
+      foto: 'assets/products/tenis_dalia.jpg'
     },
     // BOLSA
     {
@@ -189,6 +189,17 @@ window.irParaLoja = function(url) {
       url: 'https://loja.usebede.com.br/produtos/bolsa-pochete-jessica-1lm8w/',
       foto: 'assets/products/bolsa_jessica.jpg'
     }
+  ];
+
+  // ── CURADORIA DE TIPOS (SLIDE 3) ──────────────────────────────
+  // Fotos de produtos reais selecionadas para cada um dos 6 tipos
+  const TIPOS_CURADORIA = [
+    { nome: 'Scarpin', url: 'https://loja.usebede.com.br/scarpin/', foto: 'assets/products/scarpin_couro.jpg', alt: 'Scarpin em Couro Legítimo' },
+    { nome: 'Bota', url: 'https://loja.usebede.com.br/bota/', foto: 'assets/products/bota_croco.jpg', alt: 'Bota Croco Cano Alto' },
+    { nome: 'Mule', url: 'https://loja.usebede.com.br/mule/', foto: 'assets/products/mule_couro.jpg', alt: 'Mule Couro com Fivela' },
+    { nome: 'Mocassim', url: 'https://loja.usebede.com.br/mocassim/', foto: 'assets/products/mocassim_cravinhos.jpg', alt: 'Mocassim com Cravinhos' },
+    { nome: 'Tênis', url: 'https://loja.usebede.com.br/tenis/', foto: 'assets/products/tenis_dalia.jpg', alt: 'Tênis Dalia em Couro' },
+    { nome: 'Bolsa', url: 'https://loja.usebede.com.br/bolsa/', foto: 'assets/products/bolsa_jessica.jpg', alt: 'Bolsa Pochete Jéssica' }
   ];
 
   // Curadoria manual de produtos "Em Alta" (IDs configuráveis pelo Kim)
@@ -294,58 +305,62 @@ window.irParaLoja = function(url) {
   // ── UTILS ──────────────────────────────────────────────────
   const fmt = v => Number(v || 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
-    // ── INJEÇÃO DINÂMICA DE PROMESSAS COMERCIAIS ─────────────
+  // ── INJEÇÃO DINÂMICA DE PROMESSAS COMERCIAIS & CONFIGURAÇÕES ───
   function aplicarConfigLoja() {
-    // 1. Barra superior / Home — 3 promessas exatas da v34.2 (com região Sul e Sudeste)
-    const homeBar = $('homeBarClaims');
-    if (homeBar) {
-      homeBar.textContent = `Frete grátis Sul e Sudeste a partir de R$ ${CFG.freteGratisAcimaDe} · Até ${CFG.parcelamentoMax}x sem juros · ${CFG.descontoPix}% no PIX`;
-    }
+    if (typeof CONFIG_LOJA === 'undefined') return;
+    const CFG = CONFIG_LOJA;
 
-    // 2. Gaveta Mobile
+    // 1. WhatsApp
+    const waPhone = CFG.whatsappPhone || CFG.whatsapp || '5551980150391';
+    const waText = encodeURIComponent(CFG.whatsappMensagemPadrao || 'Olá! Gostaria de um atendimento personalizado na BEDÊ Stiletto.');
+    const waUrl = `https://wa.me/${waPhone}?text=${waText}`;
+    const waBtn = $('btnNavAtendimento');
+    if (waBtn) waBtn.href = waUrl;
+    const waFloat = document.querySelector('.whatsapp-float-btn');
+    if (waFloat) waFloat.href = waUrl;
+    const waFloatLegacy = $('floatingWaBtn');
+    if (waFloatLegacy) waFloatLegacy.href = waUrl;
+    const waVip = document.querySelector('.btn-whatsapp-vip');
+    if (waVip) waVip.href = waUrl;
+
+    // 2. Título da página
+    if (CFG.tituloPagina) document.title = CFG.tituloPagina;
+
+    // 3. Instagram
+    const igUrl = CFG.instagramUrl || 'https://www.instagram.com/usebede.com.br/';
+    const igHandle = CFG.instagramHandle || '@usebede.com.br';
+    const igLinks = document.querySelectorAll('a[href*="instagram.com"]');
+    igLinks.forEach(a => {
+      a.href = igUrl;
+      const span = a.querySelector('span');
+      if (span) span.textContent = igHandle;
+    });
+
+    // 4. Barra de claims da home (v34.2 / v36.1)
+    const claimsEl = $('homeBarClaims');
+    if (claimsEl) {
+      claimsEl.textContent = 'FRETE GRÁTIS SUL E SUDESTE A PARTIR DE R$ 599 · ATÉ 6X SEM JUROS · 5% NO PIX';
+    }
     const mobClaims = $('mobDrawerClaims');
     if (mobClaims) {
-      mobClaims.textContent = `Frete grátis Sul e Sudeste a partir de R$ ${CFG.freteGratisAcimaDe} · Até ${CFG.parcelamentoMax}x sem juros · ${CFG.descontoPix}% no PIX`;
-    }
-    const mobWa = $('mobDrawerWa');
-    if (mobWa) {
-      mobWa.href = `https://wa.me/${CFG.whatsapp}?text=${encodeURIComponent('Olá! Gostaria de um atendimento personalizado na BEDÊ.')}`;
+      mobClaims.textContent = 'FRETE GRÁTIS SUL E SUDESTE A PARTIR DE R$ 599 · ATÉ 6X SEM JUROS · 5% NO PIX';
     }
 
-    // 3. Botão Flutuante WA
-    const floatWa = $('floatingWaBtn');
-    if (floatWa) {
-      floatWa.href = `https://wa.me/${CFG.whatsapp}?text=${encodeURIComponent('Olá! Gostaria de um atendimento personalizado na BEDÊ Stiletto.')}`;
+    // 5. Horário de atendimento
+    const hEl = $('footerHorarioAtendimento');
+    if (hEl && (CFG.horarioAtendimento || CFG.horario)) {
+      hEl.textContent = CFG.horarioAtendimento || CFG.horario;
     }
 
-    // 4. Slide 3 WA
-    const slide3Wa = $('slide3WaBtn');
-    if (slide3Wa) {
-      slide3Wa.href = `https://wa.me/${CFG.whatsapp}?text=${encodeURIComponent('Olá! Gostaria de um atendimento personalizado na BEDÊ Stiletto.')}`;
-    }
-
-    // 5. Rodapé
-    const footWa = $('footerWa');
-    if (footWa) {
-      footWa.textContent = `WhatsApp: ${CFG.whatsappFormatado || CFG.whatsapp}`;
-      footWa.href = `https://wa.me/${CFG.whatsapp}?text=${encodeURIComponent('Olá! Gostaria de falar com a BEDÊ.')}`;
-    }
-    const footAddr = $('footerAddress');
-    if (footAddr) footAddr.textContent = CFG.endereco;
-    const footHor = $('footerHorario');
-    if (footHor) footHor.textContent = CFG.horario;
-    const footPix = $('footerPixTag');
-    if (footPix) footPix.textContent = `PIX ${CFG.descontoPix}% OFF`;
-    const footCartao = $('footerCartaoTag');
-    if (footCartao) footCartao.textContent = CFG.parcelamentoMax ? `Cartão em até ${CFG.parcelamentoMax}x` : 'Cartão de Crédito';
-    const footLeg = $('footerLegal');
-    if (footLeg) footLeg.textContent = `${CFG.razaoSocial} · CNPJ ${CFG.cnpj} · ${CFG.endereco}`;
-
-    // 6. Modal de Produto Perk
-    const pmPerk = $('pmPerkTroca');
-    if (pmPerk) {
-      pmPerk.textContent = 'Troca facilitada pelo WhatsApp';
-    }
+    // 6. Rodapé fiscal
+    const cnpjEl = $('footerCnpj');
+    if (cnpjEl && CFG.cnpj) cnpjEl.textContent = `CNPJ ${CFG.cnpj}`;
+    const rzEl = $('footerRazaoSocial');
+    if (rzEl && CFG.razaoSocial) rzEl.textContent = CFG.razaoSocial;
+    const endEl = $('footerEndereco');
+    if (endEl && CFG.endereco) endEl.textContent = CFG.endereco;
+    const copyEl = $('footerCopyright');
+    if (copyEl && CFG.copyrightTexto) copyEl.textContent = CFG.copyrightTexto;
 
     // 7. Carrinho
     const cartPixLbl = $('cartPixLabel');
@@ -395,7 +410,56 @@ window.irParaLoja = function(url) {
     startTimer();
   }
 
-  // ── 2. SLIDE 1: TIPOS COM ABAS (SCARPIN · BOTA · MULE) ───────
+  // ── 2. SLIDE 1: SELEÇÃO ESPECIAL — EM ALTA (CARD ÚNICO NB) ────
+  function renderEmAltaRail() {
+    const rail = document.getElementById('emAltaRail');
+    if (!rail) return;
+
+    const emAltaProds = DESTAQUES_EM_ALTA_IDS.map(id => CATALOGO_PRODUTOS.find(p => p.id === id)).filter(Boolean);
+    
+    rail.innerHTML = emAltaProds.map(p => `
+      <a class="nb-card" href="${p.url}" onclick="irParaLoja('${p.url}');return false;">
+        <div class="nb-card-img-wrap">
+          <img src="${p.foto}" alt="${p.nome}" loading="lazy">
+        </div>
+        <div class="nb-card-info-row">
+          <span class="nb-card-name">${p.nome}</span>
+          <span class="nb-card-price">${p.preco}</span>
+        </div>
+      </a>
+    `).join('');
+  }
+
+  window.scrollEmAltaRail = function(direction) {
+    const rail = document.getElementById('emAltaRail');
+    if (!rail) return;
+    const scrollAmount = Math.max(300, rail.clientWidth * 0.5);
+    rail.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+  };
+
+  // ── 3. SLIDE 3: CURADORIA BEDÊ — DESCUBRA OS TIPOS (CARD ÚNICO NB) ──
+  function renderTiposRail() {
+    const rail = document.getElementById('tiposRail');
+    if (!rail) return;
+
+    rail.innerHTML = TIPOS_CURADORIA.map(t => `
+      <a class="nb-card" href="${t.url}" onclick="irParaLoja('${t.url}');return false;">
+        <div class="nb-card-img-wrap">
+          <img src="${t.foto}" alt="${t.alt || t.nome}" loading="lazy">
+        </div>
+        <div class="nb-card-label-only">${t.nome}</div>
+      </a>
+    `).join('');
+  }
+
+  window.scrollTiposRail = function(direction) {
+    const rail = document.getElementById('tiposRail');
+    if (!rail) return;
+    const scrollAmount = Math.max(300, rail.clientWidth * 0.5);
+    rail.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+  };
+
+  // ── 4. SLIDE 5: CATÁLOGO EXCLUSIVO — COLEÇÃO POR CATEGORIA ───
   window.switchCategoryTab = function(categoria) {
     const pills = document.querySelectorAll('.tab-pill');
     pills.forEach(p => p.classList.toggle('active', p.dataset.tab === categoria));
@@ -410,59 +474,30 @@ window.irParaLoja = function(url) {
     }
     
     rail.innerHTML = prods.map(p => `
-      <a class="tab-product-card" href="${p.url}" onclick="irParaLoja('${p.url}');return false;">
-        <div class="tab-card-img-wrap">
+      <a class="nb-card" href="${p.url}" onclick="irParaLoja('${p.url}');return false;">
+        <div class="nb-card-img-wrap">
           <img src="${p.foto}" alt="${p.nome}" loading="lazy">
         </div>
-        <span class="tab-card-name">${p.nome}</span>
+        <div class="nb-card-label-only">${p.nome}</div>
       </a>
     `).join('');
-
-    // Transpasse bilateral: ajuste inicial do scroll
     rail.scrollLeft = 0;
-    setTimeout(() => {
-      rail.scrollLeft = 70;
-    }, 30);
   };
 
   window.scrollTabsRail = function(direction) {
     const rail = document.getElementById('tabsRail');
     if (!rail) return;
-    rail.scrollBy({ left: direction * 260, behavior: 'smooth' });
-  };
-
-  // ── 3. SLIDE 3: DESTAQUES "EM ALTA" ─────────────────────────────
-  function renderEmAltaRail() {
-    const rail = document.getElementById('emAltaRail');
-    if (!rail) return;
-
-    const emAltaProds = DESTAQUES_EM_ALTA_IDS.map(id => CATALOGO_PRODUTOS.find(p => p.id === id)).filter(Boolean);
-    
-    rail.innerHTML = emAltaProds.map(p => `
-      <a class="em-alta-card" href="${p.url}" onclick="irParaLoja('${p.url}');return false;">
-        <div class="em-alta-img-wrap">
-          <img src="${p.foto}" alt="${p.nome}" loading="lazy">
-        </div>
-        <div class="em-alta-info-row">
-          <span class="em-alta-prod-name">${p.nome}</span>
-          <span class="em-alta-prod-price">${p.preco}</span>
-        </div>
-      </a>
-    `).join('');
-  }
-
-  window.scrollEmAltaRail = function(direction) {
-    const rail = document.getElementById('emAltaRail');
-    if (!rail) return;
-    rail.scrollBy({ left: direction * 330, behavior: 'smooth' });
+    const scrollAmount = Math.max(300, rail.clientWidth * 0.5);
+    rail.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
   };
 
   // ── INIT ───────────────────────────────────────────────────
   function init() {
     aplicarConfigLoja();
     setupHeroCarousel();
-    switchCategoryTab('Scarpin');
     renderEmAltaRail();
+    renderTiposRail();
+    switchCategoryTab('Scarpin');
     setupSlider();
     setupCart();
     setupCollectionScroll();
