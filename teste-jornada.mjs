@@ -1058,6 +1058,119 @@ try {
   falhou('Falha ao auditar funil do carrinho vazio', e.message);
 }
 
+// ── 14. Validações da Loja v37.3 (Favicon, Logo 44px, Header Compacto, Redirecionamento Home & Zero Newsletter) ───
+secao('14. Loja Nuvemshop v37.3 — Favicon BD, Logo 44px, Header Compacto, Redirect / e No-Newsletter');
+try {
+  // 14.1 Favicon e Header em /produtos/
+  const prodPage = await browser.newPage();
+  await prodPage.goto(`https://${HOST_LOJA}/produtos/`, { waitUntil: 'domcontentloaded', timeout: 20000 });
+  await prodPage.waitForTimeout(2500);
+
+  const prodAudit = await prodPage.evaluate(() => {
+    const logoImg = document.querySelector('.logo-img, .head-logo-row img, [data-store="head-logo"] img, .js-logo-container img, .header-logo img');
+    const logoRect = logoImg ? logoImg.getBoundingClientRect() : null;
+
+    const header = document.querySelector('header, .head-main, .js-head-main');
+    const headerRect = header ? header.getBoundingClientRect() : null;
+
+    const iconLinks = [...document.querySelectorAll('link[rel*="icon"]')].map(l => l.href);
+    const hasOldIco = iconLinks.some(href => href.includes('145e6875'));
+    const hasBdFavicon = iconLinks.some(href => href.includes('favicon-bd') || href.includes('favicon-32') || href.includes('favicon.ico'));
+
+    const visibleNewsletters = [...document.querySelectorAll('.section-newsletter, .newsletter, .newsletter-form, input[name*="newsletter"], [data-component="newsletter"]')]
+      .filter(el => {
+        const cs = window.getComputedStyle(el);
+        return cs.display !== 'none' && cs.visibility !== 'hidden' && el.offsetHeight > 0;
+      });
+
+    return {
+      logoHeight: logoRect ? logoRect.height : 0,
+      headerHeight: headerRect ? headerRect.height : 0,
+      iconLinks,
+      hasOldIco,
+      hasBdFavicon,
+      visibleNewslettersCount: visibleNewsletters.length
+    };
+  });
+  await prodPage.close();
+
+  // 1. Favicon oficial monograma BD e não o .ico antigo
+  checa(
+    !prodAudit.hasOldIco && prodAudit.hasBdFavicon,
+    'Favicon da loja aponta para o monograma BD oficial e NÃO para o .ico genérico antigo (145e6875...)',
+    `icon links: ${prodAudit.iconLinks.join(', ')}`
+  );
+
+  // 2. Logo renderizado ≥ 40px (alvo 44px)
+  checa(
+    prodAudit.logoHeight >= 40,
+    'Logo do cabeçalho da loja com altura de exibição proporcional ≥ 40px (alvo: 44px)',
+    `altura renderizada: ${prodAudit.logoHeight}px`
+  );
+
+  // 3. Cabeçalho da loja compacto ≤ 124px (alvo: 110–120px)
+  checa(
+    prodAudit.headerHeight > 0 && prodAudit.headerHeight <= 124,
+    'Altura total do cabeçalho da loja reduzida e compacta ≤ 124px (menos moldura vazia)',
+    `altura do cabeçalho: ${prodAudit.headerHeight}px`
+  );
+
+  // 4. Zero inputs de newsletter visíveis na loja
+  checa(
+    prodAudit.visibleNewslettersCount === 0,
+    'Nenhum bloco ou campo de newsletter visível nas páginas da loja (removido / oculto por CSS)',
+    `inputs/seções visíveis: ${prodAudit.visibleNewslettersCount}`
+  );
+
+  // 14.2 Redirecionamento da Home da Loja (/) para o Site Oficial
+  // Teste HTTP GET contém script
+  const homeRes = await fetch(`https://${HOST_LOJA}/`);
+  const homeHtml = await homeRes.text();
+  const hasReplaceScript = homeHtml.includes("location.replace('https://www.usebede.com.br/')") ||
+                           homeHtml.includes('location.replace("https://www.usebede.com.br/")') ||
+                           homeHtml.includes('window.location.replace');
+  checa(
+    hasReplaceScript,
+    'GET na home da loja (/) contém script de redirecionamento cirúrgico para https://www.usebede.com.br/',
+    `script encontrado no HTML: ${hasReplaceScript}`
+  );
+
+  // Teste Navegação real no browser termina no site oficial
+  const homePage = await browser.newPage();
+  await homePage.goto(`https://${HOST_LOJA}/`, { waitUntil: 'domcontentloaded', timeout: 20000 });
+  await homePage.waitForTimeout(3000);
+  const finalHomeUrl = homePage.url();
+  await homePage.close();
+
+  checa(
+    finalHomeUrl.startsWith('https://www.usebede.com.br') || finalHomeUrl === 'https://usebede.com.br/',
+    'Navegação real de browser na home da loja (/) redireciona e termina no site oficial',
+    `URL final pós-redirect: ${finalHomeUrl}`
+  );
+
+  // 14.3 Rotas internas da loja NÃO são afetadas pelo redirect da home
+  const testStoreRoutes = [
+    `https://${HOST_LOJA}/produtos/`,
+    `https://${HOST_LOJA}/scarpin/`,
+    `https://${HOST_LOJA}/comprar/`
+  ];
+  for (const sUrl of testStoreRoutes) {
+    const sPage = await browser.newPage();
+    await sPage.goto(sUrl, { waitUntil: 'domcontentloaded', timeout: 20000 });
+    await sPage.waitForTimeout(1500);
+    const sFinal = sPage.url();
+    await sPage.close();
+
+    checa(
+      sFinal.includes(new URL(sUrl).pathname),
+      `Rota interna da loja ${new URL(sUrl).pathname} segue intacta sem sofrer redirecionamento indevido`,
+      `destino: ${sFinal}`
+    );
+  }
+} catch (e) {
+  falhou('Falha ao auditar validações da v37.3', e.message);
+}
+
 // ── Finalização ────────────────────────────────────────────────────────────
 await browser.close();
 
