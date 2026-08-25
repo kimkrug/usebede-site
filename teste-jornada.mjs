@@ -1167,8 +1167,46 @@ try {
       `destino: ${sFinal}`
     );
   }
+
+  // 14.4 Validação Específica do Wordmark da Loja [v37.4]
+  // Em /produtos/ e categoria (/scarpin/): logo src NÃO contém b8ba3b9fead2fb e altura >= 40px
+  const v37_4_Pages = [
+    { name: '/produtos/', url: `https://${HOST_LOJA}/produtos/` },
+    { name: '/scarpin/ (categoria)', url: `https://${HOST_LOJA}/scarpin/` }
+  ];
+
+  for (const pInfo of v37_4_Pages) {
+    const wmPage = await browser.newPage();
+    await wmPage.goto(pInfo.url, { waitUntil: 'domcontentloaded', timeout: 20000 });
+    await wmPage.waitForTimeout(2000);
+
+    const logoAudit = await wmPage.evaluate(() => {
+      const logoImg = document.querySelector('.logo-img, .head-logo-row img, [data-store="head-logo"] img, .js-logo-container img, .header-logo img');
+      const rect = logoImg ? logoImg.getBoundingClientRect() : null;
+      const src = logoImg ? (logoImg.getAttribute('src') || logoImg.src || '') : '';
+      return {
+        src,
+        hasOldMonogramHash: src.includes('b8ba3b9fead2fb'),
+        height: rect ? rect.height : 0,
+        width: rect ? rect.width : 0
+      };
+    });
+    await wmPage.close();
+
+    checa(
+      !logoAudit.hasOldMonogramHash,
+      `Em ${pInfo.name}: logo do cabeçalho NÃO contém o hash do monograma antigo (b8ba3b9fead2fb)`,
+      `src: ${logoAudit.src}`
+    );
+
+    checa(
+      logoAudit.height >= 40,
+      `Em ${pInfo.name}: altura renderizada do wordmark segue proporcional ≥ 40px`,
+      `dimensões: ${logoAudit.width}×${logoAudit.height}px`
+    );
+  }
 } catch (e) {
-  falhou('Falha ao auditar validações da v37.3', e.message);
+  falhou('Falha ao auditar validações da v37.3 / v37.4', e.message);
 }
 
 // ── Finalização ────────────────────────────────────────────────────────────
