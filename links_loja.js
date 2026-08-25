@@ -3,7 +3,7 @@
  * Plataforma: NUVEMSHOP (v32.2 — Categorias Definitivas e Vínculo Confirmado)
  */
 
-const LOJA_BASE = 'https://bedestiletto.lojavirtualnuvem.com.br';
+const LOJA_BASE = 'https://loja.usebede.com.br';
 
 const LINKS_LOJA = {
   // Rotas Nativas e Confirmadas da Nuvemshop

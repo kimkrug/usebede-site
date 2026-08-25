@@ -33,7 +33,7 @@ import { chromium } from 'playwright';
 
 const URL_PADRAO = 'http://localhost:3000/';
 const BASE = process.argv[2] || URL_PADRAO;
-const HOST_LOJA = 'bedestiletto.lojavirtualnuvem.com.br';
+const HOST_LOJA = 'loja.usebede.com.br';
 
 const AVISOS_ACEITOS = [/\[BEDÊ\]/];
 
@@ -342,17 +342,19 @@ try {
   falhou('Falha ao validar sobre.html', e.message);
 }
 
-// Domínios Proibidos
+// Domínios Proibidos e Validação do Domínio Definitivo (v35)
 const dominiosBanidos = await pagina.evaluate(() => {
   const html = document.documentElement.innerHTML;
   return {
-    lojaUsebede: /loja\.usebede\.com\.br/i.test(html),
+    lojaDefinitiva: /loja\.usebede\.com\.br/i.test(html),
+    lojavirtualnuvem: /lojavirtualnuvem\.com\.br/i.test(html),
     sistemawbuy: /sistemawbuy\.com\.br/i.test(html),
     stilettobmaisd: /stilettobmaisd/i.test(html)
   };
 });
 
-checa(!dominiosBanidos.lojaUsebede, 'Zero links para loja.usebede.com.br (bloqueado até CNAME ser apontado para Nuvemshop)');
+checa(dominiosBanidos.lojaDefinitiva, 'Todo link de loja no site usa o domínio definitivo "https://loja.usebede.com.br"');
+checa(!dominiosBanidos.lojavirtualnuvem, 'Zero links para lojavirtualnuvem.com.br (domínio provisório eliminado)');
 checa(!dominiosBanidos.sistemawbuy, 'Zero links para sistemawbuy.com.br');
 checa(!dominiosBanidos.stilettobmaisd, 'Zero links ou menções a stilettobmaisd');
 

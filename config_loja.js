@@ -3,7 +3,7 @@
  * Dados da Empresa e Domínio Nuvemshop
  */
 const CFG_LOJA = {
-    dominioLoja: "https://bedestiletto.lojavirtualnuvem.com.br",
+    dominioLoja: "https://loja.usebede.com.br",
     razaoSocial: 'Stiletto Bd Boutique Ltda',
     cnpj: '55.068.034/0001-00',
     nomeFantasia: 'BEDÊ',

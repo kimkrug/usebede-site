@@ -3,10 +3,10 @@
  * Fullpage slider · Tipos section · Transition overlay · Modals
  */
 
-// ── OVERLAY DE TRANSIÇÃO PARA wBUY ─────────────────────────────
-// Intercepta qualquer navegação para bedestiletto.lojavirtualnuvem.com.br e exibe
+// ── OVERLAY DE TRANSIÇÃO PARA A LOJA NUVEMSHOP ───────────────────
+// Intercepta navegações para loja.usebede.com.br e exibe
 // um overlay BEDÊ por ~700ms antes de redirecionar — criando a
-// ilusão de continuidade entre os dois domínios.
+// ilusão de continuidade entre o site institucional e a loja.
 window.irParaLoja = function(url) {
   var ov = document.getElementById('pageTransition');
   if (!ov) { window.location.href = url; return; }
@@ -87,7 +87,7 @@ window.irParaLoja = function(url) {
     freteGratisRegioes: CFG_SRC.freteGratisRegioes || [],
     freteGratisEstados: CFG_SRC.freteGratisEstados || [],
     parcelamentoMax: CFG_SRC.parcelamentoMax !== undefined ? CFG_SRC.parcelamentoMax : 6,
-    dominioLoja: CFG_SRC.dominioLoja || 'https://bedestiletto.lojavirtualnuvem.com.br',
+    dominioLoja: CFG_SRC.dominioLoja || 'https://loja.usebede.com.br',
     horario: 'Segunda à Sexta · 09h às 18h'
   };
   const WA = CFG.whatsapp;
@@ -1157,40 +1157,18 @@ window.irParaLoja = function(url) {
 
   /**
    * =========================================================================
-   * ENVIAR SELEÇÃO DO SITE PARA O CARRINHO DA LOJA WBUY
+   * INTEGRAÇÃO COM A LOJA NUVEMSHOP (loja.usebede.com.br)
    * =========================================================================
    * 
    * ARQUITETURA & MOTIVAÇÃO TÉCNICA:
    * 
-   * 1. CORS & FORM SUBMISSION:
-   *    O endpoint /shop_func.php da wBuy não suporta requisições fetch/XHR
-   *    diretas de origens cruzadas por ausência de headers CORS permissivos.
-   *    No entanto, envios de <form method="POST"> com target para um <iframe>
-   *    oculto contornam o bloqueio de CORS do navegador.
-   * 
-   * 2. COOKIES DE MESMO SITE (eTLD+1):
-   *    Como o site (www.usebede.com.br) e a loja (bedestiletto.lojavirtualnuvem.com.br)
-   *    compartilham o domínio raiz "usebede.com.br", os cookies de sessão da
-   *    loja trafegam com os formulários POST sem serem classificados como
-   *    cookies de terceiros (Third-Party Cookies).
-   * 
-   * 3. CONTRATO DO ENDPOINT WBUY:
-   *    POST https://bedestiletto.lojavirtualnuvem.com.br/shop_func.php
-   *    - funcao=adicionar_produto
-   *    - sku={sku}
-   *    - quantidade={qty}
-   *    - campo_anotacao=
-   *    - evento_tipo=
-   *    Cada requisição adiciona 1 SKU. O envio é sequencial com espaçamento.
-   * 
-   * 4. DEPENDÊNCIA:
-   *    Este mecanismo depende exclusivamente de ambos os subdomínios estarem sob
-   *    usebede.com.br. Caso a loja mude de domínio base no futuro, a estratégia
-   *    deverá ser reavaliada.
+   * Como o site (www.usebede.com.br) e a loja (loja.usebede.com.br)
+   * compartilham o mesmo domínio raiz "usebede.com.br", a navegação e links
+   * ocorrem de forma contínua com certificado SSL unificado.
    * =========================================================================
    */
   async function enviarParaLoja(itens, triggerBtn) {
-    const LOJA = CFG.dominioLoja || 'https://bedestiletto.lojavirtualnuvem.com.br';
+    const LOJA = CFG.dominioLoja || 'https://loja.usebede.com.br';
     const btn = triggerBtn || document.getElementById('cartCheckoutLoja');
 
     // Validação estrita: enviar apenas SKUs reais que existem no catálogo carregado
@@ -1440,7 +1418,7 @@ window.irParaLoja = function(url) {
       } catch (e) {}
 
       if (enviadoRecente) {
-        const LOJA = CFG.dominioLoja || 'https://bedestiletto.lojavirtualnuvem.com.br';
+        const LOJA = CFG.dominioLoja || 'https://loja.usebede.com.br';
         D.cartBody.innerHTML = `
           <div style="text-align:center;padding:2.5rem 1rem;color:#000404;">
             <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#000404" stroke-width="1.5" style="margin-bottom:14px;">
