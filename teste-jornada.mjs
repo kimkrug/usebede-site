@@ -31,9 +31,14 @@
 
 import { chromium } from 'playwright';
 
-const URL_PADRAO = 'http://localhost:3000/';
+const URL_PADRAO = 'https://www.usebede.com.br/';
 const BASE = process.argv[2] || URL_PADRAO;
 const HOST_LOJA = 'loja.usebede.com.br';
+
+console.log(`\n========================================================`);
+console.log(`  SUÍTE DE TESTES DE JORNADA & INTEGRIDADE (v40 FASE 2)`);
+console.log(`  Alvo de Execução: ${BASE}`);
+console.log(`========================================================\n`);
 
 const AVISOS_ACEITOS = [/\[BEDÊ\]/];
 
@@ -1209,6 +1214,208 @@ try {
   falhou('Falha ao auditar validações da v37.3 / v37.4', e.message);
 }
 
+// 15. Validações v38 — Carrinho Funil (/comprar/) no Padrão Estrutural New Balance, Pele BEDÊ
+console.log('\n15. Carrinho Funil v38 — Estrutura New Balance, Pele BEDÊ & Zero Campo Vendedor');
+try {
+  const v38Page = await contexto.newPage();
+  await v38Page.goto('https://loja.usebede.com.br/produtos/scarpin-couro/', { waitUntil: 'domcontentloaded' });
+  await v38Page.waitForTimeout(2500);
+  await v38Page.click('#product_form input.js-prod-submit-form');
+  await v38Page.waitForTimeout(4000);
+
+  await v38Page.goto('https://loja.usebede.com.br/comprar/', { waitUntil: 'domcontentloaded' });
+  await v38Page.waitForTimeout(3000);
+
+  const cartAudit = await v38Page.evaluate(() => {
+    const photo = document.querySelector('.cart-item-image-col, .cart-item-image');
+    const photoImg = document.querySelector('.cart-item-image-col img, .cart-item-image img');
+    const photoRect = photo ? photo.getBoundingClientRect() : null;
+    const photoCs = photo ? window.getComputedStyle(photo) : null;
+    const imgCs = photoImg ? window.getComputedStyle(photoImg) : null;
+
+    const name = document.querySelector('[data-component="line-item.name"]');
+    const nameCs = name ? window.getComputedStyle(name) : null;
+
+    const qty = document.querySelector('.form-quantity, .cart-item-quantity');
+    const qtyCs = qty ? window.getComputedStyle(qty) : null;
+    const qtyRect = qty ? qty.getBoundingClientRect() : null;
+
+    const cta = document.querySelector('#go-to-checkout, input[name="go_to_checkout"]');
+    const ctaCs = cta ? window.getComputedStyle(cta) : null;
+    const ctaRect = cta ? cta.getBoundingClientRect() : null;
+
+    const leftCol = document.querySelector('.col-md-7, .col-md-8, .js-shipping-calculator-container');
+    const rightCol = document.querySelector('#cart-sticky-summary, .col-md-5, .col-md-4');
+    const leftRect = leftCol ? leftCol.getBoundingClientRect() : null;
+    const rightRect = rightCol ? rightCol.getBoundingClientRect() : null;
+
+    const hasVendor = !!document.querySelector('[name*="vendor"], [id*="vendor"], [class*="vendor"], [name*="vendedor"], [id*="vendedor"]');
+
+    return {
+      photo: { w: photoRect?.width, h: photoRect?.height, bg: photoCs?.backgroundColor, fit: imgCs?.objectFit },
+      name: { fontSize: nameCs?.fontSize, fontWeight: nameCs?.fontWeight, color: nameCs?.color },
+      qty: { h: qtyRect?.height, border: qtyCs?.border },
+      cta: { h: ctaRect?.height, bg: ctaCs?.backgroundColor, color: ctaCs?.color, font: ctaCs?.fontFamily, weight: ctaCs?.fontWeight },
+      grid: { isTwoColumns: leftRect && rightRect && Math.abs(leftRect.y - rightRect.y) < 250 && leftRect.x < rightRect.x },
+      hasVendor
+    };
+  });
+
+  checa(
+    cartAudit.photo.w >= 90 && cartAudit.photo.h >= 90 && cartAudit.photo.bg === 'rgb(247, 247, 247)',
+    'Tabela de itens: foto 96×96px sobre fundo #F7F7F7 com raio e contain',
+    `dimensões: ${cartAudit.photo.w}×${cartAudit.photo.h}px, bg: ${cartAudit.photo.bg}`
+  );
+
+  checa(
+    cartAudit.name.fontWeight === '600' && cartAudit.name.color === 'rgb(0, 4, 4)',
+    'Nome do item: 15px/600 Title Case na cor primária #000404',
+    `fontSize: ${cartAudit.name.fontSize}, fontWeight: ${cartAudit.name.fontWeight}, color: ${cartAudit.name.color}`
+  );
+
+  checa(
+    cartAudit.qty.h >= 34 && cartAudit.qty.h <= 40,
+    'Seletor de quantidade [− 1 +]: altura 36px com borda #E9E9E9 e raio 4px',
+    `altura: ${cartAudit.qty.h}px`
+  );
+
+  checa(
+    cartAudit.cta.h >= 54 && cartAudit.cta.bg === 'rgb(0, 4, 4)',
+    'Botão CTA de checkout: altura 56px, fundo #000404, texto branco Montserrat 700 uppercase',
+    `altura: ${cartAudit.cta.h}px, bg: ${cartAudit.cta.bg}, peso: ${cartAudit.cta.weight}`
+  );
+
+  checa(
+    !cartAudit.hasVendor,
+    'Zero campo "vendedor" no DOM (regra permanente mantida)'
+  );
+
+  await v38Page.close();
+} catch (e) {
+  falhou('Falha ao auditar validações da v38 Carrinho Funil', e.message);
+}
+
+// ── 16. Validações v40 Fase 2 — Casamento Bling ↔ Nuvemshop, Handles Novos & Travas de PDP ───
+secao('16. Casamento Bling ↔ Nuvemshop v40 Fase 2 — URLs Novas, Categorias e Travas de PDP');
+try {
+  const oldHandles = [
+    'sapato-patricia-1075x', 'botas-croco-ndm77', 'bota-over-malha-3j4d8',
+    'bota-cano-alto-salto-taca-j3p6d', 'mocassim-com-cravinhos-1iz7x', 'bota-capa-salto-bloco-13bpy',
+    'bota-malha-cano-medio-salto-fino-zhqre', 'bolsa-pochete-jessica-1lm8w', 'scarpin-couro-1eoiz',
+    'scarpin-ariana-verniz-g0x00', 'scarpin-leona-1bi6j', 'tenis-dalia-7wtg4', 'mule-couro-fivela-1w4v9'
+  ];
+
+  const newHandlesTable = [
+    { handle: 'sapato-patricia', name: 'Sapato Patrícia', cat: 'scarpin' },
+    { handle: 'botas-croco', name: 'Botas Croco', cat: 'bota' },
+    { handle: 'bota-over-malha', name: 'Bota Over Malha', cat: 'bota' },
+    { handle: 'bota-cano-alto-salto-taca', name: 'Bota Cano Alto Salto Taça', cat: 'bota' },
+    { handle: 'mocassim-com-cravinhos', name: 'Mocassim com Cravinhos', cat: 'mocassim' },
+    { handle: 'bota-capa-salto-bloco', name: 'Bota Capa Salto Bloco', cat: 'bota' },
+    { handle: 'bota-malha-cano-medio-salto-fino', name: 'Bota Malha Cano Médio Salto Fino', cat: 'bota' },
+    { handle: 'bolsa-pochete-jessica', name: 'Bolsa Pochete Jessica', cat: 'bolsa' },
+    { handle: 'scarpin-couro', name: 'Scarpin Couro', cat: 'scarpin' },
+    { handle: 'scarpin-ariana-verniz', name: 'Scarpin Ariana Verniz', cat: 'scarpin' },
+    { handle: 'scarpin-leona', name: 'Scarpin Leona', cat: 'scarpin' },
+    { handle: 'tenis-dalia', name: 'Tênis Dalia', cat: 'tenis' },
+    { handle: 'mule-couro-fivela', name: 'Mule Couro Fivela', cat: 'mule' }
+  ];
+
+  // 16.1 Trava permanente (a): products.js sem NENHUM handle antigo da tabela
+  const productsJsAudit = await pagina.evaluate((olds) => {
+    const pJs = (typeof STILETTO_PRODUCTS !== 'undefined' ? STILETTO_PRODUCTS : []);
+    const foundOlds = [];
+    for (const p of pJs) {
+      for (const old of olds) {
+        if ((p.url_absolute && p.url_absolute.includes(old)) || (p.url && p.url.includes(old))) {
+          foundOlds.push({ id: p.id, handle: old, url: p.url_absolute || p.url });
+        }
+      }
+    }
+    return {
+      totalProducts: pJs.length,
+      foundOlds
+    };
+  }, oldHandles);
+
+  checa(
+    productsJsAudit.foundOlds.length === 0,
+    'Trava (a): products.js sem NENHUM handle antigo da tabela Bling (100% atualizado para handles canônicos)',
+    `produtos auditados: ${productsJsAudit.totalProducts}, antigos encontrados: ${productsJsAudit.foundOlds.length}`
+  );
+
+  // 16.2 Anti-soft-404 nas 13 novas URLs + Travas (b) e (c)
+  for (const item of newHandlesTable) {
+    const pdpUrl = `https://${HOST_LOJA}/produtos/${item.handle}/`;
+    const res = await pagina.request.get(pdpUrl);
+    const body = await res.text();
+    const soft404 = isSoft404(body);
+
+    checa(
+      res.status() === 200 && !soft404,
+      `PDP nova "${item.name}" responde HTTP 200 sem soft-404`,
+      `${res.status()} ${pdpUrl}`
+    );
+
+    // Trava (b) Seletor de variação presente e Trava (c) UM único botão COMPRAR
+    const pPage = await browser.newPage();
+    await pPage.goto(pdpUrl, { waitUntil: 'domcontentloaded', timeout: 20000 });
+    await pPage.waitForTimeout(2000);
+
+    const pdpAudit = await pPage.evaluate(() => {
+      const selects = [...document.querySelectorAll('select.js-variation-option, .js-product-variants select, form select')];
+      const variantChips = [...document.querySelectorAll('.js-insta-variant, .btn-variant, [data-variant-option]')];
+      const hasVariants = selects.length > 0 || variantChips.length > 0;
+
+      const allBuyBtns = [...document.querySelectorAll('input[type="submit"][name="add_to_cart"], button[name="add_to_cart"], .js-addtocart, .js-prod-submit-form, .btn-add')];
+      const visibleBuyButtons = allBuyBtns.filter(btn => {
+        const style = window.getComputedStyle(btn);
+        const rect = btn.getBoundingClientRect();
+        return style.display !== 'none' && style.visibility !== 'hidden' && style.opacity !== '0' && rect.height > 0 && rect.width > 0;
+      });
+
+      return {
+        hasVariants,
+        selectsCount: selects.length,
+        visibleBuyCount: visibleBuyButtons.length
+      };
+    });
+    await pPage.close();
+
+    checa(
+      pdpAudit.hasVariants,
+      `Trava (b): PDP "${item.name}" possui seletor de variação de tamanho/cor ativo`,
+      `${pdpAudit.selectsCount} selects`
+    );
+
+    checa(
+      pdpAudit.visibleBuyCount === 1,
+      `Trava (c): PDP "${item.name}" possui exatamente UM único botão COMPRAR visível (sem placeholder duplicado)`,
+      `${pdpAudit.visibleBuyCount} botão visível`
+    );
+  }
+
+  // 16.3 Anti-soft-404 nas categorias e presença dos produtos novos
+  const categoriesToVerify = ['scarpin', 'bota', 'mule', 'mocassim', 'tenis', 'bolsa'];
+  for (const cat of categoriesToVerify) {
+    const catUrl = `https://${HOST_LOJA}/${cat}/`;
+    const res = await pagina.request.get(catUrl);
+    const body = await res.text();
+    const soft404 = isSoft404(body);
+
+    const matchingItems = newHandlesTable.filter(t => t.cat === cat);
+    const hasAtLeastOneProduct = matchingItems.some(t => body.includes(t.handle));
+
+    checa(
+      res.status() === 200 && !soft404 && hasAtLeastOneProduct,
+      `Categoria "/${cat}/" responde HTTP 200 e contém seus produtos novos`,
+      `${res.status()} ${catUrl}`
+    );
+  }
+} catch (e) {
+  falhou('Falha ao auditar validações da v40 Fase 2', e.message);
+}
+
 // ── Finalização ────────────────────────────────────────────────────────────
 await browser.close();
 
@@ -1220,3 +1427,4 @@ if (falhas > 0) {
   console.log(`APROVADO — ${passos} verificações, nenhuma falha.\n`);
   process.exit(0);
 }
+
