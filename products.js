@@ -3,7 +3,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325661",
         "nome": "BOTA CAPA SALTO BLOCO",
         "categoria": "BOTA CANO MÉDIO",
-        "url_absolute": "https://loja.usebede.com.br/produtos/bota-capa-salto-bloco-13bpy/",
+        "url_absolute": "https://loja.usebede.com.br/produtos/bota-capa-salto-bloco/",
         "foto": "assets/products/bota_capa.jpg",
         "fotos": [
             "assets/products/bota_capa.jpg"
@@ -138,7 +138,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325663",
         "nome": "BOTA CANO ALTO SALTO TAÇA",
         "categoria": "BOTA CANO LONGO",
-        "url_absolute": "https://loja.usebede.com.br/produtos/bota-cano-alto-salto-taca-j3p6d/",
+        "url_absolute": "https://loja.usebede.com.br/produtos/bota-cano-alto-salto-taca/",
         "foto": "assets/products/bota_taca.jpg",
         "fotos": [
             "assets/products/bota_taca.jpg"
@@ -241,7 +241,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325664",
         "nome": "SAPATO PATRÍCIA",
         "categoria": "SCARPIN",
-        "url_absolute": "https://loja.usebede.com.br/produtos/sapato-patricia-1075x/",
+        "url_absolute": "https://loja.usebede.com.br/produtos/sapato-patricia/",
         "foto": "assets/products/scarpin_patricia.jpg",
         "fotos": [
             "assets/products/scarpin_patricia.jpg"
@@ -397,7 +397,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325666",
         "nome": "SCARPIN LEONA",
         "categoria": "SCARPIN",
-        "url_absolute": "https://loja.usebede.com.br/produtos/scarpin-leona-1bi6j/",
+        "url_absolute": "https://loja.usebede.com.br/produtos/scarpin-leona/",
         "foto": "assets/products/scarpin_leona.jpg",
         "fotos": [
             "assets/products/scarpin_leona.jpg"
@@ -461,7 +461,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325667",
         "nome": "BOTA OVER MALHA",
         "categoria": "BOTA CANO LONGO",
-        "url_absolute": "https://loja.usebede.com.br/produtos/bota-over-malha-3j4d8/",
+        "url_absolute": "https://loja.usebede.com.br/produtos/bota-over-malha/",
         "foto": "assets/products/bota_over.jpg",
         "fotos": [
             "assets/products/bota_over.jpg"
@@ -518,7 +518,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325668",
         "nome": "BOTA MALHA CANO MÉDIO SALTO FINO",
         "categoria": "BOTA CANO MÉDIO",
-        "url_absolute": "https://loja.usebede.com.br/produtos/bota-malha-cano-medio-salto-fino-zhqre/",
+        "url_absolute": "https://loja.usebede.com.br/produtos/bota-malha-cano-medio-salto-fino/",
         "foto": "assets/products/bota_malha.jpg",
         "fotos": [
             "assets/products/bota_malha.jpg"
@@ -619,7 +619,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325670",
         "nome": "BOLSA POCHETE JESSICA",
         "categoria": "BOLSA",
-        "url_absolute": "https://loja.usebede.com.br/produtos/bolsa-pochete-jessica-1lm8w/",
+        "url_absolute": "https://loja.usebede.com.br/produtos/bolsa-pochete-jessica/",
         "foto": "assets/products/bolsa_jessica.jpg",
         "fotos": [
             "assets/products/bolsa_jessica.jpg"
@@ -682,7 +682,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325671",
         "nome": "SCARPIN COURO",
         "categoria": "SCARPIN",
-        "url_absolute": "https://loja.usebede.com.br/produtos/scarpin-couro-1eoiz/",
+        "url_absolute": "https://loja.usebede.com.br/produtos/scarpin-couro/",
         "foto": "assets/products/scarpin_couro.jpg",
         "fotos": [
             "assets/products/scarpin_couro.jpg"
@@ -881,7 +881,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325673",
         "nome": "TENIS DALIA",
         "categoria": "TÊNIS",
-        "url_absolute": "https://loja.usebede.com.br/produtos/tenis-dalia-7wtg4/",
+        "url_absolute": "https://loja.usebede.com.br/produtos/tenis-dalia/",
         "foto": "assets/products/tenis_dalia.jpg",
         "fotos": [
             "assets/products/tenis_dalia.jpg"
@@ -945,7 +945,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325674",
         "nome": "BOTAS CROCO",
         "categoria": "BOTA CANO MÉDIO",
-        "url_absolute": "https://loja.usebede.com.br/produtos/botas-croco-ndm77/",
+        "url_absolute": "https://loja.usebede.com.br/produtos/botas-croco/",
         "foto": "assets/products/bota_croco.jpg",
         "fotos": [
             "assets/products/bota_croco.jpg"
@@ -995,7 +995,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325675",
         "nome": "MOCASSIM COM CRAVINHOS",
         "categoria": "MOCASSIM",
-        "url_absolute": "https://loja.usebede.com.br/produtos/mocassim-com-cravinhos-1iz7x/",
+        "url_absolute": "https://loja.usebede.com.br/produtos/mocassim-com-cravinhos/",
         "foto": "assets/products/mocassim_cravinhos.jpg",
         "fotos": [
             "assets/products/mocassim_cravinhos.jpg"
@@ -1191,7 +1191,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325676",
         "nome": "MULE COURO FIVELA",
         "categoria": "MULE",
-        "url_absolute": "https://loja.usebede.com.br/produtos/mule-couro-fivela-1w4v9/",
+        "url_absolute": "https://loja.usebede.com.br/produtos/mule-couro-fivela/",
         "foto": "assets/products/mule_couro.jpg",
         "fotos": [
             "assets/products/mule_couro.jpg"
@@ -2471,7 +2471,7 @@ const STILETTO_PRODUCTS = [
         "id": "3325691",
         "nome": "SCARPIN ARIANA VERNIZ",
         "categoria": "SCARPIN",
-        "url_absolute": "https://loja.usebede.com.br/produtos/scarpin-ariana-verniz-g0x00/",
+        "url_absolute": "https://loja.usebede.com.br/produtos/scarpin-ariana-verniz/",
         "foto": "assets/products/scarpin_ariana.jpg",
         "fotos": [
             "assets/products/scarpin_ariana.jpg"
