@@ -1362,7 +1362,7 @@ try {
     await pPage.goto(pdpUrl, { waitUntil: 'domcontentloaded', timeout: 20000 });
     await pPage.waitForTimeout(2000);
 
-    const pdpAudit = await pPage.evaluate(() => {
+    const pdpAudit = await pPage.evaluate((expectedCat) => {
       const selects = [...document.querySelectorAll('select.js-variation-option, .js-product-variants select, form select')];
       const variantChips = [...document.querySelectorAll('.js-insta-variant, .btn-variant, [data-variant-option]')];
       const hasVariants = selects.length > 0 || variantChips.length > 0;
@@ -1374,12 +1374,16 @@ try {
         return style.display !== 'none' && style.visibility !== 'hidden' && style.opacity !== '0' && rect.height > 0 && rect.width > 0;
       });
 
+      const jsonLdScripts = [...document.querySelectorAll('script[type="application/ld+json"]')];
+      const hasCatInJsonLd = jsonLdScripts.some(s => s.innerText.toLowerCase().includes(expectedCat.toLowerCase()));
+
       return {
         hasVariants,
         selectsCount: selects.length,
-        visibleBuyCount: visibleBuyButtons.length
+        visibleBuyCount: visibleBuyButtons.length,
+        hasCatInJsonLd
       };
-    });
+    }, item.cat);
     await pPage.close();
 
     checa(
@@ -1393,27 +1397,50 @@ try {
       `Trava (c): PDP "${item.name}" possui exatamente UM único botão COMPRAR visível (sem placeholder duplicado)`,
       `${pdpAudit.visibleBuyCount} botão visível`
     );
+
+    checa(
+      pdpAudit.hasCatInJsonLd,
+      `Trava (d): PDP "${item.name}" possui metadados JSON-LD vinculados à categoria "${item.cat}"`,
+      `categoria: ${item.cat}`
+    );
   }
 
-  // 16.3 Anti-soft-404 nas categorias e presença dos produtos novos
-  const categoriesToVerify = ['scarpin', 'bota', 'mule', 'mocassim', 'tenis', 'bolsa'];
-  for (const cat of categoriesToVerify) {
-    const catUrl = `https://${HOST_LOJA}/${cat}/`;
+  // 16.3 Trava permanente: Validação por CONTEÚDO (todos os produtos novos listados no HTML da categoria)
+  const categoriesToVerify = [
+    { cat: 'scarpin', name: 'Scarpin', expected: ['sapato-patricia', 'scarpin-couro', 'scarpin-ariana-verniz', 'scarpin-leona'] },
+    { cat: 'bota', name: 'Bota', expected: ['botas-croco', 'bota-over-malha', 'bota-cano-alto-salto-taca', 'bota-capa-salto-bloco', 'bota-malha-cano-medio-salto-fino'] },
+    { cat: 'mule', name: 'Mule', expected: ['mule-couro-fivela'] },
+    { cat: 'mocassim', name: 'Mocassim', expected: ['mocassim-com-cravinhos'] },
+    { cat: 'tenis', name: 'Tênis', expected: ['tenis-dalia'] },
+    { cat: 'bolsa', name: 'Bolsa', expected: ['bolsa-pochete-jessica'] }
+  ];
+
+  for (const catObj of categoriesToVerify) {
+    const catUrl = `https://${HOST_LOJA}/${catObj.cat}/`;
     const res = await pagina.request.get(catUrl);
     const body = await res.text();
     const soft404 = isSoft404(body);
 
-    const matchingItems = newHandlesTable.filter(t => t.cat === cat);
-    const hasAtLeastOneProduct = matchingItems.some(t => body.includes(t.handle));
+    const found = [];
+    const missing = [];
+    for (const h of catObj.expected) {
+      if (body.includes(h)) {
+        found.push(h);
+      } else {
+        missing.push(h);
+      }
+    }
+
+    const allPresent = missing.length === 0;
 
     checa(
-      res.status() === 200 && !soft404 && hasAtLeastOneProduct,
-      `Categoria "/${cat}/" responde HTTP 200 e contém seus produtos novos`,
-      `${res.status()} ${catUrl}`
+      res.status() === 200 && !soft404 && allPresent,
+      `Trava de Conteúdo: Categoria "/${catObj.cat}/" lista TODOS os seus ${catObj.expected.length} produtos novos no HTML`,
+      `encontrados: [${found.join(', ')}] (faltando: ${missing.length})`
     );
   }
 } catch (e) {
-  falhou('Falha ao auditar validações da v40 Fase 2', e.message);
+  falhou('Falha ao auditar validações da v40 Fase 2 & v40.1', e.message);
 }
 
 // ── Finalização ────────────────────────────────────────────────────────────
