@@ -101,8 +101,8 @@ window.irParaLoja = function(url) {
     cnpj: CFG_SRC.cnpj || '55.068.034/0001-00',
     nomeFantasia: CFG_SRC.nomeFantasia || 'BEDÊ',
     endereco: CFG_SRC.endereco || 'Rua Cirurgião Vaz Ferreira, 457 · Centro · Viamão/RS',
-    whatsapp: CFG_SRC.whatsapp ? CFG_SRC.whatsapp.replace(/\D/g, '') : '5551980150391',
-    whatsappFormatado: CFG_SRC.whatsapp || '(51) 98015-0391',
+    whatsapp: CFG_SRC.whatsapp ? CFG_SRC.whatsapp.replace(/\D/g, '') : '5551996704954',
+    whatsappFormatado: CFG_SRC.whatsapp || '(51) 99670-4954',
     descontoPix: CFG_SRC.descontoPix !== undefined ? CFG_SRC.descontoPix : 5,
     primeiraTrocaGratisDias: CFG_SRC.primeiraTrocaGratisDias !== undefined ? CFG_SRC.primeiraTrocaGratisDias : null,
     freteGratisAcimaDe: CFG_SRC.freteGratisAcimaDe !== undefined ? CFG_SRC.freteGratisAcimaDe : 599,
@@ -203,7 +203,7 @@ window.irParaLoja = function(url) {
     const CFG = CONFIG_LOJA;
 
     // 1. WhatsApp
-    const waPhone = CFG.whatsappPhone || CFG.whatsapp || '5551980150391';
+    const waPhone = CFG.whatsappPhone || CFG.whatsapp || '5551996704954';
     const waText = encodeURIComponent(CFG.whatsappMensagemPadrao || 'Olá! Gostaria de um atendimento personalizado na BEDÊ Stiletto.');
     const waUrl = `https://wa.me/${waPhone}?text=${waText}`;
     const waBtn = $('btnNavAtendimento');
@@ -1883,7 +1883,7 @@ window.irParaLoja = function(url) {
   if (!p) return;
   const size = S.size || 'Não informada';
   const cor = S.selectedColor || 'Única';
-  const WA = (typeof CFG !== 'undefined' && CFG.whatsapp) ? CFG.whatsapp : '5551980150391';
+  const WA = (typeof CFG !== 'undefined' && CFG.whatsapp) ? CFG.whatsapp : '5551996704954';
   let msg = `Olá! Gostaria de falar com uma consultora sobre o produto:\n\n*${p.nome}*\nCor: ${cor}\nTamanho: ${size}\n\nPoderiam me atender?`;
   window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank');
 };

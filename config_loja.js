@@ -8,7 +8,7 @@ const CFG_LOJA = {
     cnpj: '55.068.034/0001-00',
     nomeFantasia: 'BEDÊ',
     endereco: 'Rua Cirurgião Vaz Ferreira, 457 · Centro · Viamão/RS',
-    whatsapp: '(51) 98015-0391',
+    whatsapp: '(51) 99670-4954',
     descontoPix: 5,
     primeiraTrocaGratisDias: null,
     freteGratisAcimaDe: 599,
