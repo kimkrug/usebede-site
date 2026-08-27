@@ -750,16 +750,28 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   stroke-linejoin: round;
 }
 
-/* Sobre Foto (Hero) — Borda branca fina e chevron branco */
+/* Sobre Foto (Hero) — Setas discretas sem círculo */
 .hero-arrow-btn {
-  border: 1.5px solid rgba(255, 255, 255, 0.7) !important;
+  width: 24px !important;
+  height: 24px !important;
+  border: none !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  opacity: 0.85;
 }
 .hero-arrow-btn svg {
+  width: 18px !important;
+  height: 18px !important;
   stroke: #ffffff !important;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.7));
 }
 .hero-arrow-btn:hover {
-  background: rgba(255, 255, 255, 0.15) !important;
-  border-color: #ffffff !important;
+  background: transparent !important;
+  border: none !important;
+  opacity: 1;
+  transform: scale(1.15);
 }
 
 /* Sobre Fundo Claro (Trilhos de Cards) — Borda fina e chevron #000404 */
@@ -878,15 +890,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .hero-nav-controls {
   position: absolute;
   bottom: 84px;
-  right: var(--pad-x);
+  right: calc(var(--pad-x) + 40px);
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   z-index: 6;
 }
 .hero-dots {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   align-items: center;
 }
 
@@ -2882,28 +2894,59 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .btn-menu-mobile { display: flex !important; }
   .logo-link img, .logo-link svg { height: 48px; }
 
-  /* Slide 0: Home — FOTOS DEDICADAS MOBILE POR QUADRO */
+  /* Slide 0: Home — FOTOS DEDICADAS MOBILE POR QUADRO & ENQUADRAMENTO */
   .hero-bg-1 {
-    background-image: url('assets/hero_mulher_mobile.png?v=2026_hero_v1');
+    background-image: url('assets/hero_mulher_mobile.png?v=2026_hero_v2');
     background-position: center center;
     transform: none;
   }
   .hero-bg-2 {
-    background-image: url('assets/hero_botas_mobile.png?v=2026_hero_v1');
+    background-image: url('assets/hero_botas_mobile.png?v=2026_hero_v2');
+    background-size: cover;
     background-position: center center;
-    transform: none;
+    transform: translateY(-22%) scale(1.28);
+    transform-origin: center center;
   }
   .hero-bg-3 {
-    background-image: url('assets/hero_bolsa_mobile.png?v=2026_hero_v1');
+    background-image: url('assets/hero_bolsa_mobile.png?v=2026_hero_v2');
+    background-size: cover;
     background-position: center center;
-    transform: none;
+    transform: translateY(-24%) scale(1.32);
+    transform-origin: center center;
   }
   .hero-shade {
     background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.02) 28%, rgba(0,0,0,0.06) 55%, rgba(0,0,0,0.68) 100%);
   }
-  .hero-content { padding: 0 20px 58px; }
-  .hero-eyebrow { font-size: 10px; margin-bottom: 6px; }
-  .hero-headline { font-size: clamp(24px, 6vw, 30px); line-height: 1.18; margin-bottom: 16px; }
+  .hero-content {
+    padding: 0 20px 58px;
+  }
+  .hero-eyebrow {
+    font-size: 10px;
+    margin-bottom: 6px;
+  }
+  .hero-headline {
+    font-size: clamp(20px, 5.2vw, 24px);
+    line-height: 1.2;
+    margin-bottom: 14px;
+    max-width: 280px;
+  }
+  .hero-cta-group {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: calc(100% - 90px);
+  }
+  .btn-nv {
+    padding: 10px 14px;
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+  }
+  .hero-nav-controls {
+    bottom: 58px;
+    right: 20px;
+    gap: 6px;
+  }
   .home-bottom-bar { bottom: 12px; padding: 0 16px; }
   .home-bar-inner { border-top: 1px solid rgba(255, 255, 255, 0.22); padding-top: 6px; justify-content: center; }
   .home-bar-inner span { font-size: 8.5px; letter-spacing: 0.06em; white-space: nowrap; }
@@ -3047,8 +3090,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   }
   .slide-dots { right: 10px; }
   .btn-menu-mobile { display: flex; }
-  .whatsapp-float-btn { bottom: 44px; right: 14px; width: 44px; height: 44px; }
-  .whatsapp-float-btn svg { width: 42px; height: 42px; stroke-width: 1.2px; }
+  .whatsapp-float-btn { bottom: 120px; right: 16px; width: 46px; height: 46px; }
+  .whatsapp-float-btn svg { width: 44px; height: 44px; stroke-width: 1.2px; }
 }
 
 .btn-menu-mobile {
