@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=2026_bd_v12">
   <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2026_bd_v12">
   <link rel="shortcut icon" href="favicon.ico?v=2026_bd_v12">
-  <link rel="stylesheet" href="style.css?v=2026_09_05_home_ui">
+  <link rel="stylesheet" href="style.css?v=2026_09_05_unified_menu">
 
   <!-- Open Graph (Instagram, Facebook, WhatsApp) -->
   <meta property="og:type" content="website">
@@ -42,25 +42,28 @@
 <body>
   
   <!-- OVERLAY DE TRANSIÇÃO -->
-  <div id="pageTransition" class="page-transition"></div>
+  <div id="pageTransition" class="page-transition" aria-hidden="true"></div>
 
   <!-- ── HEADER byNV (2 MODOS: GHOST NO HERO / SOLID-LIGHT NOS DEMAIS) ── -->
   <header class="site-header ghost" id="siteHeader">
     <div class="header-inner">
 
-      <!-- GRUPO ESQUERDA: MENU NAV (6 ITENS DIRETOS, SEM SUBMENU) -->
+      <!-- Menu único: Produtos, Liquidação, Sobre e Atendimento. -->
       <div class="header-left">
-        <button class="btn-menu-mobile" id="mobileMenuBtn" onclick="toggleMobileMenu()" aria-label="Abrir menu" aria-controls="mobileDrawer" aria-expanded="false">
+        <button class="btn-menu-mobile" id="mobileMenuBtn" type="button" onclick="toggleMobileMenu()" aria-label="Abrir menu" aria-controls="mobileDrawer" aria-expanded="false">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
           </svg>
         </button>
 
         <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
-          <a class="nav-item" href="https://loja.usebede.com.br/produtos/">Calçados</a>
-          <a class="nav-item" href="https://loja.usebede.com.br/produtos/?sort=date_desc">Novidades</a>
-          <a class="nav-item" href="https://loja.usebede.com.br/scarpin/">Scarpin</a>
-          <a class="nav-item" href="https://loja.usebede.com.br/bota/">Botas</a>
+          <details class="product-menu" data-product-menu>
+            <summary class="nav-item">Produtos <span aria-hidden="true">⌄</span></summary>
+            <div class="product-menu-links" data-product-links>
+              <a href="https://loja.usebede.com.br/produtos/">Ver todos os produtos</a>
+            </div>
+          </details>
+          <a class="nav-item" data-home-offers href="#liquidacao">Liquidação</a>
           <a class="nav-item" href="sobre.html">Sobre</a>
           <a class="nav-item" href="https://wa.me/5551996704954?text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20personalizado%20na%20BED%C3%8A%20Stiletto." target="_blank" rel="noopener">Atendimento</a>
         </nav>
@@ -117,32 +120,23 @@
       </div>
       <button class="mob-drawer-close" onclick="closeMobileMenu()" aria-label="Fechar menu">&times;</button>
     </div>
-    <div class="mob-drawer-nav">
-      <a href="https://loja.usebede.com.br/produtos/" onclick="closeMobileMenu()" class="mob-nav-link">
-        <span>Calçados</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-      </a>
-      <a href="https://loja.usebede.com.br/produtos/?sort=date_desc" onclick="closeMobileMenu()" class="mob-nav-link">
-        <span>Novidades</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-      </a>
-      <a href="https://loja.usebede.com.br/scarpin/" onclick="closeMobileMenu()" class="mob-nav-link">
-        <span>Scarpin</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-      </a>
-      <a href="https://loja.usebede.com.br/bota/" onclick="closeMobileMenu()" class="mob-nav-link">
-        <span>Botas</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-      </a>
+    <nav class="mob-drawer-nav" aria-label="Navegação principal móvel">
+      <details class="product-menu" data-product-menu>
+        <summary class="mob-nav-link">Produtos <span aria-hidden="true">⌄</span></summary>
+        <div class="product-menu-links" data-product-links>
+          <a href="https://loja.usebede.com.br/produtos/">Ver todos os produtos</a>
+        </div>
+      </details>
+      <a href="#liquidacao" data-home-offers class="mob-nav-link">Liquidação</a>
       <a href="sobre.html" class="mob-nav-link">
-        <span>Sobre a BEDÊ</span>
+        <span>Sobre</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
       <a href="https://wa.me/5551996704954?text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20personalizado%20na%20BED%C3%8A%20Stiletto." target="_blank" rel="noopener" class="mob-nav-link">
-        <span>Atendimento via WhatsApp</span>
+        <span>Atendimento</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
-    </div>
+    </nav>
     <div class="mob-drawer-footer">
       <a href="https://wa.me/5551996704954?text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20personalizado%20na%20BED%C3%8A%20Stiletto." target="_blank" class="mob-drawer-wa" id="mobDrawerWa">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
@@ -275,7 +269,7 @@
             </button>
 
             <div class="nb-rail" id="emAltaRail">
-              <!-- Renderizado dinamicamente via JS (nome à esquerda + preço à direita) -->
+              <!-- Nome e preço atuais da Nuvemshop, sem catálogo local. -->
             </div>
 
             <button class="btn-nav-arrow rail-arrow next" id="emAltaRailNext" onclick="scrollEmAltaRail(1)" aria-label="Próximo">
@@ -288,7 +282,7 @@
       <!-- ── SLIDE 2: SEÇÃO RESTAURADA (DUPLO 50/50 SAPATARIA & BOLSAS) ─ -->
       <section class="v-slide" id="slide2" aria-label="Sapataria &amp; Bolsas">
         <div class="split-dual-slide">
-          <div class="dual-half" onclick="irParaLoja('https://loja.usebede.com.br/produtos/')" role="button" tabindex="0" aria-label="Ver Sapataria e Saltos">
+          <a class="dual-half" href="https://loja.usebede.com.br/produtos/" aria-label="Ver Sapataria e Saltos">
             <img class="dual-img" src="assets/split_shoes.jpg?v=crop_v3" alt="Sapataria &amp; Saltos — Stiletto BEDÊ" loading="lazy">
             <div class="dual-shade"></div>
             <div class="dual-caption">
@@ -296,17 +290,17 @@
               <h3 class="dual-title">Sapataria<br>&amp; Saltos</h3>
               <span class="dual-cta">Explorar &rarr;</span>
             </div>
-          </div>
+          </a>
 
-          <div class="dual-half" onclick="irParaLoja('https://loja.usebede.com.br/produtos/')" role="button" tabindex="0" aria-label="Ver Bolsas e Casuais">
-            <img class="dual-img" src="assets/split_bags.jpg?v=crop_v3" alt="Bolsas &amp; Casuais — Stiletto BEDÊ" loading="lazy">
+          <a class="dual-half" href="https://loja.usebede.com.br/search/?q=bolsa" aria-label="Ver Bolsas">
+            <img class="dual-img" src="assets/split_bags.jpg?v=crop_v3" alt="Bolsas — Stiletto BEDÊ" loading="lazy">
             <div class="dual-shade"></div>
             <div class="dual-caption">
               <span class="dual-eyebrow">Essenciais</span>
-              <h3 class="dual-title">Bolsas<br>&amp; Casuais</h3>
+              <h3 class="dual-title">Bolsas</h3>
               <span class="dual-cta">Explorar &rarr;</span>
             </div>
-          </div>
+          </a>
         </div>
       </section>
 
@@ -324,7 +318,7 @@
             </button>
 
             <div class="nb-rail" id="tiposRail">
-              <!-- Renderizado dinamicamente via JS (6 tipos, foto real, só o nome) -->
+              <!-- Tipos presentes no feed; imagem do próprio produto. -->
             </div>
 
             <button class="btn-nav-arrow rail-arrow next" id="tiposRailNext" onclick="scrollTiposRail(1)" aria-label="Próximo">
@@ -341,7 +335,8 @@
             <img src="assets/split_editorial.jpg?v=showroom_v1" alt="BEDÊ Stiletto — Showroom &amp; Coleção" loading="lazy">
           </div>
           <div class="split-text-content">
-            <h2 class="split-headline single-line">LIQUIDAÇÃO</h2>
+            <h2 class="split-headline single-line" id="offersHeading" tabindex="-1">LIQUIDAÇÃO</h2>
+            <noscript><p>Ative o JavaScript para consultar as ofertas atuais da loja. Nenhum desconto é presumido.</p></noscript>
             <a id="slideSaleBtn" class="btn-nv dark" hidden style="display:none">
               Ver ofertas &rarr;
             </a>
@@ -368,7 +363,7 @@
             </button>
 
             <div class="nb-rail" id="tabsRail">
-              <!-- Renderizado dinamicamente via JS (produtos da aba, só o nome) -->
+              <!-- Produtos reais da aba, com nome e preço da loja. -->
             </div>
 
             <button class="btn-nav-arrow rail-arrow next" id="tabsRailNext" onclick="scrollTabsRail(1)" aria-label="Próximo">
@@ -475,7 +470,7 @@
   <script src="links_loja.js?v=2026_nuvem"></script>
   <script src="config_loja.js?v=2026_v9"></script>
   <script src="catalog-model.js?v=2026_09_05_home_ui"></script>
-  <script src="home-app.js?v=2026_09_05_offers_guard"></script>
-  <script src="home-ui.js?v=2026_09_05_home_ui"></script>
+  <script src="home-app.js?v=2026_09_05_unified_menu"></script>
+  <script src="home-ui.js?v=2026_09_05_unified_menu"></script>
 </body>
 </html>

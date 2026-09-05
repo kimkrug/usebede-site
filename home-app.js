@@ -11,13 +11,15 @@
     hover: false, heroFocus: false };
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let slides = [], frames = [], heroTimer = null, transitionTimer = null, catalogueTimer = null, touch = null;
+  let innerWheelUntil = 0;
   const model = () => window.BedeCatalog;
   const editable = target => Boolean(target && target.closest && target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"])'));
-  const interactive = target => Boolean(target && target.closest && target.closest('a, button, input, textarea, select, [contenteditable], [role="tab"]'));
+  const interactive = target => Boolean(target && target.closest && target.closest('a, button, summary, input, textarea, select, [contenteditable], [role="tab"]'));
   function uiIsOpen() {
     const drawer = $('mobileDrawer'), search = $('homeSearchPanel');
     return state.menu || Boolean(drawer && drawer.classList.contains('open')) ||
-      Boolean(search && !search.hidden) || Boolean(document.querySelector('dialog[open], [role="dialog"].open'));
+      Boolean(search && !search.hidden) || Boolean(document.querySelector('dialog[open], [role="dialog"].open')) ||
+      Boolean(document.querySelector('details[data-product-menu][open]'));
   }
   function setText(id, text) { const element = $(id); if (element) element.textContent = text; }
   function stopHero() { if (heroTimer !== null) { window.clearInterval(heroTimer); heroTimer = null; } }
@@ -63,6 +65,9 @@
     const next = Math.max(0, Math.min(slides.length - 1, Math.trunc(Number(index))));
     if ((state.busy || next === state.slide) && !instant) return;
     state.slide = next;
+    if (next !== 4 && window.location.hash === '#liquidacao' && window.history) {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
     const immediate = Boolean(instant) || reduceMotion.matches;
     state.busy = !immediate;
     window.clearTimeout(transitionTimer);
@@ -98,6 +103,14 @@
   };
   window.nextHeroFrame = function () { window.goToHeroFrame(state.frame + 1); updateHeroTimer(); };
   window.prevHeroFrame = function () { window.goToHeroFrame(state.frame - 1); updateHeroTimer(); };
+  window.goToOffers = function () {
+    if (window.BedeNavigation) window.BedeNavigation.closeProductMenus();
+    window.closeMobileMenu();
+    window.goToSlide(4, true);
+    if (window.history) window.history.replaceState(null, '', '#liquidacao');
+    const heading = $('offersHeading');
+    if (heading) heading.focus({ preventScroll: true });
+  };
   function scrollRail(id, direction) {
     const rail = $(id);
     if (rail && Number.isFinite(Number(direction))) rail.scrollBy({ left: Math.sign(Number(direction)) * Math.max(280, rail.clientWidth * 0.65), behavior: reduceMotion.matches ? 'auto' : 'smooth' });
@@ -158,6 +171,7 @@
     const paragraph = document.createElement('p'); paragraph.textContent = text; block.appendChild(paragraph);
     const link = document.createElement('a'); link.href = href || STORE + '/produtos/'; link.textContent = label || 'Ver produtos na loja'; block.appendChild(link);
     rail.appendChild(block); rail.setAttribute('aria-busy', String(state.feed === 'loading'));
+    rail.scrollLeft = 0; updateRailButtons(railId);
   }
   function productCard(product, showPrice) {
     const m = model(), escape = m.escapeHTML, promotion = m.getPromotion(product);
@@ -168,7 +182,14 @@
   function renderProducts(railId, products, withPrice) {
     const rail = $(railId); if (!rail) return;
     rail.innerHTML = products.map(p => productCard(p, withPrice)).join('');
-    rail.setAttribute('aria-busy', 'false'); rail.scrollLeft = 0;
+    rail.setAttribute('aria-busy', 'false'); rail.scrollLeft = 0; updateRailButtons(railId);
+  }
+  function updateRailButtons(railId) {
+    const rail = $(railId), previous = $(railId + 'Prev'), next = $(railId + 'Next');
+    if (!rail || !Number.isFinite(rail.scrollWidth) || !Number.isFinite(rail.clientWidth)) return;
+    const last = Math.max(0, rail.scrollWidth - rail.clientWidth);
+    if (previous) previous.disabled = rail.scrollLeft <= 2;
+    if (next) next.disabled = rail.scrollLeft >= last - 2;
   }
   function searchCategory(key) {
     const terms = { scarpin: 'Scarpin', bota: 'Bota', mule: 'Mule', tenis: 'Tênis', sandalia: 'Sandália',
@@ -183,7 +204,7 @@
     }
     const products = model().selectCategory(state.products, state.category).filter(p => p.available).slice(0, 8);
     if (!products.length) message('tabsRail', 'Nenhum modelo disponível nesta seleção no momento.', searchCategory(state.category), 'Consultar esta categoria na loja');
-    else renderProducts('tabsRail', products, false);
+    else renderProducts('tabsRail', products, true);
   }
   function renderTypes() {
     const rail = $('tiposRail'); if (!rail) return;
@@ -196,7 +217,7 @@
       return `<a class="nb-card" href="${m.escapeHTML(searchCategory(category.key))}"><div class="nb-card-img-wrap"><img src="${m.escapeHTML(product.image)}" alt="${m.escapeHTML(category.label + ' — ' + product.name)}" loading="lazy" decoding="async"></div><div class="nb-card-label-only">${m.escapeHTML(category.label)}</div></a>`;
     }).filter(Boolean);
     if (!cards.length) { message('tiposRail', 'Consulte as categorias disponíveis na loja.'); return; }
-    rail.innerHTML = cards.join(''); rail.setAttribute('aria-busy', 'false');
+    rail.innerHTML = cards.join(''); rail.setAttribute('aria-busy', 'false'); updateRailButtons('tiposRail');
   }
   function updateOffers() {
     const section = $('slide4'), button = $('slideSaleBtn');
@@ -225,9 +246,10 @@
       directLinks.replaceChildren();
       directLinks.hidden = STORE_OFFERS_READY || !offers.length;
       directLinks.style.display = directLinks.hidden ? 'none' : 'flex';
-      if (!STORE_OFFERS_READY) offers.slice(0, 4).forEach(product => {
+      if (!STORE_OFFERS_READY) offers.forEach(product => {
         const link = document.createElement('a'); link.className = 'btn-nv dark';
-        link.href = product.url; link.textContent = product.name + ' →';
+        link.href = product.url; link.textContent = product.name + ' · ' +
+          (product.priceRange ? 'A partir de ' : '') + model().formatBRL(product.priceCents) + ' →';
         directLinks.appendChild(link);
       });
     }
@@ -300,7 +322,10 @@
   function setupNavigation() {
     window.addEventListener('wheel', event => {
       if (uiIsOpen() || editable(event.target) || event.ctrlKey || event.metaKey || Math.abs(event.deltaX) > Math.abs(event.deltaY) || Math.abs(event.deltaY) < 15) return;
-      if (canScrollVertically(event.target, event.deltaY)) return;
+      if (canScrollVertically(event.target, event.deltaY)) { innerWheelUntil = Date.now() + 180; return; }
+      // Let one gesture finish inside a short-screen section. Its remaining
+      // wheel events must not also advance the fullpage after reaching the edge.
+      if (Date.now() < innerWheelUntil) { innerWheelUntil = Date.now() + 180; event.preventDefault(); return; }
       event.preventDefault();
       window.goToSlide(state.slide + (event.deltaY > 0 ? 1 : -1));
     }, { passive: false });
@@ -338,6 +363,10 @@
     slides = Array.from(document.querySelectorAll('.v-slide')); frames = Array.from(document.querySelectorAll('.hero-frame'));
     slides.forEach(slide => { slide.style.overflowY = 'auto'; slide.style.overscrollBehaviorY = 'contain'; });
     setViewport(); applyConfiguration(); setupNavigation();
+    ['emAltaRail', 'tiposRail', 'tabsRail'].forEach(id => {
+      const rail = $(id);
+      if (rail) rail.addEventListener('scroll', () => updateRailButtons(id), { passive: true });
+    });
     const hero = $('slide0');
     if (hero) {
       hero.addEventListener('mouseenter', () => { state.hover = true; stopHero(); });
@@ -345,7 +374,10 @@
       hero.addEventListener('focusin', () => { state.heroFocus = true; stopHero(); });
       hero.addEventListener('focusout', () => { window.setTimeout(() => { state.heroFocus = hero.contains(document.activeElement); updateHeroTimer(); }, 0); });
     }
-    window.addEventListener('resize', setViewport, { passive: true });
+    window.addEventListener('resize', () => {
+      setViewport(); ['emAltaRail', 'tiposRail', 'tabsRail'].forEach(updateRailButtons);
+    }, { passive: true });
+    window.addEventListener('hashchange', () => { if (window.location.hash === '#liquidacao') window.goToOffers(); });
     reduceMotion.addEventListener('change', updateHeroTimer);
     document.addEventListener('visibilitychange', () => {
       updateHeroTimer();
@@ -359,7 +391,10 @@
     window.addEventListener('pageshow', event => { if (event.persisted) loadCatalogue(); });
     document.addEventListener('focusin', () => { if (editable(document.activeElement)) stopHero(); });
     document.addEventListener('focusout', () => { window.setTimeout(updateHeroTimer, 0); });
-    window.goToHeroFrame(0); window.goToSlide(0, true); window.switchCategoryTab('Scarpin');
+    document.addEventListener('toggle', event => {
+      if (event.target.closest && event.target.closest('details[data-product-menu]') === event.target) updateHeroTimer();
+    }, true);
+    window.goToHeroFrame(0); window.goToSlide(window.location.hash === '#liquidacao' ? 4 : 0, true); window.switchCategoryTab('Scarpin');
     loadCatalogue();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true });

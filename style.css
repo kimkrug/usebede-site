@@ -3459,3 +3459,111 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .footer-legal-bar { padding-top: 12px; padding-bottom: 0; text-align: left; }
   .payment-methods { gap: 8px; }
 }
+
+/* Unified navigation: native disclosure, same 20 store destinations everywhere. */
+.product-menu { position: static; }
+.product-menu > summary { list-style: none; gap: 7px; }
+.product-menu > summary::-webkit-details-marker { display: none; }
+.product-menu > summary > span { display: inline-block; transition: transform .18s ease; }
+.product-menu[open] > summary > span { transform: rotate(180deg); }
+.main-nav .product-menu-links {
+  position: absolute;
+  top: 100%;
+  left: var(--pad-x);
+  width: min(920px, calc(100vw - 2 * var(--pad-x)));
+  max-height: calc(var(--vh, 100vh) - var(--header-h) - 28px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 2px 16px;
+  padding: 22px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 12px 24px rgba(0,0,0,.1);
+}
+.product-menu:not([open]) > .product-menu-links { display: none; }
+.product-menu-links a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 10px;
+  color: #000 !important;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-transform: none;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.product-menu-links a:first-child { font-weight: 600; }
+.product-menu-links a:hover { background: #f5f5f5; }
+.product-menu-links a:focus-visible, .product-menu > summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: -2px;
+}
+.mobile-drawer .product-menu { border-bottom: 1px solid #eee; }
+.mobile-drawer .product-menu > summary { justify-content: space-between; width: 100%; }
+.mobile-drawer .product-menu-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 0 0 14px; }
+.mobile-drawer .product-menu:not([open]) > .product-menu-links { display: none; }
+.mobile-drawer .product-menu-links a:first-child { grid-column: 1 / -1; }
+.mobile-drawer .mob-drawer-nav { min-height: 0; overscroll-behavior: contain; }
+
+/* Home cards: one consistent information block, with no cropped shoe images. */
+.nb-slide-container { height: auto; min-height: 100%; overflow: visible; }
+.nb-rail-wrapper, .nb-rail { width: 100%; max-width: 100%; }
+.nb-rail-wrapper { flex-shrink: 0; }
+.dual-half { text-decoration: none; }
+.dual-half:focus-visible { outline: 3px solid #fff; outline-offset: -6px; }
+.nb-rail { scroll-snap-type: x proximity; scroll-padding-inline: var(--pad-x); }
+.nb-card { scroll-snap-align: start; min-width: 0; }
+.nb-card-img-wrap { background: #fff; }
+.nb-card-info-row {
+  display: grid;
+  flex: 1;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr auto;
+  align-content: start;
+  align-items: baseline;
+  gap: 5px 10px;
+  text-align: left;
+}
+.nb-card-name {
+  grid-column: 1 / -1;
+  width: 100%;
+  min-width: 0;
+  min-height: 2.8em;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.4;
+  text-transform: none;
+}
+.nb-card-price { margin-left: 0; text-align: left; justify-self: start; font-weight: 500; }
+.nb-card-old-price { color: #666; font-size: 13px; line-height: 1.4; }
+.nb-card-info-row > .nb-card-price:only-child { grid-column: 1 / -1; }
+#tiposRail .nb-card { flex-basis: clamp(180px, 19vw, 280px); width: clamp(180px, 19vw, 280px); }
+#tiposRail .nb-card-img-wrap { height: clamp(180px, 19vw, 280px); }
+.rail-arrow:disabled { opacity: .2; cursor: default; pointer-events: none; }
+#homeOfferProducts { width: 100%; max-width: 520px; max-height: min(45vh, 460px); overflow-y: auto; overscroll-behavior: contain; align-items: stretch; padding: 4px; }
+#homeOfferProducts .btn-nv { white-space: normal; text-align: left; line-height: 1.6; }
+#offersHeading:focus { outline: none; }
+@media (max-width: 767px) {
+  .nb-rail { gap: 14px; }
+  .nb-card { flex-basis: min(74vw, 320px); width: min(74vw, 320px); }
+  .nb-card-img-wrap { height: min(74vw, 320px); padding: 12px; }
+  .nb-card-name, .nb-card-price { font-size: 13px; }
+  .nb-card-old-price { font-size: 12px; }
+  #tiposRail .nb-card { flex-basis: min(48vw, 220px); width: min(48vw, 220px); }
+  #tiposRail .nb-card-img-wrap { height: min(48vw, 220px); padding: 10px; }
+  .category-tabs { max-width: 100%; gap: 6px; }
+  .tab-pill { padding: 10px 16px; }
+}
+@media (max-height: 640px) {
+  .nb-slide-container { justify-content: flex-start; padding-top: calc(var(--header-h) + 18px); padding-bottom: 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nb-rail { scroll-behavior: auto; }
+  .product-menu > summary > span { transition: none; }
+}

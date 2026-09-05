@@ -68,6 +68,7 @@
   function openMenu() {
     if (!initialized) setup();
     if (!menu || isOpen()) return;
+    if (window.BedeNavigation) window.BedeNavigation.closeProductMenus();
     returnFocus = document.activeElement;
     menu.inert = false;
     menu.setAttribute('aria-hidden', 'false');
@@ -86,6 +87,7 @@
 
   function closeMenu() {
     if (!isOpen()) return;
+    if (window.BedeNavigation) window.BedeNavigation.closeProductMenus();
     menu.classList.remove('open');
     overlay.classList.remove('open');
     document.body.classList.remove('institutional-menu-open');
@@ -146,11 +148,16 @@
     const nav = document.createElement('nav');
     nav.className = 'mob-drawer-nav';
     nav.setAttribute('aria-label', 'Navegação principal móvel');
-    mainNav.querySelectorAll('a[href]').forEach(function (source) {
-      const link = createLink(source.textContent.trim(), source.getAttribute('href'));
-      if (source.target) link.target = source.target;
-      if (source.rel) link.rel = source.rel;
-      nav.appendChild(link);
+    Array.from(mainNav.children).forEach(function (source) {
+      const item = source.cloneNode(true);
+      item.removeAttribute('id');
+      item.querySelectorAll('[id]').forEach(function (element) { element.removeAttribute('id'); });
+      if (item.tagName === 'DETAILS') {
+        item.open = false;
+        const summary = item.querySelector('summary');
+        if (summary) summary.className = 'mob-nav-link';
+      } else item.className = 'mob-nav-link';
+      nav.appendChild(item);
     });
     const footer = document.createElement('div');
     footer.className = 'mob-drawer-footer';
@@ -161,20 +168,21 @@
     menu.appendChild(footer);
     document.body.appendChild(overlay);
     document.body.appendChild(menu);
+    if (window.BedeNavigation) window.BedeNavigation.setupProductMenus(menu);
     menuButton.setAttribute('aria-controls', menu.id);
 
     menu.addEventListener('click', function (event) {
       if (event.target.closest('a[href]')) closeMenu();
     });
     document.addEventListener('keydown', function (event) {
-      if (!isOpen()) return;
+      if (!isOpen() || event.defaultPrevented) return;
       if (event.key === 'Escape') {
         event.preventDefault();
         closeMenu();
         return;
       }
       if (event.key !== 'Tab') return;
-      const links = Array.from(menu.querySelectorAll('a[href], button:not([disabled]), [tabindex="0"]'))
+      const links = Array.from(menu.querySelectorAll('a[href], summary, button:not([disabled]), [tabindex="0"]'))
         .filter(function (element) { return element.getClientRects().length > 0; });
       if (!links.length) return;
       const first = links[0];

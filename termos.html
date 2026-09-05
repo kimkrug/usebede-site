@@ -6,7 +6,7 @@
   <title>Termos de Compra e Uso | BEDÊ Stiletto</title>
   <link rel="icon" type="image/svg+xml" href="favicon-bd.svg?v=2026_bd_v12">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=2026_bd_v12">
-  <link rel="stylesheet" href="style.css?v=2026_09_05_home_ui">
+  <link rel="stylesheet" href="style.css?v=2026_09_05_unified_menu">
   <style>
     html, body { height: auto; min-height: 100%; overscroll-behavior-y: auto; }
     body.institutional-page { overflow-x: hidden; overflow-y: auto; background: #fff; color: #000404; font-family: 'Montserrat', sans-serif; scrollbar-width: auto; -ms-overflow-style: auto; }
@@ -44,10 +44,13 @@
           </svg>
         </button>
         <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
-          <a class="nav-item" href="https://loja.usebede.com.br/produtos/">Calçados</a>
-          <a class="nav-item" href="https://loja.usebede.com.br/produtos/?sort=date_desc">Novidades</a>
-          <a class="nav-item" href="https://loja.usebede.com.br/search/?q=Scarpin">Scarpin</a>
-          <a class="nav-item" href="https://loja.usebede.com.br/search/?q=Bota">Botas</a>
+          <details class="product-menu" data-product-menu>
+            <summary class="nav-item">Produtos <span aria-hidden="true">⌄</span></summary>
+            <div class="product-menu-links" data-product-links>
+              <a href="https://loja.usebede.com.br/produtos/">Ver todos os produtos</a>
+            </div>
+          </details>
+          <a class="nav-item" data-home-offers href="index.html#liquidacao">Liquidação</a>
           <a class="nav-item" href="sobre.html">Sobre</a>
           <a class="nav-item" href="https://wa.me/5551996704954?text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20personalizado%20na%20BED%C3%8A%20Stiletto." target="_blank" rel="noopener">Atendimento</a>
         </nav>
@@ -135,6 +138,7 @@
   </footer>
 
   <script src="config_loja.js?v=2026_09_05_institucional"></script>
-  <script src="institutional-ui.js?v=2026_09_05_institucional"></script>
+  <script src="home-ui.js?v=2026_09_05_unified_menu"></script>
+  <script src="institutional-ui.js?v=2026_09_05_unified_menu"></script>
 </body>
 </html>
