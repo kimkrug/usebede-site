@@ -2,6 +2,8 @@
 (function () {
   'use strict';
   const STORE = 'https://loja.usebede.com.br';
+  // Enable only after the native-store offers enhancement is active and verified.
+  const STORE_OFFERS_READY = false;
   const CATALOGUE_REFRESH_MS = 120000, CATALOGUE_MAX_AGE_MS = 150000, CATALOGUE_MIN_RETRY_MS = 20000;
   const $ = id => document.getElementById(id);
   const state = { slide: 0, frame: 0, busy: false, menu: false, products: [], categories: [],
@@ -199,13 +201,36 @@
   function updateOffers() {
     const section = $('slide4'), button = $('slideSaleBtn');
     if (!section) return;
-    if (button) { button.href = STORE + '/produtos/?bede_ofertas=1'; button.textContent = 'Ver ofertas →'; }
+    const offers = state.feed === 'ready' ? state.products.filter(p => p.available && model().getPromotion(p)) : [];
+    if (button) {
+      button.hidden = !STORE_OFFERS_READY;
+      button.style.display = STORE_OFFERS_READY ? '' : 'none';
+      if (STORE_OFFERS_READY) button.href = STORE + '/produtos/?bede_ofertas=1';
+      else button.removeAttribute('href');
+      button.textContent = 'Ver ofertas →';
+    }
     let status = $('homeOffersStatus');
     if (!status) {
       status = document.createElement('p'); status.id = 'homeOffersStatus'; status.className = 'home-catalog-status'; status.setAttribute('role', 'status');
       if (button && button.parentNode) button.parentNode.insertBefore(status, button);
     }
-    status.textContent = state.feed === 'loading' ? 'Consultando ofertas da loja…' : state.feed === 'error' ? 'Não foi possível consultar as ofertas agora. Você pode conferir diretamente na loja.' : state.products.some(p => model().getPromotion(p)) ? 'Confira a seleção de produtos com preço promocional.' : 'Nenhuma oferta no momento.';
+    status.textContent = state.feed === 'loading' ? 'Consultando ofertas da loja…' : state.feed === 'error' ? 'Não foi possível consultar as ofertas agora. Tente novamente em instantes.' : offers.length ? 'Confira produtos com preço promocional.' : 'Nenhuma oferta no momento.';
+    let directLinks = $('homeOfferProducts');
+    if (!directLinks && button && button.parentNode) {
+      directLinks = document.createElement('div'); directLinks.id = 'homeOfferProducts';
+      directLinks.style.flexDirection = 'column'; directLinks.style.gap = '12px';
+      button.parentNode.insertBefore(directLinks, button);
+    }
+    if (directLinks) {
+      directLinks.replaceChildren();
+      directLinks.hidden = STORE_OFFERS_READY || !offers.length;
+      directLinks.style.display = directLinks.hidden ? 'none' : 'flex';
+      if (!STORE_OFFERS_READY) offers.slice(0, 4).forEach(product => {
+        const link = document.createElement('a'); link.className = 'btn-nv dark';
+        link.href = product.url; link.textContent = product.name + ' →';
+        directLinks.appendChild(link);
+      });
+    }
   }
   function clearCatalogueWhileLoading() {
     state.feed = 'loading'; state.products = []; state.categories = []; state.validUntil = 0;
