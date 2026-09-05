@@ -6,9 +6,16 @@
   <title>Sobre a BEDÊ Stiletto | BEDÊ Stiletto</title>
   <link rel="icon" type="image/svg+xml" href="favicon-bd.svg?v=2026_bd_v12">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=2026_bd_v12">
-  <link rel="stylesheet" href="style.css?v=2026_v12">
+  <link rel="stylesheet" href="style.css?v=2026_09_05_home_ui">
   <style>
-    body { background: #fff; color: #000404; font-family: 'Montserrat', sans-serif; }
+    html, body { height: auto; min-height: 100%; overscroll-behavior-y: auto; }
+    body.institutional-page { overflow-x: hidden; overflow-y: auto; background: #fff; color: #000404; font-family: 'Montserrat', sans-serif; scrollbar-width: auto; -ms-overflow-style: auto; }
+    body.institutional-page::-webkit-scrollbar { display: block; width: 10px; }
+    body.institutional-page::-webkit-scrollbar-thumb { background: #b7bcc2; border: 2px solid #fff; border-radius: 8px; }
+    body.institutional-page.institutional-menu-open { overflow-y: hidden; }
+    body.institutional-page > footer.clean-footer { display: block; width: 100%; max-width: none; }
+    .institutional-page .inst-wa-btn, .institutional-page .inst-back-btn { max-width: 100%; text-align: center; }
+    .institutional-page .mob-drawer-close { min-width: 44px; min-height: 44px; }
     .inst-container { max-width: 800px; margin: 120px auto 40px; padding: 0 24px; min-height: 50vh; }
     .inst-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #737378; margin-bottom: 8px; display: block; }
     .inst-headline { font-size: 32px; font-weight: 400; letter-spacing: -0.5px; color: #000404; margin: 0 0 32px 0; }
@@ -25,22 +32,22 @@
     .inst-back-btn:hover { background: #e4e4e4; }
   </style>
 </head>
-<body>
+<body class="institutional-page">
   
   <!-- ── HEADER byNV (SOLID-LIGHT) ── -->
   <header class="site-header solid-light" id="siteHeader">
     <div class="header-inner">
       <div class="header-left">
-        <button class="btn-menu-mobile" id="mobileMenuBtn" onclick="toggleMobileMenu()" aria-label="Menu">
+        <button class="btn-menu-mobile" id="mobileMenuBtn" type="button" onclick="toggleMobileMenu()" aria-label="Abrir menu" aria-controls="institutionalMenu" aria-expanded="false">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
           </svg>
         </button>
-        <nav class="main-nav" id="mainNav">
+        <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
           <a class="nav-item" href="https://loja.usebede.com.br/produtos/">Calçados</a>
           <a class="nav-item" href="https://loja.usebede.com.br/produtos/?sort=date_desc">Novidades</a>
-          <a class="nav-item" href="https://loja.usebede.com.br/scarpin/">Scarpin</a>
-          <a class="nav-item" href="https://loja.usebede.com.br/bota/">Botas</a>
+          <a class="nav-item" href="https://loja.usebede.com.br/search/?q=Scarpin">Scarpin</a>
+          <a class="nav-item" href="https://loja.usebede.com.br/search/?q=Bota">Botas</a>
           <a class="nav-item" href="sobre.html">Sobre</a>
           <a class="nav-item" href="https://wa.me/5551996704954?text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20personalizado%20na%20BED%C3%8A%20Stiletto." target="_blank" rel="noopener">Atendimento</a>
         </nav>
@@ -53,6 +60,9 @@
       </div>
 
       <div class="header-right">
+        <a class="icon-btn" href="https://loja.usebede.com.br/account/login/" aria-label="Minha conta" title="Minha conta">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 22v-2a8 8 0 0 1 16 0v2"/></svg>
+        </a>
         <a class="icon-btn" href="https://loja.usebede.com.br/comprar/" title="Minha Sacola" aria-label="Sacola" id="cartBtn">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
@@ -73,13 +83,13 @@
   <div style="text-align:center;margin-bottom:28px;">
     <img src="assets/hero_fachada_loja_bede.jpg?v=2026_nova_fachada" alt="Nova Fachada da Boutique BEDÊ em Viamão" style="width:100%;max-height:480px;object-fit:cover;border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,0.06);" onerror="this.style.display='none'">
   </div>
-  <p>Fundada com o propósito de unir elegância atemporal, curadoria refinada e conforto absoluto, a <strong>BEDÊ Stiletto</strong> nasceu da dedicação em criar uma experiência única em calçados e bolsas femininas.</p>
+  <p>A <strong>BEDÊ Stiletto</strong> reúne uma curadoria de calçados e bolsas femininas com atendimento personalizado.</p>
   <p>Nossa boutique física está localizada no coração de Viamão/RS. Cada modelo é selecionado cuidadosamente para valorizar o estilo da mulher contemporânea em todas as ocasiões, desde o dia a dia até momentos de celebração.</p>
   <div style="background:#f8f8f8;padding:20px 24px;border-radius:6px;border-left:3px solid #000404;margin:24px 0;">
-    <p style="margin:0 0 6px 0;font-size:14px;color:#000404;"><strong>Boutique Física:</strong> Rua Cirurgião Vaz Ferreira, 457 · Centro · Viamão/RS</p>
-    <p style="margin:0;font-size:13px;color:#666;"><strong>Horário de Atendimento:</strong> Segunda à Sexta · 09h às 18h</p>
+    <p style="margin:0 0 6px 0;font-size:14px;color:#000404;"><strong>Boutique Física:</strong> <span data-store-address>Rua Cirurgião Vaz Ferreira, 457 · Centro · Viamão/RS</span></p>
+    <p style="margin:0;font-size:13px;color:#666;"><strong>Horário de Atendimento:</strong> <span data-store-hours data-empty-hours="Consulte nossos horários pelo WhatsApp.">Consulte nossos horários pelo WhatsApp.</span></p>
   </div>
-  <p>Priorizamos o design estruturado, palmilhas acolchoadas com tecnologia anatômica e couros nobres para que você se sinta confiante e confortável a cada passo.</p>
+  <p>Consulte os materiais, acabamentos e características de cada modelo na página do produto. Nossa equipe pode ajudar na escolha pelo WhatsApp.</p>
 
       <div>
         <a href="index.html" class="inst-back-btn">&larr; Voltar à Home</a>
@@ -89,12 +99,12 @@
 
   
   <footer class="clean-footer" style="margin-top: 80px; border-top: 1px solid #eaeaea; padding: 60px 24px 30px; background: #fafafa;">
-    <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 40px;">
       <div class="cf-col">
         <div class="cf-logo" style="margin-bottom: 16px;">
           <img src="assets/brand/logo_bede_preto.svg" alt="BEDÊ" style="height: 20px;">
         </div>
-        <p class="cf-desc" style="font-size: 13px; line-height: 1.6; color: #666; font-weight: 300;">Calçados e bolsas femininas com curadoria, design autoral e alto conforto.</p>
+        <p class="cf-desc" style="font-size: 13px; line-height: 1.6; color: #666; font-weight: 300;">Calçados e bolsas femininas com curadoria e atendimento personalizado.</p>
         <div class="cf-social-links" style="margin-top: 16px;">
           <a href="https://www.instagram.com/usebede.com.br/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#000404;font-weight:500;text-decoration:none;">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
@@ -117,16 +127,18 @@
       <div class="cf-col" style="display:flex;flex-direction:column;gap:10px;">
         <h4 style="font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #000404; margin-bottom: 8px;">Atendimento</h4>
         <a href="https://wa.me/5551996704954?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20BED%C3%8A." target="_blank" rel="noopener" style="font-weight:600;color:#000404;font-size:13px;text-decoration:none;">WhatsApp: (51) 99670-4954</a>
-        <p style="font-size:13px;color:#666;line-height:1.5;margin:0;font-weight:300;">Rua Cirurgião Vaz Ferreira, 457 · Centro · Viamão/RS</p>
-        <p style="font-size:13px;color:#666;line-height:1.5;margin:0;font-weight:300;">Segunda à Sexta · 09h às 18h</p>
+        <p data-store-address style="font-size:13px;color:#666;line-height:1.5;margin:0;font-weight:300;">Rua Cirurgião Vaz Ferreira, 457 · Centro · Viamão/RS</p>
+        <p data-store-hours hidden style="font-size:13px;color:#666;line-height:1.5;margin:0;font-weight:300;"></p>
       </div>
     </div>
 
     <div style="max-width:1200px; margin: 40px auto 0; padding-top: 20px; border-top: 1px solid #eaeaea; text-align: center;">
-      <p style="font-size:12px;color:#888;margin:0 0 6px 0;">Stiletto Bd Boutique Ltda · CNPJ 55.068.034/0001-00</p>
+      <p data-store-legal style="font-size:12px;color:#888;margin:0 0 6px 0;">Stiletto Bd Boutique Ltda · CNPJ 55.068.034/0001-00</p>
       <p style="font-size:12px;color:#888;margin:0;">© 2026 BEDÊ. Todos os direitos reservados.</p>
     </div>
   </footer>
 
+  <script src="config_loja.js?v=2026_09_05_institucional"></script>
+  <script src="institutional-ui.js?v=2026_09_05_institucional"></script>
 </body>
 </html>
