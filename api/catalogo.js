@@ -122,10 +122,10 @@ async function collectCatalogue(fetchImpl = fetch) {
 async function handler(req, res) {
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
   res.setHeader('X-Content-Type-Options', 'nosniff');
-  const origin = req.headers.origin;
-  if ([model.STORE, 'https://www.usebede.com.br', 'https://usebede.com.br'].includes(origin)) {
-    res.setHeader('Access-Control-Allow-Origin', origin); res.setHeader('Vary', 'Origin');
-  }
+  // The only cross-origin reader is the public store. The home uses /api/catalogo.
+  // Keep this header identical even when the CDN is warmed without an Origin.
+  // No wildcard or credentials; cache correctness does not depend on Vary support.
+  res.setHeader('Access-Control-Allow-Origin', model.STORE);
   if (req.method !== 'GET') { res.setHeader('Allow', 'GET'); res.statusCode = 405; res.end(JSON.stringify({ error: 'Method not allowed' })); return; }
   try {
     if (!inflight) inflight = collectCatalogue().finally(() => { inflight = null; });
