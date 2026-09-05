@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BEDÊ Stiletto — Boutique de Calçados Femininos | Viamão RS</title>
     <meta name="description" content="Calçados e bolsas femininas com curadoria, design e conforto. Boutique em Viamão/RS.">
   <!-- Favicon Oficial BD -->
@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=2026_bd_v12">
   <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2026_bd_v12">
   <link rel="shortcut icon" href="favicon.ico?v=2026_bd_v12">
-  <link rel="stylesheet" href="style.css?v=2026_v12">
+  <link rel="stylesheet" href="style.css?v=2026_09_05_home_ui">
 
   <!-- Open Graph (Instagram, Facebook, WhatsApp) -->
   <meta property="og:type" content="website">
@@ -50,13 +50,13 @@
 
       <!-- GRUPO ESQUERDA: MENU NAV (6 ITENS DIRETOS, SEM SUBMENU) -->
       <div class="header-left">
-        <button class="btn-menu-mobile" id="mobileMenuBtn" onclick="toggleMobileMenu()" aria-label="Menu">
+        <button class="btn-menu-mobile" id="mobileMenuBtn" onclick="toggleMobileMenu()" aria-label="Abrir menu" aria-controls="mobileDrawer" aria-expanded="false">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
           </svg>
         </button>
 
-        <nav class="main-nav" id="mainNav">
+        <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
           <a class="nav-item" href="https://loja.usebede.com.br/produtos/">Calçados</a>
           <a class="nav-item" href="https://loja.usebede.com.br/produtos/?sort=date_desc">Novidades</a>
           <a class="nav-item" href="https://loja.usebede.com.br/scarpin/">Scarpin</a>
@@ -80,9 +80,14 @@
         </a>
       </div>
 
-      <!-- GRUPO DIREITA: SACOLA (link direto para wBuy) -->
+      <!-- BUSCA, CONTA E SACOLA: SERVIÇOS NATIVOS DA NUVEMSHOP -->
       <div class="header-right">
-        <!-- SACOLA → DIRETO PARA CARRINHO DA LOJA -->
+        <button class="icon-btn home-search-trigger" id="homeSearchTrigger" type="button" aria-label="Buscar na loja" aria-controls="homeSearchPanel" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+        </button>
+        <a class="icon-btn home-account-link" data-store-account href="https://loja.usebede.com.br/account/login/" aria-label="Minha conta" title="Minha conta">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="7.5" r="3.5"/><path d="M4.5 21v-2a7.5 7.5 0 0 1 15 0v2"/></svg>
+        </a>
         <a class="icon-btn" href="https://loja.usebede.com.br/comprar/" title="Minha Sacola" aria-label="Sacola" id="cartBtn">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
@@ -93,11 +98,19 @@
       </div>
 
     </div>
+    <div class="home-search-panel" id="homeSearchPanel" hidden>
+      <form class="home-search-form" data-store-search action="https://loja.usebede.com.br/search/" method="get" role="search" aria-label="Buscar produtos na loja">
+        <label class="home-sr-only" for="homeSearchInput">O que você procura?</label>
+        <input id="homeSearchInput" name="q" type="search" placeholder="Busque por calçado, bolsa ou modelo" required autocomplete="off" enterkeyhint="search">
+        <button class="home-search-submit" type="submit">Buscar</button>
+        <button class="home-search-close" id="homeSearchClose" type="button" aria-label="Fechar busca">&times;</button>
+      </form>
+    </div>
   </header>
 
   <!-- ── MENU DRAWER MOBILE (SLIDE-IN LATERAL ESQUERDO) ── -->
-  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay" onclick="closeMobileMenu()"></div>
-  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Menu principal">
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay" onclick="closeMobileMenu()" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Menu principal" aria-hidden="true" inert>
     <div class="mob-drawer-header">
       <div class="mob-drawer-logo">
         <img src="assets/brand/logo_header_preto.svg" alt="BEDÊ Stiletto">
@@ -371,7 +384,7 @@
           <div class="concierge-vip">
             <img class="concierge-monogram" src="assets/brand/monograma-bd.svg?v=2026_bd_v12" alt="BEDÊ">
             <h2 class="concierge-title">Atendimento Boutique<br><span class="concierge-subtitle">Personal Shopper</span></h2>
-            <p class="concierge-desc">Consultoria exclusiva sobre numeração, acabamentos e entrega expressa pelo WhatsApp.</p>
+            <p class="concierge-desc">Precisa de ajuda para escolher? Converse com nossa equipe sobre numeração, detalhes do modelo e opções de entrega.</p>
             <a href="https://wa.me/5551996704954?text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20personalizado%20na%20BED%C3%8A%20Stiletto."
                target="_blank"
                rel="noopener"
@@ -384,7 +397,7 @@
             <div class="concierge-trust">
               <span>✓ Atendimento Humanizado</span>
               <span>✓ Consultoria de Numeração</span>
-              <span>✓ Troca Facilitada</span>
+              <a href="trocas.html">Conheça nossa política de trocas &rarr;</a>
             </div>
           </div>
         </div>
@@ -402,7 +415,7 @@
                      alt="BEDÊ"
                      onerror="this.style.display='none'">
               </div>
-              <p class="cf-desc">Calçados e bolsas femininas com curadoria, design autoral e alto conforto.</p>
+              <p class="cf-desc">Calçados e bolsas femininas selecionados pela BEDÊ. Atendimento próximo, na boutique e online.</p>
               <div class="cf-social-links">
                 <a href="https://www.instagram.com/usebede.com.br/" target="_blank" rel="noopener" class="cf-social-btn" aria-label="Instagram BEDÊ">
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -432,7 +445,6 @@
               <h4>Atendimento</h4>
               <a href="https://wa.me/5551996704954?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20BED%C3%8A." id="footerWa" target="_blank" rel="noopener" style="font-weight:600;color:var(--color-text);">WhatsApp: (51) 99670-4954</a>
               <p id="footerAddress"></p>
-              <p>Centro · Viamão / RS</p>
               <p id="footerHorario"></p>
             </div>
 
@@ -460,353 +472,10 @@
   </div><!-- /viewport-stage -->
 
 
-  <!-- ============================================================
-       TELA DE COLEÇÃO / CATÁLOGO (APP VIEW — SINGLE SCROLL CONTEXT)
-  ============================================================ -->
-  <div class="collection-view" id="collectionView" role="dialog" aria-label="Catálogo de produtos">
-    
-    <!-- 1. BARRA DE NAVEGAÇÃO SUPERIOR (FLUXO NORMAL) -->
-    <div class="coll-nav-bar">
-      <button class="app-back-btn" onclick="closeCollection()">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
-        Voltar à Home
-      </button>
-      <span class="coll-product-count" id="collProductCount">Carregando peças...</span>
-    </div>
-
-    <!-- 2. BANNER EDITORIAL CONTEXTUAL (FLUXO NORMAL — SAI DA TELA AO ROLAR) -->
-    <div class="collection-hero-banner" id="collHeroBanner">
-      <div class="coll-banner-img-wrap">
-        <img id="collBannerImg" src="assets/split_shoes.jpg?v=crop_v3" alt="Editorial BEDÊ Stiletto" loading="lazy">
-        <div class="coll-banner-shade"></div>
-      </div>
-      <div class="coll-banner-content">
-        <span class="coll-banner-eyebrow" id="collBannerEyebrow">Curadoria BEDÊ · Uso Real & Sofisticação</span>
-        <h2 class="collection-title" id="collectionTitle">Coleção Completa</h2>
-        <p class="coll-banner-desc" id="collBannerDesc">Palmilhas anatômicas de amortecimento contínuo com acabamentos em couros nobres e design atemporal.</p>
-      </div>
-    </div>
-
-    <!-- 3. BARRA STICKY CONDENSADA (ÚNICO ELEMENTO STICKY — AUTO-HIDE DIRECIONAL) -->
-    <div class="collection-sticky-bar" id="collStickyBar">
-      <div class="sticky-bar-top-row">
-        <!-- CHIPS DE CATEGORIA EM ROLAGEM HORIZONTAL -->
-        <div class="filter-chips" id="filterChips">
-          <!-- Preenchido por renderMenus() em runtime a partir de PRODUCTS -->
-        </div>
-
-        <!-- BOTÃO COMPACTO DE FILTROS (VISÍVEL NO ESTADO CONDENSADO) -->
-        <button class="btn-condensed-filters" id="btnCondensedFilters" onclick="openFiltersDrawer()" aria-label="Abrir filtros">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="4" y1="21" x2="4" y2="14"></line>
-            <line x1="4" y1="10" x2="4" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="12"></line>
-            <line x1="12" y1="8" x2="12" y2="3"></line>
-            <line x1="20" y1="21" x2="20" y2="16"></line>
-            <line x1="20" y1="12" x2="20" y2="3"></line>
-            <line x1="1" y1="14" x2="7" y2="14"></line>
-            <line x1="9" y1="8" x2="15" y2="8"></line>
-            <line x1="17" y1="16" x2="23" y2="16"></line>
-          </svg>
-          <span>Filtros</span>
-          <span class="active-filters-badge" id="activeFiltersBadge" style="display:none;">0</span>
-        </button>
-      </div>
-
-      <!-- BARRA DE FILTROS EXPANDIDA (ESTADO NORMAL <= 120px DE SCROLL) -->
-      <div class="collection-filters-bar" id="collFiltersBar">
-        <div class="filter-group">
-          <span class="filter-group-label">Numeração:</span>
-          <div class="filter-pills" id="filterSizes">
-            <button class="sz-filter-pill active" onclick="setFilterSize('ALL', this)">Todas</button>
-            <button class="sz-filter-pill" onclick="setFilterSize('34', this)">34</button>
-            <button class="sz-filter-pill" onclick="setFilterSize('35', this)">35</button>
-            <button class="sz-filter-pill" onclick="setFilterSize('36', this)">36</button>
-            <button class="sz-filter-pill" onclick="setFilterSize('37', this)">37</button>
-            <button class="sz-filter-pill" onclick="setFilterSize('38', this)">38</button>
-            <button class="sz-filter-pill" onclick="setFilterSize('39', this)">39</button>
-            <button class="sz-filter-pill" onclick="setFilterSize('40', this)">40</button>
-          </div>
-        </div>
-
-        <div class="filter-group">
-          <span class="filter-group-label">Tonalidade:</span>
-          <div class="filter-pills" id="filterColors">
-            <button class="col-filter-pill active" onclick="setFilterColor('ALL', this)">Todas</button>
-            <button class="col-filter-pill" onclick="setFilterColor('PRETO', this)">Preto</button>
-            <button class="col-filter-pill" onclick="setFilterColor('NUDE', this)">Nude</button>
-            <button class="col-filter-pill" onclick="setFilterColor('OFF', this)">Off-White</button>
-            <button class="col-filter-pill" onclick="setFilterColor('CARAMELO', this)">Caramelo</button>
-            <button class="col-filter-pill" onclick="setFilterColor('METALIZADO', this)">Metalizado</button>
-          </div>
-        </div>
-
-        <div class="filter-group">
-          <span class="filter-group-label">Faixa de Preço:</span>
-          <div class="filter-pills" id="filterPrices">
-            <button class="prc-filter-pill active" onclick="setFilterPrice('ALL', this)">Todos</button>
-            <button class="prc-filter-pill" onclick="setFilterPrice('ATE200', this)">Até R$&nbsp;200</button>
-            <button class="prc-filter-pill" onclick="setFilterPrice('200A350', this)">R$&nbsp;200 a 350</button>
-            <button class="prc-filter-pill" onclick="setFilterPrice('ACIMA350', this)">Acima de R$&nbsp;350</button>
-          </div>
-        </div>
-
-        <button class="btn-clear-filters" id="btnClearFilters" onclick="resetAllFilters()" style="display:none;">
-          <span>Limpar filtros</span>
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-        </button>
-      </div>
-    </div>
-
-    <!-- 4. GRADE DE PRODUTOS (SEM OVERFLOW ANINHADO — SCROLL NATURAL) -->
-    <div class="collection-grid-wrap">
-      <div class="collection-grid" id="collectionGrid"></div>
-    </div>
-  </div>
-
-  <!-- ============================================================
-       DRAWER DE FILTROS (MODAL ACESSÍVEL PARA ESTADO CONDENSADO & MOBILE)
-  ============================================================ -->
-  <div class="filters-drawer-overlay" id="filtersDrawerOverlay" onclick="closeFiltersDrawer()" aria-hidden="true"></div>
-  <aside class="filters-drawer" id="filtersDrawer" role="dialog" aria-modal="true" aria-label="Filtros da coleção">
-    <div class="filters-drawer-head">
-      <div class="filters-drawer-title">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="4" y1="21" x2="4" y2="14"></line>
-          <line x1="4" y1="10" x2="4" y2="3"></line>
-          <line x1="12" y1="21" x2="12" y2="12"></line>
-          <line x1="12" y1="8" x2="12" y2="3"></line>
-          <line x1="20" y1="21" x2="20" y2="16"></line>
-          <line x1="20" y1="12" x2="20" y2="3"></line>
-          <line x1="1" y1="14" x2="7" y2="14"></line>
-          <line x1="9" y1="8" x2="15" y2="8"></line>
-          <line x1="17" y1="16" x2="23" y2="16"></line>
-        </svg>
-        <h3>Filtros de Coleção</h3>
-      </div>
-      <button class="pm-close" onclick="closeFiltersDrawer()" aria-label="Fechar filtros">&times;</button>
-    </div>
-
-    <div class="filters-drawer-body">
-      <!-- Grupo Numeração -->
-      <div class="drawer-filter-section">
-        <h4>Numeração</h4>
-        <div class="drawer-filter-pills" id="drawerSizes">
-          <button class="sz-filter-pill active" onclick="setFilterSize('ALL', this)">Todas</button>
-          <button class="sz-filter-pill" onclick="setFilterSize('34', this)">34</button>
-          <button class="sz-filter-pill" onclick="setFilterSize('35', this)">35</button>
-          <button class="sz-filter-pill" onclick="setFilterSize('36', this)">36</button>
-          <button class="sz-filter-pill" onclick="setFilterSize('37', this)">37</button>
-          <button class="sz-filter-pill" onclick="setFilterSize('38', this)">38</button>
-          <button class="sz-filter-pill" onclick="setFilterSize('39', this)">39</button>
-          <button class="sz-filter-pill" onclick="setFilterSize('40', this)">40</button>
-        </div>
-      </div>
-
-      <!-- Grupo Tonalidade -->
-      <div class="drawer-filter-section">
-        <h4>Tonalidade</h4>
-        <div class="drawer-filter-pills" id="drawerColors">
-          <button class="col-filter-pill active" onclick="setFilterColor('ALL', this)">Todas</button>
-          <button class="col-filter-pill" onclick="setFilterColor('PRETO', this)">Preto</button>
-          <button class="col-filter-pill" onclick="setFilterColor('NUDE', this)">Nude</button>
-          <button class="col-filter-pill" onclick="setFilterColor('OFF', this)">Off-White</button>
-          <button class="col-filter-pill" onclick="setFilterColor('CARAMELO', this)">Caramelo</button>
-          <button class="col-filter-pill" onclick="setFilterColor('METALIZADO', this)">Metalizado</button>
-        </div>
-      </div>
-
-      <!-- Grupo Preço -->
-      <div class="drawer-filter-section">
-        <h4>Faixa de Preço</h4>
-        <div class="drawer-filter-pills" id="drawerPrices">
-          <button class="prc-filter-pill active" onclick="setFilterPrice('ALL', this)">Todos</button>
-          <button class="prc-filter-pill" onclick="setFilterPrice('ATE200', this)">Até R$&nbsp;200</button>
-          <button class="prc-filter-pill" onclick="setFilterPrice('200A350', this)">R$&nbsp;200 a 350</button>
-          <button class="prc-filter-pill" onclick="setFilterPrice('ACIMA350', this)">Acima de R$&nbsp;350</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="filters-drawer-foot">
-      <button class="btn-clear-drawer" onclick="resetAllFilters()">Limpar Tudo</button>
-      <button class="btn-apply-drawer" onclick="closeFiltersDrawer()">Ver Resultados</button>
-    </div>
-  </aside>
-
-
-  <!-- ============================================================
-       MODAL DE PRODUTO (APP NATIVO)
-  ============================================================ -->
-  <div class="product-modal" id="productModal" role="dialog" aria-label="Detalhes do produto">
-    <div class="pm-top">
-      <button class="app-back-btn" onclick="closeProduct()">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
-        Voltar
-      </button>
-      <button class="pm-close" onclick="closeProduct()" aria-label="Fechar">&times;</button>
-    </div>
-    <div class="pm-grid">
-      <div class="pm-photo-wrap">
-        <div class="pm-photo">
-          <img src="" id="pmImg" alt="">
-        </div>
-        <div class="pm-thumbnails" id="pmThumbnails"></div>
-      </div>
-      <div class="pm-info">
-        <div class="pm-header-meta">
-          <span class="pm-cat" id="pmCat"></span>
-          <div class="pm-rating-badge" id="pmRatingBadge" style="display:none;"></div>
-        </div>
-        
-        <h2 class="pm-name" id="pmName"></h2>
-        
-        <div class="pm-price-block">
-          <div class="pm-price-row">
-            <span class="pm-price" id="pmPrice"></span>
-            <span class="pm-old" id="pmOld"></span>
-          </div>
-          <span class="pm-pix" id="pmPix"></span>
-          <span class="pm-inst" id="pmInst"></span>
-        </div>
-
-        <div class="pm-sizes-label">
-          <span>Cor</span>
-        </div>
-        <div class="pm-colors" id="pmColors"></div>
-
-        <div class="pm-sizes-label" style="margin-top:20px;">
-          <span>Numeração Disponível</span>
-          <a class="pm-guide-link" href="guia-medidas.html" onclick="openSizeGuide();return false;">Guia de medidas</a>
-        </div>
-        <div class="pm-sizes" id="pmSizes"></div>
-
-        <div class="pm-cta-group" style="display:flex;flex-direction:column;gap:10px;margin-top:20px;">
-          <a class="btn-solid" id="pmAddBtn" style="display:flex;justify-content:center;align-items:center;text-decoration:none;width:100%;height:48px;font-weight:600;" target="_blank">Comprar agora</a>
-          <button class="btn-outline-pill" id="pmSelectBtn" style="width:100%;height:44px;font-weight:500;display:flex;justify-content:center;align-items:center;gap:8px;" onclick="addCurrentToSelection()">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-            Adicionar à minha seleção
-          </button>
-          <button class="btn-whatsapp-editorial" id="pmWaDirectBtn" style="width:100%;height:44px;display:flex;justify-content:center;align-items:center;gap:8px;" onclick="buyViaWhatsAppDirect()">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.848.815 2.796.815 3.182 0 5.769-2.587 5.77-5.766.001-3.182-2.585-5.802-5.77-5.802zm0 10.428c-.854 0-1.656-.244-2.361-.689l-.169-.107-1.758.461.469-1.713-.117-.187c-.495-.788-.756-1.579-.755-2.427.001-2.493 2.029-4.52 4.522-4.52 2.492 0 4.521 2.027 4.522 4.521-.001 2.494-2.03 4.661-4.523 4.661zm3.178-3.468c-.174-.087-1.03-.509-1.189-.567-.159-.058-.275-.087-.391.087-.116.174-.45 0.567-.552.683-.102.116-.203.13-.377.043-.174-.087-.736-.271-1.402-.865-.518-.462-.868-1.033-.97-1.207-.101-.174-.011-.268.077-.354.079-.078.174-.203.261-.304.087-.101.116-.174.174-.29.058-.116.029-.217-.015-.304-.043-.087-.391-.942-.536-1.291-.141-.339-.284-.293-.391-.299-.101-.006-.217-.007-.333-.007s-.304.043-.464.217c-.159.174-.609.594-.609 1.45 0 .855.623 1.682.71 1.798.087.116 1.226 1.872 2.97 2.624.415.179.739.286.992.367.417.133.796.114 1.096.069.334-.05 1.03-.421 1.175-.827.145-.406.145-.754.101-.827-.044-.073-.16-.116-.334-.203z"/></svg>
-            Falar com consultora
-          </button>
-        </div>
-
-        <div class="pm-editorial-perks">
-          <div class="pm-perk-item">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Palmilha Anatômica Acolchoada de Alta Densidade</span>
-          </div>
-          <div class="pm-perk-item">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Couro Legítimo & Forração Sedosa que Não Aperta</span>
-          </div>
-          <div class="pm-perk-item">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            <span id="pmPerkTroca"></span>
-          </div>
-        </div>
-
-        <p class="pm-desc" id="pmDesc"></p>
-
-        <!-- SEÇÃO DE AVALIAÇÕES DE CLIENTES (DINÂMICA VIA AVALIACOES.JS) -->
-        <div class="pm-reviews-section" id="pmReviewsSection" style="display:none;">
-          <div class="pm-reviews-head">
-            <div class="pm-rev-title-wrap">
-              <h3 class="pm-rev-title">Avaliações & Experiência de Uso</h3>
-              <span class="pm-rev-sub">Comentários de clientes da boutique</span>
-            </div>
-            <div class="pm-rev-stat-badge" id="pmRevStatBadge"></div>
-          </div>
-          <div class="pm-reviews-list" id="pmReviewsList"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-    </div>
-  </div>
-
-
-  <!-- ============================================================
-       NOVA SACOLA FLUTUANTE (MODERNA & ARREDONDADA) -> AGORA "MINHA SELEÇÃO"
-  ============================================================ -->
-  <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
-  <div class="cart-drawer" id="cartDrawer" role="dialog" aria-label="Sua seleção">
-    <div class="cart-head">
-      <div class="cart-head-title">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
-          <line x1="3" y1="6" x2="21" y2="6"/>
-          <path d="M16 10a4 4 0 0 1-8 0"/>
-        </svg>
-        <h3>Minha seleção (<span id="cartCountHead">0</span>)</h3>
-      </div>
-      <button class="pm-close" onclick="closeCart()" aria-label="Fechar">&times;</button>
-    </div>
-    
-    <div class="cart-main-content">
-      <div class="cart-body" id="cartBody"></div>
-
-      <div class="cart-foot">
-        <div class="cart-actions">
-          <button class="btn-solid-pill" id="cartCheckoutLoja">
-            Finalizar compra na loja &rarr;
-          </button>
-          <div class="cart-dispatch-notice" id="cartDisclaimer" style="display:none;font-size:11px;color:#737378;text-align:center;line-height:1.4;margin-top:2px;font-family:'Montserrat',sans-serif;"></div>
-          <button class="btn-outline-pill" id="cartCheckoutWa">
-            <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24" style="margin-right:6px;vertical-align:text-bottom;">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.662-2.06-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a5.416 5.416 0 0 0-.571-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.575-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.052 0C5.495 0 .16 5.335.158 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
-            </svg>
-            Falar com consultora no WhatsApp
-          </button>
-          <button class="btn-outline-pill" onclick="closeCart()">Continuar navegando</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- ============================================================
-       GUIA DE MEDIDAS
-  ============================================================ -->
-  <div class="guide-overlay" id="guideOverlay" onclick="closeSizeGuide()">
-    <div class="guide-box" onclick="event.stopPropagation()" style="max-width:480px;">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
-        <h4>Guia de Numeração</h4>
-        <button class="pm-close" onclick="closeSizeGuide()">&times;</button>
-      </div>
-      <p style="font-size:13.5px;line-height:1.6;color:#222;margin-bottom:16px;">A modelagem varia conforme o modelo e o fabricante. Para acertar o número de primeira, fale com nossa consultora no WhatsApp — confirmamos a modelagem do par exato que você escolheu.</p>
-      <a href="https://wa.me/5551996704954?text=Ol%C3%A1!%20Gostaria%20de%20ajuda%20para%20confirmar%20meu%20tamanho%20exato." target="_blank" rel="noopener" class="btn-solid-pill" style="display:inline-flex;align-items:center;justify-content:center;width:100%;padding:12px;font-size:12px;text-decoration:none;text-align:center;">
-        Consultar Tamanho no WhatsApp
-      </a>
-    </div>
-  </div>
-
-  <!-- ============================================================
-       MODAL INSTITUCIONAL (POLÍTICAS, TERMOS, SOBRE)
-  ============================================================ -->
-  <div class="guide-overlay" id="instOverlay" onclick="closeInstitutionalModal()">
-    <div class="guide-box" onclick="event.stopPropagation()" style="max-width:580px;max-height:85vh;overflow-y:auto;">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;border-bottom:1px solid var(--color-border);padding-bottom:12px;">
-        <h4 id="instTitle" style="margin:0;">Institucional</h4>
-        <button class="pm-close" onclick="closeInstitutionalModal()">&times;</button>
-      </div>
-      <div id="instBody" style="font-size:13px;line-height:22px;color:var(--color-muted);font-weight:300;"></div>
-      <div style="margin-top:24px;border-top:1px solid var(--color-border);padding-top:16px;display:flex;justify-content:flex-end;">
-        <button class="btn-solid-pill" onclick="closeInstitutionalModal()" style="padding:10px 22px;font-size:13px;">&larr; Voltar ao Catálogo</button>
-      </div>
-    </div>
-  </div>
-
   <script src="links_loja.js?v=2026_nuvem"></script>
   <script src="config_loja.js?v=2026_v9"></script>
-  <script src="avaliacoes.js?v=2026_v9"></script>
-  <script src="products.js?v=2026_v9"></script>
-  <script src="app.js?v=2026_09_04_nav_direta"></script>
+  <script src="catalog-model.js?v=2026_09_05_home_ui"></script>
+  <script src="home-app.js?v=2026_09_05_home_ui"></script>
+  <script src="home-ui.js?v=2026_09_05_home_ui"></script>
 </body>
 </html>
