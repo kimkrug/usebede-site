@@ -3,7 +3,7 @@
   'use strict';
   const STORE = 'https://loja.usebede.com.br';
   // Enable only after the native-store offers enhancement is active and verified.
-  const STORE_OFFERS_READY = false;
+  const STORE_OFFERS_READY = true;
   const CATALOGUE_REFRESH_MS = 120000, CATALOGUE_MAX_AGE_MS = 150000, CATALOGUE_MIN_RETRY_MS = 20000;
   const $ = id => document.getElementById(id);
   const state = { slide: 0, frame: 0, busy: false, menu: false, products: [], categories: [],
