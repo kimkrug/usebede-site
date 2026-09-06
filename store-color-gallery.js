@@ -85,6 +85,28 @@
       {id:'1587975292',sku:'3078-36',image:'1267018094',options:['36',null,null]},
       {id:'1587975295',sku:'3078-35',image:'1267018094',options:['35',null,null]}
     ]},
+    // Montaria Couro: native save confirmed; five size bindings, three originals retained.
+    '364500386':{mode:'single',approved:['1267024727'],retired:['1263358382','1263332615','1263288610'],bindings:[
+      {id:'1587975366',sku:'3084-38',image:'1267024727',options:['38',null,null]},
+      {id:'1587975369',sku:'3084-37',image:'1267024727',options:['37',null,null]},
+      {id:'1587975371',sku:'3084-36',image:'1267024727',options:['36',null,null]},
+      {id:'1587975374',sku:'3084-35',image:'1267024727',options:['35',null,null]},
+      {id:'1587975376',sku:'3084-34',image:'1267024727',options:['34',null,null]}
+    ]},
+    // Lari Veneto: four size-only bindings and all nine source photos retained.
+    '364500239':{mode:'single',approved:['1267027196'],retired:['1263356157','1263356160','1263356166','1263334427','1263334428','1263334434','1263281446','1263281469','1263281484'],bindings:[
+      {id:'1587974724',sku:'3036-38',image:'1267027196',options:['38',null,null]},
+      {id:'1587974727',sku:'3036-37',image:'1267027196',options:['37',null,null]},
+      {id:'1587974734',sku:'3036-36',image:'1267027196',options:['36',null,null]},
+      {id:'1587974737',sku:'3036-35',image:'1267027196',options:['35',null,null]}
+    ]},
+    // Coimbra Couro: four size-only bindings; all eight source photos remain reversible.
+    '364499989':{mode:'single',approved:['1267028908'],retired:['1263652612','1263652639','1263354328','1263354332','1263334816','1263334819','1263274674','1263274693'],bindings:[
+      {id:'1587974150',sku:'3018-35',image:'1267028908',options:['35',null,null]},
+      {id:'1587974155',sku:'3018-37',image:'1267028908',options:['37',null,null]},
+      {id:'1587974159',sku:'3018-36',image:'1267028908',options:['36',null,null]},
+      {id:'1587974162',sku:'3018-34',image:'1267028908',options:['34',null,null]}
+    ]},
     // Montaria Lia: native Cor=Preto preserved, with six exact post-save bindings.
     '364501366':{axis:1,colors:{Preto:['1267015050']},retired:['1263369345','1263369374','1263284379','1263284395'],bindings:[
       {id:'1587980094',sku:'3320-34-PRETO',image:'1267015050',options:['34','Preto',null]},

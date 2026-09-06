@@ -50,7 +50,10 @@
   }
   function resolveCardPreview(data,evidence={}){
     const unknown={status:'unknown',sizes:[],color:null,message:'Consultar tamanhos',note:'Veja as opções no produto.'};
-    if(!data||data.status==='loading')return{...unknown,status:'loading',message:'Consultando tamanhos…',note:''};
+    if(!data||data.status==='idle')return{...unknown,status:'idle',message:'Prévia de tamanhos',note:'Disponível ao visualizar o produto.'};
+    if(data.status==='queued')return{...unknown,status:'queued',message:'Aguardando consulta…',note:''};
+    if(data.status==='loading')return{...unknown,status:'loading',message:data.retrying?'Consultando novamente…':'Consultando tamanhos…',note:''};
+    if(data.status==='error')return{...unknown,status:'error',reason:data.reason||'unknown',message:data.reason==='structure'?'Não foi possível confirmar os tamanhos':'Não foi possível consultar agora',note:data.retryPending?'Nova tentativa em instantes.':'Veja as opções no produto.'};
     if(data.status==='not-sized')return{...unknown,status:'not-sized',message:'Consultar opções',note:''};
     if(data.status!=='known'||!Array.isArray(data.colors)||!Array.isArray(data.sizes))return unknown;
     let chosen=null;
@@ -68,7 +71,10 @@
       // A reused image ID stays ambiguous even when its CDN URLs differ.
       const colors=ids.length===1?[...new Set(bindings.filter(b=>b.id===ids[0]).flatMap(b=>b.colors))]:[];
       if(ids.length===1&&colors.length===1&&(!evidence.imageId||ids[0]===String(evidence.imageId)))chosen=data.colors.find(c=>c.name===colors[0]);
-      if(!chosen)return{...unknown,message:'Consultar tamanhos por cor',note:'Várias cores neste produto.'};
+      if(!chosen){
+        if(data.colors.some(c=>!c||typeof c.name!=='string'||!c.name||!Array.isArray(c.sizes)||c.sizes.some(s=>typeof s!=='string'||!s))||new Set(data.colors.map(c=>c.name)).size!==data.colors.length)return unknown;
+        return{...unknown,status:'by-color',message:'Tamanhos por cor',groups:data.colors.map(c=>({name:c.name,sizes:[...c.sizes].sort(compareSizes)})),multipleOptions:Boolean(data.multipleOptions),note:data.multipleOptions?'Confirme a combinação no produto.':'Prévia por cor · confira no produto.'};
+      }
     }
     const sizes=chosen?chosen.sizes:data.sizes;
     if(!Array.isArray(sizes))return unknown;
@@ -182,6 +188,7 @@
     .bede-card-ready:focus-within .bede-card-overlay{opacity:1;transform:none}
     .bede-card-preview{display:block;min-height:0;max-height:76px;overflow:hidden;margin:0;padding:0;color:#000;text-align:center;font:400 11px/1.35 Montserrat,sans-serif;overflow-wrap:anywhere}
     .bede-card-preview span{display:block}.bede-card-preview-label{font-size:10px}.bede-card-preview-sizes{font-weight:600;font-size:12px;line-height:1.4}.bede-card-preview-note{font-size:9px;line-height:1.3}
+    .bede-card-preview-color{font-size:10px;line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .bede-card-ready a:focus-visible{outline:2px solid #000;outline-offset:3px}
     .bede-card-ready .bede-card-image-link:focus-visible{box-shadow:0 0 0 3px #fff;outline:2px solid #000;outline-offset:3px}
     @media(hover:hover) and (pointer:fine){.bede-card-ready:hover .bede-card-overlay{opacity:1;transform:none}}
@@ -252,8 +259,8 @@
     const note=document.createElement('small');note.textContent=`Válido para ${regionText}, em PAC ou Jadlog Econômico. Confirme a elegibilidade pelo CEP e pelo total após descontos no checkout.`;box.appendChild(note);
   }
   // The published native menu is the only type navigation. No duplicate bar.
-  const cards=new Map(),previewCache=new Map(),queued=new Set(),pending=[],controllers=new Set();
-  const PREVIEW_TTL=60000,MAX_READS_PER_MINUTE=48;
+  const cards=new Map(),previewCache=new Map(),previewFailures=new Map(),queued=new Set(),pending=[],controllers=new Set();
+  const PREVIEW_TTL=60000,PREVIEW_RETRY_DELAY=10000,MAX_READS_PER_MINUTE=48;
   let activeReads=0,previewTimer=null,previewTimerAt=0,budgetStart=Date.now(),readCount=0,generation=0,pageActive=true;
   function productURL(value){
     try{const url=new URL(value,STORE);return url.origin===STORE&&!url.username&&!url.password&&!url.search&&!url.hash&&/^\/produtos\/[^/]+\/$/.test(url.pathname)?url.href:'';}catch(_){return'';}
@@ -282,19 +289,27 @@
     const view=presentation.resolveCardPreview(data,evidence),signature=JSON.stringify(view);
     if(record.signature===signature)return;
     record.signature=signature;const area=record.preview;area.replaceChildren();
+    area.setAttribute('data-bede-preview-state',view.status);
+    area.setAttribute('data-bede-preview-reason',view.reason||'');
     const line=(text,className)=>{const span=document.createElement('span');span.className=className;span.textContent=text;area.appendChild(span);};
     if(view.color)line('Cor: '+view.color,'bede-card-preview-label');
     line(view.message,'bede-card-preview-label');
     if(view.sizes.length)line(view.sizes.join(' · '),'bede-card-preview-sizes');
-    if(view.note)line(view.note,'bede-card-preview-note');
+    const grouped=Array.isArray(view.groups)?view.groups:[],visibleGroups=grouped.slice(0,2);
+    const colorLines=visibleGroups.map(c=>c.name+': '+(c.sizes.length?c.sizes.join(' · '):'Sem estoque confirmado'));
+    colorLines.forEach(text=>line(text,'bede-card-preview-color'));
+    const otherColors=grouped.length-2;
+    const note=otherColors>0?'+'+otherColors+(otherColors===1?' cor':' cores')+' no produto.'+(view.multipleOptions?' Confirme a combinação.':''):view.note;
+    if(note)line(note,'bede-card-preview-note');
     // The visual overlay is not a second control. Its native parent link stays
     // the only CTA; its accessible name carries the same availability caveat.
-    record.imageLink.setAttribute('aria-label',[record.name,view.color?'Cor: '+view.color:'',view.message,view.sizes.join(', '),view.note,'Ver produto'].filter(Boolean).join('. '));
+    record.imageLink.setAttribute('aria-label',[record.name,view.color?'Cor: '+view.color:'',view.message,view.sizes.join(', '),...colorLines,note,'Ver produto'].filter(Boolean).join('. '));
   }
   function applyPreview(url,data){for(const record of cards.values())if(record.url===url)renderPreview(record,data);}
   function schedulePreviews(delay=30000){
     if(!pageActive||document.hidden||!cards.size)return;
     const remaining=[...previewCache.values()].map(c=>c.until-Date.now()).filter(ms=>ms>0);
+    remaining.push(...[...previewFailures.values()].filter(f=>f.retryAt!==null).map(f=>f.retryAt-Date.now()).filter(ms=>ms>0));
     if(remaining.length)delay=Math.min(delay,...remaining);
     const at=Date.now()+delay;
     // Unrelated lazy-image mutations must not postpone the stock expiry forever.
@@ -306,34 +321,61 @@
     if(!pageActive||document.hidden||!record.visible)return;
     const cached=previewCache.get(record.url);
     if(cached&&cached.until>Date.now()){renderPreview(record,cached.data);return;}
-    renderPreview(record,{status:'loading'});
-    if(!queued.has(record.url)){queued.add(record.url);pending.push({url:record.url,id:record.id});}
+    const failure=previewFailures.get(record.url);
+    if(failure){
+      renderPreview(record,failure.data);
+      if(failure.retryAt===null||Date.now()<failure.retryAt||!retryVisible(record)){schedulePreviews();return;}
+    }
+    if(queued.has(record.url)){renderPreview(record,{status:pending.some(j=>j.url===record.url)?'queued':'loading',retrying:Boolean(failure)});return;}
+    renderPreview(record,{status:'queued'});
+    queued.add(record.url);pending.push({url:record.url,id:record.id,retry:Boolean(failure)});
     pumpPreviews();
+  }
+  function retryVisible(record){
+    if(!pageActive||document.hidden||!record.visible||!document.body.contains(record.card)||typeof record.card.getBoundingClientRect!=='function')return false;
+    const rect=record.card.getBoundingClientRect();
+    return rect.width>0&&rect.height>0&&rect.bottom>0&&rect.right>0&&rect.top<window.innerHeight&&rect.left<window.innerWidth;
   }
   function refreshPreviews(){
     for(const [card,record] of cards){
       if(!document.body.contains(card)){cards.delete(card);if(cardObserver)cardObserver.unobserve(card);continue;}
       const cached=previewCache.get(record.url);
-      if(!cached||cached.until<=Date.now())renderPreview(record,{status:'unknown'});
+      if(!cached||cached.until<=Date.now())renderPreview(record,previewFailures.get(record.url)?.data||{status:'idle'});
       if(record.visible)requestPreview(record);
     }
+    for(const url of previewFailures.keys())if(![...cards.values()].some(r=>r.url===url))previewFailures.delete(url);
     schedulePreviews();
   }
   async function readPreview(job){
     const epoch=generation,controller=new AbortController();controllers.add(controller);activeReads++;
-    const timeout=window.setTimeout(()=>controller.abort(),8000);
-    let data={status:'unknown'};
+    let timedOut=false;
+    const timeout=window.setTimeout(()=>{timedOut=true;controller.abort();},8000);
+    let data={status:'error',reason:'network'},retryable=false;
+    applyPreview(job.url,{status:'loading',retrying:job.retry});
     try{
       const response=await fetch(job.url,{method:'GET',credentials:'omit',cache:'no-store',redirect:'error',signal:controller.signal});
-      if(!response.ok||!(response.headers.get('content-type')||'').includes('text/html'))throw new Error('Product unavailable');
-      const html=await response.text();
-      data=presentation.parseProductHTML(html,job.id);
-    }catch(_){/* Failure is an explicit unknown preview, never invented stock. */}
+      if(!response.ok){data={status:'error',reason:'http'};retryable=response.status===429||response.status>=500;}
+      else if(!(response.headers.get('content-type')||'').includes('text/html'))data={status:'error',reason:'structure'};
+      else{
+        const html=await response.text();
+        try{data=presentation.parseProductHTML(html,job.id);if(!['known','not-sized'].includes(data.status))data={status:'error',reason:'structure'};}
+        catch(_){data={status:'error',reason:'structure'};}
+      }
+    }catch(_){data={status:'error',reason:timedOut?'timeout':'network'};retryable=true;}
     finally{
       window.clearTimeout(timeout);controllers.delete(controller);activeReads--;if(epoch===generation)queued.delete(job.url);
       if(epoch===generation&&pageActive&&!document.hidden){
-        previewCache.delete(job.url);previewCache.set(job.url,{data,until:Date.now()+PREVIEW_TTL});
-        while(previewCache.size>96)previewCache.delete(previewCache.keys().next().value);
+        previewCache.delete(job.url);
+        if(data.status==='error'){
+          const retryPending=retryable&&!job.retry;data={...data,retryPending};
+          // At most one additional attempt per consecutive failure episode.
+          // Structural failures and the second transient failure stay explicit,
+          // with no recurring request loop. Hiding/leaving clears all previews.
+          previewFailures.set(job.url,{data,retryAt:retryPending?Date.now()+PREVIEW_RETRY_DELAY:null});
+        }else{
+          previewFailures.delete(job.url);previewCache.set(job.url,{data,until:Date.now()+PREVIEW_TTL});
+          while(previewCache.size>96)previewCache.delete(previewCache.keys().next().value);
+        }
         applyPreview(job.url,data);
       }
       pumpPreviews();schedulePreviews();
@@ -345,6 +387,7 @@
     while(activeReads<3&&pending.length&&readCount<MAX_READS_PER_MINUTE){
       const job=pending.shift();
       if(![...cards.values()].some(r=>r.url===job.url&&r.visible&&document.body.contains(r.card))){queued.delete(job.url);continue;}
+      if(job.retry&&![...cards.values()].some(r=>r.url===job.url&&retryVisible(r))){queued.delete(job.url);continue;}
       readCount++;readPreview(job);
     }
     if(pending.length&&readCount>=MAX_READS_PER_MINUTE)schedulePreviews(Math.max(1000,60000-(Date.now()-budgetStart)));
@@ -370,8 +413,8 @@
       const title=document.createElement('span');title.className='bede-card-overlay-name';title.textContent=name;overlay.appendChild(title);
       const preview=document.createElement('span');preview.className='bede-card-preview';overlay.appendChild(preview);
       const cta=document.createElement('span');cta.className='bede-card-overlay-cta';cta.textContent='Ver produto';overlay.appendChild(cta);imageLink.appendChild(overlay);imageLink.classList.add('bede-card-image-link');
-      const record={card,url,name,imageLink,id:card.getAttribute('data-product-id')||null,preview,visible:!cardObserver&&cards.size<24,signature:''};cards.set(card,record);card.classList.add('bede-card-ready');renderPreview(record,{status:'loading'});
-      if(cardObserver)cardObserver.observe(card);else if(cards.size<=24&&!card.closest('[hidden]'))requestPreview(record);else renderPreview(record,{status:'unknown'});
+      const record={card,url,name,imageLink,id:card.getAttribute('data-product-id')||null,preview,visible:!cardObserver&&cards.size<24,signature:''};cards.set(card,record);card.classList.add('bede-card-ready');renderPreview(record,{status:'idle'});
+      if(cardObserver)cardObserver.observe(card);else if(cards.size<=24&&!card.closest('[hidden]'))requestPreview(record);
       card.addEventListener('focusin',()=>{record.visible=true;requestPreview(record);});
       card.addEventListener('mouseenter',()=>{record.visible=true;requestPreview(record);},{passive:true});
       imageLink.addEventListener('load',()=>{const cached=previewCache.get(url);if(cached&&cached.until>Date.now())renderPreview(record,cached.data);},true);
@@ -379,10 +422,10 @@
     schedulePreviews();
   }
   function pausePreviews(){
-    generation++;window.clearTimeout(previewTimer);previewTimer=null;previewTimerAt=0;pending.length=0;queued.clear();previewCache.clear();
+    generation++;window.clearTimeout(previewTimer);previewTimer=null;previewTimerAt=0;pending.length=0;queued.clear();previewCache.clear();previewFailures.clear();
     controllers.forEach(controller=>controller.abort());
     // Clear stale availability before BFCache restore or returning to the tab.
-    for(const record of cards.values())renderPreview(record,{status:'unknown'});
+    for(const record of cards.values())renderPreview(record,{status:'idle'});
   }
   function isOffersRoute() { return new URL(location.href).searchParams.get('bede_ofertas')==='1' && /^\/produtos\/?$/.test(location.pathname); }
   function scheduleOffers(delay) {
