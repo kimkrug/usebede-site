@@ -140,6 +140,15 @@
       {id:'1587980118',sku:'3320-38-PRETO',image:'1267015050',options:['38','Preto',null]},
       {id:'1587980121',sku:'3320-39-PRETO',image:'1267015050',options:['39','Preto',null]}
     ]},
+    // Flavia: six post-save size bindings; all five native originals retained.
+    '364500961':{mode:'single',approved:['1267053460'],retired:['1263317052','1263317073','1263317080','1263317091','1263317122'],bindings:[
+      {id:'1587978196',sku:'3202-38',image:'1267053460',options:['38',null,null]},
+      {id:'1587978200',sku:'3202-39',image:'1267053460',options:['39',null,null]},
+      {id:'1587978202',sku:'3202-37',image:'1267053460',options:['37',null,null]},
+      {id:'1587978205',sku:'3202-36',image:'1267053460',options:['36',null,null]},
+      {id:'1587978207',sku:'3202-35',image:'1267053460',options:['35',null,null]},
+      {id:'1587978209',sku:'3202-34',image:'1267053460',options:['34',null,null]}
+    ]},
     // Sofi: six native size-only bindings; no artificial color axis.
     '364500789':{mode:'single',approved:['1267016141'],retired:['1263321027','1263321056','1263321064','1263321099'],bindings:[
       {id:'1587977407',sku:'3177-34',image:'1267016141',options:['34',null,null]},

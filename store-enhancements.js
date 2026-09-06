@@ -189,6 +189,10 @@
     .bede-card-preview{display:block;flex:0 0 auto;min-height:0;max-height:none;overflow:visible;margin:0;padding:0;color:#000;text-align:center;font:400 11px/1.35 Montserrat,sans-serif;white-space:normal;overflow-wrap:anywhere}
     .bede-card-preview span{display:block}.bede-card-preview-label{font-size:10px}.bede-card-preview-sizes{font-weight:600;font-size:12px;line-height:1.4}.bede-card-preview-note{font-size:9px;line-height:1.3}
     .bede-card-preview-color{font-size:10px;line-height:1.4;white-space:normal;overflow:visible;overflow-wrap:anywhere;word-break:normal}
+    .bede-card-mobile-info{display:none}
+    .bede-card-mobile-preview{display:block;flex:0 0 auto;min-height:0;max-height:none;overflow:visible;margin:0;padding:0;color:#000;text-align:left;font:400 11px/1.35 Montserrat,sans-serif;white-space:normal;overflow-wrap:anywhere}
+    .bede-card-mobile-preview span{display:block}
+    .bede-card-mobile-cta{display:flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:44px;width:100%;max-width:100%;padding:8px 14px;background:#000!important;color:#fff!important;border:1px solid #000;text-decoration:none!important;font:500 11px/1.4 Montserrat,sans-serif}
     .bede-card-ready a:focus-visible{outline:2px solid #000;outline-offset:3px}
     .bede-card-ready .bede-card-image-link:focus-visible{box-shadow:0 0 0 3px #fff;outline:2px solid #000;outline-offset:3px}
     @media(hover:hover) and (pointer:fine){.bede-card-ready:hover .bede-card-overlay{opacity:1;transform:none}}
@@ -204,7 +208,8 @@
     .bede-offer-card h2{font-size:12px;font-weight:500;line-height:1.65;margin:12px 0 8px}.bede-offer-card del{font-size:12px;color:#000;margin-right:8px}.bede-offer-card strong{font-size:14px;font-weight:600}
     .bede-offers-empty{padding:44px 20px;text-align:center;background:#f7f6f2}.bede-offers-empty h2{font-size:23px;font-weight:400;margin-bottom:14px}.bede-offers-empty a{display:inline-block;margin-top:12px;padding:13px 20px;background:#000;color:white;text-decoration:none;font-size:12px}
     .bede-offers-native[hidden]{display:none!important}
-    @media(max-width:767px){.bede-offers-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 10px}.bede-offers-empty{padding:32px 16px}.bede-card-overlay{opacity:1;transform:none;gap:3px;padding:12px 6px 7px;max-height:none}.bede-card-preview{max-height:none}.bede-card-overlay-name{font-size:10px}.bede-card-overlay-cta{font-size:11px;padding:7px 11px}}
+    @media(max-width:767px){.bede-offers-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 10px}.bede-offers-empty{padding:32px 16px}.bede-card-overlay{opacity:1;transform:none;gap:2px;padding:10px 6px 6px;max-height:none}.bede-card-preview{max-height:none}.bede-card-preview .bede-card-preview-redundant-heading,.bede-card-preview .bede-card-preview-generic-note{display:none}.bede-card-overlay-name{font-size:10px}.bede-card-overlay-cta{font-size:11px;padding:7px 11px}}
+    @media(max-width:767px),(hover:none),(pointer:coarse){.bede-card-ready .bede-card-overlay{display:none}.bede-card-mobile-info{display:flex;position:static;flex-direction:column;gap:8px;margin:8px 0 0;padding:0;min-width:0;max-height:none;overflow:visible;background:transparent;color:#000;text-align:left}.bede-card-mobile-preview .bede-card-preview-redundant-heading,.bede-card-mobile-preview .bede-card-preview-generic-note{display:none}}
   `;
   document.head.appendChild(style);
   function numericSizes() {
@@ -288,22 +293,27 @@
     }
     const view=presentation.resolveCardPreview(data,evidence),signature=JSON.stringify(view);
     if(record.signature===signature)return;
-    record.signature=signature;const area=record.preview;area.replaceChildren();
-    area.setAttribute('data-bede-preview-state',view.status);
-    area.setAttribute('data-bede-preview-reason',view.reason||'');
-    const line=(text,className)=>{const span=document.createElement('span');span.className=className;span.textContent=text;area.appendChild(span);};
-    if(view.color)line('Cor: '+view.color,'bede-card-preview-label');
-    line(view.message,'bede-card-preview-label');
-    if(view.sizes.length)line(view.sizes.join(' · '),'bede-card-preview-sizes');
+    record.signature=signature;const areas=[record.preview,record.mobilePreview];
+    for(const area of areas){area.replaceChildren();area.setAttribute('data-bede-preview-state',view.status);area.setAttribute('data-bede-preview-reason',view.reason||'');}
+    const line=(text,className)=>{for(const area of areas){const span=document.createElement('span');span.className=className;span.textContent=text;area.appendChild(span);}};
     const grouped=Array.isArray(view.groups)?view.groups:[],visibleGroups=grouped.slice(0,2);
+    const colorRowsExplainSizes=view.status==='by-color'&&visibleGroups.some(c=>c.sizes.length>0);
+    if(view.color)line('Cor: '+view.color,'bede-card-preview-label');
+    line(view.message,'bede-card-preview-label'+(colorRowsExplainSizes?' bede-card-preview-redundant-heading':''));
+    if(view.sizes.length)line(view.sizes.join(' · '),'bede-card-preview-sizes');
     const colorLines=visibleGroups.map(c=>c.name+': '+(c.sizes.length?c.sizes.join(' · '):'Sem estoque confirmado'));
     colorLines.forEach(text=>line(text,'bede-card-preview-color'));
     const otherColors=grouped.length-2;
     const note=otherColors>0?'+'+otherColors+(otherColors===1?' cor':' cores')+' no produto.'+(view.multipleOptions?' Confirme a combinação.':''):view.note;
-    if(note)line(note,'bede-card-preview-note');
-    // The visual overlay is not a second control. Its native parent link stays
-    // the only CTA; its accessible name carries the same availability caveat.
-    record.imageLink.setAttribute('aria-label',[record.name,view.color?'Cor: '+view.color:'',view.message,view.sizes.join(', '),...colorLines,note,'Ver produto'].filter(Boolean).join('. '));
+    // Mobile hides only repeated successful-preview copy. Warnings, additional
+    // colors and full accessible link text stay intact; desktop keeps all copy.
+    const genericNote=(view.status==='known'&&view.sizes.length>0||colorRowsExplainSizes)&&
+      (note==='Prévia · confirme no produto.'||note==='Prévia por cor · confira no produto.');
+    if(note)line(note,'bede-card-preview-note'+(genericNote?' bede-card-preview-generic-note':''));
+    // Desktop uses its original image link; touch exposes a plain product link
+    // below the native description. Both retain the full availability caveat.
+    const accessibleLabel=[record.name,view.color?'Cor: '+view.color:'',view.message,view.sizes.join(', '),...colorLines,note,'Ver produto'].filter(Boolean).join('. ');
+    record.imageLink.setAttribute('aria-label',accessibleLabel);record.mobileCTA.setAttribute('aria-label',accessibleLabel);
   }
   function applyPreview(url,data){for(const record of cards.values())if(record.url===url)renderPreview(record,data);}
   function schedulePreviews(delay=30000){
@@ -403,17 +413,23 @@
       const url=productURL(imageLink?.getAttribute('href')||imageLink?.href);
       const name=(card.querySelector('.js-item-name')||card.querySelector('h2'))?.textContent?.trim();
       const info=card.querySelector('.item-description')||card;
-      if(!imageLink||!url||!name||info.tagName==='A')continue;
+      if(!imageLink||!url||!name||info.tagName==='A'||imageLink.contains(info)||info.closest('.js-item-image-padding')||info.closest('.product-item-image-container'))continue;
       // Swiper may clone an already enhanced card without our Map entry.
       // Rebuild only our presentation artifacts; native nodes stay untouched.
-      for(const selector of ['.bede-card-overlay','.bede-card-preview','.bede-card-product-link']){
+      for(const selector of ['.bede-card-mobile-info','.bede-card-mobile-preview','.bede-card-overlay','.bede-card-preview','.bede-card-product-link']){
         card.querySelectorAll(selector).forEach(artifact=>artifact.remove());
       }
       const overlay=document.createElement('span');overlay.className='bede-card-overlay';overlay.setAttribute('aria-hidden','true');
       const title=document.createElement('span');title.className='bede-card-overlay-name';title.textContent=name;overlay.appendChild(title);
       const preview=document.createElement('span');preview.className='bede-card-preview';overlay.appendChild(preview);
       const cta=document.createElement('span');cta.className='bede-card-overlay-cta';cta.textContent='Ver produto';overlay.appendChild(cta);imageLink.appendChild(overlay);imageLink.classList.add('bede-card-image-link');
-      const record={card,url,name,imageLink,id:card.getAttribute('data-product-id')||null,preview,visible:!cardObserver&&cards.size<24,signature:''};cards.set(card,record);card.classList.add('bede-card-ready');renderPreview(record,{status:'idle'});
+      // The native image link is absolute inside a padding-ratio box. Touch
+      // information must instead live in normal description flow, after its
+      // original name/price, with a plain navigation link and no purchase hook.
+      const mobileInfo=document.createElement('div');mobileInfo.className='bede-card-mobile-info';
+      const mobilePreview=document.createElement('span');mobilePreview.className='bede-card-mobile-preview';mobilePreview.setAttribute('aria-hidden','true');mobileInfo.appendChild(mobilePreview);
+      const mobileCTA=document.createElement('a');mobileCTA.className='bede-card-mobile-cta';mobileCTA.setAttribute('href',url);mobileCTA.textContent='Ver produto';mobileInfo.appendChild(mobileCTA);info.appendChild(mobileInfo);
+      const record={card,url,name,imageLink,id:card.getAttribute('data-product-id')||null,preview,mobilePreview,mobileCTA,visible:!cardObserver&&cards.size<24,signature:''};cards.set(card,record);card.classList.add('bede-card-ready');renderPreview(record,{status:'idle'});
       if(cardObserver)cardObserver.observe(card);else if(cards.size<=24&&!card.closest('[hidden]'))requestPreview(record);
       card.addEventListener('focusin',()=>{record.visible=true;requestPreview(record);});
       card.addEventListener('mouseenter',()=>{record.visible=true;requestPreview(record);},{passive:true});
