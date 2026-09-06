@@ -73,8 +73,8 @@
   }
   window.BedeNavigation = { setupProductMenus: setupProductMenus, closeProductMenus: closeProductMenus };
 
-  // Reuse the native rail buttons and scroll handlers. These cues live AFTER
-  // the rail, never in the product image, and do not own catalogue loading.
+  // Reuse native rail buttons after the rail in DOM order. Visually the cue
+  // sits inside an empty 44px photo-side gutter, never over the image or text.
   function createCarouselCues() {
     const controllers = new Map();
     const rails = [['emAltaRail', 'Em alta'], ['tiposRail', 'Tipos de produtos'], ['tabsRail', 'Produtos por categoria']];
@@ -109,6 +109,23 @@
       let frame = null;
       let horizontalWheelUntil = 0;
       let railTouch = null;
+      function placeCue(position) {
+        const photos = rail.querySelectorAll('.nb-card-img-wrap');
+        const photo = photos[position === 'end' ? photos.length - 1 : 0];
+        if (!photo) return false;
+        const box = photo.getBoundingClientRect(), host = wrapper.getBoundingClientRect(), viewport = rail.getBoundingClientRect();
+        const half = 22; // Half the 44px hit-area AND CSS photo gutter.
+        const centerX = position === 'end' ? box.left + half : box.right - half;
+        const centerY = box.top + box.height / 2;
+        // If a layout is still hidden/incomplete, wait rather than move the
+        // button over real product pixels to force it into the viewport.
+        if (![box.width, box.height, centerX, centerY, host.left, host.top, viewport.left, viewport.right].every(Number.isFinite) ||
+          box.width < 88 || box.height < 44 ||
+          centerX - half < Math.max(host.left, viewport.left) - 1 || centerX + half > Math.min(host.right, viewport.right) + 1) return false;
+        controls.style.setProperty('--home-cue-x', (centerX - host.left).toFixed(3) + 'px');
+        controls.style.setProperty('--home-cue-y', (centerY - host.top).toFixed(3) + 'px');
+        return true;
+      }
       function update() {
         const width = Number(rail.clientWidth), total = Number(rail.scrollWidth);
         const last = Math.max(0, total - width);
@@ -116,13 +133,16 @@
         const overflow = hasProducts && rail.getAttribute('aria-busy') !== 'true' && Number.isFinite(width) && Number.isFinite(total) && width > 0 && last > 2;
         const left = Math.max(0, Math.min(last, Number(rail.scrollLeft) || 0));
         const position = !overflow ? 'none' : left <= 2 ? 'start' : left >= last - 2 ? 'end' : 'middle';
+        const atEdge = position === 'start' || position === 'end';
+        const placed = !atEdge || placeCue(position);
         controls.setAttribute('data-position', position);
-        controls.hidden = !overflow;
+        controls.setAttribute('data-geometry', atEdge ? placed ? 'ready' : 'pending' : 'idle');
+        controls.hidden = !overflow || !placed;
         previous.hidden = position !== 'end';
         next.hidden = position !== 'start';
         // A scroll can hide the focused cue. Keep keyboard focus on the list,
         // without scrolling the fullpage or jumping back to the document body.
-        if ((previous.hidden && document.activeElement === previous) || (next.hidden && document.activeElement === next)) rail.focus({ preventScroll: true });
+        if (((controls.hidden || previous.hidden) && document.activeElement === previous) || ((controls.hidden || next.hidden) && document.activeElement === next)) rail.focus({ preventScroll: true });
         if (addedTabIndex) rail.setAttribute('tabindex', overflow ? '0' : '-1');
       }
       function schedule() {
@@ -176,12 +196,16 @@
       rail.addEventListener('scroll', update, { passive: true });
       rail.addEventListener('load', schedule, true);
       rail.addEventListener('keydown', keyboard);
-      rail.addEventListener('wheel', localWheel, { passive: true });
-      ['touchstart', 'touchmove', 'touchend', 'touchcancel'].forEach(function (type) { rail.addEventListener(type, localTouch, { passive: true }); });
+      // The cue is visually inside the photo gutter but outside rail in DOM.
+      // Gestures starting on its transparent hit-area need the same safeguards.
+      [rail, controls].forEach(function (surface) {
+        surface.addEventListener('wheel', localWheel, { passive: true });
+        ['touchstart', 'touchmove', 'touchend', 'touchcancel'].forEach(function (type) { surface.addEventListener(type, localTouch, { passive: true }); });
+      });
       window.addEventListener('resize', schedule, { passive: true });
       window.addEventListener('pageshow', schedule);
       const resize = typeof window.ResizeObserver === 'function' ? new window.ResizeObserver(schedule) : null;
-      if (resize) resize.observe(rail);
+      if (resize) { resize.observe(rail); resize.observe(wrapper); }
       const mutation = typeof window.MutationObserver === 'function' ? new window.MutationObserver(schedule) : null;
       if (mutation) mutation.observe(rail, { childList: true, subtree: true, attributes: true, attributeFilter: ['aria-busy'] });
       controllers.set(rail, { update: update });

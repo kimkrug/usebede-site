@@ -306,6 +306,20 @@
     if (catalogueRequest) { catalogueRequest.controller.abort(); window.clearTimeout(catalogueRequest.timeout); catalogueRequest = null; }
     state.loading = false;
   }
+  function catalogueRefreshDueAt() {
+    return Math.min(state.loadedAt + CATALOGUE_REFRESH_MS, state.validUntil);
+  }
+  function resumeVisibleCatalogue() {
+    // A brief tab switch must not erase a still-current selection. Reuse only
+    // this document's validated memory, with the ORIGINAL refresh/expiry dates.
+    // BFCache continues to clear state in pagehide and cannot use this path.
+    const remaining = catalogueRefreshDueAt() - Date.now();
+    if (state.feed === 'ready' && remaining > 0) {
+      scheduleCatalogue(remaining);
+      return;
+    }
+    loadCatalogue();
+  }
   async function loadCatalogue() {
     if (state.loading) return;
     window.clearTimeout(catalogueTimer); catalogueTimer = null;
@@ -435,8 +449,11 @@
     reduceMotion.addEventListener('change', updateHeroTimer);
     document.addEventListener('visibilitychange', () => {
       updateHeroTimer();
-      if (document.hidden) { window.clearTimeout(catalogueTimer); catalogueTimer = null; cancelCatalogueRequest(); clearCatalogueWhileLoading(); }
-      else loadCatalogue();
+      if (document.hidden) {
+        window.clearTimeout(catalogueTimer); catalogueTimer = null; cancelCatalogueRequest();
+        if (state.feed !== 'ready' || Date.now() >= state.validUntil) clearCatalogueWhileLoading();
+      }
+      else resumeVisibleCatalogue();
     });
     window.addEventListener('pagehide', event => {
       cataloguePageActive = false; window.clearTimeout(catalogueTimer); catalogueTimer = null; cancelCatalogueRequest();

@@ -3521,7 +3521,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .dual-half:focus-visible { outline: 3px solid #fff; outline-offset: -6px; }
 .nb-rail { scroll-snap-type: x proximity; scroll-padding-inline: var(--pad-x); }
 .nb-card { scroll-snap-align: start; min-width: 0; }
-.nb-card-img-wrap { background: #fff; }
+.nb-card-img-wrap { aspect-ratio: 1; background: #f5f5f5; }
 .nb-card-info-row {
   display: grid;
   flex: 1;
@@ -3558,7 +3558,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .nb-card-name, .nb-card-price { font-size: 13px; }
   .nb-card-old-price { font-size: 12px; }
   #tiposRail .nb-card { flex-basis: min(48vw, 220px); width: min(48vw, 220px); }
-  #tiposRail .nb-card-img-wrap { height: min(48vw, 220px); padding: 10px; }
+  #tiposRail .nb-card-img-wrap { height: min(48vw, 220px); padding-block: 10px; }
   .category-tabs { max-width: 100%; gap: 6px; }
   .tab-pill { padding: 10px 16px; }
 }
@@ -3584,13 +3584,18 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .home-catalog-skeleton-image { display: block; width: 100%; aspect-ratio: 1; background: #f4f4f4; }
 .home-catalog-skeleton-line { display: block; height: 10px; width: 72%; margin-top: 16px; background: #eee; }
 .home-catalog-skeleton-line-short { width: 32%; margin-top: 10px; }
-.nb-rail-wrapper.home-rail-cues-ready { flex-direction: column; align-items: stretch; }
-.home-rail-cues { display: flex; align-items: center; justify-content: space-between; min-height: 44px; width: 100%; padding: 2px calc(var(--pad-x) + 64px) 0 var(--pad-x); box-sizing: border-box; }
+.nb-rail-wrapper.home-rail-cues-ready { flex-direction: column; align-items: stretch; --home-cue-size: 44px; }
+/* Equal empty side gutters keep controls off the original photo pixels. The
+   grey square belongs to the card only: never blend, filter or recolour img. */
+.home-rail-cues-ready .nb-card-img-wrap { padding-inline: var(--home-cue-size); }
+.home-rail-cues-ready .nb-card-img-wrap img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.home-rail-cues-ready .nb-card:hover { opacity: 1; }
+.home-rail-cues { position: absolute; left: var(--home-cue-x, 0px); top: var(--home-cue-y, 0px); transform: translate(-50%, -50%); display: flex; align-items: center; justify-content: center; width: var(--home-cue-size); height: var(--home-cue-size); padding: 0; box-sizing: border-box; pointer-events: none; z-index: 11; }
 .home-rail-cues[hidden] { display: none !important; }
-.home-rail-cues .home-rail-cue { position: static; display: inline-flex !important; flex: 0 0 44px; align-items: center; justify-content: center; width: 44px; height: 44px; margin: 0; padding: 10px; opacity: 1; transform: none; color: #000; background: #fff; border: 1px solid #ddd; border-radius: 50%; box-shadow: none; cursor: pointer; }
-.home-rail-cues .home-rail-cue[data-direction="next"] { margin-left: auto; }
+.home-rail-cues .home-rail-cue { position: static; display: inline-flex !important; flex: 0 0 44px; align-items: center; justify-content: center; width: 44px; height: 44px; margin: 0; padding: 10px; opacity: 1; transform: none; color: #000; background: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none; cursor: pointer; pointer-events: auto; }
+.home-rail-cues .home-rail-cue:hover { background: transparent !important; border: 0 !important; }
 .home-rail-cues .home-rail-cue[hidden] { display: none !important; }
-.home-rail-cues .home-rail-cue svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+.home-rail-cues .home-rail-cue svg { width: 20px; height: 20px; fill: none; stroke: currentColor !important; stroke-width: 1.5; }
 .home-rail-cues .home-rail-cue:focus-visible, .home-catalog-retry:focus-visible { outline: 2px solid #000; outline-offset: 3px; }
 .site-footer-slide { justify-content: flex-start; padding-bottom: max(24px, env(safe-area-inset-bottom)); }
 .site-footer-slide .clean-footer-bottom { margin-top: auto; flex-shrink: 0; }
