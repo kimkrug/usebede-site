@@ -182,6 +182,9 @@
   const money = cents => (cents / 100).toLocaleString('pt-BR', {style:'currency',currency:'BRL'});
   const style = document.createElement('style');
   style.textContent = `
+    /* Keep the native amount and updates; only give the badge room to breathe. */
+    header #ajax-cart>a{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-width:44px;min-height:44px;padding:0!important;margin-right:6px;overflow:visible}
+    header #ajax-cart .js-cart-widget-amount.badge{display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box;position:absolute;top:-3px;right:-4px;left:auto;transform:none;min-width:20px;width:auto;height:20px;min-height:20px;padding:0 5px!important;border:1px solid #fff;border-radius:999px;background:#000!important;color:#fff!important;font:600 11px/1 Montserrat,sans-serif;letter-spacing:0;white-space:nowrap;text-align:center}
     .bede-card-image-link{display:block}.bede-offer-image-link{position:relative;display:block}
     .bede-card-overlay{position:absolute;inset:auto 0 0;z-index:3;box-sizing:border-box;display:flex;flex-direction:column;gap:4px;max-height:none;padding:16px 10px 10px;background:linear-gradient(transparent,rgba(255,255,255,.98) 12%);color:#000;text-align:center;opacity:0;transform:translateY(5px);transition:opacity .18s ease,transform .18s ease;pointer-events:none;font:500 12px/1.4 Montserrat,sans-serif}
     .bede-card-overlay-name{font-weight:600;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;line-height:1.35;max-height:2.7em}.bede-card-overlay-cta{display:inline-flex;align-items:center;justify-content:center;align-self:center;flex-shrink:0;box-sizing:border-box;min-height:44px;max-width:100%;padding:8px 14px;background:#000!important;color:#fff!important;border:1px solid #000;text-decoration:none!important}

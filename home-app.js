@@ -11,6 +11,7 @@
     hover: false, heroFocus: false };
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let slides = [], frames = [], heroTimer = null, transitionTimer = null, catalogueTimer = null, touch = null;
+  let catalogueGeneration = 0, catalogueRequest = null, cataloguePageActive = true;
   let innerWheelUntil = 0;
   const model = () => window.BedeCatalog;
   const editable = target => Boolean(target && target.closest && target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"])'));
@@ -163,13 +164,48 @@
     }
   }
 
+  function retainRailFocus(rail) {
+    // Replacing a focused card/retry must not drop keyboard focus into the
+    // fullpage body. Do not take focus from another section or control.
+    const active = document.activeElement;
+    if (!active || active === rail || !rail.contains(active)) return;
+    if (rail.getAttribute('tabindex') === null) rail.setAttribute('tabindex', '-1');
+    rail.focus({ preventScroll: true });
+  }
+  function loadingRail(railId, text, href, label) {
+    const rail = $(railId); if (!rail) return;
+    retainRailFocus(rail);
+    rail.replaceChildren(); rail.setAttribute('data-catalog-state', 'loading'); rail.setAttribute('aria-busy', 'true');
+    const block = document.createElement('div'); block.className = 'home-catalog-loading';
+    const meta = document.createElement('div'); meta.className = 'home-catalog-loading-meta'; meta.setAttribute('role', 'status');
+    const paragraph = document.createElement('p'); paragraph.textContent = text; meta.appendChild(paragraph);
+    const link = document.createElement('a'); link.href = href || STORE + '/produtos/'; link.textContent = label || 'Explorar produtos na loja'; meta.appendChild(link);
+    const placeholders = document.createElement('div'); placeholders.className = 'home-catalog-skeletons'; placeholders.setAttribute('aria-hidden', 'true');
+    // Neutral layout placeholders only: no fabricated product, photo or price.
+    for (let i = 0; i < 4; i++) {
+      const card = document.createElement('div'); card.className = 'home-catalog-skeleton';
+      for (const className of ['home-catalog-skeleton-image', 'home-catalog-skeleton-line', 'home-catalog-skeleton-line home-catalog-skeleton-line-short']) {
+        const shape = document.createElement('span'); shape.className = className; card.appendChild(shape);
+      }
+      placeholders.appendChild(card);
+    }
+    block.appendChild(meta); block.appendChild(placeholders); rail.appendChild(block);
+    rail.scrollLeft = 0; updateRailButtons(railId);
+  }
   function message(railId, text, href, label) {
     const rail = $(railId);
     if (!rail) return;
+    if (state.feed === 'loading') { loadingRail(railId, text, href, label); return; }
+    retainRailFocus(rail);
     rail.replaceChildren();
+    rail.setAttribute('data-catalog-state', state.feed === 'error' ? 'error' : 'empty');
     const block = document.createElement('div'); block.className = 'home-catalog-status'; block.setAttribute('role', 'status');
     const paragraph = document.createElement('p'); paragraph.textContent = text; block.appendChild(paragraph);
     const link = document.createElement('a'); link.href = href || STORE + '/produtos/'; link.textContent = label || 'Ver produtos na loja'; block.appendChild(link);
+    if (state.feed === 'error') {
+      const retry = document.createElement('button'); retry.className = 'home-catalog-retry'; retry.type = 'button'; retry.textContent = 'Tentar novamente';
+      retry.addEventListener('click', loadCatalogue); block.appendChild(retry);
+    }
     rail.appendChild(block); rail.setAttribute('aria-busy', String(state.feed === 'loading'));
     rail.scrollLeft = 0; updateRailButtons(railId);
   }
@@ -181,7 +217,9 @@
   }
   function renderProducts(railId, products, withPrice) {
     const rail = $(railId); if (!rail) return;
+    retainRailFocus(rail);
     rail.innerHTML = products.map(p => productCard(p, withPrice)).join('');
+    rail.setAttribute('data-catalog-state', 'ready');
     rail.setAttribute('aria-busy', 'false'); rail.scrollLeft = 0; updateRailButtons(railId);
   }
   function updateRailButtons(railId) {
@@ -217,7 +255,8 @@
       return `<a class="nb-card" href="${m.escapeHTML(searchCategory(category.key))}"><div class="nb-card-img-wrap"><img src="${m.escapeHTML(product.image)}" alt="${m.escapeHTML(category.label + ' — ' + product.name)}" loading="lazy" decoding="async"></div><div class="nb-card-label-only">${m.escapeHTML(category.label)}</div></a>`;
     }).filter(Boolean);
     if (!cards.length) { message('tiposRail', 'Consulte as categorias disponíveis na loja.'); return; }
-    rail.innerHTML = cards.join(''); rail.setAttribute('aria-busy', 'false'); updateRailButtons('tiposRail');
+    retainRailFocus(rail);
+    rail.innerHTML = cards.join(''); rail.setAttribute('data-catalog-state', 'ready'); rail.setAttribute('aria-busy', 'false'); updateRailButtons('tiposRail');
   }
   function updateOffers() {
     const section = $('slide4'), button = $('slideSaleBtn');
@@ -260,26 +299,37 @@
   }
   function scheduleCatalogue(delay) {
     window.clearTimeout(catalogueTimer); catalogueTimer = null;
-    if (!document.hidden) catalogueTimer = window.setTimeout(loadCatalogue, Math.max(0, delay));
+    if (cataloguePageActive && !document.hidden) catalogueTimer = window.setTimeout(loadCatalogue, Math.max(0, delay));
+  }
+  function cancelCatalogueRequest() {
+    catalogueGeneration++;
+    if (catalogueRequest) { catalogueRequest.controller.abort(); window.clearTimeout(catalogueRequest.timeout); catalogueRequest = null; }
+    state.loading = false;
   }
   async function loadCatalogue() {
     if (state.loading) return;
     window.clearTimeout(catalogueTimer); catalogueTimer = null;
-    if (document.hidden) return;
+    if (document.hidden || !cataloguePageActive) return;
     // A restored page or an expired feed must not display its old prices while
     // a new request is pending, including the minimum retry interval.
     clearCatalogueWhileLoading();
     const sinceAttempt = state.lastAttemptAt === null ? Infinity : Date.now() - state.lastAttemptAt;
     if (sinceAttempt < CATALOGUE_MIN_RETRY_MS) { scheduleCatalogue(CATALOGUE_MIN_RETRY_MS - sinceAttempt); return; }
     state.loading = true; state.lastAttemptAt = Date.now();
-    const controller = new AbortController();
-    const timeout = window.setTimeout(() => controller.abort(), 20000);
+    const controller = new AbortController(), generation = ++catalogueGeneration;
+    const request = { controller, timeout: null }; catalogueRequest = request;
+    const current = () => generation === catalogueGeneration && catalogueRequest === request && cataloguePageActive && !document.hidden;
+    const deadline = new Promise((_, reject) => { request.timeout = window.setTimeout(() => { controller.abort(); reject(new Error('Catalogue request deadline exceeded')); }, 20000); });
     try {
       const m = model(); if (!m) throw new Error('Catalogue model unavailable');
-      const response = await fetch('/api/catalogo', { method: 'GET', headers: { Accept: 'application/json' }, cache: 'no-store', signal: controller.signal });
-      if (!response.ok) throw new Error('Catalogue response unavailable');
-      const payload = await response.json();
-      if (!payload || !Array.isArray(payload.products) || !payload.products.length) throw new Error('Catalogue empty');
+      const responseBody = (async () => {
+        const response = await fetch('/api/catalogo', { method: 'GET', headers: { Accept: 'application/json' }, cache: 'no-store', signal: controller.signal });
+        if (!response.ok) throw new Error('Catalogue response unavailable');
+        return response.json();
+      })();
+      const payload = await Promise.race([responseBody, deadline]);
+      if (!current()) return;
+      if (!payload || !Array.isArray(payload.products)) throw new Error('Catalogue products unavailable');
       const fetchedAt = typeof payload.fetchedAt === 'string' ? Date.parse(payload.fetchedAt) : NaN;
       const startedAt = typeof payload.startedAt === 'string' ? Date.parse(payload.startedAt) : NaN;
       const receivedAt = Date.now();
@@ -294,15 +344,19 @@
       state.validUntil = receivedAt + CATALOGUE_MAX_AGE_MS - Math.max(0, receivedAt - startedAt);
       const highlights = m.selectHighlights(products, 8);
       if (highlights.length) renderProducts('emAltaRail', highlights, true);
-      else message('emAltaRail', 'Consulte os modelos disponíveis diretamente na loja.');
+      else message('emAltaRail', 'Nenhum modelo disponível nesta seleção no momento.');
       renderTypes(); renderCategory(); updateOffers();
     } catch (_) {
+      if (!current()) return;
       state.products = []; state.categories = []; state.feed = 'error';
       message('emAltaRail', 'Não foi possível carregar a seleção agora. A loja continua disponível.');
       message('tiposRail', 'Não foi possível carregar as categorias agora.'); renderCategory(); updateOffers();
     } finally {
-      window.clearTimeout(timeout); state.loading = false;
-      scheduleCatalogue(state.feed === 'ready' ? Math.min(CATALOGUE_REFRESH_MS, state.validUntil - Date.now()) : CATALOGUE_REFRESH_MS);
+      window.clearTimeout(request.timeout);
+      if (generation === catalogueGeneration && catalogueRequest === request) {
+        catalogueRequest = null; state.loading = false;
+        scheduleCatalogue(state.feed === 'ready' ? Math.min(CATALOGUE_REFRESH_MS, state.validUntil - Date.now()) : CATALOGUE_REFRESH_MS);
+      }
     }
   }
 
@@ -381,14 +435,14 @@
     reduceMotion.addEventListener('change', updateHeroTimer);
     document.addEventListener('visibilitychange', () => {
       updateHeroTimer();
-      if (document.hidden) { window.clearTimeout(catalogueTimer); catalogueTimer = null; }
+      if (document.hidden) { window.clearTimeout(catalogueTimer); catalogueTimer = null; cancelCatalogueRequest(); clearCatalogueWhileLoading(); }
       else loadCatalogue();
     });
     window.addEventListener('pagehide', event => {
-      window.clearTimeout(catalogueTimer); catalogueTimer = null;
+      cataloguePageActive = false; window.clearTimeout(catalogueTimer); catalogueTimer = null; cancelCatalogueRequest();
       if (event.persisted) clearCatalogueWhileLoading();
     });
-    window.addEventListener('pageshow', event => { if (event.persisted) loadCatalogue(); });
+    window.addEventListener('pageshow', event => { cataloguePageActive = true; if (event.persisted) loadCatalogue(); });
     document.addEventListener('focusin', () => { if (editable(document.activeElement)) stopHero(); });
     document.addEventListener('focusout', () => { window.setTimeout(updateHeroTimer, 0); });
     document.addEventListener('toggle', event => {

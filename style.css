@@ -3569,3 +3569,39 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .nb-rail { scroll-behavior: auto; }
   .product-menu > summary > span { transition: none; }
 }
+
+/* Mobile review: stable catalogue loading, quiet rail cues, and clear spacing. */
+#slideSaleBtn { margin-top: 24px; }
+.home-catalog-status { width: 100%; margin: 12px 0; font-size: 14px; line-height: 1.6; }
+.nb-rail > .home-catalog-status { flex: 0 0 100%; min-width: 0; text-align: center; }
+.home-catalog-status p { margin: 0 0 8px; }
+.home-catalog-status a { text-decoration: underline; text-underline-offset: 3px; }
+.home-catalog-retry { min-height: 44px; margin: 8px 12px; padding: 10px 18px; border: 1px solid #000; background: #000; color: #fff; font: inherit; }
+.home-catalog-loading { flex: 0 0 100%; width: 100%; min-width: 0; }
+.home-catalog-loading-meta { margin: 0 0 18px; text-align: center; font-size: 13px; line-height: 1.6; }
+.home-catalog-skeletons { display: flex; gap: 20px; width: 100%; overflow: hidden; }
+.home-catalog-skeleton { flex: 0 0 clamp(280px, 26vw, 420px); min-width: 0; }
+.home-catalog-skeleton-image { display: block; width: 100%; aspect-ratio: 1; background: #f4f4f4; }
+.home-catalog-skeleton-line { display: block; height: 10px; width: 72%; margin-top: 16px; background: #eee; }
+.home-catalog-skeleton-line-short { width: 32%; margin-top: 10px; }
+.nb-rail-wrapper.home-rail-cues-ready { flex-direction: column; align-items: stretch; }
+.home-rail-cues { display: flex; align-items: center; justify-content: space-between; min-height: 44px; width: 100%; padding: 2px calc(var(--pad-x) + 64px) 0 var(--pad-x); box-sizing: border-box; }
+.home-rail-cues[hidden] { display: none !important; }
+.home-rail-cues .home-rail-cue { position: static; display: inline-flex !important; flex: 0 0 44px; align-items: center; justify-content: center; width: 44px; height: 44px; margin: 0; padding: 10px; opacity: 1; transform: none; color: #000; background: #fff; border: 1px solid #ddd; border-radius: 50%; box-shadow: none; cursor: pointer; }
+.home-rail-cues .home-rail-cue[data-direction="next"] { margin-left: auto; }
+.home-rail-cues .home-rail-cue[hidden] { display: none !important; }
+.home-rail-cues .home-rail-cue svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+.home-rail-cues .home-rail-cue:focus-visible, .home-catalog-retry:focus-visible { outline: 2px solid #000; outline-offset: 3px; }
+.site-footer-slide { justify-content: flex-start; padding-bottom: max(24px, env(safe-area-inset-bottom)); }
+.site-footer-slide .clean-footer-bottom { margin-top: auto; flex-shrink: 0; }
+/* The closed outline follows the whole silhouette, including the speech tail. */
+.whatsapp-float-btn { background: transparent; border: 0; border-radius: 0; box-shadow: none; filter: drop-shadow(0 6px 10px rgba(0,0,0,.22)); }
+.whatsapp-float-btn:hover { background: transparent; }
+.whatsapp-float-btn svg { width: 100%; height: 100%; fill: #fff; stroke: none; }
+.whatsapp-float-btn .bede-whatsapp-outline { fill: #000; stroke: #000; stroke-width: .8; stroke-linejoin: round; }
+@media (max-width: 767px) {
+  .home-catalog-skeletons { gap: 14px; }
+  .home-catalog-skeleton { flex-basis: min(74vw, 320px); }
+  #tiposRail .home-catalog-skeleton { flex-basis: min(48vw, 220px); }
+  .home-catalog-loading-meta { font-size: 12px; }
+}

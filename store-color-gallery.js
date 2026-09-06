@@ -4,6 +4,13 @@
   // New rules with retired images require an exact, audited binding for EVERY variant.
   // Keep old images in the native gallery/admin; this module never deletes those nodes.
   const MAP={
+    // Dourado: four exact size-only bindings; all six original assets retained.
+    '364500246':{mode:'single',approved:['1267066076'],retired:['1263356188','1263356193','1263334441','1263334443','1263281551','1263281564'],bindings:[
+      {id:'1587974760',sku:'3037-35',image:'1267066076',options:['35',null,null]},
+      {id:'1587974755',sku:'3037-36',image:'1267066076',options:['36',null,null]},
+      {id:'1587974752',sku:'3037-37',image:'1267066076',options:['37',null,null]},
+      {id:'1587974745',sku:'3037-38',image:'1267066076',options:['38',null,null]}
+    ]},
     '364500780':{axis:1,colors:{Dourada:['1266855344'],Prata:['1266899517']},retired:[]},
     // Martta: public image/variant bindings confirmed after the native save, 2026-09-06.
     '364501337':{axis:1,colors:{Preto:['1266967783']},retired:['1263284006'],bindings:[
@@ -148,6 +155,15 @@
       {id:'1587978205',sku:'3202-36',image:'1267053460',options:['36',null,null]},
       {id:'1587978207',sku:'3202-35',image:'1267053460',options:['35',null,null]},
       {id:'1587978209',sku:'3202-34',image:'1267053460',options:['34',null,null]}
+    ]},
+    // Bruna: six post-save size bindings; both native original photos retained.
+    '364500797':{mode:'single',approved:['1267062711'],retired:['1263321119','1263321139'],bindings:[
+      {id:'1587977429',sku:'3178-37',image:'1267062711',options:['37',null,null]},
+      {id:'1587977436',sku:'3178-39',image:'1267062711',options:['39',null,null]},
+      {id:'1587977439',sku:'3178-38',image:'1267062711',options:['38',null,null]},
+      {id:'1587977440',sku:'3178-36',image:'1267062711',options:['36',null,null]},
+      {id:'1587977442',sku:'3178-35',image:'1267062711',options:['35',null,null]},
+      {id:'1587977444',sku:'3178-34',image:'1267062711',options:['34',null,null]}
     ]},
     // Sofi: six native size-only bindings; no artificial color axis.
     '364500789':{mode:'single',approved:['1267016141'],retired:['1263321027','1263321056','1263321064','1263321099'],bindings:[

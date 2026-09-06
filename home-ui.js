@@ -73,7 +73,132 @@
   }
   window.BedeNavigation = { setupProductMenus: setupProductMenus, closeProductMenus: closeProductMenus };
 
+  // Reuse the native rail buttons and scroll handlers. These cues live AFTER
+  // the rail, never in the product image, and do not own catalogue loading.
+  function createCarouselCues() {
+    const controllers = new Map();
+    const rails = [['emAltaRail', 'Em alta'], ['tiposRail', 'Tipos de produtos'], ['tabsRail', 'Produtos por categoria']];
+    const motion = typeof window.matchMedia === 'function' ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
+    function bind(rail, label) {
+      if (controllers.has(rail)) { controllers.get(rail).update(); return; }
+      const wrapper = rail.parentElement;
+      const previous = document.getElementById(rail.id + 'Prev');
+      const next = document.getElementById(rail.id + 'Next');
+      if (!wrapper || !wrapper.classList.contains('nb-rail-wrapper') || !previous || !next || previous.parentElement !== wrapper || next.parentElement !== wrapper) return;
+      const controls = document.createElement('div');
+      controls.className = 'home-rail-cues';
+      controls.setAttribute('role', 'group');
+      controls.setAttribute('aria-label', 'Navegar produtos: ' + label);
+      const addedTabIndex = !rail.hasAttribute('tabindex');
+      const addedLabel = !rail.hasAttribute('aria-label');
+      if (addedTabIndex) rail.setAttribute('tabindex', '0');
+      if (!rail.hasAttribute('role')) rail.setAttribute('role', 'region');
+      if (addedLabel) rail.setAttribute('aria-label', label + ': lista horizontal de produtos');
+      wrapper.classList.add('home-rail-cues-ready');
+      [[previous, 'prev', 'Voltar aos produtos anteriores'], [next, 'next', 'Ver próximos produtos']].forEach(function (item) {
+        const button = item[0];
+        button.classList.add('home-rail-cue');
+        button.setAttribute('data-direction', item[1]);
+        button.setAttribute('aria-label', item[2]);
+        button.setAttribute('aria-controls', rail.id);
+        button.type = 'button';
+        button.hidden = true;
+        controls.appendChild(button);
+      });
+      wrapper.appendChild(controls);
+      let frame = null;
+      let horizontalWheelUntil = 0;
+      let railTouch = null;
+      function update() {
+        const width = Number(rail.clientWidth), total = Number(rail.scrollWidth);
+        const last = Math.max(0, total - width);
+        const hasProducts = Boolean(rail.querySelector('.nb-card'));
+        const overflow = hasProducts && rail.getAttribute('aria-busy') !== 'true' && Number.isFinite(width) && Number.isFinite(total) && width > 0 && last > 2;
+        const left = Math.max(0, Math.min(last, Number(rail.scrollLeft) || 0));
+        const position = !overflow ? 'none' : left <= 2 ? 'start' : left >= last - 2 ? 'end' : 'middle';
+        controls.setAttribute('data-position', position);
+        controls.hidden = !overflow;
+        previous.hidden = position !== 'end';
+        next.hidden = position !== 'start';
+        // A scroll can hide the focused cue. Keep keyboard focus on the list,
+        // without scrolling the fullpage or jumping back to the document body.
+        if ((previous.hidden && document.activeElement === previous) || (next.hidden && document.activeElement === next)) rail.focus({ preventScroll: true });
+        if (addedTabIndex) rail.setAttribute('tabindex', overflow ? '0' : '-1');
+      }
+      function schedule() {
+        if (frame !== null) return;
+        const request = window.requestAnimationFrame || function (callback) { return window.setTimeout(callback, 0); };
+        frame = request(function () { frame = null; update(); });
+      }
+      function localTouch(event) {
+        if (event.type === 'touchcancel') { railTouch = null; return; }
+        if (event.type === 'touchstart') {
+          const touch = event.touches.length === 1 ? event.touches[0] : null;
+          railTouch = touch && controls.getAttribute('data-position') !== 'none'
+            ? { x: touch.clientX, y: touch.clientY, identifier: touch.identifier, axis: null } : null;
+          // The fullpage still needs this start for a later VERTICAL swipe.
+          return;
+        }
+        if (!railTouch) return;
+        if (event.touches.length > (event.type === 'touchend' ? 0 : 1)) { railTouch = null; return; }
+        const touches = event.type === 'touchend' ? event.changedTouches : event.touches;
+        const touch = touches && Array.prototype.find.call(touches, function (item) { return item.identifier === railTouch.identifier; });
+        if (touch && !railTouch.axis) {
+          const dx = Math.abs(touch.clientX - railTouch.x), dy = Math.abs(touch.clientY - railTouch.y);
+          if (Math.max(dx, dy) >= 8 && dx !== dy) railTouch.axis = dx > dy ? 'horizontal' : 'vertical';
+        }
+        if (event.type === 'touchend') {
+          // Only a confirmed horizontal gesture owns this end. Never prevent
+          // native scrolling, taps, vertical fullpage swipes or multi-touch.
+          if (railTouch.axis === 'horizontal') event.stopPropagation();
+          railTouch = null;
+        }
+      }
+      function localWheel(event) {
+        // Native horizontal scrolling remains untouched. Stop its diagonal or
+        // momentum tail from also becoming a vertical fullpage gesture.
+        const now = Date.now();
+        if (controls.getAttribute('data-position') === 'none') return;
+        if (Math.abs(event.deltaX) > 2 && Math.abs(event.deltaX) > Math.abs(event.deltaY)) horizontalWheelUntil = now + 180;
+        if (now < horizontalWheelUntil) { horizontalWheelUntil = now + 180; event.stopPropagation(); }
+      }
+      function keyboard(event) {
+        if (event.target !== rail || event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey) return;
+        if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+        const last = Math.max(0, rail.scrollWidth - rail.clientWidth);
+        if (last <= 2 || rail.getAttribute('aria-busy') === 'true') return;
+        event.preventDefault(); event.stopPropagation();
+        const behavior = motion && motion.matches ? 'auto' : 'smooth';
+        const left = event.key === 'Home' ? -rail.scrollLeft : event.key === 'End' ? last - rail.scrollLeft : (event.key === 'ArrowRight' ? 1 : -1) * Math.max(280, rail.clientWidth * 0.65);
+        rail.scrollBy({ left: left, behavior: behavior });
+        schedule();
+      }
+      rail.addEventListener('scroll', update, { passive: true });
+      rail.addEventListener('load', schedule, true);
+      rail.addEventListener('keydown', keyboard);
+      rail.addEventListener('wheel', localWheel, { passive: true });
+      ['touchstart', 'touchmove', 'touchend', 'touchcancel'].forEach(function (type) { rail.addEventListener(type, localTouch, { passive: true }); });
+      window.addEventListener('resize', schedule, { passive: true });
+      window.addEventListener('pageshow', schedule);
+      const resize = typeof window.ResizeObserver === 'function' ? new window.ResizeObserver(schedule) : null;
+      if (resize) resize.observe(rail);
+      const mutation = typeof window.MutationObserver === 'function' ? new window.MutationObserver(schedule) : null;
+      if (mutation) mutation.observe(rail, { childList: true, subtree: true, attributes: true, attributeFilter: ['aria-busy'] });
+      controllers.set(rail, { update: update });
+      update();
+    }
+    function setup(scope) {
+      rails.forEach(function (item) {
+        const rail = document.getElementById(item[0]);
+        if (rail && (!scope || scope === document || scope.contains(rail))) bind(rail, item[1]);
+      });
+    }
+    return { setup: setup, refresh: function () { controllers.forEach(function (controller) { controller.update(); }); } };
+  }
+  if (!window.BedeCarouselCues) window.BedeCarouselCues = createCarouselCues();
+
   function setupHomeUI() {
+    window.BedeCarouselCues.setup(document);
     setupProductMenus(document);
     document.addEventListener('click', function (event) {
       if (!event.target.closest('details[data-product-menu]')) closeProductMenus();
