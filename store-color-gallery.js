@@ -107,6 +107,30 @@
       {id:'1587974159',sku:'3018-36',image:'1267028908',options:['36',null,null]},
       {id:'1587974162',sku:'3018-34',image:'1267028908',options:['34',null,null]}
     ]},
+    // Fivela Prateada: five size-only bindings, six native originals preserved.
+    '364500375':{mode:'single',approved:['1267035164'],retired:['1263358269','1263358289','1263332568','1263332572','1263288451','1263288469'],bindings:[
+      {id:'1587975324',sku:'3080-34',image:'1267035164',options:['34',null,null]},
+      {id:'1587975336',sku:'3080-35',image:'1267035164',options:['35',null,null]},
+      {id:'1587975335',sku:'3080-36',image:'1267035164',options:['36',null,null]},
+      {id:'1587975333',sku:'3080-37',image:'1267035164',options:['37',null,null]},
+      {id:'1587975329',sku:'3080-38',image:'1267035164',options:['38',null,null]}
+    ]},
+    // Brecia: five audited size-only bindings and all eight original assets retained.
+    '364500025':{mode:'single',approved:['1267037175'],retired:['1263356015','1263356022','1263354675','1263354681','1263334907','1263334911','1263275065','1263275073'],bindings:[
+      {id:'1587974240',sku:'3021-37',image:'1267037175',options:['37',null,null]},
+      {id:'1587974243',sku:'3021-38',image:'1267037175',options:['38',null,null]},
+      {id:'1587974251',sku:'3021-36',image:'1267037175',options:['36',null,null]},
+      {id:'1587974253',sku:'3021-35',image:'1267037175',options:['35',null,null]},
+      {id:'1587974255',sku:'3021-34',image:'1267037175',options:['34',null,null]}
+    ]},
+    // Helena: five size-only bindings; all three originals kept in the native gallery.
+    '364500939':{mode:'single',approved:['1267039299'],retired:['1263320185','1263320205','1263320214'],bindings:[
+      {id:'1587978102',sku:'3197-38',image:'1267039299',options:['38',null,null]},
+      {id:'1587978104',sku:'3197-37',image:'1267039299',options:['37',null,null]},
+      {id:'1587978107',sku:'3197-36',image:'1267039299',options:['36',null,null]},
+      {id:'1587978111',sku:'3197-35',image:'1267039299',options:['35',null,null]},
+      {id:'1587978113',sku:'3197-34',image:'1267039299',options:['34',null,null]}
+    ]},
     // Montaria Lia: native Cor=Preto preserved, with six exact post-save bindings.
     '364501366':{axis:1,colors:{Preto:['1267015050']},retired:['1263369345','1263369374','1263284379','1263284395'],bindings:[
       {id:'1587980094',sku:'3320-34-PRETO',image:'1267015050',options:['34','Preto',null]},
