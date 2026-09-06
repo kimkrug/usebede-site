@@ -1,4 +1,4 @@
-/* Native Morelia filters: presentation only; no catalogue, URL or stock logic. */
+/* Native Morelia filters and audited header navigation; no catalogue or stock writes. */
 (function (root, factory) {
   var api = factory();
   if (typeof module === 'object' && module.exports) module.exports = api;
@@ -31,6 +31,10 @@
 #bede-native-filter-bar .bede-filter-disclosure>.bede-filter-options{margin:0!important;padding:12px!important;border-top:1px solid #ddd;max-width:500px;max-height:340px;overflow:auto;overscroll-behavior:contain}
 #bede-native-filter-bar .bede-filter-disclosure [data-bede-filter-heading]{display:none}
 #bede-native-filter-bar .bede-filter-options .checkbox-container{margin:0 6px 6px 0!important}
+#bede-native-filter-bar [data-bede-brand-preserved]{display:none!important}
+#bede-native-filter-bar .bede-product-links{list-style:none;min-width:200px;margin:0;padding:0}
+#bede-native-filter-bar .bede-product-links a{display:block;min-height:44px;padding:11px 12px;box-sizing:border-box;color:#000;background:#fff;text-decoration:none;font-size:13px;line-height:22px}
+#bede-native-filter-bar .bede-product-links a:hover{color:#fff;background:#000}
 #bede-native-filter-bar .price-filter-container form{margin:0}
 #bede-native-filter-bar .price-filter-container .form-group{display:flex;align-items:flex-end;flex-wrap:wrap;gap:10px;margin:0}
 #bede-native-filter-bar .filter-input-price-container{position:relative;float:none;width:100px;max-width:100%;margin:0}
@@ -48,6 +52,44 @@
   function isOffers(search) {
     try { return new URLSearchParams(search || '').getAll('bede_ofertas').indexOf('1') !== -1; }
     catch (_) { return true; }
+  }
+
+  // Read the existing header submenu; never turn a brand into a product category.
+  // If its structure or destinations cannot be verified, keep the native brand UI.
+  function productLinks(doc) {
+    var links = [], seen = Object.create(null), invalid = false, signature = null;
+    Array.from(doc.querySelectorAll('header')).forEach(function (header) {
+      Array.from(header.querySelectorAll('.js-nav-main-item')).forEach(function (item) {
+        var opener = item.querySelector('a');
+        if (!opener || opener.textContent.trim() !== 'Produtos') return;
+        var submenu = item.querySelector('.list-subitems');
+        if (!submenu) return;
+        var menu = [], menuSeen = Object.create(null);
+        Array.from(submenu.querySelectorAll('a')).forEach(function (anchor) {
+          var href = anchor.getAttribute('href'), label = anchor.textContent.trim();
+          try {
+            var url = new URL(href, 'https://loja.usebede.com.br');
+            var query = Array.from(url.searchParams.keys());
+            var validPath = (url.pathname === '/produtos/' && !url.search) ||
+              (url.pathname === '/search/' && query.length === 1 && query[0] === 'q' && Boolean(url.searchParams.get('q')));
+            if (!href || !/^(https:\/\/|\/)/.test(href) || !label || url.origin !== 'https://loja.usebede.com.br' || url.username || url.password || url.hash || !validPath) { invalid = true; return; }
+            if (menuSeen[url.href] && menuSeen[url.href] !== label) { invalid = true; return; }
+            if (!menuSeen[url.href]) { menuSeen[url.href] = label; menu.push({ label: label, href: href }); }
+          } catch (_) { invalid = true; }
+        });
+        var current = JSON.stringify(Object.keys(menuSeen).sort().map(function (href) { return [href, menuSeen[href]]; }));
+        if (signature !== null && signature !== current) invalid = true;
+        if (signature === null) { signature = current; links = menu; seen = menuSeen; }
+      });
+    });
+    return !invalid && links.length >= 2 && links.length <= 40 && seen['https://loja.usebede.com.br/produtos/'] ? links : [];
+  }
+
+  function brandIsActive(group, search) {
+    if (Array.from(group.querySelectorAll('input')).some(function (input) { return input.checked; }) || group.querySelector('.js-remove-filter')) return true;
+    try {
+      return Array.from(new URLSearchParams(search || '').keys()).some(function (key) { return /(^|[^a-z])(brand|marca)([^a-z]|$)/i.test(key); });
+    } catch (_) { return true; }
   }
 
   function inspect(doc, runtime) {
@@ -116,6 +158,8 @@
         var originalChildren = Array.from(native.filter.childNodes);
         undo.push(function () { native.filter.replaceChildren.apply(native.filter, originalChildren); });
         var sizes = native.groups.filter(function (group) { return group.getAttribute('data-component') === 'list.filter-size'; });
+        var brands = native.groups.filter(function (group) { return group.getAttribute('data-component') === 'list.filter-brand'; });
+        var navigation = productLinks(doc);
         native.groups.forEach(function (group) {
           var heading = group.querySelector('.font-small.font-weight-bold');
           if (!heading || !heading.textContent.trim()) return;
@@ -124,6 +168,30 @@
             addClass(group, 'bede-filter-size');
             native.filter.insertBefore(group, native.filter.firstChild);
             return;
+          }
+          if (brands.length === 1 && group === brands[0] && navigation.length) {
+            var choices = group.querySelectorAll('.js-filter-checkbox');
+            // This replacement is scoped to the observed sole Bedê brand only.
+            if (choices.length === 1 && (choices[0].getAttribute('data-filter-value') || '').trim().toLocaleLowerCase('pt-BR') === 'bedê') {
+              var products = doc.createElement('details'); products.className = 'bede-filter-disclosure bede-filter-products';
+              var title = doc.createElement('summary'); title.textContent = 'Produtos'; products.appendChild(title);
+              var list = doc.createElement('ul'); list.className = 'bede-filter-options bede-product-links';
+              navigation.forEach(function (link) {
+                var li = doc.createElement('li'), anchor = doc.createElement('a');
+                anchor.textContent = link.label; anchor.setAttribute('href', link.href);
+                li.appendChild(anchor); list.appendChild(li);
+              });
+              products.appendChild(list); group.parentNode.insertBefore(products, group);
+              products.addEventListener('toggle', function () { if (products.open) disclosures.forEach(function (other) { if (other !== products) other.open = false; }); });
+              disclosures.push(products);
+              if (!brandIsActive(group, runtime.location && runtime.location.search)) {
+                rememberAttribute(group, 'data-bede-brand-preserved', '');
+                rememberAttribute(group, 'hidden', '');
+                return;
+              }
+              // An active/uncertain brand remains a genuine native Marca control,
+              // in addition to Produtos; do not clear the URL or checked state.
+            }
           }
           var disclosure = doc.createElement('details'); disclosure.className = 'bede-filter-disclosure';
           var summary = doc.createElement('summary'); summary.textContent = heading.textContent.trim();
@@ -207,5 +275,5 @@
     if (!instances.has(doc) || instances.get(doc).getStatus() === 'stopped') instances.set(doc, createController(doc, runtime));
     return instances.get(doc).start();
   }
-  return { start: start, createController: createController, isOffers: isOffers, css: CSS };
+  return { start: start, createController: createController, isOffers: isOffers, productLinks: productLinks, brandIsActive: brandIsActive, css: CSS };
 }));

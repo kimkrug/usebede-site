@@ -59,6 +59,49 @@
       {id:'1585036765',sku:'3067-36',image:'1266981269',options:['36',null,null]},
       {id:'1585036773',sku:'3067-35',image:'1266981269',options:['35',null,null]},
       {id:'1585036777',sku:'3067-34',image:'1266981269',options:['34',null,null]}
+    ]},
+    // Lyon Napa: one approved image, five exact size bindings and six originals retained.
+    '364500317':{mode:'single',approved:['1266982039'],retired:['1263358176','1263358186','1263333061','1263333063','1263286996','1263287003'],bindings:[
+      {id:'1587975071',sku:'3068-39',image:'1266982039',options:['39',null,null]},
+      {id:'1587975073',sku:'3068-38',image:'1266982039',options:['38',null,null]},
+      {id:'1587975074',sku:'3068-37',image:'1266982039',options:['37',null,null]},
+      {id:'1587975076',sku:'3068-36',image:'1266982039',options:['36',null,null]},
+      {id:'1587975077',sku:'3068-34',image:'1266982039',options:['34',null,null]}
+    ]},
+    // Boneca: six size-only bindings; four source photos remain reversible.
+    '364499940':{mode:'single',approved:['1267014575'],retired:['1263335620','1263335624','1263274059','1263274068'],bindings:[
+      {id:'1587974011',sku:'3013-34',image:'1267014575',options:['34',null,null]},
+      {id:'1587974025',sku:'3013-39',image:'1267014575',options:['39',null,null]},
+      {id:'1587974032',sku:'3013-38',image:'1267014575',options:['38',null,null]},
+      {id:'1587974036',sku:'3013-37',image:'1267014575',options:['37',null,null]},
+      {id:'1587974039',sku:'3013-36',image:'1267014575',options:['36',null,null]},
+      {id:'1587974043',sku:'3013-35',image:'1267014575',options:['35',null,null]}
+    ]},
+    // Verniz Preto: one approved photo, five size-only bindings and all originals retained.
+    '364500367':{mode:'single',approved:['1267018094'],retired:['1263332495','1263332500','1263288237','1263288250'],bindings:[
+      {id:'1587975277',sku:'3078-34',image:'1267018094',options:['34',null,null]},
+      {id:'1587975285',sku:'3078-38',image:'1267018094',options:['38',null,null]},
+      {id:'1587975288',sku:'3078-37',image:'1267018094',options:['37',null,null]},
+      {id:'1587975292',sku:'3078-36',image:'1267018094',options:['36',null,null]},
+      {id:'1587975295',sku:'3078-35',image:'1267018094',options:['35',null,null]}
+    ]},
+    // Montaria Lia: native Cor=Preto preserved, with six exact post-save bindings.
+    '364501366':{axis:1,colors:{Preto:['1267015050']},retired:['1263369345','1263369374','1263284379','1263284395'],bindings:[
+      {id:'1587980094',sku:'3320-34-PRETO',image:'1267015050',options:['34','Preto',null]},
+      {id:'1587980098',sku:'3320-35-PRETO',image:'1267015050',options:['35','Preto',null]},
+      {id:'1587980100',sku:'3320-36-PRETO',image:'1267015050',options:['36','Preto',null]},
+      {id:'1587980103',sku:'3320-37-PRETO',image:'1267015050',options:['37','Preto',null]},
+      {id:'1587980118',sku:'3320-38-PRETO',image:'1267015050',options:['38','Preto',null]},
+      {id:'1587980121',sku:'3320-39-PRETO',image:'1267015050',options:['39','Preto',null]}
+    ]},
+    // Sofi: six native size-only bindings; no artificial color axis.
+    '364500789':{mode:'single',approved:['1267016141'],retired:['1263321027','1263321056','1263321064','1263321099'],bindings:[
+      {id:'1587977407',sku:'3177-34',image:'1267016141',options:['34',null,null]},
+      {id:'1587977409',sku:'3177-39',image:'1267016141',options:['39',null,null]},
+      {id:'1587977412',sku:'3177-38',image:'1267016141',options:['38',null,null]},
+      {id:'1587977414',sku:'3177-36',image:'1267016141',options:['36',null,null]},
+      {id:'1587977417',sku:'3177-35',image:'1267016141',options:['35',null,null]},
+      {id:'1587977421',sku:'3177-37',image:'1267016141',options:['37',null,null]}
     ]}
   };
   function imageURL(value){try{const u=new URL(value,'https://loja.usebede.com.br');return u.protocol==='https:'&&/(^|\.)mitiendanube\.com$/.test(u.hostname)&&!u.username&&!u.password&&!u.port?u.href:null;}catch(_){return null;}}
