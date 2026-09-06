@@ -12,28 +12,38 @@
       {id:'1587979960',sku:'3315-36-PRETO',image:'1266967783',options:['36','Preto',null]},
       {id:'1587979963',sku:'3315-37-PRETO',image:'1266967783',options:['37','Preto',null]},
       {id:'1587979966',sku:'3315-38-PRETO',image:'1266967783',options:['38','Preto',null]}
+    ]},
+    // Bella: isolated shot, then worn shot; original native assets remain reversible.
+    '364501384':{axis:1,colors:{Preto:['1266970460','1266970459']},retired:['1263284404','1263284416'],bindings:[
+      {id:'1587980213',sku:'3322-34-PRETO',image:'1266970460',options:['34','Preto',null]},
+      {id:'1587980215',sku:'3322-35-PRETO',image:'1266970460',options:['35','Preto',null]},
+      {id:'1587980218',sku:'3322-36-PRETO',image:'1266970460',options:['36','Preto',null]},
+      {id:'1587980222',sku:'3322-37-PRETO',image:'1266970460',options:['37','Preto',null]},
+      {id:'1587980224',sku:'3322-38-PRETO',image:'1266970460',options:['38','Preto',null]}
     ]}
   };
   function imageURL(value){try{const u=new URL(value,'https://loja.usebede.com.br');return u.protocol==='https:'&&/(^|\.)mitiendanube\.com$/.test(u.hostname)&&!u.username&&!u.password&&!u.port?u.href:null;}catch(_){return null;}}
   function getVerifiedGallery(model,rule=MAP[String(model?.productId)]){
     const {productId,variants,images}=model||{};
-    if(!rule||!String(productId||'').match(/^[1-9]\d*$/)||![0,1,2].includes(rule.axis)||!rule.colors||typeof rule.colors!=='object'||Array.isArray(rule.colors)||!Array.isArray(variants)||!variants.length||variants.length>500||!Array.isArray(images))return null;
+    const single=rule?.mode==='single';
+    if(!rule||!String(productId||'').match(/^[1-9]\d*$/)||(!single&&(![0,1,2].includes(rule.axis)||!rule.colors||typeof rule.colors!=='object'||Array.isArray(rule.colors)))||!Array.isArray(variants)||!variants.length||variants.length>500||!Array.isArray(images))return null;
+    if(single&&(rule.axis!==undefined||rule.colors!==undefined||!Array.isArray(rule.approved)||!rule.approved.length||rule.approved.length>30||variants.some(v=>v?.option1!=null||v?.option2!=null)))return null;
     if(variants.some(v=>!v||String(v.product_id)!==String(productId)||!String(v.id||'').match(/^[1-9]\d*$/)||typeof v.sku!=='string'||!v.sku)||new Set(variants.map(v=>String(v.id))).size!==variants.length||new Set(variants.map(v=>v.sku)).size!==variants.length)return null;
-    const entries=Object.entries(rule.colors),retired=rule.retired===undefined?[]:rule.retired;
-    if(!entries.length||entries.length>30||!Array.isArray(retired)||entries.some(([name,ids])=>!name||!Array.isArray(ids)||!ids.length||ids.length>30))return null;
+    const entries=single?[['',rule.approved]]:Object.entries(rule.colors),retired=rule.retired===undefined?[]:rule.retired;
+    if(!entries.length||entries.length>30||!Array.isArray(retired)||entries.some(([name,ids])=>(!single&&!name)||!Array.isArray(ids)||!ids.length||ids.length>30))return null;
     const approved=entries.flatMap(([,ids])=>ids),expected=[...approved,...retired];
     if(expected.length>100||expected.some(id=>typeof id!=='string'||!id.match(/^[1-9]\d*$/))||new Set(expected).size!==expected.length)return null;
     if(images.length!==expected.length||images.some(i=>!i||!expected.includes(String(i.id))||!imageURL(i.url))||new Set(images.map(i=>String(i.id))).size!==images.length)return null;
-    const names=[...new Set(variants.map(v=>v['option'+rule.axis]))];
-    if(names.length!==entries.length||names.some(n=>!Object.hasOwn(rule.colors,n))||variants.some(v=>!rule.colors[v['option'+rule.axis]].includes(String(v.image))))return null;
-    if(retired.length||rule.bindings!==undefined){
+    if(single){if(variants.some(v=>!rule.approved.includes(String(v.image))))return null;}
+    else{const names=[...new Set(variants.map(v=>v['option'+rule.axis]))];if(names.length!==entries.length||names.some(n=>!Object.hasOwn(rule.colors,n))||variants.some(v=>!rule.colors[v['option'+rule.axis]].includes(String(v.image))))return null;}
+    if(single||retired.length||rule.bindings!==undefined){
       if(!Array.isArray(rule.bindings)||rule.bindings.length!==variants.length||new Set(rule.bindings.map(b=>String(b?.id))).size!==variants.length)return null;
       for(const v of variants){
         const binding=rule.bindings.find(b=>b&&String(b.id)===String(v.id));
         if(!binding||binding.sku!==v.sku||typeof binding.image!=='string'||binding.image!==String(v.image)||!Array.isArray(binding.options)||binding.options.length!==3||binding.options.some((option,index)=>option!==(v['option'+index]??null)))return null;
       }
     }
-    return{axis:rule.axis,retired:retired.slice(),colors:entries.map(([name,ids])=>({name,soldOut:variants.filter(v=>v['option'+rule.axis]===name).every(v=>v.available===false),images:ids.map(id=>({id,url:imageURL(images.find(i=>String(i.id)===id).url)}))}))};
+    return{axis:single?null:rule.axis,single,retired:retired.slice(),colors:entries.map(([name,ids])=>({name,soldOut:variants.filter(v=>single||v['option'+rule.axis]===name).every(v=>v.available===false),images:ids.map(id=>({id,url:imageURL(images.find(i=>String(i.id)===id).url)}))}))};
   }
   function verified(productId,variants,images){return getVerifiedGallery({productId,variants,images});}
   const CSS=`
@@ -55,11 +65,12 @@
     let figure=null,nav=null,key='',timer=null,loadTimer=null,pendingImage=null,generation=0,failed=false,stopped=false,nativeState=null;
     const selectedPhotos=new Map();
     function read(){
-      const groups=form.querySelectorAll('.js-product-variants-group[data-variation-id="'+MAP[id].axis+'"]');
-      if(groups.length!==1)return null;const group=groups[0],selects=group.querySelectorAll('select.js-variation-option');
-      if(selects.length!==1||selects[0].getAttribute('name')!=='variation['+MAP[id].axis+']')return null;const select=selects[0];let variants;try{variants=JSON.parse(root.getAttribute('data-variants'));}catch(_){return null;}
+      const single=MAP[id].mode==='single';let group=null,select=null;
+      if(!single){const groups=form.querySelectorAll('.js-product-variants-group[data-variation-id="'+MAP[id].axis+'"]');if(groups.length!==1)return null;group=groups[0];const selects=group.querySelectorAll('select.js-variation-option');if(selects.length!==1||selects[0].getAttribute('name')!=='variation['+MAP[id].axis+']')return null;select=selects[0];}
+      else if(Array.from(form.querySelectorAll('.js-product-variants-group[data-variation-id]')).some(g=>g.getAttribute('data-variation-id')!=='0'))return null;
+      let variants;try{variants=JSON.parse(root.getAttribute('data-variants'));}catch(_){return null;}
       const images=Array.from(area.querySelectorAll('.js-swiper-product .js-product-slide[data-image]')).map(slide=>({id:slide.getAttribute('data-image'),url:slide.querySelector('a.js-product-slide-link')?.getAttribute('href')}));
-      const model=verified(id,variants,images),chosen=model?.colors.find(color=>color.name===select.value);
+      const model=verified(id,variants,images),chosen=single?model?.colors[0]:model?.colors.find(color=>color.name===select.value);
       return chosen?{group,model,chosen}:null;
     }
     function restore(){
@@ -75,12 +86,13 @@
       const next=JSON.stringify(state.model)+'|'+state.chosen.name+'|'+photo.id;if(next===key)return;
       const focusPhoto=doc.activeElement?.getAttribute('data-bede-photo');restore();key=next;const token=generation;
       const readyFigure=doc.createElement('figure');readyFigure.className='bede-color-gallery';
-      const link=doc.createElement('a');link.href=photo.url;link.target='_blank';link.rel='noopener';link.setAttribute('aria-label','Ampliar foto '+(index+1)+' de '+state.chosen.images.length+' — '+state.chosen.name);
-      const image=doc.createElement('img');image.alt=(root.querySelector('h1')?.textContent?.trim()||'Produto')+' — '+state.chosen.name+' — foto '+(index+1);image.decoding='async';link.appendChild(image);readyFigure.appendChild(link);
-      const caption=doc.createElement('figcaption');caption.textContent=state.chosen.name+' · foto '+(index+1)+' de '+state.chosen.images.length+' · toque na foto para ampliar';readyFigure.appendChild(caption);
+      const colorLabel=state.chosen.name?' — '+state.chosen.name:'';
+      const link=doc.createElement('a');link.href=photo.url;link.target='_blank';link.rel='noopener';link.setAttribute('aria-label','Ampliar foto '+(index+1)+' de '+state.chosen.images.length+colorLabel);
+      const image=doc.createElement('img');image.alt=(root.querySelector('h1')?.textContent?.trim()||'Produto')+colorLabel+' — foto '+(index+1);image.decoding='async';link.appendChild(image);readyFigure.appendChild(link);
+      const caption=doc.createElement('figcaption');caption.textContent=(state.chosen.name?state.chosen.name+' · ':'')+'foto '+(index+1)+' de '+state.chosen.images.length+' · toque na foto para ampliar';readyFigure.appendChild(caption);
       if(state.chosen.images.length>1){
-        const photos=doc.createElement('div');photos.className='bede-color-photo-nav';photos.setAttribute('role','group');photos.setAttribute('aria-label','Fotos — '+state.chosen.name);
-        state.chosen.images.forEach((item,i)=>{const button=doc.createElement('button');button.type='button';button.setAttribute('data-bede-photo',item.id);button.setAttribute('aria-label','Ver foto '+(i+1)+' de '+state.chosen.images.length+' — '+state.chosen.name);button.setAttribute('aria-pressed',String(i===index));const thumb=doc.createElement('img');thumb.src=item.url;thumb.alt='';thumb.loading='lazy';button.appendChild(thumb);button.addEventListener('click',()=>{const current=read();if(current?.chosen.name===state.chosen.name&&current.chosen.images.some(p=>p.id===item.id)){selectedPhotos.set(state.chosen.name,i);schedule();}});photos.appendChild(button);});readyFigure.appendChild(photos);
+        const photos=doc.createElement('div');photos.className='bede-color-photo-nav';photos.setAttribute('role','group');photos.setAttribute('aria-label','Fotos'+colorLabel);
+        state.chosen.images.forEach((item,i)=>{const button=doc.createElement('button');button.type='button';button.setAttribute('data-bede-photo',item.id);button.setAttribute('aria-label','Ver foto '+(i+1)+' de '+state.chosen.images.length+colorLabel);button.setAttribute('aria-pressed',String(i===index));const thumb=doc.createElement('img');thumb.src=item.url;thumb.alt='';thumb.loading='lazy';button.appendChild(thumb);button.addEventListener('click',()=>{const current=read();if(current?.chosen.name===state.chosen.name&&current.chosen.images.some(p=>p.id===item.id)){selectedPhotos.set(state.chosen.name,i);schedule();}});photos.appendChild(button);});readyFigure.appendChild(photos);
       }
       function fail(){if(token!==generation||stopped)return;failed=true;restore();}
       function commit(){
@@ -89,7 +101,7 @@
         if(!current||JSON.stringify(current.model)+'|'+current.chosen.name+'|'+current.chosen.images[currentIndex].id!==next){restore();schedule();return;}
         if(loadTimer!==null)win.clearTimeout(loadTimer);loadTimer=null;image.onload=image.onerror=null;pendingImage=null;
         figure=readyFigure;area.insertAdjacentElement('beforebegin',figure);concealNative();
-        nav=doc.createElement('section');nav.className='bede-colors-gallery-nav';nav.setAttribute('aria-label','Cores deste modelo');state.group.insertAdjacentElement('afterend',nav);
+        if(!state.model.single&&state.model.colors.length>1){nav=doc.createElement('section');nav.className='bede-colors-gallery-nav';nav.setAttribute('aria-label','Cores deste modelo');state.group.insertAdjacentElement('afterend',nav);
         const heading=doc.createElement('h2');heading.textContent='Cores deste modelo';nav.appendChild(heading);
         const list=doc.createElement('div');nav.appendChild(list);
         for(const color of state.model.colors){
@@ -102,7 +114,7 @@
             if(native&&native.getAttribute('aria-disabled')!=='true')native.click();schedule();
           });list.appendChild(button);
         }
-        nav.querySelectorAll('button[data-color]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.color===state.chosen.name)));
+        nav.querySelectorAll('button[data-color]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.color===state.chosen.name)));}
         if(focusPhoto&&(!doc.activeElement||doc.activeElement===doc.body))figure.querySelector('button[data-bede-photo="'+photo.id+'"]')?.focus();
       }
       pendingImage=image;image.onload=commit;image.onerror=fail;loadTimer=win.setTimeout(fail,6000);image.src=photo.url;
