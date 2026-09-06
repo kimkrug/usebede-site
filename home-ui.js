@@ -14,6 +14,9 @@
     ['Coturnos', 'coturno'], ['Bolsas', 'bolsa'], ['Mochilas', 'mochila'], ['Clutches', 'clutch']
   ];
   const boundMenus = new WeakSet();
+  const desktopHover = typeof window.matchMedia === 'function'
+    ? window.matchMedia('(min-width: 1280px) and (hover: hover) and (pointer: fine)')
+    : null;
 
   function closeProductMenus(except, restoreFocus) {
     document.querySelectorAll('details[data-product-menu]').forEach(function (details) {
@@ -44,6 +47,28 @@
         details.open = true;
         links.querySelector('a').focus();
       });
+      const desktopNav = document.getElementById('mainNav');
+      if (desktopNav && desktopNav.contains(details)) {
+        let pointerInside = false;
+        details.addEventListener('pointerenter', function (event) {
+          if (!desktopHover || !desktopHover.matches || event.pointerType === 'touch') return;
+          pointerInside = true;
+          closeProductMenus(details);
+          details.open = true;
+        });
+        details.addEventListener('pointerleave', function () {
+          pointerInside = false;
+          // Keep keyboard focus visible until it leaves the disclosure.
+          if (!details.contains(document.activeElement)) details.open = false;
+        });
+        details.addEventListener('focusout', function (event) {
+          if (!pointerInside && !details.contains(event.relatedTarget)) details.open = false;
+        });
+        if (desktopHover) desktopHover.addEventListener('change', function () {
+          pointerInside = false;
+          details.open = false;
+        });
+      }
     });
   }
   window.BedeNavigation = { setupProductMenus: setupProductMenus, closeProductMenus: closeProductMenus };

@@ -37,7 +37,44 @@
     const confirmed=variants.filter(v=>v.available===true&&v.is_visible===true&&v.contact!==true&&typeof v.stock==='number'&&Number.isFinite(v.stock)&&v.stock>0);
     const sizes=[...new Set(confirmed.map(v=>v[sizeKey].trim()))].sort(compareSizes);
     const colors=colorKey?[...new Set(variants.map(v=>v[colorKey].trim()))].map(color=>({name:color,sizes:[...new Set(confirmed.filter(v=>v[colorKey].trim()===color).map(v=>v[sizeKey].trim()))].sort(compareSizes)})):[];
-    return{status:'known',sizes,colors,multipleOptions:axes.length>(colorKey?2:1)};
+    const imageBindings=[];
+    if(colorKey)for(const v of variants){
+      const imageId=/^[1-9]\d*$/.test(String(v.image))?String(v.image):null;
+      let imageURL=null;try{const u=new URL(v.image_url,'https://loja.usebede.com.br');if(u.protocol==='https:'&&/(^|\.)mitiendanube\.com$/.test(u.hostname)&&!u.username&&!u.password&&!u.port)imageURL=u.href;}catch(_){}
+      if(!imageId||!imageURL)continue;
+      let binding=imageBindings.find(b=>b.id===imageId&&b.url===imageURL);
+      if(!binding){binding={id:imageId,url:imageURL,colors:[]};imageBindings.push(binding);}
+      const color=v[colorKey].trim();if(!binding.colors.includes(color))binding.colors.push(color);
+    }
+    return{status:'known',sizes,colors,imageBindings,multipleOptions:axes.length>(colorKey?2:1)};
+  }
+  function resolveCardPreview(data,evidence={}){
+    const unknown={status:'unknown',sizes:[],color:null,message:'Consultar tamanhos',note:'Veja as opções no produto.'};
+    if(!data||data.status==='loading')return{...unknown,status:'loading',message:'Consultando tamanhos…',note:''};
+    if(data.status==='not-sized')return{...unknown,status:'not-sized',message:'Consultar opções',note:''};
+    if(data.status!=='known'||!Array.isArray(data.colors)||!Array.isArray(data.sizes))return unknown;
+    let chosen=null;
+    if(evidence.color!==null&&evidence.color!==undefined){
+      const matches=data.colors.filter(c=>c.name===evidence.color);
+      if(matches.length!==1)return unknown;chosen=matches[0];
+    }else if(data.colors.length===1)chosen=data.colors[0];
+    else if(data.colors.length>1){
+      const urls=new Set();for(const value of evidence.imageURLs||[]){
+        try{const u=new URL(value,'https://loja.usebede.com.br');if(u.protocol==='https:'&&/(^|\.)mitiendanube\.com$/.test(u.hostname)&&!u.username&&!u.password&&!u.port)urls.add(u.href);}catch(_){}
+      }
+      const bindings=Array.isArray(data.imageBindings)?data.imageBindings:[];
+      const matched=bindings.filter(b=>urls.has(b.url)||(evidence.imageId&&b.id===String(evidence.imageId)));
+      const ids=[...new Set(matched.map(b=>b.id))];
+      // A reused image ID stays ambiguous even when its CDN URLs differ.
+      const colors=ids.length===1?[...new Set(bindings.filter(b=>b.id===ids[0]).flatMap(b=>b.colors))]:[];
+      if(ids.length===1&&colors.length===1&&(!evidence.imageId||ids[0]===String(evidence.imageId)))chosen=data.colors.find(c=>c.name===colors[0]);
+      if(!chosen)return{...unknown,message:'Consultar tamanhos por cor',note:'Várias cores neste produto.'};
+    }
+    const sizes=chosen?chosen.sizes:data.sizes;
+    if(!Array.isArray(sizes))return unknown;
+    return{status:'known',color:chosen?.name||null,sizes:[...sizes].sort(compareSizes),
+      message:sizes.length?'Tamanhos com estoque':'Sem estoque confirmado',
+      note:data.multipleOptions?'Confirme a combinação no produto.':'Prévia · confirme no produto.'};
   }
   function parseProductHTML(html,expectedId){
     if(typeof html!=='string'||html.length>2500000)throw new Error('Invalid product document');
@@ -122,7 +159,7 @@
     }
     return{start,cancel};
   }
-  return{isSizeAxis,isColorAxis,compareSizes,previewFromVariants,parseProductHTML,initialVariantImage,createInitialGalleryAlignment};
+  return{isSizeAxis,isColorAxis,compareSizes,previewFromVariants,parseProductHTML,resolveCardPreview,initialVariantImage,createInitialGalleryAlignment};
 });
 (function () {
   'use strict';
@@ -140,15 +177,15 @@
   const style = document.createElement('style');
   style.textContent = `
     .bede-card-image-link{display:block}.bede-offer-image-link{position:relative;display:block}
-    .bede-card-overlay{position:absolute;inset:auto 0 0;z-index:3;display:flex;flex-direction:column;gap:6px;padding:22px 14px 16px;background:linear-gradient(transparent,rgba(255,255,255,.97) 24%);color:#000;text-align:center;opacity:0;transform:translateY(5px);transition:opacity .18s ease,transform .18s ease;pointer-events:none;font:500 12px/1.5 Montserrat,sans-serif}
-    .bede-card-overlay-name{font-weight:600}.bede-card-overlay-cta{display:inline-flex;align-items:center;justify-content:center;align-self:center;box-sizing:border-box;min-height:44px;max-width:100%;padding:8px 14px;background:#000!important;color:#fff!important;border:1px solid #000;text-decoration:none!important}
+    .bede-card-overlay{position:absolute;inset:auto 0 0;z-index:3;box-sizing:border-box;display:flex;flex-direction:column;gap:4px;max-height:174px;padding:16px 10px 10px;background:linear-gradient(transparent,rgba(255,255,255,.98) 12%);color:#000;text-align:center;opacity:0;transform:translateY(5px);transition:opacity .18s ease,transform .18s ease;pointer-events:none;font:500 12px/1.4 Montserrat,sans-serif}
+    .bede-card-overlay-name{font-weight:600;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;line-height:1.35;max-height:2.7em}.bede-card-overlay-cta{display:inline-flex;align-items:center;justify-content:center;align-self:center;flex-shrink:0;box-sizing:border-box;min-height:44px;max-width:100%;padding:8px 14px;background:#000!important;color:#fff!important;border:1px solid #000;text-decoration:none!important}
     .bede-card-ready:focus-within .bede-card-overlay{opacity:1;transform:none}
-    .bede-card-product-link{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:44px;max-width:100%;padding:8px 14px;font:500 12px/1.5 Montserrat,sans-serif;background:#000!important;color:#fff!important;border:1px solid #000;text-decoration:none!important}
-    .bede-card-preview{margin:4px 0 16px;min-height:62px;padding:0 8px;color:#000;text-align:center;font:400 11px/1.6 Montserrat,sans-serif;overflow-wrap:anywhere}
-    .bede-card-preview p{margin:4px 0}.bede-card-preview summary{min-height:44px;padding:7px 2px;cursor:pointer;font-weight:500;list-style-position:inside}.bede-card-preview small{display:block;font-size:10px;line-height:1.55;color:#000}.bede-card-preview ul{list-style:none;margin:8px 0;padding:10px;background:#f7f6f2;text-align:left}.bede-card-preview li+li{margin-top:6px}
-    .bede-card-ready a:focus-visible,.bede-card-preview summary:focus-visible{outline:2px solid #000;outline-offset:3px}
-    .bede-card-ready .bede-card-product-link:focus-visible{box-shadow:0 0 0 3px #fff;outline:2px solid #000;outline-offset:3px}
+    .bede-card-preview{display:block;min-height:0;max-height:76px;overflow:hidden;margin:0;padding:0;color:#000;text-align:center;font:400 11px/1.35 Montserrat,sans-serif;overflow-wrap:anywhere}
+    .bede-card-preview span{display:block}.bede-card-preview-label{font-size:10px}.bede-card-preview-sizes{font-weight:600;font-size:12px;line-height:1.4}.bede-card-preview-note{font-size:9px;line-height:1.3}
+    .bede-card-ready a:focus-visible{outline:2px solid #000;outline-offset:3px}
+    .bede-card-ready .bede-card-image-link:focus-visible{box-shadow:0 0 0 3px #fff;outline:2px solid #000;outline-offset:3px}
     @media(hover:hover) and (pointer:fine){.bede-card-ready:hover .bede-card-overlay{opacity:1;transform:none}}
+    @media(hover:none),(pointer:coarse){.bede-card-overlay{opacity:1;transform:none}}
     @media(prefers-reduced-motion:reduce){.bede-card-overlay{transition:none;transform:none}}
     .bede-product-help{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0 20px;font:500 12px/1.6 Montserrat,sans-serif}
     .bede-product-help a{color:#000;text-decoration:underline;text-underline-offset:3px;padding:5px 0}
@@ -160,7 +197,7 @@
     .bede-offer-card h2{font-size:12px;font-weight:500;line-height:1.65;margin:12px 0 8px}.bede-offer-card del{font-size:12px;color:#000;margin-right:8px}.bede-offer-card strong{font-size:14px;font-weight:600}
     .bede-offers-empty{padding:44px 20px;text-align:center;background:#f7f6f2}.bede-offers-empty h2{font-size:23px;font-weight:400;margin-bottom:14px}.bede-offers-empty a{display:inline-block;margin-top:12px;padding:13px 20px;background:#000;color:white;text-decoration:none;font-size:12px}
     .bede-offers-native[hidden]{display:none!important}
-    @media(max-width:767px){.bede-offers-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 10px}.bede-offers-empty{padding:32px 16px}.bede-card-preview{padding:0 2px}.bede-card-overlay-name{font-size:11px}}
+    @media(max-width:767px){.bede-offers-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 10px}.bede-offers-empty{padding:32px 16px}.bede-card-overlay{opacity:1;transform:none;gap:3px;padding:12px 6px 7px;max-height:160px}.bede-card-preview{max-height:70px}.bede-card-overlay-name{font-size:10px}.bede-card-overlay-cta{font-size:11px;padding:7px 11px}}
   `;
   document.head.appendChild(style);
   function numericSizes() {
@@ -222,34 +259,37 @@
     try{const url=new URL(value,STORE);return url.origin===STORE&&!url.username&&!url.password&&!url.search&&!url.hash&&/^\/produtos\/[^/]+\/$/.test(url.pathname)?url.href:'';}catch(_){return'';}
   }
   function selectedColor(card){
+    const values=[];
     for(const group of card.querySelectorAll('.js-product-variants-group')){
       if(!presentation.isColorAxis(group.querySelector('label')?.textContent))continue;
       const select=group.querySelector('select.js-variation-option');
-      if(select&&select.value)return select.value;
+      if(select&&select.value)values.push(select.value);
     }
-    return null;
+    return values.length===1?values[0]:values.length?'':null;
   }
   function renderPreview(record,data){
-    const color=selectedColor(record.card),signature=JSON.stringify([data,color]);
+    const evidence={color:selectedColor(record.card),imageURLs:[],imageId:null};
+    const images=Array.from(record.imageLink.querySelectorAll('img'));
+    const featured=images.filter(img=>img.classList.contains('item-image-featured'));
+    const image=featured.length===1?featured[0]:images.length===1?images[0]:null;
+    if(image){
+      evidence.imageId=image.getAttribute('data-image');
+      for(const value of [image.currentSrc,image.getAttribute('src'),image.getAttribute('data-src')])if(value)evidence.imageURLs.push(value);
+      for(const name of ['srcset','data-srcset'])for(const part of (image.getAttribute(name)||'').split(',')){
+        const value=part.trim().split(/\s+/)[0];if(value)evidence.imageURLs.push(value);
+      }
+    }
+    const view=presentation.resolveCardPreview(data,evidence),signature=JSON.stringify(view);
     if(record.signature===signature)return;
     record.signature=signature;const area=record.preview;area.replaceChildren();
-    const line=text=>{const p=document.createElement('p');p.textContent=text;area.appendChild(p);};
-    if(!data||data.status==='loading'){line('Consultando tamanhos…');return;}
-    if(data.status==='not-sized'){line('Confira as opções na página do produto.');return;}
-    if(data.status!=='known'){line('Tamanhos: consulte na página do produto.');return;}
-    const exact=color?data.colors.find(c=>c.name===color):null;
-    if(color&&!exact){line('Confira os tamanhos da cor selecionada no produto.');return;}
-    const sizes=exact?exact.sizes:data.sizes;
-    if(!sizes.length){line(exact?'Sem tamanhos com estoque confirmado nesta cor.':'Sem tamanhos com estoque confirmado.');return;}
-    const description='Tamanhos com estoque: '+sizes.join(' · ');
-    if(data.colors.length>1&&!exact){
-      const details=document.createElement('details'),summary=document.createElement('summary');summary.textContent=description;details.appendChild(summary);
-      const list=document.createElement('ul');
-      data.colors.forEach(c=>{const li=document.createElement('li');li.textContent=c.name+': '+(c.sizes.length?c.sizes.join(' · '):'sem estoque confirmado');list.appendChild(li);});
-      details.appendChild(list);area.appendChild(details);
-      const note=document.createElement('small');note.textContent='Em pelo menos uma cor. Toque para conferir as cores.';area.appendChild(note);
-    }else{line(description);if(exact||data.colors.length===1)line('Cor: '+(exact||data.colors[0]).name);}
-    const note=document.createElement('small');note.textContent=data.multipleOptions?'Prévia por tamanho; confirme a combinação completa no produto.':'Prévia de disponibilidade; confirme tamanho e cor no produto.';area.appendChild(note);
+    const line=(text,className)=>{const span=document.createElement('span');span.className=className;span.textContent=text;area.appendChild(span);};
+    if(view.color)line('Cor: '+view.color,'bede-card-preview-label');
+    line(view.message,'bede-card-preview-label');
+    if(view.sizes.length)line(view.sizes.join(' · '),'bede-card-preview-sizes');
+    if(view.note)line(view.note,'bede-card-preview-note');
+    // The visual overlay is not a second control. Its native parent link stays
+    // the only CTA; its accessible name carries the same availability caveat.
+    record.imageLink.setAttribute('aria-label',[record.name,view.color?'Cor: '+view.color:'',view.message,view.sizes.join(', '),view.note,'Ver produto'].filter(Boolean).join('. '));
   }
   function applyPreview(url,data){for(const record of cards.values())if(record.url===url)renderPreview(record,data);}
   function schedulePreviews(delay=30000){
@@ -321,15 +361,20 @@
       const name=(card.querySelector('.js-item-name')||card.querySelector('h2'))?.textContent?.trim();
       const info=card.querySelector('.item-description')||card;
       if(!imageLink||!url||!name||info.tagName==='A')continue;
+      // Swiper may clone an already enhanced card without our Map entry.
+      // Rebuild only our presentation artifacts; native nodes stay untouched.
+      for(const selector of ['.bede-card-overlay','.bede-card-preview','.bede-card-product-link']){
+        card.querySelectorAll(selector).forEach(artifact=>artifact.remove());
+      }
       const overlay=document.createElement('span');overlay.className='bede-card-overlay';overlay.setAttribute('aria-hidden','true');
       const title=document.createElement('span');title.className='bede-card-overlay-name';title.textContent=name;overlay.appendChild(title);
+      const preview=document.createElement('span');preview.className='bede-card-preview';overlay.appendChild(preview);
       const cta=document.createElement('span');cta.className='bede-card-overlay-cta';cta.textContent='Ver produto';overlay.appendChild(cta);imageLink.appendChild(overlay);imageLink.classList.add('bede-card-image-link');
-      const link=document.createElement('a');link.className='bede-card-product-link';link.href=url;link.textContent='Ver produto';link.setAttribute('aria-label','Ver produto: '+name);info.appendChild(link);
-      const preview=document.createElement('div');preview.className='bede-card-preview';info.appendChild(preview);
-      const record={card,url,id:card.getAttribute('data-product-id')||null,preview,visible:!cardObserver&&cards.size<24,signature:''};cards.set(card,record);card.classList.add('bede-card-ready');renderPreview(record,{status:'loading'});
+      const record={card,url,name,imageLink,id:card.getAttribute('data-product-id')||null,preview,visible:!cardObserver&&cards.size<24,signature:''};cards.set(card,record);card.classList.add('bede-card-ready');renderPreview(record,{status:'loading'});
       if(cardObserver)cardObserver.observe(card);else if(cards.size<=24&&!card.closest('[hidden]'))requestPreview(record);else renderPreview(record,{status:'unknown'});
       card.addEventListener('focusin',()=>{record.visible=true;requestPreview(record);});
       card.addEventListener('mouseenter',()=>{record.visible=true;requestPreview(record);},{passive:true});
+      imageLink.addEventListener('load',()=>{const cached=previewCache.get(url);if(cached&&cached.until>Date.now())renderPreview(record,cached.data);},true);
     }
     schedulePreviews();
   }
@@ -396,7 +441,19 @@
     }catch(_){offerState.validUntil=0;empty('Não foi possível consultar as ofertas.','Tente novamente em instantes. O catálogo completo continua disponível.');}
     finally{offerState.loading=false;scheduleOffers(offerState.validUntil?Math.min(120000,offerState.validUntil-Date.now()):120000);}
   }
+  function loadVisualModules(){
+    // Versioned, same-owner presentation modules. A load failure leaves native UI intact.
+    for(const [file,name] of [['store-product-ui.js','BedeProductUI'],['store-filter-bar.js','BedeNativeFilters'],['store-color-gallery.js','BedeColorGallery']]){
+      if(window[name]){window[name].start();continue;}
+      const id='bede-module-'+name;if(document.getElementById(id))continue;
+      const script=document.createElement('script');script.id=id;script.defer=true;
+      script.src=HOME+'/'+file+'?v=20260906_ui1';
+      script.onload=()=>{try{window[name]?.start();}catch(_){/* Preserve native presentation on failure. */}};
+      document.head.appendChild(script);
+    }
+  }
   function init(){
+    loadVisualModules();
     initialGalleryAlignment.start();numericSizes();productHelp();enhanceCards();shippingMessage();offersView();
     let shippingTimer=null;
     // Native AJAX can replace the subtotal node or create a drawer lazily.

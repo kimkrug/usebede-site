@@ -3466,6 +3466,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .product-menu > summary::-webkit-details-marker { display: none; }
 .product-menu > summary > span { display: inline-block; transition: transform .18s ease; }
 .product-menu[open] > summary > span { transform: rotate(180deg); }
+.main-nav .product-menu > summary { gap: 0; }
+.main-nav .product-menu > summary > span[aria-hidden="true"] { display: none; }
 .main-nav .product-menu-links {
   position: absolute;
   top: 100%;
