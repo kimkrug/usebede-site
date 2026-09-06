@@ -20,6 +20,45 @@
       {id:'1587980218',sku:'3322-36-PRETO',image:'1266970460',options:['36','Preto',null]},
       {id:'1587980222',sku:'3322-37-PRETO',image:'1266970460',options:['37','Preto',null]},
       {id:'1587980224',sku:'3322-38-PRETO',image:'1266970460',options:['38','Preto',null]}
+    ]},
+    // Cruzado: one audited photo, size axis only; all four original assets retained.
+    '364500371':{mode:'single',approved:['1266976473'],retired:['1263332523','1263332530','1263288319','1263288334'],bindings:[
+      {id:'1587975302',sku:'3079-34',image:'1266976473',options:['34',null,null]},
+      {id:'1587975304',sku:'3079-38',image:'1266976473',options:['38',null,null]},
+      {id:'1587975308',sku:'3079-37',image:'1266976473',options:['37',null,null]},
+      {id:'1587975311',sku:'3079-36',image:'1266976473',options:['36',null,null]},
+      {id:'1587975314',sku:'3079-35',image:'1266976473',options:['35',null,null]}
+    ]},
+    // Verniz Nude: one approved photo; original gallery and native availability retained.
+    '364500362':{mode:'single',approved:['1266977371'],retired:['1263332467','1263332473','1263288163','1263288182'],bindings:[
+      {id:'1587975261',sku:'3077-34',image:'1266977371',options:['34',null,null]},
+      {id:'1587975265',sku:'3077-35',image:'1266977371',options:['35',null,null]},
+      {id:'1587975266',sku:'3077-37',image:'1266977371',options:['37',null,null]},
+      {id:'1587975267',sku:'3077-38',image:'1266977371',options:['38',null,null]},
+      {id:'1587975269',sku:'3077-36',image:'1266977371',options:['36',null,null]}
+    ]},
+    // Croco: the audited V2 photo; four source assets remain in the native gallery.
+    '364500357':{mode:'single',approved:['1266979119'],retired:['1263332440','1263332444','1263288075','1263288087'],bindings:[
+      {id:'1587975247',sku:'3076-34',image:'1266979119',options:['34',null,null]},
+      {id:'1587975250',sku:'3076-38',image:'1266979119',options:['38',null,null]},
+      {id:'1587975253',sku:'3076-37',image:'1266979119',options:['37',null,null]},
+      {id:'1587975256',sku:'3076-35',image:'1266979119',options:['35',null,null]},
+      {id:'1587975258',sku:'3076-36',image:'1266979119',options:['36',null,null]}
+    ]},
+    // Leona: one approved photo, full five-variant evidence and five retained originals.
+    '363506708':{mode:'single',approved:['1266980380'],retired:['1263330536','1263330542','1263288821','1263288831','1260008172'],bindings:[
+      {id:'1585036796',sku:'3088-38',image:'1266980380',options:['38',null,null]},
+      {id:'1585036804',sku:'3088-37',image:'1266980380',options:['37',null,null]},
+      {id:'1585036808',sku:'3088-35',image:'1266980380',options:['35',null,null]},
+      {id:'1585036813',sku:'3088-34',image:'1266980380',options:['34',null,null]},
+      {id:'1585036817',sku:'3088-36',image:'1266980380',options:['36',null,null]}
+    ]},
+    // Ariana Verniz: four exact size-only bindings, five originals kept reversible.
+    '363506702':{mode:'single',approved:['1266981269'],retired:['1263333039','1263333041','1263286922','1263286930','1260007991'],bindings:[
+      {id:'1585036762',sku:'3067-38',image:'1266981269',options:['38',null,null]},
+      {id:'1585036765',sku:'3067-36',image:'1266981269',options:['36',null,null]},
+      {id:'1585036773',sku:'3067-35',image:'1266981269',options:['35',null,null]},
+      {id:'1585036777',sku:'3067-34',image:'1266981269',options:['34',null,null]}
     ]}
   };
   function imageURL(value){try{const u=new URL(value,'https://loja.usebede.com.br');return u.protocol==='https:'&&/(^|\.)mitiendanube\.com$/.test(u.hostname)&&!u.username&&!u.password&&!u.port?u.href:null;}catch(_){return null;}}
