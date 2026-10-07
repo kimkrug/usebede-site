@@ -23,3 +23,6 @@ baseline-visual/
 matriz*/
 test-results/
 playwright-report/
+
+# Vínculo local com o projeto Vercel (só IDs; nunca versionar)
+.vercel/
