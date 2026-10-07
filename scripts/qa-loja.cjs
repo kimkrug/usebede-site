@@ -1,7 +1,7 @@
 /* QA local da camada da loja: páginas públicas SALVAS (scripts/salvar-loja-publica.cjs) servidas com os
    complementos store-*.js. Sem JS nativo da Nuvemshop, formulários e compra bloqueados, loopback 8767.
    O store-color-gallery.js servido é o da RELEASE (padrão release/layout-2026-10-07-r2), não o da branch.
-   Uso: node scripts/qa-loja.cjs --out <pasta> --engine chromium [--snapshots ../outputs/store-preview-r3] [--gallery-ref <ref>]
+   Uso: node scripts/qa-loja.cjs --out <pasta> --engine chromium [--snapshots ../outputs/store-preview-r3] [--gallery-ref <ref>] [--modules-ref origin/main]
    Mede: overflow e erros por largura, axe WCAG 2.1 AA, percurso de teclado e checagens de D06. */
 'use strict';
 const fs = require('node:fs');
@@ -19,9 +19,11 @@ const MODULES = ['config_loja.js', 'catalog-model.js', 'store-product-ui.js', 's
 const WIDTHS = [[320, 640], [390, 844], [430, 932], [768, 1024], [1280, 720]];
 const START = "function startLocal(){for(const name of ['BedeProductUI','BedeNativeFilters','BedeColorGallery']){try{window[name]?.start();}catch(e){qaLog(name+': '+e.message);}}}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',startLocal,{once:true});else startLocal();";
 
-function moduleSource(name, galleryRef) {
-  const source = name === 'store-color-gallery.js'
-    ? execFileSync('git', ['show', galleryRef + ':store-color-gallery.js'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 16 << 20 })
+// modulesRef: servir todos os complementos de um commit (ex.: origin/main = produção) em vez da pasta.
+function moduleSource(name, galleryRef, modulesRef) {
+  const ref = name === 'store-color-gallery.js' ? galleryRef : modulesRef;
+  const source = ref
+    ? execFileSync('git', ['show', ref + ':' + name], { cwd: ROOT, encoding: 'utf8', maxBuffer: 16 << 20 })
     : fs.readFileSync(path.join(ROOT, name), 'utf8');
   return source.replace(/https:\/\/loja\.usebede\.com\.br/g, ORIGIN).replace(/https:\/\/www\.usebede\.com\.br/g, ORIGIN);
 }
@@ -31,7 +33,7 @@ function pages() {
   return [...list.map(f => [f, path.join(SNAP, f)]), ...Object.entries(EXTRA).filter(([, file]) => fs.existsSync(file))];
 }
 
-function server(galleryRef) {
+function server(galleryRef, modulesRef = null) {
   const files = new Map(pages());
   const srv = http.createServer((req, res) => {
     if (req.headers.host !== '127.0.0.1:8767' || req.method !== 'GET') { res.writeHead(403); return res.end('Somente GET local'); }
@@ -41,7 +43,7 @@ function server(galleryRef) {
     const name = url.pathname.slice(1);
     if (name === 'qa-fixture.js') { res.setHeader('Content-Type', 'text/javascript'); return res.end(FIXTURE_JS); }
     if (name === 'qa-start.js') { res.setHeader('Content-Type', 'text/javascript'); return res.end(START); }
-    if (MODULES.includes(name)) { res.setHeader('Content-Type', 'text/javascript; charset=utf-8'); return res.end(moduleSource(name, galleryRef)); }
+    if (MODULES.includes(name)) { res.setHeader('Content-Type', 'text/javascript; charset=utf-8'); return res.end(moduleSource(name, galleryRef, modulesRef)); }
     if (files.has(name)) { res.setHeader('Content-Type', 'text/html; charset=utf-8'); return res.end(clean(fs.readFileSync(files.get(name), 'utf8'))); }
     // Prévia de tamanhos dos cards: responde com a PDP salva quando existir; senão 404 (estado de erro honesto).
     const product = /^produtos\/([^/]+)\/$/.exec(name);
@@ -96,7 +98,8 @@ async function main() {
   fs.mkdirSync(path.join(out, engine), { recursive: true });
   const pw = require('playwright');
   const { default: AxeBuilder } = require('@axe-core/playwright');
-  const srv = await server(galleryRef);
+  const modulesRef = opt('--modules-ref', null);
+  const srv = await server(galleryRef, modulesRef);
   const browser = await pw[engine].launch();
   const report = { generatedAt: new Date().toISOString(), engine: browser.version(), galleryRef, snapshots: SNAP, pages: [] };
   try {
@@ -150,4 +153,5 @@ async function main() {
   if (flagged.length) process.exitCode = 1;
 }
 
+module.exports = { server, pages, ORIGIN };
 if (require.main === module) main().catch(error => { console.error(error.stack); process.exitCode = 2; });
