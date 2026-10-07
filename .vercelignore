@@ -1,0 +1,20 @@
+# Fora do bundle publicado no Vercel (os arquivos continuam no repositório).
+# Sintaxe restrita a "/caminho" (raiz) e "*.ext"; tests/vercelignore.test.cjs verifica.
+
+# Legados não referenciados por nenhuma página (prova em R5-1, decisão D14)
+/products.js
+/sync_log.json
+/teste-jornada.mjs
+/app.js
+/avaliacoes.js
+/MOBILE E DESKTOP - HERO
+
+# Ferramentas de trabalho e QA
+/scripts
+/tests
+/outputs
+/baseline-visual
+/qa-a11y
+/.playwright-mcp
+*.md
+.env*
