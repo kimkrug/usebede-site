@@ -1,10 +1,11 @@
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const source=fs.readFileSync(path.join(__dirname,'..','store-color-gallery.js'),'utf8');
-function fixture({single=false}={}){
+function fixture({single=false,strict=false,slideIds=['10','11','12','21'],bindImages=null}={}){
   const variants=[{id:1,sku:'p34',product_id:123,option0:'34',option1:'Preto',image:11,available:true},{id:2,sku:'b34',product_id:123,option0:'34',option1:'Bege',image:21,available:false}];
   if(single)variants.forEach((v,i)=>{v.option0=String(34+i);v.option1=null;v.image=11;});
-  const rule={...(single?{mode:'single',approved:['11','12'],retired:['10','21']}:{axis:1,colors:{Preto:['11','12'],Bege:['21']},retired:['10']}),bindings:variants.map(v=>({id:String(v.id),sku:v.sku,image:String(v.image),options:[v.option0,v.option1,null]}))};
+  const rulesVariants=variants.map(v=>({...v}));if(bindImages)variants.forEach((v,i)=>{v.image=bindImages[i];});
+  const rule={...(single?{mode:'single',approved:['11','12'],retired:['10','21']}:{axis:1,colors:{Preto:['11','12'],Bege:['21']},retired:['10']}),...(strict&&!single?{gallery:{Preto:['11','12'],Bege:['21']}}:{}),bindings:rulesVariants.map(v=>({id:String(v.id),sku:v.sku,image:String(v.image),options:[v.option0,v.option1,null]}))};
   const timers=new Map(),createdImages=[],observers=[];let timerId=0,doc;
   function simple(node,selector){
     const tag=selector.match(/^[a-z][\w-]*/i)?.[0];if(tag&&node.tagName!==tag.toUpperCase())return false;
@@ -36,7 +37,7 @@ function fixture({single=false}={}){
   const add=(parent,tag,classes='')=>{const n=new Element(tag);n.className=classes;return parent.appendChild(n);};
   const root=add(doc.body,'div');root.id='single-product';root.setAttribute('data-store','product-detail');root.setAttribute('data-variants',JSON.stringify(variants));add(root,'h1').textContent='Modelo de teste';
   const area=add(root,'div');area.setAttribute('data-store','product-image-123');area.setAttribute('aria-hidden','false');const swiper=add(area,'div','js-swiper-product');
-  const slides=['10','11','12','21'].map(id=>{const s=add(swiper,'div','js-product-slide');s.setAttribute('data-image',id);const a=add(s,'a','js-product-slide-link');a.setAttribute('href','https://dcdn-us.mitiendanube.com/stores/008/137/758/products/'+id+'.webp');add(a,'img');return s;});
+  const slides=slideIds.map(id=>{const s=add(swiper,'div','js-product-slide');s.setAttribute('data-image',id);const a=add(s,'a','js-product-slide-link');a.setAttribute('href','https://dcdn-us.mitiendanube.com/stores/008/137/758/products/'+id+'.webp');add(a,'img');return s;});
   const form=add(root,'form');form.id='product_form';form.setAttribute('data-store','product-form-123');const size=add(form,'select');size.value='34';size.setAttribute('name','variation[0]');const quantity=add(form,'input');quantity.value='1';quantity.setAttribute('name','quantity');const variant=add(form,'input');variant.value='1';variant.setAttribute('name','variant_id');const price=add(form,'span');price.textContent='R$ 100,00';const buy=add(form,'button');buy.textContent='Comprar';
   const group=add(form,'div','js-product-variants-group');group.setAttribute('data-variation-id','1');const select=add(group,'select','js-variation-option');select.setAttribute('name','variation[1]');select.value='Preto';
   const anchors=['Preto','Bege'].map(name=>{const a=add(group,'a','js-insta-variant');a.setAttribute('data-option',name);a.nativeHandler=()=>{select.value=name;};return a;});
@@ -88,4 +89,14 @@ test('single gallery: newly added option axis or color identity restores native 
 });
 test('single gallery: failed approved image restores every original without retries',()=>{
   const f=fixture({single:true});f.start();f.pending().onerror();assert.equal(f.doc.querySelector('.bede-color-gallery'),null);assert.equal(f.area.querySelectorAll('.js-product-slide').length,4);assert.equal(f.area.getAttribute('aria-hidden'),'false');assert.equal(f.timers.size,0);
+});
+// 04_RECEBIMENTO_NOVAS_FOTOS §5: a stale MAP after new photos is fixed with real
+// post-save data, never by revealing the whole native gallery.
+test('strict gallery: partial, pre-save or fully replaced photos keep honest absence until the MAP is updated',()=>{
+  for(const [slideIds,bindImages] of [[['10','11','99'],null],[['501','502','503'],[501,503]]]){
+    const f=fixture({strict:true,slideIds,bindImages});f.start();f.flush();
+    assert.equal(f.area.classList.contains('bede-original-color-gallery'),true);
+    assert.equal(f.area.getAttribute('aria-hidden'),'true');
+    assert.match(f.doc.querySelector('.bede-color-gallery-status').textContent,/Foto indisponível/);
+  }
 });
