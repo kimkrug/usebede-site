@@ -85,6 +85,8 @@ test('drawer: closed off-canvas drawer casts no shadow into the page edge', () =
   const closed = [...css.matchAll(/(?:^|\})\s*\.mobile-drawer\s*\{([^}]*)\}/g)].map(m => m[1]).join(';');
   assert.doesNotMatch(closed, /box-shadow:\s*(?!none)[^;]*rgba/, 'closed drawer shadow bleeds ~40px into the viewport');
   assert.match(css, /\.mobile-drawer\.open\s*\{[^}]*box-shadow:\s*10px 0 30px rgba\(0, 0, 0, 0\.15\)/);
+  // R2-8: the shadow fades with the slide instead of vanishing on the first frame.
+  assert.match(closed, /transition:[^;]*box-shadow 0\.35s/);
 });
 
 // WebKit/Safari skip links on Tab by default, so the trap must drive Tab itself:
