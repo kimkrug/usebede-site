@@ -3,7 +3,7 @@
    Fonte: Montserrat 300/400/500/600 | Cor: #000404
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+/* Montserrat é carregada por <link> em cada página (preconnect + stylesheet). */
 
 /* ── RESET & BASE ─────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -484,13 +484,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   background: #ffffff;
   z-index: 999;
   transform: translateX(-100%);
-  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.35s ease;
   display: flex;
   flex-direction: column;
-  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.15);
+  box-shadow: none;
 }
+/* Shadow only while open: off-canvas, it bled a gray band into the left edge. */
 .mobile-drawer.open {
   transform: translateX(0);
+  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.15);
 }
 .mob-drawer-header {
   display: flex;
@@ -594,7 +596,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .mob-drawer-info {
   font-size: 10px;
-  color: #888888;
+  color: #666666;
   text-align: center;
   margin: 0;
 }
@@ -1575,6 +1577,17 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: 10px;
   z-index: 1004;
 }
+/* White dots vanish on light sections and only showed over product photos in
+   the full-bleed rails. Keep them on the hero. On light sections they stay
+   focusable and appear (dark) only while keyboard focus is inside them. */
+.site-header.solid-light ~ .slide-dots { opacity: 0; pointer-events: none; }
+/* Keyboard focus only (a mouse click on a hero dot must not leave them showing). */
+.site-header.solid-light ~ .slide-dots:has(:focus-visible) { opacity: 1; pointer-events: auto; }
+@supports not selector(:has(*)) {
+  .site-header.solid-light ~ .slide-dots:focus-within { opacity: 1; pointer-events: auto; }
+}
+.site-header.solid-light ~ .slide-dots .s-dot { border-color: rgba(0, 0, 0, 0.45) !important; }
+.site-header.solid-light ~ .slide-dots .s-dot.active { background: #000 !important; border-color: #000 !important; }
 .s-dot, .hero-dot {
   width: 8px;
   height: 8px;
@@ -3420,6 +3433,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .clean-footer .cf-col { min-width: 0; }
 .clean-footer .cf-col h4 { line-height: 1.5; }
 .clean-footer .cf-col a, .clean-footer .cf-col p { font-weight: 400; line-height: 1.75; }
+/* AA on the cream footer (#f2f0eb): --color-muted gave 4.1:1 on 12px text. */
+.clean-footer .cf-desc, .clean-footer .cf-col a, .clean-footer .cf-col p, .site-footer-slide .pay-label, .site-footer-slide #footerLegal, .site-footer-slide .footer-copy { color: #66666b; }
+.clean-footer .cf-col a:hover { color: #000404; }
 .clean-footer .cf-col > a { padding: 3px 0; }
 .clean-footer .cf-col .cf-social-btn { display: inline-flex; align-items: center; gap: 6px; }
 .clean-footer .cf-logo { display: flex; justify-content: flex-start; }
@@ -3518,6 +3534,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .nb-rail-wrapper, .nb-rail { width: 100%; max-width: 100%; }
 .nb-rail-wrapper { flex-shrink: 0; }
 .dual-half { text-decoration: none; }
+/* <picture> só escolhe o formato; o layout continua sendo o do <img>. */
+.dual-half picture, .split-photo picture { display: contents; }
 .dual-half:focus-visible { outline: 3px solid #fff; outline-offset: -6px; }
 .nb-rail { scroll-snap-type: x proximity; scroll-padding-inline: var(--pad-x); }
 .nb-card { scroll-snap-align: start; min-width: 0; }

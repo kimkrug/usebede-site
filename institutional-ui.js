@@ -95,7 +95,8 @@
     backgroundStates.clear();
     menuButton.setAttribute('aria-expanded', 'false');
     menuButton.setAttribute('aria-label', 'Abrir menu');
-    const target = returnFocus && returnFocus.isConnected && !returnFocus.closest('[inert]')
+    // Safari does not focus a clicked button, so the opener may be <body>.
+    const target = returnFocus && returnFocus !== document.body && returnFocus.isConnected && !returnFocus.closest('[inert]')
       ? returnFocus : menuButton;
     if (target && typeof target.focus === 'function') target.focus();
     menu.inert = true;
@@ -185,16 +186,13 @@
       const links = Array.from(menu.querySelectorAll('a[href], summary, button:not([disabled]), [tabindex="0"]'))
         .filter(function (element) { return element.getClientRects().length > 0; });
       if (!links.length) return;
-      const first = links[0];
-      const last = links[links.length - 1];
-      const outside = !menu.contains(document.activeElement);
-      if (event.shiftKey && (outside || document.activeElement === first)) {
-        event.preventDefault();
-        last.focus();
-      } else if (!event.shiftKey && (outside || document.activeElement === last)) {
-        event.preventDefault();
-        first.focus();
-      }
+      // Drive Tab ourselves: WebKit/Safari skip links by default and focus
+      // would otherwise fall to <body> behind the open drawer.
+      event.preventDefault();
+      const index = links.indexOf(document.activeElement);
+      const step = event.shiftKey ? -1 : 1;
+      const next = index === -1 ? (event.shiftKey ? links.length - 1 : 0) : (index + step + links.length) % links.length;
+      links[next].focus();
     });
     const desktop = window.matchMedia('(min-width: 1280px)');
     desktop.addEventListener('change', function (event) { if (event.matches) closeMenu(); });

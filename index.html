@@ -5,12 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BEDÊ Stiletto — Boutique de Calçados Femininos | Viamão RS</title>
     <meta name="description" content="Calçados e bolsas femininas com curadoria, design e conforto. Boutique em Viamão/RS.">
+  <link rel="canonical" href="https://www.usebede.com.br/">
   <!-- Favicon Oficial BD -->
   <link rel="icon" type="image/svg+xml" href="favicon-bd.svg?v=2026_bd_v12">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=2026_bd_v12">
   <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2026_bd_v12">
   <link rel="shortcut icon" href="favicon.ico?v=2026_bd_v12">
-  <link rel="stylesheet" href="style.css?v=2026_09_05_unified_menu">
+  <!-- Fonte carregada pelo HTML (antes vinha por @import no CSS, uma requisição a mais em série). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap">
+  <!-- Primeiro quadro do hero: o mesmo arquivo que o CSS escolhe em cada largura. -->
+  <link rel="preload" as="image" type="image/webp" href="assets/hero_mulher_mobile.webp?v=2026_09_05" media="(max-width: 1024px)">
+  <link rel="preload" as="image" type="image/webp" href="assets/hero_mulher_desktop.webp?v=2026_09_05" media="(min-width: 1025px)">
+  <link rel="stylesheet" href="style.css?v=2026_10_07_r2">
 
   <!-- Open Graph (Instagram, Facebook, WhatsApp) -->
   <meta property="og:type" content="website">
@@ -22,7 +30,7 @@
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:url" content="https://www.usebede.com.br">
+  <meta property="og:url" content="https://www.usebede.com.br/">
   <link rel="image_src" href="https://www.usebede.com.br/og-image.jpg?v=2026_hero_wall_v6">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://www.usebede.com.br/og-image.jpg?v=2026_hero_wall_v6">
@@ -284,7 +292,7 @@
       <section class="v-slide" id="slide2" aria-label="Sapataria &amp; Bolsas">
         <div class="split-dual-slide">
           <a class="dual-half" href="https://loja.usebede.com.br/produtos/" aria-label="Ver Sapataria e Saltos">
-            <img class="dual-img" src="assets/split_shoes.jpg?v=crop_v3" alt="Sapataria &amp; Saltos — Stiletto BEDÊ" loading="lazy">
+            <picture><source type="image/webp" srcset="assets/split_shoes.webp?v=webp_r2"><img class="dual-img" src="assets/split_shoes.jpg?v=crop_v3" alt="Sapataria &amp; Saltos — Stiletto BEDÊ" loading="lazy"></picture>
             <div class="dual-shade"></div>
             <div class="dual-caption">
               <span class="dual-eyebrow">Exclusividade</span>
@@ -294,7 +302,7 @@
           </a>
 
           <a class="dual-half" href="https://loja.usebede.com.br/search/?q=bolsa" aria-label="Ver Bolsas">
-            <img class="dual-img" src="assets/split_bags.jpg?v=crop_v3" alt="Bolsas — Stiletto BEDÊ" loading="lazy">
+            <picture><source type="image/webp" srcset="assets/split_bags.webp?v=webp_r2"><img class="dual-img" src="assets/split_bags.jpg?v=crop_v3" alt="Bolsas — Stiletto BEDÊ" loading="lazy"></picture>
             <div class="dual-shade"></div>
             <div class="dual-caption">
               <span class="dual-eyebrow">Essenciais</span>
@@ -333,7 +341,7 @@
       <section class="v-slide" id="slide4" aria-label="Liquidação Especial">
         <div class="split-text-slide">
           <div class="split-photo">
-            <img src="assets/split_editorial.jpg?v=showroom_v1" alt="BEDÊ Stiletto — Showroom &amp; Coleção" loading="lazy">
+            <picture><source type="image/webp" srcset="assets/split_editorial.webp?v=webp_r2"><img src="assets/split_editorial.jpg?v=showroom_v1" alt="BEDÊ Stiletto — Showroom &amp; Coleção" loading="lazy"></picture>
           </div>
           <div class="split-text-content">
             <h2 class="split-headline single-line" id="offersHeading" tabindex="-1">LIQUIDAÇÃO</h2>
@@ -472,6 +480,6 @@
   <script src="config_loja.js?v=2026_v9"></script>
   <script src="catalog-model.js?v=2026_09_05_home_ui"></script>
   <script src="home-app.js?v=2026_09_05_unified_menu"></script>
-  <script src="home-ui.js?v=2026_09_05_unified_menu"></script>
+  <script src="home-ui.js?v=2026_10_07_r2"></script>
 </body>
 </html>

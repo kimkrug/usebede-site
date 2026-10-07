@@ -265,7 +265,10 @@
     };
 
     window.closeMobileMenu = function () {
-      const restoreFocus = menu && menu.contains(document.activeElement);
+      // An overlay tap drops focus to <body> before click; treat it as lost focus.
+      const active = document.activeElement;
+      const restoreFocus = menu && menu.classList.contains('open') &&
+        (!active || active === document.body || menu.contains(active));
       closeProductMenus();
       if (typeof originalCloseMenu === 'function') originalCloseMenu();
       if (!menu || !menuButton) return;
@@ -329,16 +332,13 @@
       const focusable = Array.from(menu.querySelectorAll('a[href], summary, button:not([disabled]), input:not([disabled]), [tabindex="0"]'))
         .filter(function (element) { return element.getClientRects().length > 0; });
       if (!focusable.length) return;
-      const first = focusable[0];
-      const last = focusable[focusable.length - 1];
-      const outside = !menu.contains(document.activeElement);
-      if (event.shiftKey && (outside || document.activeElement === first)) {
-        event.preventDefault();
-        last.focus();
-      } else if (!event.shiftKey && (outside || document.activeElement === last)) {
-        event.preventDefault();
-        first.focus();
-      }
+      // Drive Tab ourselves: WebKit/Safari skip links by default, so waiting
+      // for focus to reach the last link let it escape the open drawer.
+      event.preventDefault();
+      const index = focusable.indexOf(document.activeElement);
+      const step = event.shiftKey ? -1 : 1;
+      const next = index === -1 ? (event.shiftKey ? focusable.length - 1 : 0) : (index + step + focusable.length) % focusable.length;
+      focusable[next].focus();
     });
 
     document.addEventListener('click', function (event) {
