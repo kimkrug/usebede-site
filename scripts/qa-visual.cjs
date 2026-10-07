@@ -6,7 +6,7 @@
      node scripts/qa-visual.cjs --out <pasta>                    # gera capturas + report.json
      node scripts/qa-visual.cjs --out <pasta> --compare <base>   # idem e compara com uma baseline
      node scripts/qa-visual.cjs --out <pasta> --flows            # também roda fluxos de menu/busca
-   Opções: --engines chromium,webkit,firefox (padrão: chromium,webkit) · --pages index.html,sobre.html
+   Opções: --engines chromium,webkit,firefox (padrão: chromium,webkit) · --merge (acumula motores no report.json) · --pages index.html,sobre.html
            --widths 390,1280 · --threshold 0.002 (fração de pixels diferentes tolerada)
    Capturas usam prefers-reduced-motion: reduce para congelar o carrossel do hero. */
 'use strict';
@@ -33,6 +33,7 @@ function args(argv) {
     else if (key === '--widths') out.widths = value.split(',').map(Number), i++;
     else if (key === '--threshold') out.threshold = Number(value), i++;
     else if (key === '--flows') out.flows = true;
+    else if (key === '--merge') out.merge = true;
   }
   if (!out.out) throw new Error('Informe --out <pasta>.');
   return out;
@@ -82,12 +83,12 @@ async function capture(pw, opts, report) {
     for (const width of opts.widths) {
       const context = await browser.newContext({ viewport: { width, height: HEIGHT[width] || 900 }, reducedMotion: 'reduce' });
       await guard(context);
-      const page = await context.newPage();
-      const errors = [];
-      page.on('pageerror', e => errors.push(e.message.slice(0, 160)));
-      page.on('console', m => { if (m.type() === 'error' && !/Content Security Policy|favicon/i.test(m.text())) errors.push(m.text().slice(0, 160)); });
       for (const name of opts.pages) {
-        errors.length = 0;
+        // Uma página nova por captura, fechada em seguida: limita a memória em execuções longas.
+        const page = await context.newPage();
+        const errors = [];
+        page.on('pageerror', e => errors.push(e.message.slice(0, 160)));
+        page.on('console', m => { if (m.type() === 'error' && !/Content Security Policy|favicon/i.test(m.text())) errors.push(m.text().slice(0, 160)); });
         const isHome = name === 'index.html';
         await page.goto(ORIGIN + '/' + name);
         await settle(page, isHome);
@@ -102,6 +103,7 @@ async function capture(pw, opts, report) {
           shots.push(file);
         }
         report.pages.push({ engine, page: name, width, overflow: metrics.scrollWidth > metrics.clientWidth, ...metrics, consoleErrors: [...errors], shots });
+        await page.close();
       }
       await context.close();
     }
@@ -213,7 +215,17 @@ async function main() {
     await capture(pw, opts, report);
     if (opts.compare) await compare(opts, report);
   } finally { preview.kill(); }
-  fs.writeFileSync(path.join(opts.out, 'report.json'), JSON.stringify(report, null, 2));
+  // --merge: um motor por vez (menos memória) sem apagar o relatório dos motores anteriores.
+  const reportPath = path.join(opts.out, 'report.json');
+  if (opts.merge && fs.existsSync(reportPath)) {
+    const previous = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
+    const ran = new Set(Object.keys(report.engines));
+    for (const [engine, version] of Object.entries(previous.engines || {})) if (!ran.has(engine)) report.engines[engine] = version;
+    report.pages = [...(previous.pages || []).filter(p => !ran.has(p.engine)), ...report.pages];
+    for (const [engine, list] of Object.entries(previous.flows || {})) if (!ran.has(engine)) report.flows[engine] = list;
+    report.diffs = [...(previous.diffs || []).filter(d => !ran.has(d.shot.split('/')[0])), ...report.diffs];
+  }
+  fs.writeFileSync(reportPath, JSON.stringify(report, null, 2));
   const overflow = report.pages.filter(p => p.overflow), errors = report.pages.filter(p => p.consoleErrors.length);
   const flowFails = Object.entries(report.flows).flatMap(([engine, list]) => list.filter(f => !f.ok).map(f => engine + ': ' + f.name + ' ' + f.detail));
   const diffs = report.diffs.filter(d => d.status !== 'igual');
