@@ -3,7 +3,7 @@
    Fonte: Montserrat 300/400/500/600 | Cor: #000404
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+/* Montserrat é carregada por <link> em cada página (preconnect + stylesheet). */
 
 /* ── RESET & BASE ─────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -3526,6 +3526,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .nb-rail-wrapper, .nb-rail { width: 100%; max-width: 100%; }
 .nb-rail-wrapper { flex-shrink: 0; }
 .dual-half { text-decoration: none; }
+/* <picture> só escolhe o formato; o layout continua sendo o do <img>. */
+.dual-half picture, .split-photo picture { display: contents; }
 .dual-half:focus-visible { outline: 3px solid #fff; outline-offset: -6px; }
 .nb-rail { scroll-snap-type: x proximity; scroll-padding-inline: var(--pad-x); }
 .nb-card { scroll-snap-align: start; min-width: 0; }
