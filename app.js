@@ -1,19 +1,12 @@
 /**
  * BEDE Stiletto — App Engine (byNV Blueprint)
- * Fullpage slider · Tipos section · Transition overlay · Modals
+ * Fullpage slider · Tipos section · Navegação direta · Modals
  */
 
-// ── OVERLAY DE TRANSIÇÃO PARA A LOJA NUVEMSHOP ───────────────────
-// Intercepta navegações para loja.usebede.com.br e exibe
-// um overlay BEDÊ por ~700ms antes de redirecionar — criando a
-// ilusão de continuidade entre o site institucional e a loja.
+// ── NAVEGAÇÃO DIRETA PARA A LOJA NUVEMSHOP ──────────────────────
+// Links usam seus hrefs nativos; blocos clicáveis navegam sem espera artificial.
 window.irParaLoja = function(url) {
-  var ov = document.getElementById('pageTransition');
-  if (!ov) { window.location.href = url; return; }
-  ov.classList.add('active');
-  setTimeout(function() {
-    window.location.href = url;
-  }, 750);
+  window.location.href = url;
 };
 // ────────────────────────────────────────────────────────────────
 
@@ -315,7 +308,7 @@ window.irParaLoja = function(url) {
       const url = p.url_absolute || p.url || 'https://loja.usebede.com.br/produtos/';
       const foto = p.foto_local || p.foto;
       return `
-        <a class="nb-card" href="${url}" onclick="irParaLoja('${url}');return false;">
+        <a class="nb-card" href="${url}">
           <div class="nb-card-img-wrap">
             <img src="${foto}" alt="${nome}" loading="lazy">
           </div>
@@ -341,7 +334,7 @@ window.irParaLoja = function(url) {
     if (!rail) return;
 
     rail.innerHTML = TIPOS_CURADORIA.map(t => `
-      <a class="nb-card" href="${t.url}" onclick="irParaLoja('${t.url}');return false;">
+      <a class="nb-card" href="${t.url}">
         <div class="nb-card-img-wrap">
           <img src="${t.foto}" alt="${t.alt || t.nome}" loading="lazy">
         </div>
@@ -381,7 +374,7 @@ window.irParaLoja = function(url) {
       const url = p.url_absolute || p.url || 'https://loja.usebede.com.br/produtos/';
       const foto = p.foto_local || p.foto;
       return `
-        <a class="nb-card" href="${url}" onclick="irParaLoja('${url}');return false;">
+        <a class="nb-card" href="${url}">
           <div class="nb-card-img-wrap">
             <img src="${foto}" alt="${nome}" loading="lazy">
           </div>
@@ -1457,7 +1450,7 @@ window.irParaLoja = function(url) {
   }
 
   function setupCart() {
-    if (D.cartBtn) D.cartBtn.addEventListener('click', openCart);
+    if (D.cartBtn && D.cartBtn.tagName !== 'A') D.cartBtn.addEventListener('click', openCart);
     if (D.cartOverlay) D.cartOverlay.addEventListener('click', closeCart);
 
     // 1. Botão Principal: Finalizar compra na loja wBuy
