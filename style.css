@@ -1581,7 +1581,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    the full-bleed rails. Keep them on the hero. On light sections they stay
    focusable and appear (dark) only while keyboard focus is inside them. */
 .site-header.solid-light ~ .slide-dots { opacity: 0; pointer-events: none; }
-.site-header.solid-light ~ .slide-dots:focus-within { opacity: 1; pointer-events: auto; }
+/* Keyboard focus only (a mouse click on a hero dot must not leave them showing). */
+.site-header.solid-light ~ .slide-dots:has(:focus-visible) { opacity: 1; pointer-events: auto; }
+@supports not selector(:has(*)) {
+  .site-header.solid-light ~ .slide-dots:focus-within { opacity: 1; pointer-events: auto; }
+}
 .site-header.solid-light ~ .slide-dots .s-dot { border-color: rgba(0, 0, 0, 0.45) !important; }
 .site-header.solid-light ~ .slide-dots .s-dot.active { background: #000 !important; border-color: #000 !important; }
 .s-dot, .hero-dot {

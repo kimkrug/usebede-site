@@ -21,7 +21,9 @@ test('section dots: on light sections they are visually hidden so they never sit
 test('section dots: keyboard users keep them — focusable, and shown (dark) while focused', () => {
   // R2-8: visibility:hidden removed them from Tab order and dropped focus after Enter.
   assert.doesNotMatch(rule('.site-header.solid-light ~ .slide-dots'), /visibility:\s*hidden|display:\s*none/);
-  assert.match(rule('.site-header.solid-light ~ .slide-dots:focus-within'), /opacity:\s*1/);
+  // R3-5: :has(:focus-visible) shows them for keyboard focus only; :focus-within is the fallback without :has.
+  assert.match(rule('.site-header.solid-light ~ .slide-dots:has(:focus-visible)'), /opacity:\s*1/);
+  assert.match(css, /@supports not selector\(:has\(\*\)\)\s*\{\s*\.site-header\.solid-light ~ \.slide-dots:focus-within\s*\{\s*opacity:\s*1/);
   assert.match(css, /\.site-header\.solid-light ~ \.slide-dots \.s-dot\s*\{[^}]*border-color:\s*rgba\(0, 0, 0/);
 });
 
