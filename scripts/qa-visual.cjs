@@ -64,6 +64,9 @@ async function settle(page, isHome) {
   await page.waitForLoadState('load');
   if (isHome) await page.waitForFunction(() => ['emAltaRail', 'tiposRail', 'tabsRail'].every(id => document.getElementById(id)?.getAttribute('aria-busy') !== 'true'), null, { timeout: 15000 }).catch(() => {});
   await page.evaluate(() => Promise.all([...document.images].filter(img => !img.complete).map(img => new Promise(done => { img.onload = img.onerror = done; setTimeout(done, 8000); }))));
+  // No evento load as faces da Montserrat ainda podem estar carregando: sem esperar,
+  // a mesma página saía com peso de fonte diferente entre execuções (ruído no WebKit).
+  await page.evaluate(() => Promise.race([document.fonts.ready, new Promise(done => setTimeout(done, 8000))]));
   await page.waitForTimeout(isHome ? 600 : 200);
 }
 
