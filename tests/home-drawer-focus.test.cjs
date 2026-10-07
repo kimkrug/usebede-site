@@ -78,3 +78,10 @@ test('drawer: closing an already closed drawer never moves focus to the hidden m
   f.window.closeMobileMenu();
   assert.equal(f.document.activeElement, f.body);
 });
+
+test('drawer: closed off-canvas drawer casts no shadow into the page edge', () => {
+  const css = fs.readFileSync(path.join(root, 'style.css'), 'utf8');
+  const closed = [...css.matchAll(/(?:^|\})\s*\.mobile-drawer\s*\{([^}]*)\}/g)].map(m => m[1]).join(';');
+  assert.doesNotMatch(closed, /box-shadow:\s*(?!none)[^;]*rgba/, 'closed drawer shadow bleeds ~40px into the viewport');
+  assert.match(css, /\.mobile-drawer\.open\s*\{[^}]*box-shadow:\s*10px 0 30px rgba\(0, 0, 0, 0\.15\)/);
+});
