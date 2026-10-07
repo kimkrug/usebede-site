@@ -266,14 +266,6 @@
     const strictGallery=Object.hasOwn(MAP[id],'gallery');
     let figure=null,nav=null,key='',timer=null,loadTimer=null,pendingImage=null,generation=0,failed=false,retryable=false,stopped=false,nativeState=null;
     const selectedPhotos=new Map();
-    // A rule only knows the audited native IDs. When none of them remains on the page, the
-    // photos were fully replaced (new shoot): the rule is obsolete and the native gallery returns.
-    // Any surviving known ID (partial/pre-save state) keeps the strict, honest-absence behaviour.
-    function superseded(){
-      const rule=MAP[id],known=new Set([...(rule.approved||[]),...Object.values(rule.colors||{}).flat(),...(Array.isArray(rule.gallery)?rule.gallery:Object.values(rule.gallery||{}).flat()),...(rule.retired||[]),...(rule.bindings||[]).map(b=>b?.image)].map(String));
-      const shown=Array.from(area.querySelectorAll('.js-swiper-product .js-product-slide[data-image]')).map(slide=>slide.getAttribute('data-image'));
-      return shown.length>0&&shown.every(image=>!known.has(String(image)));
-    }
     function read(){
       const single=MAP[id].mode==='single';let group=null,select=null;
       if(!single){const groups=form.querySelectorAll('.js-product-variants-group[data-variation-id="'+MAP[id].axis+'"]');if(groups.length!==1)return null;group=groups[0];const selects=group.querySelectorAll('select.js-variation-option');if(selects.length!==1||selects[0].getAttribute('name')!=='variation['+MAP[id].axis+']')return null;select=selects[0];}
@@ -323,7 +315,7 @@
       const photos=state?photoNavigation(state,index):null;if(photos)ready.appendChild(photos);mount(ready,state);
     }
     function update(){
-      timer=null;if(failed||stopped)return;const state=read();if(!state){if(strictGallery&&superseded()){restore();key='superseded';return;}if(strictGallery&&key==='unverified'&&figure)return;restore();if(strictGallery){key='unverified';status('Foto indisponível');}return;}
+      timer=null;if(failed||stopped)return;const state=read();if(!state){if(strictGallery&&key==='unverified'&&figure)return;restore();if(strictGallery){key='unverified';status('Foto indisponível');}return;}
       const {index,photo,next}=selection(state);if(next===key)return;
       const focusPhoto=doc.activeElement?.getAttribute('data-bede-photo');restore();key=next;const token=generation;
       if(!photo){status('Foto indisponível',state);return;}
@@ -355,7 +347,7 @@
     function schedule(){if(timer===null&&!failed&&!stopped)timer=win.setTimeout(update,40);}
     // Only explicit controls retry a failed photo; observers/native events retain the settled key.
     function retry(){if(retryable)key='';schedule();}
-    const initial=read();if(!initial&&(!strictGallery||superseded()))return null;
+    const initial=read();if(!initial&&!strictGallery)return null;
     const style=doc.createElement('style');style.textContent=CSS;doc.head.appendChild(style);
     const observer=new win.MutationObserver(schedule);observer.observe(form,{subtree:true,childList:true});
     observer.observe(root,{attributes:true,attributeFilter:['data-variants']});
