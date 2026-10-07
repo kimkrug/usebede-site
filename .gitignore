@@ -14,3 +14,12 @@ __pycache__/
 .env
 .env.*
 node_modules/
+
+# Capturas, baselines e relatórios de QA (ficam em ../outputs; nunca no Git)
+outputs/
+.playwright-mcp/
+qa-a11y/
+baseline-visual/
+matriz*/
+test-results/
+playwright-report/
