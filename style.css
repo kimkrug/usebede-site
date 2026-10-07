@@ -3425,6 +3425,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .clean-footer .cf-col { min-width: 0; }
 .clean-footer .cf-col h4 { line-height: 1.5; }
 .clean-footer .cf-col a, .clean-footer .cf-col p { font-weight: 400; line-height: 1.75; }
+/* AA on the cream footer (#f2f0eb): --color-muted gave 4.1:1 on 12px text. */
+.clean-footer .cf-desc, .clean-footer .cf-col a, .clean-footer .cf-col p, .site-footer-slide .pay-label, .site-footer-slide #footerLegal, .site-footer-slide .footer-copy { color: #66666b; }
+.clean-footer .cf-col a:hover { color: #000404; }
 .clean-footer .cf-col > a { padding: 3px 0; }
 .clean-footer .cf-col .cf-social-btn { display: inline-flex; align-items: center; gap: 6px; }
 .clean-footer .cf-logo { display: flex; justify-content: flex-start; }

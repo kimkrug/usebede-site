@@ -30,3 +30,13 @@ test('contrast: drawer footer claims (10px) meet WCAG AA on the drawer backgroun
   assert.ok(rule);
   assert.ok(ratio(rule[1], FOOTER_BG) >= 4.5, rule[1]);
 });
+
+test('contrast: home footer muted text on the cream slide (#f2f0eb) meets WCAG AA', () => {
+  const css = read('style.css');
+  const rule = /([^{}]*\.site-footer-slide \.footer-copy[^{]*)\{[^}]*color:\s*(#[0-9a-f]{3,6})/i.exec(css);
+  assert.ok(rule, 'footer muted colour override');
+  for (const selector of ['.cf-desc', '.cf-col a', '.pay-label', '#footerLegal', '.footer-copy']) assert.ok(rule[1].includes(selector), selector);
+  assert.ok(ratio(rule[2], '#f2f0eb') >= 4.5, rule[2]);
+  assert.ok(ratio(rule[2], FOOTER_BG) >= 4.5, rule[2] + ' on institutional footer');
+  assert.match(css, /\.clean-footer \.cf-col a:hover \{ color: #000404; \}/, 'hover still darkens');
+});
