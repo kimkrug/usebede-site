@@ -36,10 +36,21 @@ Memória: rode um navegador por vez (`--engines chromium`, depois `webkit --merg
 - Nada que altere estoque, preço, pedido, pagamento, DNS ou o projeto no Vercel.
 
 ## Publicar e reverter
-Só com aprovação explícita da Kim. Siga `outputs/claude-code-2026-10-07/release-r2/LEIA_RELEASE_R2.md` (pasta irmã deste repositório, fora do Git). Resumo:
-- Publique **somente** uma branch `release/...` montada sobre `origin/main`. **Nunca** faça merge desta branch de trabalho em `main`: ela contém o `store-color-gallery.js` de 49 regras (4 bolsas aguardando decisão) e as ferramentas de QA.
-- Antes de publicar: `npm test`, `node scripts/auditar-producao.cjs` (produção igual a `origin/main`).
-- Reverter: “Promote” do deployment anterior no Vercel, ou `git revert` do commit da release.
+Só com aprovação explícita da Kim. Registro completo: `outputs/claude-code-2026-10-07/R5-4_publicacao.md` (pasta irmã, fora do Git).
+
+**Atenção: o projeto Vercel `site_usebede` tem integração com o GitHub.** Todo push para `main` publica em produção automaticamente; pushes de outras branches geram previews **públicos** (o desta branch de trabalho expõe as 4 bolsas e `scripts/`).
+
+**`.vercelignore`** tira do bundle publicado os legados não usados por nenhuma página (`products.js`, `sync_log.json`, `teste-jornada.mjs`, `app.js`, `avaliacoes.js`, `MOBILE E DESKTOP - HERO/`) e as ferramentas (`scripts/`, `tests/`, `*.md`, `.env*`). Os arquivos continuam no repositório. `tests/vercelignore.test.cjs` falha se algum arquivo de runtime ou asset referenciado for ignorado. Vale para deploys pela CLI e pelo GitHub.
+
+Procedimento (ensaiado nas rodadas 4 e 5):
+1. Monte uma branch `release/...` sobre `origin/main` só com os arquivos de runtime alterados. **Nunca** faça merge desta branch de trabalho em `main`: ela tem o `store-color-gallery.js` de 49 regras e as ferramentas de QA.
+2. Portões: `npm test`; `node scripts/auditar-producao.cjs` (exit 0 = produção igual a `origin/main`); `vercel whoami`; anote o deployment atual (`vercel ls site_usebede --prod`), que é o alvo de rollback.
+3. Pasta limpa: `git worktree add ../deploy-x release/...`. O vínculo fica em `.vercel/` (só IDs, ignorada pelo Git): copie-a para a worktree, ou `vercel link --cwd ../deploy-x --project prj_sRtutzx7Fca15ALivZuz2BGMS5cH --team kimkrugs-projects --non-interactive`. **Se a CLI criar `.env.local` (token), apague sem abrir** e rode `git -C ../deploy-x checkout -- .gitignore`.
+4. `vercel deploy --prod --yes --cwd ../deploy-x`; confira ao vivo com `node scripts/auditar-producao.cjs release/...` (exit 0).
+5. `git push origin release/...` e `git push origin release/...:main` (fast-forward, **sem force**). Isso dispara **outro** deploy automático do mesmo commit: espere virar produção e repita a auditoria.
+6. `git worktree remove ../deploy-x`.
+
+Reverter: `vercel rollback <url-do-deployment-anotado>` (ou “Promote to Production” no painel) e conferir com `node scripts/auditar-producao.cjs <commit-anterior>`. No Git: `git revert` do commit da release e push para `main` (que publica).
 
 ## Regras de conteúdo
 Não inventar medidas, materiais, reviews nem alt de produto; foto de uma cor nunca aparece em outra (ausência é explícita, “Foto indisponível”). Condições comerciais, hero e políticas só mudam com decisão da Kim. Galeria por cor e troca de fotos: `04_RECEBIMENTO_NOVAS_FOTOS.md` (handoff) e `R2-6_ensaio_fotos.md`.
