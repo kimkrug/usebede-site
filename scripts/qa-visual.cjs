@@ -20,7 +20,7 @@ const ORIGIN = 'http://127.0.0.1:' + PORT;
 const PAGES = ['index.html', 'sobre.html', 'como-comprar.html', 'trocas.html', 'faq.html', 'privacidade.html', 'termos.html', 'guia-medidas.html', '404.html'];
 const WIDTHS = [320, 390, 430, 768, 1280];
 const HEIGHT = { 320: 640, 390: 844, 430: 932, 768: 1024, 1280: 720 };
-const HOME_SLIDES = [1, 3, 5, 7]; // vitrines e rodapé, além do hero
+const HOME_SLIDES = [1, 2, 3, 4, 5, 6, 7]; // todas as seções além do hero
 
 function args(argv) {
   const out = { engines: ['chromium', 'webkit'], pages: PAGES, widths: WIDTHS, threshold: 0.002 };
