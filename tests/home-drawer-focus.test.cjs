@@ -38,6 +38,7 @@ function fixture() {
     querySelectorAll: () => [], querySelector: () => null,
     addEventListener(type, listener) { (documentEvents[type] ||= []).push(listener); }
   };
+  document.keydownListeners = () => documentEvents.keydown || [];
   const media = { matches: false, addEventListener() {} };
   // home-app.js defines these first; home-ui.js wraps them.
   const window = {
@@ -46,7 +47,7 @@ function fixture() {
     closeMobileMenu() { drawer.classList.remove('open'); }
   };
   vm.runInNewContext(source, { window, document });
-  return { window, document, drawer, close, button, other, body };
+  return { window, document, drawer, close, button, other, body, get keydown() { return documentEvents.keydown || []; } };
 }
 
 test('drawer: closing after focus fell to body (overlay tap) returns focus to the menu button', () => {
@@ -84,4 +85,37 @@ test('drawer: closed off-canvas drawer casts no shadow into the page edge', () =
   const closed = [...css.matchAll(/(?:^|\})\s*\.mobile-drawer\s*\{([^}]*)\}/g)].map(m => m[1]).join(';');
   assert.doesNotMatch(closed, /box-shadow:\s*(?!none)[^;]*rgba/, 'closed drawer shadow bleeds ~40px into the viewport');
   assert.match(css, /\.mobile-drawer\.open\s*\{[^}]*box-shadow:\s*10px 0 30px rgba\(0, 0, 0, 0\.15\)/);
+});
+
+// WebKit/Safari skip links on Tab by default, so the trap must drive Tab itself:
+// otherwise focus leaves the open drawer for one step (R2-1).
+function trapFixture() {
+  const f = fixture();
+  const items = ['close', 'summary', 'link1', 'link2'].map(id => {
+    const node = f.drawer.children.find(c => c.id === id) || f.drawer.appendChild({ ...f.close, id, children: [], getClientRects: () => [1], focus() { f.document.activeElement = this; }, contains(x) { return x === this; } });
+    node.getClientRects = () => [1];
+    return node;
+  });
+  f.drawer.querySelectorAll = () => items;
+  f.drawer.classList.add('open');
+  return { ...f, items };
+}
+function press(f, shiftKey = false) {
+  const event = { key: 'Tab', shiftKey, defaultPrevented: false, preventDefault() { this.defaultPrevented = true; } };
+  f.keydown.forEach(listener => listener(event));
+  return event;
+}
+
+test('drawer: Tab and Shift+Tab cycle inside the open drawer in every engine', () => {
+  const f = trapFixture();
+  f.items[0].focus();
+  for (const expected of ['summary', 'link1', 'link2', 'close']) {
+    assert.equal(press(f).defaultPrevented, true);
+    assert.equal(f.document.activeElement.id, expected);
+  }
+  press(f, true);
+  assert.equal(f.document.activeElement.id, 'link2');
+  f.document.activeElement = f.other;
+  press(f);
+  assert.equal(f.document.activeElement.id, 'close', 'focus outside returns to the first control');
 });
