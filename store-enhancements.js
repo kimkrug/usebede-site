@@ -200,9 +200,10 @@
     .bede-card-mobile-preview span{display:block}
     .bede-card-mobile-cta{display:flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:44px;width:100%;max-width:100%;padding:8px 14px;background:#000!important;color:#fff!important;border:1px solid #000;text-decoration:none!important;font:500 11px/1.4 Montserrat,sans-serif}
     .bede-card-ready a:focus-visible{outline:2px solid #000;outline-offset:3px}
-    /* native-focus: the theme removes the ring from these native controls (WCAG 2.4.7); keyboard only. */
+    /* native-focus: the theme removes the ring from these native controls (WCAG 2.4.7). The button ring is keyboard-only. */
     .js-addtocart:focus-visible{outline:2px solid #000;outline-offset:2px}
-    /* The theme sets .form-control:focus{outline:0 !important}; a more specific !important wins, keyboard only. */
+    /* The theme sets .form-control:focus{outline:0 !important}; a more specific !important wins. Browsers match
+       :focus-visible on text fields for taps/clicks too, so the field shows where typing goes for everyone. */
     .form-control.js-quantity-input:focus-visible,.form-control.js-shipping-input:focus-visible,.form-control.js-search-input:focus-visible{outline:2px solid #000!important;outline-offset:2px}
     .bede-card-ready .bede-card-image-link:focus-visible{box-shadow:0 0 0 3px #fff;outline:2px solid #000;outline-offset:3px}
     @media(hover:hover) and (pointer:fine){.bede-card-ready:hover .bede-card-overlay{opacity:1;transform:none}}
