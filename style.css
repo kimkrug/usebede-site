@@ -1577,6 +1577,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: 10px;
   z-index: 1004;
 }
+/* White dots vanish on light sections and only showed over product photos in
+   the full-bleed rails. Keep them on the hero; wheel/swipe/keys still navigate. */
+.site-header.solid-light ~ .slide-dots { visibility: hidden; }
 .s-dot, .hero-dot {
   width: 8px;
   height: 8px;
