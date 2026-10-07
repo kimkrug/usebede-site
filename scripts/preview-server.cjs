@@ -6,7 +6,9 @@ const path = require('node:path');
 
 const ROOT = path.resolve(__dirname, '..');
 const HOST = '127.0.0.1';
-const PORT = 8765;
+// Porta alternativa só para rodar QA em paralelo; sempre loopback.
+const requestedPort = Number(process.env.BEDE_PREVIEW_PORT || 8765);
+const PORT = Number.isInteger(requestedPort) && requestedPort >= 8765 && requestedPort <= 8799 ? requestedPort : 8765;
 const FIXTURE = process.env.BEDE_PREVIEW_FIXTURE === '1';
 // Rebase deliberado apenas para QA visual local; nunca simula frescor na API real.
 const FRESH_FIXTURE = FIXTURE && process.env.BEDE_PREVIEW_FRESH_FIXTURE === '1';
@@ -14,6 +16,10 @@ const requestedDelay = Number(process.env.BEDE_PREVIEW_FIXTURE_DELAY_MS || 0);
 const FIXTURE_DELAY_MS = FIXTURE && Number.isFinite(requestedDelay)
   ? Math.min(15000, Math.max(0, Math.floor(requestedDelay))) : 0;
 const FIXTURE_FILE = path.resolve(ROOT, '../outputs/catalogo-revisao/catalogo-publico-atual.json');
+// QA de resiliência (só com fixture): http-429 | http-500 | http-503 | hang | truncated |
+// null-products | duplicate | stale. Nunca afeta o modo ao vivo.
+const FAULTS = new Set(['http-429', 'http-500', 'http-503', 'hang', 'truncated', 'null-products', 'duplicate', 'stale']);
+const FAULT = FIXTURE && FAULTS.has(process.env.BEDE_PREVIEW_FAULT) ? process.env.BEDE_PREVIEW_FAULT : '';
 const MIME = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.avif': 'image/avif', '.gif': 'image/gif', '.ico': 'image/x-icon', '.woff': 'font/woff', '.woff2': 'font/woff2', '.ttf': 'font/ttf', '.otf': 'font/otf' };
 const DENIED = new Set(['api', 'outputs', 'scripts', 'tests', 'node_modules', 'work']);
 const mode = FRESH_FIXTURE ? 'offline-fixture-simulated-timestamp-qa'
@@ -30,6 +36,19 @@ function resolvePublicFile(requestPath) {
   const target = path.resolve(ROOT, relative);
   if (!target.startsWith(ROOT + path.sep) || !MIME[path.extname(target).toLowerCase()]) return null;
   return target;
+}
+
+// Respostas defeituosas para QA local; o snapshot no disco nunca é alterado.
+function fixtureFault(fault, captured) {
+  const now = new Date().toISOString();
+  const fresh = { ...captured, startedAt: now, fetchedAt: now, previewOnly: true, previewFault: fault };
+  if (fault === 'hang') return { hang: true };
+  if (fault.startsWith('http-')) return { status: Number(fault.slice(5)), body: JSON.stringify({ error: 'Catalogue temporarily unavailable', products: null }) };
+  if (fault === 'truncated') return { status: 200, body: JSON.stringify(fresh).slice(0, 4000) };
+  if (fault === 'null-products') return { status: 200, body: JSON.stringify({ ...fresh, products: null }) };
+  if (fault === 'duplicate') return { status: 200, body: JSON.stringify({ ...fresh, products: [...captured.products, captured.products[0]] }) };
+  if (fault === 'stale') return { status: 200, body: JSON.stringify({ ...captured, previewOnly: true, previewFault: fault }) };
+  throw new Error('Falha de QA desconhecida: ' + fault);
 }
 
 function reject(response, status, message) {
@@ -59,6 +78,15 @@ async function handleRequest(request, response) {
       const captured = JSON.parse(await fs.readFile(FIXTURE_FILE, 'utf8'));
       if (FIXTURE_DELAY_MS) await new Promise(resolve => setTimeout(resolve, FIXTURE_DELAY_MS));
       if (response.destroyed) return;
+      if (FAULT) {
+        const fault = fixtureFault(FAULT, captured);
+        if (fault.hang) return; // Mantém a conexão aberta: o prazo é do cliente.
+        response.statusCode = fault.status;
+        response.setHeader('Content-Type', 'application/json; charset=utf-8');
+        response.setHeader('X-Bede-Preview-Fault', FAULT);
+        response.end(fault.body);
+        return;
+      }
       const simulatedAt = FRESH_FIXTURE ? new Date().toISOString() : null;
       const payload = {
         ...captured,
@@ -121,10 +149,11 @@ function startServer() {
     console.log(`PRÉVIA LOCAL: http://${HOST}:${PORT}/`);
     console.log(`Catálogo: ${FRESH_FIXTURE ? QA_LABEL : FIXTURE ? 'SNAPSHOT OFFLINE PARA QA — NÃO É ESTADO AO VIVO' : 'leitura pública ao vivo da Nuvemshop'}`);
     if (FIXTURE) console.log(`Atraso simulado da fixture: ${FIXTURE_DELAY_MS} ms. Arquivo original preservado.`);
+    if (FAULT) console.log(`FALHA SIMULADA em /api/catalogo: ${FAULT}`);
     console.log('Loopback somente; sem listagem de diretórios, sem escrita, sem exposição de outputs.');
   });
   return server;
 }
 
 if (require.main === module) startServer();
-module.exports = { resolvePublicFile, handleRequest, startServer };
+module.exports = { resolvePublicFile, handleRequest, startServer, fixtureFault };
