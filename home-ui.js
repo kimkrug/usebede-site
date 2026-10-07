@@ -265,7 +265,10 @@
     };
 
     window.closeMobileMenu = function () {
-      const restoreFocus = menu && menu.contains(document.activeElement);
+      // An overlay tap drops focus to <body> before click; treat it as lost focus.
+      const active = document.activeElement;
+      const restoreFocus = menu && menu.classList.contains('open') &&
+        (!active || active === document.body || menu.contains(active));
       closeProductMenus();
       if (typeof originalCloseMenu === 'function') originalCloseMenu();
       if (!menu || !menuButton) return;
