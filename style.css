@@ -1578,8 +1578,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   z-index: 1004;
 }
 /* White dots vanish on light sections and only showed over product photos in
-   the full-bleed rails. Keep them on the hero; wheel/swipe/keys still navigate. */
-.site-header.solid-light ~ .slide-dots { visibility: hidden; }
+   the full-bleed rails. Keep them on the hero. On light sections they stay
+   focusable and appear (dark) only while keyboard focus is inside them. */
+.site-header.solid-light ~ .slide-dots { opacity: 0; pointer-events: none; }
+.site-header.solid-light ~ .slide-dots:focus-within { opacity: 1; pointer-events: auto; }
+.site-header.solid-light ~ .slide-dots .s-dot { border-color: rgba(0, 0, 0, 0.45) !important; }
+.site-header.solid-light ~ .slide-dots .s-dot.active { background: #000 !important; border-color: #000 !important; }
 .s-dot, .hero-dot {
   width: 8px;
   height: 8px;
