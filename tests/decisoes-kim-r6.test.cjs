@@ -37,3 +37,13 @@ test('D19: sem turno inventado; PIX, parcelas, frete e trocas inalterados (D15�
   assert.ok(faq.includes('Oferecemos <strong>Frete Grátis para as regiões Sul e Sudeste</strong> em compras a partir de R$ 599.'));
   assert.ok(read('trocas.html').includes('A primeira troca é por nossa conta'));
 });
+
+test('D22b: rodapé da home centralizado na seção por margens automáticas (sem cortar quando não cabe)', () => {
+  const css = read('style.css');
+  const rule = /\.site-footer-slide \.clean-footer-bottom\s*\{([^}]*)\}/g;
+  const decls = [...css.matchAll(rule)].map(m => m[1]).join(';');
+  assert.match(decls, /margin-block:\s*auto/);
+  assert.doesNotMatch(decls, /margin-top:\s*auto/, 'preso embaixo deixava o vão');
+  // justify-content:center cortaria o topo quando o rodapé é maior que a tela (320×640).
+  assert.doesNotMatch(css, /\.site-footer-slide\s*\{[^}]*justify-content:\s*center[^}]*\}\s*(?![\s\S]*\.site-footer-slide\s*\{[^}]*justify-content:\s*flex-start)/);
+});
