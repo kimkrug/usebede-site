@@ -47,3 +47,29 @@ test('D22b: rodapé da home centralizado na seção por margens automáticas (se
   // justify-content:center cortaria o topo quando o rodapé é maior que a tela (320×640).
   assert.doesNotMatch(css, /\.site-footer-slide\s*\{[^}]*justify-content:\s*center[^}]*\}\s*(?![\s\S]*\.site-footer-slide\s*\{[^}]*justify-content:\s*flex-start)/);
 });
+
+const INSTITUCIONAIS = ['sobre.html', 'como-comprar.html', 'trocas.html', 'faq.html', 'privacidade.html', 'termos.html', 'guia-medidas.html'];
+test('D22c: as 7 institucionais têm a mesma busca da home (destino, rótulos, teclado)', () => {
+  const pattern = [
+    /<button class="icon-btn home-search-trigger" id="homeSearchTrigger" type="button" aria-label="Buscar na loja" aria-controls="homeSearchPanel" aria-expanded="false">/,
+    /<div class="home-search-panel" id="homeSearchPanel" hidden>/,
+    /<form class="home-search-form" data-store-search action="https:\/\/loja\.usebede\.com\.br\/search\/" method="get" role="search" aria-label="Buscar produtos na loja">/,
+    /<label class="home-sr-only" for="homeSearchInput">O que você procura\?<\/label>/,
+    /<input id="homeSearchInput" name="q" type="search"[^>]*required/,
+    /<button class="home-search-close" id="homeSearchClose" type="button" aria-label="Fechar busca">/
+  ];
+  for (const page of ['index.html', ...INSTITUCIONAIS]) {
+    const html = read(page);
+    for (const re of pattern) assert.match(html, re, page + ' ' + re);
+    assert.equal((html.match(/id="homeSearchTrigger"/g) || []).length, 1, page + ': uma lupa só');
+    const header = html.slice(html.indexOf('<header'), html.indexOf('</header>'));
+    assert.ok(header.includes('id="homeSearchPanel"'), page + ': painel dentro do cabeçalho');
+  }
+});
+
+test('D22c: a busca é ligada sem depender da gaveta da home; a gaveta institucional fecha a busca', () => {
+  const ui = read('home-ui.js');
+  const setup = ui.slice(ui.indexOf('function setupHomeUI()'));
+  assert.ok(setup.indexOf('setupSearch();') > -1 && setup.indexOf('setupSearch();') < setup.indexOf('if (!menu) return;'));
+  assert.match(read('institutional-ui.js'), /BedeNavigation\.closeSearch\(false\)/);
+});

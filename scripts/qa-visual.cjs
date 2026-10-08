@@ -182,6 +182,16 @@ async function flows(browser) {
     check('institucional: abre com foco no fechar', await page.evaluate(() => document.activeElement.classList.contains('mob-drawer-close')));
     await page.keyboard.press('Escape'); await page.waitForTimeout(300);
     check('institucional: Escape devolve foco', await page.evaluate(() => document.activeElement.id === 'mobileMenuBtn'));
+    // D22c: mesma busca da home no cabeçalho das institucionais.
+    await page.locator('#homeSearchTrigger').click(); await page.waitForTimeout(150);
+    check('institucional: busca abre com foco no campo', await page.evaluate(() => document.activeElement.id === 'homeSearchInput'));
+    await page.keyboard.press('Enter'); await page.waitForTimeout(200);
+    check('institucional: busca vazia não navega', page.url().startsWith(ORIGIN));
+    await page.keyboard.press('Escape'); await page.waitForTimeout(150);
+    check('institucional: Escape fecha a busca e devolve foco à lupa', await page.evaluate(() => document.getElementById('homeSearchPanel').hidden && document.activeElement.id === 'homeSearchTrigger'));
+    await page.locator('#homeSearchTrigger').click(); await page.locator('#homeSearchInput').fill(' rasteirinha ç ');
+    const [request] = await Promise.all([page.waitForRequest(r => r.isNavigationRequest() && r.url().includes('/search/')), page.keyboard.press('Enter')]);
+    check('institucional: termo chega intacto à busca da loja', request.url() === 'https://loja.usebede.com.br/search/?q=rasteirinha+%C3%A7', request.url());
     await context.close();
   });
   return results;

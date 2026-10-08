@@ -69,6 +69,8 @@
     if (!initialized) setup();
     if (!menu || isOpen()) return;
     if (window.BedeNavigation) window.BedeNavigation.closeProductMenus();
+    // D22c: the shared search (home-ui.js) and this drawer never stay open together.
+    if (window.BedeNavigation && typeof window.BedeNavigation.closeSearch === 'function') window.BedeNavigation.closeSearch(false);
     returnFocus = document.activeElement;
     menu.inert = false;
     menu.setAttribute('aria-hidden', 'false');
