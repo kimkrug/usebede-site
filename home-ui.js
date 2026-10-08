@@ -221,8 +221,55 @@
   }
   if (!window.BedeCarouselCues) window.BedeCarouselCues = createCarouselCues();
 
+  // Native store search (home and institutional pages share the same markup).
+  // Independent of any drawer: pages without one still get Enter/Escape/focus.
+  let searchBound = false;
+  function setupSearch() {
+    const searchPanel = document.getElementById('homeSearchPanel');
+    const searchButton = document.getElementById('homeSearchTrigger');
+    const searchInput = document.getElementById('homeSearchInput');
+    const searchClose = document.getElementById('homeSearchClose');
+    if (searchBound || !searchPanel || !searchButton || !searchInput) return;
+    searchBound = true;
+    function closeSearch(restoreFocus) {
+      const wasOpen = !searchPanel.hidden;
+      searchPanel.hidden = true;
+      searchButton.setAttribute('aria-expanded', 'false');
+      if (wasOpen && restoreFocus) searchButton.focus();
+    }
+    window.BedeNavigation.closeSearch = closeSearch;
+    searchButton.addEventListener('click', function () {
+      if (!searchPanel.hidden) {
+        closeSearch(true);
+        return;
+      }
+      if (typeof window.closeMobileMenu === 'function') window.closeMobileMenu();
+      closeProductMenus();
+      searchPanel.hidden = false;
+      searchButton.setAttribute('aria-expanded', 'true');
+      searchInput.focus();
+    });
+    searchPanel.querySelector('form').addEventListener('submit', function (event) {
+      searchInput.value = searchInput.value.trim();
+      if (!searchInput.value) {
+        event.preventDefault();
+        searchInput.focus();
+      }
+    });
+    if (searchClose) searchClose.addEventListener('click', function () { closeSearch(true); });
+    document.addEventListener('keydown', function (event) {
+      if (event.defaultPrevented || event.key !== 'Escape' || searchPanel.hidden) return;
+      event.preventDefault();
+      closeSearch(true);
+    });
+    document.addEventListener('click', function (event) {
+      if (!searchPanel.hidden && !searchPanel.contains(event.target) && !searchButton.contains(event.target)) closeSearch(false);
+    });
+  }
+
   function setupHomeUI() {
     window.BedeCarouselCues.setup(document);
+    setupSearch();
     setupProductMenus(document);
     document.addEventListener('click', function (event) {
       if (!event.target.closest('details[data-product-menu]')) closeProductMenus();
@@ -236,19 +283,11 @@
     // Institutional pages share the product menu, but own their document drawer.
     if (!menu) return;
     const menuButton = document.getElementById('mobileMenuBtn');
-    const searchPanel = document.getElementById('homeSearchPanel');
-    const searchButton = document.getElementById('homeSearchTrigger');
-    const searchInput = document.getElementById('homeSearchInput');
-    const searchClose = document.getElementById('homeSearchClose');
     const originalOpenMenu = window.openMobileMenu;
     const originalCloseMenu = window.closeMobileMenu;
-
+    // Search itself lives in setupSearch(); the drawer only needs to close it.
     function closeSearch(restoreFocus) {
-      if (!searchPanel || !searchButton) return;
-      const wasOpen = !searchPanel.hidden;
-      searchPanel.hidden = true;
-      searchButton.setAttribute('aria-expanded', 'false');
-      if (wasOpen && restoreFocus) searchButton.focus();
+      if (typeof window.BedeNavigation.closeSearch === 'function') window.BedeNavigation.closeSearch(restoreFocus);
     }
 
     window.openMobileMenu = function () {
@@ -279,28 +318,6 @@
       menuButton.setAttribute('aria-label', 'Abrir menu');
     };
 
-    if (searchButton && searchPanel && searchInput) {
-      searchButton.addEventListener('click', function () {
-        if (!searchPanel.hidden) {
-          closeSearch(true);
-          return;
-        }
-        window.closeMobileMenu();
-        closeProductMenus();
-        searchPanel.hidden = false;
-        searchButton.setAttribute('aria-expanded', 'true');
-        searchInput.focus();
-      });
-      searchPanel.querySelector('form').addEventListener('submit', function (event) {
-        searchInput.value = searchInput.value.trim();
-        if (!searchInput.value) {
-          event.preventDefault();
-          searchInput.focus();
-        }
-      });
-    }
-    if (searchClose) searchClose.addEventListener('click', function () { closeSearch(true); });
-
     menu.addEventListener('click', function (event) {
       if (event.target.closest('a[href]')) window.closeMobileMenu();
     });
@@ -319,14 +336,10 @@
     document.addEventListener('keydown', function (event) {
       if (event.defaultPrevented) return;
       const menuIsOpen = menu && menu.classList.contains('open');
-      if (event.key === 'Escape') {
-        if (menuIsOpen) {
-          event.preventDefault();
-          window.closeMobileMenu();
-        } else if (searchPanel && !searchPanel.hidden) {
-          event.preventDefault();
-          closeSearch(true);
-        }
+      // Escape on an open search is handled in setupSearch().
+      if (event.key === 'Escape' && menuIsOpen) {
+        event.preventDefault();
+        window.closeMobileMenu();
       }
       if (!menuIsOpen || event.key !== 'Tab') return;
       const focusable = Array.from(menu.querySelectorAll('a[href], summary, button:not([disabled]), input:not([disabled]), [tabindex="0"]'))
@@ -339,10 +352,6 @@
       const step = event.shiftKey ? -1 : 1;
       const next = index === -1 ? (event.shiftKey ? focusable.length - 1 : 0) : (index + step + focusable.length) % focusable.length;
       focusable[next].focus();
-    });
-
-    document.addEventListener('click', function (event) {
-      if (searchPanel && !searchPanel.hidden && !searchPanel.contains(event.target) && !searchButton.contains(event.target)) closeSearch(false);
     });
 
     const desktop = window.matchMedia('(min-width: 1280px)');

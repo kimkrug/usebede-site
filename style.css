@@ -3616,7 +3616,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .home-rail-cues .home-rail-cue svg { width: 20px; height: 20px; fill: none; stroke: currentColor !important; stroke-width: 1.5; }
 .home-rail-cues .home-rail-cue:focus-visible, .home-catalog-retry:focus-visible { outline: 2px solid #000; outline-offset: 3px; }
 .site-footer-slide { justify-content: flex-start; padding-bottom: max(24px, env(safe-area-inset-bottom)); }
-.site-footer-slide .clean-footer-bottom { margin-top: auto; flex-shrink: 0; }
+/* D22b: centered in the section; auto margins collapse to 0 when it does not fit, so the inner scroll never clips the top. */
+.site-footer-slide .clean-footer-bottom { margin-block: auto; flex-shrink: 0; }
 /* The closed outline follows the whole silhouette, including the speech tail. */
 .whatsapp-float-btn { background: transparent; border: 0; border-radius: 0; box-shadow: none; filter: drop-shadow(0 6px 10px rgba(0,0,0,.22)); }
 .whatsapp-float-btn:hover { background: transparent; }

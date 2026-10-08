@@ -69,6 +69,9 @@
       </div>
 
       <div class="header-right">
+        <button class="icon-btn home-search-trigger" id="homeSearchTrigger" type="button" aria-label="Buscar na loja" aria-controls="homeSearchPanel" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+        </button>
         <a class="icon-btn" href="https://loja.usebede.com.br/account/login/" aria-label="Minha conta" title="Minha conta">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 22v-2a8 8 0 0 1 16 0v2"/></svg>
         </a>
@@ -80,6 +83,14 @@
           </svg>
         </a>
       </div>
+    </div>
+    <div class="home-search-panel" id="homeSearchPanel" hidden>
+      <form class="home-search-form" data-store-search action="https://loja.usebede.com.br/search/" method="get" role="search" aria-label="Buscar produtos na loja">
+        <label class="home-sr-only" for="homeSearchInput">O que você procura?</label>
+        <input id="homeSearchInput" name="q" type="search" placeholder="Busque por calçado, bolsa ou modelo" required autocomplete="off" enterkeyhint="search">
+        <button class="home-search-submit" type="submit">Buscar</button>
+        <button class="home-search-close" id="homeSearchClose" type="button" aria-label="Fechar busca">&times;</button>
+      </form>
     </div>
   </header>
 
@@ -96,7 +107,7 @@
   <p>Nossa boutique física está localizada no coração de Viamão/RS. Cada modelo é selecionado cuidadosamente para valorizar o estilo da mulher contemporânea em todas as ocasiões, desde o dia a dia até momentos de celebração.</p>
   <div style="background:#f8f8f8;padding:20px 24px;border-radius:6px;border-left:3px solid #000404;margin:24px 0;">
     <p style="margin:0 0 6px 0;font-size:14px;color:#000404;"><strong>Boutique Física:</strong> <span data-store-address>Rua Cirurgião Vaz Ferreira, 457 · Centro · Viamão/RS</span></p>
-    <p style="margin:0;font-size:13px;color:#666;"><strong>Horário de Atendimento:</strong> <span data-store-hours data-empty-hours="Consulte nossos horários pelo WhatsApp.">Consulte nossos horários pelo WhatsApp.</span></p>
+    <p style="margin:0;font-size:13px;color:#666;"><strong>Horário de Atendimento:</strong> <span data-store-hours data-empty-hours="Retirada em Viamão em horário comercial, combinada previamente pelo WhatsApp.">Retirada em Viamão em horário comercial, combinada previamente pelo WhatsApp.</span></p>
   </div>
   <p>Consulte os materiais, acabamentos e características de cada modelo na página do produto. Nossa equipe pode ajudar na escolha pelo WhatsApp.</p>
 
