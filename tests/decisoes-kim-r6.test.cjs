@@ -16,3 +16,24 @@ test('D20: chamada do hero é só "Nova Coleção", sem estação nem separador 
     assert.doesNotMatch(text, /^[·\-–|]|[·\-–|]$/, 'separador solto: ' + text);
   }
 });
+
+const RETIRADA = 'Retirada em Viamão em horário comercial, combinada previamente pelo WhatsApp.';
+test('D19: frase de retirada/atendimento aprovada em Como comprar, FAQ e Sobre', () => {
+  assert.ok(read('como-comprar.html').includes(RETIRADA));
+  for (const page of ['faq.html', 'sobre.html']) {
+    const html = read(page);
+    const hours = [...html.matchAll(/<(?:p|span)[^>]*data-store-hours[^>]*data-empty-hours="([^"]*)"[^>]*>([^<]*)</g)];
+    assert.ok(hours.length, page);
+    for (const [, fallback, text] of hours) { assert.equal(fallback, RETIRADA, page); assert.equal(text.trim(), RETIRADA, page); }
+  }
+  assert.doesNotMatch(read('como-comprar.html'), /retirada imediata/i);
+});
+
+test('D19: sem turno inventado; PIX, parcelas, frete e trocas inalterados (D15–D18)', () => {
+  for (const page of ['como-comprar.html', 'faq.html', 'sobre.html']) assert.doesNotMatch(read(page), /\b(manh[ãa]|tarde|noite)\b|\b\d{1,2}\s?h(\d{2})?\b/i, page);
+  const como = read('como-comprar.html'), faq = read('faq.html');
+  assert.ok(como.includes('Aceitamos PIX com 5% de desconto e Cartão de Crédito em até 6x sem juros.'));
+  assert.ok(como.includes('Frete grátis para as regiões Sul e Sudeste em compras a partir de R$ 599.'));
+  assert.ok(faq.includes('Oferecemos <strong>Frete Grátis para as regiões Sul e Sudeste</strong> em compras a partir de R$ 599.'));
+  assert.ok(read('trocas.html').includes('A primeira troca é por nossa conta'));
+});
