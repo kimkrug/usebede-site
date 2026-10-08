@@ -48,7 +48,8 @@ test('source: footer uses an auto spacer without shrinking content and retains v
   includesProperties(lastRule(css, '.site-footer-slide'), {
     'justify-content': 'flex-start', 'padding-bottom': 'max(24px, env(safe-area-inset-bottom))'
   });
-  includesProperties(lastRule(css, '.site-footer-slide .clean-footer-bottom'), { 'margin-top': 'auto', 'flex-shrink': '0' });
+  // D22b (Kim, 07/10): centered with auto margins instead of pinned to the bottom; still no shrinking.
+  includesProperties(lastRule(css, '.site-footer-slide .clean-footer-bottom'), { 'margin-block': 'auto', 'flex-shrink': '0' });
   assert.ok(rules(css, '.clean-footer-bottom').some(rule => /overflow:\s*visible\s*;/.test(rule)));
   // The inline slide rule deliberately overrides the older stylesheet overflow:hidden.
   assert.match(app, /slides\.forEach\(slide => \{ slide\.style\.overflowY = 'auto'; slide\.style\.overscrollBehaviorY = 'contain'; \}\)/);
