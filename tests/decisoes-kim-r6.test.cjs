@@ -18,15 +18,36 @@ test('D20: chamada do hero é só "Nova Coleção", sem estação nem separador 
 });
 
 const RETIRADA = 'Retirada em Viamão em horário comercial, combinada previamente pelo WhatsApp.';
-test('D19: frase de retirada/atendimento aprovada em Como comprar, FAQ e Sobre', () => {
-  assert.ok(read('como-comprar.html').includes(RETIRADA));
-  for (const page of ['faq.html', 'sobre.html']) {
+// D23/R7-1: a frase de Kim fica em elemento próprio. O [data-store-hours] é substituído por
+// CFG_LOJA.horario quando o turno for definido; se a frase estivesse ali, sumiria nesse dia.
+const STORE_HOURS = /<(p|span)\b[^>]*\bdata-store-hours\b[^>]*>[\s\S]*?<\/\1>/g;
+test('D19/D23: frase de retirada literal em Como comprar, FAQ e Sobre, fora de [data-store-hours]', () => {
+  for (const page of ['como-comprar.html', 'faq.html', 'sobre.html']) {
     const html = read(page);
-    const hours = [...html.matchAll(/<(?:p|span)[^>]*data-store-hours[^>]*data-empty-hours="([^"]*)"[^>]*>([^<]*)</g)];
-    assert.ok(hours.length, page);
-    for (const [, fallback, text] of hours) { assert.equal(fallback, RETIRADA, page); assert.equal(text.trim(), RETIRADA, page); }
+    for (const element of html.match(STORE_HOURS) || []) assert.ok(!element.includes(RETIRADA), page + ': frase dentro de data-store-hours');
+    assert.ok(html.replace(STORE_HOURS, '').includes(RETIRADA), page);
+    for (const [, fallback] of html.matchAll(/data-empty-hours="([^"]*)"/g)) assert.doesNotMatch(fallback, /Retirada em Viamão/, page);
   }
   assert.doesNotMatch(read('como-comprar.html'), /retirada imediata/i);
+});
+
+test('D23: Sobre usa o rótulo "Retirada:" e o horário fica separado, oculto enquanto vazio', () => {
+  const sobre = read('sobre.html'), faq = read('faq.html');
+  assert.ok(sobre.includes('<strong>Retirada:</strong> ' + RETIRADA));
+  assert.doesNotMatch(sobre, /Horário de Atendimento:/);
+  for (const html of [sobre, faq]) {
+    // O rodapé tem o próprio [data-store-hours] (oculto, sem reserva); aqui só o do conteúdo.
+    const own = (html.match(STORE_HOURS) || []).filter(element => !element.includes('line-height:1.5'));
+    assert.equal(own.length, 1, 'um elemento de horário no conteúdo');
+    assert.match(own[0], /data-empty-hours=""/);
+    assert.match(own[0], /\bhidden\b/);
+  }
+});
+
+test('D24: Termos não muda nesta rodada (reserva antiga de atendimento)', () => {
+  const termos = read('termos.html');
+  assert.ok(termos.includes('<strong>Atendimento:</strong> <span data-store-hours data-empty-hours="Consulte nossos horários de atendimento pelo WhatsApp.">Consulte nossos horários de atendimento pelo WhatsApp.</span>'));
+  assert.ok(!termos.includes(RETIRADA));
 });
 
 test('D19: sem turno inventado; PIX, parcelas, frete e trocas inalterados (D15–D18)', () => {
