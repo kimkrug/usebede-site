@@ -215,15 +215,18 @@ async function main() {
     await capture(pw, opts, report);
     if (opts.compare) await compare(opts, report);
   } finally { preview.kill(); }
-  // --merge: um motor por vez (menos memória) sem apagar o relatório dos motores anteriores.
+  // --merge: um motor (ou um lote de páginas) por vez, sem apagar o que outras execuções já gravaram.
+  // Substitui só as combinações motor × página que rodaram agora; fluxos só se --flows rodou.
   const reportPath = path.join(opts.out, 'report.json');
   if (opts.merge && fs.existsSync(reportPath)) {
     const previous = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
     const ran = new Set(Object.keys(report.engines));
-    for (const [engine, version] of Object.entries(previous.engines || {})) if (!ran.has(engine)) report.engines[engine] = version;
-    report.pages = [...(previous.pages || []).filter(p => !ran.has(p.engine)), ...report.pages];
-    for (const [engine, list] of Object.entries(previous.flows || {})) if (!ran.has(engine)) report.flows[engine] = list;
-    report.diffs = [...(previous.diffs || []).filter(d => !ran.has(d.shot.split('/')[0])), ...report.diffs];
+    const pageKey = name => name.replace('.html', '');
+    const reran = (engine, page) => ran.has(engine) && opts.pages.some(p => pageKey(p) === page);
+    for (const [engine, version] of Object.entries(previous.engines || {})) if (!report.engines[engine]) report.engines[engine] = version;
+    report.pages = [...(previous.pages || []).filter(p => !reran(p.engine, pageKey(p.page))), ...report.pages];
+    for (const [engine, list] of Object.entries(previous.flows || {})) if (!(ran.has(engine) && opts.flows)) report.flows[engine] = list;
+    report.diffs = [...(previous.diffs || []).filter(d => { const [engine, file] = d.shot.split('/'); return !reran(engine, file.replace(/(-slide\d+)?_\d+\.png$/, '')); }), ...report.diffs];
   }
   fs.writeFileSync(reportPath, JSON.stringify(report, null, 2));
   const overflow = report.pages.filter(p => p.overflow), errors = report.pages.filter(p => p.consoleErrors.length);
